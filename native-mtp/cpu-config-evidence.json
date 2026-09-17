@@ -1,0 +1,14 @@
+{
+  "image_id": "sha256:4cc287d0555c9425ab2e483441ebbb2bb6efe984415230e06c5fd97d004d5bf7",
+  "cpu_only": true,
+  "command": "Glm5NextConfig -> SpeculativeConfig.hf_config_override",
+  "model_type": "glm5_next_mtp",
+  "architectures": [
+    "Glm5NextMTPModel"
+  ],
+  "n_routed_experts": 288,
+  "quantization": null,
+  "mtp_depth": 1,
+  "passed": true,
+  "gpu_forward_validated": false
+}

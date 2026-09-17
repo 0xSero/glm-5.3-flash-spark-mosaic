@@ -1,0 +1,12 @@
+{
+  "native_mtp_configured": true,
+  "drafted_tokens": 1174.0,
+  "accepted_tokens": 873.0,
+  "accepted_fraction": 0.7436115843270868,
+  "passed": true,
+  "scope": "Configuration plus isolated advancing speculative token counters; no MTP-on speed gain or quality parity inferred.",
+  "input_sha256": {
+    "runtime": "69a374ee7c3ceedfcc38a02036b2978b94748d5b9ec16773aa4b041a4b8c6f63",
+    "cell": "0691eedd1bfca471c5302978ec6d59b6bef3050349d785a2afc77417a0e5569b"
+  }
+}

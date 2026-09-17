@@ -1,0 +1,268 @@
+{
+ "schema": "glm53-g4-summary-v1",
+ "gate": "G4",
+ "point": "a0 reference: 2.05bpw unpruned, served on spark-2384 (container glm53-a0-bench), measured from spark-2384",
+ "image": "glm53-flash-sglang-exl3-plain:serve4",
+ "image_sha": "c65c840f1908",
+ "written_utc": "2026-09-16T21:42:51Z",
+ "receipts": {
+  "panel": {
+   "path": "/w2port/out/a0-full-panel.json",
+   "sha256": "acc8f359e20aca3983675b3340cb995b2182b449c885530723c67ab1d063b62c",
+   "status": "complete"
+  },
+  "samples": {
+   "path": "/w2port/out/a0-full-samples.json",
+   "sha256": "b15d30f08cd8be4d2832c6da3e2ea0d4d062195fa73a9c54ff42505387e3469d",
+   "status": "complete"
+  }
+ },
+ "panel_row": {
+  "row": "a0 reference: 2.05bpw unpruned, served on spark-2384 (container glm53-a0-bench), measured from spark-2384",
+  "panel": "ours (WikiText2 32x2048, 65,504 positions)",
+  "positions": 65504,
+  "top1_agreement": 0.7890205178309722,
+  "mean_kl_lower_bound": 0.3837756141796914,
+  "kl_tails_lower_bound": {
+   "p50": 0.1044262945652008,
+   "p95": 1.7973448038101196,
+   "p99": 3.848609447479248,
+   "max": 13.73049652179341
+  },
+  "mean_kl_topk_renorm": 0.3841938038562507,
+  "candidate_ppl": 4.286921219375921,
+  "teacher_ppl_recomputed": 3.19953344168712,
+  "coverage": {
+   "teacher_mass_in_known_set_mean": 0.9930268647579606,
+   "teacher_mass_in_known_set_p01": 0.8981054425239563,
+   "teacher_mass_in_known_set_min": 0.01077812642282561,
+   "fraction_teacher_top1_in_candidate_topk": 0.9998778700537372,
+   "fraction_all_teacher_topk_known": 0.47081094284318514,
+   "topk_teacher": 256,
+   "topk_candidate_requested": 2048
+  },
+  "teacher_reproduction": {
+   "top1_exact_all_rows": true,
+   "max_nll_sum_abs_delta": 0.005112852444881355,
+   "ok": true
+  }
+ },
+ "reference_rows": [
+  {
+   "row": "BF16 teacher",
+   "top1_agreement": 1.0,
+   "mean_kl": 0.0,
+   "ppl": 3.1995,
+   "note": "our panel, exact full-vocab KL"
+  },
+  {
+   "row": "Unpruned Q3 (0xSero)",
+   "top1_agreement": 0.8738,
+   "mean_kl": 0.1522,
+   "note": "our panel, exact full-vocab KL (campaign scorer)"
+  },
+  {
+   "row": "Unpruned K2 (0xSero)",
+   "top1_agreement": 0.7738,
+   "mean_kl": 0.439,
+   "note": "our panel, exact full-vocab KL (campaign scorer)"
+  },
+  {
+   "row": "Uniform prune Q3 keep-192/384",
+   "top1_agreement": 0.618,
+   "mean_kl": 1.184,
+   "note": "our panel, equal-byte pruning control"
+  },
+  {
+   "row": "turboderp 2.05bpw",
+   "top1_agreement": 0.8892,
+   "mean_kl": 0.1216,
+   "note": "QFS panel (malaiwah), NOT ours; not comparable column"
+  }
+ ],
+ "method_labels": {
+  "kl_column": "kl_lower_bound = KL(teacher||candidate) on the coarsened partition {teacher top-256 tokens with candidate logprob known from the served top-2048} u {rest}. Exact LOWER BOUND of the full-vocabulary KL (data-processing inequality); gap bounded by the uncovered teacher mass (mean 1 - coverage). Not identical to the reference rows' exact full-vocab KL: same panel, same teacher, different estimator; the true full-vocab KL of this point is >= the number shown.",
+  "top1_column": "exact: candidate argmax from the served logprob path vs the reference teacher top-1 on all 65,504 positions (identical definition to the reference rows)",
+  "ppl_column": "candidate PPL from served prompt logprobs on the true tokens; teacher PPL recomputed from the frozen hidden states x pinned BF16 head and equal to the reference 3.1995",
+  "qfs_row": "not computed (QFS protocol inputs unavailable, OPEN-QUESTIONS Q8); the turboderp 2.05bpw reference row stays QFS-only and is not compared to this point",
+  "scoring_path": "served SGLang process (/generate return_logprob, input_ids verbatim), i.e. the number describes what is actually served (DESIGN §6.2, Q7 resolved: 2048-token prompt logprobs return full-length, ~9 s per row, top-2048 per position)",
+  "head_note": "teacher head = zai-org/GLM-5.3-Flash-BF16 @ a6c167b6 shard 1 (sha256 in g4-panel.json); the serving-reference identity hashed a different shard file, so head identity is established by exact reproduction of teacher_top1 (0 mismatches / 65,504) and per-row NLL sums (max |delta| 0.005 nats over 2047 positions)"
+ },
+ "samples": {
+  "score": 0.2,
+  "passes": 4,
+  "of": 20,
+  "scored": 20,
+  "per_family": {
+   "structured_decode": "1/5",
+   "generation": "1/5",
+   "reasoning": "2/5",
+   "retrieval_long_context": "0/5"
+  },
+  "samples_sha256": "5684425facb1d4c7062235899439e95794ef6c22e2dbe8b165c21e9546fe5bd9",
+  "expected_samples_sha256": "5684425facb1d4c7062235899439e95794ef6c22e2dbe8b165c21e9546fe5bd9",
+  "failures": [
+   {
+    "id": "rs-6x7-high-text",
+    "family": "reasoning",
+    "checks": {
+     "finish_reason_stop": true,
+     "content_json_equals": false
+    },
+    "error": null,
+    "content_head": "```json\n{\n  \"answer\": 42,\n  \"numbers\": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]\n}\n```",
+    "finish_reason": "stop",
+    "usage": {
+     "prompt_tokens": 51,
+     "total_tokens": 133,
+     "completion_tokens": 82,
+     "prompt_tokens_details": null,
+     "reasoning_tokens": 4
+    }
+   },
+   {
+    "id": "rs-6x7-medium-json",
+    "family": "reasoning",
+    "checks": {},
+    "error": "ConnectionResetError(104, 'Connection reset by peer')",
+    "content_head": "",
+    "finish_reason": null,
+    "usage": null
+   },
+   {
+    "id": "rs-6x7-high-json",
+    "family": "reasoning",
+    "checks": {},
+    "error": "ConnectionResetError(104, 'Connection reset by peer')",
+    "content_head": "",
+    "finish_reason": null,
+    "usage": null
+   },
+   {
+    "id": "sd-json300-1024",
+    "family": "structured_decode",
+    "checks": {},
+    "error": "ConnectionResetError(104, 'Connection reset by peer')",
+    "content_head": "",
+    "finish_reason": null,
+    "usage": null
+   },
+   {
+    "id": "rl-audit3-4096",
+    "family": "retrieval_long_context",
+    "checks": {},
+    "error": "ConnectionResetError(104, 'Connection reset by peer')",
+    "content_head": "",
+    "finish_reason": null,
+    "usage": null
+   },
+   {
+    "id": "gn-tips240-4096",
+    "family": "generation",
+    "checks": {},
+    "error": "ConnectionResetError(104, 'Connection reset by peer')",
+    "content_head": "",
+    "finish_reason": null,
+    "usage": null
+   },
+   {
+    "id": "sd-json300-4096",
+    "family": "structured_decode",
+    "checks": {},
+    "error": "ConnectionResetError(104, 'Connection reset by peer')",
+    "content_head": "",
+    "finish_reason": null,
+    "usage": null
+   },
+   {
+    "id": "gn-tips240-16384",
+    "family": "generation",
+    "checks": {},
+    "error": "ConnectionResetError(104, 'Connection reset by peer')",
+    "content_head": "",
+    "finish_reason": null,
+    "usage": null
+   },
+   {
+    "id": "rl-audit3-65536",
+    "family": "retrieval_long_context",
+    "checks": {},
+    "error": "ConnectionResetError(104, 'Connection reset by peer')",
+    "content_head": "",
+    "finish_reason": null,
+    "usage": null
+   },
+   {
+    "id": "gn-tips240-65536",
+    "family": "generation",
+    "checks": {},
+    "error": "ConnectionResetError(104, 'Connection reset by peer')",
+    "content_head": "",
+    "finish_reason": null,
+    "usage": null
+   },
+   {
+    "id": "sd-json300-131072",
+    "family": "structured_decode",
+    "checks": {},
+    "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))",
+    "content_head": "",
+    "finish_reason": null,
+    "usage": null
+   },
+   {
+    "id": "rl-audit3-131072",
+    "family": "retrieval_long_context",
+    "checks": {},
+    "error": "ConnectionResetError(104, 'Connection reset by peer')",
+    "content_head": "",
+    "finish_reason": null,
+    "usage": null
+   },
+   {
+    "id": "gn-tips240-131072",
+    "family": "generation",
+    "checks": {},
+    "error": "ConnectionResetError(104, 'Connection reset by peer')",
+    "content_head": "",
+    "finish_reason": null,
+    "usage": null
+   },
+   {
+    "id": "sd-json300-200000",
+    "family": "structured_decode",
+    "checks": {},
+    "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))",
+    "content_head": "",
+    "finish_reason": null,
+    "usage": null
+   },
+   {
+    "id": "rl-audit3-262016",
+    "family": "retrieval_long_context",
+    "checks": {},
+    "error": "ConnectionResetError(104, 'Connection reset by peer')",
+    "content_head": "",
+    "finish_reason": null,
+    "usage": null
+   },
+   {
+    "id": "rl-registry4-262016",
+    "family": "retrieval_long_context",
+    "checks": {},
+    "error": "ConnectionResetError(104, 'Connection reset by peer')",
+    "content_head": "",
+    "finish_reason": null,
+    "usage": null
+   }
+  ],
+  "runtime_notes": {
+   "runtime": "SGLang serve4 (exl3_plain overlay), not the vLLM runtime the harnesses were written for",
+   "idle_proof": "SGLang has no vllm:num_requests_* gauges (metrics disabled); idle proven via /get_load num_reqs==0 and num_waiting_reqs==0 before and after each request",
+   "cold_cache": "/flush_cache called before every sample; usage.prompt_tokens_details.cached_tokens recorded",
+   "token_ids": "return_token_ids not requested; every scorer here compares content, as the pinned scorers do",
+   "order": "cheapest samples first (structured/reasoning/behaviour, then by prompt length); scoring is order-independent",
+   "behaviour_max_tokens": "behavior_acceptance.py sends no max_tokens (vLLM default = remaining context); 4096 used here so thinking cannot be cut by SGLang's default"
+  }
+ }
+}

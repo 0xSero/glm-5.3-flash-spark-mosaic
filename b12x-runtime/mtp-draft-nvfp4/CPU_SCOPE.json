@@ -1,0 +1,15 @@
+{
+  "state": "CPU_SCOPE_PASS_GPU_EXECUTION_UNTESTED",
+  "native_source_draft_only": true,
+  "target_and_protected_paths_preserved": true,
+  "geometry_platform_activation_guards_pass": true,
+  "copied_backend_config": true,
+  "backend_selection_mocked": true,
+  "cuda_initialized": false,
+  "sha256": {
+    "cpu-scope.log": "a16288bf8976aa9d63ff78c5267daab20bcc7ed1c0c83814700f945e841fec75",
+    "cpu_scope.py": "778b2f99eb75cea49a6387f16d35ccd06ab71ee60453a4ee8dd9c648e25f22d5",
+    "policy.py": "2ffeb6091bcd8cfe359fd035056e3218abde3c980cee9127fecc7fe464993f6d",
+    "cpu-inspect.json": "d20ac808035329ceb1e1b47a5c2bc41fcc41174a6bc2099db36ed12e7bc43f02"
+  }
+}

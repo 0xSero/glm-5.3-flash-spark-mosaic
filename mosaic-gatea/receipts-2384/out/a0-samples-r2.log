@@ -1,0 +1,105 @@
+A0_SAMPLES_R2_START 2026-09-16T21:54:33Z
+poll 1 health=000 2026-09-16T21:54:33Z
+poll 2 health=000 2026-09-16T21:55:03Z
+poll 3 health=000 2026-09-16T21:55:33Z
+poll 4 health=000 2026-09-16T21:56:04Z
+poll 5 health=000 2026-09-16T21:56:34Z
+poll 6 health=000 2026-09-16T21:57:04Z
+poll 7 health=000 2026-09-16T21:57:34Z
+poll 8 health=000 2026-09-16T21:58:04Z
+poll 9 health=000 2026-09-16T21:58:34Z
+poll 10 health=000 2026-09-16T21:59:04Z
+poll 11 health=000 2026-09-16T21:59:34Z
+poll 12 health=000 2026-09-16T22:00:04Z
+poll 13 health=503 2026-09-16T22:00:34Z
+poll 14 health=200 2026-09-16T22:01:05Z
+### samples 2026-09-16T22:01:05Z
+/sgl-workspace/sglang/python/sglang/srt/layers/quantization/awq/awq.py:53: UserWarning: Only CUDA, HIP and XPU support AWQ currently.
+  warnings.warn(f"Only CUDA, HIP and XPU support AWQ currently.")
+/sgl-workspace/sglang/python/sglang/srt/layers/quantization/gguf.py:69: UserWarning: Only CUDA, MUSA and NPU support GGUF quantization currently.
+  warnings.warn(f"Only CUDA, MUSA and NPU support GGUF quantization currently.")
+[samples] sd-toolcall-weather ...
+[samples] sd-toolcall-weather: PASS {'finish_reason_stop': False, 'finish_reason_in': True, 'tool_calls_count': True, 'function_name': True, 'arguments_json_equals': True} 
+[samples] gn-behavior-chinese ...
+[samples] gn-behavior-chinese: PASS {'finish_reason_stop': True, 'content_equals': True} 
+[samples] rs-6x7-low-text ...
+[samples] rs-6x7-low-text: PASS {'finish_reason_stop': True, 'content_json_equals': True} 
+[samples] rs-6x7-medium-text ...
+[samples] rs-6x7-medium-text: PASS {'finish_reason_stop': True, 'content_json_equals': True} 
+[samples] rs-6x7-high-text ...
+[samples] rs-6x7-high-text: FAIL {'finish_reason_stop': True, 'content_json_equals': False} 
+[samples] rs-6x7-medium-json ...
+[samples] rs-6x7-medium-json: PASS {'finish_reason_stop': True, 'content_json_equals': True} 
+[samples] rs-6x7-high-json ...
+[samples] rs-6x7-high-json: PASS {'finish_reason_stop': True, 'content_json_equals': True} 
+[samples] sd-json300-1024 ...
+[samples] sd-json300-1024: PASS {'finish_reason_stop': True, 'content_json_equals': True, 'all_integers_type_int': True, 'prompt_tokens_equals_actual': True, 'server_idle_before_and_after': True} 
+[samples] rl-audit3-4096 ...
+[samples] rl-audit3-4096: PASS {'finish_reason_stop': True, 'content_json_equals': True, 'prompt_tokens_equals_target': True, 'cached_tokens_in': True} 
+[samples] gn-tips240-4096 ...
+[samples] gn-tips240-4096: FAIL {'server_tokenization_matches_local': True, 'finish_reason_stop': False, 'content_lines_starting_with_hash': False, 'lines_numbered_1_to_240_in_order': False, 'distinct_lines': True} 
+[samples] sd-json300-4096 ...
+[samples] sd-json300-4096: PASS {'finish_reason_stop': True, 'content_json_equals': True, 'all_integers_type_int': True, 'prompt_tokens_equals_actual': True, 'server_idle_before_and_after': True} 
+[samples] gn-tips240-16384 ...
+[samples] gn-tips240-16384: FAIL {'server_tokenization_matches_local': True, 'finish_reason_stop': False, 'content_lines_starting_with_hash': False, 'lines_numbered_1_to_240_in_order': False, 'distinct_lines': True} 
+[samples] rl-audit3-65536 ...
+[samples] rl-audit3-65536: PASS {'finish_reason_stop': True, 'content_json_equals': True, 'prompt_tokens_equals_target': True, 'cached_tokens_in': True} 
+[samples] gn-tips240-65536 ...
+[samples] gn-tips240-65536: FAIL {'server_tokenization_matches_local': True, 'finish_reason_stop': False, 'content_lines_starting_with_hash': False, 'lines_numbered_1_to_240_in_order': False, 'distinct_lines': True} 
+[samples] sd-json300-131072 ...
+[samples] sd-json300-131072: PASS {'finish_reason_stop': True, 'content_json_equals': True, 'all_integers_type_int': True, 'prompt_tokens_equals_actual': True, 'server_idle_before_and_after': True} 
+[samples] rl-audit3-131072 ...
+[samples] rl-audit3-131072: PASS {'finish_reason_stop': True, 'content_json_equals': True, 'prompt_tokens_equals_target': True, 'cached_tokens_in': True} 
+[samples] gn-tips240-131072 ...
+[samples] gn-tips240-131072: FAIL {'server_tokenization_matches_local': True, 'finish_reason_stop': False, 'content_lines_starting_with_hash': False, 'lines_numbered_1_to_240_in_order': False, 'distinct_lines': True} 
+[samples] sd-json300-200000 ...
+[samples] sd-json300-200000: PASS {'finish_reason_stop': True, 'content_json_equals': True, 'all_integers_type_int': True, 'prompt_tokens_equals_actual': True, 'server_idle_before_and_after': True} 
+[samples] rl-audit3-262016 ...
+[samples] rl-audit3-262016: PASS {'finish_reason_stop': True, 'content_json_equals': True, 'prompt_tokens_equals_target': True, 'cached_tokens_in': True} 
+[samples] rl-registry4-262016 ...
+[samples] rl-registry4-262016: PASS {'server_tokenization_matches_local': True, 'finish_reason_stop': True, 'content_json_equals': True, 'context_accounting': True, 'cached_tokens_in': True, 'idle_after': True} 
+{
+ "passes": 15,
+ "scored": 20,
+ "of": 20,
+ "score": 0.75,
+ "per_family": {
+  "structured_decode": "5/5",
+  "generation": "1/5",
+  "reasoning": "4/5",
+  "retrieval_long_context": "5/5"
+ },
+ "scoring_rule": {
+  "per_sample": "binary pass/fail per expected_behavior + scorer",
+  "score(point)": "passes / 20",
+  "retention": "score(point) / score(denominator); denominators per CAMPAIGN-12H section 4.4 (A1 vs A0; A2d/A2/controls vs A0, labelled)",
+  "per_family_breakdown": "report passes per family (5 each) alongside the total; families are not weighted",
+  "runtime": "each sample is one isolated C1 request on the digest-pinned image, server idle before/after, cold prefix cache, temperature 0",
+  "output_reserve_note": "output_reserve_tokens are the existing harness context-accounting reserves, unchanged; every expected answer completes with finish_reason=stop well inside them"
+ }
+}
+a0-full samples r2 exit=0
+### summary r2 2026-09-16T23:05:23Z
+/sgl-workspace/sglang/python/sglang/srt/layers/quantization/awq/awq.py:53: UserWarning: Only CUDA, HIP and XPU support AWQ currently.
+  warnings.warn(f"Only CUDA, HIP and XPU support AWQ currently.")
+/sgl-workspace/sglang/python/sglang/srt/layers/quantization/gguf.py:69: UserWarning: Only CUDA, MUSA and NPU support GGUF quantization currently.
+  warnings.warn(f"Only CUDA, MUSA and NPU support GGUF quantization currently.")
+{
+ "panel_row": {
+  "top1_agreement": 0.7890205178309722,
+  "mean_kl_lower_bound": 0.3837756141796914,
+  "candidate_ppl": 4.286921219375921
+ },
+ "samples": {
+  "score": 0.75,
+  "passes": 15,
+  "per_family": {
+   "structured_decode": "5/5",
+   "generation": "1/5",
+   "reasoning": "4/5",
+   "retrieval_long_context": "5/5"
+  }
+ }
+}
+a0-full summary r2 exit=0
+A0_SAMPLES_R2_DONE 2026-09-16T23:05:28Z

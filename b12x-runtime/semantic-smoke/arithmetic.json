@@ -1,0 +1,42 @@
+{
+  "id": "chatcmpl-82eb3cc7479fbf3b",
+  "object": "chat.completion",
+  "created": 1789163885,
+  "model": "glm-5.3-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "42",
+        "refusal": null,
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "reasoning": "The user asks: What is 6 multiplied by 7? Reply with only the final integer.\n\n6 \u00d7 7 = 42.\n\nThey want only the final integer, so I should reply with just \"42\"."
+      },
+      "logprobs": null,
+      "finish_reason": "stop",
+      "stop_reason": 154827,
+      "token_ids": null,
+      "routed_experts": null
+    }
+  ],
+  "service_tier": null,
+  "system_fingerprint": "vllm-0.1.dev1+g3aada6772.d20260911-90ae695f",
+  "usage": {
+    "prompt_tokens": 28,
+    "total_tokens": 75,
+    "completion_tokens": 47,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": {
+      "reasoning_tokens": 44
+    }
+  },
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "prompt_text": null,
+  "kv_transfer_params": null,
+  "ec_transfer_params": null,
+  "metrics": null
+}

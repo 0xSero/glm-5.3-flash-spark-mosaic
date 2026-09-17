@@ -1,0 +1,8 @@
+{
+  "state": "ROOT_RELEASED_FULL288_SPARSE_GPU_PROOF",
+  "quality_terminal_receipt_sha256": "2ef4b8e3c9377be764b8f228cc67f8b5c6b7f5d763b07134418846ef2bb1743c",
+  "quality_container": "5a05e4c446649000a1e38b86572e2bf19820e6cf12f129b22e023903ddb9151e",
+  "owner": "/root",
+  "cpu_container": "glm53-full288-sparse-cpu2",
+  "scope": "Bounded full288 MoE reference and graph proof only; no target or KV; no serving or speed claim"
+}

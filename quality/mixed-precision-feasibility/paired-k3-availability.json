@@ -1,0 +1,1137 @@
+{
+  "source_root": "/home/sero/glm53-tr3/release-tr3-3bpw",
+  "status": {
+    "assembled_claim": false,
+    "brandonmusic_glm53_artifacts_used": false,
+    "conversion_gpu_ids": [
+      0,
+      1
+    ],
+    "expert_limit": 288,
+    "hessian_capture_claim": true,
+    "integer_k": 3,
+    "last_layer": 44,
+    "mit_core_sha256": "e9a85a47e165c8d8644354cef611efbb81dfd9ba88544ca59f0c80ee6bc75032",
+    "mit_upstream_commit": "f79c9167690ca705e877ae4dc55a841d1aae1247",
+    "next_gate": "local_assembly",
+    "q3_encoding_claim": true,
+    "quality_claim": false,
+    "quantization_method": "glm53-mit-lineage-tr3-v31",
+    "raw_private_content_publication": false,
+    "release": true,
+    "rows": 600,
+    "runtime_claim": false,
+    "session_calibration_manifest_sha256": "77393cc1862c069d1d770887b8c83f0ba5aab4b8dfdd7cb18447dbb621c2c80e",
+    "session_calibration_tokens_sha256": "479581ca7bebb14bc4b41d375cd74e66cab40a58a0662efd297c41566543bbad",
+    "session_calibration_verification_sha256": "291250dea453739f1f1a9f0ab69d6a3c49c4dcc459b580eb850449b1291249c9",
+    "source_manifest_sha256": "81785e43481601c4e5cd53ce05658a40c452a96201140de6e2b13002c70a874c",
+    "state": "ENCODE_COMPLETE",
+    "tensor_parallel_size": 4,
+    "updated_at": "2026-08-30T09:16:49.045571+00:00"
+  },
+  "status_sha256": "4a4402ab7b47f91145db841ce0105b54c3f7fcc3663a110fa712ceb85d5d1f0f",
+  "independent_audit_exists": true,
+  "independent_audit": {
+    "auditor_sha256": "746bd0035563d58342cdb6f59c6c3b6a31fe3dc39cbfb9b70a2044791c6dde07",
+    "encoded_status_sha256": "4a4402ab7b47f91145db841ce0105b54c3f7fcc3663a110fa712ceb85d5d1f0f",
+    "layers": [
+      {
+        "bytes": 1518,
+        "layer": 3,
+        "path": "independent-audits/layer-03.json",
+        "sha256": "617f46c6405a947bbbceb9dbb43cd8c2a0dafd928098e9b899ab061ae370cd9e"
+      },
+      {
+        "bytes": 1519,
+        "layer": 4,
+        "path": "independent-audits/layer-04.json",
+        "sha256": "d2d9cd956c3ed2c8b6dc22819137f0e38a16e991e70f24d7eba7bc979011526c"
+      },
+      {
+        "bytes": 1519,
+        "layer": 5,
+        "path": "independent-audits/layer-05.json",
+        "sha256": "4d0c472482a2875fc4d8929072ab1628fba944628032d3da1e295f5c0a0d4f82"
+      },
+      {
+        "bytes": 1517,
+        "layer": 6,
+        "path": "independent-audits/layer-06.json",
+        "sha256": "bfa6de71341d581bbbe1c04c5f0a0df5868d62825ab416b7db04be340b4d8bc9"
+      },
+      {
+        "bytes": 1518,
+        "layer": 7,
+        "path": "independent-audits/layer-07.json",
+        "sha256": "00abb64438d670ce91ad33e429d8ab57e322390f0a66e04994f3be548df6ace4"
+      },
+      {
+        "bytes": 1520,
+        "layer": 8,
+        "path": "independent-audits/layer-08.json",
+        "sha256": "0459a7b4b5893fd19ae92f3b5b07951686875d57c3b38064f6e2f4721095de4d"
+      },
+      {
+        "bytes": 1520,
+        "layer": 9,
+        "path": "independent-audits/layer-09.json",
+        "sha256": "b1bce88615d2d9972a13b1378717b4595e1ec9fad9d79ebc5a3ab966b78980e6"
+      },
+      {
+        "bytes": 1519,
+        "layer": 10,
+        "path": "independent-audits/layer-10.json",
+        "sha256": "e99288cd8d3552cd2efb55cba8321b7409777aee073475f91330be458b4d8549"
+      },
+      {
+        "bytes": 1520,
+        "layer": 11,
+        "path": "independent-audits/layer-11.json",
+        "sha256": "774b29d06a22ae3a016e49fb315afcfb7919f9437a445c0c32baa9a00da47ed2"
+      },
+      {
+        "bytes": 1519,
+        "layer": 12,
+        "path": "independent-audits/layer-12.json",
+        "sha256": "77eb1c3456acced1bc113df534ca6cb4fa2d9bc1ec59573c6fcce7bdf8a2e1cf"
+      },
+      {
+        "bytes": 1520,
+        "layer": 13,
+        "path": "independent-audits/layer-13.json",
+        "sha256": "72b9f550b07d834b12e438df6df897c3ccb6d8aeae21970976ea6c3bd0d0e730"
+      },
+      {
+        "bytes": 1521,
+        "layer": 14,
+        "path": "independent-audits/layer-14.json",
+        "sha256": "fc5f87a84024a8f21b08b262992962ddcf4c077eddc4f9dd8294502f4299264d"
+      },
+      {
+        "bytes": 1519,
+        "layer": 15,
+        "path": "independent-audits/layer-15.json",
+        "sha256": "2b7b8f217f642f11d2f38ef540e2dcd28770393e48098c822e76649dad613a7c"
+      },
+      {
+        "bytes": 1518,
+        "layer": 16,
+        "path": "independent-audits/layer-16.json",
+        "sha256": "407f0583ca38e978ce2049910c09442f4a74acbb3bad1b2d9af05b60228b9055"
+      },
+      {
+        "bytes": 1519,
+        "layer": 17,
+        "path": "independent-audits/layer-17.json",
+        "sha256": "58bc360b00d4088308cbb42a62ec082c97612a08416830c3ba6cca0b1b21016a"
+      },
+      {
+        "bytes": 1519,
+        "layer": 18,
+        "path": "independent-audits/layer-18.json",
+        "sha256": "6daa10b7cc99fda274abe179ae47a86f3de68a3cb3fd135277bdcf9486de4273"
+      },
+      {
+        "bytes": 1520,
+        "layer": 19,
+        "path": "independent-audits/layer-19.json",
+        "sha256": "fa9049c1dc39be58646229bd921da976bec660efb15ac6eef08781cfba6aa63b"
+      },
+      {
+        "bytes": 1519,
+        "layer": 20,
+        "path": "independent-audits/layer-20.json",
+        "sha256": "972d0af09d28a3d77e2e29644aa13cafc097c12340c8a68d388eb7853a050fe7"
+      },
+      {
+        "bytes": 1519,
+        "layer": 21,
+        "path": "independent-audits/layer-21.json",
+        "sha256": "7605b56a7d29ade73029419d05769c1260ceda0424595c50b20660bc418fb96d"
+      },
+      {
+        "bytes": 1520,
+        "layer": 22,
+        "path": "independent-audits/layer-22.json",
+        "sha256": "eaead363c963d0552ab2809d20bf21fd5e2f4a3b7e86f28c5e2b61f49de7678c"
+      },
+      {
+        "bytes": 1518,
+        "layer": 23,
+        "path": "independent-audits/layer-23.json",
+        "sha256": "2c96b88fd8ca07f2d09e329de6941918cb65b3ed164d4654565a7385295edfec"
+      },
+      {
+        "bytes": 1519,
+        "layer": 24,
+        "path": "independent-audits/layer-24.json",
+        "sha256": "438542a9ed05905578390d72d7858cf74b8334f61cba480a9a818160da69e735"
+      },
+      {
+        "bytes": 1519,
+        "layer": 25,
+        "path": "independent-audits/layer-25.json",
+        "sha256": "3e7f724f1594649220bd33ee45c1a78d911f51351eae7bae1c7e271a65704872"
+      },
+      {
+        "bytes": 1519,
+        "layer": 26,
+        "path": "independent-audits/layer-26.json",
+        "sha256": "b688fb40f177d7fbe9c26fc42e685c80eb25d9b7dee64b886ac65da49f45e62f"
+      },
+      {
+        "bytes": 1520,
+        "layer": 27,
+        "path": "independent-audits/layer-27.json",
+        "sha256": "ef040ebf4d236c9f0a7599ce2dbd14e189c25886968543120337922b3836a13d"
+      },
+      {
+        "bytes": 1520,
+        "layer": 28,
+        "path": "independent-audits/layer-28.json",
+        "sha256": "2902ddd90c68c6767167c8a0f862abcf92b4a298a86ea4a2a0c33a0abe8a4c07"
+      },
+      {
+        "bytes": 1519,
+        "layer": 29,
+        "path": "independent-audits/layer-29.json",
+        "sha256": "986665ef82c1a7401653e5af03fc205bad6b2244571abdb7e9a14734eda97649"
+      },
+      {
+        "bytes": 1517,
+        "layer": 30,
+        "path": "independent-audits/layer-30.json",
+        "sha256": "955ef44dc0cf1f1e5c16fcf5313656af28bf2679c5415ef07d53aadb87768d5a"
+      },
+      {
+        "bytes": 1521,
+        "layer": 31,
+        "path": "independent-audits/layer-31.json",
+        "sha256": "a2c86cfb9aa93709db4c694304334ad55e239d9eab62df59cd76efe74e698f7b"
+      },
+      {
+        "bytes": 1521,
+        "layer": 32,
+        "path": "independent-audits/layer-32.json",
+        "sha256": "92a97625a189d2ba6de103728f823fe4491f61c29580453c9fb1be8be0334f78"
+      },
+      {
+        "bytes": 1520,
+        "layer": 33,
+        "path": "independent-audits/layer-33.json",
+        "sha256": "d3cafdf61c4edaacd0630eedbd4bb9de4e076dc1e0d2d383792282d2f27112f0"
+      },
+      {
+        "bytes": 1518,
+        "layer": 34,
+        "path": "independent-audits/layer-34.json",
+        "sha256": "0d5d31b8c40e1bbb796374caa487970d609dfff4f2d04526bd0231483c7193e7"
+      },
+      {
+        "bytes": 1520,
+        "layer": 35,
+        "path": "independent-audits/layer-35.json",
+        "sha256": "f5032251810f9e2af0baa8af8b4aa076d91a57efc9a5648c1b84d807ce1c4b93"
+      },
+      {
+        "bytes": 1518,
+        "layer": 36,
+        "path": "independent-audits/layer-36.json",
+        "sha256": "258c2373cf8fb5d2435727496f8ae5e15aef37432529bf82cbc69d8de71ac6c6"
+      },
+      {
+        "bytes": 1520,
+        "layer": 37,
+        "path": "independent-audits/layer-37.json",
+        "sha256": "1715849baeba529b9c16e382fdb4c9b4cd9f77e6a94c73b34d9192e545272062"
+      },
+      {
+        "bytes": 1520,
+        "layer": 38,
+        "path": "independent-audits/layer-38.json",
+        "sha256": "5dface9c960ee39e0deac323b53fe9db746014b9a943129ac02c217311558d2f"
+      },
+      {
+        "bytes": 1521,
+        "layer": 39,
+        "path": "independent-audits/layer-39.json",
+        "sha256": "f45cb11fa74e0acae489a40c6fcbc2c10805242c4fdb385672197db61c94ce53"
+      },
+      {
+        "bytes": 1520,
+        "layer": 40,
+        "path": "independent-audits/layer-40.json",
+        "sha256": "4d6673dc304328f1f00fcb1a31962c23f992aaf549b6902adee56199640013d0"
+      },
+      {
+        "bytes": 1521,
+        "layer": 41,
+        "path": "independent-audits/layer-41.json",
+        "sha256": "d8cba32cdc08db2a7d6193dca96d08b7d0bb49f51e4193415c00de34c88944f6"
+      },
+      {
+        "bytes": 1521,
+        "layer": 42,
+        "path": "independent-audits/layer-42.json",
+        "sha256": "cffa42ddb5554dc7b4f021f37f7e091a1d93b1552b9fd90c28af794cfad3ce76"
+      },
+      {
+        "bytes": 1519,
+        "layer": 43,
+        "path": "independent-audits/layer-43.json",
+        "sha256": "d1e14d716beb0cc87a403e0da77d62199ac3383d0b2ace2cc7c92241b754b52c"
+      },
+      {
+        "bytes": 1520,
+        "layer": 44,
+        "path": "independent-audits/layer-44.json",
+        "sha256": "86eb3f8133c72983e13d6d899846b421a474e7f09474cc84e872d144980f3e2b"
+      }
+    ],
+    "schema": "glm53-independent-tr3-layer-audit-manifest-v1",
+    "sealed_at": "2026-08-30T09:19:28.416993+00:00",
+    "state": "PASS"
+  },
+  "parts": [
+    {
+      "layer": 3,
+      "gpu": 0,
+      "sidecar_sha256": "4c87062139d7e76871622e7d8a70924ef6c60fbf8f0e104dacddfa6ca8aa30b2",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-03-part-0.safetensors",
+      "declared_bytes": 1375797552,
+      "declared_sha256": "ddc3307532e956d1f61c2c3253420dfb454b95c1310a8c34f4a263e524c060a8",
+      "exists": true,
+      "observed_bytes": 1375797552
+    },
+    {
+      "layer": 3,
+      "gpu": 1,
+      "sidecar_sha256": "c9df0ee75ec56ef46b79db05bca8db055fc29818ca9a4393e45590250d7de953",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-03-part-1.safetensors",
+      "declared_bytes": 1375797552,
+      "declared_sha256": "2a547e9680aa85d932af9aa0aa894a5243a73bde9431702401dca2c5bb6bc468",
+      "exists": true,
+      "observed_bytes": 1375797552
+    },
+    {
+      "layer": 4,
+      "gpu": 0,
+      "sidecar_sha256": "fbecda488531c0af8fa4bfc42240f855967393a9a48b762598cc48c9494a3fe3",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-04-part-0.safetensors",
+      "declared_bytes": 1375797552,
+      "declared_sha256": "f3187ef50250d5876d2a56954708abc8af0c2ed24d44893c464384bbc1dd34a4",
+      "exists": true,
+      "observed_bytes": 1375797552
+    },
+    {
+      "layer": 4,
+      "gpu": 1,
+      "sidecar_sha256": "c3dbd6545de0da5fa1289017f905a4b1c3bfd299e34af094424a33dc883e2099",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-04-part-1.safetensors",
+      "declared_bytes": 1375797552,
+      "declared_sha256": "9cda9036c00c5af9a77bbc2e917e0fc991259924beb15e1da647c444bd83ead0",
+      "exists": true,
+      "observed_bytes": 1375797552
+    },
+    {
+      "layer": 5,
+      "gpu": 0,
+      "sidecar_sha256": "1bf6807d1c2ab334b74e98af67ee479d07539938626f2ce03d33459bfe9f347a",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-05-part-0.safetensors",
+      "declared_bytes": 1375797552,
+      "declared_sha256": "63c39d8e82ae9605231af316a0a4ab111febb913959dfb73813a3a6746c7348b",
+      "exists": true,
+      "observed_bytes": 1375797552
+    },
+    {
+      "layer": 5,
+      "gpu": 1,
+      "sidecar_sha256": "f904eb6f77cb85aec7e567160a29aaa2003d0bf0b48f918bded8fbde7c6911c6",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-05-part-1.safetensors",
+      "declared_bytes": 1375797552,
+      "declared_sha256": "0a7d0df90201734793f8fd50bf6a198ea5a15114b538abf3b8b8872c2f80b3af",
+      "exists": true,
+      "observed_bytes": 1375797552
+    },
+    {
+      "layer": 6,
+      "gpu": 0,
+      "sidecar_sha256": "663ed4db1fa0720209f7e49fa4d79539fb2ce4485786afb387ed7e65b45673c0",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-06-part-0.safetensors",
+      "declared_bytes": 1375797552,
+      "declared_sha256": "3502da43719ec02a613fe2182c7eca225cfc3ba9274ff9b003e4326d2d951005",
+      "exists": true,
+      "observed_bytes": 1375797552
+    },
+    {
+      "layer": 6,
+      "gpu": 1,
+      "sidecar_sha256": "58454619a3999419caa77bfb7093967a5985352c870cf81641ec16ae4cf46562",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-06-part-1.safetensors",
+      "declared_bytes": 1375797552,
+      "declared_sha256": "63f7f21d04bb8945dab5cbddedd62ce527e9a85bb655e435482242359f9fc232",
+      "exists": true,
+      "observed_bytes": 1375797552
+    },
+    {
+      "layer": 7,
+      "gpu": 0,
+      "sidecar_sha256": "534e3374f9d787709817919be77a7b20a3ccb74b3d94a99f21b91b78aaf8046a",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-07-part-0.safetensors",
+      "declared_bytes": 1375797552,
+      "declared_sha256": "d4e3d987a1b209595d089a260df1f92f2cc50e970beac04abaef9efb0ddd2249",
+      "exists": true,
+      "observed_bytes": 1375797552
+    },
+    {
+      "layer": 7,
+      "gpu": 1,
+      "sidecar_sha256": "469abe8fb4af05a81489f7096c3ef736ee0b8d89561c971fa66cb1fe075f3424",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-07-part-1.safetensors",
+      "declared_bytes": 1375797552,
+      "declared_sha256": "51c37036720952acdb93686bcc2b360df0af9fa66be9cf431c97493121421d66",
+      "exists": true,
+      "observed_bytes": 1375797552
+    },
+    {
+      "layer": 8,
+      "gpu": 0,
+      "sidecar_sha256": "bd782ccdaf4961b8b80ec8e4419fd088ded2406947990cf38365a0a10ecba9fe",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-08-part-0.safetensors",
+      "declared_bytes": 1375797552,
+      "declared_sha256": "9c0f4e8d1e48946df2554b018967acfc8c367df3bc36887c14c80af5cc985883",
+      "exists": true,
+      "observed_bytes": 1375797552
+    },
+    {
+      "layer": 8,
+      "gpu": 1,
+      "sidecar_sha256": "49d6b3b0e8660a0df77b8b7700689c81348f6168ad977dd7facd0c435cd0857d",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-08-part-1.safetensors",
+      "declared_bytes": 1375797552,
+      "declared_sha256": "b9b001dcc88cd91c5c5ac3c6b96ccfd37a7ae7521bcfd93b29bbea50f068d684",
+      "exists": true,
+      "observed_bytes": 1375797552
+    },
+    {
+      "layer": 9,
+      "gpu": 0,
+      "sidecar_sha256": "c3c87a2a6b56befa2db2e14426a1dfff2c4497e8c61ab65f241be8807b0a158b",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-09-part-0.safetensors",
+      "declared_bytes": 1375797552,
+      "declared_sha256": "66a03cd5315049ca9d88cdd67a6116ab9373dec45d7466136af78f367523d1aa",
+      "exists": true,
+      "observed_bytes": 1375797552
+    },
+    {
+      "layer": 9,
+      "gpu": 1,
+      "sidecar_sha256": "c9056169470d02fb37a4ee3284a75468af7fbe2297c4713022a910247a5684c2",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-09-part-1.safetensors",
+      "declared_bytes": 1375797552,
+      "declared_sha256": "da7285c75035432ef5d5584efab3a875a1f9460eb207e1588cfbc24ecb4fd802",
+      "exists": true,
+      "observed_bytes": 1375797552
+    },
+    {
+      "layer": 10,
+      "gpu": 0,
+      "sidecar_sha256": "01373d0851b1b3039245e41b42971af0a6e8b20736a4729e97f4d8fdaefe38c8",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-10-part-0.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "de5dc452a24120191bf9a6b6590771c0fa35bacec17fe15d932b1ccee3f68b3d",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 10,
+      "gpu": 1,
+      "sidecar_sha256": "8f2f28d67fb0c2de698fd59deb5339d8344a851de0f631df4b096ad1260fcc0e",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-10-part-1.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "ae276eca43ec175ca30296440a3fece5c275458ddb76d8ed6e101ba4a9406641",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 11,
+      "gpu": 0,
+      "sidecar_sha256": "8a0d9719b8ac6d81f5648b92a43a3fbaa785089bf186a2f592097ef6d444c71e",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-11-part-0.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "133cc0eb45b461af66c65c6b439e06b4c2ff26ad66202803e269138a04043de4",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 11,
+      "gpu": 1,
+      "sidecar_sha256": "5e3a03da734a7ab158cf56da3cc33258ab540f3933c4def4006eaa0f41bac5e7",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-11-part-1.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "891c525803be038bd43a8c37639dd313795a945db5a37ded12677af29e211e2f",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 12,
+      "gpu": 0,
+      "sidecar_sha256": "c3e892ef9c8efe2513d7104b58c1033e173a0e537fd17979f7ff9a47f28ee8fd",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-12-part-0.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "f70f63de0ceccb876ae9c53507e192d030eb846366297bec9a2150d17ba1a8b4",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 12,
+      "gpu": 1,
+      "sidecar_sha256": "b23e24b61878635c4fd5ae101c73d613fa956555efc60b611a66ef2d75797297",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-12-part-1.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "1299c43ca15b4ab051e43b9b9773b094780c0bec6190444821efea09ed188747",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 13,
+      "gpu": 0,
+      "sidecar_sha256": "27452532b279e9303d2f3ee51690e4e173cbbdfe6983acd43093c59c008a8e3c",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-13-part-0.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "2b69bef8cb77788def9fdeb891a1ec913eecf722ab1579282e8ca95b525b7630",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 13,
+      "gpu": 1,
+      "sidecar_sha256": "7f0e3ce1504ca27989105c2a3a8554880da076b9311a8feb87722ded079fd5c4",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-13-part-1.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "65249cb4175bcf20afad98686626ef2f86d406ffef5461a2af29bc4cf31aad1a",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 14,
+      "gpu": 0,
+      "sidecar_sha256": "cd8aefcb6c684e6ab0ca15822ebc358eafd15dd9582a489d0d581fb44b7e62c5",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-14-part-0.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "830d935d6689036a8629a268425a607a82dee615c47936d9496c314b34d57053",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 14,
+      "gpu": 1,
+      "sidecar_sha256": "8abae091cd76fcd87a897a9f18a297a6b5e8c1209137559cc1f56a95cd77b17f",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-14-part-1.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "60cd232f8df059634760b84e22a1d4df4544ea9ecbede0aadcc89474b57cfbd2",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 15,
+      "gpu": 0,
+      "sidecar_sha256": "7339e7dc3762026588c6226ff85c33dcfaeab8ddceed33c3902c52e0f2dce7ed",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-15-part-0.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "734532246db271b1a232ac6c0d23dfb53a95fe5c0e9e5bf5a045464dd0045738",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 15,
+      "gpu": 1,
+      "sidecar_sha256": "5893ccf897e3156dcfe42de3e800995b0569b0335f87d7014aa4345b94d70535",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-15-part-1.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "b36527ee8884797a0802d0919d12eee4008231270aaa03c619caacc14cbfe7cd",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 16,
+      "gpu": 0,
+      "sidecar_sha256": "764f530864c7926a9c9ffeb8d31fae1638de2e6d8718e756996526ff632a5055",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-16-part-0.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "c48c5992fa617301e84ac456688d8069c2338be16e247cf66780ab7f2143f21b",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 16,
+      "gpu": 1,
+      "sidecar_sha256": "251627903a912ad4df7661006301c8de82e404e0045a32d6322cd48da79c000e",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-16-part-1.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "61b7a0e0a92daec8e8458cc423e8ef3d7a2940efd3c5993bb14f633ab8bb623b",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 17,
+      "gpu": 0,
+      "sidecar_sha256": "0e3f02674a35795057eb79c58c9b37844cf45ad6c0ad09f0e84d7f0f4705b3bb",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-17-part-0.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "a97eb36a46ba59fea650f3840eaa557a237eca633a4076f8a2b29d505d6a9147",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 17,
+      "gpu": 1,
+      "sidecar_sha256": "9fa6c772ef44f8102fa859e56f1899b2b33a301ba352fc7f3ab6cc6dadf10c7e",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-17-part-1.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "9446475c171dbf6fc18391576bf99551af04e316c29ff2c410c69fe724f6a7b3",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 18,
+      "gpu": 0,
+      "sidecar_sha256": "9cbf16a22bfcf1e8043231ce9e61864eb2fea09da7eaea10755a6c181ac98d5c",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-18-part-0.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "05b9eb55a1e0bda953f56bb2f8372f77064eb1d51a5a47afc91abd57b635be94",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 18,
+      "gpu": 1,
+      "sidecar_sha256": "e557eb0364e6c2c695735098bd92f36c6a337278d436eff7d506d0867952a3e1",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-18-part-1.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "c0b94cfb86ede06a001c5a2a3240b8dd46f08421c962a760b7755f149a43b5ea",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 19,
+      "gpu": 0,
+      "sidecar_sha256": "520fa2dc1995819f82027d885892e36d0b865f693ed1da8eaa5b006d5f38ab7e",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-19-part-0.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "e0b8eb50ae49c97adc2b91053f742f528f2cea854ddaa6c28afaf9b26f8aa2e4",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 19,
+      "gpu": 1,
+      "sidecar_sha256": "d95618b2cefa1ad67d9f9914c5af37d168728c26f57744c8cc974e6bdfc99ee4",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-19-part-1.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "cc60934876b7c44e2db8788d1372f087efa146b5e8dfb584f975345a42772096",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 20,
+      "gpu": 0,
+      "sidecar_sha256": "a656788be68c70c4362de29e44ef5c76e69b8d6099d6ab54ffcfddb669da34e9",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-20-part-0.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "fec194c8649fe136022216aa3e17657e3b565687f77b433454d466cdfabf2f60",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 20,
+      "gpu": 1,
+      "sidecar_sha256": "8e6bf3c19e53a910a8a881dc6d81af1091e8903a3e5c1c91a894741ba89e4821",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-20-part-1.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "c61a794ae797ea90f87a68ad5d421a87d1595d9c4ff27b4f7d41e42a317f9a8c",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 21,
+      "gpu": 0,
+      "sidecar_sha256": "d4969019adef416fcc1053297876a17ebc3d5b45e6c73dcf8a7ff8a9759ca4cf",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-21-part-0.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "8c69d2a274f873d23723525c55395e8e0c718015c0e6584ed8891b5c175d636f",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 21,
+      "gpu": 1,
+      "sidecar_sha256": "599b9e2690b1a2ac860f9b88e07a8fea6c31e011d2c77963014b65ee61d8e5b9",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-21-part-1.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "21c4842004293b1ce3447f3f52f3f62468f90655194943e4c39ee87cd600873d",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 22,
+      "gpu": 0,
+      "sidecar_sha256": "6b352fe865f4bfcd592d01d4ef893fcc060bc880e6192cd6a4753cfe6c51c638",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-22-part-0.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "6897dc35d2b3b125b979b546e401794c1bfb0f0b33e3dfa61f680ea2f3ec9b0f",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 22,
+      "gpu": 1,
+      "sidecar_sha256": "306b130d0ed5c8dc6934fbacf2fafb85cc65674b081c94f0a00f5514fb52a615",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-22-part-1.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "02706f92b8f2f6d6b093278a265fc4740f5950f97b81eaa250fda883bcc85ce1",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 23,
+      "gpu": 0,
+      "sidecar_sha256": "fed0d2713af790fe280363883b76922d2700836cb360163e73f370d243a5e3d6",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-23-part-0.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "14349a0748621035bde32d6628145bab0b7fbfcd218f7a41fb6665347929f1cd",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 23,
+      "gpu": 1,
+      "sidecar_sha256": "4a920a809bfae9f5fab8d7598b0c35729e775e3fd1b28e34ad761972b8a8e960",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-23-part-1.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "15fed29e109b04bd1625d67186aedb71a1759d8f5b5dd2d4778f2de063e8f3f4",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 24,
+      "gpu": 0,
+      "sidecar_sha256": "ab32e1005b4508fe6bfab44b089bea9a5fc63494f2956bc153e50844ff1a0fad",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-24-part-0.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "5227af499e17dfe7d648ddc512261a336dfce9f496cf2c2d7a8a5da0aef00af7",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 24,
+      "gpu": 1,
+      "sidecar_sha256": "eebd1aa6b4435059870cbb89b9ddb93f85e6a0c218d0d219f729b4d03f3a6509",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-24-part-1.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "13f54c13024b52469cc32a06e210171ef9d339859ed10dd544f50af89f1e5000",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 25,
+      "gpu": 0,
+      "sidecar_sha256": "23c5590d07fe4922c0d3ef0d6131155b3e05703640794cf6abfe9759e6a543b1",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-25-part-0.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "8416a2cad6ea720146bf7c130c204bc0ac7205492430ed977cf9a3b507ddeff3",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 25,
+      "gpu": 1,
+      "sidecar_sha256": "9b2db7774f0f60afdde15aa3f79d54ae7c60aa23de60ee3c54915ecb0f850f90",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-25-part-1.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "d38de684c172c3d164b1307107bc5dc833eae958c2a05e5854f7c472c9033b28",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 26,
+      "gpu": 0,
+      "sidecar_sha256": "42c5a3747ad8a1d1b581fa1055044ad348fc4d59205e23f5042af4722d66b188",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-26-part-0.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "482e9e49bd0c7f12dee3210e691ce3b3c4e3809fc5507efc2b10c60a7999cbc9",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 26,
+      "gpu": 1,
+      "sidecar_sha256": "eb0a500d73a7c054f4c5b863ad90cd13813d50a5b912ba3fcf402ac79414543c",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-26-part-1.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "67e249398e4b606448ae29321d0953c74bfad3751f2f935b698f5429f6cb471b",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 27,
+      "gpu": 0,
+      "sidecar_sha256": "ab460e2203ec7446ca1b5e3948b7efdf51a8626dbb6f776c44b1b97c6fee1db5",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-27-part-0.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "f4020ea4d38145cf0f4463c1d0f42972c0c4ea0636cf0a9337fe5ddd6511d606",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 27,
+      "gpu": 1,
+      "sidecar_sha256": "1239094a4c12c4a219ad8ce65502e1f36c7fe12f5e4d3fa41c1b94760a68ada8",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-27-part-1.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "a633f5a686956d9af92119aed960ca3cd3ae3af520898238e827c4eef2647450",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 28,
+      "gpu": 0,
+      "sidecar_sha256": "35ebdc4227b1c507ed782854aeb7ee4d47030f05df213615844e2b5732e61c47",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-28-part-0.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "c47e5b1b31b9ba44df70ba7f88bb196c1c06dfc51eb3f2a5609721a90b3ebecb",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 28,
+      "gpu": 1,
+      "sidecar_sha256": "b90357ab2e647a2fd223ab59cc7c98377071c2155cf20840c6166ecd6d105751",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-28-part-1.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "d7d75ced3e32d684d12feb495f1642c57b8125b0e43f329eb816d1df091149b5",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 29,
+      "gpu": 0,
+      "sidecar_sha256": "5a0bda460d87364ff5be002bbb24df773f533e4af108eb1debfd9953ceb736b0",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-29-part-0.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "fca14225a851fb3480bdd7dabcd49622a8de56fa121a195f95c3552e12d50ffd",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 29,
+      "gpu": 1,
+      "sidecar_sha256": "2d11ad4bdd15e6f80f86db50289e58bfbdad5e87cbe978ecec21e8a8999e6f75",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-29-part-1.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "ddfbeb39e867df6ca6cf201bc310d7c733dc6aca9f444e56d2b4bd701baba346",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 30,
+      "gpu": 0,
+      "sidecar_sha256": "25c2a0970726a8c661508352991c9bf350149b7a3fff7afb4ab10d7b66b0a813",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-30-part-0.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "b6c9aae35c2260fd4f293a0764e8b836fd9ee4017219c64808a3063f32b469a1",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 30,
+      "gpu": 1,
+      "sidecar_sha256": "f9fd394463fc838de976e32ba93032dbd6d9349811697536b8852d41a931c579",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-30-part-1.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "743e6d7d0e8ee67e437e7bcf6196fea0027523285e9fc2461c96ca170b6ac85b",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 31,
+      "gpu": 0,
+      "sidecar_sha256": "eb59493eba30a1a54ce515fe25cde53efd233d8a4067dcc40449eca9ea11c327",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-31-part-0.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "e6a7db096b0c5b204a62c317e3a49904d487d2cf16adb93c11d5e6be0b214762",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 31,
+      "gpu": 1,
+      "sidecar_sha256": "7aeaba7fe9f0a4e914aee250c6b43a8c221a2894ceb4f23d2073e1939ab38b0d",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-31-part-1.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "9681bf6e0bf82fa126217ae9600ccc0bf11afbfd62a4df0fc72aebf7fbae76dc",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 32,
+      "gpu": 0,
+      "sidecar_sha256": "c374a9655d98b079cbb33253cc8ca87b8f372488219c1f7986535d6092844d3f",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-32-part-0.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "ffe69b8e90c3eac13c88c5e659bbae8854f3b130d26c71fdcc4b878779ff2468",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 32,
+      "gpu": 1,
+      "sidecar_sha256": "9cfba51ff609e5535c78ba8beec45232ce98286bd359a7bfd5f5af7a97653468",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-32-part-1.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "6284bfc7af8edac3c301efd67b60cd2767dadb3e4c1b19cb0e147dcf2eae0e0d",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 33,
+      "gpu": 0,
+      "sidecar_sha256": "8d5cf87c0fcbd8e306bbe775382b896a7a7b66adbf6ee188edac9f741c3691a1",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-33-part-0.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "abc34ac084fd09cb00592f2d35cf2af465606bfd7dcf538ff40a65e94886acc9",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 33,
+      "gpu": 1,
+      "sidecar_sha256": "3eb4dda211c4513e78e65015c53f09def129949b991ad87c0d0a920f324623dd",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-33-part-1.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "74855bf1b0900493e5152f831f755b1ebf40fb930e63db3074e0dca177383020",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 34,
+      "gpu": 0,
+      "sidecar_sha256": "8dd2ed03f978a7b9d4ada7eff299fe2f96890c55f5a98b92d9d60733805cda49",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-34-part-0.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "3b3546a2e2434392e54152b3a071a9b7601310eae183cd8a0c27086f697007ff",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 34,
+      "gpu": 1,
+      "sidecar_sha256": "d2a0b4c0b7334a466fbbd97f391c40a338fd15587f21558b90fe8f758c7464a9",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-34-part-1.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "941eb1399c6c457c5eea70b405c00d7412b76d6235ff6416129a8d0d34e44088",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 35,
+      "gpu": 0,
+      "sidecar_sha256": "59726fbf65646aafe22300108494e7bbc21e214f19e8079c67eca4fa9c49f7bd",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-35-part-0.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "473e9d8e35ff7e236d27679dee6c20786f30541fec554c08683cb352934534bc",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 35,
+      "gpu": 1,
+      "sidecar_sha256": "fac45dd4c216e86e3bba9d9f1f7aeca6fc0c7b9c50de4b289897b5407fde9e2c",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-35-part-1.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "c2ab6a5b3e161cf2a376868c5c6e96591f50fe4c44237e7b3faecbdbb57bcf7c",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 36,
+      "gpu": 0,
+      "sidecar_sha256": "d991c7a1539ec69ad04aa6468a45cb2bbe5255bd4bce68dafbe956333f40c690",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-36-part-0.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "36069481b6afcfbc20ac820951fa496db9006fab6f11f8337aad3944241ebb0e",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 36,
+      "gpu": 1,
+      "sidecar_sha256": "74b6d8b34ef867377910d78a176b57396ac256dd2df89bdb87003ab75512e0a0",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-36-part-1.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "8894e920fd8a0a4ff0077a1dc950723d0235c74b1eb4f04a1146a520797ed435",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 37,
+      "gpu": 0,
+      "sidecar_sha256": "40e4c30580bd88ad368a340e5081820fab144d2075ef471e0a0e71f73419ddb0",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-37-part-0.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "5c535aee02c080722ec150cec1d41dd0b8432eacdb71eda4207015a971524716",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 37,
+      "gpu": 1,
+      "sidecar_sha256": "450f45d0c52759ee071372f624fe82b6449e2682574bf62af9fedc023340c7ba",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-37-part-1.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "44a462f1e9dff36fd106528fed0c91c40c99968fb9fc7ead749d91d7021f63e7",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 38,
+      "gpu": 0,
+      "sidecar_sha256": "071784436bf669bebc9c0a7c8cdd6ea50f5c0a4a4d4261082c5e4310f663be1f",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-38-part-0.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "87142a6b4de0ff51da0d88dbe1c45264243b623726dd8e7a87ce8649c5024fe6",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 38,
+      "gpu": 1,
+      "sidecar_sha256": "69fc9b9249b97a662af2347c34ceae264f7f2b5caf102529816cf924af173799",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-38-part-1.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "d7a818ef3550fcdc3bbe3e3ee25be569d2f4b71dc10b9d1aa9152ae8871091b0",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 39,
+      "gpu": 0,
+      "sidecar_sha256": "6bd5b39597924c33d99e661f1a2bf723803bfeb93dfa0e7a11aafd3f5e8c854e",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-39-part-0.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "72d9b29e41370b001487cc9642f8c9136288661e4fe77338834f0e64d633e360",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 39,
+      "gpu": 1,
+      "sidecar_sha256": "cd2a767940ad236a58fa8dc90ecf73d00260d8f6b2967bc26998a87ec58c499e",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-39-part-1.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "71909483c8422871bfcb0e78c93dacca9a2b4588db93381fbeb64bc12bf00b57",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 40,
+      "gpu": 0,
+      "sidecar_sha256": "cdb09509f4ee4e4246609af85210da060ab883d61183af09340989dd244d29e7",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-40-part-0.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "02a23acf76ada194c71836086ef770bbdc03348fce852b4cc48debcbf596d8a9",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 40,
+      "gpu": 1,
+      "sidecar_sha256": "9d0ccb97859f533fc2befad318f9201fee647871575e23b0e4c191071d8fabf7",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-40-part-1.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "3b30a20ab3e9583927ff710bb2c06a09720f14d57b9da3d4ae007ccd4c1aa9d1",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 41,
+      "gpu": 0,
+      "sidecar_sha256": "5baeb4d37a93227e3c79b0d6045d3e3529a3c9842b60998d791e301d23fd43dd",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-41-part-0.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "db4dca68335e0d7188c8305fab6a5d2fd7d283ead8a1bb2d041a4169995b191c",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 41,
+      "gpu": 1,
+      "sidecar_sha256": "f98c8ea17f56bba41d94e0a83319de1c9c91d9b695a881897e79e9ccd05a6bff",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-41-part-1.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "fbf61e7207c78450a15725d72fcb03a90858ba94341d11a3327594d84e844a1b",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 42,
+      "gpu": 0,
+      "sidecar_sha256": "69fdc1d70621146efa353f5ab7e7fd6e100c94259316ed10e6762b0eafa1da1f",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-42-part-0.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "144815711aa73ff9eed7b53f450cabfb9576f82db8140caa4a35e42fac467457",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 42,
+      "gpu": 1,
+      "sidecar_sha256": "43474c6ad3c7d8685e29737f5dad707e38441433be52e2082de270a45741316a",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-42-part-1.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "04a2a75b2163d1d5e95cfa7f9d3dec1fc5ac35775c08e299b6c86c5fc5485696",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 43,
+      "gpu": 0,
+      "sidecar_sha256": "4eea05a491be23ea837e40e05a5a2f084866c943f05a14444c39e40f7199d427",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-43-part-0.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "eb888406deb8564e96564bd034d4d48739cca89bdf85dc3edde40b8ce153dcbb",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 43,
+      "gpu": 1,
+      "sidecar_sha256": "726b0bd69856214d70e84fbd4228a8370f42b191ef664bbda0c9b97802c9cc4d",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-43-part-1.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "57308f3173d1325391137006de0d8ce99e91cd5416dc92e3d2c5d4c8a867250d",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 44,
+      "gpu": 0,
+      "sidecar_sha256": "097e079b4c8f176e018013d40c63cf502fa763b2a3b720e81aa7070fb8acda7f",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-44-part-0.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "e577961b7a3c578e9f7c5c1ce89327162141c9362ea3e92f68a1da5400f5d8a5",
+      "exists": true,
+      "observed_bytes": 1375804464
+    },
+    {
+      "layer": 44,
+      "gpu": 1,
+      "sidecar_sha256": "1d18b24c02cecf98c43bb49dd21df666cf04ad3734a8ff40c1d2aeb8d44d6c9a",
+      "weight_path": "/home/sero/glm53-tr3/release-tr3-3bpw/layers/layer-44-part-1.safetensors",
+      "declared_bytes": 1375804464,
+      "declared_sha256": "237ee2ee2bc34adac8cedbe5f5eb46dbc6db0a6dd33c507a11c190139505e4fe",
+      "exists": true,
+      "observed_bytes": 1375804464
+    }
+  ]
+}

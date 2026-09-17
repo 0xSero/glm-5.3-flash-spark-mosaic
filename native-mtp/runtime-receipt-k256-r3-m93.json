@@ -1,0 +1,42 @@
+{
+  "model": "glm-5.3-flash",
+  "model_root": "/home/valentine/glm53-single-spark-release-20260911/k2-massmax-k256",
+  "context_limit": 262144,
+  "native_config_max_position_embeddings": 1048576,
+  "max_num_seqs": 1,
+  "kv_capacity_tokens": 693225,
+  "prefix_caching": false,
+  "cuda_graphs": true,
+  "gpu_memory_fraction": 0.93,
+  "speculative_config": {
+    "method": "mtp",
+    "num_speculative_tokens": 1
+  },
+  "candidate_manifest_sha256": "7c7a2e47c7cde8996ac54c6f2ca5c3f7532b682d5d7296408c97a14e8950f73c",
+  "logprobs_mode": "raw_logprobs",
+  "evidence_sha256": {
+    "inspect": "616c863d2413d63a5affcfc6e28d4867f8803372ea91e749951cc6262d0e2b4c",
+    "engine_log": "1dce70c503b90c84d3636ee08383fe46959d23b88e162505bb8fd64db407b831",
+    "smoke": "d1480ff1e57098a5e3f8055702e877ac55ec53a7f63ce1a6a0e8b3168c061c9c"
+  },
+  "container_id": "6472b5846861d4660f978bbe98f859a5779e7da7dd6c27eb031172272e729ecb",
+  "image_id": "sha256:cd6ce6e10276f856d9ec617c702362ffc45114cad6f26ddcb6a39ef5a2ac7e37",
+  "model_memory_gib": 95.82,
+  "graph_pool_actual_gib": 0.06,
+  "graph_pool_estimated_gib": 0.97,
+  "kv_memory_gib": 6.38,
+  "b12x_enabled": false,
+  "backend_identity": "legacy vLLM487ecf187, EXL3 MCG trellis, FlashInfer MLA Sparse SM120; native BF16 MTP FlashInfer CUTLASS",
+  "thinking_enabled": true,
+  "thinking_disabled_supported_by_template": false,
+  "fresh_text_passed": true,
+  "mtp_counter_deltas": {
+    "vllm:spec_decode_num_draft_tokens_total": 65.0,
+    "vllm:spec_decode_num_accepted_tokens_total": 63.0
+  },
+  "vision_configured": true,
+  "vision_image_verified": false,
+  "vision_video_verified": false,
+  "long_context_verified": false,
+  "quality_acceptance": false
+}

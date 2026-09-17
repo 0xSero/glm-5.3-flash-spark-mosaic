@@ -1,0 +1,1430 @@
+[
+  {
+    "step": 0,
+    "layer": 44,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      1,
+      26,
+      67,
+      68,
+      151,
+      207,
+      246,
+      254
+    ],
+    "normalized_proxy_removed": 0.00240655710611874
+  },
+  {
+    "step": 1,
+    "layer": 26,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      13,
+      24,
+      78,
+      113,
+      122,
+      176,
+      238,
+      264
+    ],
+    "normalized_proxy_removed": 0.002936650159764906
+  },
+  {
+    "step": 2,
+    "layer": 29,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      0,
+      68,
+      72,
+      91,
+      94,
+      140,
+      185,
+      261
+    ],
+    "normalized_proxy_removed": 0.0030094569383462767
+  },
+  {
+    "step": 3,
+    "layer": 43,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      30,
+      46,
+      112,
+      113,
+      129,
+      149,
+      215,
+      223
+    ],
+    "normalized_proxy_removed": 0.0030282843766021197
+  },
+  {
+    "step": 4,
+    "layer": 28,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      63,
+      93,
+      96,
+      103,
+      125,
+      154,
+      222,
+      256
+    ],
+    "normalized_proxy_removed": 0.003108420345450797
+  },
+  {
+    "step": 5,
+    "layer": 31,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      68,
+      94,
+      96,
+      99,
+      100,
+      176,
+      219,
+      238
+    ],
+    "normalized_proxy_removed": 0.0031826731341646833
+  },
+  {
+    "step": 6,
+    "layer": 25,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      49,
+      73,
+      87,
+      103,
+      139,
+      178,
+      220,
+      249
+    ],
+    "normalized_proxy_removed": 0.003233912096703591
+  },
+  {
+    "step": 7,
+    "layer": 20,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      26,
+      158,
+      178,
+      185,
+      228,
+      243,
+      274,
+      283
+    ],
+    "normalized_proxy_removed": 0.003290583535479665
+  },
+  {
+    "step": 8,
+    "layer": 39,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      12,
+      30,
+      122,
+      179,
+      219,
+      225,
+      248,
+      269
+    ],
+    "normalized_proxy_removed": 0.0033351456591590007
+  },
+  {
+    "step": 9,
+    "layer": 40,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      13,
+      26,
+      73,
+      155,
+      193,
+      263,
+      266,
+      273
+    ],
+    "normalized_proxy_removed": 0.003398580643943047
+  },
+  {
+    "step": 10,
+    "layer": 41,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      2,
+      4,
+      88,
+      118,
+      187,
+      236,
+      244,
+      281
+    ],
+    "normalized_proxy_removed": 0.003444699960551432
+  },
+  {
+    "step": 11,
+    "layer": 33,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      10,
+      22,
+      59,
+      152,
+      167,
+      170,
+      258,
+      279
+    ],
+    "normalized_proxy_removed": 0.003544564786157106
+  },
+  {
+    "step": 12,
+    "layer": 27,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      64,
+      68,
+      120,
+      132,
+      156,
+      162,
+      223,
+      268
+    ],
+    "normalized_proxy_removed": 0.0035752856739013493
+  },
+  {
+    "step": 13,
+    "layer": 34,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      24,
+      135,
+      162,
+      217,
+      230,
+      231,
+      281,
+      285
+    ],
+    "normalized_proxy_removed": 0.0036057594809330335
+  },
+  {
+    "step": 14,
+    "layer": 18,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      26,
+      43,
+      132,
+      145,
+      205,
+      213,
+      272,
+      274
+    ],
+    "normalized_proxy_removed": 0.003623483017585788
+  },
+  {
+    "step": 15,
+    "layer": 42,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      44,
+      52,
+      85,
+      118,
+      146,
+      158,
+      223,
+      250
+    ],
+    "normalized_proxy_removed": 0.003720125421937293
+  },
+  {
+    "step": 16,
+    "layer": 32,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      42,
+      100,
+      170,
+      192,
+      231,
+      238,
+      243,
+      274
+    ],
+    "normalized_proxy_removed": 0.0037751365667898756
+  },
+  {
+    "step": 17,
+    "layer": 19,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      66,
+      140,
+      168,
+      181,
+      183,
+      213,
+      258,
+      267
+    ],
+    "normalized_proxy_removed": 0.00382428762506941
+  },
+  {
+    "step": 18,
+    "layer": 22,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      20,
+      56,
+      70,
+      110,
+      138,
+      166,
+      211,
+      273
+    ],
+    "normalized_proxy_removed": 0.003842582563725053
+  },
+  {
+    "step": 19,
+    "layer": 24,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      53,
+      107,
+      140,
+      179,
+      226,
+      239,
+      258,
+      284
+    ],
+    "normalized_proxy_removed": 0.003848178569904648
+  },
+  {
+    "step": 20,
+    "layer": 14,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      16,
+      26,
+      40,
+      192,
+      203,
+      204,
+      262,
+      276
+    ],
+    "normalized_proxy_removed": 0.003918619358841499
+  },
+  {
+    "step": 21,
+    "layer": 23,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      31,
+      34,
+      43,
+      96,
+      139,
+      188,
+      193,
+      283
+    ],
+    "normalized_proxy_removed": 0.003922645060478887
+  },
+  {
+    "step": 22,
+    "layer": 35,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      113,
+      186,
+      192,
+      196,
+      217,
+      229,
+      260,
+      275
+    ],
+    "normalized_proxy_removed": 0.003998926886919788
+  },
+  {
+    "step": 23,
+    "layer": 21,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      2,
+      27,
+      92,
+      103,
+      168,
+      241,
+      259,
+      266
+    ],
+    "normalized_proxy_removed": 0.004017396789434694
+  },
+  {
+    "step": 24,
+    "layer": 44,
+    "from": 280,
+    "to": 272,
+    "removed_original_ids": [
+      46,
+      70,
+      92,
+      141,
+      157,
+      200,
+      256,
+      269
+    ],
+    "normalized_proxy_removed": 0.004050373880069095
+  },
+  {
+    "step": 25,
+    "layer": 36,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      35,
+      58,
+      193,
+      207,
+      276,
+      281,
+      282,
+      285
+    ],
+    "normalized_proxy_removed": 0.004068609316506949
+  },
+  {
+    "step": 26,
+    "layer": 38,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      40,
+      98,
+      101,
+      115,
+      136,
+      141,
+      183,
+      203
+    ],
+    "normalized_proxy_removed": 0.0040759877212919364
+  },
+  {
+    "step": 27,
+    "layer": 37,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      18,
+      20,
+      110,
+      149,
+      160,
+      185,
+      265,
+      283
+    ],
+    "normalized_proxy_removed": 0.0041759878912827515
+  },
+  {
+    "step": 28,
+    "layer": 43,
+    "from": 280,
+    "to": 272,
+    "removed_original_ids": [
+      29,
+      55,
+      116,
+      122,
+      125,
+      212,
+      232,
+      281
+    ],
+    "normalized_proxy_removed": 0.004291243268349702
+  },
+  {
+    "step": 29,
+    "layer": 17,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      0,
+      33,
+      55,
+      77,
+      133,
+      257,
+      263,
+      274
+    ],
+    "normalized_proxy_removed": 0.0043533034527470475
+  },
+  {
+    "step": 30,
+    "layer": 30,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      13,
+      115,
+      123,
+      172,
+      184,
+      227,
+      259,
+      287
+    ],
+    "normalized_proxy_removed": 0.0044608780827738856
+  },
+  {
+    "step": 31,
+    "layer": 39,
+    "from": 280,
+    "to": 272,
+    "removed_original_ids": [
+      29,
+      37,
+      59,
+      74,
+      84,
+      88,
+      226,
+      272
+    ],
+    "normalized_proxy_removed": 0.004665212831082164
+  },
+  {
+    "step": 32,
+    "layer": 7,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      56,
+      72,
+      79,
+      125,
+      174,
+      197,
+      228,
+      274
+    ],
+    "normalized_proxy_removed": 0.004735525435446702
+  },
+  {
+    "step": 33,
+    "layer": 11,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      28,
+      36,
+      76,
+      97,
+      142,
+      180,
+      212,
+      282
+    ],
+    "normalized_proxy_removed": 0.004760804461013123
+  },
+  {
+    "step": 34,
+    "layer": 44,
+    "from": 272,
+    "to": 264,
+    "removed_original_ids": [
+      25,
+      79,
+      97,
+      171,
+      175,
+      217,
+      258,
+      278
+    ],
+    "normalized_proxy_removed": 0.0048319346951478425
+  },
+  {
+    "step": 35,
+    "layer": 16,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      54,
+      60,
+      66,
+      119,
+      154,
+      196,
+      246,
+      262
+    ],
+    "normalized_proxy_removed": 0.004836937268707701
+  },
+  {
+    "step": 36,
+    "layer": 13,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      3,
+      84,
+      87,
+      125,
+      133,
+      220,
+      255,
+      261
+    ],
+    "normalized_proxy_removed": 0.004865792904021615
+  },
+  {
+    "step": 37,
+    "layer": 8,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      7,
+      17,
+      146,
+      155,
+      207,
+      241,
+      242,
+      271
+    ],
+    "normalized_proxy_removed": 0.0049045655618045235
+  },
+  {
+    "step": 38,
+    "layer": 36,
+    "from": 280,
+    "to": 272,
+    "removed_original_ids": [
+      13,
+      16,
+      19,
+      62,
+      108,
+      159,
+      194,
+      279
+    ],
+    "normalized_proxy_removed": 0.004928812383426332
+  },
+  {
+    "step": 39,
+    "layer": 31,
+    "from": 280,
+    "to": 272,
+    "removed_original_ids": [
+      2,
+      34,
+      35,
+      48,
+      81,
+      143,
+      163,
+      277
+    ],
+    "normalized_proxy_removed": 0.004938065561768568
+  },
+  {
+    "step": 40,
+    "layer": 33,
+    "from": 280,
+    "to": 272,
+    "removed_original_ids": [
+      36,
+      42,
+      127,
+      158,
+      194,
+      231,
+      243,
+      250
+    ],
+    "normalized_proxy_removed": 0.004962824398345347
+  },
+  {
+    "step": 41,
+    "layer": 29,
+    "from": 280,
+    "to": 272,
+    "removed_original_ids": [
+      50,
+      110,
+      147,
+      153,
+      214,
+      215,
+      234,
+      259
+    ],
+    "normalized_proxy_removed": 0.004968293039801192
+  },
+  {
+    "step": 42,
+    "layer": 12,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      3,
+      29,
+      63,
+      122,
+      143,
+      164,
+      213,
+      221
+    ],
+    "normalized_proxy_removed": 0.004997085259227459
+  },
+  {
+    "step": 43,
+    "layer": 41,
+    "from": 280,
+    "to": 272,
+    "removed_original_ids": [
+      0,
+      32,
+      55,
+      96,
+      174,
+      214,
+      277,
+      285
+    ],
+    "normalized_proxy_removed": 0.005048125611157631
+  },
+  {
+    "step": 44,
+    "layer": 40,
+    "from": 280,
+    "to": 272,
+    "removed_original_ids": [
+      7,
+      37,
+      83,
+      145,
+      175,
+      214,
+      275,
+      282
+    ],
+    "normalized_proxy_removed": 0.005054140531835375
+  },
+  {
+    "step": 45,
+    "layer": 15,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      0,
+      8,
+      37,
+      87,
+      103,
+      125,
+      158,
+      273
+    ],
+    "normalized_proxy_removed": 0.005122163080243184
+  },
+  {
+    "step": 46,
+    "layer": 27,
+    "from": 280,
+    "to": 272,
+    "removed_original_ids": [
+      27,
+      43,
+      92,
+      123,
+      176,
+      221,
+      228,
+      229
+    ],
+    "normalized_proxy_removed": 0.005124711843356646
+  },
+  {
+    "step": 47,
+    "layer": 35,
+    "from": 280,
+    "to": 272,
+    "removed_original_ids": [
+      70,
+      78,
+      82,
+      86,
+      101,
+      105,
+      115,
+      142
+    ],
+    "normalized_proxy_removed": 0.005162808244410956
+  },
+  {
+    "step": 48,
+    "layer": 9,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      2,
+      48,
+      51,
+      115,
+      139,
+      229,
+      246,
+      259
+    ],
+    "normalized_proxy_removed": 0.0051894245396460655
+  },
+  {
+    "step": 49,
+    "layer": 32,
+    "from": 280,
+    "to": 272,
+    "removed_original_ids": [
+      14,
+      15,
+      24,
+      45,
+      83,
+      180,
+      266,
+      272
+    ],
+    "normalized_proxy_removed": 0.005198529766003642
+  },
+  {
+    "step": 50,
+    "layer": 43,
+    "from": 272,
+    "to": 264,
+    "removed_original_ids": [
+      35,
+      60,
+      61,
+      99,
+      135,
+      194,
+      234,
+      264
+    ],
+    "normalized_proxy_removed": 0.005204955973213915
+  },
+  {
+    "step": 51,
+    "layer": 44,
+    "from": 264,
+    "to": 256,
+    "removed_original_ids": [
+      35,
+      82,
+      98,
+      190,
+      212,
+      257,
+      260,
+      274
+    ],
+    "normalized_proxy_removed": 0.005220882400539088
+  },
+  {
+    "step": 52,
+    "layer": 26,
+    "from": 280,
+    "to": 272,
+    "removed_original_ids": [
+      76,
+      114,
+      130,
+      147,
+      183,
+      193,
+      226,
+      237
+    ],
+    "normalized_proxy_removed": 0.005228745422937445
+  },
+  {
+    "step": 53,
+    "layer": 28,
+    "from": 280,
+    "to": 272,
+    "removed_original_ids": [
+      25,
+      98,
+      108,
+      117,
+      123,
+      142,
+      195,
+      213
+    ],
+    "normalized_proxy_removed": 0.005320747758718436
+  },
+  {
+    "step": 54,
+    "layer": 42,
+    "from": 280,
+    "to": 272,
+    "removed_original_ids": [
+      51,
+      58,
+      71,
+      98,
+      100,
+      115,
+      116,
+      209
+    ],
+    "normalized_proxy_removed": 0.005412232772677176
+  },
+  {
+    "step": 55,
+    "layer": 34,
+    "from": 280,
+    "to": 272,
+    "removed_original_ids": [
+      23,
+      51,
+      133,
+      146,
+      181,
+      188,
+      246,
+      279
+    ],
+    "normalized_proxy_removed": 0.005525231835964818
+  },
+  {
+    "step": 56,
+    "layer": 20,
+    "from": 280,
+    "to": 272,
+    "removed_original_ids": [
+      62,
+      69,
+      153,
+      182,
+      211,
+      217,
+      227,
+      249
+    ],
+    "normalized_proxy_removed": 0.005526436142067632
+  },
+  {
+    "step": 57,
+    "layer": 31,
+    "from": 272,
+    "to": 264,
+    "removed_original_ids": [
+      20,
+      24,
+      53,
+      126,
+      128,
+      136,
+      227,
+      259
+    ],
+    "normalized_proxy_removed": 0.005583655308028786
+  },
+  {
+    "step": 58,
+    "layer": 18,
+    "from": 280,
+    "to": 272,
+    "removed_original_ids": [
+      19,
+      22,
+      30,
+      77,
+      107,
+      166,
+      183,
+      242
+    ],
+    "normalized_proxy_removed": 0.00563958911630712
+  },
+  {
+    "step": 59,
+    "layer": 33,
+    "from": 272,
+    "to": 264,
+    "removed_original_ids": [
+      4,
+      47,
+      107,
+      115,
+      168,
+      196,
+      212,
+      248
+    ],
+    "normalized_proxy_removed": 0.00572915554853738
+  },
+  {
+    "step": 60,
+    "layer": 19,
+    "from": 280,
+    "to": 272,
+    "removed_original_ids": [
+      4,
+      132,
+      150,
+      172,
+      184,
+      227,
+      246,
+      252
+    ],
+    "normalized_proxy_removed": 0.005738925139255217
+  },
+  {
+    "step": 61,
+    "layer": 39,
+    "from": 272,
+    "to": 264,
+    "removed_original_ids": [
+      26,
+      42,
+      71,
+      86,
+      123,
+      124,
+      137,
+      235
+    ],
+    "normalized_proxy_removed": 0.005758197389624422
+  },
+  {
+    "step": 62,
+    "layer": 44,
+    "from": 256,
+    "to": 248,
+    "removed_original_ids": [
+      76,
+      112,
+      130,
+      169,
+      181,
+      199,
+      206,
+      231
+    ],
+    "normalized_proxy_removed": 0.005764907970152406
+  },
+  {
+    "step": 63,
+    "layer": 38,
+    "from": 280,
+    "to": 272,
+    "removed_original_ids": [
+      34,
+      60,
+      66,
+      85,
+      129,
+      137,
+      220,
+      280
+    ],
+    "normalized_proxy_removed": 0.005799563862404865
+  },
+  {
+    "step": 64,
+    "layer": 10,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      48,
+      57,
+      76,
+      114,
+      137,
+      155,
+      156,
+      245
+    ],
+    "normalized_proxy_removed": 0.005824611612183829
+  },
+  {
+    "step": 65,
+    "layer": 29,
+    "from": 272,
+    "to": 264,
+    "removed_original_ids": [
+      13,
+      97,
+      152,
+      169,
+      216,
+      226,
+      256,
+      267
+    ],
+    "normalized_proxy_removed": 0.005839130674537708
+  },
+  {
+    "step": 66,
+    "layer": 37,
+    "from": 280,
+    "to": 272,
+    "removed_original_ids": [
+      60,
+      91,
+      96,
+      113,
+      125,
+      137,
+      138,
+      203
+    ],
+    "normalized_proxy_removed": 0.005876381006409891
+  },
+  {
+    "step": 67,
+    "layer": 36,
+    "from": 272,
+    "to": 264,
+    "removed_original_ids": [
+      4,
+      132,
+      142,
+      189,
+      198,
+      224,
+      249,
+      267
+    ],
+    "normalized_proxy_removed": 0.005957344790043451
+  },
+  {
+    "step": 68,
+    "layer": 40,
+    "from": 272,
+    "to": 264,
+    "removed_original_ids": [
+      10,
+      32,
+      40,
+      54,
+      126,
+      141,
+      205,
+      221
+    ],
+    "normalized_proxy_removed": 0.005965738461995824
+  },
+  {
+    "step": 69,
+    "layer": 30,
+    "from": 280,
+    "to": 272,
+    "removed_original_ids": [
+      47,
+      54,
+      84,
+      106,
+      117,
+      125,
+      162,
+      236
+    ],
+    "normalized_proxy_removed": 0.005994797808520406
+  },
+  {
+    "step": 70,
+    "layer": 32,
+    "from": 272,
+    "to": 264,
+    "removed_original_ids": [
+      26,
+      57,
+      61,
+      63,
+      87,
+      90,
+      105,
+      235
+    ],
+    "normalized_proxy_removed": 0.006002239077443123
+  },
+  {
+    "step": 71,
+    "layer": 43,
+    "from": 264,
+    "to": 256,
+    "removed_original_ids": [
+      27,
+      73,
+      74,
+      132,
+      155,
+      174,
+      182,
+      193
+    ],
+    "normalized_proxy_removed": 0.00602106660548671
+  },
+  {
+    "step": 72,
+    "layer": 27,
+    "from": 272,
+    "to": 264,
+    "removed_original_ids": [
+      33,
+      35,
+      73,
+      101,
+      113,
+      125,
+      174,
+      222
+    ],
+    "normalized_proxy_removed": 0.006029265778198348
+  },
+  {
+    "step": 73,
+    "layer": 25,
+    "from": 280,
+    "to": 272,
+    "removed_original_ids": [
+      7,
+      47,
+      55,
+      207,
+      215,
+      242,
+      255,
+      257
+    ],
+    "normalized_proxy_removed": 0.0060643903805181025
+  },
+  {
+    "step": 74,
+    "layer": 24,
+    "from": 280,
+    "to": 272,
+    "removed_original_ids": [
+      0,
+      17,
+      70,
+      88,
+      127,
+      178,
+      190,
+      249
+    ],
+    "normalized_proxy_removed": 0.006101747397234984
+  },
+  {
+    "step": 75,
+    "layer": 14,
+    "from": 280,
+    "to": 272,
+    "removed_original_ids": [
+      55,
+      67,
+      139,
+      213,
+      221,
+      227,
+      245,
+      284
+    ],
+    "normalized_proxy_removed": 0.006103292999784008
+  },
+  {
+    "step": 76,
+    "layer": 28,
+    "from": 272,
+    "to": 264,
+    "removed_original_ids": [
+      28,
+      33,
+      74,
+      133,
+      188,
+      200,
+      204,
+      282
+    ],
+    "normalized_proxy_removed": 0.0061036974595102406
+  },
+  {
+    "step": 77,
+    "layer": 23,
+    "from": 280,
+    "to": 272,
+    "removed_original_ids": [
+      26,
+      78,
+      109,
+      112,
+      165,
+      246,
+      258,
+      266
+    ],
+    "normalized_proxy_removed": 0.0061170896123754525
+  },
+  {
+    "step": 78,
+    "layer": 31,
+    "from": 264,
+    "to": 256,
+    "removed_original_ids": [
+      17,
+      41,
+      125,
+      130,
+      151,
+      182,
+      213,
+      273
+    ],
+    "normalized_proxy_removed": 0.006132839748852367
+  },
+  {
+    "step": 79,
+    "layer": 34,
+    "from": 272,
+    "to": 264,
+    "removed_original_ids": [
+      55,
+      101,
+      122,
+      127,
+      176,
+      254,
+      269,
+      286
+    ],
+    "normalized_proxy_removed": 0.006190839597638199
+  },
+  {
+    "step": 80,
+    "layer": 7,
+    "from": 280,
+    "to": 272,
+    "removed_original_ids": [
+      170,
+      189,
+      196,
+      230,
+      249,
+      254,
+      264,
+      287
+    ],
+    "normalized_proxy_removed": 0.006195432143583953
+  },
+  {
+    "step": 81,
+    "layer": 42,
+    "from": 272,
+    "to": 264,
+    "removed_original_ids": [
+      57,
+      94,
+      150,
+      155,
+      166,
+      183,
+      226,
+      260
+    ],
+    "normalized_proxy_removed": 0.006279793108269217
+  },
+  {
+    "step": 82,
+    "layer": 44,
+    "from": 248,
+    "to": 240,
+    "removed_original_ids": [
+      57,
+      105,
+      121,
+      155,
+      203,
+      210,
+      215,
+      263
+    ],
+    "normalized_proxy_removed": 0.0063161429208772515
+  },
+  {
+    "step": 83,
+    "layer": 3,
+    "from": 288,
+    "to": 280,
+    "removed_original_ids": [
+      6,
+      26,
+      54,
+      90,
+      105,
+      154,
+      173,
+      181
+    ],
+    "normalized_proxy_removed": 0.006321046094943784
+  }
+]

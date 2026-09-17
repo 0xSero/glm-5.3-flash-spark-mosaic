@@ -1,0 +1,96 @@
+packing 15 shards with 5 workers
+  model-00004-of-00015.safetensors: 6,539,859,708 B sha256=5962b1e7def22b9e removed=2592 renamed=7844 sliced=6 [15s]
+  model-00003-of-00015.safetensors: 6,513,248,988 B sha256=4d553e05842c44f2 removed=2628 renamed=7824 sliced=6 [16s]
+  model-00005-of-00015.safetensors: 6,464,054,820 B sha256=412cda4d135b4326 removed=2688 renamed=7748 sliced=6 [16s]
+  model-00002-of-00015.safetensors: 6,558,804,108 B sha256=4913653ef59119cd removed=2568 renamed=7868 sliced=6 [16s]
+  model-00001-of-00015.safetensors: 6,901,790,824 B sha256=7d4ac580cb6825d2 removed=2136 renamed=6191 sliced=4 [17s]
+  model-00007-of-00015.safetensors: 6,554,327,988 B sha256=6df427e7f5fdda44 removed=2573 renamed=7879 sliced=6 [50s]
+  model-00008-of-00015.safetensors: 6,397,725,416 B sha256=bafd1f758f1e1f0e removed=2772 renamed=7664 sliced=6 [50s]
+  model-00009-of-00015.safetensors: 6,549,335,392 B sha256=dc1bf29e0e025c5c removed=2580 renamed=7856 sliced=6 [51s]
+  model-00006-of-00015.safetensors: 6,612,493,396 B sha256=8dc712a88246f7a7 removed=2503 renamed=7933 sliced=6 [51s]
+  model-00010-of-00015.safetensors: 6,634,615,820 B sha256=610107251edc1c64 removed=2472 renamed=7964 sliced=6 [52s]
+  model-00015-of-00015.safetensors: 1,689,024,028 B sha256=0c78b589ea2b2966 removed=468 renamed=1241 sliced=2 [59s]
+  model-00011-of-00015.safetensors: 6,456,400,636 B sha256=b0b71d862b831828 removed=2700 renamed=7752 sliced=6 [71s]
+  model-00012-of-00015.safetensors: 6,539,859,756 B sha256=9837de497b71f021 removed=2592 renamed=7844 sliced=6 [72s]
+  model-00014-of-00015.safetensors: 6,646,420,268 B sha256=5a8237b56e037f05 removed=2460 renamed=7376 sliced=6 [74s]
+  model-00013-of-00015.safetensors: 6,568,286,640 B sha256=56e4bb772b0832ed removed=2556 renamed=7880 sliced=6 [74s]
+  copied LICENSE 1,070 B
+  copied README.md 7,238 B
+  copied chat_template.jinja 8,617 B
+  copied generation_config.json 194 B
+  copied kpool_aux.safetensors 11,548,768 B
+  copied mtp.safetensors 2,862,645,889 B
+  copied processor_config.json 909 B
+  copied quantization_config.json 47,905,678 B
+  copied tokenizer.json 20,217,442 B
+  copied tokenizer_config.json 761 B
+{
+ "schema": "dynamic-container-manifest-v1",
+ "point_id": "F216",
+ "packer_version": "u216-packer-v1",
+ "packer_sha256": "8d9eeb2b256657d1e8582b4981f3a197907ed33f6972c6f45957db6db5ab223f",
+ "plan_sha256": "342b840d1fd709f364d7f6ac4a2771b60afaaed6558ac0a4ca178d53dfb33590",
+ "plan_file_sha256": "8909519407d3eb960138a30daaf181bc00f5cfb1f2aa239d2af3164d1fc5397f",
+ "base": {
+  "branch": "3.05bpw",
+  "repo": "turboderp/GLM-5.3-Flash-exl3",
+  "revision": "332ab457b709b7ba30dd9a448be5de03b80a7ac9",
+  "total_bytes": 125263712676,
+  "source_dir": "/home/sero/models/turboderp-glm53-flash-exl3-3p05bpw",
+  "index_total_size": 122286101684
+ },
+ "output_dir": "/home/sero/models/glm53-3p05-pruned-f216",
+ "index_total_size": 93611759540,
+ "removed_experts": 3024,
+ "removed_tensor_bytes": 28674342144,
+ "bytes_per_removed_expert_incl_router_row": 9482256.0,
+ "config_patch_keys": [
+  "text_config.n_routed_experts",
+  "text_config.routed_experts_per_layer",
+  "text_config.retained_expert_ids_by_layer",
+  "text_config.dynamic_container"
+ ],
+ "total_output_bytes": 96580353464,
+ "started_utc": "2026-09-16T01:33:39Z",
+ "finished_utc": "2026-09-16T01:34:59Z",
+ "elapsed_s": 80.3,
+ "g2_verified": false
+}
+{"index": "/home/sero/models/glm53-3p05-pruned-f216/model.safetensors.index.json", "total_size": 96485484504, "added": {"mtp.safetensors": {"tensors": 3508, "tensor_bytes": 2862179364}, "kpool_aux.safetensors": {"tensors": 22, "tensor_bytes": 11545600}}}
+  model-00001-of-00015.safetensors: 6398 tensors ok, 0 problems [101s]
+  model-00002-of-00015.safetensors: 7995 tensors ok, 0 problems [101s]
+  model-00003-of-00015.safetensors: 7941 tensors ok, 0 problems [101s]
+  model-00004-of-00015.safetensors: 7971 tensors ok, 0 problems [101s]
+  model-00005-of-00015.safetensors: 7875 tensors ok, 0 problems [101s]
+  model-00006-of-00015.safetensors: 8060 tensors ok, 0 problems [101s]
+  model-00007-of-00015.safetensors: 7996 tensors ok, 0 problems [101s]
+  model-00008-of-00015.safetensors: 7791 tensors ok, 0 problems [101s]
+  model-00009-of-00015.safetensors: 7983 tensors ok, 0 problems [101s]
+  model-00010-of-00015.safetensors: 8091 tensors ok, 0 problems [101s]
+  model-00011-of-00015.safetensors: 7869 tensors ok, 0 problems [101s]
+  model-00012-of-00015.safetensors: 7971 tensors ok, 0 problems [101s]
+  model-00013-of-00015.safetensors: 8007 tensors ok, 0 problems [101s]
+  model-00014-of-00015.safetensors: 7507 tensors ok, 0 problems [101s]
+  model-00015-of-00015.safetensors: 2281 tensors ok, 0 problems [101s]
+{
+ "schema": "dynamic-container-g2-v1",
+ "point_id": "F216",
+ "plan_sha256": "342b840d1fd709f364d7f6ac4a2771b60afaaed6558ac0a4ca178d53dfb33590",
+ "pass": true,
+ "expert_bytes_from_headers": 9474060,
+ "router_row_bytes_from_headers": 8196,
+ "expected_index_total_size": 96485484504,
+ "extra_index_files": [
+  "kpool_aux.safetensors",
+  "mtp.safetensors"
+ ],
+ "extra_index_tensor_bytes": 2873724964,
+ "index_total_size": 96485484504,
+ "tensors_verified": 111736,
+ "bytes_verified": 93611759540,
+ "problems": [],
+ "elapsed_s": 105.0,
+ "finished_utc": "2026-09-16T01:36:45Z"
+}
+96593390114	/home/sero/models/glm53-3p05-pruned-f216
+BUILD_DONE 2026-09-16T01:36:45Z

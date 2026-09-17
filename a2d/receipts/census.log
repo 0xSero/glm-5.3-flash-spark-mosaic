@@ -1,0 +1,73 @@
++ IMG=ghcr.io/0xsero/glm53-flash-exl3-plain@sha256:85cb3fa86d31a781b94dcf10ee168adf096cfeaac14d2f1e6c560504e58e4eed
++ echo '### base stock index'
+### base stock index
++ R -m exl3_plain_sglang_overlay.census /home/valentine/models/turboderp-glm53-flash-exl3-3p05bpw --out /home/valentine/a2d/census-base-3p05-stock.json
++ docker run --rm -v /home/valentine/models:/home/valentine/models:ro -v /home/valentine/a2d:/home/valentine/a2d --entrypoint python3 ghcr.io/0xsero/glm53-flash-exl3-plain@sha256:85cb3fa86d31a781b94dcf10ee168adf096cfeaac14d2f1e6c560504e58e4eed -m exl3_plain_sglang_overlay.census /home/valentine/models/turboderp-glm53-flash-exl3-3p05bpw --out /home/valentine/a2d/census-base-3p05-stock.json
+/sgl-workspace/sglang/python/sglang/srt/layers/quantization/awq/awq.py:53: UserWarning: Only CUDA, HIP and XPU support AWQ currently.
+  warnings.warn(f"Only CUDA, HIP and XPU support AWQ currently.")
+/sgl-workspace/sglang/python/sglang/srt/layers/quantization/gguf.py:69: UserWarning: Only CUDA, MUSA and NPU support GGUF quantization currently.
+  warnings.warn(f"Only CUDA, MUSA and NPU support GGUF quantization currently.")
+census: PROBLEM expert layers [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44] != [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45]
+census: 148024 tensors, 15 shards, codebook=mul1, expert layers=3..44 (42), expert bits={'3': 36288}
+census: dense modules=431 native-capable=431; moe native=True []
++ echo exit=2
+exit=2
++ echo '### base augmented index (mtp+kpool)'
+### base augmented index (mtp+kpool)
++ R -m exl3_plain_sglang_overlay.census /home/valentine/a2d/base-aug --out /home/valentine/a2d/census-base-3p05-aug.json
++ docker run --rm -v /home/valentine/models:/home/valentine/models:ro -v /home/valentine/a2d:/home/valentine/a2d --entrypoint python3 ghcr.io/0xsero/glm53-flash-exl3-plain@sha256:85cb3fa86d31a781b94dcf10ee168adf096cfeaac14d2f1e6c560504e58e4eed -m exl3_plain_sglang_overlay.census /home/valentine/a2d/base-aug --out /home/valentine/a2d/census-base-3p05-aug.json
+/sgl-workspace/sglang/python/sglang/srt/layers/quantization/awq/awq.py:53: UserWarning: Only CUDA, HIP and XPU support AWQ currently.
+  warnings.warn(f"Only CUDA, HIP and XPU support AWQ currently.")
+/sgl-workspace/sglang/python/sglang/srt/layers/quantization/gguf.py:69: UserWarning: Only CUDA, MUSA and NPU support GGUF quantization currently.
+  warnings.warn(f"Only CUDA, MUSA and NPU support GGUF quantization currently.")
+census: 151554 tensors, 17 shards, codebook=mul1, expert layers=3..45 (43), expert bits={'3': 37152}
+census: dense modules=440 native-capable=440; moe native=True []
++ echo exit=0
+exit=0
++ echo '### pruned stock'
+### pruned stock
++ R -m exl3_plain_sglang_overlay.census /home/valentine/models/glm53-3p05-pruned-a2d --out /home/valentine/models/glm53-3p05-pruned-a2d/census-stock.json
++ docker run --rm -v /home/valentine/models:/home/valentine/models:ro -v /home/valentine/a2d:/home/valentine/a2d --entrypoint python3 ghcr.io/0xsero/glm53-flash-exl3-plain@sha256:85cb3fa86d31a781b94dcf10ee168adf096cfeaac14d2f1e6c560504e58e4eed -m exl3_plain_sglang_overlay.census /home/valentine/models/glm53-3p05-pruned-a2d --out /home/valentine/models/glm53-3p05-pruned-a2d/census-stock.json
+/sgl-workspace/sglang/python/sglang/srt/layers/quantization/awq/awq.py:53: UserWarning: Only CUDA, HIP and XPU support AWQ currently.
+  warnings.warn(f"Only CUDA, HIP and XPU support AWQ currently.")
+/sgl-workspace/sglang/python/sglang/srt/layers/quantization/gguf.py:69: UserWarning: Only CUDA, MUSA and NPU support GGUF quantization currently.
+  warnings.warn(f"Only CUDA, MUSA and NPU support GGUF quantization currently.")
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/opt/exl3-plain-overlay/exl3_plain_sglang_overlay/census.py", line 204, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/opt/exl3-plain-overlay/exl3_plain_sglang_overlay/census.py", line 190, in main
+    args.out.write_text(text)
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 30] Read-only file system: '/home/valentine/models/glm53-3p05-pruned-a2d/census-stock.json'
++ echo exit=1
+exit=1
++ echo '### pruned plan-aware'
+### pruned plan-aware
++ R /home/valentine/a2d/census_plan_aware.py /home/valentine/models/glm53-3p05-pruned-a2d /home/valentine/models/glm53-3p05-pruned-a2d/census-plan-aware.json
++ docker run --rm -v /home/valentine/models:/home/valentine/models:ro -v /home/valentine/a2d:/home/valentine/a2d --entrypoint python3 ghcr.io/0xsero/glm53-flash-exl3-plain@sha256:85cb3fa86d31a781b94dcf10ee168adf096cfeaac14d2f1e6c560504e58e4eed /home/valentine/a2d/census_plan_aware.py /home/valentine/models/glm53-3p05-pruned-a2d /home/valentine/models/glm53-3p05-pruned-a2d/census-plan-aware.json
+/sgl-workspace/sglang/python/sglang/srt/layers/quantization/awq/awq.py:53: UserWarning: Only CUDA, HIP and XPU support AWQ currently.
+  warnings.warn(f"Only CUDA, HIP and XPU support AWQ currently.")
+/sgl-workspace/sglang/python/sglang/srt/layers/quantization/gguf.py:69: UserWarning: Only CUDA, MUSA and NPU support GGUF quantization currently.
+  warnings.warn(f"Only CUDA, MUSA and NPU support GGUF quantization currently.")
+Traceback (most recent call last):
+  File "/home/valentine/a2d/census_plan_aware.py", line 24, in <module>
+    out.write_text(json.dumps(r, indent=1))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 30] Read-only file system: '/home/valentine/models/glm53-3p05-pruned-a2d/census-plan-aware.json'
++ echo exit=1
+exit=1
++ echo DONE
+DONE

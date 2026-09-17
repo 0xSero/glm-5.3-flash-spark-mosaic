@@ -1,0 +1,14 @@
+[
+  {
+    "host": "spark-de5c",
+    "image_reference": "sha256:54acf16064726697ab079dfbd297c1c1c260cb28867f8287f5ae2ec3bbb0a382",
+    "content_configuration_sha256": "48af3629f00c945b3e6081f0b36ed8fec3f2001356032f3bc13884311502dcee",
+    "layers": 58
+  },
+  {
+    "host": "spark-2822",
+    "image_reference": "sha256:ddc1b6cf8d89f1f0c0294a9a7a3c86d63cb7ad486d236013d75fb46914e2c576",
+    "content_configuration_sha256": "48af3629f00c945b3e6081f0b36ed8fec3f2001356032f3bc13884311502dcee",
+    "layers": 58
+  }
+]

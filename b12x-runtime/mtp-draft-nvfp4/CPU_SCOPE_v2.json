@@ -1,0 +1,12 @@
+{
+  "state": "CPU_SCOPE_WITH_HEAD_GUARDS_PASS",
+  "gpu_backend_mocked": true,
+  "container_id": "22a8d9b422907ce50c4a8cc434e656e6fa06cb16db424510b3886cd0865735b4",
+  "image_id": "sha256:368820997e1146e9d7843367478b53ce18db708e79861f7ea269860e9a1bda4b",
+  "files": {
+    "source/policy.py": "8f48d54fa434f271fcbb3e0ff6303093aeb76885e9bb9b31c9bcf603025720f0",
+    "source/cpu_scope.py": "2206b541192130740a116788e19acfaad0afd4e13f4bd63c7896f4c876d20d79",
+    "cpu-scope.log": "a0057148c9611ebf391db0237a8c3dabda825d757a82b1f3e8504f6a71564ac9",
+    "cpu-inspect.json": "8f6095fe09e3fe879b861bfa0ebbdcc0bbd3b07a635773c4dc8ffbcd137defd0"
+  }
+}

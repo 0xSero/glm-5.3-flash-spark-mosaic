@@ -1,0 +1,325 @@
+{
+  "adapter_sha256": "844722b5d5fcefdad4cf64fab2b8a258d3c8d6e951b1f02fd240bd9754072010",
+  "artifact_mode": "original_uniform_k2_unpruned_control",
+  "baseline_evaluator_sha256": "0c02949a77d28fe7c45786e964a1241cbba8d33b076335ca6a08a4fcac28729a",
+  "bf16_cross_entropy": 1.1630037677654943,
+  "bf16_perplexity": 3.199529500063886,
+  "candidate_config_sha256": "6f01b4d22b1cfd19f0f6892356bd88fc2725f443a3fd29d8003f3981cc338ecf",
+  "candidate_index_sha256": "825d6dc1ae4e10e7e4e744d8e556c781ab2e87b87ddc8775f2b01141ddad4327",
+  "candidate_manifest_sha256": "501641b947fa56afc9ed098bdc034e59c2bd229d4fa1a1d7b80e3727f10c8ba3",
+  "canonical_capture_config_sha256": "6f01b4d22b1cfd19f0f6892356bd88fc2725f443a3fd29d8003f3981cc338ecf",
+  "capture_policy": "All45 decoder layers, propagated hidden streams and previous DSA attention token indices, final native RMSNorm.",
+  "dependency_sha256": {
+    "glm53_exl3_tp4": "488b6f93183dde8c5c5a8248b46ccf22875e8619ddc0a3aa48115da34578a1a7",
+    "release_route_capture_v2": "3c5f5558d2a248fd375944067f992619a43fb3ed982b6eb6b30570b7ac1b15b8"
+  },
+  "experts_per_layer": 288,
+  "fixture_manifest_sha256": "46255621cd2da8e05546edc3498cfbee518da092af2f44ae243f79da97c0f00b",
+  "head_arithmetic": "BF16 torch.nn.functional.linear, then FP32 logits; vocabulary chunks4096",
+  "kl_bf16_to_variant": 0.43898590758408074,
+  "mtp_policy": "Preserved artifact MTP excluded from target-trunk quality, matching teacher baseline.",
+  "native_import_sha256": {
+    "exllamav3.modules.quant.exl3": "9029b566a8908e8b2aa3ecb0e1e6c73190cfc1368982b26bfbaf6be886149092",
+    "exllamav3_ext": "0eeb983b09dfe33451b8bc7625174320529b986a73f60b58bf4ebfa9f43ad9c0",
+    "reap.glm53_exl3_native": "22bc0749d74787e9df7ca0a06ec0fc257e4cf58cc5f9c2f315088d2ed5694380",
+    "vllm.model_executor.layers.quantization.exl3": "41fc9bb42f3a555dbcef05b8b6c4fb1fa63dfe80e844f66078d160d4f3235db9"
+  },
+  "original_source_inventory_sha256": "36b79ee52ace17008eb917588666e3ae7f6ce5f419470df019da8a27576d594b",
+  "original_source_repo": "0xSero/GLM-5.3-Flash-EXL3-TR3-2.0bpw",
+  "original_source_revision": "35b4b580debe2a1510a2eb042d9d6d4cd7fb3a6b",
+  "per_row": [
+    {
+      "bf16_nll_sum": 1311.0198974609375,
+      "kl_sum": 739.5452023800462,
+      "row": 0,
+      "tokens": 2047,
+      "top1_agree": 1711,
+      "variant_nll_sum": 1993.1766357421875
+    },
+    {
+      "bf16_nll_sum": 916.3118896484375,
+      "kl_sum": 1386.3814923828468,
+      "row": 1,
+      "tokens": 2047,
+      "top1_agree": 1559,
+      "variant_nll_sum": 2087.02880859375
+    },
+    {
+      "bf16_nll_sum": 1341.9949951171875,
+      "kl_sum": 1610.217342697084,
+      "row": 2,
+      "tokens": 2047,
+      "top1_agree": 1493,
+      "variant_nll_sum": 2679.6669921875
+    },
+    {
+      "bf16_nll_sum": 2598.87646484375,
+      "kl_sum": 811.412392437458,
+      "row": 3,
+      "tokens": 2047,
+      "top1_agree": 1606,
+      "variant_nll_sum": 3216.77734375
+    },
+    {
+      "bf16_nll_sum": 2475.73291015625,
+      "kl_sum": 619.0578779224306,
+      "row": 4,
+      "tokens": 2047,
+      "top1_agree": 1698,
+      "variant_nll_sum": 2854.44482421875
+    },
+    {
+      "bf16_nll_sum": 1533.69775390625,
+      "kl_sum": 741.9879314145073,
+      "row": 5,
+      "tokens": 2047,
+      "top1_agree": 1710,
+      "variant_nll_sum": 2170.492919921875
+    },
+    {
+      "bf16_nll_sum": 1337.24169921875,
+      "kl_sum": 627.3559384569526,
+      "row": 6,
+      "tokens": 2047,
+      "top1_agree": 1727,
+      "variant_nll_sum": 1903.512939453125
+    },
+    {
+      "bf16_nll_sum": 2040.6866455078125,
+      "kl_sum": 743.438701974228,
+      "row": 7,
+      "tokens": 2047,
+      "top1_agree": 1592,
+      "variant_nll_sum": 2699.149169921875
+    },
+    {
+      "bf16_nll_sum": 2233.382080078125,
+      "kl_sum": 875.5595479160547,
+      "row": 8,
+      "tokens": 2047,
+      "top1_agree": 1532,
+      "variant_nll_sum": 3057.956787109375
+    },
+    {
+      "bf16_nll_sum": 3208.794189453125,
+      "kl_sum": 427.2459574211389,
+      "row": 9,
+      "tokens": 2047,
+      "top1_agree": 1675,
+      "variant_nll_sum": 3579.12890625
+    },
+    {
+      "bf16_nll_sum": 3021.20947265625,
+      "kl_sum": 578.736252354458,
+      "row": 10,
+      "tokens": 2047,
+      "top1_agree": 1636,
+      "variant_nll_sum": 3470.741943359375
+    },
+    {
+      "bf16_nll_sum": 3114.482421875,
+      "kl_sum": 750.3263686308637,
+      "row": 11,
+      "tokens": 2047,
+      "top1_agree": 1578,
+      "variant_nll_sum": 3646.9521484375
+    },
+    {
+      "bf16_nll_sum": 2956.1796875,
+      "kl_sum": 708.6159680178389,
+      "row": 12,
+      "tokens": 2047,
+      "top1_agree": 1571,
+      "variant_nll_sum": 3584.49462890625
+    },
+    {
+      "bf16_nll_sum": 3656.244384765625,
+      "kl_sum": 466.73221530020237,
+      "row": 13,
+      "tokens": 2047,
+      "top1_agree": 1665,
+      "variant_nll_sum": 3919.16064453125
+    },
+    {
+      "bf16_nll_sum": 3557.0263671875,
+      "kl_sum": 529.189177012071,
+      "row": 14,
+      "tokens": 2047,
+      "top1_agree": 1639,
+      "variant_nll_sum": 3903.02490234375
+    },
+    {
+      "bf16_nll_sum": 4152.02685546875,
+      "kl_sum": 433.3087279573083,
+      "row": 15,
+      "tokens": 2047,
+      "top1_agree": 1640,
+      "variant_nll_sum": 4319.44140625
+    },
+    {
+      "bf16_nll_sum": 3314.6240234375,
+      "kl_sum": 624.9090723525733,
+      "row": 16,
+      "tokens": 2047,
+      "top1_agree": 1580,
+      "variant_nll_sum": 3737.9912109375
+    },
+    {
+      "bf16_nll_sum": 2853.47607421875,
+      "kl_sum": 844.0304474122822,
+      "row": 17,
+      "tokens": 2047,
+      "top1_agree": 1549,
+      "variant_nll_sum": 3550.5361328125
+    },
+    {
+      "bf16_nll_sum": 2793.905029296875,
+      "kl_sum": 639.3553282432258,
+      "row": 18,
+      "tokens": 2047,
+      "top1_agree": 1698,
+      "variant_nll_sum": 3143.350830078125
+    },
+    {
+      "bf16_nll_sum": 1242.59521484375,
+      "kl_sum": 1420.645019043237,
+      "row": 19,
+      "tokens": 2047,
+      "top1_agree": 1510,
+      "variant_nll_sum": 2528.687255859375
+    },
+    {
+      "bf16_nll_sum": 1835.1287841796875,
+      "kl_sum": 1469.049205912277,
+      "row": 20,
+      "tokens": 2047,
+      "top1_agree": 1455,
+      "variant_nll_sum": 3031.6630859375
+    },
+    {
+      "bf16_nll_sum": 1695.1270751953125,
+      "kl_sum": 1483.342784035951,
+      "row": 21,
+      "tokens": 2047,
+      "top1_agree": 1491,
+      "variant_nll_sum": 2910.0546875
+    },
+    {
+      "bf16_nll_sum": 1564.658203125,
+      "kl_sum": 1554.0514107942581,
+      "row": 22,
+      "tokens": 2047,
+      "top1_agree": 1420,
+      "variant_nll_sum": 2828.56689453125
+    },
+    {
+      "bf16_nll_sum": 2119.3017578125,
+      "kl_sum": 1381.6598353907466,
+      "row": 23,
+      "tokens": 2047,
+      "top1_agree": 1443,
+      "variant_nll_sum": 3169.76611328125
+    },
+    {
+      "bf16_nll_sum": 2334.0478515625,
+      "kl_sum": 1313.0891818478703,
+      "row": 24,
+      "tokens": 2047,
+      "top1_agree": 1444,
+      "variant_nll_sum": 3525.43505859375
+    },
+    {
+      "bf16_nll_sum": 2306.089599609375,
+      "kl_sum": 1226.0512183606625,
+      "row": 25,
+      "tokens": 2047,
+      "top1_agree": 1473,
+      "variant_nll_sum": 3286.290283203125
+    },
+    {
+      "bf16_nll_sum": 3769.322265625,
+      "kl_sum": 761.1885477565229,
+      "row": 26,
+      "tokens": 2047,
+      "top1_agree": 1567,
+      "variant_nll_sum": 4238.029296875
+    },
+    {
+      "bf16_nll_sum": 3820.609375,
+      "kl_sum": 495.9688963368535,
+      "row": 27,
+      "tokens": 2047,
+      "top1_agree": 1666,
+      "variant_nll_sum": 4112.509765625
+    },
+    {
+      "bf16_nll_sum": 1742.9136962890625,
+      "kl_sum": 1103.1256162729114,
+      "row": 28,
+      "tokens": 2047,
+      "top1_agree": 1527,
+      "variant_nll_sum": 2825.22900390625
+    },
+    {
+      "bf16_nll_sum": 1803.598388671875,
+      "kl_sum": 1015.2557145487517,
+      "row": 29,
+      "tokens": 2047,
+      "top1_agree": 1538,
+      "variant_nll_sum": 2604.73974609375
+    },
+    {
+      "bf16_nll_sum": 1638.033203125,
+      "kl_sum": 853.9066397082061,
+      "row": 30,
+      "tokens": 2047,
+      "top1_agree": 1631,
+      "variant_nll_sum": 2329.267333984375
+    },
+    {
+      "bf16_nll_sum": 1893.060546875,
+      "kl_sum": 520.5928780958056,
+      "row": 31,
+      "tokens": 2047,
+      "top1_agree": 1666,
+      "variant_nll_sum": 2294.495849609375
+    }
+  ],
+  "perplexity_delta_fraction": 0.42110464566620154,
+  "positions": 65504,
+  "quality_accepted": false,
+  "quantization_import_policy": "Existing observer vLLM quantization-only namespace loader; real LinearEXL3 and compiled extension, no attention substitute.",
+  "runtime_accepted": false,
+  "schema": "glm53-k2-full-trunk-quality-v1",
+  "source_validation": {
+    "full_payload_sha256_verified": true,
+    "indexed_tensors": 583090,
+    "inventory_sha256": "36b79ee52ace17008eb917588666e3ae7f6ce5f419470df019da8a27576d594b",
+    "k2_trellises": 145152,
+    "manifest_sha256": "501641b947fa56afc9ed098bdc034e59c2bd229d4fa1a1d7b80e3727f10c8ba3",
+    "metadata_sha256": {
+      "EXL3_MANIFEST.json": "501641b947fa56afc9ed098bdc034e59c2bd229d4fa1a1d7b80e3727f10c8ba3",
+      "config.json": "6f01b4d22b1cfd19f0f6892356bd88fc2725f443a3fd29d8003f3981cc338ecf",
+      "model.safetensors.index.json": "825d6dc1ae4e10e7e4e744d8e556c781ab2e87b87ddc8775f2b01141ddad4327",
+      "protected-q3-parity.json": "061d30a6a3f77c5b910ecc1ace66e9e93e549d3c61aeab8a5db8826c8657ad01",
+      "quantization_config.json": "c0ff915ffab04074004391242807ce8a1b77a37d15eb4eaf975417ed3fa1634b"
+    },
+    "native_protected_identical_to_q3": true,
+    "quality_claim": false,
+    "runtime_claim": false,
+    "schema": "glm53-k2-source-validation-v1",
+    "source_repo": "0xSero/GLM-5.3-Flash-EXL3-TR3-2.0bpw",
+    "source_revision": "35b4b580debe2a1510a2eb042d9d6d4cd7fb3a6b",
+    "state": "FULL_PAYLOAD_VERIFIED",
+    "weight_file_bytes": 111352026456,
+    "weight_files": 133
+  },
+  "state": "QUALITY_MEASURED",
+  "teacher_manifest_sha256": "a1604015f76d6a6b6f032ffb7e3359a770e8dd2564ca89e3b00eb8bcb4d93314",
+  "tokens": 65504,
+  "top1_agreement": 0.7738458720078163,
+  "trunk_layers": 45,
+  "variant_cross_entropy": 1.514438256439373,
+  "variant_normalized_manifest_sha256": "44b8b33426dfa7b64a8577e253effc739d2af73c7526dbeab3d9f9ce0e7dc125",
+  "variant_perplexity": 4.5468662364868475
+}

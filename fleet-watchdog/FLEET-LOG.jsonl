@@ -1,0 +1,296 @@
+{"utc":"2026-09-13T23:02:53Z","host":"spark-2384","ok":true,"uptime":"up 1 day, 7 hours, 59 minutes","glm53_containers":["glm53-exl3-plain-serve-rec"]}
+{"utc":"2026-09-13T23:02:53Z","host":"spark-557f","ok":true,"uptime":"up 1 day, 7 hours, 59 minutes","glm53_containers":["glm53-s216"]}
+{"utc":"2026-09-13T23:02:53Z","host":"spark-2822","ok":true,"uptime":"up 1 day, 7 hours, 27 minutes","glm53_containers":null}
+{"utc":"2026-09-13T23:02:53Z","host":"spark-de5c","ok":true,"uptime":"up 1 day, 7 hours, 59 minutes","glm53_containers":null}
+{"utc":"2026-09-13T23:02:53Z","host":"pop-os","ok":true,"uptime":"up 9 hours, 43 minutes","glm53_containers":null}
+{"utc": "2026-09-14T01:28:04Z", "host": "spark-2384", "ok": true, "uptime": "up 1 day, 10 hours", "glm53_containers": ["glm53-exl3-plain-serve-rec"]}
+{"utc": "2026-09-14T01:28:04Z", "host": "spark-557f", "ok": true, "uptime": "up 1 day, 10 hours", "glm53_containers": ["glm53-t216"]}
+{"utc": "2026-09-14T01:28:04Z", "host": "spark-2822", "ok": true, "uptime": "up 1 day, 9 hours", "glm53_containers": null}
+{"utc": "2026-09-14T01:28:04Z", "host": "spark-de5c", "ok": true, "uptime": "up 1 day, 10 hours", "glm53_containers": null}
+{"utc": "2026-09-14T01:28:04Z", "host": "pop-os", "ok": true, "uptime": "up 12 hours, 14 minutes", "glm53_containers": null}
+{"utc": "2026-09-14T09:25:33Z", "host": "spark-2384", "ok": true, "uptime": "up 1 day, 18 hours, 28 minutes", "glm53_containers": ["glm53-exl3-plain-serve-rec"]}
+{"utc": "2026-09-14T09:25:33Z", "host": "spark-557f", "ok": true, "uptime": "up 1 day, 18 hours, 27 minutes", "glm53_containers": ["glm53-r216"]}
+{"utc": "2026-09-14T09:25:33Z", "host": "spark-2822", "ok": true, "uptime": "up 1 day, 17 hours, 56 minutes", "glm53_containers": []}
+{"utc": "2026-09-14T09:25:33Z", "host": "spark-de5c", "ok": false, "uptime": "", "glm53_containers": []}
+{"utc": "2026-09-14T09:25:33Z", "host": "pop-os", "ok": true, "uptime": "up 20 hours, 12 minutes", "glm53_containers": []}
+{"utc": "2026-09-14T13:03:40Z", "host": "spark-2384", "ok": true, "uptime": "up 1 day, 22 hours, 6 minutes", "glm53_containers": ["glm53-a0-bench"], "note": "bench-tuned A0 server (recorder stopped preserved)"}
+{"utc": "2026-09-14T13:03:40Z", "host": "spark-557f", "ok": true, "uptime": "up 1 day, 22 hours, 5 minutes", "glm53_containers": ["glm53-r216-bench"], "note": "bench-tuned R216 (panel-era glm53-r216 stopped preserved)"}
+{"utc": "2026-09-14T13:03:40Z", "host": "spark-2822", "ok": true, "uptime": "up 1 day, 21 hours, 34 minutes", "glm53_containers": []}
+{"utc": "2026-09-14T13:03:40Z", "host": "spark-de5c", "ok": false, "uptime": "", "glm53_containers": [], "note": "continuing outage since ~08:2xZ (incident 2026-09-14T092533Z)"}
+{"utc": "2026-09-14T13:03:40Z", "host": "pop-os", "ok": true, "uptime": "up 23 hours, 50 minutes", "glm53_containers": [], "note": "observe-only"}
+{"utc": "2026-09-14T15:14:18Z", "host": "spark-557f", "ok": true, "uptime": "2026-09-12 16:57:53", "glm53_containers": ["glm53-r216-bench Up 34 minutes"]}
+{"utc": "2026-09-14T15:14:18Z", "host": "spark-2384", "ok": true, "uptime": "2026-09-12 16:57:19", "glm53_containers": ["glm53-a0-bench Up 34 minutes"]}
+{"utc": "2026-09-14T15:14:18Z", "host": "spark-2822", "ok": true, "uptime": "2026-09-12 17:29:15", "glm53_containers": null}
+{"utc": "2026-09-14T15:14:18Z", "host": "spark-de5c", "ok": false, "uptime": null, "glm53_containers": null}
+{"utc": "2026-09-14T15:14:18Z", "host": "pop-os", "ok": true, "uptime": "2026-09-13 15:13:13", "glm53_containers": null}
+{"utc": "2026-09-14T16:22:06Z", "host": "spark-557f", "ok": true, "uptime": null, "glm53_containers": ["glm53-r216-bench", "nv-persisted-restore"], "note": "first probe hit a transient banner-exchange timeout; docker ps via the ProxyJump=none override succeeded seconds later"}
+{"utc": "2026-09-14T16:22:06Z", "host": "spark-2384", "ok": true, "uptime": "up 2 days, 1 hour, 24 minutes", "glm53_containers": ["glm53-a0-bench"]}
+{"utc": "2026-09-14T16:22:06Z", "host": "spark-2822", "ok": true, "uptime": "up 2 days, 52 minutes", "glm53_containers": null}
+{"utc": "2026-09-14T16:22:06Z", "host": "spark-de5c", "ok": false, "uptime": null, "glm53_containers": null}
+{"utc": "2026-09-14T16:22:06Z", "host": "pop-os", "ok": true, "uptime": "up 1 day, 3 hours, 8 minutes", "glm53_containers": null}
+{"utc": "2026-09-14T16:23:32Z", "host": "spark-557f", "ok": true, "uptime": null, "glm53_containers": ["glm53-r216-bench", "nv-persisted-restore"], "note": "bare-alias probe (routes ProxyJump via down de5c) stalls at banner exchange \u2014 expected while de5c is down; direct override probe (ProxyJump=none, HostName=spark-557f.internal) answers, docker ps OK"}
+{"utc": "2026-09-14T16:23:32Z", "host": "spark-2384", "ok": true, "uptime": "up 2 days, 1 hour, 26 minutes", "glm53_containers": ["glm53-a0-bench"]}
+{"utc": "2026-09-14T16:23:32Z", "host": "spark-2822", "ok": true, "uptime": "up 2 days, 54 minutes", "glm53_containers": null}
+{"utc": "2026-09-14T16:23:32Z", "host": "spark-de5c", "ok": false, "uptime": null, "glm53_containers": null}
+{"utc": "2026-09-14T16:23:32Z", "host": "pop-os", "ok": true, "uptime": "up 1 day, 3 hours, 10 minutes", "glm53_containers": null}
+{"utc": "2026-09-14T16:25:12Z", "host": "spark-557f", "ok": true, "uptime": "up 2 days, 1 hour, 27 minutes", "glm53_containers": ["glm53-r216-bench", "nv-persisted-restore"], "note": "probed directly via the ProxyJump=none override \u2014 clean answer (previous passes' banner stalls were the dead de5c jump path, not 557f)"}
+{"utc": "2026-09-14T16:25:12Z", "host": "spark-2384", "ok": true, "uptime": "up 2 days, 1 hour, 27 minutes", "glm53_containers": ["glm53-a0-bench"]}
+{"utc": "2026-09-14T16:25:12Z", "host": "spark-2822", "ok": true, "uptime": "up 2 days, 55 minutes", "glm53_containers": null}
+{"utc": "2026-09-14T16:25:12Z", "host": "spark-de5c", "ok": false, "uptime": null, "glm53_containers": null}
+{"utc": "2026-09-14T16:25:12Z", "host": "pop-os", "ok": true, "uptime": "up 1 day, 3 hours, 11 minutes", "glm53_containers": null}
+{"utc":"2026-09-14T18:25:25Z","host":"spark-2384","ok":true,"uptime":"up 2d3h27m","glm53_containers":["glm53-a0-bench"]}
+{"utc":"2026-09-14T18:25:25Z","host":"spark-2822","ok":true,"uptime":"up 2d2h55m","glm53_containers":["glm53-r216-tbench"]}
+{"utc":"2026-09-14T18:25:25Z","host":"spark-557f","ok":true,"uptime":"up 2d3h27m","glm53_containers":["glm53-r216-bench","nv-persisted-restore"]}
+{"utc":"2026-09-14T18:25:25Z","host":"pop-os","ok":true,"uptime":"up 1d5h12m","glm53_containers":[]}
+{"utc":"2026-09-14T18:25:25Z","host":"spark-de5c","ok":false,"uptime":null,"glm53_containers":[]}
+{"utc":"2026-09-14T18:59:24Z","host":"spark-2384","ok":true,"uptime":"up 2d4h1m","glm53_containers":["glm53-a0-bench"]}
+{"utc":"2026-09-14T18:59:24Z","host":"spark-2822","ok":true,"uptime":"up 2d3h29m","glm53_containers":["glm53-r216-tbench"]}
+{"utc":"2026-09-14T18:59:24Z","host":"spark-557f","ok":true,"uptime":"up 2d4h1m","glm53_containers":["glm53-r216-bench","nv-persisted-restore"]}
+{"utc":"2026-09-14T18:59:24Z","host":"pop-os","ok":true,"uptime":"up 1d5h45m","glm53_containers":[]}
+{"utc":"2026-09-14T18:59:24Z","host":"spark-de5c","ok":false,"uptime":null,"glm53_containers":[]}
+{"utc":"2026-09-14T19:26:12Z","host":"spark-2384","ok":true,"uptime":"up 2d4h28m","glm53_containers":["glm53-a0-bench"]}
+{"utc":"2026-09-14T19:26:12Z","host":"spark-2822","ok":true,"uptime":"up 2d3h56m","glm53_containers":["glm53-r216-tbench"]}
+{"utc":"2026-09-14T19:26:12Z","host":"spark-557f","ok":true,"uptime":"up 2d4h28m","glm53_containers":["glm53-r216-bench","nv-persisted-restore"]}
+{"utc":"2026-09-14T19:26:12Z","host":"pop-os","ok":true,"uptime":"up 1d6h12m","glm53_containers":[]}
+{"utc":"2026-09-14T19:26:12Z","host":"spark-de5c","ok":false,"uptime":null,"glm53_containers":[]}
+{"utc":"2026-09-14T20:10:17Z","host":"spark-2384","ok":true,"glm53_containers":["glm53-a0-bench"]}
+{"utc":"2026-09-14T20:10:17Z","host":"spark-2822","ok":true,"glm53_containers":["glm53-r216-tbench"]}
+{"utc":"2026-09-14T20:10:17Z","host":"spark-557f","ok":true,"glm53_containers":["glm53-r216-bench","nv-persisted-restore"]}
+{"utc":"2026-09-14T20:10:17Z","host":"pop-os","ok":true,"glm53_containers":[]}
+{"utc":"2026-09-14T20:10:17Z","host":"spark-de5c","ok":false,"glm53_containers":[]}
+{"utc":"2026-09-14T20:25:18Z","host":"spark-2384","ok":true,"glm53_containers":["glm53-a0-bench"]}
+{"utc":"2026-09-14T20:25:18Z","host":"spark-2822","ok":true,"glm53_containers":[]}
+{"utc":"2026-09-14T20:25:18Z","host":"spark-557f","ok":true,"glm53_containers":[]}
+{"utc":"2026-09-14T20:25:18Z","host":"pop-os","ok":true,"glm53_containers":[]}
+{"utc":"2026-09-14T20:25:18Z","host":"spark-de5c","ok":false,"glm53_containers":[]}
+{"utc":"2026-09-14T23:22:11Z","host":"spark-2384","ok":true,"glm53_containers":["glm53-a0-bench"]}
+{"utc":"2026-09-14T23:22:11Z","host":"spark-2822","ok":true,"glm53_containers":[]}
+{"utc":"2026-09-14T23:22:11Z","host":"spark-557f","ok":true,"glm53_containers":["glm53-e216","nv-persisted-restore"]}
+{"utc":"2026-09-14T23:22:11Z","host":"pop-os","ok":true,"glm53_containers":[]}
+{"utc":"2026-09-14T23:22:11Z","host":"spark-de5c","ok":false,"glm53_containers":[]}
+{"utc":"2026-09-14T23:23:04Z","host":"spark-2384","ok":true,"glm53_containers":["glm53-a0-bench"],"note":"CORRECTION of previous line: empty docker-ps was alarm-truncation race; container Up 9h, health 200 verified"}
+{"utc":"2026-09-14T23:25:39Z","host":"spark-2384","ok":true,"glm53_containers":["glm53-a0-bench"]}
+{"utc":"2026-09-14T23:25:39Z","host":"spark-2822","ok":true,"glm53_containers":[]}
+{"utc":"2026-09-14T23:25:39Z","host":"spark-557f","ok":true,"glm53_containers":["glm53-e216","nv-persisted-restore"]}
+{"utc":"2026-09-14T23:25:39Z","host":"pop-os","ok":true,"glm53_containers":[]}
+{"utc":"2026-09-14T23:25:39Z","host":"spark-de5c","ok":false,"glm53_containers":[]}
+{"utc":"2026-09-15T00:07:31Z","host":"spark-2384","ok":true,"glm53_containers":["glm53-a0-bench"]}
+{"utc":"2026-09-15T00:07:31Z","host":"spark-2822","ok":true,"glm53_containers":[]}
+{"utc":"2026-09-15T00:07:31Z","host":"spark-557f","ok":true,"glm53_containers":["glm53-e216","nv-persisted-restore"]}
+{"utc":"2026-09-15T00:07:31Z","host":"pop-os","ok":true,"glm53_containers":[]}
+{"utc":"2026-09-15T00:07:31Z","host":"spark-de5c","ok":false,"glm53_containers":[]}
+{"utc":"2026-09-15T00:25:33Z","host":"spark-2384","ok":true,"uptime":"up 2 days, 9 hours, 28 minutes","glm53_containers":[]}
+{"utc":"2026-09-15T00:25:33Z","host":"spark-2822","ok":true,"uptime":"up 2 days, 8 hours, 56 minutes","glm53_containers":[]}
+{"utc":"2026-09-15T00:25:33Z","host":"spark-de5c","ok":false,"uptime":"up 2 days, 8 hours, 56 minutes","glm53_containers":[]}
+{"utc":"2026-09-15T00:25:33Z","host":"pop-os","ok":true,"uptime":"up 1 day, 11 hours, 12 minutes","glm53_containers":[]}
+{"utc":"2026-09-15T00:25:51Z","host":"spark-557f","ok":true,"uptime":"up 2 days, 9 hours","glm53_containers":["glm53-e216","nv-persisted-restore"]}
+{"utc":"2026-09-15T01:33:58Z","host":"spark-2384","ok":true,"uptime":"ok up 2 days, 10 hours, 36 minutes ","glm53_containers":[]}
+{"utc":"2026-09-15T01:33:58Z","host":"spark-2822","ok":true,"uptime":"ok up 2 days, 10 hours, 4 minutes ","glm53_containers":[]}
+{"utc":"2026-09-15T01:33:58Z","host":"pop-os","ok":true,"uptime":"ok up 36 minutes ","glm53_containers":[]}
+{"utc":"2026-09-15T01:55:57Z","host":"spark-2384","ok":true,"uptime":"up 2 days, 10 hours, 57 minutes","glm53_containers":["glm53-a0-bench"]}
+{"utc":"2026-09-15T01:55:57Z","host":"spark-2822","ok":false,"uptime":null,"glm53_containers":[],"note":"probe-1 connect timeout"}
+{"utc":"2026-09-15T01:55:57Z","host":"spark-2822","ok":true,"uptime":"up 2 days, 10 hours, 26 minutes","glm53_containers":[],"note":"retry +5s recovered — transient, uptime continuous; incident file amended"}
+{"utc":"2026-09-15T01:55:57Z","host":"spark-de5c","ok":false,"uptime":null,"glm53_containers":[]}
+{"utc":"2026-09-15T01:55:57Z","host":"pop-os","ok":true,"uptime":"up 57 minutes (boot ~00:58Z; last: prev boot ended 00:54Z)","glm53_containers":[],"note":"single reboot ~00:58Z UTC — run-19 second-reboot reading was clock arithmetic error, corrected"}
+{"utc":"2026-09-15T01:55:57Z","host":"spark-557f","ok":true,"uptime":"up 2 days, 10 hours, 57 minutes","glm53_containers":["nv-persisted-restore"],"note":"idle — e216 container removed run 19, artifact preserved"}
+{"utc":"2026-09-15T02:25:06Z","host":"spark-2384","ok":true,"uptime":"ok up 2 days, 11 hours, 27 minutes ","glm53_containers":"glm53-a0-bench"}
+{"utc":"2026-09-15T02:25:06Z","host":"spark-2822","ok":true,"uptime":"ok up 2 days, 10 hours, 55 minutes ","glm53_containers":""}
+{"utc":"2026-09-15T02:25:06Z","host":"spark-de5c","ok":false}
+{"utc":"2026-09-15T02:25:06Z","host":"pop-os","ok":true,"uptime":"ok up 1 hour, 27 minutes ","glm53_containers":""}
+{"utc":"2026-09-15T02:25:06Z","host":"spark-557f","ok":true,"uptime_probe":"ok up 2 days, 11 hours, 27 minutes nv-persisted-restore ","glm53_containers":"nv-persisted-restore","note":"idle, e216 artifact preserved"}
+{"utc":"2026-09-15T02:55:04Z","host":"spark-2384","ok":true,"uptime":"ok up 2 days, 11 hours, 57 minutes ","glm53_containers":"glm53-a0-bench"}
+{"utc":"2026-09-15T02:55:04Z","host":"spark-2822","ok":true,"uptime":"ok up 2 days, 11 hours, 25 minutes ","glm53_containers":""}
+{"utc":"2026-09-15T02:55:04Z","host":"spark-de5c","ok":false}
+{"utc":"2026-09-15T02:55:04Z","host":"pop-os","ok":true,"uptime":"ok up 1 hour, 57 minutes ","glm53_containers":""}
+{"utc":"2026-09-15T02:55:04Z","host":"spark-557f","ok":true,"uptime_probe":"ok up 2 days, 11 hours, 57 minutes nv-persisted-restore ","glm53_containers":"nv-persisted-restore","note":"idle, e216 artifact preserved"}
+{"utc":"2026-09-15T03:25:00Z","host":"spark-2384","ok":true,"uptime":"ok up 2 days, 12 hours, 27 minutes ","glm53_containers":"glm53-a0-bench"}
+{"utc":"2026-09-15T03:25:00Z","host":"spark-2822","ok":true,"uptime":"ok up 2 days, 11 hours, 55 minutes ","glm53_containers":""}
+{"utc":"2026-09-15T03:25:00Z","host":"spark-de5c","ok":false}
+{"utc":"2026-09-15T03:25:00Z","host":"pop-os","ok":true,"uptime":"ok up 2 hours, 27 minutes ","glm53_containers":""}
+{"utc":"2026-09-15T03:25:00Z","host":"spark-557f","ok":true,"uptime_probe":"ok up 2 days, 12 hours, 27 minutes nv-persisted-restore ","glm53_containers":"nv-persisted-restore","note":"idle, e216 artifact preserved"}
+{"utc":"2026-09-15T03:55:01Z","host":"spark-2384","ok":true,"uptime":"ok up 2 days, 12 hours, 57 minutes ","glm53_containers":"glm53-a0-bench"}
+{"utc":"2026-09-15T03:55:01Z","host":"spark-2822","ok":true,"uptime":"ok up 2 days, 12 hours, 25 minutes ","glm53_containers":""}
+{"utc":"2026-09-15T03:55:01Z","host":"spark-de5c","ok":false}
+{"utc":"2026-09-15T03:55:01Z","host":"pop-os","ok":true,"uptime":"ok up 2 hours, 57 minutes ","glm53_containers":""}
+{"utc":"2026-09-15T03:55:01Z","host":"spark-557f","ok":true,"uptime_probe":"ok up 2 days, 12 hours, 57 minutes nv-persisted-restore ","glm53_containers":"nv-persisted-restore","note":"idle, e216 artifact preserved"}
+{"utc":"2026-09-15T04:25:00Z","host":"spark-2384","ok":true,"uptime":"ok up 2 days, 13 hours, 27 minutes ","glm53_containers":"glm53-a0-bench"}
+{"utc":"2026-09-15T04:25:00Z","host":"spark-2822","ok":true,"uptime":"ok up 2 days, 12 hours, 55 minutes ","glm53_containers":""}
+{"utc":"2026-09-15T04:25:00Z","host":"spark-de5c","ok":false}
+{"utc":"2026-09-15T04:25:00Z","host":"pop-os","ok":true,"uptime":"ok up 3 hours, 27 minutes ","glm53_containers":""}
+{"utc":"2026-09-15T04:25:00Z","host":"spark-557f","ok":true,"uptime_probe":"ok up 2 days, 13 hours, 27 minutes nv-persisted-restore ","glm53_containers":"nv-persisted-restore","note":"idle, e216 artifact preserved"}
+{"utc":"2026-09-15T04:55:00Z","host":"spark-2384","ok":true,"uptime":"ok up 2 days, 13 hours, 57 minutes ","glm53_containers":"glm53-a0-bench"}
+{"utc":"2026-09-15T04:55:00Z","host":"spark-2822","ok":true,"uptime":"ok up 2 days, 13 hours, 25 minutes ","glm53_containers":""}
+{"utc":"2026-09-15T04:55:00Z","host":"spark-de5c","ok":false}
+{"utc":"2026-09-15T04:55:00Z","host":"pop-os","ok":true,"uptime":"ok up 3 hours, 57 minutes ","glm53_containers":""}
+{"utc":"2026-09-15T04:55:00Z","host":"spark-557f","ok":true,"uptime_probe":"ok up 2 days, 13 hours, 57 minutes nv-persisted-restore ","glm53_containers":"nv-persisted-restore","note":"idle, e216 artifact preserved"}
+{"utc":"2026-09-15T05:25:00Z","host":"spark-2384","ok":true,"uptime":"ok up 2 days, 14 hours, 27 minutes ","glm53_containers":"glm53-a0-bench"}
+{"utc":"2026-09-15T05:25:00Z","host":"spark-2822","ok":true,"uptime":"ok up 2 days, 13 hours, 55 minutes ","glm53_containers":""}
+{"utc":"2026-09-15T05:25:00Z","host":"spark-de5c","ok":false}
+{"utc":"2026-09-15T05:25:00Z","host":"pop-os","ok":true,"uptime":"ok up 4 hours, 27 minutes ","glm53_containers":""}
+{"utc":"2026-09-15T05:25:00Z","host":"spark-557f","ok":true,"uptime_probe":"ok up 2 days, 14 hours, 27 minutes nv-persisted-restore ","glm53_containers":"nv-persisted-restore","note":"idle, e216 artifact preserved"}
+{"utc":"2026-09-15T05:55:01Z","host":"spark-2384","ok":true,"uptime":"ok up 2 days, 14 hours, 57 minutes ","glm53_containers":"glm53-a0-bench"}
+{"utc":"2026-09-15T05:55:01Z","host":"spark-2822","ok":true,"uptime":"ok up 2 days, 14 hours, 25 minutes ","glm53_containers":""}
+{"utc":"2026-09-15T05:55:01Z","host":"spark-de5c","ok":false}
+{"utc":"2026-09-15T05:55:01Z","host":"pop-os","ok":true,"uptime":"ok up 4 hours, 57 minutes ","glm53_containers":""}
+{"utc":"2026-09-15T05:55:01Z","host":"spark-557f","ok":true,"uptime_probe":"ok up 2 days, 14 hours, 57 minutes nv-persisted-restore ","glm53_containers":"nv-persisted-restore","note":"idle, e216 artifact preserved"}
+{"utc":"2026-09-15T06:25:01Z","host":"spark-2384","ok":true,"uptime":"ok up 2 days, 15 hours, 27 minutes ","glm53_containers":"glm53-a0-bench"}
+{"utc":"2026-09-15T06:25:01Z","host":"spark-2822","ok":true,"uptime":"ok up 2 days, 14 hours, 55 minutes ","glm53_containers":""}
+{"utc":"2026-09-15T06:25:01Z","host":"spark-de5c","ok":false}
+{"utc":"2026-09-15T06:25:01Z","host":"pop-os","ok":true,"uptime":"ok up 5 hours, 27 minutes ","glm53_containers":""}
+{"utc":"2026-09-15T06:25:01Z","host":"spark-557f","ok":true,"uptime_probe":"ok up 2 days, 15 hours, 27 minutes nv-persisted-restore ","glm53_containers":"nv-persisted-restore","note":"idle, e216 artifact preserved"}
+{"utc":"2026-09-15T06:55:01Z","host":"spark-2384","ok":true,"uptime":"ok up 2 days, 15 hours, 57 minutes ","glm53_containers":"glm53-a0-bench"}
+{"utc":"2026-09-15T06:55:01Z","host":"spark-2822","ok":true,"uptime":"ok up 2 days, 15 hours, 25 minutes ","glm53_containers":""}
+{"utc":"2026-09-15T06:55:01Z","host":"spark-de5c","ok":false}
+{"utc":"2026-09-15T06:55:01Z","host":"pop-os","ok":true,"uptime":"ok up 5 hours, 57 minutes ","glm53_containers":""}
+{"utc":"2026-09-15T06:55:01Z","host":"spark-557f","ok":true,"uptime_probe":"ok up 2 days, 15 hours, 57 minutes nv-persisted-restore ","glm53_containers":"nv-persisted-restore","note":"idle, e216 artifact preserved"}
+{"utc":"2026-09-15T07:25:03Z","host":"spark-2384","ok":true,"uptime":"ok up 2 days, 16 hours, 27 minutes ","glm53_containers":"glm53-a0-bench"}
+{"utc":"2026-09-15T07:25:03Z","host":"spark-2822","ok":true,"uptime":"ok up 2 days, 15 hours, 55 minutes ","glm53_containers":""}
+{"utc":"2026-09-15T07:25:03Z","host":"spark-de5c","ok":false}
+{"utc":"2026-09-15T07:25:03Z","host":"pop-os","ok":true,"uptime":"ok up 6 hours, 27 minutes ","glm53_containers":""}
+{"utc":"2026-09-15T07:25:03Z","host":"spark-557f","ok":true,"uptime_probe":"ok up 2 days, 16 hours, 27 minutes nv-persisted-restore ","glm53_containers":"nv-persisted-restore","note":"idle, e216 artifact preserved"}
+{"utc":"2026-09-15T07:55:02Z","host":"spark-2384","ok":true,"uptime":"ok up 2 days, 16 hours, 57 minutes ","glm53_containers":"glm53-a0-bench"}
+{"utc":"2026-09-15T07:55:02Z","host":"spark-2822","ok":true,"uptime":"ok up 2 days, 16 hours, 25 minutes ","glm53_containers":""}
+{"utc":"2026-09-15T07:55:02Z","host":"spark-de5c","ok":false}
+{"utc":"2026-09-15T07:55:02Z","host":"pop-os","ok":true,"uptime":"ok up 6 hours, 57 minutes ","glm53_containers":""}
+{"utc":"2026-09-15T07:55:02Z","host":"spark-557f","ok":true,"uptime_probe":"ok up 2 days, 16 hours, 57 minutes nv-persisted-restore ","glm53_containers":"nv-persisted-restore","note":"idle, e216 artifact preserved"}
+{"utc":"2026-09-15T08:25:03Z","host":"spark-2384","ok":true,"uptime":"ok up 2 days, 17 hours, 27 minutes ","glm53_containers":"glm53-a0-bench"}
+{"utc":"2026-09-15T08:25:03Z","host":"spark-2822","ok":true,"uptime":"ok up 2 days, 16 hours, 55 minutes ","glm53_containers":""}
+{"utc":"2026-09-15T08:25:03Z","host":"spark-de5c","ok":false}
+{"utc":"2026-09-15T08:25:03Z","host":"pop-os","ok":true,"uptime":"ok up 7 hours, 27 minutes ","glm53_containers":""}
+{"utc":"2026-09-15T08:25:03Z","host":"spark-557f","ok":true,"uptime_probe":"ok up 2 days, 17 hours, 27 minutes nv-persisted-restore ","glm53_containers":"nv-persisted-restore","note":"idle, e216 artifact preserved"}
+{"utc":"2026-09-15T08:55:02Z","host":"spark-2384","ok":true,"uptime":"ok up 2 days, 17 hours, 57 minutes ","glm53_containers":"glm53-a0-bench"}
+{"utc":"2026-09-15T08:55:02Z","host":"spark-2822","ok":true,"uptime":"ok up 2 days, 17 hours, 25 minutes ","glm53_containers":""}
+{"utc":"2026-09-15T08:55:02Z","host":"spark-de5c","ok":false}
+{"utc":"2026-09-15T08:55:02Z","host":"pop-os","ok":true,"uptime":"ok up 7 hours, 57 minutes ","glm53_containers":""}
+{"utc":"2026-09-15T08:55:02Z","host":"spark-557f","ok":true,"uptime_probe":"ok up 2 days, 17 hours, 57 minutes nv-persisted-restore ","glm53_containers":"nv-persisted-restore","note":"idle, e216 artifact preserved"}
+{"utc":"2026-09-15T09:55:11Z","host":"spark-2384","ok":true,"uptime":"ok up 2 days, 18 hours, 57 minutes ","glm53_containers":"glm53-a0-bench"}
+{"utc":"2026-09-15T09:55:11Z","host":"spark-2822","ok":true,"uptime":"ok up 2 days, 18 hours, 25 minutes ","glm53_containers":""}
+{"utc":"2026-09-15T09:55:11Z","host":"spark-de5c","ok":false}
+{"utc":"2026-09-15T09:55:11Z","host":"pop-os","ok":true,"uptime":"ok up 8 hours, 57 minutes ","glm53_containers":""}
+{"utc":"2026-09-15T09:55:11Z","host":"spark-557f","ok":true,"uptime_probe":"ok up 2 days, 18 hours, 57 minutes nv-persisted-restore ","glm53_containers":"nv-persisted-restore","note":"idle, e216 artifact preserved"}
+{"utc":"2026-09-15T10:24:58Z","host":"spark-2384","ok":true,"uptime":"ok up 2 days, 19 hours, 27 minutes "}
+{"utc":"2026-09-15T10:24:58Z","host":"spark-2822","ok":true,"uptime":"ok up 2 days, 18 hours, 55 minutes "}
+{"utc":"2026-09-15T10:24:58Z","host":"pop-os","ok":true,"uptime":"ok up 9 hours, 27 minutes "}
+{"utc":"2026-09-15T10:24:58Z","host":"spark-557f","ok":true,"uptime_probe":"ok up 2 days, 19 hours, 27 minutes nv-persisted-restore ","glm53_containers":"nv-persisted-restore"}
+{"utc":"2026-09-15T10:54:57Z","host":"spark-2384","ok":true,"uptime":""}
+{"utc":"2026-09-15T10:54:57Z","host":"spark-2822","ok":true,"uptime":""}
+{"utc":"2026-09-15T10:54:57Z","host":"pop-os","ok":true,"uptime":""}
+{"utc":"2026-09-15T10:54:57Z","host":"spark-557f","ok":true,"uptime_probe":"ok up 2 days, 19 hours, 57 minutes nv-persisted-restore ","glm53_containers":"nv-persisted-restore"}
+{"utc":"2026-09-15T11:25:06Z","host":"spark-2384","ok":true,"uptime":"ok up 2 days, 20 hours, 27 minutes "}
+{"utc":"2026-09-15T11:25:06Z","host":"spark-2822","ok":true,"uptime":"ok up 2 days, 19 hours, 55 minutes "}
+{"utc":"2026-09-15T11:25:06Z","host":"pop-os","ok":true,"uptime":"ok up 10 hours, 27 minutes "}
+{"utc":"2026-09-15T11:25:06Z","host":"spark-557f","ok":true,"uptime_probe":"ok up 2 days, 20 hours, 27 minutes "}
+{"utc":"2026-09-15T11:54:58Z","host":"spark-de5c","ok":false}
+{"utc":"2026-09-15T11:54:58Z","host":"spark-2384","ok":true,"uptime":"ok up 2 days, 20 hours, 57 minutes "}
+{"utc":"2026-09-15T11:54:58Z","host":"spark-2822","ok":true,"uptime":"ok up 2 days, 20 hours, 25 minutes "}
+{"utc":"2026-09-15T11:54:58Z","host":"pop-os","ok":true,"uptime":"ok up 10 hours, 57 minutes "}
+{"utc":"2026-09-15T11:54:58Z","host":"spark-557f","ok":true,"uptime_probe":"ok up 2 days, 20 hours, 57 minutes "}
+{"utc":"2026-09-15T12:04:41Z","host":"spark-2384","ok":true}
+{"utc":"2026-09-15T12:04:41Z","host":"spark-2822","ok":true}
+{"utc":"2026-09-15T12:04:41Z","host":"pop-os","ok":true}
+{"utc":"2026-09-15T12:04:41Z","host":"spark-557f","ok":true}
+{"utc":"2026-09-15T12:26:59Z","host":"spark-2384","ok":true,"uptime":"ok up 2 days, 21 hours, 29 minutes "}
+{"utc":"2026-09-15T12:26:59Z","host":"spark-2822","ok":true,"uptime":"ok up 2 days, 20 hours, 57 minutes "}
+{"utc":"2026-09-15T12:26:59Z","host":"spark-de5c","ok":false}
+{"utc":"2026-09-15T12:26:59Z","host":"pop-os","ok":true,"uptime":"ok up 11 hours, 29 minutes "}
+{"utc":"2026-09-15T12:26:59Z","host":"spark-557f","ok":true,"uptime_probe":"ok up 2 days, 21 hours, 29 minutes nv-persisted-restore ","glm53_containers":"nv-persisted-restore"}
+{"utc": "2026-09-15T15:18:05Z", "host": "spark-2384", "ok": true, "uptime": "up 3 days, 20 min", "glm53_containers": ["glm53-a0-bench"]}
+{"utc": "2026-09-15T15:18:05Z", "host": "spark-2822", "ok": true, "uptime": "up 2 days, 23:48", "glm53_containers": ["glm53-f216-completion-rank0"]}
+{"utc": "2026-09-15T15:18:05Z", "host": "spark-557f", "ok": true, "uptime": "up 3 days, 19 min", "glm53_containers": ["glm53-f216-completion-rank1", "nv-persisted-restore"]}
+{"utc": "2026-09-15T15:18:05Z", "host": "spark-de5c", "ok": false, "uptime": null, "glm53_containers": null}
+{"utc": "2026-09-15T15:18:05Z", "host": "pop-os", "ok": true, "uptime": "up 14:19", "glm53_containers": null}
+{"utc": "2026-09-15T15:25:11Z", "host": "spark-2384", "ok": true, "uptime": "up 3 days, 27 min", "glm53_containers": ["glm53-a0-bench"]}
+{"utc": "2026-09-15T15:25:11Z", "host": "spark-2822", "ok": true, "uptime": "up 2 days, 23:55", "glm53_containers": ["glm53-f216-completion-rank0"]}
+{"utc": "2026-09-15T15:25:11Z", "host": "spark-557f", "ok": true, "uptime": "up 3 days, 27 min", "glm53_containers": ["glm53-f216-completion-rank1", "nv-persisted-restore"]}
+{"utc": "2026-09-15T15:25:11Z", "host": "spark-de5c", "ok": false, "uptime": null, "glm53_containers": null}
+{"utc": "2026-09-15T15:25:11Z", "host": "pop-os", "ok": true, "uptime": "up 14:27", "glm53_containers": null}
+{"utc": "2026-09-15T17:25:34Z", "host": "spark-2384", "ok": true, "uptime": "up 3 days, 2:27", "glm53_containers": ["glm53-a0-bench"]}
+{"utc": "2026-09-15T17:25:34Z", "host": "spark-2822", "ok": true, "uptime": "up 3 days, 1:55", "glm53_containers": ["glm53-f216-completion-rank0"]}
+{"utc": "2026-09-15T17:25:34Z", "host": "spark-557f", "ok": true, "uptime": "up 3 days, 2:27", "glm53_containers": ["glm53-f216-completion-rank1", "nv-persisted-restore"]}
+{"utc": "2026-09-15T17:25:34Z", "host": "spark-de5c", "ok": false, "uptime": null, "glm53_containers": null}
+{"utc": "2026-09-15T17:25:34Z", "host": "pop-os", "ok": true, "uptime": "up 16:27", "glm53_containers": null}
+{"utc": "2026-09-15T17:56:08Z", "host": "spark-2384", "ok": true, "uptime": "up 3 days, 2:58", "glm53_containers": ["glm53-a0-bench"]}
+{"utc": "2026-09-15T17:56:08Z", "host": "spark-2822", "ok": true, "uptime": "up 3 days, 2:26", "glm53_containers": ["glm53-f216-completion-rank0"]}
+{"utc": "2026-09-15T17:56:08Z", "host": "spark-557f", "ok": true, "uptime": "up 3 days, 2:58", "glm53_containers": ["glm53-f216-completion-rank1", "nv-persisted-restore"]}
+{"utc": "2026-09-15T17:56:08Z", "host": "spark-de5c", "ok": false, "uptime": null, "glm53_containers": null}
+{"utc": "2026-09-15T17:56:08Z", "host": "pop-os", "ok": true, "uptime": "up 16:57", "glm53_containers": null}
+{"utc": "2026-09-15T20:55:55Z", "host": "spark-2384", "ok": true, "uptime": "up 3 days, 5:58", "glm53_containers": ["glm53-a0-bench"]}
+{"utc": "2026-09-15T20:55:55Z", "host": "spark-2822", "ok": true, "uptime": "up 3 days, 5:26", "glm53_containers": ["glm53-f216-completion-rank0"]}
+{"utc": "2026-09-15T20:55:55Z", "host": "spark-557f", "ok": true, "uptime": "up 3 days, 5:58", "glm53_containers": ["glm53-f216-completion-rank1", "nv-persisted-restore"]}
+{"utc": "2026-09-15T20:55:55Z", "host": "spark-de5c", "ok": false, "uptime": null, "glm53_containers": null}
+{"utc": "2026-09-15T20:55:55Z", "host": "pop-os", "ok": true, "uptime": "up 19:57", "glm53_containers": null}
+{"utc": "2026-09-15T21:55:02Z", "host": "spark-2384", "ok": true, "uptime": "up 3 days, 6:57", "glm53_containers": ["glm53-a0-bench"]}
+{"utc": "2026-09-15T21:55:02Z", "host": "spark-2822", "ok": true, "uptime": "up 3 days, 6:25", "glm53_containers": ["glm53-f216-completion-rank0"]}
+{"utc": "2026-09-15T21:55:02Z", "host": "spark-557f", "ok": true, "uptime": "up 3 days, 6:57", "glm53_containers": ["glm53-f216-completion-rank1", "nv-persisted-restore"]}
+{"utc": "2026-09-15T21:55:02Z", "host": "spark-de5c", "ok": false, "uptime": null, "glm53_containers": null}
+{"utc": "2026-09-15T21:55:02Z", "host": "pop-os", "ok": true, "uptime": "up 20:57", "glm53_containers": null}
+{"utc": "2026-09-15T22:25:01Z", "host": "spark-2384", "ok": true, "uptime": "up 3 days, 7:27", "glm53_containers": ["glm53-a0-bench"]}
+{"utc": "2026-09-15T22:25:01Z", "host": "spark-2822", "ok": true, "uptime": "up 3 days, 6:55", "glm53_containers": ["glm53-f216-completion-rank0"]}
+{"utc": "2026-09-15T22:25:01Z", "host": "spark-557f", "ok": true, "uptime": "up 3 days, 7:27", "glm53_containers": ["glm53-f216-completion-rank1", "nv-persisted-restore"]}
+{"utc": "2026-09-15T22:25:01Z", "host": "spark-de5c", "ok": false, "uptime": null, "glm53_containers": null}
+{"utc": "2026-09-15T22:25:01Z", "host": "pop-os", "ok": true, "uptime": "up 21:27", "glm53_containers": null}
+{"utc": "2026-09-15T22:55:01Z", "host": "spark-2384", "ok": true, "uptime": "up 3 days, 7:57", "glm53_containers": ["glm53-a0-bench"]}
+{"utc": "2026-09-15T22:55:01Z", "host": "spark-2822", "ok": true, "uptime": "up 3 days, 7:25", "glm53_containers": ["glm53-f216-completion-rank0"]}
+{"utc": "2026-09-15T22:55:01Z", "host": "spark-557f", "ok": true, "uptime": "up 3 days, 7:57", "glm53_containers": ["glm53-f216-completion-rank1", "nv-persisted-restore"]}
+{"utc": "2026-09-15T22:55:01Z", "host": "spark-de5c", "ok": false, "uptime": null, "glm53_containers": null}
+{"utc": "2026-09-15T22:55:01Z", "host": "pop-os", "ok": true, "uptime": "up 21:57", "glm53_containers": null}
+{"utc": "2026-09-16T00:27:41Z", "host": "spark-2384", "ok": true, "uptime": "up 3 days, 9:27", "glm53_containers": ["glm53-a0-bench"]}
+{"utc": "2026-09-16T00:27:41Z", "host": "spark-2822", "ok": true, "uptime": "up 3 days, 8:55", "glm53_containers": []}
+{"utc": "2026-09-16T00:27:41Z", "host": "spark-557f", "ok": true, "uptime": "up 3 days, 9:27", "glm53_containers": ["nv-persisted-restore"]}
+{"utc": "2026-09-16T00:27:41Z", "host": "spark-de5c", "ok": false, "uptime": null, "glm53_containers": null}
+{"utc": "2026-09-16T00:27:41Z", "host": "pop-os", "ok": true, "uptime": "up 23:27", "glm53_containers": null}
+{"utc": "2026-09-16T00:55:22Z", "host": "spark-2384", "ok": true, "uptime": "up 3 days, 9:57", "glm53_containers": ["glm53-a0-bench"]}
+{"utc": "2026-09-16T00:55:22Z", "host": "spark-2822", "ok": true, "uptime": "up 3 days, 9:25", "glm53_containers": []}
+{"utc": "2026-09-16T00:55:22Z", "host": "spark-557f", "ok": true, "uptime": "up 3 days, 9:57", "glm53_containers": ["nv-persisted-restore"]}
+{"utc": "2026-09-16T00:55:22Z", "host": "spark-de5c", "ok": false, "uptime": null, "glm53_containers": null}
+{"utc": "2026-09-16T00:55:22Z", "host": "pop-os", "ok": true, "uptime": "up 23:57", "glm53_containers": null}
+{"glm53_containers": ["glm53-a0-bench"], "host": "spark-2384", "ok": true, "uptime": "up 3 days, 10:47", "utc": "2026-09-16T01:45:00Z"}
+{"glm53_containers": [], "host": "spark-2822", "ok": true, "uptime": "up 3 days, 10:16", "utc": "2026-09-16T01:45:00Z"}
+{"glm53_containers": [], "host": "spark-557f", "ok": true, "uptime": "up 3 days, 10:47", "utc": "2026-09-16T01:45:00Z"}
+{"glm53_containers": null, "host": "spark-de5c", "ok": false, "uptime": null, "utc": "2026-09-16T01:45:00Z"}
+{"glm53_containers": null, "host": "pop-os", "ok": true, "uptime": "up 1 day, 47 minutes", "utc": "2026-09-16T01:45:00Z"}
+{"glm53_containers": ["glm53-a0-bench"], "host": "spark-2384", "ok": true, "uptime": "up 3 days, 10:57", "utc": "2026-09-16T02:00:15Z"}
+{"glm53_containers": [], "host": "spark-2822", "ok": true, "uptime": "up 3 days, 10:25", "utc": "2026-09-16T02:00:15Z"}
+{"glm53_containers": ["nv-persisted-restore"], "host": "spark-557f", "ok": true, "uptime": "up 3 days, 10:57", "utc": "2026-09-16T02:00:15Z"}
+{"glm53_containers": null, "host": "spark-de5c", "ok": false, "uptime": null, "utc": "2026-09-16T02:00:15Z"}
+{"glm53_containers": null, "host": "pop-os", "ok": true, "uptime": "up 1 day, 57 minutes", "utc": "2026-09-16T02:00:15Z"}
+{"glm53_containers": ["glm53-a0-bench"], "host": "spark-2384", "ok": true, "uptime": "up 3 days, 14:57", "utc": "2026-09-16T05:56:00Z"}
+{"glm53_containers": [], "host": "spark-2822", "ok": true, "uptime": "up 3 days, 14:25", "utc": "2026-09-16T05:56:00Z"}
+{"glm53_containers": ["glm53-f216", "nv-persisted-restore"], "host": "spark-557f", "ok": true, "uptime": "up 3 days, 14:57", "utc": "2026-09-16T05:56:00Z"}
+{"glm53_containers": null, "host": "spark-de5c", "ok": false, "uptime": null, "utc": "2026-09-16T05:56:00Z"}
+{"glm53_containers": null, "host": "pop-os", "ok": true, "uptime": "up 1 day, 4:57", "utc": "2026-09-16T05:56:00Z"}
+{"glm53_containers": ["glm53-a0-bench"], "host": "spark-2384", "ok": true, "uptime": "up 3 days, 15:27", "utc": "2026-09-16T06:24:51Z"}
+{"glm53_containers": [], "host": "spark-2822", "ok": true, "uptime": "up 3 days, 14:55", "utc": "2026-09-16T06:24:51Z"}
+{"glm53_containers": ["glm53-f216", "nv-persisted-restore"], "host": "spark-557f", "ok": true, "uptime": "up 3 days, 15:27", "utc": "2026-09-16T06:24:51Z"}
+{"glm53_containers": null, "host": "spark-de5c", "ok": false, "uptime": null, "utc": "2026-09-16T06:24:51Z"}
+{"glm53_containers": null, "host": "pop-os", "ok": true, "uptime": "up 1 day, 5:27", "utc": "2026-09-16T06:24:51Z"}
+{"glm53_containers": ["glm53-a0-bench"], "host": "spark-2384", "ok": true, "uptime": "up 3 days, 15:57", "utc": "2026-09-16T06:54:51Z"}
+{"glm53_containers": [], "host": "spark-2822", "ok": true, "uptime": "up 3 days, 15:25", "utc": "2026-09-16T06:54:51Z"}
+{"glm53_containers": ["glm53-f216", "nv-persisted-restore"], "host": "spark-557f", "ok": true, "uptime": "up 3 days, 15:57", "utc": "2026-09-16T06:54:51Z"}
+{"glm53_containers": null, "host": "spark-de5c", "ok": false, "uptime": null, "utc": "2026-09-16T06:54:51Z"}
+{"glm53_containers": null, "host": "pop-os", "ok": true, "uptime": "up 1 day, 5:57", "utc": "2026-09-16T06:54:51Z"}
+{"glm53_containers": ["glm53-a0-bench"], "host": "spark-2384", "ok": true, "uptime": "up 3 days, 16:27", "utc": "2026-09-16T07:24:48Z"}
+{"glm53_containers": [], "host": "spark-2822", "ok": true, "uptime": "up 3 days, 15:55", "utc": "2026-09-16T07:24:48Z"}
+{"glm53_containers": ["glm53-f216", "nv-persisted-restore"], "host": "spark-557f", "ok": true, "uptime": "up 3 days, 16:26", "utc": "2026-09-16T07:24:48Z"}
+{"glm53_containers": null, "host": "spark-de5c", "ok": false, "uptime": null, "utc": "2026-09-16T07:24:48Z"}
+{"glm53_containers": null, "host": "pop-os", "ok": true, "uptime": "up 1 day, 6:27", "utc": "2026-09-16T07:24:48Z"}
+{"glm53_containers": ["glm53-a0-bench"], "host": "spark-2384", "ok": true, "uptime": "up 3 days, 16:57", "utc": "2026-09-16T07:54:54Z"}
+{"glm53_containers": [], "host": "spark-2822", "ok": true, "uptime": "up 3 days, 16:25", "utc": "2026-09-16T07:54:54Z"}
+{"glm53_containers": ["glm53-f216", "nv-persisted-restore"], "host": "spark-557f", "ok": true, "uptime": "up 3 days, 16:57", "utc": "2026-09-16T07:54:54Z"}
+{"glm53_containers": null, "host": "spark-de5c", "ok": false, "uptime": null, "utc": "2026-09-16T07:54:54Z"}
+{"glm53_containers": null, "host": "pop-os", "ok": true, "uptime": "up 1 day, 6:57", "utc": "2026-09-16T07:54:54Z"}
+{"glm53_containers": ["glm53-a0-bench"], "host": "spark-2384", "ok": true, "uptime": "up 3 days, 17:27", "utc": "2026-09-16T08:24:54Z"}
+{"glm53_containers": [], "host": "spark-2822", "ok": true, "uptime": "up 3 days, 16:55", "utc": "2026-09-16T08:24:54Z"}
+{"glm53_containers": ["glm53-f216", "nv-persisted-restore"], "host": "spark-557f", "ok": true, "uptime": "up 3 days, 17:27", "utc": "2026-09-16T08:24:54Z"}
+{"glm53_containers": null, "host": "spark-de5c", "ok": false, "uptime": null, "utc": "2026-09-16T08:24:54Z"}
+{"glm53_containers": null, "host": "pop-os", "ok": true, "uptime": "up 1 day, 7:27", "utc": "2026-09-16T08:24:54Z"}
+{"glm53_containers": ["glm53-a0-bench"], "host": "spark-2384", "ok": true, "uptime": "up 3 days, 18:27", "utc": "2026-09-16T09:24:59Z"}
+{"glm53_containers": [], "host": "spark-2822", "ok": true, "uptime": "up 3 days, 17:55", "utc": "2026-09-16T09:24:59Z"}
+{"glm53_containers": ["glm53-f216", "nv-persisted-restore"], "host": "spark-557f", "ok": true, "uptime": "up 3 days, 18:27", "utc": "2026-09-16T09:24:59Z"}
+{"glm53_containers": null, "host": "spark-de5c", "ok": false, "uptime": null, "utc": "2026-09-16T09:24:59Z"}
+{"glm53_containers": null, "host": "pop-os", "ok": true, "uptime": "up 1 day, 8:27", "utc": "2026-09-16T09:24:59Z"}
+{"utc":"2026-09-16T09:55:02Z","host":"spark-2384","ok":true,"uptime":"up 3 days, 18:57, load 1.26","glm53_containers":["glm53-a0-bench"]}
+{"utc":"2026-09-16T09:55:02Z","host":"spark-2822","ok":true,"uptime":"up 3 days, 18:25, load 0.16","glm53_containers":[]}
+{"utc":"2026-09-16T09:55:04Z","host":"spark-557f","ok":true,"uptime":"up 3 days, 18:57, load 0.06","glm53_containers":["nv-persisted-restore"]}
+{"utc":"2026-09-16T09:55:11Z","host":"spark-de5c","ok":false,"uptime":"connect timeout (powered off by owner, expected)","glm53_containers":[]}
+{"utc":"2026-09-16T09:55:11Z","host":"pop-os","ok":true,"uptime":"up 1 day, 8:57, load 0.78 (observe-only)","glm53_containers":[]}

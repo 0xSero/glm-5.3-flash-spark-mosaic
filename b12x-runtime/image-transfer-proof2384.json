@@ -1,0 +1,10 @@
+{
+  "state": "EXACT_IMAGE_ID_CONFIG_ROOTFS_VERIFIED",
+  "image_id": "sha256:4ec5267998b60eaefc8d72bd837c8897a71724b4a7968d4db3ff307efa98736e",
+  "architecture": "arm64",
+  "os": "linux",
+  "layer_count": 65,
+  "bytes": 25611760700,
+  "route": "2822 to2384 rail",
+  "gpu_qualification": "pending"
+}

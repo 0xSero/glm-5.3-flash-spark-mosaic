@@ -1,0 +1,506 @@
+[
+  {
+    "concurrency": 1,
+    "input_tokens": 1024,
+    "repeat": 0,
+    "status": "PLANNED"
+  },
+  {
+    "concurrency": 1,
+    "input_tokens": 1024,
+    "repeat": 1,
+    "status": "PLANNED"
+  },
+  {
+    "concurrency": 1,
+    "input_tokens": 1024,
+    "repeat": 2,
+    "status": "PLANNED"
+  },
+  {
+    "concurrency": 2,
+    "input_tokens": 1024,
+    "repeat": 0,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 2,
+    "input_tokens": 1024,
+    "repeat": 1,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 2,
+    "input_tokens": 1024,
+    "repeat": 2,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 4,
+    "input_tokens": 1024,
+    "repeat": 0,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 4,
+    "input_tokens": 1024,
+    "repeat": 1,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 4,
+    "input_tokens": 1024,
+    "repeat": 2,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 8,
+    "input_tokens": 1024,
+    "repeat": 0,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 8,
+    "input_tokens": 1024,
+    "repeat": 1,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 8,
+    "input_tokens": 1024,
+    "repeat": 2,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 1,
+    "input_tokens": 4096,
+    "repeat": 0,
+    "status": "PLANNED"
+  },
+  {
+    "concurrency": 1,
+    "input_tokens": 4096,
+    "repeat": 1,
+    "status": "PLANNED"
+  },
+  {
+    "concurrency": 1,
+    "input_tokens": 4096,
+    "repeat": 2,
+    "status": "PLANNED"
+  },
+  {
+    "concurrency": 2,
+    "input_tokens": 4096,
+    "repeat": 0,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 2,
+    "input_tokens": 4096,
+    "repeat": 1,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 2,
+    "input_tokens": 4096,
+    "repeat": 2,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 4,
+    "input_tokens": 4096,
+    "repeat": 0,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 4,
+    "input_tokens": 4096,
+    "repeat": 1,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 4,
+    "input_tokens": 4096,
+    "repeat": 2,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 8,
+    "input_tokens": 4096,
+    "repeat": 0,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 8,
+    "input_tokens": 4096,
+    "repeat": 1,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 8,
+    "input_tokens": 4096,
+    "repeat": 2,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 1,
+    "input_tokens": 16384,
+    "repeat": 0,
+    "status": "PLANNED"
+  },
+  {
+    "concurrency": 1,
+    "input_tokens": 16384,
+    "repeat": 1,
+    "status": "PLANNED"
+  },
+  {
+    "concurrency": 1,
+    "input_tokens": 16384,
+    "repeat": 2,
+    "status": "PLANNED"
+  },
+  {
+    "concurrency": 2,
+    "input_tokens": 16384,
+    "repeat": 0,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 2,
+    "input_tokens": 16384,
+    "repeat": 1,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 2,
+    "input_tokens": 16384,
+    "repeat": 2,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 4,
+    "input_tokens": 16384,
+    "repeat": 0,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 4,
+    "input_tokens": 16384,
+    "repeat": 1,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 4,
+    "input_tokens": 16384,
+    "repeat": 2,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 8,
+    "input_tokens": 16384,
+    "repeat": 0,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 8,
+    "input_tokens": 16384,
+    "repeat": 1,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 8,
+    "input_tokens": 16384,
+    "repeat": 2,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 1,
+    "input_tokens": 65536,
+    "repeat": 0,
+    "status": "PLANNED"
+  },
+  {
+    "concurrency": 1,
+    "input_tokens": 65536,
+    "repeat": 1,
+    "status": "PLANNED"
+  },
+  {
+    "concurrency": 1,
+    "input_tokens": 65536,
+    "repeat": 2,
+    "status": "PLANNED"
+  },
+  {
+    "concurrency": 2,
+    "input_tokens": 65536,
+    "repeat": 0,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 2,
+    "input_tokens": 65536,
+    "repeat": 1,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 2,
+    "input_tokens": 65536,
+    "repeat": 2,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 4,
+    "input_tokens": 65536,
+    "repeat": 0,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 4,
+    "input_tokens": 65536,
+    "repeat": 1,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 4,
+    "input_tokens": 65536,
+    "repeat": 2,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 8,
+    "input_tokens": 65536,
+    "repeat": 0,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 8,
+    "input_tokens": 65536,
+    "repeat": 1,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 8,
+    "input_tokens": 65536,
+    "repeat": 2,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 1,
+    "input_tokens": 131072,
+    "repeat": 0,
+    "status": "PLANNED"
+  },
+  {
+    "concurrency": 1,
+    "input_tokens": 131072,
+    "repeat": 1,
+    "status": "PLANNED"
+  },
+  {
+    "concurrency": 1,
+    "input_tokens": 131072,
+    "repeat": 2,
+    "status": "PLANNED"
+  },
+  {
+    "concurrency": 2,
+    "input_tokens": 131072,
+    "repeat": 0,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 2,
+    "input_tokens": 131072,
+    "repeat": 1,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 2,
+    "input_tokens": 131072,
+    "repeat": 2,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 4,
+    "input_tokens": 131072,
+    "repeat": 0,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 4,
+    "input_tokens": 131072,
+    "repeat": 1,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 4,
+    "input_tokens": 131072,
+    "repeat": 2,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 8,
+    "input_tokens": 131072,
+    "repeat": 0,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 8,
+    "input_tokens": 131072,
+    "repeat": 1,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 8,
+    "input_tokens": 131072,
+    "repeat": 2,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 1,
+    "input_tokens": 200000,
+    "repeat": 0,
+    "status": "PLANNED"
+  },
+  {
+    "concurrency": 1,
+    "input_tokens": 200000,
+    "repeat": 1,
+    "status": "PLANNED"
+  },
+  {
+    "concurrency": 1,
+    "input_tokens": 200000,
+    "repeat": 2,
+    "status": "PLANNED"
+  },
+  {
+    "concurrency": 2,
+    "input_tokens": 200000,
+    "repeat": 0,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 2,
+    "input_tokens": 200000,
+    "repeat": 1,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 2,
+    "input_tokens": 200000,
+    "repeat": 2,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 4,
+    "input_tokens": 200000,
+    "repeat": 0,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 4,
+    "input_tokens": 200000,
+    "repeat": 1,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 4,
+    "input_tokens": 200000,
+    "repeat": 2,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 8,
+    "input_tokens": 200000,
+    "repeat": 0,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 8,
+    "input_tokens": 200000,
+    "repeat": 1,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 8,
+    "input_tokens": 200000,
+    "repeat": 2,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 1,
+    "input_tokens": 260096,
+    "repeat": 0,
+    "status": "PLANNED"
+  },
+  {
+    "concurrency": 1,
+    "input_tokens": 260096,
+    "repeat": 1,
+    "status": "PLANNED"
+  },
+  {
+    "concurrency": 1,
+    "input_tokens": 260096,
+    "repeat": 2,
+    "status": "PLANNED"
+  },
+  {
+    "concurrency": 2,
+    "input_tokens": 260096,
+    "repeat": 0,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 2,
+    "input_tokens": 260096,
+    "repeat": 1,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 2,
+    "input_tokens": 260096,
+    "repeat": 2,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 4,
+    "input_tokens": 260096,
+    "repeat": 0,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 4,
+    "input_tokens": 260096,
+    "repeat": 1,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 4,
+    "input_tokens": 260096,
+    "repeat": 2,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 8,
+    "input_tokens": 260096,
+    "repeat": 0,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 8,
+    "input_tokens": 260096,
+    "repeat": 1,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  },
+  {
+    "concurrency": 8,
+    "input_tokens": 260096,
+    "repeat": 2,
+    "status": "UNSUPPORTED_ACTIVE_SLOTS"
+  }
+]

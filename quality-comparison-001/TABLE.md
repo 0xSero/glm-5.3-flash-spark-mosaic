@@ -1,0 +1,9 @@
+# Matched GLM quality measurements
+
+Frozen WikiText2 panel:32×2048 tokens,65,504 next-token positions; full-vocabulary BF16 teacher comparison. This panel does not establish broad task quality or serving acceptance.
+
+| Candidate | Experts/layer | KL (lower better) | Top-1 agreement | Perplexity | PPL change vs BF16 |
+|---|---:|---:|---:|---:|---:|
+| BF16 teacher |288|0|100%|3.19953|0%|
+|Original 3-bit, 288 experts|288|0.152204|87.384%|3.49691|+9.295%|
+|3-bit REAP, 176 experts|176|1.343988|58.807%|11.27267|+252.323%|

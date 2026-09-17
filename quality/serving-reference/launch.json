@@ -1,0 +1,30 @@
+{
+  "container_id": "10c08b70edfc00f5270fa70338c00b623ec15750d83af7c50b326ddb1a1f7b16",
+  "command": [
+    "docker",
+    "run",
+    "-d",
+    "--name",
+    "glm53-serving-teacher-reference-attempt1",
+    "--gpus",
+    "all",
+    "--network",
+    "none",
+    "--memory",
+    "8g",
+    "--memory-swap",
+    "8g",
+    "--cpus",
+    "2",
+    "-v",
+    "/home/valentine/glm53-single-spark-release-20260911:/release:ro",
+    "-v",
+    "/home/valentine/glm53-single-spark-release-20260911/quality/serving-reference:/output",
+    "--entrypoint",
+    "python3",
+    "sha256:54acf16064726697ab079dfbd297c1c1c260cb28867f8287f5ae2ec3bbb0a382",
+    "-u",
+    "/output/prepare.py"
+  ],
+  "time": 1789160189.0832741
+}

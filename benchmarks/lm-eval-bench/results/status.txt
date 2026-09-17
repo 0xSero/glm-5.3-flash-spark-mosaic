@@ -1,0 +1,27 @@
+2026-09-14T15:08:38Z start a0
+2026-09-14T15:09:56Z start r216
+2026-09-14T15:56:36Z start a0-gpqa
+2026-09-14T15:56:42Z start r216-gpqa
+2026-09-14T16:55:55Z exit=0 a0-gpqa
+2026-09-14T17:14:33Z exit=0 r216-gpqa
+2026-09-14T20:10:46Z start r216-tbench (full 89 tasks, omarchy -> 2822 dedicated engine, multiplier 100)
+2026-09-14T20:13:55Z USER-DIRECTED STOP r216-mmlu at 19,7xx/56,168 partial (preserved in results/r216.log); reasoning: too late to wait, keep judged bad — explicit user authorization overriding no-kill for this run
+2026-09-14T20:17:10Z USER-DIRECTED PAUSE all benchmarks: a0 full MMLU stopped at 35,941/56,168 (64%, partial preserved results/a0.log); r216 quick probe stopped at 64/4,560 (preserved results/r216-quick.log); a0-quick watcher + all tbench markers disarmed. Reason: delete keep-R216, rebuild per REAP research (user directive 20:2xZ).
+2026-09-14T20:19:21Z E216 REAP-native rebuild LAUNCHED per user directive (delete keep-R216, rebuild per REAP research): 557f build pid above, Mac orchestrator drives build->census->receipt->serve->smoke->G4. Plan sha note: Mac+remote identical 5cea3a31... (brief's 37fa10fd string is a stale record, artifact consistent+0444).
+2026-09-14T23:23:04Z start a0-quick (driver 15)
+2026-09-14T23:23:04Z start e216-quick (driver 15; E216 REAP-native keep, serving on 557f KV 344256)
+2026-09-15T00:06:55Z exit=0 a0-quick (MMLU limit-20/subject subset, 1140 docs: acc 0.8342±0.0120; receipt results/a0-quick/bench-a0/results_2026-09-14T19-49-13.012988.json [filename = Mac local time = 23:49Z])
+2026-09-15T00:06:55Z exit=0 e216-quick (MMLU same subset: acc 0.7728±0.0120; receipt results/e216-quick/bench-e216/results_2026-09-14T20-06-15.281810.json [local time = 00:06Z])
+2026-09-15T00:10:26Z start e216-gpqa-mc
+2026-09-15T00:20:32Z exit=0 e216-gpqa-mc
+2026-09-15T09:55:25Z RESUME a0 full MMLU: relaunching run-point.sh a0 (preregistered B1 completion; prior partial 35,941/56,168=64% preserved as a0.log.partial-64pct-20260914 — no final results file existed, full re-run required ~4h)
+2026-09-15T10:00:06Z start a0
+2026-09-15T12:04:36Z USER-DIRECTED STOP a0 full-MMLU re-run (pids runner=10534 lm_eval=14017, escalated if needed): stopped at 8688/56168 partial — log preserved as a0.log.partial2-14pct-20260915. Reason: user directive 'stop this run' — full pivot to F216 prune goal. NO exit line (killed before completion; this line is the stop receipt).
+2026-09-16T03:52:01Z start f216-quick
+2026-09-16T04:34:00Z exit=0 f216-quick
+2026-09-16T04:40:58Z start f216-gpqa-mc
+2026-09-16T05:27:12Z exit=0 f216-gpqa-mc
+2026-09-16T21:44:55Z start mosaic12l-quick
+2026-09-17T00:09:37Z exit=0 mosaic12l-quick
+2026-09-17T00:13:08Z start mosaic12l-gpqa-mc
+2026-09-17T00:24:02Z exit=0 mosaic12l-gpqa-mc

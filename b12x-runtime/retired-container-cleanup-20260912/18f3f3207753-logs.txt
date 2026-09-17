@@ -1,0 +1,1516 @@
+{"state": "BUILD_PATH_REPAIRS_APPLIED", "sha256": {"CMakeLists.txt": "2dabe0b440bab59204b07a284694d43d2da8eb680c7a554388e41b54b0f8ba03", "tools/build_deepgemm_C.py": "dd46bd5faacca6d44bbbd0c318f6f471dafb1a2aa263f07c6359a299bc324db1"}}
+{"state": "PINNED_BOOTSTRAP_EXLLAMA_VERIFIED_GPU_GATE_PENDING", "version": "0.0.43", "extension_sha256": "0eeb983b09dfe33451b8bc7625174320529b986a73f60b58bf4ebfa9f43ad9c0", "package_tree_sha256": "2d81097d19aae953de9094944c3f4528758bc551940bc3c5644027eb4992306e", "cuda_initialized": false, "native_cpu_allreduce_supported_on_arm": false}
+Building wheel...
+running bdist_wheel
+running build
+running build_py
+creating build/lib/b12x
+copying b12x/__init__.py -> build/lib/b12x
+creating build/lib/b12x/policy
+copying b12x/policy/components.py -> build/lib/b12x/policy
+copying b12x/policy/device.py -> build/lib/b12x/policy
+copying b12x/policy/registry.py -> build/lib/b12x/policy
+copying b12x/policy/catalog.py -> build/lib/b12x/policy
+copying b12x/policy/context.py -> build/lib/b12x/policy
+copying b12x/policy/serialization.py -> build/lib/b12x/policy
+copying b12x/policy/__init__.py -> build/lib/b12x/policy
+copying b12x/policy/fixed_backend.py -> build/lib/b12x/policy
+copying b12x/policy/types.py -> build/lib/b12x/policy
+creating build/lib/b12x/comm
+copying b12x/comm/__init__.py -> build/lib/b12x/comm
+creating build/lib/b12x/integration
+copying b12x/integration/__init__.py -> build/lib/b12x/integration
+creating build/lib/b12x/gemm
+copying b12x/gemm/__init__.py -> build/lib/b12x/gemm
+creating build/lib/b12x/quantization
+copying b12x/quantization/__init__.py -> build/lib/b12x/quantization
+creating build/lib/b12x/norm
+copying b12x/norm/vision.py -> build/lib/b12x/norm
+copying b12x/norm/__init__.py -> build/lib/b12x/norm
+creating build/lib/b12x/loader
+copying b12x/loader/_checkpoint.py -> build/lib/b12x/loader
+copying b12x/loader/_api.py -> build/lib/b12x/loader
+copying b12x/loader/_native.py -> build/lib/b12x/loader
+copying b12x/loader/__init__.py -> build/lib/b12x/loader
+copying b12x/loader/_pool.py -> build/lib/b12x/loader
+creating build/lib/b12x/_lib
+copying b12x/_lib/scratch.py -> build/lib/b12x/_lib
+copying b12x/_lib/meta.py -> build/lib/b12x/_lib
+copying b12x/_lib/smem.py -> build/lib/b12x/_lib
+copying b12x/_lib/fp6.py -> build/lib/b12x/_lib
+copying b12x/_lib/env.py -> build/lib/b12x/_lib
+copying b12x/_lib/dense_gemm.py -> build/lib/b12x/_lib
+copying b12x/_lib/intrinsics.py -> build/lib/b12x/_lib
+copying b12x/_lib/runtime_control.py -> build/lib/b12x/_lib
+copying b12x/_lib/__init__.py -> build/lib/b12x/_lib
+copying b12x/_lib/gating.py -> build/lib/b12x/_lib
+copying b12x/_lib/scratch_layout.py -> build/lib/b12x/_lib
+copying b12x/_lib/compiler.py -> build/lib/b12x/_lib
+copying b12x/_lib/dense_gemm_mxfp6.py -> build/lib/b12x/_lib
+copying b12x/_lib/runtime_patches.py -> build/lib/b12x/_lib
+copying b12x/_lib/utils.py -> build/lib/b12x/_lib
+creating build/lib/b12x/tools
+copying b12x/tools/inspect_model_policy.py -> build/lib/b12x/tools
+copying b12x/tools/generate_gpu_profile.py -> build/lib/b12x/tools
+copying b12x/tools/__init__.py -> build/lib/b12x/tools
+creating build/lib/b12x/moe
+copying b12x/moe/__init__.py -> build/lib/b12x/moe
+copying b12x/moe/calibration.py -> build/lib/b12x/moe
+creating build/lib/b12x/sequence
+copying b12x/sequence/__init__.py -> build/lib/b12x/sequence
+creating build/lib/b12x/attention
+copying b12x/attention/__init__.py -> build/lib/b12x/attention
+creating build/lib/b12x/policy/generation
+copying b12x/policy/generation/parallel.py -> build/lib/b12x/policy/generation
+copying b12x/policy/generation/contracts.py -> build/lib/b12x/policy/generation
+copying b12x/policy/generation/sweep.py -> build/lib/b12x/policy/generation
+copying b12x/policy/generation/attention_corpus.py -> build/lib/b12x/policy/generation
+copying b12x/policy/generation/runner.py -> build/lib/b12x/policy/generation
+copying b12x/policy/generation/delta_prefill_cases.py -> build/lib/b12x/policy/generation
+copying b12x/policy/generation/registry.py -> build/lib/b12x/policy/generation
+copying b12x/policy/generation/reducer.py -> build/lib/b12x/policy/generation
+copying b12x/policy/generation/moe_corpus.py -> build/lib/b12x/policy/generation
+copying b12x/policy/generation/__init__.py -> build/lib/b12x/policy/generation
+copying b12x/policy/generation/sharding.py -> build/lib/b12x/policy/generation
+copying b12x/policy/generation/progress.py -> build/lib/b12x/policy/generation
+copying b12x/policy/generation/measured.py -> build/lib/b12x/policy/generation
+copying b12x/policy/generation/store.py -> build/lib/b12x/policy/generation
+creating build/lib/b12x/policy/_profiles
+copying b12x/policy/_profiles/__init__.py -> build/lib/b12x/policy/_profiles
+creating build/lib/b12x/policy/generation/providers
+copying b12x/policy/generation/providers/qualification.py -> build/lib/b12x/policy/generation/providers
+copying b12x/policy/generation/providers/moe.py -> build/lib/b12x/policy/generation/providers
+copying b12x/policy/generation/providers/engram.py -> build/lib/b12x/policy/generation/providers
+copying b12x/policy/generation/providers/moe_precision.py -> build/lib/b12x/policy/generation/providers
+copying b12x/policy/generation/providers/blockscaled.py -> build/lib/b12x/policy/generation/providers
+copying b12x/policy/generation/providers/gpu_workers.py -> build/lib/b12x/policy/generation/providers
+copying b12x/policy/generation/providers/ple.py -> build/lib/b12x/policy/generation/providers
+copying b12x/policy/generation/providers/delta_prefill.py -> build/lib/b12x/policy/generation/providers
+copying b12x/policy/generation/providers/tunable.py -> build/lib/b12x/policy/generation/providers
+copying b12x/policy/generation/providers/__init__.py -> build/lib/b12x/policy/generation/providers
+copying b12x/policy/generation/providers/gemm.py -> build/lib/b12x/policy/generation/providers
+copying b12x/policy/generation/providers/moe_gpu_worker.py -> build/lib/b12x/policy/generation/providers
+copying b12x/policy/generation/providers/norm_sequence.py -> build/lib/b12x/policy/generation/providers
+copying b12x/policy/generation/providers/attention.py -> build/lib/b12x/policy/generation/providers
+creating build/lib/b12x/comm/pcie
+copying b12x/comm/pcie/pcie_oneshot.py -> build/lib/b12x/comm/pcie
+copying b12x/comm/pcie/_dcp_cute_common.py -> build/lib/b12x/comm/pcie
+copying b12x/comm/pcie/pcie_vocab_argmax.py -> build/lib/b12x/comm/pcie
+copying b12x/comm/pcie/_island_rs_cute.py -> build/lib/b12x/comm/pcie
+copying b12x/comm/pcie/_vocab_argmax_cute.py -> build/lib/b12x/comm/pcie
+copying b12x/comm/pcie/_cute_intrinsics.py -> build/lib/b12x/comm/pcie
+copying b12x/comm/pcie/_twoshot_cute.py -> build/lib/b12x/comm/pcie
+copying b12x/comm/pcie/_oneshot_cute.py -> build/lib/b12x/comm/pcie
+copying b12x/comm/pcie/_cuda_ipc.py -> build/lib/b12x/comm/pcie
+copying b12x/comm/pcie/pcie_dma.py -> build/lib/b12x/comm/pcie
+copying b12x/comm/pcie/_hierarchical_cute.py -> build/lib/b12x/comm/pcie
+copying b12x/comm/pcie/_launch_geometry.py -> build/lib/b12x/comm/pcie
+copying b12x/comm/pcie/pcie_island_rs.py -> build/lib/b12x/comm/pcie
+copying b12x/comm/pcie/_dcp_a2a_cute.py -> build/lib/b12x/comm/pcie
+copying b12x/comm/pcie/_dma_kernels.py -> build/lib/b12x/comm/pcie
+copying b12x/comm/pcie/pcie_twoshot_bf16.py -> build/lib/b12x/comm/pcie
+copying b12x/comm/pcie/__init__.py -> build/lib/b12x/comm/pcie
+copying b12x/comm/pcie/pcie_dcp_a2a.py -> build/lib/b12x/comm/pcie
+copying b12x/comm/pcie/pcie_dcp_topk.py -> build/lib/b12x/comm/pcie
+copying b12x/comm/pcie/_twoshot_bf16_cute.py -> build/lib/b12x/comm/pcie
+copying b12x/comm/pcie/_dcp_topk_cute.py -> build/lib/b12x/comm/pcie
+copying b12x/comm/pcie/pcie_allreduce.py -> build/lib/b12x/comm/pcie
+copying b12x/comm/pcie/pcie_twoshot.py -> build/lib/b12x/comm/pcie
+copying b12x/comm/pcie/api.py -> build/lib/b12x/comm/pcie
+copying b12x/comm/pcie/pcie_hierarchical.py -> build/lib/b12x/comm/pcie
+copying b12x/comm/pcie/overlap_probe.py -> build/lib/b12x/comm/pcie
+creating build/lib/b12x/comm/roce
+copying b12x/comm/roce/_cute_intrinsics.py -> build/lib/b12x/comm/roce
+copying b12x/comm/roce/_oneshot_cute.py -> build/lib/b12x/comm/roce
+copying b12x/comm/roce/roce_oneshot.py -> build/lib/b12x/comm/roce
+copying b12x/comm/roce/_proxy.py -> build/lib/b12x/comm/roce
+copying b12x/comm/roce/__init__.py -> build/lib/b12x/comm/roce
+copying b12x/comm/roce/_allgather_cute.py -> build/lib/b12x/comm/roce
+copying b12x/comm/roce/api.py -> build/lib/b12x/comm/roce
+creating build/lib/b12x/integration/vllm
+copying b12x/integration/vllm/__init__.py -> build/lib/b12x/integration/vllm
+copying b12x/integration/vllm/fp6_serving.py -> build/lib/b12x/integration/vllm
+copying b12x/integration/vllm/loader.py -> build/lib/b12x/integration/vllm
+copying b12x/integration/vllm/plugin.py -> build/lib/b12x/integration/vllm
+creating build/lib/b12x/gemm/_bmm
+copying b12x/gemm/_bmm/__init__.py -> build/lib/b12x/gemm/_bmm
+copying b12x/gemm/_bmm/api.py -> build/lib/b12x/gemm/_bmm
+creating build/lib/b12x/gemm/bf16_vocab_projection
+copying b12x/gemm/bf16_vocab_projection/_contracts.py -> build/lib/b12x/gemm/bf16_vocab_projection
+copying b12x/gemm/bf16_vocab_projection/__init__.py -> build/lib/b12x/gemm/bf16_vocab_projection
+copying b12x/gemm/bf16_vocab_projection/_kernel.py -> build/lib/b12x/gemm/bf16_vocab_projection
+copying b12x/gemm/bf16_vocab_projection/_policy.py -> build/lib/b12x/gemm/bf16_vocab_projection
+copying b12x/gemm/bf16_vocab_projection/api.py -> build/lib/b12x/gemm/bf16_vocab_projection
+creating build/lib/b12x/gemm/mla_query_projection
+copying b12x/gemm/mla_query_projection/__init__.py -> build/lib/b12x/gemm/mla_query_projection
+copying b12x/gemm/mla_query_projection/_bf16.py -> build/lib/b12x/gemm/mla_query_projection
+copying b12x/gemm/mla_query_projection/api.py -> build/lib/b12x/gemm/mla_query_projection
+creating build/lib/b12x/gemm/wo_projection
+copying b12x/gemm/wo_projection/_quant_cute.py -> build/lib/b12x/gemm/wo_projection
+copying b12x/gemm/wo_projection/__init__.py -> build/lib/b12x/gemm/wo_projection
+copying b12x/gemm/wo_projection/_policy.py -> build/lib/b12x/gemm/wo_projection
+copying b12x/gemm/wo_projection/api.py -> build/lib/b12x/gemm/wo_projection
+creating build/lib/b12x/gemm/_shared
+copying b12x/gemm/_shared/mxfp8_bmm.py -> build/lib/b12x/gemm/_shared
+copying b12x/gemm/_shared/__init__.py -> build/lib/b12x/gemm/_shared
+copying b12x/gemm/_shared/wo_mxfp8.py -> build/lib/b12x/gemm/_shared
+copying b12x/gemm/_shared/block_fp8.py -> build/lib/b12x/gemm/_shared
+creating build/lib/b12x/gemm/trellis_linear
+copying b12x/gemm/trellis_linear/__init__.py -> build/lib/b12x/gemm/trellis_linear
+copying b12x/gemm/trellis_linear/api.py -> build/lib/b12x/gemm/trellis_linear
+creating build/lib/b12x/gemm/mxfp8_linear
+copying b12x/gemm/mxfp8_linear/__init__.py -> build/lib/b12x/gemm/mxfp8_linear
+copying b12x/gemm/mxfp8_linear/_kernel.py -> build/lib/b12x/gemm/mxfp8_linear
+copying b12x/gemm/mxfp8_linear/api.py -> build/lib/b12x/gemm/mxfp8_linear
+creating build/lib/b12x/gemm/bf16_gemv
+copying b12x/gemm/bf16_gemv/_prefill.py -> build/lib/b12x/gemm/bf16_gemv
+copying b12x/gemm/bf16_gemv/__init__.py -> build/lib/b12x/gemm/bf16_gemv
+copying b12x/gemm/bf16_gemv/_kernel.py -> build/lib/b12x/gemm/bf16_gemv
+copying b12x/gemm/bf16_gemv/api.py -> build/lib/b12x/gemm/bf16_gemv
+creating build/lib/b12x/gemm/tensor_fp8_linear
+copying b12x/gemm/tensor_fp8_linear/__init__.py -> build/lib/b12x/gemm/tensor_fp8_linear
+copying b12x/gemm/tensor_fp8_linear/_kernel.py -> build/lib/b12x/gemm/tensor_fp8_linear
+copying b12x/gemm/tensor_fp8_linear/api.py -> build/lib/b12x/gemm/tensor_fp8_linear
+creating build/lib/b12x/gemm/block_fp8_linear
+copying b12x/gemm/block_fp8_linear/__init__.py -> build/lib/b12x/gemm/block_fp8_linear
+copying b12x/gemm/block_fp8_linear/_policy.py -> build/lib/b12x/gemm/block_fp8_linear
+copying b12x/gemm/block_fp8_linear/api.py -> build/lib/b12x/gemm/block_fp8_linear
+creating build/lib/b12x/gemm/blockscaled
+copying b12x/gemm/blockscaled/_linear.py -> build/lib/b12x/gemm/blockscaled
+copying b12x/gemm/blockscaled/__init__.py -> build/lib/b12x/gemm/blockscaled
+copying b12x/gemm/blockscaled/_quantize.py -> build/lib/b12x/gemm/blockscaled
+copying b12x/gemm/blockscaled/_ops.py -> build/lib/b12x/gemm/blockscaled
+copying b12x/gemm/blockscaled/_policy.py -> build/lib/b12x/gemm/blockscaled
+copying b12x/gemm/blockscaled/_a16.py -> build/lib/b12x/gemm/blockscaled
+copying b12x/gemm/blockscaled/api.py -> build/lib/b12x/gemm/blockscaled
+creating build/lib/b12x/quantization/mxfp8
+copying b12x/quantization/mxfp8/__init__.py -> build/lib/b12x/quantization/mxfp8
+copying b12x/quantization/mxfp8/api.py -> build/lib/b12x/quantization/mxfp8
+creating build/lib/b12x/quantization/mxfp6
+copying b12x/quantization/mxfp6/fp6_dense_op.py -> build/lib/b12x/quantization/mxfp6
+copying b12x/quantization/mxfp6/fp6_safetensors_load.py -> build/lib/b12x/quantization/mxfp6
+copying b12x/quantization/mxfp6/bf16_to_fp6_tma.py -> build/lib/b12x/quantization/mxfp6
+copying b12x/quantization/mxfp6/fp6_dense_weights.py -> build/lib/b12x/quantization/mxfp6
+copying b12x/quantization/mxfp6/fp6_row_gs.py -> build/lib/b12x/quantization/mxfp6
+copying b12x/quantization/mxfp6/fp6_checkpoint.py -> build/lib/b12x/quantization/mxfp6
+copying b12x/quantization/mxfp6/__init__.py -> build/lib/b12x/quantization/mxfp6
+copying b12x/quantization/mxfp6/calib_io.py -> build/lib/b12x/quantization/mxfp6
+copying b12x/quantization/mxfp6/fp6_safetensors_export.py -> build/lib/b12x/quantization/mxfp6
+copying b12x/quantization/mxfp6/model_fp6.py -> build/lib/b12x/quantization/mxfp6
+copying b12x/quantization/mxfp6/bf16_to_fp6_small_m.py -> build/lib/b12x/quantization/mxfp6
+copying b12x/quantization/mxfp6/fp6_moe_weights.py -> build/lib/b12x/quantization/mxfp6
+creating build/lib/b12x/quantization/nvfp4
+copying b12x/quantization/nvfp4/_impl.py -> build/lib/b12x/quantization/nvfp4
+copying b12x/quantization/nvfp4/__init__.py -> build/lib/b12x/quantization/nvfp4
+copying b12x/quantization/nvfp4/_kernel.py -> build/lib/b12x/quantization/nvfp4
+copying b12x/quantization/nvfp4/_policy.py -> build/lib/b12x/quantization/nvfp4
+copying b12x/quantization/nvfp4/api.py -> build/lib/b12x/quantization/nvfp4
+creating build/lib/b12x/norm/hyperconnection
+copying b12x/norm/hyperconnection/_impl.py -> build/lib/b12x/norm/hyperconnection
+copying b12x/norm/hyperconnection/reference.py -> build/lib/b12x/norm/hyperconnection
+copying b12x/norm/hyperconnection/__init__.py -> build/lib/b12x/norm/hyperconnection
+copying b12x/norm/hyperconnection/_cute.py -> build/lib/b12x/norm/hyperconnection
+copying b12x/norm/hyperconnection/_kernels.py -> build/lib/b12x/norm/hyperconnection
+copying b12x/norm/hyperconnection/_policy.py -> build/lib/b12x/norm/hyperconnection
+copying b12x/norm/hyperconnection/_cute_config.py -> build/lib/b12x/norm/hyperconnection
+copying b12x/norm/hyperconnection/api.py -> build/lib/b12x/norm/hyperconnection
+creating build/lib/b12x/norm/mhc
+copying b12x/norm/mhc/_impl.py -> build/lib/b12x/norm/mhc
+copying b12x/norm/mhc/__init__.py -> build/lib/b12x/norm/mhc
+copying b12x/norm/mhc/_kernels.py -> build/lib/b12x/norm/mhc
+copying b12x/norm/mhc/_policy.py -> build/lib/b12x/norm/mhc
+copying b12x/norm/mhc/_pre_prefill.py -> build/lib/b12x/norm/mhc
+copying b12x/norm/mhc/api.py -> build/lib/b12x/norm/mhc
+creating build/lib/b12x/_lib/quant
+copying b12x/_lib/quant/x4t_scales.py -> build/lib/b12x/_lib/quant
+copying b12x/_lib/quant/sqg_e4m3.py -> build/lib/b12x/_lib/quant
+copying b12x/_lib/quant/mxfp8_rows.py -> build/lib/b12x/_lib/quant
+copying b12x/_lib/quant/__init__.py -> build/lib/b12x/_lib/quant
+copying b12x/_lib/quant/sqg_fp16_d3l.py -> build/lib/b12x/_lib/quant
+creating build/lib/b12x/moe/fused_moe
+copying b12x/moe/fused_moe/_impl.py -> build/lib/b12x/moe/fused_moe
+copying b12x/moe/fused_moe/execution.py -> build/lib/b12x/moe/fused_moe
+copying b12x/moe/fused_moe/_vllm_compat.py -> build/lib/b12x/moe/fused_moe
+copying b12x/moe/fused_moe/trellis.py -> build/lib/b12x/moe/fused_moe
+copying b12x/moe/fused_moe/weights.py -> build/lib/b12x/moe/fused_moe
+copying b12x/moe/fused_moe/source.py -> build/lib/b12x/moe/fused_moe
+copying b12x/moe/fused_moe/config.py -> build/lib/b12x/moe/fused_moe
+copying b12x/moe/fused_moe/planning.py -> build/lib/b12x/moe/fused_moe
+copying b12x/moe/fused_moe/__init__.py -> build/lib/b12x/moe/fused_moe
+copying b12x/moe/fused_moe/_policy.py -> build/lib/b12x/moe/fused_moe
+copying b12x/moe/fused_moe/_route_pack_cache.py -> build/lib/b12x/moe/fused_moe
+copying b12x/moe/fused_moe/api.py -> build/lib/b12x/moe/fused_moe
+creating build/lib/b12x/moe/_shared
+copying b12x/moe/_shared/routing.py -> build/lib/b12x/moe/_shared
+copying b12x/moe/_shared/execution.py -> build/lib/b12x/moe/_shared
+copying b12x/moe/_shared/btx_schema.py -> build/lib/b12x/moe/_shared
+copying b12x/moe/_shared/trellis_codebooks.py -> build/lib/b12x/moe/_shared
+copying b12x/moe/_shared/__init__.py -> build/lib/b12x/moe/_shared
+creating build/lib/b12x/moe/ep_moe
+copying b12x/moe/ep_moe/_impl.py -> build/lib/b12x/moe/ep_moe
+copying b12x/moe/ep_moe/__init__.py -> build/lib/b12x/moe/ep_moe
+copying b12x/moe/ep_moe/_policy.py -> build/lib/b12x/moe/ep_moe
+copying b12x/moe/ep_moe/api.py -> build/lib/b12x/moe/ep_moe
+creating build/lib/b12x/moe/_shared/tuning
+copying b12x/moe/_shared/tuning/decode_max_active_clusters.py -> build/lib/b12x/moe/_shared/tuning
+copying b12x/moe/_shared/tuning/registry.py -> build/lib/b12x/moe/_shared/tuning
+copying b12x/moe/_shared/tuning/__init__.py -> build/lib/b12x/moe/_shared/tuning
+creating build/lib/b12x/moe/_shared/kernels
+copying b12x/moe/_shared/kernels/w4a8_phase2.py -> build/lib/b12x/moe/_shared/kernels
+copying b12x/moe/_shared/kernels/dynamic.py -> build/lib/b12x/moe/_shared/kernels
+copying b12x/moe/_shared/kernels/trellis_ring.py -> build/lib/b12x/moe/_shared/kernels
+copying b12x/moe/_shared/kernels/nvfp4_phase2.py -> build/lib/b12x/moe/_shared/kernels
+copying b12x/moe/_shared/kernels/reference_flashinfer.py -> build/lib/b12x/moe/_shared/kernels
+copying b12x/moe/_shared/kernels/trellis_materialize.py -> build/lib/b12x/moe/_shared/kernels
+copying b12x/moe/_shared/kernels/nvfp4_phase1.py -> build/lib/b12x/moe/_shared/kernels
+copying b12x/moe/_shared/kernels/reference.py -> build/lib/b12x/moe/_shared/kernels
+copying b12x/moe/_shared/kernels/mxfp6_moe.py -> build/lib/b12x/moe/_shared/kernels
+copying b12x/moe/_shared/kernels/silu.py -> build/lib/b12x/moe/_shared/kernels
+copying b12x/moe/_shared/kernels/w4a8_trellis_decode.py -> build/lib/b12x/moe/_shared/kernels
+copying b12x/moe/_shared/kernels/relu2.py -> build/lib/b12x/moe/_shared/kernels
+copying b12x/moe/_shared/kernels/w4a8_phase1.py -> build/lib/b12x/moe/_shared/kernels
+copying b12x/moe/_shared/kernels/__init__.py -> build/lib/b12x/moe/_shared/kernels
+copying b12x/moe/_shared/kernels/micro.py -> build/lib/b12x/moe/_shared/kernels
+copying b12x/moe/_shared/kernels/activations.py -> build/lib/b12x/moe/_shared/kernels
+copying b12x/moe/_shared/kernels/situ.py -> build/lib/b12x/moe/_shared/kernels
+copying b12x/moe/_shared/kernels/tiny_decode.py -> build/lib/b12x/moe/_shared/kernels
+creating build/lib/b12x/moe/_shared/kernels/w6a8
+copying b12x/moe/_shared/kernels/w6a8/weights.py -> build/lib/b12x/moe/_shared/kernels/w6a8
+copying b12x/moe/_shared/kernels/w6a8/__init__.py -> build/lib/b12x/moe/_shared/kernels/w6a8
+creating build/lib/b12x/moe/_shared/kernels/w4a16
+copying b12x/moe/_shared/kernels/w4a16/btx_compat.py -> build/lib/b12x/moe/_shared/kernels/w4a16
+copying b12x/moe/_shared/kernels/w4a16/kernel.py -> build/lib/b12x/moe/_shared/kernels/w4a16
+copying b12x/moe/_shared/kernels/w4a16/prepare.py -> build/lib/b12x/moe/_shared/kernels/w4a16
+copying b12x/moe/_shared/kernels/w4a16/btx_synth.py -> build/lib/b12x/moe/_shared/kernels/w4a16
+copying b12x/moe/_shared/kernels/w4a16/route_pack.py -> build/lib/b12x/moe/_shared/kernels/w4a16
+copying b12x/moe/_shared/kernels/w4a16/mixed_trellis.py -> build/lib/b12x/moe/_shared/kernels/w4a16
+copying b12x/moe/_shared/kernels/w4a16/btx.py -> build/lib/b12x/moe/_shared/kernels/w4a16
+copying b12x/moe/_shared/kernels/w4a16/host.py -> build/lib/b12x/moe/_shared/kernels/w4a16
+copying b12x/moe/_shared/kernels/w4a16/__init__.py -> build/lib/b12x/moe/_shared/kernels/w4a16
+creating build/lib/b12x/moe/_shared/kernels/w4a8
+copying b12x/moe/_shared/kernels/w4a8/weights.py -> build/lib/b12x/moe/_shared/kernels/w4a8
+copying b12x/moe/_shared/kernels/w4a8/__init__.py -> build/lib/b12x/moe/_shared/kernels/w4a8
+creating build/lib/b12x/sequence/gdn_prefill
+copying b12x/sequence/gdn_prefill/_impl.py -> build/lib/b12x/sequence/gdn_prefill
+copying b12x/sequence/gdn_prefill/reference.py -> build/lib/b12x/sequence/gdn_prefill
+copying b12x/sequence/gdn_prefill/_parallel.py -> build/lib/b12x/sequence/gdn_prefill
+copying b12x/sequence/gdn_prefill/__init__.py -> build/lib/b12x/sequence/gdn_prefill
+copying b12x/sequence/gdn_prefill/_policy.py -> build/lib/b12x/sequence/gdn_prefill
+copying b12x/sequence/gdn_prefill/api.py -> build/lib/b12x/sequence/gdn_prefill
+copying b12x/sequence/gdn_prefill/_parallel_kernels.py -> build/lib/b12x/sequence/gdn_prefill
+creating build/lib/b12x/sequence/kda_prefill
+copying b12x/sequence/kda_prefill/_impl.py -> build/lib/b12x/sequence/kda_prefill
+copying b12x/sequence/kda_prefill/reference.py -> build/lib/b12x/sequence/kda_prefill
+copying b12x/sequence/kda_prefill/__init__.py -> build/lib/b12x/sequence/kda_prefill
+copying b12x/sequence/kda_prefill/_policy.py -> build/lib/b12x/sequence/kda_prefill
+copying b12x/sequence/kda_prefill/api.py -> build/lib/b12x/sequence/kda_prefill
+creating build/lib/b12x/sequence/engram
+copying b12x/sequence/engram/reference.py -> build/lib/b12x/sequence/engram
+copying b12x/sequence/engram/__init__.py -> build/lib/b12x/sequence/engram
+copying b12x/sequence/engram/geometry.py -> build/lib/b12x/sequence/engram
+copying b12x/sequence/engram/_kernels.py -> build/lib/b12x/sequence/engram
+copying b12x/sequence/engram/_policy.py -> build/lib/b12x/sequence/engram
+copying b12x/sequence/engram/api.py -> build/lib/b12x/sequence/engram
+creating build/lib/b12x/sequence/_shared
+copying b12x/sequence/_shared/kda_math.py -> build/lib/b12x/sequence/_shared
+copying b12x/sequence/_shared/disk_table.py -> build/lib/b12x/sequence/_shared
+copying b12x/sequence/_shared/tensors.py -> build/lib/b12x/sequence/_shared
+copying b12x/sequence/_shared/__init__.py -> build/lib/b12x/sequence/_shared
+creating build/lib/b12x/sequence/ple_hash
+copying b12x/sequence/ple_hash/reference.py -> build/lib/b12x/sequence/ple_hash
+copying b12x/sequence/ple_hash/_contracts.py -> build/lib/b12x/sequence/ple_hash
+copying b12x/sequence/ple_hash/__init__.py -> build/lib/b12x/sequence/ple_hash
+copying b12x/sequence/ple_hash/_kernels.py -> build/lib/b12x/sequence/ple_hash
+copying b12x/sequence/ple_hash/_policy.py -> build/lib/b12x/sequence/ple_hash
+copying b12x/sequence/ple_hash/api.py -> build/lib/b12x/sequence/ple_hash
+creating build/lib/b12x/sequence/embedding
+copying b12x/sequence/embedding/__init__.py -> build/lib/b12x/sequence/embedding
+copying b12x/sequence/embedding/_kernel.py -> build/lib/b12x/sequence/embedding
+copying b12x/sequence/embedding/api.py -> build/lib/b12x/sequence/embedding
+creating build/lib/b12x/sequence/mtp_feedback
+copying b12x/sequence/mtp_feedback/_impl.py -> build/lib/b12x/sequence/mtp_feedback
+copying b12x/sequence/mtp_feedback/reference.py -> build/lib/b12x/sequence/mtp_feedback
+copying b12x/sequence/mtp_feedback/_cute_prefill.py -> build/lib/b12x/sequence/mtp_feedback
+copying b12x/sequence/mtp_feedback/__init__.py -> build/lib/b12x/sequence/mtp_feedback
+copying b12x/sequence/mtp_feedback/_kernels.py -> build/lib/b12x/sequence/mtp_feedback
+copying b12x/sequence/mtp_feedback/_policy.py -> build/lib/b12x/sequence/mtp_feedback
+copying b12x/sequence/mtp_feedback/_cute_norm.py -> build/lib/b12x/sequence/mtp_feedback
+copying b12x/sequence/mtp_feedback/_cute_prefill_config.py -> build/lib/b12x/sequence/mtp_feedback
+copying b12x/sequence/mtp_feedback/api.py -> build/lib/b12x/sequence/mtp_feedback
+creating build/lib/b12x/sequence/ple_embedding
+copying b12x/sequence/ple_embedding/reference.py -> build/lib/b12x/sequence/ple_embedding
+copying b12x/sequence/ple_embedding/_disk.py -> build/lib/b12x/sequence/ple_embedding
+copying b12x/sequence/ple_embedding/_contracts.py -> build/lib/b12x/sequence/ple_embedding
+copying b12x/sequence/ple_embedding/__init__.py -> build/lib/b12x/sequence/ple_embedding
+copying b12x/sequence/ple_embedding/_kernels.py -> build/lib/b12x/sequence/ple_embedding
+copying b12x/sequence/ple_embedding/_policy.py -> build/lib/b12x/sequence/ple_embedding
+copying b12x/sequence/ple_embedding/_storage.py -> build/lib/b12x/sequence/ple_embedding
+copying b12x/sequence/ple_embedding/api.py -> build/lib/b12x/sequence/ple_embedding
+creating build/lib/b12x/sequence/gdn_decode
+copying b12x/sequence/gdn_decode/_impl.py -> build/lib/b12x/sequence/gdn_decode
+copying b12x/sequence/gdn_decode/reference.py -> build/lib/b12x/sequence/gdn_decode
+copying b12x/sequence/gdn_decode/__init__.py -> build/lib/b12x/sequence/gdn_decode
+copying b12x/sequence/gdn_decode/_cute_kernels.py -> build/lib/b12x/sequence/gdn_decode
+copying b12x/sequence/gdn_decode/_kernels.py -> build/lib/b12x/sequence/gdn_decode
+copying b12x/sequence/gdn_decode/_policy.py -> build/lib/b12x/sequence/gdn_decode
+copying b12x/sequence/gdn_decode/api.py -> build/lib/b12x/sequence/gdn_decode
+creating build/lib/b12x/sequence/ple
+copying b12x/sequence/ple/reference.py -> build/lib/b12x/sequence/ple
+copying b12x/sequence/ple/_contracts.py -> build/lib/b12x/sequence/ple
+copying b12x/sequence/ple/__init__.py -> build/lib/b12x/sequence/ple
+copying b12x/sequence/ple/_kernels.py -> build/lib/b12x/sequence/ple
+copying b12x/sequence/ple/_policy.py -> build/lib/b12x/sequence/ple
+copying b12x/sequence/ple/api.py -> build/lib/b12x/sequence/ple
+creating build/lib/b12x/sequence/_shared/delta_prefill
+copying b12x/sequence/_shared/delta_prefill/reference.py -> build/lib/b12x/sequence/_shared/delta_prefill
+copying b12x/sequence/_shared/delta_prefill/contract.py -> build/lib/b12x/sequence/_shared/delta_prefill
+copying b12x/sequence/_shared/delta_prefill/workspace.py -> build/lib/b12x/sequence/_shared/delta_prefill
+copying b12x/sequence/_shared/delta_prefill/__init__.py -> build/lib/b12x/sequence/_shared/delta_prefill
+copying b12x/sequence/_shared/delta_prefill/_cute_kernels.py -> build/lib/b12x/sequence/_shared/delta_prefill
+copying b12x/sequence/_shared/delta_prefill/policy.py -> build/lib/b12x/sequence/_shared/delta_prefill
+creating build/lib/b12x/attention/sparse_mla
+copying b12x/attention/sparse_mla/reference.py -> build/lib/b12x/attention/sparse_mla
+copying b12x/attention/sparse_mla/strided.py -> build/lib/b12x/attention/sparse_mla
+copying b12x/attention/sparse_mla/_paged_index_remap.py -> build/lib/b12x/attention/sparse_mla
+copying b12x/attention/sparse_mla/pooled_selection.py -> build/lib/b12x/attention/sparse_mla
+copying b12x/attention/sparse_mla/_scratch.py -> build/lib/b12x/attention/sparse_mla
+copying b12x/attention/sparse_mla/__init__.py -> build/lib/b12x/attention/sparse_mla
+copying b12x/attention/sparse_mla/_policy.py -> build/lib/b12x/attention/sparse_mla
+copying b12x/attention/sparse_mla/api.py -> build/lib/b12x/attention/sparse_mla
+creating build/lib/b12x/attention/_shared
+copying b12x/attention/_shared/static_fp8_quant.py -> build/lib/b12x/attention/_shared
+copying b12x/attention/_shared/workspace.py -> build/lib/b12x/attention/_shared
+copying b12x/attention/_shared/__init__.py -> build/lib/b12x/attention/_shared
+creating build/lib/b12x/attention/varlen
+copying b12x/attention/varlen/__init__.py -> build/lib/b12x/attention/varlen
+copying b12x/attention/varlen/_policy.py -> build/lib/b12x/attention/varlen
+copying b12x/attention/varlen/api.py -> build/lib/b12x/attention/varlen
+creating build/lib/b12x/attention/compressed_sparse_mla
+copying b12x/attention/compressed_sparse_mla/weight_scale.py -> build/lib/b12x/attention/compressed_sparse_mla
+copying b12x/attention/compressed_sparse_mla/_metadata.py -> build/lib/b12x/attention/compressed_sparse_mla
+copying b12x/attention/compressed_sparse_mla/preparation.py -> build/lib/b12x/attention/compressed_sparse_mla
+copying b12x/attention/compressed_sparse_mla/reference.py -> build/lib/b12x/attention/compressed_sparse_mla
+copying b12x/attention/compressed_sparse_mla/_scratch.py -> build/lib/b12x/attention/compressed_sparse_mla
+copying b12x/attention/compressed_sparse_mla/__init__.py -> build/lib/b12x/attention/compressed_sparse_mla
+copying b12x/attention/compressed_sparse_mla/_policy.py -> build/lib/b12x/attention/compressed_sparse_mla
+copying b12x/attention/compressed_sparse_mla/api.py -> build/lib/b12x/attention/compressed_sparse_mla
+creating build/lib/b12x/attention/dsa_indexer
+copying b12x/attention/dsa_indexer/_impl.py -> build/lib/b12x/attention/dsa_indexer
+copying b12x/attention/dsa_indexer/scratch.py -> build/lib/b12x/attention/dsa_indexer
+copying b12x/attention/dsa_indexer/kernel.py -> build/lib/b12x/attention/dsa_indexer
+copying b12x/attention/dsa_indexer/reference.py -> build/lib/b12x/attention/dsa_indexer
+copying b12x/attention/dsa_indexer/mxfp4.py -> build/lib/b12x/attention/dsa_indexer
+copying b12x/attention/dsa_indexer/persistent_topk.py -> build/lib/b12x/attention/dsa_indexer
+copying b12x/attention/dsa_indexer/schedule_metadata.py -> build/lib/b12x/attention/dsa_indexer
+copying b12x/attention/dsa_indexer/paged.py -> build/lib/b12x/attention/dsa_indexer
+copying b12x/attention/dsa_indexer/msa_reference.py -> build/lib/b12x/attention/dsa_indexer
+copying b12x/attention/dsa_indexer/__init__.py -> build/lib/b12x/attention/dsa_indexer
+copying b12x/attention/dsa_indexer/fused_indexer.py -> build/lib/b12x/attention/dsa_indexer
+copying b12x/attention/dsa_indexer/tiled_topk.py -> build/lib/b12x/attention/dsa_indexer
+copying b12x/attention/dsa_indexer/_policy.py -> build/lib/b12x/attention/dsa_indexer
+copying b12x/attention/dsa_indexer/contiguous_kernel.py -> build/lib/b12x/attention/dsa_indexer
+copying b12x/attention/dsa_indexer/api.py -> build/lib/b12x/attention/dsa_indexer
+creating build/lib/b12x/attention/dense_mla
+copying b12x/attention/dense_mla/_io.py -> build/lib/b12x/attention/dense_mla
+copying b12x/attention/dense_mla/_math.py -> build/lib/b12x/attention/dense_mla
+copying b12x/attention/dense_mla/_merge.py -> build/lib/b12x/attention/dense_mla
+copying b12x/attention/dense_mla/_forward.py -> build/lib/b12x/attention/dense_mla
+copying b12x/attention/dense_mla/_scratch.py -> build/lib/b12x/attention/dense_mla
+copying b12x/attention/dense_mla/__init__.py -> build/lib/b12x/attention/dense_mla
+copying b12x/attention/dense_mla/planner.py -> build/lib/b12x/attention/dense_mla
+copying b12x/attention/dense_mla/_kernel.py -> build/lib/b12x/attention/dense_mla
+copying b12x/attention/dense_mla/_reference.py -> build/lib/b12x/attention/dense_mla
+copying b12x/attention/dense_mla/_policy.py -> build/lib/b12x/attention/dense_mla
+copying b12x/attention/dense_mla/_layout.py -> build/lib/b12x/attention/dense_mla
+copying b12x/attention/dense_mla/api.py -> build/lib/b12x/attention/dense_mla
+creating build/lib/b12x/attention/paged
+copying b12x/attention/paged/_forward.py -> build/lib/b12x/attention/paged
+copying b12x/attention/paged/_selected_forward_config.py -> build/lib/b12x/attention/paged
+copying b12x/attention/paged/merge.py -> build/lib/b12x/attention/paged
+copying b12x/attention/paged/reference.py -> build/lib/b12x/attention/paged
+copying b12x/attention/paged/_selected_forward.py -> build/lib/b12x/attention/paged
+copying b12x/attention/paged/forward_extend_generic.py -> build/lib/b12x/attention/paged
+copying b12x/attention/paged/workspace.py -> build/lib/b12x/attention/paged
+copying b12x/attention/paged/graph_replay.py -> build/lib/b12x/attention/paged
+copying b12x/attention/paged/forward_paged.py -> build/lib/b12x/attention/paged
+copying b12x/attention/paged/_scratch.py -> build/lib/b12x/attention/paged
+copying b12x/attention/paged/__init__.py -> build/lib/b12x/attention/paged
+copying b12x/attention/paged/planner.py -> build/lib/b12x/attention/paged
+copying b12x/attention/paged/_policy.py -> build/lib/b12x/attention/paged
+copying b12x/attention/paged/traits.py -> build/lib/b12x/attention/paged
+copying b12x/attention/paged/api.py -> build/lib/b12x/attention/paged
+creating build/lib/b12x/attention/mla_compress
+copying b12x/attention/mla_compress/_generator.py -> build/lib/b12x/attention/mla_compress
+copying b12x/attention/mla_compress/reference.py -> build/lib/b12x/attention/mla_compress
+copying b12x/attention/mla_compress/__init__.py -> build/lib/b12x/attention/mla_compress
+copying b12x/attention/mla_compress/_cute.py -> build/lib/b12x/attention/mla_compress
+copying b12x/attention/mla_compress/_policy.py -> build/lib/b12x/attention/mla_compress
+copying b12x/attention/mla_compress/api.py -> build/lib/b12x/attention/mla_compress
+creating build/lib/b12x/attention/qsa
+copying b12x/attention/qsa/_draft_selection.py -> build/lib/b12x/attention/qsa
+copying b12x/attention/qsa/_sparse_gqa.py -> build/lib/b12x/attention/qsa
+copying b12x/attention/qsa/_sparse_gqa_cute_config.py -> build/lib/b12x/attention/qsa
+copying b12x/attention/qsa/reference.py -> build/lib/b12x/attention/qsa
+copying b12x/attention/qsa/_sparse_gqa_cute.py -> build/lib/b12x/attention/qsa
+copying b12x/attention/qsa/_contract.py -> build/lib/b12x/attention/qsa
+copying b12x/attention/qsa/__init__.py -> build/lib/b12x/attention/qsa
+copying b12x/attention/qsa/_kernels.py -> build/lib/b12x/attention/qsa
+copying b12x/attention/qsa/_policy.py -> build/lib/b12x/attention/qsa
+copying b12x/attention/qsa/_score_cute.py -> build/lib/b12x/attention/qsa
+copying b12x/attention/qsa/api.py -> build/lib/b12x/attention/qsa
+creating build/lib/b12x/attention/_shared/mla
+copying b12x/attention/_shared/mla/kernel.py -> build/lib/b12x/attention/_shared/mla
+copying b12x/attention/_shared/mla/smem.py -> build/lib/b12x/attention/_shared/mla
+copying b12x/attention/_shared/mla/merge.py -> build/lib/b12x/attention/_shared/mla
+copying b12x/attention/_shared/mla/reference.py -> build/lib/b12x/attention/_shared/mla
+copying b12x/attention/_shared/mla/prefill.py -> build/lib/b12x/attention/_shared/mla
+copying b12x/attention/_shared/mla/decode_math.py -> build/lib/b12x/attention/_shared/mla
+copying b12x/attention/_shared/mla/io_mg.py -> build/lib/b12x/attention/_shared/mla
+copying b12x/attention/_shared/mla/kv_cache.py -> build/lib/b12x/attention/_shared/mla
+copying b12x/attention/_shared/mla/compressed_reference.py -> build/lib/b12x/attention/_shared/mla
+copying b12x/attention/_shared/mla/io.py -> build/lib/b12x/attention/_shared/mla
+copying b12x/attention/_shared/mla/__init__.py -> build/lib/b12x/attention/_shared/mla
+copying b12x/attention/_shared/mla/compressed_config.py -> build/lib/b12x/attention/_shared/mla
+copying b12x/attention/_shared/mla/prefill_mg.py -> build/lib/b12x/attention/_shared/mla
+copying b12x/attention/_shared/mla/smem_mg.py -> build/lib/b12x/attention/_shared/mla
+copying b12x/attention/_shared/mla/packed.py -> build/lib/b12x/attention/_shared/mla
+copying b12x/attention/_shared/mla/traits.py -> build/lib/b12x/attention/_shared/mla
+copying b12x/attention/_shared/mla/api.py -> build/lib/b12x/attention/_shared/mla
+copying b12x/attention/_shared/mla/compressed_api.py -> build/lib/b12x/attention/_shared/mla
+creating build/lib/b12x/attention/_shared/cute
+copying b12x/attention/_shared/cute/__init__.py -> build/lib/b12x/attention/_shared/cute
+copying b12x/attention/_shared/cute/copy.py -> build/lib/b12x/attention/_shared/cute
+copying b12x/attention/_shared/cute/pipeline.py -> build/lib/b12x/attention/_shared/cute
+copying b12x/attention/_shared/cute/ops.py -> build/lib/b12x/attention/_shared/cute
+creating build/lib/b12x/attention/_shared/contiguous
+copying b12x/attention/_shared/contiguous/softmax.py -> build/lib/b12x/attention/_shared/contiguous
+copying b12x/attention/_shared/contiguous/mask.py -> build/lib/b12x/attention/_shared/contiguous
+copying b12x/attention/_shared/contiguous/named_barrier.py -> build/lib/b12x/attention/_shared/contiguous
+copying b12x/attention/_shared/contiguous/forward.py -> build/lib/b12x/attention/_shared/contiguous
+copying b12x/attention/_shared/contiguous/cute_dsl_utils.py -> build/lib/b12x/attention/_shared/contiguous
+copying b12x/attention/_shared/contiguous/__init__.py -> build/lib/b12x/attention/_shared/contiguous
+copying b12x/attention/_shared/contiguous/tile_scheduler.py -> build/lib/b12x/attention/_shared/contiguous
+copying b12x/attention/_shared/contiguous/layout_utils.py -> build/lib/b12x/attention/_shared/contiguous
+copying b12x/attention/_shared/contiguous/block_info.py -> build/lib/b12x/attention/_shared/contiguous
+copying b12x/attention/_shared/contiguous/pack_gqa.py -> build/lib/b12x/attention/_shared/contiguous
+copying b12x/attention/_shared/contiguous/seqlen_info.py -> build/lib/b12x/attention/_shared/contiguous
+copying b12x/attention/_shared/contiguous/api.py -> build/lib/b12x/attention/_shared/contiguous
+creating build/lib/b12x/attention/paged/tuning
+copying b12x/attention/paged/tuning/registry.py -> build/lib/b12x/attention/paged/tuning
+copying b12x/attention/paged/tuning/__init__.py -> build/lib/b12x/attention/paged/tuning
+running egg_info
+creating b12x.egg-info
+writing b12x.egg-info/PKG-INFO
+writing dependency_links to b12x.egg-info/dependency_links.txt
+writing entry points to b12x.egg-info/entry_points.txt
+writing requirements to b12x.egg-info/requires.txt
+writing top-level names to b12x.egg-info/top_level.txt
+writing manifest file 'b12x.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'b12x.egg-info/SOURCES.txt'
+copying b12x/loader/_batch.c -> build/lib/b12x/loader
+copying b12x/loader/_direct.c -> build/lib/b12x/loader
+copying b12x/loader/_ple_reader.c -> build/lib/b12x/loader
+copying b12x/loader/_pool.c -> build/lib/b12x/loader
+copying b12x/loader/_storage.c -> build/lib/b12x/loader
+creating build/lib/b12x/policy/_profiles/data
+copying b12x/policy/_profiles/data/nvidia.gb10.48sm.json.gz -> build/lib/b12x/policy/_profiles/data
+copying b12x/policy/_profiles/data/nvidia.rtx.pro.6000.blackwell.max-q.json.gz -> build/lib/b12x/policy/_profiles/data
+copying b12x/policy/_profiles/data/nvidia.rtx.pro.6000.blackwell.json.gz -> build/lib/b12x/policy/_profiles/data
+copying b12x/policy/_profiles/data/nvidia.gb10.48sm.json.gz -> build/lib/b12x/policy/_profiles/data
+copying b12x/policy/_profiles/data/nvidia.rtx.pro.6000.blackwell.json.gz -> build/lib/b12x/policy/_profiles/data
+copying b12x/policy/_profiles/data/nvidia.rtx.pro.6000.blackwell.max-q.json.gz -> build/lib/b12x/policy/_profiles/data
+copying b12x/comm/roce/_roce_proxy.c -> build/lib/b12x/comm/roce
+copying b12x/integration/vllm/README.md -> build/lib/b12x/integration/vllm
+copying b12x/sequence/ple/STATE.md -> build/lib/b12x/sequence/ple
+copying b12x/attention/dsa_indexer/MSA.md -> build/lib/b12x/attention/dsa_indexer
+copying b12x/attention/_shared/contiguous/README.md -> build/lib/b12x/attention/_shared/contiguous
+installing to build/bdist.linux-aarch64/wheel
+running install
+running install_lib
+creating build/bdist.linux-aarch64/wheel
+creating build/bdist.linux-aarch64/wheel/b12x
+creating build/bdist.linux-aarch64/wheel/b12x/policy
+creating build/bdist.linux-aarch64/wheel/b12x/policy/generation
+copying build/lib/b12x/policy/generation/parallel.py -> build/bdist.linux-aarch64/wheel/./b12x/policy/generation
+copying build/lib/b12x/policy/generation/contracts.py -> build/bdist.linux-aarch64/wheel/./b12x/policy/generation
+copying build/lib/b12x/policy/generation/sweep.py -> build/bdist.linux-aarch64/wheel/./b12x/policy/generation
+copying build/lib/b12x/policy/generation/attention_corpus.py -> build/bdist.linux-aarch64/wheel/./b12x/policy/generation
+copying build/lib/b12x/policy/generation/runner.py -> build/bdist.linux-aarch64/wheel/./b12x/policy/generation
+creating build/bdist.linux-aarch64/wheel/b12x/policy/generation/providers
+copying build/lib/b12x/policy/generation/providers/qualification.py -> build/bdist.linux-aarch64/wheel/./b12x/policy/generation/providers
+copying build/lib/b12x/policy/generation/providers/moe.py -> build/bdist.linux-aarch64/wheel/./b12x/policy/generation/providers
+copying build/lib/b12x/policy/generation/providers/engram.py -> build/bdist.linux-aarch64/wheel/./b12x/policy/generation/providers
+copying build/lib/b12x/policy/generation/providers/moe_precision.py -> build/bdist.linux-aarch64/wheel/./b12x/policy/generation/providers
+copying build/lib/b12x/policy/generation/providers/blockscaled.py -> build/bdist.linux-aarch64/wheel/./b12x/policy/generation/providers
+copying build/lib/b12x/policy/generation/providers/gpu_workers.py -> build/bdist.linux-aarch64/wheel/./b12x/policy/generation/providers
+copying build/lib/b12x/policy/generation/providers/ple.py -> build/bdist.linux-aarch64/wheel/./b12x/policy/generation/providers
+copying build/lib/b12x/policy/generation/providers/delta_prefill.py -> build/bdist.linux-aarch64/wheel/./b12x/policy/generation/providers
+copying build/lib/b12x/policy/generation/providers/tunable.py -> build/bdist.linux-aarch64/wheel/./b12x/policy/generation/providers
+copying build/lib/b12x/policy/generation/providers/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/policy/generation/providers
+copying build/lib/b12x/policy/generation/providers/gemm.py -> build/bdist.linux-aarch64/wheel/./b12x/policy/generation/providers
+copying build/lib/b12x/policy/generation/providers/moe_gpu_worker.py -> build/bdist.linux-aarch64/wheel/./b12x/policy/generation/providers
+copying build/lib/b12x/policy/generation/providers/norm_sequence.py -> build/bdist.linux-aarch64/wheel/./b12x/policy/generation/providers
+copying build/lib/b12x/policy/generation/providers/attention.py -> build/bdist.linux-aarch64/wheel/./b12x/policy/generation/providers
+copying build/lib/b12x/policy/generation/delta_prefill_cases.py -> build/bdist.linux-aarch64/wheel/./b12x/policy/generation
+copying build/lib/b12x/policy/generation/registry.py -> build/bdist.linux-aarch64/wheel/./b12x/policy/generation
+copying build/lib/b12x/policy/generation/reducer.py -> build/bdist.linux-aarch64/wheel/./b12x/policy/generation
+copying build/lib/b12x/policy/generation/moe_corpus.py -> build/bdist.linux-aarch64/wheel/./b12x/policy/generation
+copying build/lib/b12x/policy/generation/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/policy/generation
+copying build/lib/b12x/policy/generation/sharding.py -> build/bdist.linux-aarch64/wheel/./b12x/policy/generation
+copying build/lib/b12x/policy/generation/progress.py -> build/bdist.linux-aarch64/wheel/./b12x/policy/generation
+copying build/lib/b12x/policy/generation/measured.py -> build/bdist.linux-aarch64/wheel/./b12x/policy/generation
+copying build/lib/b12x/policy/generation/store.py -> build/bdist.linux-aarch64/wheel/./b12x/policy/generation
+copying build/lib/b12x/policy/components.py -> build/bdist.linux-aarch64/wheel/./b12x/policy
+copying build/lib/b12x/policy/device.py -> build/bdist.linux-aarch64/wheel/./b12x/policy
+copying build/lib/b12x/policy/registry.py -> build/bdist.linux-aarch64/wheel/./b12x/policy
+copying build/lib/b12x/policy/catalog.py -> build/bdist.linux-aarch64/wheel/./b12x/policy
+copying build/lib/b12x/policy/context.py -> build/bdist.linux-aarch64/wheel/./b12x/policy
+copying build/lib/b12x/policy/serialization.py -> build/bdist.linux-aarch64/wheel/./b12x/policy
+copying build/lib/b12x/policy/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/policy
+copying build/lib/b12x/policy/fixed_backend.py -> build/bdist.linux-aarch64/wheel/./b12x/policy
+copying build/lib/b12x/policy/types.py -> build/bdist.linux-aarch64/wheel/./b12x/policy
+creating build/bdist.linux-aarch64/wheel/b12x/policy/_profiles
+copying build/lib/b12x/policy/_profiles/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/policy/_profiles
+creating build/bdist.linux-aarch64/wheel/b12x/policy/_profiles/data
+copying build/lib/b12x/policy/_profiles/data/nvidia.gb10.48sm.json.gz -> build/bdist.linux-aarch64/wheel/./b12x/policy/_profiles/data
+copying build/lib/b12x/policy/_profiles/data/nvidia.rtx.pro.6000.blackwell.max-q.json.gz -> build/bdist.linux-aarch64/wheel/./b12x/policy/_profiles/data
+copying build/lib/b12x/policy/_profiles/data/nvidia.rtx.pro.6000.blackwell.json.gz -> build/bdist.linux-aarch64/wheel/./b12x/policy/_profiles/data
+creating build/bdist.linux-aarch64/wheel/b12x/comm
+creating build/bdist.linux-aarch64/wheel/b12x/comm/pcie
+copying build/lib/b12x/comm/pcie/pcie_oneshot.py -> build/bdist.linux-aarch64/wheel/./b12x/comm/pcie
+copying build/lib/b12x/comm/pcie/_dcp_cute_common.py -> build/bdist.linux-aarch64/wheel/./b12x/comm/pcie
+copying build/lib/b12x/comm/pcie/pcie_vocab_argmax.py -> build/bdist.linux-aarch64/wheel/./b12x/comm/pcie
+copying build/lib/b12x/comm/pcie/_island_rs_cute.py -> build/bdist.linux-aarch64/wheel/./b12x/comm/pcie
+copying build/lib/b12x/comm/pcie/_vocab_argmax_cute.py -> build/bdist.linux-aarch64/wheel/./b12x/comm/pcie
+copying build/lib/b12x/comm/pcie/_cute_intrinsics.py -> build/bdist.linux-aarch64/wheel/./b12x/comm/pcie
+copying build/lib/b12x/comm/pcie/_twoshot_cute.py -> build/bdist.linux-aarch64/wheel/./b12x/comm/pcie
+copying build/lib/b12x/comm/pcie/_oneshot_cute.py -> build/bdist.linux-aarch64/wheel/./b12x/comm/pcie
+copying build/lib/b12x/comm/pcie/_cuda_ipc.py -> build/bdist.linux-aarch64/wheel/./b12x/comm/pcie
+copying build/lib/b12x/comm/pcie/pcie_dma.py -> build/bdist.linux-aarch64/wheel/./b12x/comm/pcie
+copying build/lib/b12x/comm/pcie/_hierarchical_cute.py -> build/bdist.linux-aarch64/wheel/./b12x/comm/pcie
+copying build/lib/b12x/comm/pcie/_launch_geometry.py -> build/bdist.linux-aarch64/wheel/./b12x/comm/pcie
+copying build/lib/b12x/comm/pcie/pcie_island_rs.py -> build/bdist.linux-aarch64/wheel/./b12x/comm/pcie
+copying build/lib/b12x/comm/pcie/_dcp_a2a_cute.py -> build/bdist.linux-aarch64/wheel/./b12x/comm/pcie
+copying build/lib/b12x/comm/pcie/_dma_kernels.py -> build/bdist.linux-aarch64/wheel/./b12x/comm/pcie
+copying build/lib/b12x/comm/pcie/pcie_twoshot_bf16.py -> build/bdist.linux-aarch64/wheel/./b12x/comm/pcie
+copying build/lib/b12x/comm/pcie/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/comm/pcie
+copying build/lib/b12x/comm/pcie/pcie_dcp_a2a.py -> build/bdist.linux-aarch64/wheel/./b12x/comm/pcie
+copying build/lib/b12x/comm/pcie/pcie_dcp_topk.py -> build/bdist.linux-aarch64/wheel/./b12x/comm/pcie
+copying build/lib/b12x/comm/pcie/_twoshot_bf16_cute.py -> build/bdist.linux-aarch64/wheel/./b12x/comm/pcie
+copying build/lib/b12x/comm/pcie/_dcp_topk_cute.py -> build/bdist.linux-aarch64/wheel/./b12x/comm/pcie
+copying build/lib/b12x/comm/pcie/pcie_allreduce.py -> build/bdist.linux-aarch64/wheel/./b12x/comm/pcie
+copying build/lib/b12x/comm/pcie/pcie_twoshot.py -> build/bdist.linux-aarch64/wheel/./b12x/comm/pcie
+copying build/lib/b12x/comm/pcie/api.py -> build/bdist.linux-aarch64/wheel/./b12x/comm/pcie
+copying build/lib/b12x/comm/pcie/pcie_hierarchical.py -> build/bdist.linux-aarch64/wheel/./b12x/comm/pcie
+copying build/lib/b12x/comm/pcie/overlap_probe.py -> build/bdist.linux-aarch64/wheel/./b12x/comm/pcie
+copying build/lib/b12x/comm/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/comm
+creating build/bdist.linux-aarch64/wheel/b12x/comm/roce
+copying build/lib/b12x/comm/roce/_roce_proxy.c -> build/bdist.linux-aarch64/wheel/./b12x/comm/roce
+copying build/lib/b12x/comm/roce/_cute_intrinsics.py -> build/bdist.linux-aarch64/wheel/./b12x/comm/roce
+copying build/lib/b12x/comm/roce/_oneshot_cute.py -> build/bdist.linux-aarch64/wheel/./b12x/comm/roce
+copying build/lib/b12x/comm/roce/roce_oneshot.py -> build/bdist.linux-aarch64/wheel/./b12x/comm/roce
+copying build/lib/b12x/comm/roce/_proxy.py -> build/bdist.linux-aarch64/wheel/./b12x/comm/roce
+copying build/lib/b12x/comm/roce/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/comm/roce
+copying build/lib/b12x/comm/roce/_allgather_cute.py -> build/bdist.linux-aarch64/wheel/./b12x/comm/roce
+copying build/lib/b12x/comm/roce/api.py -> build/bdist.linux-aarch64/wheel/./b12x/comm/roce
+creating build/bdist.linux-aarch64/wheel/b12x/integration
+copying build/lib/b12x/integration/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/integration
+creating build/bdist.linux-aarch64/wheel/b12x/integration/vllm
+copying build/lib/b12x/integration/vllm/README.md -> build/bdist.linux-aarch64/wheel/./b12x/integration/vllm
+copying build/lib/b12x/integration/vllm/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/integration/vllm
+copying build/lib/b12x/integration/vllm/fp6_serving.py -> build/bdist.linux-aarch64/wheel/./b12x/integration/vllm
+copying build/lib/b12x/integration/vllm/loader.py -> build/bdist.linux-aarch64/wheel/./b12x/integration/vllm
+copying build/lib/b12x/integration/vllm/plugin.py -> build/bdist.linux-aarch64/wheel/./b12x/integration/vllm
+creating build/bdist.linux-aarch64/wheel/b12x/gemm
+creating build/bdist.linux-aarch64/wheel/b12x/gemm/_bmm
+copying build/lib/b12x/gemm/_bmm/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/_bmm
+copying build/lib/b12x/gemm/_bmm/api.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/_bmm
+creating build/bdist.linux-aarch64/wheel/b12x/gemm/bf16_vocab_projection
+copying build/lib/b12x/gemm/bf16_vocab_projection/_contracts.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/bf16_vocab_projection
+copying build/lib/b12x/gemm/bf16_vocab_projection/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/bf16_vocab_projection
+copying build/lib/b12x/gemm/bf16_vocab_projection/_kernel.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/bf16_vocab_projection
+copying build/lib/b12x/gemm/bf16_vocab_projection/_policy.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/bf16_vocab_projection
+copying build/lib/b12x/gemm/bf16_vocab_projection/api.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/bf16_vocab_projection
+creating build/bdist.linux-aarch64/wheel/b12x/gemm/mla_query_projection
+copying build/lib/b12x/gemm/mla_query_projection/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/mla_query_projection
+copying build/lib/b12x/gemm/mla_query_projection/_bf16.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/mla_query_projection
+copying build/lib/b12x/gemm/mla_query_projection/api.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/mla_query_projection
+creating build/bdist.linux-aarch64/wheel/b12x/gemm/wo_projection
+copying build/lib/b12x/gemm/wo_projection/_quant_cute.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/wo_projection
+copying build/lib/b12x/gemm/wo_projection/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/wo_projection
+copying build/lib/b12x/gemm/wo_projection/_policy.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/wo_projection
+copying build/lib/b12x/gemm/wo_projection/api.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/wo_projection
+creating build/bdist.linux-aarch64/wheel/b12x/gemm/_shared
+copying build/lib/b12x/gemm/_shared/mxfp8_bmm.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/_shared
+copying build/lib/b12x/gemm/_shared/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/_shared
+copying build/lib/b12x/gemm/_shared/wo_mxfp8.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/_shared
+copying build/lib/b12x/gemm/_shared/block_fp8.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/_shared
+creating build/bdist.linux-aarch64/wheel/b12x/gemm/trellis_linear
+copying build/lib/b12x/gemm/trellis_linear/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/trellis_linear
+copying build/lib/b12x/gemm/trellis_linear/api.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/trellis_linear
+creating build/bdist.linux-aarch64/wheel/b12x/gemm/mxfp8_linear
+copying build/lib/b12x/gemm/mxfp8_linear/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/mxfp8_linear
+copying build/lib/b12x/gemm/mxfp8_linear/_kernel.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/mxfp8_linear
+copying build/lib/b12x/gemm/mxfp8_linear/api.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/mxfp8_linear
+creating build/bdist.linux-aarch64/wheel/b12x/gemm/bf16_gemv
+copying build/lib/b12x/gemm/bf16_gemv/_prefill.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/bf16_gemv
+copying build/lib/b12x/gemm/bf16_gemv/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/bf16_gemv
+copying build/lib/b12x/gemm/bf16_gemv/_kernel.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/bf16_gemv
+copying build/lib/b12x/gemm/bf16_gemv/api.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/bf16_gemv
+creating build/bdist.linux-aarch64/wheel/b12x/gemm/tensor_fp8_linear
+copying build/lib/b12x/gemm/tensor_fp8_linear/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/tensor_fp8_linear
+copying build/lib/b12x/gemm/tensor_fp8_linear/_kernel.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/tensor_fp8_linear
+copying build/lib/b12x/gemm/tensor_fp8_linear/api.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/tensor_fp8_linear
+copying build/lib/b12x/gemm/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm
+creating build/bdist.linux-aarch64/wheel/b12x/gemm/block_fp8_linear
+copying build/lib/b12x/gemm/block_fp8_linear/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/block_fp8_linear
+copying build/lib/b12x/gemm/block_fp8_linear/_policy.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/block_fp8_linear
+copying build/lib/b12x/gemm/block_fp8_linear/api.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/block_fp8_linear
+creating build/bdist.linux-aarch64/wheel/b12x/gemm/blockscaled
+copying build/lib/b12x/gemm/blockscaled/_linear.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/blockscaled
+copying build/lib/b12x/gemm/blockscaled/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/blockscaled
+copying build/lib/b12x/gemm/blockscaled/_quantize.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/blockscaled
+copying build/lib/b12x/gemm/blockscaled/_ops.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/blockscaled
+copying build/lib/b12x/gemm/blockscaled/_policy.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/blockscaled
+copying build/lib/b12x/gemm/blockscaled/_a16.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/blockscaled
+copying build/lib/b12x/gemm/blockscaled/api.py -> build/bdist.linux-aarch64/wheel/./b12x/gemm/blockscaled
+creating build/bdist.linux-aarch64/wheel/b12x/quantization
+copying build/lib/b12x/quantization/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/quantization
+creating build/bdist.linux-aarch64/wheel/b12x/quantization/mxfp8
+copying build/lib/b12x/quantization/mxfp8/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/quantization/mxfp8
+copying build/lib/b12x/quantization/mxfp8/api.py -> build/bdist.linux-aarch64/wheel/./b12x/quantization/mxfp8
+creating build/bdist.linux-aarch64/wheel/b12x/quantization/mxfp6
+copying build/lib/b12x/quantization/mxfp6/fp6_dense_op.py -> build/bdist.linux-aarch64/wheel/./b12x/quantization/mxfp6
+copying build/lib/b12x/quantization/mxfp6/fp6_safetensors_load.py -> build/bdist.linux-aarch64/wheel/./b12x/quantization/mxfp6
+copying build/lib/b12x/quantization/mxfp6/bf16_to_fp6_tma.py -> build/bdist.linux-aarch64/wheel/./b12x/quantization/mxfp6
+copying build/lib/b12x/quantization/mxfp6/fp6_dense_weights.py -> build/bdist.linux-aarch64/wheel/./b12x/quantization/mxfp6
+copying build/lib/b12x/quantization/mxfp6/fp6_row_gs.py -> build/bdist.linux-aarch64/wheel/./b12x/quantization/mxfp6
+copying build/lib/b12x/quantization/mxfp6/fp6_checkpoint.py -> build/bdist.linux-aarch64/wheel/./b12x/quantization/mxfp6
+copying build/lib/b12x/quantization/mxfp6/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/quantization/mxfp6
+copying build/lib/b12x/quantization/mxfp6/calib_io.py -> build/bdist.linux-aarch64/wheel/./b12x/quantization/mxfp6
+copying build/lib/b12x/quantization/mxfp6/fp6_safetensors_export.py -> build/bdist.linux-aarch64/wheel/./b12x/quantization/mxfp6
+copying build/lib/b12x/quantization/mxfp6/model_fp6.py -> build/bdist.linux-aarch64/wheel/./b12x/quantization/mxfp6
+copying build/lib/b12x/quantization/mxfp6/bf16_to_fp6_small_m.py -> build/bdist.linux-aarch64/wheel/./b12x/quantization/mxfp6
+copying build/lib/b12x/quantization/mxfp6/fp6_moe_weights.py -> build/bdist.linux-aarch64/wheel/./b12x/quantization/mxfp6
+creating build/bdist.linux-aarch64/wheel/b12x/quantization/nvfp4
+copying build/lib/b12x/quantization/nvfp4/_impl.py -> build/bdist.linux-aarch64/wheel/./b12x/quantization/nvfp4
+copying build/lib/b12x/quantization/nvfp4/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/quantization/nvfp4
+copying build/lib/b12x/quantization/nvfp4/_kernel.py -> build/bdist.linux-aarch64/wheel/./b12x/quantization/nvfp4
+copying build/lib/b12x/quantization/nvfp4/_policy.py -> build/bdist.linux-aarch64/wheel/./b12x/quantization/nvfp4
+copying build/lib/b12x/quantization/nvfp4/api.py -> build/bdist.linux-aarch64/wheel/./b12x/quantization/nvfp4
+creating build/bdist.linux-aarch64/wheel/b12x/norm
+creating build/bdist.linux-aarch64/wheel/b12x/norm/hyperconnection
+copying build/lib/b12x/norm/hyperconnection/_impl.py -> build/bdist.linux-aarch64/wheel/./b12x/norm/hyperconnection
+copying build/lib/b12x/norm/hyperconnection/reference.py -> build/bdist.linux-aarch64/wheel/./b12x/norm/hyperconnection
+copying build/lib/b12x/norm/hyperconnection/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/norm/hyperconnection
+copying build/lib/b12x/norm/hyperconnection/_cute.py -> build/bdist.linux-aarch64/wheel/./b12x/norm/hyperconnection
+copying build/lib/b12x/norm/hyperconnection/_kernels.py -> build/bdist.linux-aarch64/wheel/./b12x/norm/hyperconnection
+copying build/lib/b12x/norm/hyperconnection/_policy.py -> build/bdist.linux-aarch64/wheel/./b12x/norm/hyperconnection
+copying build/lib/b12x/norm/hyperconnection/_cute_config.py -> build/bdist.linux-aarch64/wheel/./b12x/norm/hyperconnection
+copying build/lib/b12x/norm/hyperconnection/api.py -> build/bdist.linux-aarch64/wheel/./b12x/norm/hyperconnection
+copying build/lib/b12x/norm/vision.py -> build/bdist.linux-aarch64/wheel/./b12x/norm
+copying build/lib/b12x/norm/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/norm
+creating build/bdist.linux-aarch64/wheel/b12x/norm/mhc
+copying build/lib/b12x/norm/mhc/_impl.py -> build/bdist.linux-aarch64/wheel/./b12x/norm/mhc
+copying build/lib/b12x/norm/mhc/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/norm/mhc
+copying build/lib/b12x/norm/mhc/_kernels.py -> build/bdist.linux-aarch64/wheel/./b12x/norm/mhc
+copying build/lib/b12x/norm/mhc/_policy.py -> build/bdist.linux-aarch64/wheel/./b12x/norm/mhc
+copying build/lib/b12x/norm/mhc/_pre_prefill.py -> build/bdist.linux-aarch64/wheel/./b12x/norm/mhc
+copying build/lib/b12x/norm/mhc/api.py -> build/bdist.linux-aarch64/wheel/./b12x/norm/mhc
+creating build/bdist.linux-aarch64/wheel/b12x/loader
+copying build/lib/b12x/loader/_checkpoint.py -> build/bdist.linux-aarch64/wheel/./b12x/loader
+copying build/lib/b12x/loader/_batch.c -> build/bdist.linux-aarch64/wheel/./b12x/loader
+copying build/lib/b12x/loader/_api.py -> build/bdist.linux-aarch64/wheel/./b12x/loader
+copying build/lib/b12x/loader/_pool.c -> build/bdist.linux-aarch64/wheel/./b12x/loader
+copying build/lib/b12x/loader/_ple_reader.c -> build/bdist.linux-aarch64/wheel/./b12x/loader
+copying build/lib/b12x/loader/_native.py -> build/bdist.linux-aarch64/wheel/./b12x/loader
+copying build/lib/b12x/loader/_storage.c -> build/bdist.linux-aarch64/wheel/./b12x/loader
+copying build/lib/b12x/loader/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/loader
+copying build/lib/b12x/loader/_direct.c -> build/bdist.linux-aarch64/wheel/./b12x/loader
+copying build/lib/b12x/loader/_pool.py -> build/bdist.linux-aarch64/wheel/./b12x/loader
+creating build/bdist.linux-aarch64/wheel/b12x/_lib
+copying build/lib/b12x/_lib/scratch.py -> build/bdist.linux-aarch64/wheel/./b12x/_lib
+copying build/lib/b12x/_lib/meta.py -> build/bdist.linux-aarch64/wheel/./b12x/_lib
+copying build/lib/b12x/_lib/smem.py -> build/bdist.linux-aarch64/wheel/./b12x/_lib
+copying build/lib/b12x/_lib/fp6.py -> build/bdist.linux-aarch64/wheel/./b12x/_lib
+copying build/lib/b12x/_lib/env.py -> build/bdist.linux-aarch64/wheel/./b12x/_lib
+copying build/lib/b12x/_lib/dense_gemm.py -> build/bdist.linux-aarch64/wheel/./b12x/_lib
+copying build/lib/b12x/_lib/intrinsics.py -> build/bdist.linux-aarch64/wheel/./b12x/_lib
+copying build/lib/b12x/_lib/runtime_control.py -> build/bdist.linux-aarch64/wheel/./b12x/_lib
+creating build/bdist.linux-aarch64/wheel/b12x/_lib/quant
+copying build/lib/b12x/_lib/quant/x4t_scales.py -> build/bdist.linux-aarch64/wheel/./b12x/_lib/quant
+copying build/lib/b12x/_lib/quant/sqg_e4m3.py -> build/bdist.linux-aarch64/wheel/./b12x/_lib/quant
+copying build/lib/b12x/_lib/quant/mxfp8_rows.py -> build/bdist.linux-aarch64/wheel/./b12x/_lib/quant
+copying build/lib/b12x/_lib/quant/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/_lib/quant
+copying build/lib/b12x/_lib/quant/sqg_fp16_d3l.py -> build/bdist.linux-aarch64/wheel/./b12x/_lib/quant
+copying build/lib/b12x/_lib/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/_lib
+copying build/lib/b12x/_lib/gating.py -> build/bdist.linux-aarch64/wheel/./b12x/_lib
+copying build/lib/b12x/_lib/scratch_layout.py -> build/bdist.linux-aarch64/wheel/./b12x/_lib
+copying build/lib/b12x/_lib/compiler.py -> build/bdist.linux-aarch64/wheel/./b12x/_lib
+copying build/lib/b12x/_lib/dense_gemm_mxfp6.py -> build/bdist.linux-aarch64/wheel/./b12x/_lib
+copying build/lib/b12x/_lib/runtime_patches.py -> build/bdist.linux-aarch64/wheel/./b12x/_lib
+copying build/lib/b12x/_lib/utils.py -> build/bdist.linux-aarch64/wheel/./b12x/_lib
+copying build/lib/b12x/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x
+creating build/bdist.linux-aarch64/wheel/b12x/tools
+copying build/lib/b12x/tools/inspect_model_policy.py -> build/bdist.linux-aarch64/wheel/./b12x/tools
+copying build/lib/b12x/tools/generate_gpu_profile.py -> build/bdist.linux-aarch64/wheel/./b12x/tools
+copying build/lib/b12x/tools/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/tools
+creating build/bdist.linux-aarch64/wheel/b12x/moe
+creating build/bdist.linux-aarch64/wheel/b12x/moe/fused_moe
+copying build/lib/b12x/moe/fused_moe/_impl.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/fused_moe
+copying build/lib/b12x/moe/fused_moe/execution.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/fused_moe
+copying build/lib/b12x/moe/fused_moe/_vllm_compat.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/fused_moe
+copying build/lib/b12x/moe/fused_moe/trellis.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/fused_moe
+copying build/lib/b12x/moe/fused_moe/weights.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/fused_moe
+copying build/lib/b12x/moe/fused_moe/source.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/fused_moe
+copying build/lib/b12x/moe/fused_moe/config.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/fused_moe
+copying build/lib/b12x/moe/fused_moe/planning.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/fused_moe
+copying build/lib/b12x/moe/fused_moe/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/fused_moe
+copying build/lib/b12x/moe/fused_moe/_policy.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/fused_moe
+copying build/lib/b12x/moe/fused_moe/_route_pack_cache.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/fused_moe
+copying build/lib/b12x/moe/fused_moe/api.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/fused_moe
+creating build/bdist.linux-aarch64/wheel/b12x/moe/_shared
+copying build/lib/b12x/moe/_shared/routing.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared
+copying build/lib/b12x/moe/_shared/execution.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared
+creating build/bdist.linux-aarch64/wheel/b12x/moe/_shared/tuning
+copying build/lib/b12x/moe/_shared/tuning/decode_max_active_clusters.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared/tuning
+copying build/lib/b12x/moe/_shared/tuning/registry.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared/tuning
+copying build/lib/b12x/moe/_shared/tuning/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared/tuning
+copying build/lib/b12x/moe/_shared/btx_schema.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared
+creating build/bdist.linux-aarch64/wheel/b12x/moe/_shared/kernels
+copying build/lib/b12x/moe/_shared/kernels/w4a8_phase2.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared/kernels
+copying build/lib/b12x/moe/_shared/kernels/dynamic.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared/kernels
+copying build/lib/b12x/moe/_shared/kernels/trellis_ring.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared/kernels
+copying build/lib/b12x/moe/_shared/kernels/nvfp4_phase2.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared/kernels
+copying build/lib/b12x/moe/_shared/kernels/reference_flashinfer.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared/kernels
+copying build/lib/b12x/moe/_shared/kernels/trellis_materialize.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared/kernels
+copying build/lib/b12x/moe/_shared/kernels/nvfp4_phase1.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared/kernels
+copying build/lib/b12x/moe/_shared/kernels/reference.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared/kernels
+copying build/lib/b12x/moe/_shared/kernels/mxfp6_moe.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared/kernels
+creating build/bdist.linux-aarch64/wheel/b12x/moe/_shared/kernels/w6a8
+copying build/lib/b12x/moe/_shared/kernels/w6a8/weights.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared/kernels/w6a8
+copying build/lib/b12x/moe/_shared/kernels/w6a8/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared/kernels/w6a8
+copying build/lib/b12x/moe/_shared/kernels/silu.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared/kernels
+creating build/bdist.linux-aarch64/wheel/b12x/moe/_shared/kernels/w4a16
+copying build/lib/b12x/moe/_shared/kernels/w4a16/btx_compat.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared/kernels/w4a16
+copying build/lib/b12x/moe/_shared/kernels/w4a16/kernel.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared/kernels/w4a16
+copying build/lib/b12x/moe/_shared/kernels/w4a16/prepare.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared/kernels/w4a16
+copying build/lib/b12x/moe/_shared/kernels/w4a16/btx_synth.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared/kernels/w4a16
+copying build/lib/b12x/moe/_shared/kernels/w4a16/route_pack.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared/kernels/w4a16
+copying build/lib/b12x/moe/_shared/kernels/w4a16/mixed_trellis.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared/kernels/w4a16
+copying build/lib/b12x/moe/_shared/kernels/w4a16/btx.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared/kernels/w4a16
+copying build/lib/b12x/moe/_shared/kernels/w4a16/host.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared/kernels/w4a16
+copying build/lib/b12x/moe/_shared/kernels/w4a16/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared/kernels/w4a16
+copying build/lib/b12x/moe/_shared/kernels/w4a8_trellis_decode.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared/kernels
+copying build/lib/b12x/moe/_shared/kernels/relu2.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared/kernels
+creating build/bdist.linux-aarch64/wheel/b12x/moe/_shared/kernels/w4a8
+copying build/lib/b12x/moe/_shared/kernels/w4a8/weights.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared/kernels/w4a8
+copying build/lib/b12x/moe/_shared/kernels/w4a8/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared/kernels/w4a8
+copying build/lib/b12x/moe/_shared/kernels/w4a8_phase1.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared/kernels
+copying build/lib/b12x/moe/_shared/kernels/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared/kernels
+copying build/lib/b12x/moe/_shared/kernels/micro.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared/kernels
+copying build/lib/b12x/moe/_shared/kernels/activations.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared/kernels
+copying build/lib/b12x/moe/_shared/kernels/situ.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared/kernels
+copying build/lib/b12x/moe/_shared/kernels/tiny_decode.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared/kernels
+copying build/lib/b12x/moe/_shared/trellis_codebooks.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared
+copying build/lib/b12x/moe/_shared/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/_shared
+creating build/bdist.linux-aarch64/wheel/b12x/moe/ep_moe
+copying build/lib/b12x/moe/ep_moe/_impl.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/ep_moe
+copying build/lib/b12x/moe/ep_moe/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/ep_moe
+copying build/lib/b12x/moe/ep_moe/_policy.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/ep_moe
+copying build/lib/b12x/moe/ep_moe/api.py -> build/bdist.linux-aarch64/wheel/./b12x/moe/ep_moe
+copying build/lib/b12x/moe/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/moe
+copying build/lib/b12x/moe/calibration.py -> build/bdist.linux-aarch64/wheel/./b12x/moe
+creating build/bdist.linux-aarch64/wheel/b12x/sequence
+creating build/bdist.linux-aarch64/wheel/b12x/sequence/gdn_prefill
+copying build/lib/b12x/sequence/gdn_prefill/_impl.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/gdn_prefill
+copying build/lib/b12x/sequence/gdn_prefill/reference.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/gdn_prefill
+copying build/lib/b12x/sequence/gdn_prefill/_parallel.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/gdn_prefill
+copying build/lib/b12x/sequence/gdn_prefill/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/gdn_prefill
+copying build/lib/b12x/sequence/gdn_prefill/_policy.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/gdn_prefill
+copying build/lib/b12x/sequence/gdn_prefill/api.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/gdn_prefill
+copying build/lib/b12x/sequence/gdn_prefill/_parallel_kernels.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/gdn_prefill
+creating build/bdist.linux-aarch64/wheel/b12x/sequence/kda_prefill
+copying build/lib/b12x/sequence/kda_prefill/_impl.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/kda_prefill
+copying build/lib/b12x/sequence/kda_prefill/reference.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/kda_prefill
+copying build/lib/b12x/sequence/kda_prefill/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/kda_prefill
+copying build/lib/b12x/sequence/kda_prefill/_policy.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/kda_prefill
+copying build/lib/b12x/sequence/kda_prefill/api.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/kda_prefill
+creating build/bdist.linux-aarch64/wheel/b12x/sequence/engram
+copying build/lib/b12x/sequence/engram/reference.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/engram
+copying build/lib/b12x/sequence/engram/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/engram
+copying build/lib/b12x/sequence/engram/geometry.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/engram
+copying build/lib/b12x/sequence/engram/_kernels.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/engram
+copying build/lib/b12x/sequence/engram/_policy.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/engram
+copying build/lib/b12x/sequence/engram/api.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/engram
+creating build/bdist.linux-aarch64/wheel/b12x/sequence/_shared
+copying build/lib/b12x/sequence/_shared/kda_math.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/_shared
+copying build/lib/b12x/sequence/_shared/disk_table.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/_shared
+copying build/lib/b12x/sequence/_shared/tensors.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/_shared
+copying build/lib/b12x/sequence/_shared/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/_shared
+creating build/bdist.linux-aarch64/wheel/b12x/sequence/_shared/delta_prefill
+copying build/lib/b12x/sequence/_shared/delta_prefill/reference.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/_shared/delta_prefill
+copying build/lib/b12x/sequence/_shared/delta_prefill/contract.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/_shared/delta_prefill
+copying build/lib/b12x/sequence/_shared/delta_prefill/workspace.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/_shared/delta_prefill
+copying build/lib/b12x/sequence/_shared/delta_prefill/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/_shared/delta_prefill
+copying build/lib/b12x/sequence/_shared/delta_prefill/_cute_kernels.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/_shared/delta_prefill
+copying build/lib/b12x/sequence/_shared/delta_prefill/policy.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/_shared/delta_prefill
+creating build/bdist.linux-aarch64/wheel/b12x/sequence/ple_hash
+copying build/lib/b12x/sequence/ple_hash/reference.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/ple_hash
+copying build/lib/b12x/sequence/ple_hash/_contracts.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/ple_hash
+copying build/lib/b12x/sequence/ple_hash/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/ple_hash
+copying build/lib/b12x/sequence/ple_hash/_kernels.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/ple_hash
+copying build/lib/b12x/sequence/ple_hash/_policy.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/ple_hash
+copying build/lib/b12x/sequence/ple_hash/api.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/ple_hash
+creating build/bdist.linux-aarch64/wheel/b12x/sequence/embedding
+copying build/lib/b12x/sequence/embedding/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/embedding
+copying build/lib/b12x/sequence/embedding/_kernel.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/embedding
+copying build/lib/b12x/sequence/embedding/api.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/embedding
+creating build/bdist.linux-aarch64/wheel/b12x/sequence/mtp_feedback
+copying build/lib/b12x/sequence/mtp_feedback/_impl.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/mtp_feedback
+copying build/lib/b12x/sequence/mtp_feedback/reference.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/mtp_feedback
+copying build/lib/b12x/sequence/mtp_feedback/_cute_prefill.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/mtp_feedback
+copying build/lib/b12x/sequence/mtp_feedback/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/mtp_feedback
+copying build/lib/b12x/sequence/mtp_feedback/_kernels.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/mtp_feedback
+copying build/lib/b12x/sequence/mtp_feedback/_policy.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/mtp_feedback
+copying build/lib/b12x/sequence/mtp_feedback/_cute_norm.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/mtp_feedback
+copying build/lib/b12x/sequence/mtp_feedback/_cute_prefill_config.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/mtp_feedback
+copying build/lib/b12x/sequence/mtp_feedback/api.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/mtp_feedback
+creating build/bdist.linux-aarch64/wheel/b12x/sequence/ple_embedding
+copying build/lib/b12x/sequence/ple_embedding/reference.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/ple_embedding
+copying build/lib/b12x/sequence/ple_embedding/_disk.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/ple_embedding
+copying build/lib/b12x/sequence/ple_embedding/_contracts.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/ple_embedding
+copying build/lib/b12x/sequence/ple_embedding/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/ple_embedding
+copying build/lib/b12x/sequence/ple_embedding/_kernels.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/ple_embedding
+copying build/lib/b12x/sequence/ple_embedding/_policy.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/ple_embedding
+copying build/lib/b12x/sequence/ple_embedding/_storage.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/ple_embedding
+copying build/lib/b12x/sequence/ple_embedding/api.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/ple_embedding
+creating build/bdist.linux-aarch64/wheel/b12x/sequence/gdn_decode
+copying build/lib/b12x/sequence/gdn_decode/_impl.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/gdn_decode
+copying build/lib/b12x/sequence/gdn_decode/reference.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/gdn_decode
+copying build/lib/b12x/sequence/gdn_decode/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/gdn_decode
+copying build/lib/b12x/sequence/gdn_decode/_cute_kernels.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/gdn_decode
+copying build/lib/b12x/sequence/gdn_decode/_kernels.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/gdn_decode
+copying build/lib/b12x/sequence/gdn_decode/_policy.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/gdn_decode
+copying build/lib/b12x/sequence/gdn_decode/api.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/gdn_decode
+copying build/lib/b12x/sequence/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence
+creating build/bdist.linux-aarch64/wheel/b12x/sequence/ple
+copying build/lib/b12x/sequence/ple/reference.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/ple
+copying build/lib/b12x/sequence/ple/_contracts.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/ple
+copying build/lib/b12x/sequence/ple/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/ple
+copying build/lib/b12x/sequence/ple/_kernels.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/ple
+copying build/lib/b12x/sequence/ple/STATE.md -> build/bdist.linux-aarch64/wheel/./b12x/sequence/ple
+copying build/lib/b12x/sequence/ple/_policy.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/ple
+copying build/lib/b12x/sequence/ple/api.py -> build/bdist.linux-aarch64/wheel/./b12x/sequence/ple
+creating build/bdist.linux-aarch64/wheel/b12x/attention
+creating build/bdist.linux-aarch64/wheel/b12x/attention/sparse_mla
+copying build/lib/b12x/attention/sparse_mla/reference.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/sparse_mla
+copying build/lib/b12x/attention/sparse_mla/strided.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/sparse_mla
+copying build/lib/b12x/attention/sparse_mla/_paged_index_remap.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/sparse_mla
+copying build/lib/b12x/attention/sparse_mla/pooled_selection.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/sparse_mla
+copying build/lib/b12x/attention/sparse_mla/_scratch.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/sparse_mla
+copying build/lib/b12x/attention/sparse_mla/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/sparse_mla
+copying build/lib/b12x/attention/sparse_mla/_policy.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/sparse_mla
+copying build/lib/b12x/attention/sparse_mla/api.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/sparse_mla
+creating build/bdist.linux-aarch64/wheel/b12x/attention/_shared
+copying build/lib/b12x/attention/_shared/static_fp8_quant.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared
+copying build/lib/b12x/attention/_shared/workspace.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared
+copying build/lib/b12x/attention/_shared/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared
+creating build/bdist.linux-aarch64/wheel/b12x/attention/_shared/mla
+copying build/lib/b12x/attention/_shared/mla/kernel.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared/mla
+copying build/lib/b12x/attention/_shared/mla/smem.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared/mla
+copying build/lib/b12x/attention/_shared/mla/merge.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared/mla
+copying build/lib/b12x/attention/_shared/mla/reference.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared/mla
+copying build/lib/b12x/attention/_shared/mla/prefill.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared/mla
+copying build/lib/b12x/attention/_shared/mla/decode_math.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared/mla
+copying build/lib/b12x/attention/_shared/mla/io_mg.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared/mla
+copying build/lib/b12x/attention/_shared/mla/kv_cache.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared/mla
+copying build/lib/b12x/attention/_shared/mla/compressed_reference.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared/mla
+copying build/lib/b12x/attention/_shared/mla/io.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared/mla
+copying build/lib/b12x/attention/_shared/mla/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared/mla
+copying build/lib/b12x/attention/_shared/mla/compressed_config.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared/mla
+copying build/lib/b12x/attention/_shared/mla/prefill_mg.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared/mla
+copying build/lib/b12x/attention/_shared/mla/smem_mg.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared/mla
+copying build/lib/b12x/attention/_shared/mla/packed.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared/mla
+copying build/lib/b12x/attention/_shared/mla/traits.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared/mla
+copying build/lib/b12x/attention/_shared/mla/api.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared/mla
+copying build/lib/b12x/attention/_shared/mla/compressed_api.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared/mla
+creating build/bdist.linux-aarch64/wheel/b12x/attention/_shared/cute
+copying build/lib/b12x/attention/_shared/cute/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared/cute
+copying build/lib/b12x/attention/_shared/cute/copy.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared/cute
+copying build/lib/b12x/attention/_shared/cute/pipeline.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared/cute
+copying build/lib/b12x/attention/_shared/cute/ops.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared/cute
+creating build/bdist.linux-aarch64/wheel/b12x/attention/_shared/contiguous
+copying build/lib/b12x/attention/_shared/contiguous/softmax.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared/contiguous
+copying build/lib/b12x/attention/_shared/contiguous/README.md -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared/contiguous
+copying build/lib/b12x/attention/_shared/contiguous/mask.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared/contiguous
+copying build/lib/b12x/attention/_shared/contiguous/named_barrier.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared/contiguous
+copying build/lib/b12x/attention/_shared/contiguous/forward.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared/contiguous
+copying build/lib/b12x/attention/_shared/contiguous/cute_dsl_utils.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared/contiguous
+copying build/lib/b12x/attention/_shared/contiguous/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared/contiguous
+copying build/lib/b12x/attention/_shared/contiguous/tile_scheduler.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared/contiguous
+copying build/lib/b12x/attention/_shared/contiguous/layout_utils.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared/contiguous
+copying build/lib/b12x/attention/_shared/contiguous/block_info.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared/contiguous
+copying build/lib/b12x/attention/_shared/contiguous/pack_gqa.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared/contiguous
+copying build/lib/b12x/attention/_shared/contiguous/seqlen_info.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared/contiguous
+copying build/lib/b12x/attention/_shared/contiguous/api.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/_shared/contiguous
+creating build/bdist.linux-aarch64/wheel/b12x/attention/varlen
+copying build/lib/b12x/attention/varlen/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/varlen
+copying build/lib/b12x/attention/varlen/_policy.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/varlen
+copying build/lib/b12x/attention/varlen/api.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/varlen
+creating build/bdist.linux-aarch64/wheel/b12x/attention/compressed_sparse_mla
+copying build/lib/b12x/attention/compressed_sparse_mla/weight_scale.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/compressed_sparse_mla
+copying build/lib/b12x/attention/compressed_sparse_mla/_metadata.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/compressed_sparse_mla
+copying build/lib/b12x/attention/compressed_sparse_mla/preparation.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/compressed_sparse_mla
+copying build/lib/b12x/attention/compressed_sparse_mla/reference.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/compressed_sparse_mla
+copying build/lib/b12x/attention/compressed_sparse_mla/_scratch.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/compressed_sparse_mla
+copying build/lib/b12x/attention/compressed_sparse_mla/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/compressed_sparse_mla
+copying build/lib/b12x/attention/compressed_sparse_mla/_policy.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/compressed_sparse_mla
+copying build/lib/b12x/attention/compressed_sparse_mla/api.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/compressed_sparse_mla
+creating build/bdist.linux-aarch64/wheel/b12x/attention/dsa_indexer
+copying build/lib/b12x/attention/dsa_indexer/_impl.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/dsa_indexer
+copying build/lib/b12x/attention/dsa_indexer/scratch.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/dsa_indexer
+copying build/lib/b12x/attention/dsa_indexer/kernel.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/dsa_indexer
+copying build/lib/b12x/attention/dsa_indexer/reference.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/dsa_indexer
+copying build/lib/b12x/attention/dsa_indexer/MSA.md -> build/bdist.linux-aarch64/wheel/./b12x/attention/dsa_indexer
+copying build/lib/b12x/attention/dsa_indexer/mxfp4.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/dsa_indexer
+copying build/lib/b12x/attention/dsa_indexer/persistent_topk.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/dsa_indexer
+copying build/lib/b12x/attention/dsa_indexer/schedule_metadata.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/dsa_indexer
+copying build/lib/b12x/attention/dsa_indexer/paged.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/dsa_indexer
+copying build/lib/b12x/attention/dsa_indexer/msa_reference.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/dsa_indexer
+copying build/lib/b12x/attention/dsa_indexer/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/dsa_indexer
+copying build/lib/b12x/attention/dsa_indexer/fused_indexer.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/dsa_indexer
+copying build/lib/b12x/attention/dsa_indexer/tiled_topk.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/dsa_indexer
+copying build/lib/b12x/attention/dsa_indexer/_policy.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/dsa_indexer
+copying build/lib/b12x/attention/dsa_indexer/contiguous_kernel.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/dsa_indexer
+copying build/lib/b12x/attention/dsa_indexer/api.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/dsa_indexer
+copying build/lib/b12x/attention/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/attention
+creating build/bdist.linux-aarch64/wheel/b12x/attention/dense_mla
+copying build/lib/b12x/attention/dense_mla/_io.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/dense_mla
+copying build/lib/b12x/attention/dense_mla/_math.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/dense_mla
+copying build/lib/b12x/attention/dense_mla/_merge.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/dense_mla
+copying build/lib/b12x/attention/dense_mla/_forward.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/dense_mla
+copying build/lib/b12x/attention/dense_mla/_scratch.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/dense_mla
+copying build/lib/b12x/attention/dense_mla/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/dense_mla
+copying build/lib/b12x/attention/dense_mla/planner.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/dense_mla
+copying build/lib/b12x/attention/dense_mla/_kernel.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/dense_mla
+copying build/lib/b12x/attention/dense_mla/_reference.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/dense_mla
+copying build/lib/b12x/attention/dense_mla/_policy.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/dense_mla
+copying build/lib/b12x/attention/dense_mla/_layout.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/dense_mla
+copying build/lib/b12x/attention/dense_mla/api.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/dense_mla
+creating build/bdist.linux-aarch64/wheel/b12x/attention/paged
+copying build/lib/b12x/attention/paged/_forward.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/paged
+copying build/lib/b12x/attention/paged/_selected_forward_config.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/paged
+copying build/lib/b12x/attention/paged/merge.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/paged
+creating build/bdist.linux-aarch64/wheel/b12x/attention/paged/tuning
+copying build/lib/b12x/attention/paged/tuning/registry.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/paged/tuning
+copying build/lib/b12x/attention/paged/tuning/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/paged/tuning
+copying build/lib/b12x/attention/paged/reference.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/paged
+copying build/lib/b12x/attention/paged/_selected_forward.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/paged
+copying build/lib/b12x/attention/paged/forward_extend_generic.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/paged
+copying build/lib/b12x/attention/paged/workspace.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/paged
+copying build/lib/b12x/attention/paged/graph_replay.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/paged
+copying build/lib/b12x/attention/paged/forward_paged.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/paged
+copying build/lib/b12x/attention/paged/_scratch.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/paged
+copying build/lib/b12x/attention/paged/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/paged
+copying build/lib/b12x/attention/paged/planner.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/paged
+copying build/lib/b12x/attention/paged/_policy.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/paged
+copying build/lib/b12x/attention/paged/traits.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/paged
+copying build/lib/b12x/attention/paged/api.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/paged
+creating build/bdist.linux-aarch64/wheel/b12x/attention/mla_compress
+copying build/lib/b12x/attention/mla_compress/_generator.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/mla_compress
+copying build/lib/b12x/attention/mla_compress/reference.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/mla_compress
+copying build/lib/b12x/attention/mla_compress/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/mla_compress
+copying build/lib/b12x/attention/mla_compress/_cute.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/mla_compress
+copying build/lib/b12x/attention/mla_compress/_policy.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/mla_compress
+copying build/lib/b12x/attention/mla_compress/api.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/mla_compress
+creating build/bdist.linux-aarch64/wheel/b12x/attention/qsa
+copying build/lib/b12x/attention/qsa/_draft_selection.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/qsa
+copying build/lib/b12x/attention/qsa/_sparse_gqa.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/qsa
+copying build/lib/b12x/attention/qsa/_sparse_gqa_cute_config.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/qsa
+copying build/lib/b12x/attention/qsa/reference.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/qsa
+copying build/lib/b12x/attention/qsa/_sparse_gqa_cute.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/qsa
+copying build/lib/b12x/attention/qsa/_contract.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/qsa
+copying build/lib/b12x/attention/qsa/__init__.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/qsa
+copying build/lib/b12x/attention/qsa/_kernels.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/qsa
+copying build/lib/b12x/attention/qsa/_policy.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/qsa
+copying build/lib/b12x/attention/qsa/_score_cute.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/qsa
+copying build/lib/b12x/attention/qsa/api.py -> build/bdist.linux-aarch64/wheel/./b12x/attention/qsa
+running install_egg_info
+Copying b12x.egg-info to build/bdist.linux-aarch64/wheel/./b12x-1.3.0-py3.12.egg-info
+running install_scripts
+creating build/bdist.linux-aarch64/wheel/b12x-1.3.0.dist-info/WHEEL
+creating '/opt/wheels/.tmp-87cokzby/b12x-1.3.0-py3-none-any.whl' and adding 'build/bdist.linux-aarch64/wheel' to it
+adding 'b12x/__init__.py'
+adding 'b12x/_lib/__init__.py'
+adding 'b12x/_lib/compiler.py'
+adding 'b12x/_lib/dense_gemm.py'
+adding 'b12x/_lib/dense_gemm_mxfp6.py'
+adding 'b12x/_lib/env.py'
+adding 'b12x/_lib/fp6.py'
+adding 'b12x/_lib/gating.py'
+adding 'b12x/_lib/intrinsics.py'
+adding 'b12x/_lib/meta.py'
+adding 'b12x/_lib/runtime_control.py'
+adding 'b12x/_lib/runtime_patches.py'
+adding 'b12x/_lib/scratch.py'
+adding 'b12x/_lib/scratch_layout.py'
+adding 'b12x/_lib/smem.py'
+adding 'b12x/_lib/utils.py'
+adding 'b12x/_lib/quant/__init__.py'
+adding 'b12x/_lib/quant/mxfp8_rows.py'
+adding 'b12x/_lib/quant/sqg_e4m3.py'
+adding 'b12x/_lib/quant/sqg_fp16_d3l.py'
+adding 'b12x/_lib/quant/x4t_scales.py'
+adding 'b12x/attention/__init__.py'
+adding 'b12x/attention/_shared/__init__.py'
+adding 'b12x/attention/_shared/static_fp8_quant.py'
+adding 'b12x/attention/_shared/workspace.py'
+adding 'b12x/attention/_shared/contiguous/README.md'
+adding 'b12x/attention/_shared/contiguous/__init__.py'
+adding 'b12x/attention/_shared/contiguous/api.py'
+adding 'b12x/attention/_shared/contiguous/block_info.py'
+adding 'b12x/attention/_shared/contiguous/cute_dsl_utils.py'
+adding 'b12x/attention/_shared/contiguous/forward.py'
+adding 'b12x/attention/_shared/contiguous/layout_utils.py'
+adding 'b12x/attention/_shared/contiguous/mask.py'
+adding 'b12x/attention/_shared/contiguous/named_barrier.py'
+adding 'b12x/attention/_shared/contiguous/pack_gqa.py'
+adding 'b12x/attention/_shared/contiguous/seqlen_info.py'
+adding 'b12x/attention/_shared/contiguous/softmax.py'
+adding 'b12x/attention/_shared/contiguous/tile_scheduler.py'
+adding 'b12x/attention/_shared/cute/__init__.py'
+adding 'b12x/attention/_shared/cute/copy.py'
+adding 'b12x/attention/_shared/cute/ops.py'
+adding 'b12x/attention/_shared/cute/pipeline.py'
+adding 'b12x/attention/_shared/mla/__init__.py'
+adding 'b12x/attention/_shared/mla/api.py'
+adding 'b12x/attention/_shared/mla/compressed_api.py'
+adding 'b12x/attention/_shared/mla/compressed_config.py'
+adding 'b12x/attention/_shared/mla/compressed_reference.py'
+adding 'b12x/attention/_shared/mla/decode_math.py'
+adding 'b12x/attention/_shared/mla/io.py'
+adding 'b12x/attention/_shared/mla/io_mg.py'
+adding 'b12x/attention/_shared/mla/kernel.py'
+adding 'b12x/attention/_shared/mla/kv_cache.py'
+adding 'b12x/attention/_shared/mla/merge.py'
+adding 'b12x/attention/_shared/mla/packed.py'
+adding 'b12x/attention/_shared/mla/prefill.py'
+adding 'b12x/attention/_shared/mla/prefill_mg.py'
+adding 'b12x/attention/_shared/mla/reference.py'
+adding 'b12x/attention/_shared/mla/smem.py'
+adding 'b12x/attention/_shared/mla/smem_mg.py'
+adding 'b12x/attention/_shared/mla/traits.py'
+adding 'b12x/attention/compressed_sparse_mla/__init__.py'
+adding 'b12x/attention/compressed_sparse_mla/_metadata.py'
+adding 'b12x/attention/compressed_sparse_mla/_policy.py'
+adding 'b12x/attention/compressed_sparse_mla/_scratch.py'
+adding 'b12x/attention/compressed_sparse_mla/api.py'
+adding 'b12x/attention/compressed_sparse_mla/preparation.py'
+adding 'b12x/attention/compressed_sparse_mla/reference.py'
+adding 'b12x/attention/compressed_sparse_mla/weight_scale.py'
+adding 'b12x/attention/dense_mla/__init__.py'
+adding 'b12x/attention/dense_mla/_forward.py'
+adding 'b12x/attention/dense_mla/_io.py'
+adding 'b12x/attention/dense_mla/_kernel.py'
+adding 'b12x/attention/dense_mla/_layout.py'
+adding 'b12x/attention/dense_mla/_math.py'
+adding 'b12x/attention/dense_mla/_merge.py'
+adding 'b12x/attention/dense_mla/_policy.py'
+adding 'b12x/attention/dense_mla/_reference.py'
+adding 'b12x/attention/dense_mla/_scratch.py'
+adding 'b12x/attention/dense_mla/api.py'
+adding 'b12x/attention/dense_mla/planner.py'
+adding 'b12x/attention/dsa_indexer/MSA.md'
+adding 'b12x/attention/dsa_indexer/__init__.py'
+adding 'b12x/attention/dsa_indexer/_impl.py'
+adding 'b12x/attention/dsa_indexer/_policy.py'
+adding 'b12x/attention/dsa_indexer/api.py'
+adding 'b12x/attention/dsa_indexer/contiguous_kernel.py'
+adding 'b12x/attention/dsa_indexer/fused_indexer.py'
+adding 'b12x/attention/dsa_indexer/kernel.py'
+adding 'b12x/attention/dsa_indexer/msa_reference.py'
+adding 'b12x/attention/dsa_indexer/mxfp4.py'
+adding 'b12x/attention/dsa_indexer/paged.py'
+adding 'b12x/attention/dsa_indexer/persistent_topk.py'
+adding 'b12x/attention/dsa_indexer/reference.py'
+adding 'b12x/attention/dsa_indexer/schedule_metadata.py'
+adding 'b12x/attention/dsa_indexer/scratch.py'
+adding 'b12x/attention/dsa_indexer/tiled_topk.py'
+adding 'b12x/attention/mla_compress/__init__.py'
+adding 'b12x/attention/mla_compress/_cute.py'
+adding 'b12x/attention/mla_compress/_generator.py'
+adding 'b12x/attention/mla_compress/_policy.py'
+adding 'b12x/attention/mla_compress/api.py'
+adding 'b12x/attention/mla_compress/reference.py'
+adding 'b12x/attention/paged/__init__.py'
+adding 'b12x/attention/paged/_forward.py'
+adding 'b12x/attention/paged/_policy.py'
+adding 'b12x/attention/paged/_scratch.py'
+adding 'b12x/attention/paged/_selected_forward.py'
+adding 'b12x/attention/paged/_selected_forward_config.py'
+adding 'b12x/attention/paged/api.py'
+adding 'b12x/attention/paged/forward_extend_generic.py'
+adding 'b12x/attention/paged/forward_paged.py'
+adding 'b12x/attention/paged/graph_replay.py'
+adding 'b12x/attention/paged/merge.py'
+adding 'b12x/attention/paged/planner.py'
+adding 'b12x/attention/paged/reference.py'
+adding 'b12x/attention/paged/traits.py'
+adding 'b12x/attention/paged/workspace.py'
+adding 'b12x/attention/paged/tuning/__init__.py'
+adding 'b12x/attention/paged/tuning/registry.py'
+adding 'b12x/attention/qsa/__init__.py'
+adding 'b12x/attention/qsa/_contract.py'
+adding 'b12x/attention/qsa/_draft_selection.py'
+adding 'b12x/attention/qsa/_kernels.py'
+adding 'b12x/attention/qsa/_policy.py'
+adding 'b12x/attention/qsa/_score_cute.py'
+adding 'b12x/attention/qsa/_sparse_gqa.py'
+adding 'b12x/attention/qsa/_sparse_gqa_cute.py'
+adding 'b12x/attention/qsa/_sparse_gqa_cute_config.py'
+adding 'b12x/attention/qsa/api.py'
+adding 'b12x/attention/qsa/reference.py'
+adding 'b12x/attention/sparse_mla/__init__.py'
+adding 'b12x/attention/sparse_mla/_paged_index_remap.py'
+adding 'b12x/attention/sparse_mla/_policy.py'
+adding 'b12x/attention/sparse_mla/_scratch.py'
+adding 'b12x/attention/sparse_mla/api.py'
+adding 'b12x/attention/sparse_mla/pooled_selection.py'
+adding 'b12x/attention/sparse_mla/reference.py'
+adding 'b12x/attention/sparse_mla/strided.py'
+adding 'b12x/attention/varlen/__init__.py'
+adding 'b12x/attention/varlen/_policy.py'
+adding 'b12x/attention/varlen/api.py'
+adding 'b12x/comm/__init__.py'
+adding 'b12x/comm/pcie/__init__.py'
+adding 'b12x/comm/pcie/_cuda_ipc.py'
+adding 'b12x/comm/pcie/_cute_intrinsics.py'
+adding 'b12x/comm/pcie/_dcp_a2a_cute.py'
+adding 'b12x/comm/pcie/_dcp_cute_common.py'
+adding 'b12x/comm/pcie/_dcp_topk_cute.py'
+adding 'b12x/comm/pcie/_dma_kernels.py'
+adding 'b12x/comm/pcie/_hierarchical_cute.py'
+adding 'b12x/comm/pcie/_island_rs_cute.py'
+adding 'b12x/comm/pcie/_launch_geometry.py'
+adding 'b12x/comm/pcie/_oneshot_cute.py'
+adding 'b12x/comm/pcie/_twoshot_bf16_cute.py'
+adding 'b12x/comm/pcie/_twoshot_cute.py'
+adding 'b12x/comm/pcie/_vocab_argmax_cute.py'
+adding 'b12x/comm/pcie/api.py'
+adding 'b12x/comm/pcie/overlap_probe.py'
+adding 'b12x/comm/pcie/pcie_allreduce.py'
+adding 'b12x/comm/pcie/pcie_dcp_a2a.py'
+adding 'b12x/comm/pcie/pcie_dcp_topk.py'
+adding 'b12x/comm/pcie/pcie_dma.py'
+adding 'b12x/comm/pcie/pcie_hierarchical.py'
+adding 'b12x/comm/pcie/pcie_island_rs.py'
+adding 'b12x/comm/pcie/pcie_oneshot.py'
+adding 'b12x/comm/pcie/pcie_twoshot.py'
+adding 'b12x/comm/pcie/pcie_twoshot_bf16.py'
+adding 'b12x/comm/pcie/pcie_vocab_argmax.py'
+adding 'b12x/comm/roce/__init__.py'
+adding 'b12x/comm/roce/_allgather_cute.py'
+adding 'b12x/comm/roce/_cute_intrinsics.py'
+adding 'b12x/comm/roce/_oneshot_cute.py'
+adding 'b12x/comm/roce/_proxy.py'
+adding 'b12x/comm/roce/_roce_proxy.c'
+adding 'b12x/comm/roce/api.py'
+adding 'b12x/comm/roce/roce_oneshot.py'
+adding 'b12x/gemm/__init__.py'
+adding 'b12x/gemm/_bmm/__init__.py'
+adding 'b12x/gemm/_bmm/api.py'
+adding 'b12x/gemm/_shared/__init__.py'
+adding 'b12x/gemm/_shared/block_fp8.py'
+adding 'b12x/gemm/_shared/mxfp8_bmm.py'
+adding 'b12x/gemm/_shared/wo_mxfp8.py'
+adding 'b12x/gemm/bf16_gemv/__init__.py'
+adding 'b12x/gemm/bf16_gemv/_kernel.py'
+adding 'b12x/gemm/bf16_gemv/_prefill.py'
+adding 'b12x/gemm/bf16_gemv/api.py'
+adding 'b12x/gemm/bf16_vocab_projection/__init__.py'
+adding 'b12x/gemm/bf16_vocab_projection/_contracts.py'
+adding 'b12x/gemm/bf16_vocab_projection/_kernel.py'
+adding 'b12x/gemm/bf16_vocab_projection/_policy.py'
+adding 'b12x/gemm/bf16_vocab_projection/api.py'
+adding 'b12x/gemm/block_fp8_linear/__init__.py'
+adding 'b12x/gemm/block_fp8_linear/_policy.py'
+adding 'b12x/gemm/block_fp8_linear/api.py'
+adding 'b12x/gemm/blockscaled/__init__.py'
+adding 'b12x/gemm/blockscaled/_a16.py'
+adding 'b12x/gemm/blockscaled/_linear.py'
+adding 'b12x/gemm/blockscaled/_ops.py'
+adding 'b12x/gemm/blockscaled/_policy.py'
+adding 'b12x/gemm/blockscaled/_quantize.py'
+adding 'b12x/gemm/blockscaled/api.py'
+adding 'b12x/gemm/mla_query_projection/__init__.py'
+adding 'b12x/gemm/mla_query_projection/_bf16.py'
+adding 'b12x/gemm/mla_query_projection/api.py'
+adding 'b12x/gemm/mxfp8_linear/__init__.py'
+adding 'b12x/gemm/mxfp8_linear/_kernel.py'
+adding 'b12x/gemm/mxfp8_linear/api.py'
+adding 'b12x/gemm/tensor_fp8_linear/__init__.py'
+adding 'b12x/gemm/tensor_fp8_linear/_kernel.py'
+adding 'b12x/gemm/tensor_fp8_linear/api.py'
+adding 'b12x/gemm/trellis_linear/__init__.py'
+adding 'b12x/gemm/trellis_linear/api.py'
+adding 'b12x/gemm/wo_projection/__init__.py'
+adding 'b12x/gemm/wo_projection/_policy.py'
+adding 'b12x/gemm/wo_projection/_quant_cute.py'
+adding 'b12x/gemm/wo_projection/api.py'
+adding 'b12x/integration/__init__.py'
+adding 'b12x/integration/vllm/README.md'
+adding 'b12x/integration/vllm/__init__.py'
+adding 'b12x/integration/vllm/fp6_serving.py'
+adding 'b12x/integration/vllm/loader.py'
+adding 'b12x/integration/vllm/plugin.py'
+adding 'b12x/loader/__init__.py'
+adding 'b12x/loader/_api.py'
+adding 'b12x/loader/_batch.c'
+adding 'b12x/loader/_checkpoint.py'
+adding 'b12x/loader/_direct.c'
+adding 'b12x/loader/_native.py'
+adding 'b12x/loader/_ple_reader.c'
+adding 'b12x/loader/_pool.c'
+adding 'b12x/loader/_pool.py'
+adding 'b12x/loader/_storage.c'
+adding 'b12x/moe/__init__.py'
+adding 'b12x/moe/calibration.py'
+adding 'b12x/moe/_shared/__init__.py'
+adding 'b12x/moe/_shared/btx_schema.py'
+adding 'b12x/moe/_shared/execution.py'
+adding 'b12x/moe/_shared/routing.py'
+adding 'b12x/moe/_shared/trellis_codebooks.py'
+adding 'b12x/moe/_shared/kernels/__init__.py'
+adding 'b12x/moe/_shared/kernels/activations.py'
+adding 'b12x/moe/_shared/kernels/dynamic.py'
+adding 'b12x/moe/_shared/kernels/micro.py'
+adding 'b12x/moe/_shared/kernels/mxfp6_moe.py'
+adding 'b12x/moe/_shared/kernels/nvfp4_phase1.py'
+adding 'b12x/moe/_shared/kernels/nvfp4_phase2.py'
+adding 'b12x/moe/_shared/kernels/reference.py'
+adding 'b12x/moe/_shared/kernels/reference_flashinfer.py'
+adding 'b12x/moe/_shared/kernels/relu2.py'
+adding 'b12x/moe/_shared/kernels/silu.py'
+adding 'b12x/moe/_shared/kernels/situ.py'
+adding 'b12x/moe/_shared/kernels/tiny_decode.py'
+adding 'b12x/moe/_shared/kernels/trellis_materialize.py'
+adding 'b12x/moe/_shared/kernels/trellis_ring.py'
+adding 'b12x/moe/_shared/kernels/w4a8_phase1.py'
+adding 'b12x/moe/_shared/kernels/w4a8_phase2.py'
+adding 'b12x/moe/_shared/kernels/w4a8_trellis_decode.py'
+adding 'b12x/moe/_shared/kernels/w4a16/__init__.py'
+adding 'b12x/moe/_shared/kernels/w4a16/btx.py'
+adding 'b12x/moe/_shared/kernels/w4a16/btx_compat.py'
+adding 'b12x/moe/_shared/kernels/w4a16/btx_synth.py'
+adding 'b12x/moe/_shared/kernels/w4a16/host.py'
+adding 'b12x/moe/_shared/kernels/w4a16/kernel.py'
+adding 'b12x/moe/_shared/kernels/w4a16/mixed_trellis.py'
+adding 'b12x/moe/_shared/kernels/w4a16/prepare.py'
+adding 'b12x/moe/_shared/kernels/w4a16/route_pack.py'
+adding 'b12x/moe/_shared/kernels/w4a8/__init__.py'
+adding 'b12x/moe/_shared/kernels/w4a8/weights.py'
+adding 'b12x/moe/_shared/kernels/w6a8/__init__.py'
+adding 'b12x/moe/_shared/kernels/w6a8/weights.py'
+adding 'b12x/moe/_shared/tuning/__init__.py'
+adding 'b12x/moe/_shared/tuning/decode_max_active_clusters.py'
+adding 'b12x/moe/_shared/tuning/registry.py'
+adding 'b12x/moe/ep_moe/__init__.py'
+adding 'b12x/moe/ep_moe/_impl.py'
+adding 'b12x/moe/ep_moe/_policy.py'
+adding 'b12x/moe/ep_moe/api.py'
+adding 'b12x/moe/fused_moe/__init__.py'
+adding 'b12x/moe/fused_moe/_impl.py'
+adding 'b12x/moe/fused_moe/_policy.py'
+adding 'b12x/moe/fused_moe/_route_pack_cache.py'
+adding 'b12x/moe/fused_moe/_vllm_compat.py'
+adding 'b12x/moe/fused_moe/api.py'
+adding 'b12x/moe/fused_moe/config.py'
+adding 'b12x/moe/fused_moe/execution.py'
+adding 'b12x/moe/fused_moe/planning.py'
+adding 'b12x/moe/fused_moe/source.py'
+adding 'b12x/moe/fused_moe/trellis.py'
+adding 'b12x/moe/fused_moe/weights.py'
+adding 'b12x/norm/__init__.py'
+adding 'b12x/norm/vision.py'
+adding 'b12x/norm/hyperconnection/__init__.py'
+adding 'b12x/norm/hyperconnection/_cute.py'
+adding 'b12x/norm/hyperconnection/_cute_config.py'
+adding 'b12x/norm/hyperconnection/_impl.py'
+adding 'b12x/norm/hyperconnection/_kernels.py'
+adding 'b12x/norm/hyperconnection/_policy.py'
+adding 'b12x/norm/hyperconnection/api.py'
+adding 'b12x/norm/hyperconnection/reference.py'
+adding 'b12x/norm/mhc/__init__.py'
+adding 'b12x/norm/mhc/_impl.py'
+adding 'b12x/norm/mhc/_kernels.py'
+adding 'b12x/norm/mhc/_policy.py'
+adding 'b12x/norm/mhc/_pre_prefill.py'
+adding 'b12x/norm/mhc/api.py'
+adding 'b12x/policy/__init__.py'
+adding 'b12x/policy/catalog.py'
+adding 'b12x/policy/components.py'
+adding 'b12x/policy/context.py'
+adding 'b12x/policy/device.py'
+adding 'b12x/policy/fixed_backend.py'
+adding 'b12x/policy/registry.py'
+adding 'b12x/policy/serialization.py'
+adding 'b12x/policy/types.py'
+adding 'b12x/policy/_profiles/__init__.py'
+adding 'b12x/policy/_profiles/data/nvidia.gb10.48sm.json.gz'
+adding 'b12x/policy/_profiles/data/nvidia.rtx.pro.6000.blackwell.json.gz'
+adding 'b12x/policy/_profiles/data/nvidia.rtx.pro.6000.blackwell.max-q.json.gz'
+adding 'b12x/policy/generation/__init__.py'
+adding 'b12x/policy/generation/attention_corpus.py'
+adding 'b12x/policy/generation/contracts.py'
+adding 'b12x/policy/generation/delta_prefill_cases.py'
+adding 'b12x/policy/generation/measured.py'
+adding 'b12x/policy/generation/moe_corpus.py'
+adding 'b12x/policy/generation/parallel.py'
+adding 'b12x/policy/generation/progress.py'
+adding 'b12x/policy/generation/reducer.py'
+adding 'b12x/policy/generation/registry.py'
+adding 'b12x/policy/generation/runner.py'
+adding 'b12x/policy/generation/sharding.py'
+adding 'b12x/policy/generation/store.py'
+adding 'b12x/policy/generation/sweep.py'
+adding 'b12x/policy/generation/providers/__init__.py'
+adding 'b12x/policy/generation/providers/attention.py'
+adding 'b12x/policy/generation/providers/blockscaled.py'
+adding 'b12x/policy/generation/providers/delta_prefill.py'
+adding 'b12x/policy/generation/providers/engram.py'
+adding 'b12x/policy/generation/providers/gemm.py'
+adding 'b12x/policy/generation/providers/gpu_workers.py'
+adding 'b12x/policy/generation/providers/moe.py'
+adding 'b12x/policy/generation/providers/moe_gpu_worker.py'
+adding 'b12x/policy/generation/providers/moe_precision.py'
+adding 'b12x/policy/generation/providers/norm_sequence.py'
+adding 'b12x/policy/generation/providers/ple.py'
+adding 'b12x/policy/generation/providers/qualification.py'
+adding 'b12x/policy/generation/providers/tunable.py'
+adding 'b12x/quantization/__init__.py'
+adding 'b12x/quantization/mxfp6/__init__.py'
+adding 'b12x/quantization/mxfp6/bf16_to_fp6_small_m.py'
+adding 'b12x/quantization/mxfp6/bf16_to_fp6_tma.py'
+adding 'b12x/quantization/mxfp6/calib_io.py'
+adding 'b12x/quantization/mxfp6/fp6_checkpoint.py'
+adding 'b12x/quantization/mxfp6/fp6_dense_op.py'
+adding 'b12x/quantization/mxfp6/fp6_dense_weights.py'
+adding 'b12x/quantization/mxfp6/fp6_moe_weights.py'
+adding 'b12x/quantization/mxfp6/fp6_row_gs.py'
+adding 'b12x/quantization/mxfp6/fp6_safetensors_export.py'
+adding 'b12x/quantization/mxfp6/fp6_safetensors_load.py'
+adding 'b12x/quantization/mxfp6/model_fp6.py'
+adding 'b12x/quantization/mxfp8/__init__.py'
+adding 'b12x/quantization/mxfp8/api.py'
+adding 'b12x/quantization/nvfp4/__init__.py'
+adding 'b12x/quantization/nvfp4/_impl.py'
+adding 'b12x/quantization/nvfp4/_kernel.py'
+adding 'b12x/quantization/nvfp4/_policy.py'
+adding 'b12x/quantization/nvfp4/api.py'
+adding 'b12x/sequence/__init__.py'
+adding 'b12x/sequence/_shared/__init__.py'
+adding 'b12x/sequence/_shared/disk_table.py'
+adding 'b12x/sequence/_shared/kda_math.py'
+adding 'b12x/sequence/_shared/tensors.py'
+adding 'b12x/sequence/_shared/delta_prefill/__init__.py'
+adding 'b12x/sequence/_shared/delta_prefill/_cute_kernels.py'
+adding 'b12x/sequence/_shared/delta_prefill/contract.py'
+adding 'b12x/sequence/_shared/delta_prefill/policy.py'
+adding 'b12x/sequence/_shared/delta_prefill/reference.py'
+adding 'b12x/sequence/_shared/delta_prefill/workspace.py'
+adding 'b12x/sequence/embedding/__init__.py'
+adding 'b12x/sequence/embedding/_kernel.py'
+adding 'b12x/sequence/embedding/api.py'
+adding 'b12x/sequence/engram/__init__.py'
+adding 'b12x/sequence/engram/_kernels.py'
+adding 'b12x/sequence/engram/_policy.py'
+adding 'b12x/sequence/engram/api.py'
+adding 'b12x/sequence/engram/geometry.py'
+adding 'b12x/sequence/engram/reference.py'
+adding 'b12x/sequence/gdn_decode/__init__.py'
+adding 'b12x/sequence/gdn_decode/_cute_kernels.py'
+adding 'b12x/sequence/gdn_decode/_impl.py'
+adding 'b12x/sequence/gdn_decode/_kernels.py'
+adding 'b12x/sequence/gdn_decode/_policy.py'
+adding 'b12x/sequence/gdn_decode/api.py'
+adding 'b12x/sequence/gdn_decode/reference.py'
+adding 'b12x/sequence/gdn_prefill/__init__.py'
+adding 'b12x/sequence/gdn_prefill/_impl.py'
+adding 'b12x/sequence/gdn_prefill/_parallel.py'
+adding 'b12x/sequence/gdn_prefill/_parallel_kernels.py'
+adding 'b12x/sequence/gdn_prefill/_policy.py'
+adding 'b12x/sequence/gdn_prefill/api.py'
+adding 'b12x/sequence/gdn_prefill/reference.py'
+adding 'b12x/sequence/kda_prefill/__init__.py'
+adding 'b12x/sequence/kda_prefill/_impl.py'
+adding 'b12x/sequence/kda_prefill/_policy.py'
+adding 'b12x/sequence/kda_prefill/api.py'
+adding 'b12x/sequence/kda_prefill/reference.py'
+adding 'b12x/sequence/mtp_feedback/__init__.py'
+adding 'b12x/sequence/mtp_feedback/_cute_norm.py'
+adding 'b12x/sequence/mtp_feedback/_cute_prefill.py'
+adding 'b12x/sequence/mtp_feedback/_cute_prefill_config.py'
+adding 'b12x/sequence/mtp_feedback/_impl.py'
+adding 'b12x/sequence/mtp_feedback/_kernels.py'
+adding 'b12x/sequence/mtp_feedback/_policy.py'
+adding 'b12x/sequence/mtp_feedback/api.py'
+adding 'b12x/sequence/mtp_feedback/reference.py'
+adding 'b12x/sequence/ple/STATE.md'
+adding 'b12x/sequence/ple/__init__.py'
+adding 'b12x/sequence/ple/_contracts.py'
+adding 'b12x/sequence/ple/_kernels.py'
+adding 'b12x/sequence/ple/_policy.py'
+adding 'b12x/sequence/ple/api.py'
+adding 'b12x/sequence/ple/reference.py'
+adding 'b12x/sequence/ple_embedding/__init__.py'
+adding 'b12x/sequence/ple_embedding/_contracts.py'
+adding 'b12x/sequence/ple_embedding/_disk.py'
+adding 'b12x/sequence/ple_embedding/_kernels.py'
+adding 'b12x/sequence/ple_embedding/_policy.py'
+adding 'b12x/sequence/ple_embedding/_storage.py'
+adding 'b12x/sequence/ple_embedding/api.py'
+adding 'b12x/sequence/ple_embedding/reference.py'
+adding 'b12x/sequence/ple_hash/__init__.py'
+adding 'b12x/sequence/ple_hash/_contracts.py'
+adding 'b12x/sequence/ple_hash/_kernels.py'
+adding 'b12x/sequence/ple_hash/_policy.py'
+adding 'b12x/sequence/ple_hash/api.py'
+adding 'b12x/sequence/ple_hash/reference.py'
+adding 'b12x/tools/__init__.py'
+adding 'b12x/tools/generate_gpu_profile.py'
+adding 'b12x/tools/inspect_model_policy.py'
+adding 'b12x-1.3.0.dist-info/licenses/LICENSE'
+adding 'b12x-1.3.0.dist-info/METADATA'
+adding 'b12x-1.3.0.dist-info/WHEEL'
+adding 'b12x-1.3.0.dist-info/entry_points.txt'
+adding 'b12x-1.3.0.dist-info/top_level.txt'
+adding 'b12x-1.3.0.dist-info/RECORD'
+removing build/bdist.linux-aarch64/wheel
+Successfully built /opt/wheels/b12x-1.3.0-py3-none-any.whl
+Using Python 3.12.3 environment at: /usr
+Uninstalled 1 package in 2.19s
+ - vllm==0.1.dev20051+g487ecf187 (from file:///vllm-workspace/dist/vllm-0.1.dev20051+g487ecf187-cp38-abi3-linux_aarch64.whl)
+Using Python 3.12.3 environment at: /usr
+Resolved 197 packages in 1.07s
+Downloading nvidia-nccl-cu13 (196.5MiB)
+   Building instanttensor==0.1.9
+ Downloaded nvidia-nccl-cu13
+      Built instanttensor==0.1.9
+Prepared 3 packages in 35.53s
+Uninstalled 2 packages in 66ms
+Installed 4 packages in 2.29s
+ + instanttensor==0.1.9
+ ~ nvidia-cusparselt-cu13==0.8.1
+ - nvidia-nccl-cu13==2.30.7
+ + nvidia-nccl-cu13==2.29.7
+ + vllm==0.1.dev1+g3aada6772.d20260911 (from file:///opt/wheels/vllm-0.1.dev1+g3aada6772.d20260911-cp312-cp312-linux_aarch64.whl)
+Using Python 3.12.3 environment at: /usr
+Resolved 64 packages in 33ms
+Prepared 1 package in 20ms
+Uninstalled 1 package in 23ms
+Installed 2 packages in 58ms
+ + b12x==1.3.0 (from file:///opt/wheels/b12x-1.3.0-py3-none-any.whl)
+ ~ nvidia-cusparselt-cu13==0.8.1
+{"state": "PINNED_BOOTSTRAP_EXLLAMA_VERIFIED_GPU_GATE_PENDING", "version": "0.0.43", "extension_sha256": "0eeb983b09dfe33451b8bc7625174320529b986a73f60b58bf4ebfa9f43ad9c0", "package_tree_sha256": "2d81097d19aae953de9094944c3f4528758bc551940bc3c5644027eb4992306e", "cuda_initialized": false, "native_cpu_allreduce_supported_on_arm": false}

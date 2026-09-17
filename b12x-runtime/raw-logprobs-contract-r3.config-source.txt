@@ -1,0 +1,14 @@
+257:    logprobs_mode: LogprobsMode = "raw_logprobs"
+258-    """Indicates the content returned in the logprobs and prompt_logprobs.
+259-    Supported mode:
+260-    1) raw_logprobs, 2) processed_logprobs, 3) raw_logits, 4) processed_logits.
+261-    Raw means the values before applying any logit processors, like bad words.
+262-    Processed means the values after applying all processors, including
+263-    temperature and top_k/top_p.
+264-    Note: for prompt_logprobs, processed_* and raw_* yield identical results
+265-    because prompt tokens do not go through sampling processors.
+266-    """
+--
+438:            "logprobs_mode",
+439-            "use_fp64_gumbel",
+440-            "enable_trace_replay",

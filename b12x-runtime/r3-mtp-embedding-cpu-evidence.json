@@ -1,0 +1,9 @@
+{
+  "state": "CPU_EXTERNAL_EMBEDDING_CONTRACT_PASS",
+  "installed_model_imported": true,
+  "text_unchanged": true,
+  "oov_placeholders_masked": true,
+  "image_and_video_feature_positions_exact": true,
+  "invalid_inputs_rejected": true,
+  "cuda_initialized": false
+}

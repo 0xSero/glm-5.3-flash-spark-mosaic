@@ -1,0 +1,88 @@
+{
+  "schema": "glm53-exact2-behavior-acceptance-v1",
+  "model": "glm-5.3-flash",
+  "scope": "Short synthetic natural-stop release checks; not broad quality evaluation.",
+  "results": [
+    {
+      "name": "text",
+      "request_sha256": "64d7cecdef9cb7bd96ec683e2142e3bbe0ecd68aeda2151297f1dc34d07353b2",
+      "seconds": 5.950235941912979,
+      "finish_reason": "stop",
+      "content": "FINAL_BASELINE_OK",
+      "usage": {
+        "prompt_tokens": 30,
+        "total_tokens": 113,
+        "completion_tokens": 83,
+        "prompt_tokens_details": null
+      },
+      "passed": true
+    },
+    {
+      "name": "tools",
+      "request_sha256": "9f74f11ef80ef901afaa210fb8253445b16e134c296e52553343abb8c79cfd99",
+      "seconds": 10.316655726986937,
+      "finish_reason": "tool_calls",
+      "content": null,
+      "usage": {
+        "prompt_tokens": 182,
+        "total_tokens": 222,
+        "completion_tokens": 40,
+        "prompt_tokens_details": null
+      },
+      "tool_calls": [
+        {
+          "id": "chatcmpl-tool-90e1ea32dd8eed03",
+          "type": "function",
+          "function": {
+            "name": "get_weather",
+            "arguments": "{\"city\": \"Paris\", \"country\": \"France\"}"
+          }
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "arabic",
+      "request_sha256": "08f6e4308711512e83dba09044285a9defd2105ac98598191b31d0b0b8b9d40b",
+      "seconds": 4.708345609018579,
+      "finish_reason": "stop",
+      "content": "مرحبا بالعالم",
+      "usage": {
+        "prompt_tokens": 34,
+        "total_tokens": 92,
+        "completion_tokens": 58,
+        "prompt_tokens_details": null
+      },
+      "passed": true
+    },
+    {
+      "name": "chinese",
+      "request_sha256": "1f32a9b668707efddaa520a4424b5cd32259b2d95976bdb9493f854bfe797982",
+      "seconds": 7.193710849969648,
+      "finish_reason": "stop",
+      "content": "你好，世界",
+      "usage": {
+        "prompt_tokens": 27,
+        "total_tokens": 121,
+        "completion_tokens": 94,
+        "prompt_tokens_details": null
+      },
+      "passed": true
+    },
+    {
+      "name": "polish",
+      "request_sha256": "0effcbae3e32650e7d533ddbe46350385bfcff2e4471870e1a7f9cf094e2552e",
+      "seconds": 9.472500310977921,
+      "finish_reason": "stop",
+      "content": "Witaj, świecie",
+      "usage": {
+        "prompt_tokens": 34,
+        "total_tokens": 166,
+        "completion_tokens": 132,
+        "prompt_tokens_details": null
+      },
+      "passed": true
+    }
+  ],
+  "all_pass": true
+}

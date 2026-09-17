@@ -1,0 +1,43 @@
+{
+  "source_sha256": "41fc9bb42f3a555dbcef05b8b6c4fb1fa63dfe80e844f66078d160d4f3235db9",
+  "gpu_used": false,
+  "actual_methods_extracted_from_installed_image": true,
+  "allocation_device": "meta",
+  "copy_and_routing_device": "cpu",
+  "cases": [
+    {
+      "experts": 176,
+      "bits": 2,
+      "meta_parameters": 32,
+      "virtual_experts": 704,
+      "expanded_topk": 32,
+      "last_expert_copy_pass": true
+    },
+    {
+      "experts": 176,
+      "bits": 3,
+      "meta_parameters": 32,
+      "virtual_experts": 704,
+      "expanded_topk": 32,
+      "last_expert_copy_pass": true
+    },
+    {
+      "experts": 192,
+      "bits": 2,
+      "meta_parameters": 32,
+      "virtual_experts": 768,
+      "expanded_topk": 32,
+      "last_expert_copy_pass": true
+    },
+    {
+      "experts": 192,
+      "bits": 3,
+      "meta_parameters": 32,
+      "virtual_experts": 768,
+      "expanded_topk": 32,
+      "last_expert_copy_pass": true
+    }
+  ],
+  "parameter_mapper_pass": true,
+  "single_group_pruning_semantics_exact": true
+}

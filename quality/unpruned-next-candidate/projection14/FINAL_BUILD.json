@@ -1,0 +1,23 @@
+{
+  "files": 133,
+  "manifest_sha256": "80967e71922a534a3ab2872ad90edc4aacaf958bcb0a060699e599318727556d",
+  "state": "STRUCTURAL_BUILD_RECEIPTS_VERIFIED_NOT_QUALITY_ACCEPTED",
+  "tensor_bytes": 115502651256,
+  "cid": "fdaebe7d0c0e3e81929eb28f6ed502aac6348868bc7692ebdb968243c434d957",
+  "weight_file_bytes": 115579892952,
+  "protected_tensor_bytes": 33835039608,
+  "quality_accepted": false,
+  "runtime_accepted": false,
+  "receipt_sha256": {
+    "build-launch.json": "a742fd9f43748595ad39e19169e3ae0121203f3b05ca1c29de2aedbcb61d94a9",
+    "build-inspect.json": "575c392dcaf02b87d9bf871d926ebab914593caf7642778751ffc5eb0369eb7f",
+    "BUILD_RESULT.json": "e7e09693e0e674764ca4df19c7a7499a7a2398678a94a0e4070f0f9a156d3484",
+    "DISK_ADMISSION.json": "0cc94462fb2e8f0395c53fdce497b6afa609ae3d5f71d7bac4c11b3cde20a4fd",
+    "build.log": "ab1132d367a554ac7dbc6c9714fd468e0ddb345a7dd6cebc1eaf46023cfc7e97",
+    "model/config.json": "a8f05d1b6fbbb14adb3cc358e22435253e6678910cf9aef49e7bd2716472292f",
+    "model/quantization_config.json": "57482b3ffe6ddf82397289bb3cf4cf3913db255f14366bb36dde4d16bfde2330",
+    "model/BUILD_STATUS.json": "0bfff8b56b8ad372d82c931d7f62bef051e1d9f7afb29282e50588f87832daa6",
+    "model/EXL3_MANIFEST.json": "80967e71922a534a3ab2872ad90edc4aacaf958bcb0a060699e599318727556d",
+    "model/protected-tensor-closure.json": "58d00c3cc754a12980a21d21855d33b3a00367134562a2d13967215a1b489aba"
+  }
+}

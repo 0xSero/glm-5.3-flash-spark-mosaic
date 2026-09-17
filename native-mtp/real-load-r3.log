@@ -1,0 +1,51 @@
+INFO 09-11 19:24:05 [model.py:679] Resolved architecture: Glm5NextForConditionalGeneration
+INFO 09-11 19:24:05 [model.py:1973] Using max model len 262144
+WARNING 09-11 19:24:05 [model.py:970] Model does not support mm_device_do_normalize, forcing mm_device_do_normalize = False.
+INFO 09-11 19:24:05 [cache.py:282] Using fp8 data type to store kv cache. It reduces the GPU memory footprint and boosts the performance. Meanwhile, it may cause accuracy drop without a proper scaling factor
+INFO 09-11 19:24:11 [model.py:679] Resolved architecture: Glm5NextMTPModel
+INFO 09-11 19:24:11 [model.py:1973] Using max model len 1048576
+INFO 09-11 19:24:11 [speculative.py:1256] Overriding draft model max model len from 1048576 to 262144
+INFO 09-11 19:24:11 [scheduler.py:242] Chunked prefill is enabled with max_num_batched_tokens=2048.
+INFO 09-11 19:24:11 [vllm.py:1319] Auto-enabling VLLM_USE_BREAKABLE_CUDAGRAPH=1. Set VLLM_USE_BREAKABLE_CUDAGRAPH=0 to opt out.
+INFO 09-11 19:24:11 [kernel.py:306] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'])
+WARNING 09-11 19:24:11 [vllm.py:1849] max_num_scheduled_tokens is set to 2048 based on the speculative decoding settings. This may lead to suboptimal performance. Consider increasing max_num_batched_tokens to accommodate the additional draft token slots, or decrease num_speculative_tokens.
+INFO 09-11 19:24:11 [compilation.py:329] Enabled custom fusions: norm_quant, act_quant
+BASE_QUANT Exl3Config
+INFO 09-11 19:24:11 [parallel_state.py:1638] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/mtp-real-dist backend=gloo
+INFO 09-11 19:24:11 [parallel_state.py:1982] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, EP rank 0, EPLB rank N/A
+INFO 09-11 19:24:12 [kernel.py:306] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'])
+INFO 09-11 19:24:12 [cuda.py:536] Using FLASHINFER_MLA_SPARSE_SM120 attention backend out of potential backends: ['FLASHINFER_MLA_SPARSE_SM120'].
+INFO 09-11 19:24:12 [mla_attention.py:475] Using fp8_ds_mla KV cache format for FLASHINFER_MLA_SPARSE_SM120 backend.
+WARNING 09-11 19:24:12 [mla_attention.py:551] Sparse MLA impl has no dense-MHA prefill path; using the top-k MQA path only.
+INFO 09-11 19:24:12 [deep_gemm.py:191] deep_gemm not found in site-packages, trying vendored vllm.third_party.deep_gemm
+INFO 09-11 19:24:12 [deep_gemm.py:136] DeepGEMM E8M0 enabled on current platform.
+INFO 09-11 19:24:12 [unquantized.py:319] Using FlashInfer CUTLASS Unquantized MoE backend out of potential backends: ['FlashInfer TRTLLM', 'FlashInfer CUTLASS', 'TRITON', 'BATCHED_TRITON'].
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/audit/audit_native_mtp_real.py", line 30, in <module>
+[rank0]:     model=eagle_utils.load_eagle_model(types.SimpleNamespace(model=types.SimpleNamespace()),c)
+[rank0]:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/worker/gpu/spec_decode/eagle/utils.py", line 61, in load_eagle_model
+[rank0]:     eagle_model = get_model(
+[rank0]:                   ^^^^^^^^^^
+[rank0]:   File "/audit/audit_native_mtp_real.py", line 24, in checked_get_model
+[rank0]:     return original_get_model(vllm_config=vllm_config,model_config=model_config)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/model_loader/__init__.py", line 137, in get_model
+[rank0]:     return loader.load_model(
+[rank0]:            ^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+[rank0]:     return func(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/model_loader/base_loader.py", line 64, in load_model
+[rank0]:     self.load_weights(model, model_config)
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+[rank0]:     return func(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/model_loader/default_loader.py", line 425, in load_weights
+[rank0]:     self._init_ep_weight_filter(model_config)
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/model_loader/default_loader.py", line 360, in _init_ep_weight_filter
+[rank0]:     vllm_config = get_current_vllm_config()
+[rank0]:                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/config/vllm.py", line 2643, in get_current_vllm_config
+[rank0]:     raise AssertionError(
+[rank0]: AssertionError: Current vLLM config is not set. This typically means get_current_vllm_config() was called outside of a set_current_vllm_config() context, or a CustomOp was instantiated at module import time or model forward time when config is not set. For tests that directly test custom ops/modules, use the 'default_vllm_config' pytest fixture from tests/conftest.py.

@@ -1,0 +1,31 @@
+{
+  "state": "STRUCTURAL_PASS_NO_GPU_QUALITY",
+  "manifest_sha256": "73291ede5c0f2ad13dcd9fbdfe3887f133ef713d56c589c59c6392bdb887b45c",
+  "container_id": "53bbd17108dbaff5122c18fb48047cad0cdc43d76f4f7b902e4d81ecbf896786",
+  "exit_code": 0,
+  "oom_killed": false,
+  "device_requests": null,
+  "tensor_bytes": 113086732152,
+  "weight_file_bytes": 113163970040,
+  "protected_tensor_bytes": 33835039608,
+  "files": 133,
+  "hardlinked_files": 133,
+  "layer_bits": {
+    "32": 3,
+    "5": 3
+  },
+  "quality_accepted": false,
+  "runtime_accepted": false,
+  "receipt_sha256": {
+    "supervisor-fast-process.json": "60cc91c6eb1c3e0f069871c567cea52ee976d1529a46f8127a42870622aa8d2a",
+    "final-inspect.json": "dfbce66f245ddfc3b5a011d578cb8d3b1a879aea2ba37e5b7e266cc8fa5049c2",
+    "launch.json": "932f0f2977201c1d42a14774f32785590ef0fa4a8321785cc962f8c3261e11ca",
+    "stage-status.json": "f9258b24a451f819528d7b8cadf327150b3e2028c231d1bfdf605010107a6823",
+    "build.log": "b8e7d5b2727dcf43e955ba660ba9bfa47b26781701fe43fb7018f60d5ddd3368",
+    "model/config.json": "709303b80663e2c0e3dc86498a90e7acfdafa61076e9a4e817af8965cb05f094",
+    "model/quantization_config.json": "c703272c0da6f21ac270d71a4dbe3a2302b70c1d445835380a4aedf7a1668082",
+    "model/BUILD_STATUS.json": "77f95f8eec5ef975da69fc322a7edabc5b400a1c96070b7b6d604a558833e138",
+    "model/EXL3_MANIFEST.json": "73291ede5c0f2ad13dcd9fbdfe3887f133ef713d56c589c59c6392bdb887b45c",
+    "model/protected-tensor-closure.json": "df2ede0c0451da952cb3e975c94866d6a98cf87d3c8f9593eb23edfb1c998de4"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "glm53-completed-quality-integrity-seal-v1",
+  "state": "INTEGRITY_SEALED_QUALITY_NOT_ACCEPTED",
+  "sealed_at": "2026-09-11T19:48:03.750974+00:00",
+  "container_id": "f1061dd023e7c92558b2db757917a9b51aa0962a3d0c00bb400c40335a368da7",
+  "image_id": "sha256:ddc1b6cf8d89f1f0c0294a9a7a3c86d63cb7ad486d236013d75fb46914e2c576",
+  "container_inspect_sha256": "7238dcaaf10b2f0badee5f5a88513361550309c1c6ac33924a1b7f8945ea7ff8",
+  "history_sha256": "6b9503a4b9b23fd923e5b8c11d3652a7c95827dcfd1f629dd1d7248ced392cab",
+  "identity_sha256": "d508bbddab142afe2844754974b85cbffd99398aefaf48c09c6c1be4121a8727",
+  "quality_report_sha256": "8165a2b3508f47a75259967be8609663073d05429624461c26e5ab4c37769337",
+  "normalized_manifest_sha256": "62e15aafbd14dcd1b9967e6897490c8c05a3fb671a8ec4ceffda37209f983644",
+  "normalized_rows": 32,
+  "positions": 65504,
+  "trunk_layers": 45,
+  "artifact_mode": "physical_reap_candidate",
+  "experts_per_layer": 176,
+  "runtime_accepted": false,
+  "quality_accepted": false
+}

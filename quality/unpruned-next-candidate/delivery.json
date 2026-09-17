@@ -1,0 +1,12 @@
+{
+  "state": "DESIGN_RECEIPT_READY_NO_GPU_LAUNCH",
+  "tests_passed": 3,
+  "files": {
+    "DECISION.md": "179164324c30fff9261c9cbbe4ce63f7bed992ce560db3084f8607afe6f2c0aa",
+    "design-receipt.json": "b07eb688c3f9a36f5b3bffd8f2952212f27fa1755610bdbf374814c6a0f94918",
+    "expert576-design.json": "323f0ff45104490e9162ee52419509198cc2c45e4369c8aaf0f23e961e8ee221",
+    "whole3-design.json": "2f834524926fc33d355869f4c40224b0f6e90080b7e86e259262c563c6e0a7de",
+    "mixed-result-validation.json": "46caae2a87f7a3005d1efda9509ae32ff05fabe687c497157012d4377dc6de0a"
+  },
+  "decision": "hold expensive full tests; expert576 proxy advantage alone does not justify24 mixed-bank layers; whole3 is lower implementation risk if another fullcandidate is requested; fixed-K2 optimization needs independent activation pilot first"
+}

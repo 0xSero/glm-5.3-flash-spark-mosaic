@@ -1,0 +1,10 @@
+--- a/vllm/config/model.py
++++ b/vllm/config/model.py
+@@ -1263,6 +1263,7 @@
+             # `override_quantization_method` method) must be checked in order
+             # of preference (this is particularly important for GPTQ).
+             overrides = [
++                "exl3",
+                 "auto_gptq",
+                 "gptq",
+                 "gptq_marlin",

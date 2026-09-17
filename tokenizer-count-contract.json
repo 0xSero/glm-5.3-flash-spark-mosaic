@@ -1,0 +1,54 @@
+{
+  "scope": "CPU tokenizer and API /tokenize agreement only; no long-context generation or capacity claim",
+  "model": "glm-5.3-flash",
+  "container_id": "6472b5846861d4660f978bbe98f859a5779e7da7dd6c27eb031172272e729ecb",
+  "template": {
+    "enable_thinking": true
+  },
+  "fix": "Explicit return_dict=False because Transformers5.16 returned BatchEncoding of length2 by default",
+  "client_source_sha256": "eab5f9661b18475d8b5d34405c4c33a6f56e0d63fea0a7974d6cdeb6be36b835",
+  "rows": [
+    {
+      "target": 1024,
+      "local": 1024,
+      "server": 1024,
+      "pass": true
+    },
+    {
+      "target": 4096,
+      "local": 4096,
+      "server": 4096,
+      "pass": true
+    },
+    {
+      "target": 16384,
+      "local": 16384,
+      "server": 16384,
+      "pass": true
+    },
+    {
+      "target": 65536,
+      "local": 65536,
+      "server": 65536,
+      "pass": true
+    },
+    {
+      "target": 131072,
+      "local": 131072,
+      "server": 131072,
+      "pass": true
+    },
+    {
+      "target": 200000,
+      "local": 200000,
+      "server": 200000,
+      "pass": true
+    },
+    {
+      "target": 260096,
+      "local": 260096,
+      "server": 260096,
+      "pass": true
+    }
+  ]
+}

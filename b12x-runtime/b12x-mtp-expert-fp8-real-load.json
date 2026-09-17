@@ -1,0 +1,170 @@
+{
+  "probe": "actual V2 draft-only real-weight load, no target weights or serving forward",
+  "production_loader": "v1.worker.gpu.spec_decode.eagle.utils.load_eagle_model",
+  "native_index_keys": 891,
+  "strict_tracking": [
+    {
+      "runtime_parameters": 29,
+      "loaded_parameters": 30,
+      "strict_completeness_pass": true
+    }
+  ],
+  "draft_quantization": "online FP8 only routed experts",
+  "selected_prefixes": [
+    "model.layers.45.mlp.experts"
+  ],
+  "native_nonexpert_audit": {
+    "model.layers.45.enorm.weight": {
+      "dtype": "torch.bfloat16",
+      "matches_legacy_runtime_dtype": true
+    },
+    "model.layers.45.hnorm.weight": {
+      "dtype": "torch.bfloat16",
+      "matches_legacy_runtime_dtype": true
+    },
+    "model.layers.45.eh_proj.weight": {
+      "dtype": "torch.bfloat16",
+      "matches_legacy_runtime_dtype": true
+    },
+    "model.layers.45.shared_head.norm.weight": {
+      "dtype": "torch.bfloat16",
+      "matches_legacy_runtime_dtype": true
+    },
+    "model.layers.45.shared_head.head.weight": {
+      "dtype": "torch.bfloat16",
+      "matches_legacy_runtime_dtype": true
+    },
+    "model.layers.45.mtp_block.self_attn.fused_qkv_a_proj.weight": {
+      "dtype": "torch.bfloat16",
+      "matches_legacy_runtime_dtype": true
+    },
+    "model.layers.45.mtp_block.self_attn.q_a_layernorm.weight": {
+      "dtype": "torch.bfloat16",
+      "matches_legacy_runtime_dtype": true
+    },
+    "model.layers.45.mtp_block.self_attn.q_b_proj.weight": {
+      "dtype": "torch.bfloat16",
+      "matches_legacy_runtime_dtype": true
+    },
+    "model.layers.45.mtp_block.self_attn.kv_a_layernorm.weight": {
+      "dtype": "torch.bfloat16",
+      "matches_legacy_runtime_dtype": true
+    },
+    "model.layers.45.mtp_block.self_attn.kv_b_proj.weight": {
+      "dtype": "torch.bfloat16",
+      "matches_legacy_runtime_dtype": true
+    },
+    "model.layers.45.mtp_block.self_attn.o_proj.weight": {
+      "dtype": "torch.bfloat16",
+      "matches_legacy_runtime_dtype": true
+    },
+    "model.layers.45.mtp_block.self_attn.indexer.index_kpool_compress_ape": {
+      "dtype": "torch.bfloat16",
+      "source_dtype": "torch.bfloat16",
+      "all_source_values_exact": true,
+      "legacy_f32_upcast_only": true
+    },
+    "model.layers.45.mtp_block.self_attn.indexer.index_kpool_compress_gate": {
+      "dtype": "torch.bfloat16",
+      "matches_legacy_runtime_dtype": true
+    },
+    "model.layers.45.mtp_block.self_attn.indexer.wq_b.weight": {
+      "dtype": "torch.bfloat16",
+      "matches_legacy_runtime_dtype": true
+    },
+    "model.layers.45.mtp_block.self_attn.indexer.wk_weights_proj.weight": {
+      "runtime_names": [
+        "model.layers.45.mtp_block.self_attn.indexer.wk.weight",
+        "model.layers.45.mtp_block.self_attn.indexer.weights_proj.weight"
+      ],
+      "dtype": "torch.bfloat16",
+      "legacy_fused_shape_preserved": true
+    },
+    "model.layers.45.mtp_block.self_attn.indexer.k_norm.weight": {
+      "dtype": "torch.float32",
+      "matches_legacy_runtime_dtype": true
+    },
+    "model.layers.45.mtp_block.self_attn.indexer.k_norm.bias": {
+      "dtype": "torch.float32",
+      "matches_legacy_runtime_dtype": true
+    },
+    "model.layers.45.mtp_block.mlp.gate.weight": {
+      "dtype": "torch.bfloat16",
+      "matches_legacy_runtime_dtype": true
+    },
+    "model.layers.45.mtp_block.mlp.gate.e_score_correction_bias": {
+      "dtype": "torch.float32",
+      "matches_legacy_runtime_dtype": true
+    },
+    "model.layers.45.mtp_block.mlp.shared_experts.gate_up_proj.weight": {
+      "dtype": "torch.bfloat16",
+      "matches_legacy_runtime_dtype": true
+    },
+    "model.layers.45.mtp_block.mlp.shared_experts.down_proj.weight": {
+      "dtype": "torch.bfloat16",
+      "matches_legacy_runtime_dtype": true
+    },
+    "model.layers.45.mtp_block.input_layernorm.weight": {
+      "dtype": "torch.bfloat16",
+      "matches_legacy_runtime_dtype": true
+    },
+    "model.layers.45.mtp_block.post_attention_layernorm.weight": {
+      "dtype": "torch.bfloat16",
+      "matches_legacy_runtime_dtype": true
+    },
+    "model.embed_tokens.weight": {
+      "dtype": "torch.bfloat16",
+      "matches_legacy_runtime_dtype": true
+    }
+  },
+  "expert_parameters": {
+    "model.layers.45.mtp_block.mlp.experts.routed_experts.w13_weight": {
+      "shape": [
+        288,
+        4096,
+        4096
+      ],
+      "dtype": "torch.float8_e4m3fn",
+      "bytes": 4831838208
+    },
+    "model.layers.45.mtp_block.mlp.experts.routed_experts.w2_weight": {
+      "shape": [
+        288,
+        4096,
+        2048
+      ],
+      "dtype": "torch.float8_e4m3fn",
+      "bytes": 2415919104
+    },
+    "model.layers.45.mtp_block.mlp.experts.routed_experts.w13_weight_scale": {
+      "shape": [
+        288
+      ],
+      "dtype": "torch.float32",
+      "bytes": 1152
+    },
+    "model.layers.45.mtp_block.mlp.experts.routed_experts.w2_weight_scale": {
+      "shape": [
+        288
+      ],
+      "dtype": "torch.float32",
+      "bytes": 1152
+    }
+  },
+  "draft_experts": 288,
+  "target_quantization": "Exl3Config",
+  "all_parameters_cuda": true,
+  "cuda_allocated_bytes": 10255971840,
+  "source_value_comparisons": [
+    {
+      "source": "model.language_model.embed_tokens.weight",
+      "runtime": "model.embed_tokens.weight",
+      "samples_equal": true
+    },
+    {
+      "source": "lm_head.weight",
+      "runtime": "model.layers.45.shared_head.head.weight",
+      "samples_equal": true
+    }
+  ]
+}

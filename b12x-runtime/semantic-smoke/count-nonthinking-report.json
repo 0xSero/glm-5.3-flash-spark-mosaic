@@ -1,0 +1,15 @@
+{
+  "state": "FAIL",
+  "content": "The user wants me to write the integers 1 through 20 separated by commas with no spaces. This is a simple formatting task.\n\n1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20\n\nThat's it. No spaces after commas.</think>1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 27,
+    "total_tokens": 144,
+    "completion_tokens": 117,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "not_a_speed_benchmark": true
+}

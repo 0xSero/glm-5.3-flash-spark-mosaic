@@ -1,0 +1,17 @@
+{
+  "schema": "glm53-mixed-quality-code-snapshot-v1",
+  "files": {
+    "seal_quality_result.py": "049ddaac9e1a3816697c4e378286b18deebe040a5c7c05cdf41e395f393d793b",
+    "monitor_capture.py": "bdb2d36e550a646391b1b41d9db19577e5d2880715d446b8010fb5f6fe78c96f",
+    "probe_reconstruction.py": "284ca46383a7c39cdebe37f96874c51ca2ac3bf34cf908c8d349b67aff9dbb6c",
+    "test_mixed_contract.py": "5b36b8e20f26aa647d8e35f1b8663e3e0ca9f2a4f6512153b6563b5b5e28bea4",
+    "mixed_contract.py": "b9192f5c403323bc100285f3b1787852b459a192b2b529c173d479f359f9fb86",
+    "evaluate_mixed_quality.py": "92575684b11dd8732a7cb15c6b6895621ea10f44192b9378ce8b781e0a180d67",
+    "run_quality.py": "aa102e31d193e1c818571d7d9437e38768e99a7aefb847e8c4e5d586ed0a1825",
+    "deps/evaluate_low_bpw_quality.py": "0c02949a77d28fe7c45786e964a1241cbba8d33b076335ca6a08a4fcac28729a",
+    "deps/glm53_exl3_tp4.py": "488b6f93183dde8c5c5a8248b46ccf22875e8619ddc0a3aa48115da34578a1a7",
+    "deps/release_route_capture_v2.py": "3c5f5558d2a248fd375944067f992619a43fb3ed982b6eb6b30570b7ac1b15b8"
+  },
+  "baseline_adapter_sha256": "066760759ed8596ab330a261a30c994c9f4f0a8976af970ed2cb8a29522325db",
+  "candidate_manifest_sha256": "73291ede5c0f2ad13dcd9fbdfe3887f133ef713d56c589c59c6392bdb887b45c"
+}

@@ -1,0 +1,40 @@
+WARNING 09-12 00:21:15 [interface.py:369] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+W0912 00:21:15.819000 1 usr/local/lib/python3.12/dist-packages/torch/utils/cpp_extension.py:178] No CUDA runtime is found, using CUDA_HOME='/usr/local/cuda'
+WARNING 09-12 00:21:16 [interface.py:369] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+WARNING 09-12 00:21:16 [interface.py:369] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+{
+  "cuda_initialized_before": false,
+  "gpu_exposed": false,
+  "packages": {
+    "torch": "2.13.0+cu130",
+    "nvidia-cutlass-dsl": "4.6.2",
+    "quack-kernels": "0.6.4",
+    "cuda-python": "13.3.1",
+    "cuda-bindings": "13.3.1"
+  },
+  "source": {
+    "model_executor/layers/fused_moe/router/gate_linear.py": {
+      "sha256": "8ad2f44f02fbb709783c17dcceb628b16ae5adb381155f573b0cd0663243f596",
+      "bytes": 12103
+    },
+    "model_executor/kernels/linear/cute_dsl/ll_bf16.py": {
+      "sha256": "03ebf01500895acdcf41f2a39aa85d155b835bc5a53bc4463acd377d263cda95",
+      "bytes": 11146
+    },
+    "model_executor/kernels/linear/cute_dsl/_ll_bf16_dotprod.py": {
+      "sha256": "2d01e295542126c0a46d123ae6cbd33ab0739bb5ba4b5e2660a51215877234e6",
+      "bytes": 11961
+    },
+    "model_executor/kernels/linear/cute_dsl/_ll_bf16_splitk.py": {
+      "sha256": "2d36592931d6d227872b6d8f92935540172a3bf3ec42d411ba687fd0e980ae37",
+      "bytes": 24792
+    }
+  },
+  "ll_bf16_available": true,
+  "actual_imported_gate_class": {
+    "module": "vllm.model_executor.layers.fused_moe.router.gate_linear",
+    "qualname": "GateLinear",
+    "sourcefile": "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/layers/fused_moe/router/gate_linear.py"
+  },
+  "cuda_initialized_after": false
+}

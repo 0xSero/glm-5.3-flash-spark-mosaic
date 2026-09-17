@@ -1,0 +1,44 @@
++ W=/home/valentine/mosaic-gatea
++ A=/home/valentine/models/turboderp-glm53-flash-exl3-2p05bpw
++ B=/home/valentine/models/turboderp-glm53-flash-exl3-3p05bpw
++ DST=/home/valentine/models/mosaic-12l-gatea
+++ date -u +%FT%TZ
++ echo '### preflight 2026-09-16T12:17:23Z'
+### preflight 2026-09-16T12:17:23Z
++ test -s /home/valentine/mosaic-gatea/mosaic-12l-plan.json
++ test -s /home/valentine/mosaic-gatea/mosaic_pack2.py
++ test '!' -e /home/valentine/models/mosaic-12l-gatea
++ df -h /
++ tail -1
+/dev/nvme0n1p2  3.7T  2.2T  1.4T  62% /
+++ date -u +%FT%TZ
++ echo '### copy a0 -> /home/valentine/models/mosaic-12l-gatea 2026-09-16T12:17:23Z'
+### copy a0 -> /home/valentine/models/mosaic-12l-gatea 2026-09-16T12:17:23Z
++ cp -a /home/valentine/models/turboderp-glm53-flash-exl3-2p05bpw /home/valentine/models/mosaic-12l-gatea
+++ date -u +%FT%TZ
++ echo '### pack 2026-09-16T12:18:12Z'
+### pack 2026-09-16T12:18:12Z
++ python3 /home/valentine/mosaic-gatea/mosaic_pack2.py --a0 /home/valentine/models/turboderp-glm53-flash-exl3-2p05bpw --base /home/valentine/models/turboderp-glm53-flash-exl3-3p05bpw --out /home/valentine/models/mosaic-12l-gatea --plan /home/valentine/mosaic-gatea/mosaic-12l-plan.json --receipt /home/valentine/mosaic-gatea/mosaic-12l-pack-receipt.json
+affected shards: ['model-00001-of-00012.safetensors', 'model-00008-of-00012.safetensors', 'model-00009-of-00012.safetensors', 'model-00010-of-00012.safetensors', 'model-00011-of-00012.safetensors']
+  model-00001-of-00012.safetensors: swapped=3456 kept=7153 delta=905,969,668B up_ok=3456 keep_ok=7153
+  model-00008-of-00012.safetensors: swapped=6912 kept=7080 delta=1,811,939,330B up_ok=6912 keep_ok=7080
+  model-00009-of-00012.safetensors: swapped=6912 kept=7080 delta=1,811,939,330B up_ok=6912 keep_ok=7080
+  model-00010-of-00012.safetensors: swapped=13824 kept=168 delta=3,623,883,194B up_ok=13824 keep_ok=168
+  model-00011-of-00012.safetensors: swapped=10368 kept=4636 delta=2,717,915,152B up_ok=10368 keep_ok=4636
+{
+ "verdict": "FAIL",
+ "swapped": 41472,
+ "kept": 26117,
+ "delta": 10871646674,
+ "expected": 10871635968,
+ "patched": 10368,
+ "n_failures": 0,
+ "wall_s": 189.3
+}
++ RC=2
++ echo pack_rc=2
+pack_rc=2
++ '[' 2 -eq 0 ']'
++ echo PACK_FAILED_ABORT
+PACK_FAILED_ABORT
++ exit 1

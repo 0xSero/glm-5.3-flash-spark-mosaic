@@ -1,0 +1,17 @@
+{
+  "state": "ROOTFS_CONFIG_PLATFORM_EQUIVALENT_NOT_IDENTICAL_OCI_ID",
+  "source_image_id": "sha256:afb74c791853d438810b27bf28994128f5baa2a3bf5c9b50b9ecdad7b9afffd5",
+  "destination_image_id": "sha256:c0d5f76237a5fe1262291eb23b8086ef0b2637e6d8d45ccdbb9c5706df321399",
+  "equal_fields": [
+    "RootFS",
+    "Config",
+    "Architecture",
+    "Os",
+    "Variant",
+    "Created"
+  ],
+  "ordered_rootfs_layers": 68,
+  "source_config_sha256": "96e29528d66899a7d716e7f518d5f63d80ec4a980effcc2a3f007fdc7cc6c642",
+  "source_inspect_sha256": "1c3ecd7015c357e624558c028f55dbf87573ee129603ed90c09099290f7865ed",
+  "destination_inspect_sha256": "cac8d0f99f5d8ea0a676d5f335fed89d077490e701b61af8eb3c4001bb71678f"
+}

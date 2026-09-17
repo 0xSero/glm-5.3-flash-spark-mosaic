@@ -1,0 +1,70 @@
+INFO 09-12 01:18:51 [import_utils.py:478] DeepEP v2 requires NCCL >= 2.30.4 but found 2.29.7. deepep_v2 backend will not be available.
+INFO 09-12 01:18:56 [__init__.py:109] Registered model loader `<class 'b12x.integration.vllm.loader.B12xModelLoader'>` with load format `b12x`
+INFO 09-12 01:19:02 [model.py:686] Resolved architecture: Glm5NextForConditionalGeneration
+INFO 09-12 01:19:02 [model.py:2030] Using max model len 4096
+WARNING 09-12 01:19:02 [model.py:988] Model does not support mm_device_do_normalize, forcing mm_device_do_normalize = False.
+INFO 09-12 01:19:02 [scheduler.py:339] Chunked prefill is enabled with max_num_batched_tokens=32.
+INFO 09-12 01:19:02 [vllm.py:835] Auto-enabling VLLM_USE_BREAKABLE_CUDAGRAPH=1. Set VLLM_USE_BREAKABLE_CUDAGRAPH=0 to opt out.
+INFO 09-12 01:19:02 [kernel.py:372] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'])
+INFO 09-12 01:19:02 [compilation.py:329] Enabled custom fusions: norm_quant, act_quant
+INFO 09-12 01:19:02 [parallel_state.py:1647] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/mtp-nvfp4-component-dist backend=gloo
+INFO 09-12 01:19:02 [parallel_state.py:1991] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, EP rank 0, EPLB rank N/A
+INFO 09-12 01:19:04 [nvfp4.py:261] Using 'B12X' NvFp4 MoE backend out of potential backends: ['FLASHINFER_TRTLLM', 'FLASHINFER_CUTEDSL', 'FLASHINFER_CUTLASS', 'VLLM_CUTLASS', 'MARLIN', 'HUMMING', 'EMULATION'].
+INFO 09-12 01:19:05 [nvfp4.py:613] Using MoEPrepareAndFinalizeNoDPEPModular
+[W912 01:19:02.884560334 ProcessGroupGloo.cpp:524] Warning: Unable to resolve hostname to a (local) address. Using the loopback address as fallback. Manually set the network interface to bind to with GLOO_SOCKET_IFNAME. (function operator())
+b12x policy fallback: moe.decode is using a heuristic on nvidia gb10 (compute capability 12.1, 48 SMs) because profile 'nvidia.gb10.48sm' does not cover the query; query={'activation': 'silu', 'hidden_size': 4096, 'intermediate_size': 2048, 'num_experts': 8, 'num_tokens': 1, 'numerical_recipe': 'default', 'quant_mode': 'w4a16', 'routed_rows': 8, 'source_format': 'modelopt_nvfp4', 'top_k': 8}
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/proof/gpu_component.py", line 187, in <module>
+[rank0]:     actual = model(x)
+[rank0]:              ^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/models/glm5next/nvidia/model.py", line 312, in forward
+[rank0]:     final_hidden_states = self.experts(
+[rank0]:                           ^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/layers/fused_moe/runner/moe_runner.py", line 728, in forward
+[rank0]:     result = self._forward_entry(
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/_ops.py", line 1279, in __call__
+[rank0]:     return self._op(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/layers/fused_moe/runner/moe_runner.py", line 164, in _moe_forward_shared
+[rank0]:     layer._forward_impl(
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/layers/fused_moe/runner/moe_runner.py", line 908, in _forward_impl
+[rank0]:     shared_output, hidden_states = self._apply_quant_method(
+[rank0]:                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/layers/fused_moe/runner/moe_runner.py", line 617, in _apply_quant_method
+[rank0]:     fused_out = self.routed_experts.forward_modular(
+[rank0]:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/layers/fused_moe/routed_experts.py", line 1257, in forward_modular
+[rank0]:     return self.quant_method.apply(
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/layers/quantization/online/moe_base.py", line 172, in apply
+[rank0]:     return self.moe_kernel.apply(
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/layers/fused_moe/modular_kernel.py", line 1732, in apply
+[rank0]:     return self.impl.apply(
+[rank0]:            ^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/layers/fused_moe/modular_kernel.py", line 1501, in apply
+[rank0]:     fused_out = self._fused_experts(
+[rank0]:                 ^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/layers/fused_moe/modular_kernel.py", line 1315, in _fused_experts
+[rank0]:     workspace13, workspace2, fused_out = self._allocate_buffers(
+[rank0]:                                          ^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/layers/fused_moe/modular_kernel.py", line 1174, in _allocate_buffers
+[rank0]:     common_workspace, workspace2 = current_workspace_manager().get_simultaneous(
+[rank0]:                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/worker/workspace.py", line 326, in current_workspace_manager
+[rank0]:     assert _manager is not None, (
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^
+[rank0]: AssertionError: WorkspaceManager not initialized. Call init_workspace_manager() with a device before using workspace functions.

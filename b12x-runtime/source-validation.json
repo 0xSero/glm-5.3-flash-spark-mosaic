@@ -1,0 +1,24 @@
+{
+  "state": "SOURCE_PATCH_COMPOSITION_AND_SYNTAX_PASS",
+  "upstream_revision": "3aada67721bfdb8b98355207ca3780bb32e6f434",
+  "receipts": [
+    {
+      "state": "PORT_APPLIED_NOT_RUNTIME_VALIDATED",
+      "upstream_revision": "3aada67721bfdb8b98355207ca3780bb32e6f434",
+      "wrapper_sha256": "2d62a8bd6f0d2e1df7556ce086f8c294d6c20faa4e4af123300aa595e264584d",
+      "registry_sha256": "3c8638d0c6841ce8b8839ca33a33f38c8c770139597d275e4e2d6f2bf6c26c29"
+    },
+    {
+      "state": "PATCHED_NOT_RUNTIME_VALIDATED",
+      "sha256": {
+        "vllm/models/glm5next/nvidia/mtp.py": "84289781cc7169949a57d73ccdb2c9f5cbaf02f61da819f03297cd86dd2d2232",
+        "vllm/v1/spec_decode/llm_base_proposer.py": "2064f8f2820e7f8d18045ca275b4c0da631f1bd0a286af6d02446272be546439",
+        "vllm/v1/worker/gpu/spec_decode/eagle/utils.py": "852ab27b4bbcbe25e8f911ab4d6c60750c2eefb29990cff60e1b8fe0b6e63e0d",
+        "vllm/model_executor/layers/quantization/glm_mtp_expert_fp8.py": "b1e7fb4a7b89d35cb6d2c74b04ac10eb8e347f8966a3ec88cf8c207f39c84f64"
+      }
+    }
+  ],
+  "mtp_patch_applier_sha256": "8039a6352f17747cf31d717cf14ac4b358d71213be99c2649d1e705057cd56f6",
+  "image_built": false,
+  "gpu_validated": false
+}

@@ -1,0 +1,57 @@
+{
+  "model": "glm-5.3-flash",
+  "model_root": "/home/valentine/flash-experimental-staging-20260906/model",
+  "context_limit": 262144,
+  "native_config_max_position_embeddings": 1048576,
+  "max_num_seqs": 1,
+  "kv_capacity_tokens": 460208,
+  "prefix_caching": false,
+  "cuda_graphs": true,
+  "gpu_memory_fraction": 0.93,
+  "speculative_config": {
+    "method": "mtp",
+    "num_speculative_tokens": 1
+  },
+  "candidate_manifest_sha256": "501641b947fa56afc9ed098bdc034e59c2bd229d4fa1a1d7b80e3727f10c8ba3",
+  "logprobs_mode": "raw_logprobs",
+  "evidence_sha256": {
+    "inspect": "fb2efbf246ae8d37c2f2db0f46f3727fce1728e6d6aa5b7e1cd8cd76bd2082d4",
+    "engine_log": "f1f355789b92e496fceba63c5e05096129aaef379ca66679be46d6a292e2299b",
+    "smoke": "bc19a8f564830fed40c3e035316a5d58aaa690fba39f3450117460af2cae23e3",
+    "logprobs_contract": "feebcce77599813244eb3671173b2f1c3956ba591e6990a7c6f67e6cd773983f",
+    "draft_precision_real_load": "10601c65631f3acba1f344a8780976958207bc12e300cc490af2c692f995d26d"
+  },
+  "container_id": "8851d99b39a11acd3b9bd844f2aca9d30ee563b70cf761c1e63c7a4ef2d91138",
+  "image_id": "sha256:4f06a26d872ddd6f268a1f99e85940ea630a3cbecc33c7cc8b0038faf8c0851b",
+  "model_memory_gib": 97.11,
+  "graph_pool_actual_gib": 0.14,
+  "graph_pool_estimated_gib": 0.79,
+  "kv_memory_gib": 4.22,
+  "b12x_enabled": false,
+  "backend_identity": "legacy vLLM487ecf187, EXL3 MCG trellis, FlashInfer MLA Sparse SM120; MTP routed experts online FP8 TRITON, all nonexpert MTP parameters native",
+  "thinking_enabled": true,
+  "thinking_disabled_supported_by_template": false,
+  "fresh_text_passed": true,
+  "mtp_counter_deltas": {
+    "vllm:spec_decode_num_draft_tokens_total": 65.0,
+    "vllm:spec_decode_num_accepted_tokens_total": 63.0
+  },
+  "vision_configured": true,
+  "vision_image_verified": false,
+  "vision_video_verified": false,
+  "long_context_verified": false,
+  "quality_acceptance": false,
+  "target_routed_experts_per_layer": 288,
+  "draft_routed_experts": 288,
+  "draft_expert_precision": "float8_e4m3fn",
+  "draft_nonexpert_precision": "native BF16/F32, strict 24-parameter dtype audit in separate real-load probe",
+  "draft_external_multimodal_embeddings": false,
+  "raw_logprobs_api_contract_passed": true,
+  "evidence_files": {
+    "inspect": "k2full-fp8draft-r4-inspect-ready.json",
+    "engine_log": "k2full-fp8draft-r4-engine-ready.log",
+    "smoke": "native-mtp-k2full-fp8draft-r4-smoke.json",
+    "logprobs_contract": "k2full-fp8draft-r4-logprobs-contract.json",
+    "draft_precision_real_load": "native-mtp-expert-fp8-real-load.json"
+  }
+}

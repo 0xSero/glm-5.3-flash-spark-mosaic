@@ -1,0 +1,20 @@
+{
+  "schema": "glm53-completed-graph-capture-v1",
+  "pid": 316,
+  "manager_id": 247475617379824,
+  "manager_class": "SpeculatorCudaGraphManager",
+  "completed_at_ns": 1789204733497833484,
+  "capture_completed": true,
+  "profile_sample": false,
+  "progress_description": "Capturing prefill CUDA graphs",
+  "descriptors": [
+    {
+      "cg_mode": "FULL",
+      "num_tokens": 3,
+      "num_reqs": 1,
+      "uniform_token_count": 3,
+      "max_query_len": null,
+      "num_active_loras": 0
+    }
+  ]
+}

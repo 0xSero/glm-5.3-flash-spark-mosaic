@@ -1,0 +1,68 @@
+2026-09-14T09:34:30Z ORCHESTRATOR-START (E216 build+eval)
+2026-09-14T09:34:30Z stage=BUILD waiting for BUILD_DONE
+2026-09-14T09:36:01Z stage=BUILD poll 1 not done
+2026-09-14T12:10:15Z stage=BUILD poll 2 not done
+2026-09-14T12:39:11Z stage=BUILD poll 3 not done
+2026-09-14T12:40:43Z stage=BUILD poll 4 not done
+2026-09-14T12:42:13Z stage=BUILD poll 5 not done
+2026-09-14T12:43:44Z stage=BUILD poll 6 not done
+2026-09-14T12:45:15Z stage=BUILD poll 7 not done
+2026-09-14T12:46:45Z stage=BUILD poll 8 not done
+2026-09-14T20:19:21Z ORCHESTRATOR-START (E216 build+eval)
+2026-09-14T20:19:21Z stage=BUILD waiting for BUILD_DONE
+2026-09-14T20:20:51Z stage=BUILD poll 1 not done
+2026-09-14T20:22:22Z stage=BUILD done (poll 2)
+2026-09-14T20:22:25Z stage=BUILD pack+verify exit=0 confirmed
+2026-09-14T20:22:46Z stage=CENSUS launched
+2026-09-14T20:23:47Z stage=CENSUS done (poll 1)
+2026-09-14T20:23:48Z stage=CENSUS both exits 0 confirmed
+2026-09-14T20:23:48Z stage=RECEIPT: {
+ "plan_sha256": "37fa10fdee35c0747f954f1f2a818028e621d62acfe40851a71aa59085ede9bc",
+ "index_sha256": "5706196f5ae56cfde308417efbd569922a7afda3ebcaa33b989f87639254dc09",
+ "tensors": 115266,
+ "problems_cleared": 42,
+ "verdict_contract_ok": true,
+ "written": 2
+}
+2026-09-14T20:23:48Z stage=RECEIPT ok (pre-staged before first launch)
+2026-09-14T20:23:55Z stage=SERVE attempt1 launched
+2026-09-14T20:24:25Z stage=SERVE attempt1 poll 1 no KV yet
+2026-09-14T20:24:57Z stage=SERVE attempt1 poll 2 no KV yet
+2026-09-14T20:25:27Z stage=SERVE attempt1 poll 3 no KV yet
+2026-09-14T20:25:58Z stage=SERVE attempt1 poll 4 no KV yet
+2026-09-14T20:26:29Z stage=SERVE attempt1 poll 5 no KV yet
+2026-09-14T20:26:59Z stage=SERVE attempt1 poll 6 no KV yet
+2026-09-14T20:27:30Z stage=SERVE attempt1 poll 7 no KV yet
+2026-09-14T20:28:01Z stage=SERVE attempt1 poll 8 no KV yet
+2026-09-14T20:28:32Z stage=SERVE attempt1 poll 9 no KV yet
+2026-09-14T20:29:02Z stage=SERVE attempt1 poll 10 no KV yet
+2026-09-14T20:29:33Z stage=SERVE attempt1 poll 11 no KV yet
+2026-09-14T20:30:04Z stage=SERVE attempt1 poll 12 no KV yet
+2026-09-14T20:30:35Z stage=SERVE attempt1 poll 13 no KV yet
+2026-09-14T20:31:06Z stage=SERVE attempt1 KV=218176 < 262144 (profiling variance)
+2026-09-14T20:31:20Z stage=SERVE relaunch (attempt 2) issued
+2026-09-14T20:31:51Z stage=SERVE attempt2 poll 1 no KV yet
+2026-09-14T20:32:22Z stage=SERVE attempt2 poll 2 no KV yet
+2026-09-14T20:32:52Z stage=SERVE attempt2 poll 3 no KV yet
+2026-09-14T20:33:23Z stage=SERVE attempt2 poll 4 no KV yet
+2026-09-14T20:33:54Z stage=SERVE attempt2 poll 5 no KV yet
+2026-09-14T20:34:25Z stage=SERVE attempt2 poll 6 no KV yet
+2026-09-14T20:34:55Z stage=SERVE attempt2 poll 7 no KV yet
+2026-09-14T20:35:26Z stage=SERVE attempt2 poll 8 no KV yet
+2026-09-14T20:35:57Z stage=SERVE attempt2 poll 9 no KV yet
+2026-09-14T20:36:28Z stage=SERVE attempt2 poll 10 no KV yet
+2026-09-14T20:37:00Z stage=SERVE attempt2 poll 11 no KV yet
+2026-09-14T20:37:31Z stage=SERVE attempt2 poll 12 no KV yet
+2026-09-14T20:38:01Z stage=SERVE attempt2 KV=344256 OK
+2026-09-14T20:39:11Z stage=SMOKE try 1 no finish_reason; response head: 
+2026-09-14T20:40:08Z stage=SMOKE ok (try 2): {"id":"8d3fcba76bf040f1bfc5dc9ec09e2d49","object":"chat.completion","created":1789418408,"model":"/model","choices":[{"index":0,"message":{"role":"assistant","content":"OK","reasoning_content":"The us
+2026-09-14T20:40:08Z stage=SERVE_OK KV=344256
+2026-09-14T20:40:35Z stage=G4 launched on 2384
+2026-09-14T20:45:36Z stage=G4 poll 1 not done
+2026-09-14T20:50:37Z stage=G4 poll 2 not done
+2026-09-14T20:55:38Z stage=G4 poll 3 not done
+2026-09-14T21:00:39Z stage=G4 poll 4 not done
+2026-09-14T21:05:40Z stage=G4 poll 5 not done
+2026-09-14T23:15:02Z stage=G4 done (poll 6)
+2026-09-14T23:15:13Z ORCHESTRATOR-COMPLETE KV=344256 all G4 phases exit=0
+ORCHESTRATOR-COMPLETE 2026-09-14T23:15:13Z

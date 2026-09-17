@@ -1,0 +1,24 @@
+{
+  "source_relative_path": "k2/retained-00109-of-00120.safetensors",
+  "source_sha256": "757933e32374b053c145644ba79b88f7da54a0ef3c273d5cbf4d21709ee3ce9b",
+  "tensor_keys": [
+    "model.language_model.layers.5.mlp.gate.weight",
+    "model.language_model.layers.5.mlp.gate.e_score_correction_bias"
+  ],
+  "tensors": {
+    "weight": {
+      "shape": [
+        288,
+        4096
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "bias": {
+      "shape": [
+        288
+      ],
+      "dtype": "torch.float32"
+    }
+  },
+  "router_sha256": "b59a74a930a5e870cb442b5198ca213cff9aa5df90916bfc7a72f174c69fe378"
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "metric": "mass_global",
+    "keep": "160",
+    "mean_pooled_mass_retained": 0.7257880973282334,
+    "worst_layer_domain_mass_retained": 0.48359043973149646
+  },
+  {
+    "metric": "mass_global",
+    "keep": "176",
+    "mean_pooled_mass_retained": 0.7706692894896618,
+    "worst_layer_domain_mass_retained": 0.5580200099630227
+  },
+  {
+    "metric": "mass_global",
+    "keep": "192",
+    "mean_pooled_mass_retained": 0.8130258905170187,
+    "worst_layer_domain_mass_retained": 0.5948809486732455
+  },
+  {
+    "metric": "massmax_domain",
+    "keep": "160",
+    "mean_pooled_mass_retained": 0.690729640937215,
+    "worst_layer_domain_mass_retained": 0.5594441451015822
+  },
+  {
+    "metric": "massmax_domain",
+    "keep": "176",
+    "mean_pooled_mass_retained": 0.7402614505154362,
+    "worst_layer_domain_mass_retained": 0.630936800718125
+  },
+  {
+    "metric": "massmax_domain",
+    "keep": "192",
+    "mean_pooled_mass_retained": 0.7873567444550736,
+    "worst_layer_domain_mass_retained": 0.6896665187161755
+  }
+]

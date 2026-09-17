@@ -1,0 +1,3 @@
+W0911 21:55:54.863000 1 usr/local/lib/python3.12/dist-packages/torch/utils/cpp_extension.py:178] No CUDA runtime is found, using CUDA_HOME='/usr/local/cuda'
+INFO 09-11 21:55:56 [import_utils.py:478] DeepEP v2 requires NCCL >= 2.30.4 but found 2.29.7. deepep_v2 backend will not be available.
+{"state": "ACTUAL_EXL3_CONFIG_IMPORT_AND_LAYER_SELECTION_PASS_GPU_UNQUALIFIED", "default_bits": 2, "layer_bits": {"5": 3, "32": 3}, "target_layers_checked": 42, "rank_stacked_tp": 4, "shared_config_unchanged": true, "cuda_initialized": false}

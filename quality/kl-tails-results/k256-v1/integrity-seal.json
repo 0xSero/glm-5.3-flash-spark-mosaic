@@ -1,0 +1,9 @@
+{
+  "state": "VERIFIED",
+  "container_id": "64b00aa5e738eb6bb043eb4bcc2866791f45e1984a1750f07d00133db6bf7363",
+  "files": {
+    "report.json": "8cd4857da3e9a4691fc8ec30d83accb912b60804659773927de173b1d6629614",
+    "container-inspect.json": "49208612522d5f512c4f173b5a6d0b702c4ba31046225ed9a34794f40b392fc2",
+    "token-kl.json": "d75bcd6b1a24eae7b931c9b82ad2b5b6319b098f7456b11a3f53d4a13baf5ff0"
+  }
+}

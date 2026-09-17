@@ -1,0 +1,69 @@
+{
+  "base_manifest_sha256": "179db5d74b865df11734c7ab76cdf1fa68818e6135a1cbbc3104c75cc3df230f",
+  "base_rows_retained": 536,
+  "base_token_rows_sha256": "1cae9bbcd2beb3879a0c459edfca1fd197043ab204b82189c9361de386d0cae1",
+  "columns": 2048,
+  "construction": "64 seeded non-random base-row replacements with deterministic cyclic session token streams",
+  "created_at": "2026-08-29T10:27:48.734504+00:00",
+  "exllamav3_revision": "5f3c537ca9d89893d771256f5c43c93656553fbb",
+  "final_axis_counts": {
+    "c4": 90,
+    "code": 156,
+    "multilingual": 25,
+    "random_tokens": 92,
+    "session:code_agentic": 16,
+    "session:inference_infrastructure": 16,
+    "session:product_writing": 16,
+    "session:research_reasoning": 16,
+    "technical": 23,
+    "tiny": 18,
+    "wiki": 132
+  },
+  "forced_expert_activation": false,
+  "private_axis_counts": {
+    "code_agentic": 16,
+    "inference_infrastructure": 16,
+    "product_writing": 16,
+    "research_reasoning": 16
+  },
+  "private_corpus_sha256": "c9e1f45c551887183c040bc1e1efee1cec10100aade212c977b1703e9feea8d2",
+  "private_scrub_policy": "session-scrub-v1",
+  "private_session_rows": 64,
+  "protected_random_rows_byte_exact": true,
+  "protected_random_rows_retained": 92,
+  "quality_claim": false,
+  "raw_private_content_in_output": false,
+  "raw_private_content_publication": false,
+  "replacement_positions_sha256": "e221230bd7a20be1dc05422100f14a593b7dc46e855a4bbe20f99561a3d0e1b8",
+  "replacement_quotas": {
+    "c4": 12,
+    "code": 16,
+    "multilingual": 8,
+    "technical": 12,
+    "tiny": 4,
+    "wiki": 12
+  },
+  "replacement_selection_seed": 20260829,
+  "route_coverage_status": "pending_full_layerwise_capture",
+  "routing_policy": "natural_top8",
+  "rows": 600,
+  "runtime_claim": false,
+  "schema_version": 2,
+  "source_revision": "a6c167b62691b2bac901344b65cb651a70f53e43",
+  "state": "SEALED_PRIVATE_SESSION_AUGMENTED_CALIBRATION",
+  "token_rows_sha256": "479581ca7bebb14bc4b41d375cd74e66cab40a58a0662efd297c41566543bbad",
+  "tokenization_policy": "no added special tokens; append EOS per scrubbed message; cyclic concatenation; truncate to 2048 tokens",
+  "tokenizer_class": "TokenizersBackend",
+  "tokenizer_files": {
+    "tokenizer.json": {
+      "bytes": 20217442,
+      "sha256": "19e773648cb4e65de8660ea6365e10acca112d42a854923df93db4a6f333a82d"
+    },
+    "tokenizer_config.json": {
+      "bytes": 761,
+      "sha256": "98b1271574f41abf89427ae2dda030d94dc9478f0edc5a8bd240db213c6fd5fc"
+    }
+  },
+  "tokenizer_source": "local GLM-5.3 BF16 tokenizer at sealed source revision",
+  "tokenizer_vocab_size": 154856
+}

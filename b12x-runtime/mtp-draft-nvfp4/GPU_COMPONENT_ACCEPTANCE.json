@@ -1,0 +1,27 @@
+{
+  "state": "EIGHT_EXPERT_GPU_REFERENCE_AND_GRAPH_VERIFIED",
+  "container_id": "ec1881e5611cfac712bdf54f1ca206be9e5aa9c576b0a6ef989269dde6dbde96",
+  "image_id": "sha256:368820997e1146e9d7843367478b53ce18db708e79861f7ea269860e9a1bda4b",
+  "source_weights_same_as_direct_control": true,
+  "physical_fused_atomic_sum": false,
+  "graph_changed_input_replays": 15,
+  "peak_cuda_allocated_bytes": 604047872,
+  "full_288_sparse_forward": false,
+  "full_serving_acceptance": false,
+  "speed_claim": false,
+  "sha256": {
+    "gpu-attempt7/start-inspect.json": "149eb0c76b70acbf6a4423aa7955d5f1289270e6f5e6fc1ea2ad9ceef66cd5c1",
+    "gpu-attempt7/gpu-component.json": "4a194c5983412655515b217d595f41405581175e5939ea19ec11ae35222f9910",
+    "gpu-attempt7/cpu-scope.log": "e1b1441e6658caf17addfe0428bce755324a376779a4914091b0ccb7485dec65",
+    "gpu-attempt7/terminal.log": "1ef0893c0618a2ee66259325525e6c9c5abb420a5862539c658d87e603734d75",
+    "gpu-attempt7/cpu-inspect.json": "cd7b181897f99b196407f2d657db51d56673a560e6f17722db1359a13dfbd03c",
+    "gpu-attempt7/terminal-inspect.json": "aed8c8a23c05fdde0dfaf884cf8117f19a1942fe9232bb7aaf4a784079b299d1",
+    "gpu-attempt7/launch.json": "7064791d5cf556f7e49ceb5ebf01deb19c2da1ea9dbafa821ad19b83ba27974e",
+    "gpu-attempt7/source/gpu_component.py": "fd1527d2749d3447b19717ec713956648334b185dfca63008390b081f01587f6",
+    "gpu-attempt7/source/packed_routes.py": "bbab9d23792781f1e12cfe72fc2f5ab75e649faa5e10db1e5f25cf7bd24e3de0",
+    "gpu-attempt7/source/cpu_scope.py": "2206b541192130740a116788e19acfaad0afd4e13f4bd63c7896f4c876d20d79",
+    "gpu-attempt7/source/policy.py": "8f48d54fa434f271fcbb3e0ff6303093aeb76885e9bb9b31c9bcf603025720f0",
+    "gpu-attempt7/source/reference_packed.py": "0e592784542a1038212cb21233a71d67e9622002b6969fce917c7d9867b87cb2",
+    "gpu-attempt7/source/launch_component.py": "94398e16f113fc9dca0cdb3477384bdbac4c7ebd206de28b0b021c6ec371f825"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "state": "MATCHED_FULL_DRAFT_LOAD_MEMORY_VERIFIED_SERVING_PENDING",
+  "same_native_index": "3b83745278ec1f43d45f4c53e141a18bce30e3ece70d969a76088b2d2c2f534d",
+  "same_native_parameter_bytes": 2940779648,
+  "resident_saving_bytes": 3170885120,
+  "serving_admission": false,
+  "no_target_or_kv": true,
+  "modes": {
+    "fp8": {
+      "cuda_allocated_bytes": 10255971840,
+      "peak_cuda_allocated_bytes": 24734712320,
+      "runtime_parameter_bytes": 10188539264
+    },
+    "nvfp4": {
+      "cuda_allocated_bytes": 7085086720,
+      "peak_cuda_allocated_bytes": 22905996800,
+      "runtime_parameter_bytes": 2940784256
+    }
+  },
+  "sha256": {
+    "full-fp8-attempt1/start-inspect.json": "44780762cee7557e6489a416a122aedf3ce0101f544e3b0077a951a856797b70",
+    "full-fp8-attempt1/terminal.log": "790f9945dc55b1b8c1ac172bb3e85abe6eade598ac3dc985ca1c33b62abb7170",
+    "full-fp8-attempt1/terminal-inspect.json": "3cfbb85e112ac355ba80f1cb19fbc34c1e1507b0bfb4a0fb330cbe14ccbbe7a3",
+    "full-fp8-attempt1/launch.json": "8fd1784900fb501deb8596784b0490372ddacaf28fdcbb1546993cf46d8db61c",
+    "full-fp8-attempt1/full-load.json": "7d30d27c314a4f0c8bc2ba409910319cf5cf914f3c0d87a478ad0b084288f450",
+    "full-fp8-attempt1/source/full_load.py": "b255e59f3bb2bb0a92f4026d70c0bca91bb42382e0ecdca31d3b034de036a9e3",
+    "full-fp8-attempt1/source/policy.py": "8f48d54fa434f271fcbb3e0ff6303093aeb76885e9bb9b31c9bcf603025720f0",
+    "full-fp8-attempt1/source/launch_full_load.py": "a571931fa44aabe856d6a08273dee0b9f29bfd62167c6e5ba1db1c7460cf3560",
+    "full-fp8-attempt1/source/native-parameter-baseline.json": "57c3d0fa56086043621702cfb82aeed52459499f92da72a2e9b8370048afec66",
+    "full-nvfp4-attempt2/start-inspect.json": "64e4ebb270c8b8d244c1c51b7c382a809af4e63e00f97eb17beb031d5eb6bd44",
+    "full-nvfp4-attempt2/prepared-tensors.json": "fe844d89d1d100f52329edf7bbc815a3ab7e95837e0e1a9df3580c13aaf4ba59",
+    "full-nvfp4-attempt2/terminal.log": "8ffcce3daa7ab1403cac3fb38aad317d57c3b39e86cdac861b006b80b2c024ec",
+    "full-nvfp4-attempt2/terminal-inspect.json": "b9f84791299a25645237d0ac0577ffb5ba82f0a49823743893d29e05222ad80d",
+    "full-nvfp4-attempt2/launch.json": "c25ba7cc4cd4fbcf8b756ceb682e2aff0b85fa04cd01d5796adf07d4b0c83e16",
+    "full-nvfp4-attempt2/full-load.json": "e09d32f674a130fb3536adad168c0c2a3b3ee1dae4cb24690ae2db1fb50e9f84",
+    "full-nvfp4-attempt2/source/full_load.py": "7f910e676f29d3830f90a54bc056edf9293b3a7544dcc6b11d856b230231f898",
+    "full-nvfp4-attempt2/source/policy.py": "8f48d54fa434f271fcbb3e0ff6303093aeb76885e9bb9b31c9bcf603025720f0",
+    "full-nvfp4-attempt2/source/launch_full_load.py": "a571931fa44aabe856d6a08273dee0b9f29bfd62167c6e5ba1db1c7460cf3560",
+    "full-nvfp4-attempt2/source/native-parameter-baseline.json": "57c3d0fa56086043621702cfb82aeed52459499f92da72a2e9b8370048afec66"
+  }
+}

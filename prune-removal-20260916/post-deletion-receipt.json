@@ -1,0 +1,55 @@
+{
+  "schema": "prune-removal-post-deletion-v1",
+  "utc": "2026-09-16T10:53:00Z",
+  "order": "interactive user order 2026-09-16: 'remove the prunes off the sparks we can't keep taking up all this space for stuff we don't use'",
+  "hosts": [
+    {
+      "host": "spark-2822",
+      "user": "sero",
+      "removed": [
+        {"path": "/home/sero/models/glm53-3p05-pruned-f216", "bytes": 96593390114, "files": 31, "rm_rc": 0, "gone": true}
+      ],
+      "df_before_free_bytes": 1736141443072,
+      "df_after_free_bytes": 1832734973952,
+      "freed_bytes": 96593530880,
+      "artifact_total_bytes": 96593390114
+    },
+    {
+      "host": "spark-557f",
+      "user": "valentine",
+      "removed": [
+        {"path": "/home/valentine/models/glm53-3p05-pruned-e216", "bytes": 96593388003, "files": 31, "rm_rc": 0, "gone": true},
+        {"path": "/home/valentine/models/glm53-3p05-pruned-f216", "bytes": 96593390114, "files": 31, "rm_rc": 0, "gone": true},
+        {"path": "/home/valentine/models/glm53-3p05-pruned-s216", "bytes": 96593256540, "files": 31, "rm_rc": 0, "gone": true},
+        {"path": "/home/valentine/models/glm53-3p05-pruned-t216", "bytes": 96593268599, "files": 31, "rm_rc": 0, "gone": true}
+      ],
+      "df_before_free_bytes": 40912588800,
+      "df_after_free_bytes": 427286454272,
+      "freed_bytes": 386373865472,
+      "artifact_total_bytes": 386373424771
+    }
+  ],
+  "totals": {
+    "artifacts_removed": 5,
+    "artifact_bytes": 482966693370,
+    "df_freed_bytes": 482967396352,
+    "df_freed_giB": 449.8
+  },
+  "pre_deletion_receipts": [
+    "prune-removal-2822-pre.json", "prune-removal-2822-listing.txt",
+    "prune-removal-557f-pre.json", "prune-removal-557f-listing.txt"
+  ],
+  "pre_deletion_receipt_detail": "Each pre-receipt records utc, host, path, du -sb bytes, file count, and sha256 of every *.json identity file inside the artifact (config.json, model.safetensors.index.json, index.shards-only.json, plan.json, g2-receipt.json, manifest.json, quantization_config.json, tokenizer files) plus a full per-file size listing.",
+  "plan_sha_note": "No discrepancy: the build receipts distinguish plan_sha256 (content digest, f216=342b840d1fd709f364d7f6ac4a2771b60afaaed6558ac0a4ca178d53dfb33590) from plan_file_sha256 (on-disk file hash, f216=8909519407d3eb960138a30daaf181bc00f5cfb1f2aa239d2af3164d1fc5397f). The artifact-internal plan.json matches the Mac and 2822 work-dir copies byte-for-byte (8909519407...); the served-census receipt binds the content digest (342b840d...) as designed. Verified this turn.",
+  "preserved_untouched": [
+    "spark-2822:/home/sero/models/turboderp-glm53-flash-exl3-3p05bpw (sealed base, 129,546,716,672 B)",
+    "spark-557f:/home/valentine/models/turboderp-glm53-flash-exl3-3p05bpw (sealed base)",
+    "spark-557f:/home/valentine/models/turboderp-glm53-flash-exl3-2p05bpw (2.05bpw quant copy = a0 lineage)",
+    "spark-2822:/home/sero/models/GLM-5.3-Flash-EXL3-Q4-d0b9301a (Q4 observation model, 187,607,661,850 B)",
+    "spark-2384:/home/sero/models-2p05-stage/2p05bpw (a0, the release artifact, 85,233,498,524 B)",
+    "all plans (r216/s216/t216/u216/e216/f216), build tooling, sealed observations, calibration corpora, teacher rows, and every receipt on the Mac and on-host",
+    "spark-557f:/home/valentine/models/exllamav3-1.4.x-src + exllamav3-v1.4.9 + exllamav3-src.tgz (quantizer source, kept)"
+  ],
+  "rebuild_path": "Any removed artifact is rebuildable: sealed base (turboderp 3.05bpw) + frozen plan JSON (sha in receipts) + packer tooling (prune_u216.py 8d9eeb2b..., augment_index.py 7de8d892..., verify_u216.py 4ee469e7..., census_plan_aware.py 5d4901a2...) on 2822:/home/sero/work/f216-build/ + e216/BUILD-E216.md 8-step pipeline. Pack time measured 80.3 s (f216).",
+  "family_status": "With this removal the entire keep-216 @ 3.05bpw artifact family is off the fleet: u216 (deleted earlier, explicitly deletable), r216 (deleted 2026-09-14 per user order with pre-deletion receipts), and now e216/s216/t216/f216. The 3.05bpw sealed base, all plans, tooling, and every eval receipt are retained."
+}

@@ -1,0 +1,6 @@
+W0912 01:25:02.642000 1 torch/utils/cpp_extension.py:178] No CUDA runtime is found, using CUDA_HOME='/usr/local/cuda'
+INFO 09-12 01:25:04 [import_utils.py:478] DeepEP v2 requires NCCL >= 2.30.4 but found 2.29.7. deepep_v2 backend will not be available.
+WARNING 09-12 01:25:06 [utils.py:109] Config.model_config has no default or default factory.
+WARNING 09-12 01:25:06 [interface.py:1272] Current platform cuda does not have '_is_coroutine_marker' attribute.
+WARNING 09-12 01:25:06 [interface.py:1272] Current platform cuda does not have '_is_coroutine' attribute.
+{"state": "CPU_SCOPE_PASS_GPU_EXECUTION_UNTESTED", "native_source_draft_only": true, "target_and_protected_paths_preserved": true, "geometry_platform_activation_guards_pass": true, "copied_backend_config": true, "backend_selection_mocked": true, "cuda_initialized": false}

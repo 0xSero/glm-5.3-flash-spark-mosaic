@@ -1,0 +1,66 @@
+{
+  "a1_gscale": {
+    "shape": [
+      288
+    ],
+    "dtype": "torch.float32",
+    "bytes": 1152
+  },
+  "w1_fp4": {
+    "shape": [
+      288,
+      256,
+      8192
+    ],
+    "dtype": "torch.int32",
+    "bytes": 2415919104
+  },
+  "w1_blockscale": {
+    "shape": [
+      288,
+      256,
+      4096
+    ],
+    "dtype": "torch.float8_e4m3fn",
+    "bytes": 301989888
+  },
+  "w1_alphas": {
+    "shape": [
+      288
+    ],
+    "dtype": "torch.float32",
+    "bytes": 1152
+  },
+  "a2_gscale": {
+    "shape": [
+      288
+    ],
+    "dtype": "torch.float32",
+    "bytes": 1152
+  },
+  "w2_fp4": {
+    "shape": [
+      288,
+      128,
+      8192
+    ],
+    "dtype": "torch.int32",
+    "bytes": 1207959552
+  },
+  "w2_blockscale": {
+    "shape": [
+      288,
+      128,
+      4096
+    ],
+    "dtype": "torch.float8_e4m3fn",
+    "bytes": 150994944
+  },
+  "w2_alphas": {
+    "shape": [
+      288
+    ],
+    "dtype": "torch.float32",
+    "bytes": 1152
+  }
+}

@@ -1,0 +1,159 @@
++ W=/home/valentine/e216
++ SRC=/home/valentine/models/turboderp-glm53-flash-exl3-3p05bpw
++ DST=/home/valentine/models/glm53-3p05-pruned-e216
++ cd /home/valentine/e216
+++ date -u +%FT%TZ
++ echo '### pack 2026-09-14T20:18:42Z'
+### pack 2026-09-14T20:18:42Z
++ python3 /home/valentine/e216/prune_u216.py --src /home/valentine/models/turboderp-glm53-flash-exl3-3p05bpw --dst /home/valentine/models/glm53-3p05-pruned-e216 --plan /home/valentine/e216/e216-plan.json --workers 5
++ tee /home/valentine/e216/pack.log
+packing 15 shards with 5 workers
+  model-00003-of-00015.safetensors: 6,494,297,740 B sha256=41c83594d4694720 removed=2652 renamed=7800 sliced=6 [17s]
+  model-00005-of-00015.safetensors: 6,454,579,208 B sha256=08d9167e130aa01d removed=2700 renamed=7736 sliced=6 [17s]
+  model-00002-of-00015.safetensors: 6,587,230,944 B sha256=d1449828175a682d removed=2532 renamed=7904 sliced=6 [17s]
+  model-00004-of-00015.safetensors: 6,558,810,940 B sha256=542eb4340ac50aa8 removed=2568 renamed=7868 sliced=6 [18s]
+  model-00001-of-00015.safetensors: 6,892,315,196 B sha256=aa412a2d44a43dfb removed=2148 renamed=6179 sliced=4 [18s]
+  model-00007-of-00015.safetensors: 6,525,901,128 B sha256=322ebbdbbafc435b removed=2609 renamed=7843 sliced=6 [47s]
+  model-00008-of-00015.safetensors: 6,426,152,268 B sha256=07a063b0200a7aca removed=2736 renamed=7700 sliced=6 [47s]
+  model-00006-of-00015.safetensors: 6,621,969,008 B sha256=3560a878b7813ef3 removed=2491 renamed=7945 sliced=6 [48s]
+  model-00009-of-00015.safetensors: 6,511,432,928 B sha256=a83e82d01db55c0b removed=2628 renamed=7808 sliced=6 [50s]
+  model-00010-of-00015.safetensors: 6,653,567,060 B sha256=bf5650e001589857 removed=2448 renamed=7988 sliced=6 [51s]
+  model-00015-of-00015.safetensors: 1,707,975,212 B sha256=4e99d79289280715 removed=444 renamed=1265 sliced=2 [64s]
+  model-00011-of-00015.safetensors: 6,446,924,992 B sha256=82dc3a4103ab8633 removed=2712 renamed=7740 sliced=6 [76s]
+  model-00012-of-00015.safetensors: 6,539,859,756 B sha256=f2ea3104fa2c64ad removed=2592 renamed=7844 sliced=6 [77s]
+  model-00013-of-00015.safetensors: 6,577,762,260 B sha256=aad233752299a19a removed=2544 renamed=7892 sliced=6 [78s]
+  model-00014-of-00015.safetensors: 6,627,469,036 B sha256=e43c771c5f13b023 removed=2484 renamed=7352 sliced=6 [78s]
+  copied LICENSE 1,070 B
+  copied README.md 7,238 B
+  copied chat_template.jinja 8,617 B
+  copied generation_config.json 194 B
+  copied kpool_aux.safetensors 11,548,768 B
+  copied mtp.safetensors 2,862,645,889 B
+  copied processor_config.json 909 B
+  copied quantization_config.json 47,905,678 B
+  copied tokenizer.json 20,217,442 B
+  copied tokenizer_config.json 761 B
+{
+ "schema": "dynamic-container-manifest-v1",
+ "point_id": "E216",
+ "packer_version": "u216-packer-v1",
+ "packer_sha256": "8d9eeb2b256657d1e8582b4981f3a197907ed33f6972c6f45957db6db5ab223f",
+ "plan_sha256": "37fa10fdee35c0747f954f1f2a818028e621d62acfe40851a71aa59085ede9bc",
+ "plan_file_sha256": "5cea3a314e6f35982faea90e781fb7c1057cabf98b7fd8eaa85d3beeddd07959",
+ "base": {
+  "branch": "3.05bpw",
+  "repo": "turboderp/GLM-5.3-Flash-exl3",
+  "revision": "332ab457b709b7ba30dd9a448be5de03b80a7ac9",
+  "total_bytes": 125263712676,
+  "source_dir": "/home/valentine/models/turboderp-glm53-flash-exl3-3p05bpw",
+  "index_total_size": 122286101684
+ },
+ "output_dir": "/home/valentine/models/glm53-3p05-pruned-e216",
+ "index_total_size": 93611759540,
+ "removed_experts": 3024,
+ "removed_tensor_bytes": 28674342144,
+ "bytes_per_removed_expert_incl_router_row": 9482256.0,
+ "config_patch_keys": [
+  "text_config.n_routed_experts",
+  "text_config.routed_experts_per_layer",
+  "text_config.retained_expert_ids_by_layer",
+  "text_config.dynamic_container"
+ ],
+ "total_output_bytes": 96580353371,
+ "started_utc": "2026-09-14T20:18:42Z",
+ "finished_utc": "2026-09-14T20:20:08Z",
+ "elapsed_s": 85.4,
+ "g2_verified": false
+}
++ echo 'pack exit=0'
+pack exit=0
++ echo '### augment index (mtp + kpool_aux)'
+### augment index (mtp + kpool_aux)
++ cp /home/valentine/models/glm53-3p05-pruned-e216/model.safetensors.index.json /home/valentine/models/glm53-3p05-pruned-e216/model.safetensors.index.shards-only.json
++ python3 /home/valentine/e216/augment_index.py /home/valentine/models/glm53-3p05-pruned-e216 /home/valentine/models/glm53-3p05-pruned-e216/model.safetensors.index.json mtp.safetensors kpool_aux.safetensors
++ tee /home/valentine/e216/augment.log
+{"index": "/home/valentine/models/glm53-3p05-pruned-e216/model.safetensors.index.json", "total_size": 96485484504, "added": {"mtp.safetensors": {"tensors": 3508, "tensor_bytes": 2862179364}, "kpool_aux.safetensors": {"tensors": 22, "tensor_bytes": 11545600}}}
++ echo 'augment exit=0'
+augment exit=0
+++ date -u +%FT%TZ
++ echo '### G2 verify 2026-09-14T20:20:08Z'
+### G2 verify 2026-09-14T20:20:08Z
++ python3 /home/valentine/e216/verify_u216.py /home/valentine/models/turboderp-glm53-flash-exl3-3p05bpw /home/valentine/models/glm53-3p05-pruned-e216 5
++ tee /home/valentine/e216/verify.log
+  model-00001-of-00015.safetensors: 6386 tensors ok, 0 problems [94s]
+  model-00002-of-00015.safetensors: 8031 tensors ok, 0 problems [94s]
+  model-00003-of-00015.safetensors: 7917 tensors ok, 0 problems [94s]
+  model-00004-of-00015.safetensors: 7995 tensors ok, 0 problems [94s]
+  model-00005-of-00015.safetensors: 7863 tensors ok, 0 problems [94s]
+  model-00006-of-00015.safetensors: 8072 tensors ok, 0 problems [94s]
+  model-00007-of-00015.safetensors: 7960 tensors ok, 0 problems [94s]
+  model-00008-of-00015.safetensors: 7827 tensors ok, 0 problems [94s]
+  model-00009-of-00015.safetensors: 7935 tensors ok, 0 problems [94s]
+  model-00010-of-00015.safetensors: 8115 tensors ok, 0 problems [94s]
+  model-00011-of-00015.safetensors: 7857 tensors ok, 0 problems [94s]
+  model-00012-of-00015.safetensors: 7971 tensors ok, 0 problems [94s]
+  model-00013-of-00015.safetensors: 8019 tensors ok, 0 problems [94s]
+  model-00014-of-00015.safetensors: 7483 tensors ok, 0 problems [94s]
+  model-00015-of-00015.safetensors: 2305 tensors ok, 0 problems [94s]
+{
+ "schema": "dynamic-container-g2-v1",
+ "point_id": "E216",
+ "plan_sha256": "37fa10fdee35c0747f954f1f2a818028e621d62acfe40851a71aa59085ede9bc",
+ "pass": true,
+ "expert_bytes_from_headers": 9474060,
+ "router_row_bytes_from_headers": 8196,
+ "expected_index_total_size": 96485484504,
+ "extra_index_files": [
+  "kpool_aux.safetensors",
+  "mtp.safetensors"
+ ],
+ "extra_index_tensor_bytes": 2873724964,
+ "index_total_size": 96485484504,
+ "tensors_verified": 111736,
+ "bytes_verified": 93611759540,
+ "problems": [],
+ "elapsed_s": 98.1,
+ "finished_utc": "2026-09-14T20:21:46Z"
+}
++ echo 'verify exit=0'
+verify exit=0
++ du -sb /home/valentine/models/glm53-3p05-pruned-e216
+96593388003	/home/valentine/models/glm53-3p05-pruned-e216
++ ls -la /home/valentine/models/glm53-3p05-pruned-e216
+total 94329624
+drwxr-xr-x  2 valentine valentine       4096 Sep 14 22:21 .
+drwxr-xr-x 15 valentine valentine       4096 Sep 14 22:18 ..
+-rw-r--r--  1 valentine valentine       1070 Sep 14 22:20 LICENSE
+-rw-r--r--  1 valentine valentine       7238 Sep 14 22:20 README.md
+-rw-r--r--  1 valentine valentine       8617 Sep 14 22:20 chat_template.jinja
+-rw-r--r--  1 valentine valentine     189328 Sep 14 22:20 config.json
+-rw-r--r--  1 valentine valentine       1142 Sep 14 22:21 g2-receipt.json
+-rw-r--r--  1 valentine valentine        194 Sep 14 22:20 generation_config.json
+-rw-r--r--  1 valentine valentine   11548768 Sep 14 22:20 kpool_aux.safetensors
+-rw-r--r--  1 valentine valentine       8133 Sep 14 22:21 manifest.json
+-rw-r--r--  1 valentine valentine 6892315196 Sep 14 22:19 model-00001-of-00015.safetensors
+-rw-r--r--  1 valentine valentine 6587230944 Sep 14 22:18 model-00002-of-00015.safetensors
+-rw-r--r--  1 valentine valentine 6494297740 Sep 14 22:18 model-00003-of-00015.safetensors
+-rw-r--r--  1 valentine valentine 6558810940 Sep 14 22:19 model-00004-of-00015.safetensors
+-rw-r--r--  1 valentine valentine 6454579208 Sep 14 22:18 model-00005-of-00015.safetensors
+-rw-r--r--  1 valentine valentine 6621969008 Sep 14 22:19 model-00006-of-00015.safetensors
+-rw-r--r--  1 valentine valentine 6525901128 Sep 14 22:19 model-00007-of-00015.safetensors
+-rw-r--r--  1 valentine valentine 6426152268 Sep 14 22:19 model-00008-of-00015.safetensors
+-rw-r--r--  1 valentine valentine 6511432928 Sep 14 22:19 model-00009-of-00015.safetensors
+-rw-r--r--  1 valentine valentine 6653567060 Sep 14 22:19 model-00010-of-00015.safetensors
+-rw-r--r--  1 valentine valentine 6446924992 Sep 14 22:19 model-00011-of-00015.safetensors
+-rw-r--r--  1 valentine valentine 6539859756 Sep 14 22:19 model-00012-of-00015.safetensors
+-rw-r--r--  1 valentine valentine 6577762260 Sep 14 22:20 model-00013-of-00015.safetensors
+-rw-r--r--  1 valentine valentine 6627469036 Sep 14 22:20 model-00014-of-00015.safetensors
+-rw-r--r--  1 valentine valentine 1707975212 Sep 14 22:19 model-00015-of-00015.safetensors
+-rw-r--r--  1 valentine valentine   11887920 Sep 14 22:20 model.safetensors.index.json
+-rw-r--r--  1 valentine valentine   11579801 Sep 14 22:20 model.safetensors.index.shards-only.json
+-rw-r--r--  1 valentine valentine 2862645889 Sep 14 22:20 mtp.safetensors
+-r--r--r--  1 valentine valentine    1137437 Sep 14 22:20 plan.json
+-rw-r--r--  1 valentine valentine        909 Sep 14 22:20 processor_config.json
+-rw-r--r--  1 valentine valentine   47905678 Sep 14 22:20 quantization_config.json
+-rw-r--r--  1 valentine valentine   20217442 Sep 14 22:20 tokenizer.json
+-rw-r--r--  1 valentine valentine        761 Sep 14 22:20 tokenizer_config.json
+++ date -u +%FT%TZ
++ echo 'BUILD_DONE 2026-09-14T20:21:46Z'
+BUILD_DONE 2026-09-14T20:21:46Z

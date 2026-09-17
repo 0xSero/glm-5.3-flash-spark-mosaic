@@ -1,0 +1,13 @@
+{
+  "state": "READ_ONLY_FEASIBILITY_AUDIT_PASS",
+  "paired_k2_parts_bound_to_pinned_inventory": 84,
+  "paired_k3_source_parts_available_matching_declared_hash_and_size": 84,
+  "full_k3_payload_rehashed_now": false,
+  "packed_header_fields_checked_per_bitwidth": 48,
+  "tensor_increment_per_expert_bytes": 3145728,
+  "tensor_increment_per_layer_bytes": 905969664,
+  "exact_calibration_eval_row_overlap": 0,
+  "new_gpu_jobs": 0,
+  "runtime_admission_verified": false,
+  "quality_upgrade_measured": false
+}

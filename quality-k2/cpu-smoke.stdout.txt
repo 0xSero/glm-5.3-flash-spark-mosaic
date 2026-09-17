@@ -1,0 +1,31 @@
+INFO 09-11 18:57:20 [importing.py:53] Triton is installed but 0 active driver(s) found (expected 1). Disabling Triton to prevent runtime errors.
+INFO 09-11 18:57:20 [importing.py:88] Triton not installed or not compatible; certain GPU-related functions will not be available.
+WARNING 09-11 18:57:20 [interface.py:368] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+{
+  "state": "CPU_IMPORT_AND_META_CONSTRUCTION_PASS",
+  "gpu_execution_tested": false,
+  "flash_attention_substituted": false,
+  "actual_linear_class": "exllamav3.modules.quant.exl3.LinearEXL3",
+  "baseline_evaluator_sha256": "0c02949a77d28fe7c45786e964a1241cbba8d33b076335ca6a08a4fcac28729a",
+  "wrapper_sha256": "41fc9bb42f3a555dbcef05b8b6c4fb1fa63dfe80e844f66078d160d4f3235db9",
+  "extension_sha256": "0eeb983b09dfe33451b8bc7625174320529b986a73f60b58bf4ebfa9f43ad9c0",
+  "linear_source_sha256": "9029b566a8908e8b2aa3ecb0e1e6c73190cfc1368982b26bfbaf6be886149092",
+  "torch": "2.13.0+cu130",
+  "meta_layers": {
+    "0": {
+      "block_type": "linear_attention",
+      "parameters": 289521910,
+      "experts": null
+    },
+    "3": {
+      "block_type": "deepseek_sparse_attention",
+      "parameters": 7399811894,
+      "experts": 288
+    },
+    "4": {
+      "block_type": "linear_attention",
+      "parameters": 7412629750,
+      "experts": 288
+    }
+  }
+}

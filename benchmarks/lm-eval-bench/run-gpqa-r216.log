@@ -1,0 +1,6 @@
+2026-09-14T15:54:17Z GPQA_RUNNER_START r216 http://spark-557f.internal:8000
+2026-09-14T15:55:35Z poll 1 health=200 smoke=200
+2026-09-14T15:55:36Z READY_OK
+2026-09-14T15:56:42Z VALIDATE rc=0 tail: sks        |Version|Filter|n-shot| Metric |   |Value|   |Stderr| |---------------------|------:|------|-----:|--------|---|----:|---|-----:| |gpqa_diamond_zeroshot|    2.2|none  |     0|acc     |↑  |  0.5|±  |   0.5| |                     |       |none  |     0|acc_norm|↑  |  0.5|±  |   0.5|  
+2026-09-14T15:56:42Z VALIDATE_OK launching GPQA suite
+2026-09-14T17:14:33Z GPQA_RUNNER_DONE exit-recorded

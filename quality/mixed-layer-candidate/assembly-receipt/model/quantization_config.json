@@ -1,0 +1,33 @@
+{
+  "archive_tensor_parallel_size": 4,
+  "bits": 2,
+  "codebook": "mcg",
+  "effective_routed_tier_bpw": 2.0476190476190474,
+  "format": "glm53-brandon-style-k2-k3-tail-k4-retained-v1",
+  "k2_layer_count": 40,
+  "k3_layer_count": 2,
+  "k4_retained_experts_per_layer": 0,
+  "layer_bits": {
+    "32": 3,
+    "5": 3
+  },
+  "precision_layout": "uniform_within_each_routed_layer",
+  "quant_method": "exl3",
+  "rank_stacked_tp": 4,
+  "raw_private_content_included": false,
+  "requires_custom_loader": true,
+  "runtime_tensor_parallel_size": 1,
+  "selection": {
+    "type": "whole_layer_from_independent_calibration_proxy",
+    "upgraded_layers": [
+      5,
+      32
+    ]
+  },
+  "session_calibration_manifest_sha256": "77393cc1862c069d1d770887b8c83f0ba5aab4b8dfdd7cb18447dbb621c2c80e",
+  "session_calibration_tokens_sha256": "479581ca7bebb14bc4b41d375cd74e66cab40a58a0662efd297c41566543bbad",
+  "session_calibration_verification_sha256": "291250dea453739f1f1a9f0ab69d6a3c49c4dcc459b580eb850449b1291249c9",
+  "source_manifest_sha256": "81785e43481601c4e5cd53ce05658a40c452a96201140de6e2b13002c70a874c",
+  "tail_experts_per_layer": 224,
+  "target_routed_tier_bpw": 2.0476190476190474
+}

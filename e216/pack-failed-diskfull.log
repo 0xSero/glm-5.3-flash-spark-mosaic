@@ -1,0 +1,29 @@
+packing 15 shards with 5 workers
+  model-00005-of-00015.safetensors: 6,454,579,208 B sha256=08d9167e130aa01d removed=2700 renamed=7736 sliced=6 [27s]
+  model-00002-of-00015.safetensors: 6,587,230,944 B sha256=d1449828175a682d removed=2532 renamed=7904 sliced=6 [27s]
+  model-00003-of-00015.safetensors: 6,494,297,740 B sha256=41c83594d4694720 removed=2652 renamed=7800 sliced=6 [28s]
+  model-00004-of-00015.safetensors: 6,558,810,940 B sha256=542eb4340ac50aa8 removed=2568 renamed=7868 sliced=6 [28s]
+  model-00001-of-00015.safetensors: 6,892,315,196 B sha256=aa412a2d44a43dfb removed=2148 renamed=6179 sliced=4 [30s]
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/home/valentine/e216/prune_u216.py", line 73, in pack_shard
+    c = mm[a:min(b, a + CHUNK)]; fout.write(c); h.update(c); written += len(c); a += len(c)
+                                 ^^^^^^^^^^^^^
+OSError: [Errno 28] No space left on device
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/valentine/e216/prune_u216.py", line 146, in <module>
+    if __name__ == "__main__": main()
+                               ^^^^^^
+  File "/home/valentine/e216/prune_u216.py", line 104, in main
+    for r in pool.imap_unordered(pack_shard, [(str(src), str(dst), s, plan) for s in shards]):
+  File "/usr/lib/python3.12/multiprocessing/pool.py", line 873, in next
+    raise value
+OSError: [Errno 28] No space left on device

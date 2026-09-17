@@ -1,0 +1,23 @@
+{
+  "complete": true,
+  "correct_math": true,
+  "correct_list": true,
+  "normal_stops": true,
+  "mtp_counter_deltas": {
+    "vllm:spec_decode_num_draft_tokens_total": 65.0,
+    "vllm:spec_decode_num_accepted_tokens_total": 63.0
+  },
+  "pass": true
+}
+[
+  {
+    "content": "42",
+    "elapsed_s": 3.261417603935115,
+    "ttft_s": 0.31745808699633926
+  },
+  {
+    "content": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20",
+    "elapsed_s": 6.170933197019622,
+    "ttft_s": 0.44101271498948336
+  }
+]

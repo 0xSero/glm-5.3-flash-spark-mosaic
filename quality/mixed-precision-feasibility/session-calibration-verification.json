@@ -1,0 +1,17 @@
+{
+  "base_token_rows_sha256": "1cae9bbcd2beb3879a0c459edfca1fd197043ab204b82189c9361de386d0cae1",
+  "candidate_manifest_sha256": "77393cc1862c069d1d770887b8c83f0ba5aab4b8dfdd7cb18447dbb621c2c80e",
+  "candidate_token_rows_sha256": "479581ca7bebb14bc4b41d375cd74e66cab40a58a0662efd297c41566543bbad",
+  "changed_random_rows": 0,
+  "changed_rows": 64,
+  "columns": 2048,
+  "protected_random_rows": 92,
+  "protected_random_rows_byte_exact": true,
+  "raw_private_content_inspected_or_emitted": false,
+  "replacement_positions_sha256": "e221230bd7a20be1dc05422100f14a593b7dc46e855a4bbe20f99561a3d0e1b8",
+  "rows": 600,
+  "schema_version": 1,
+  "state": "PASS",
+  "unchanged_rows": 536,
+  "verified_at": "2026-08-29T10:28:48.866767+00:00"
+}

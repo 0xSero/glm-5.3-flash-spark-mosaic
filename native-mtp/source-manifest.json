@@ -1,0 +1,21 @@
+{
+  "image_tag": "local/glm53-flash-manager512:20260906",
+  "observed_image_id_prefix": "4cc287d0555c",
+  "sha256": {
+    "config/speculative.py": "eaf52a03351398f72d3e85f0d1ce3bf80d1f92e0fddc8f28bdb11738aeab7875",
+    "transformers_utils/configs/glm5_next.py": "0789556fa569de35c2ed8f12dde99ebbc6530a2d142a54c9291f5d69ef130c4e",
+    "models/glm5next/__init__.py": "46be0fd3c67306deab5fa8140e1150b3f78b50d85317b5b5be072d66a24df200",
+    "models/glm5next/nvidia/attention.py": "a0870c317287ab444a4639ad418964e981efafb5386592540f85eb38d534c369",
+    "models/glm5next/nvidia/kda.py": "ec090aabecc1a63dacc9694ea677b195e95ce0c63648c418a6daaf34b8196125",
+    "models/glm5next/nvidia/multimodal.py": "3c8df570fe46e98a04108fce16c46437591f5c0a4767b3364642dc144069b252",
+    "models/glm5next/nvidia/model.py": "de3ed7f413157596d0e59069d1776b3bf59f9af56aa12809d46a4f528f98a06f",
+    "models/glm5next/nvidia/mtp.py": "87e5ccbcdc80fc252e7dead1abf7d134c60c282538cc12017a4643634a29e191",
+    "models/glm5next/nvidia/ops/kpool_compress.py": "6f77204e4a3bbe1efa9f0921b93b2d56e47e47bc9111ed9174c18126cbfdcdff",
+    "models/glm5next/nvidia/ops/fused_eh_norm.py": "d459c88c58df05de3cc3057f3a114e28f9b3d75c40433d716b8ded14a0029eed",
+    "model_executor/models/registry.py": "72e2d1b1699726ee4570af28ef3f89b7afdb45bf138f122503298e5850044ad5",
+    "model_executor/models/deepseek_mtp.py": "88521bcf3bfec6c773998dbefe30448504640907a4ac98f4e822d0ed38e2436f",
+    "model_executor/model_loader/default_loader.py": "9c9d54b1b650bf5affc924ebb8b8c73711e187ae7486cadd9f737bb1279cc7b8",
+    "model_executor/layers/quantization/exl3.py": "41fc9bb42f3a555dbcef05b8b6c4fb1fa63dfe80e844f66078d160d4f3235db9",
+    "v1/spec_decode/llm_base_proposer.py": "b9c26acf8b77cb56f062213aa6b9eebab58dc69980e78430da027493fc757237"
+  }
+}

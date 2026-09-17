@@ -1,0 +1,14 @@
+{
+  "state": "BOTH_EXPORTERS_STOPPED_DISK_RESTORED",
+  "source_node": "spark-2384",
+  "export_pid": 1108501,
+  "command": "docker image save glm53-b12x-exl3:jovian-3aada677-r3",
+  "observed_source_disk_available_bytes_after_stop": 0,
+  "stopped_only_own_export": true,
+  "server_modified": false,
+  "recorded_utc": "2026-09-12T00:06:18.595920+00:00",
+  "followup": "No more exports on2384; future source requires verified spare export scratch and owner coordination.",
+  "cause_clarification": "Own Docker image-save export used about25.8GB temporary scratch. Runtime agent independently found about129GB binary Docker-tar stdout retained in its container json-file log; stopping that exporter restored65GiB. These were distinct concurrent storage consumers.",
+  "own_temporary_export_cleanup": "Automatically cleared after ownexport stopped, per runtimeagent",
+  "disk_restoration_source": "Runtimeagent live report"
+}

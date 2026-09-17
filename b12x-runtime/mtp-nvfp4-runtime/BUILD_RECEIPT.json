@@ -1,0 +1,28 @@
+{
+  "state": "STAGED_IMAGE_CPU_GATES_PASS_NO_GPU_OR_SERVING_CLAIM",
+  "image_id": "sha256:49e834851ff47ff01f3601122936f692cde75f253670aef0f895e44e40174ae0",
+  "base_image_id": "sha256:368820997e1146e9d7843367478b53ce18db708e79861f7ea269860e9a1bda4b",
+  "installed_cpu_test_count": 8,
+  "source_installer_test_count": 3,
+  "cpu_container_ids": [
+    "b5bb0cfd3bfe1bc559a67d5c6ac6a1d07de9764c4e6a5a59b7b21e61c7b4b04c",
+    "df1813a2f6ab5f9213d21b197cc78295b41fb607a12315555ed3571a049e3d98"
+  ],
+  "cuda_initialized": false,
+  "cpu_constructor_and_plan_factory_mocked": true,
+  "actual_installed_V2_config_rebind_tested_until_mocked_model_load": true,
+  "additional_image_bytes": 30922,
+  "sha256": {
+    "SOURCE_PINS.json": "63257d02c450f16fe05d886c4bdfc5be336539807eab5f9957065617902e45ac",
+    "glm_mtp_expert_precision.py": "2a7a2bd3a3dd63ecf802b1c2169172ae51dfb268b4bcaaf0c88794dc20ae02e7",
+    "install.py": "f523372df448ed6adf83712d01b5c069574152cb6696c1c2c56c5a7713101a8d",
+    "Dockerfile": "2a77073732d156cd9599f5ca2efb8630a51db9a476508b82f90d6e8c0a0901b6",
+    "test_runtime.py": "192ab558a3a85a1c9ba9bc49ac4861c9ad3d12758c6a459aa0ccc1b6c8a18e4f",
+    "test_install.py": "8ecb8d0e9855ca41ef0c08b597e8a7fd0aa389e797c784bc4311de5c2fc1092a",
+    "build-attempt1.log": "78910dd85662e381ceeac1c7ea487e2ccde8742a173b869e13aba810898a577d",
+    "cpu-attempt1.log": "6c0d9adc92339d1662a94bcf34e7b93cf0ab0681a9536b817039e163ae3eba19",
+    "cpu-attempt2.log": "ca7c9442715d29cf23b8fd50a970a7d363cb2659e926c269b2fd674f26a79756",
+    "cpu-inspects.json": "8462640e3ae467b69cccb300d0c63741373de46421d70773298ab73dedde9e09",
+    "image-inspects.json": "6c3c0eb8d541fbe04fbdacdb0862cab8c028c0c02605f77e756413e71ea9d53b"
+  }
+}

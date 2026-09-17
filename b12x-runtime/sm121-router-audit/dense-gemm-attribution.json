@@ -1,0 +1,161 @@
+{
+  "state": "SOURCE_SHAPE_COUNT_INFERENCE_NOT_CPU_STACK_ATTRIBUTION",
+  "trace_sha256": "ce61f682b6a46665389329952500f9a05cd14ebbfdd6cfc6e3c9f0dc8b5d1311",
+  "events": 96900,
+  "shape_recorded_events": 0,
+  "native_shapes": {
+    "kda_fused_input": [
+      24768,
+      4096
+    ],
+    "kda_o": [
+      4096,
+      8192
+    ],
+    "dense_gate_up": [
+      24576,
+      4096
+    ],
+    "shared_gate_up": [
+      4096,
+      4096
+    ],
+    "shared_down": [
+      4096,
+      2048
+    ],
+    "mla_q_b": [
+      16384,
+      1536
+    ],
+    "mla_o": [
+      4096,
+      16384
+    ],
+    "head": [
+      154880,
+      4096
+    ]
+  },
+  "kernel_grid_groups": [
+    {
+      "kernel": "16x16_128x1_tn_align8",
+      "grid": [
+        8,
+        32,
+        1
+      ],
+      "in_graph": true,
+      "calls": 1022,
+      "gpu_us": 217331.2790000001
+    },
+    {
+      "kernel": "16x16_128x2_tn_align8",
+      "grid": [
+        8,
+        194,
+        1
+      ],
+      "in_graph": true,
+      "calls": 238,
+      "gpu_us": 215341.44400000008
+    },
+    {
+      "kernel": "16x16_128x1_tn_align8",
+      "grid": [
+        8,
+        1,
+        1
+      ],
+      "in_graph": true,
+      "calls": 406,
+      "gpu_us": 50844.069000000025
+    },
+    {
+      "kernel": "16x16_128x1_tn_align8",
+      "grid": [
+        8,
+        1210,
+        1
+      ],
+      "in_graph": false,
+      "calls": 7,
+      "gpu_us": 38411.885
+    },
+    {
+      "kernel": "16x16_128x2_tn_align8",
+      "grid": [
+        8,
+        128,
+        1
+      ],
+      "in_graph": true,
+      "calls": 84,
+      "gpu_us": 18847.576999999994
+    },
+    {
+      "kernel": "16x16_128x2_tn_align8",
+      "grid": [
+        8,
+        192,
+        1
+      ],
+      "in_graph": true,
+      "calls": 21,
+      "gpu_us": 18090.532999999992
+    },
+    {
+      "kernel": "16x16_128x1_tn_align8",
+      "grid": [
+        8,
+        64,
+        1
+      ],
+      "in_graph": true,
+      "calls": 476,
+      "gpu_us": 11612.879999999988
+    },
+    {
+      "kernel": "16x16_32x1_nn_align8",
+      "grid": [
+        8,
+        4,
+        64
+      ],
+      "in_graph": true,
+      "calls": 84,
+      "gpu_us": 10174.25
+    },
+    {
+      "kernel": "16x16_128x2_tn_align8",
+      "grid": [
+        8,
+        16,
+        1
+      ],
+      "in_graph": true,
+      "calls": 84,
+      "gpu_us": 7053.520999999999
+    },
+    {
+      "kernel": "16x16_128x2_tn_align8",
+      "grid": [
+        8,
+        3,
+        8
+      ],
+      "in_graph": true,
+      "calls": 294,
+      "gpu_us": 3981.124000000004
+    }
+  ],
+  "source_sha256": {
+    "kda.installed.py": "4c7fe559ef85d075e244ed7dbb5a9c37683ca2e1c2eb7eff8a500af81eeecbb7",
+    "kimi_gdn_linear_attn.installed.py": "76b7613b36512cbd359caea51bb4fd813bed8ee442f490c8463812905cf85643",
+    "model.installed.py": "5c86beadb1d14b648fb6244160997afba9b8d9da031fc0f232b32d5760ecbbbf",
+    "kda-installed-sources.json": "2bd82bfed68d01c0d8bf3523d8338ac377886defe612e9ed1f405c34e8c3d56f"
+  },
+  "source_config_sha256": "6f01b4d22b1cfd19f0f6892356bd88fc2725f443a3fd29d8003f3981cc338ecf",
+  "protected_native_shape_source": "/Users/sero/sessions/glm53-single-spark-release-20260911/artifact-metadata/k2-k256/PROTECTED_TENSORS.json",
+  "protected_shape_note": "Only native_unchanged matrices used; pruned router rows are excluded."
+}

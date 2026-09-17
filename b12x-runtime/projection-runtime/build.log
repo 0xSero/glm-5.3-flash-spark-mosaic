@@ -1,0 +1,46 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 514B done
+#1 WARN: InvalidDefaultArgInFrom: Default value for ARG ${BASE_IMAGE} results in empty or invalid base image name (line 3)
+#1 DONE 0.1s
+
+#2 [internal] load metadata for docker.io/library/glm53-b12x-exl3:jovian-3aada677-r3
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/3] FROM docker.io/library/glm53-b12x-exl3:jovian-3aada677-r3@sha256:c0d5f76237a5fe1262291eb23b8086ef0b2637e6d8d45ccdbb9c5706df321399
+#4 resolve docker.io/library/glm53-b12x-exl3:jovian-3aada677-r3@sha256:c0d5f76237a5fe1262291eb23b8086ef0b2637e6d8d45ccdbb9c5706df321399 0.0s done
+#4 ...
+
+#5 [internal] load build context
+#5 transferring context: 44.58kB done
+#5 DONE 0.1s
+
+#4 [1/3] FROM docker.io/library/glm53-b12x-exl3:jovian-3aada677-r3@sha256:c0d5f76237a5fe1262291eb23b8086ef0b2637e6d8d45ccdbb9c5706df321399
+#4 DONE 4.3s
+
+#6 [2/3] COPY install.py exl3.projection.py glm_exl3_projection_bits.py /opt/glm53-projection/
+#6 DONE 0.2s
+
+#7 [3/3] RUN python3 -c 'import importlib.util, pathlib, subprocess; root=pathlib.Path(importlib.util.find_spec("vllm").origin).parent; subprocess.run(["python3","/opt/glm53-projection/install.py","--directory",str(root/"model_executor/layers/quantization")],check=True)'
+#7 0.163 {"state": "GPU_QUALIFIED_SOURCE_INSTALLED_FULL_SERVING_UNTESTED", "before_wrapper_sha256": "2d62a8bd6f0d2e1df7556ce086f8c294d6c20faa4e4af123300aa595e264584d", "installed_sha256": {"exl3.projection.py": "30321f703b39b9391d3b2fb861f84c175be48dafc05f8bd8b32be5be336224f2", "glm_exl3_projection_bits.py": "2794ddbb9d0b92bdd8926e308826d261c31111eafca0c1be5b262d6ab810deab"}, "scope": "No weight conversion; target projection metadata only. Native MTP remains on its separate FP8 expert path."}
+#7 DONE 0.2s
+
+#8 exporting to image
+#8 exporting layers
+#8 exporting layers 0.2s done
+#8 exporting manifest sha256:836efb55d3a77fe3259f99199d07a1fcddaafda32c0ee3d9fe3198bf3ccddd67 0.0s done
+#8 exporting config sha256:265154f0e487c0b6ac7b83410350594518c989d354d809678c26ddc64cb51d34 0.0s done
+#8 exporting attestation manifest sha256:e3eed0577b706223f7d25ee35d2523d0e4672b019e30d103386e7eab40b137ca 0.0s done
+#8 exporting manifest list sha256:368820997e1146e9d7843367478b53ce18db708e79861f7ea269860e9a1bda4b
+#8 exporting manifest list sha256:368820997e1146e9d7843367478b53ce18db708e79861f7ea269860e9a1bda4b 0.0s done
+#8 naming to docker.io/library/glm53-b12x-exl3:projection-qualified-source done
+#8 unpacking to docker.io/library/glm53-b12x-exl3:projection-qualified-source 0.1s done
+#8 DONE 0.5s
+
+ [33m1 warning found (use docker --debug to expand):
+[0m - InvalidDefaultArgInFrom: Default value for ARG ${BASE_IMAGE} results in empty or invalid base image name (line 3)

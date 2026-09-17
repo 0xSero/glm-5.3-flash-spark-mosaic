@@ -1,0 +1,110 @@
+{
+  "created_utc": "2026-09-12T00:29:49.422672+00:00",
+  "scope": "Frozen functional acceptance evidence; no quality or promotion acceptance. Prior failed attempt remains separate.",
+  "files": {
+    "b12x-runtime/acceptance-receipt-r4.json": {
+      "bytes": 3986,
+      "sha256": "ac2657d37af38a05595759b1ffcbd0fe3288386ac22d5a9639195b2618480071"
+    },
+    "b12x-runtime/acceptance-receipt-r3.json": {
+      "bytes": 3372,
+      "sha256": "36d383fc40ee57edfa5694805a1c241340d813da6c02ef208a75f9723895fb9b"
+    },
+    "benchmarks/reasoning-effort-check/262016-retry.json": {
+      "bytes": 154245,
+      "sha256": "16c113d45a46c51b72b24c5b2c2b37c01498ff01df538746d448ebfe87a2eeef"
+    },
+    "benchmarks/reasoning-effort-check/functional-acceptance-verified.json": {
+      "bytes": 11334,
+      "sha256": "e823072a6bd7052c64381503cb934a76950c86c3bbbdc30582c0b145d059b5a0"
+    },
+    "benchmarks/reasoning-effort-check/validated-short-results.json": {
+      "bytes": 4294,
+      "sha256": "08bd2d7d449d3d3754ce864f0deedad50e55709fe22dabab085b0f459c350588"
+    },
+    "benchmarks/reasoning-effort-check/media-results.json": {
+      "bytes": 855896,
+      "sha256": "911a02373311ce1c9e8ea312b18c31a3f0bfd2d9f06d8477a46b4bfd83369aa5"
+    },
+    "benchmarks/reasoning-effort-check/disk-incident.json": {
+      "bytes": 639,
+      "sha256": "585f7cd1075192cbf19a15e2b831903d83d30baa55b8177e68d34d29297c1fb6"
+    },
+    "benchmarks/reasoning-effort-check/long_context.py": {
+      "bytes": 6579,
+      "sha256": "fa0c26b777e8e6de6781897b39e7ed6b3ed716c9e19458da62729836de22b909"
+    },
+    "benchmarks/reasoning-effort-check/runtime-after.txt": {
+      "bytes": 190,
+      "sha256": "8c916ed8d5c638a3909a15b46db44412eed88b9d5017091005c3e70252ac2ad6"
+    },
+    "benchmarks/reasoning-effort-check/long_context_attempt1.py": {
+      "bytes": 6082,
+      "sha256": "7b29d3ba869007a377171706d4553d21aca0817df26c48fc335433ce7e363d1c"
+    },
+    "benchmarks/reasoning-effort-check/after_context.py": {
+      "bytes": 1438,
+      "sha256": "5c48591153ec68ae47254141966c06d885bab6fb98ee4cf5fe8d6ed805048c8f"
+    },
+    "benchmarks/reasoning-effort-check/probe.py": {
+      "bytes": 1558,
+      "sha256": "2df936ed8cf4333e0cb3f6bd1bd3d905a7cb6664965a44663d3fbceda2a7fb82"
+    },
+    "benchmarks/reasoning-effort-check/4096.json": {
+      "bytes": 148473,
+      "sha256": "952f42fd9b64e513bbe3e31934283e38f59d7aaa905a9e1f017da436eba231b5"
+    },
+    "benchmarks/reasoning-effort-check/low-json-mode.json": {
+      "bytes": 142091,
+      "sha256": "2f5b780b4b74625dc8b6a0f12e76e54c9b50e0e4aac4d764ffa1c2e16ae5eb27"
+    },
+    "benchmarks/reasoning-effort-check/media_check.py": {
+      "bytes": 1979,
+      "sha256": "a522df87430e54a3f960a471828c606eb76344b557e50ddfbb661e5327f815e8"
+    },
+    "benchmarks/reasoning-effort-check/low.json": {
+      "bytes": 142063,
+      "sha256": "dbdd9fe999c2cb98f90d51dc5374f22c624f7537d520ab5c496081de6b4df697"
+    },
+    "acceptance/vision_acceptance.py": {
+      "bytes": 3920,
+      "sha256": "d683b11ce1e4040149d0905b25fe35231582d1ca2e79b500f19363b16328ac78"
+    },
+    "acceptance/mtp_proof.py": {
+      "bytes": 1832,
+      "sha256": "06e2dee4c566008459d8ece66029533e5a2622ba248a0ca7bb411f78941b4f7f"
+    },
+    "acceptance/native_metrics.py": {
+      "bytes": 2990,
+      "sha256": "ca4ec3b4a9b836547fb93e7d4e44e0179e08af1e0744bd63e78606a02ebbacde"
+    },
+    "acceptance/vision-fixtures/i04.png": {
+      "bytes": 6414,
+      "sha256": "f179b73ec3220bf0383ff349f34bf07c24d851abc26c795688f80f2963e4053b"
+    },
+    "acceptance/vision-fixtures/i02.png": {
+      "bytes": 6471,
+      "sha256": "95e8d0af791438f37a6b877c3cf23e61ac4375e216205f5c399ab9fce1c4fcf1"
+    },
+    "acceptance/vision-fixtures/i03.png": {
+      "bytes": 6453,
+      "sha256": "bc0b9f25a7404dd3e50feeaa8b967c883ad0e7c3864950a1a88b79bb9fa481d6"
+    },
+    "acceptance/vision-fixtures/i01.png": {
+      "bytes": 5831,
+      "sha256": "141d08d5a2181823e58cad476869f40d2680167d2b510149f5a2a80f78ebec43"
+    },
+    "acceptance/vision-fixtures/cases.json": {
+      "bytes": 3273,
+      "sha256": "f7e5bdf5ddcb390a2cf39d219e04704f9ae1dda37ccea52247b730eb55c85b96"
+    },
+    "acceptance/vision-fixtures/v02.mp4": {
+      "bytes": 7080,
+      "sha256": "9bd1be0f3eafb495db3fd41fd9002be678e4016fe7148a762fb83de7f7f2017e"
+    },
+    "acceptance/vision-fixtures/v01.mp4": {
+      "bytes": 7378,
+      "sha256": "73d12825e6a5766b475cfa32684c2cc895de138305a5ccedb6d738fade92d110"
+    }
+  }
+}

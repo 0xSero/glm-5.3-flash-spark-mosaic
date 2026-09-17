@@ -1,0 +1,175 @@
+{
+  "state": "MATCHED_ACTUAL_ENGINES_MEASURED",
+  "positions": 65504,
+  "legacy_bf16_agreement": 0.7735558133854421,
+  "b12x_bf16_agreement": 0.7746702491450904,
+  "legacy_perplexity": 4.543965851638268,
+  "b12x_perplexity": 4.541539905560849,
+  "engine_to_engine_top1_agreement": 0.9499877870053737,
+  "mean_abs_ground_truth_logprob_difference": 0.10266969036741133,
+  "per_row": [
+    {
+      "row": 0,
+      "same_top1": 1986,
+      "positions": 2047
+    },
+    {
+      "row": 1,
+      "same_top1": 1946,
+      "positions": 2047
+    },
+    {
+      "row": 2,
+      "same_top1": 1949,
+      "positions": 2047
+    },
+    {
+      "row": 3,
+      "same_top1": 1936,
+      "positions": 2047
+    },
+    {
+      "row": 4,
+      "same_top1": 1982,
+      "positions": 2047
+    },
+    {
+      "row": 5,
+      "same_top1": 1977,
+      "positions": 2047
+    },
+    {
+      "row": 6,
+      "same_top1": 1985,
+      "positions": 2047
+    },
+    {
+      "row": 7,
+      "same_top1": 1869,
+      "positions": 2047
+    },
+    {
+      "row": 8,
+      "same_top1": 1970,
+      "positions": 2047
+    },
+    {
+      "row": 9,
+      "same_top1": 1949,
+      "positions": 2047
+    },
+    {
+      "row": 10,
+      "same_top1": 1930,
+      "positions": 2047
+    },
+    {
+      "row": 11,
+      "same_top1": 1953,
+      "positions": 2047
+    },
+    {
+      "row": 12,
+      "same_top1": 1880,
+      "positions": 2047
+    },
+    {
+      "row": 13,
+      "same_top1": 1958,
+      "positions": 2047
+    },
+    {
+      "row": 14,
+      "same_top1": 1929,
+      "positions": 2047
+    },
+    {
+      "row": 15,
+      "same_top1": 1909,
+      "positions": 2047
+    },
+    {
+      "row": 16,
+      "same_top1": 1912,
+      "positions": 2047
+    },
+    {
+      "row": 17,
+      "same_top1": 1930,
+      "positions": 2047
+    },
+    {
+      "row": 18,
+      "same_top1": 1936,
+      "positions": 2047
+    },
+    {
+      "row": 19,
+      "same_top1": 1949,
+      "positions": 2047
+    },
+    {
+      "row": 20,
+      "same_top1": 1909,
+      "positions": 2047
+    },
+    {
+      "row": 21,
+      "same_top1": 1938,
+      "positions": 2047
+    },
+    {
+      "row": 22,
+      "same_top1": 1942,
+      "positions": 2047
+    },
+    {
+      "row": 23,
+      "same_top1": 1950,
+      "positions": 2047
+    },
+    {
+      "row": 24,
+      "same_top1": 1941,
+      "positions": 2047
+    },
+    {
+      "row": 25,
+      "same_top1": 1957,
+      "positions": 2047
+    },
+    {
+      "row": 26,
+      "same_top1": 1919,
+      "positions": 2047
+    },
+    {
+      "row": 27,
+      "same_top1": 1957,
+      "positions": 2047
+    },
+    {
+      "row": 28,
+      "same_top1": 1953,
+      "positions": 2047
+    },
+    {
+      "row": 29,
+      "same_top1": 1947,
+      "positions": 2047
+    },
+    {
+      "row": 30,
+      "same_top1": 1977,
+      "positions": 2047
+    },
+    {
+      "row": 31,
+      "same_top1": 2003,
+      "positions": 2047
+    }
+  ],
+  "legacy_report_sha256": "a3ff89a3369f054be8047ad43a032276206331e3e90c361084be15dacca48aee",
+  "b12x_report_sha256": "e50a5d121e018a82c9d34e5b2e74832381371274c1c8edf4a3f5eb4f5b3309ae",
+  "scope": "Identical target checkpoint and frozen prompt IDs; actual engines differ in kernels/KV layout. Conditional next-token agreement, not conversation agreement or full-vocabulary KL."
+}

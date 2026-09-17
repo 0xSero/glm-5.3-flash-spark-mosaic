@@ -1,0 +1,84 @@
+{
+  "state": "GPU_SMOKE_PASS",
+  "quality_claim": false,
+  "full_model_claim": false,
+  "layers": [
+    {
+      "layer": 5,
+      "experts": 8,
+      "retained_original_ids": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "loaded_expert_tensors": 384,
+      "router_rows_exact": true,
+      "fused_pointer_tables": true,
+      "route_ids": [
+        1,
+        2,
+        7,
+        6,
+        5,
+        3,
+        4,
+        0
+      ],
+      "fused_vs_loop_max_abs": 6.103515625e-05,
+      "fused_vs_reconstructed_fp32_max_abs": 7.045455276966095e-05,
+      "graph_replays": 3,
+      "graph_vs_eager_max_abs": 0.0,
+      "finite": true
+    },
+    {
+      "layer": 32,
+      "experts": 16,
+      "retained_original_ids": [
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95
+      ],
+      "loaded_expert_tensors": 768,
+      "router_rows_exact": true,
+      "fused_pointer_tables": true,
+      "route_ids": [
+        10,
+        14,
+        3,
+        6,
+        8,
+        13,
+        12,
+        9
+      ],
+      "fused_vs_loop_max_abs": 0.0001220703125,
+      "fused_vs_reconstructed_fp32_max_abs": 5.6898221373558044e-05,
+      "graph_replays": 3,
+      "graph_vs_eager_max_abs": 0.0,
+      "finite": true
+    }
+  ],
+  "index_sha256": "825d6dc1ae4e10e7e4e744d8e556c781ab2e87b87ddc8775f2b01141ddad4327",
+  "elapsed_seconds": 12.119223426911049,
+  "peak_cuda_allocated_bytes": 471085568,
+  "global_experts_unchanged": 288,
+  "native_mtp_not_loaded": true
+}

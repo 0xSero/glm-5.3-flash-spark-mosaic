@@ -1,0 +1,71 @@
+{
+  "accepted_fraction": 0.9956140350877193,
+  "accepted_tokens": 454,
+  "drafted_tokens": 456,
+  "drafts": 228,
+  "engines": [
+    {
+      "acceptance_rate_by_position": {
+        "0": 1.0,
+        "1": 0.9912280701754386
+      },
+      "accepted_tokens": 454,
+      "accepted_tokens_by_position": {
+        "0": 228,
+        "1": 226
+      },
+      "drafted_tokens": 456,
+      "drafts": 228,
+      "labels": {
+        "engine": "0",
+        "model_name": "glm-5.3-flash"
+      }
+    }
+  ],
+  "mean_acceptance_length": 2.9912280701754383,
+  "series_deltas": [
+    {
+      "delta": 228,
+      "labels": {
+        "engine": "0",
+        "model_name": "glm-5.3-flash",
+        "position": "0"
+      },
+      "metric": "vllm:spec_decode_num_accepted_tokens_per_pos_total"
+    },
+    {
+      "delta": 226,
+      "labels": {
+        "engine": "0",
+        "model_name": "glm-5.3-flash",
+        "position": "1"
+      },
+      "metric": "vllm:spec_decode_num_accepted_tokens_per_pos_total"
+    },
+    {
+      "delta": 454,
+      "labels": {
+        "engine": "0",
+        "model_name": "glm-5.3-flash"
+      },
+      "metric": "vllm:spec_decode_num_accepted_tokens_total"
+    },
+    {
+      "delta": 456,
+      "labels": {
+        "engine": "0",
+        "model_name": "glm-5.3-flash"
+      },
+      "metric": "vllm:spec_decode_num_draft_tokens_total"
+    },
+    {
+      "delta": 228,
+      "labels": {
+        "engine": "0",
+        "model_name": "glm-5.3-flash"
+      },
+      "metric": "vllm:spec_decode_num_drafts_total"
+    }
+  ],
+  "state": "MATCHED_POSITION_COUNTERS"
+}

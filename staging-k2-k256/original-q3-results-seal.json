@@ -1,0 +1,308 @@
+{
+  "state": "ORIGINAL_Q3_RESULTS_SEALED",
+  "report_sha256": "ffa6001cbda2cfc0975901342caf0174fd955e15cd066755fb840d1817ed6433",
+  "identity_sha256": "c881c9ca260026beb55fc6170dc9e784e5d74e5813eb2ea8d997342a43920598",
+  "normalized_manifest_sha256": "905274f6030fba58f63664cc9d3f7c59ae7544130c45848c65571674e227cc4d",
+  "normalized_rows": 32,
+  "scores": {
+    "adapter_sha256": "066760759ed8596ab330a261a30c994c9f4f0a8976af970ed2cb8a29522325db",
+    "artifact_mode": "original_q3_unpruned_control",
+    "baseline_evaluator_sha256": "0c02949a77d28fe7c45786e964a1241cbba8d33b076335ca6a08a4fcac28729a",
+    "bf16_cross_entropy": 1.1630037677654943,
+    "bf16_perplexity": 3.199529500063886,
+    "candidate_config_sha256": "0f97529bf936f823b84dc77ac0e09190e9439094e29dc8895547df8e17e4a24e",
+    "candidate_index_sha256": "0fd35de9b0d5fc9428a45d3b311dc757ea891e4cec7788050b75089593ad3215",
+    "candidate_manifest_sha256": "05e0ff9cc6a3f87fbd8e27b46bb679e114579dfea3bc4afcc2d724b58be3d1ee",
+    "capture_policy": "All45 decoder layers, propagated hidden streams and previous DSA attention token indices, final native RMSNorm.",
+    "dependency_sha256": {
+      "glm53_exl3_tp4": "488b6f93183dde8c5c5a8248b46ccf22875e8619ddc0a3aa48115da34578a1a7",
+      "release_route_capture_v2": "3c5f5558d2a248fd375944067f992619a43fb3ed982b6eb6b30570b7ac1b15b8"
+    },
+    "experts_per_layer": 288,
+    "fixture_manifest_sha256": "46255621cd2da8e05546edc3498cfbee518da092af2f44ae243f79da97c0f00b",
+    "head_arithmetic": "BF16 torch.nn.functional.linear, then FP32 logits; vocabulary chunks4096",
+    "kl_bf16_to_variant": 0.15220439871687746,
+    "mtp_policy": "Preserved artifact MTP excluded from target-trunk quality, matching teacher baseline.",
+    "native_import_sha256": {
+      "exllamav3.modules.quant.exl3": "9029b566a8908e8b2aa3ecb0e1e6c73190cfc1368982b26bfbaf6be886149092",
+      "exllamav3_ext": "0eeb983b09dfe33451b8bc7625174320529b986a73f60b58bf4ebfa9f43ad9c0",
+      "reap.glm53_exl3_native": "22bc0749d74787e9df7ca0a06ec0fc257e4cf58cc5f9c2f315088d2ed5694380",
+      "vllm.model_executor.layers.quantization.exl3": "41fc9bb42f3a555dbcef05b8b6c4fb1fa63dfe80e844f66078d160d4f3235db9"
+    },
+    "original_source_inventory_sha256": "a5fb57d1c198d1dcbd58748ed22c1f1cb86d2cee8d04bb5623a7ef1b099350e4",
+    "original_source_repo": "0xSero/GLM-5.3-Flash-EXL3-3.0bpw",
+    "original_source_revision": "2a30ad09c15f779a44fa62c216f5dbe5fb0c9223",
+    "per_row": [
+      {
+        "bf16_nll_sum": 1311.0198974609375,
+        "kl_sum": 228.0864820079878,
+        "row": 0,
+        "tokens": 2047,
+        "top1_agree": 1888,
+        "variant_nll_sum": 1474.087646484375
+      },
+      {
+        "bf16_nll_sum": 916.3118896484375,
+        "kl_sum": 379.14409664156847,
+        "row": 1,
+        "tokens": 2047,
+        "top1_agree": 1876,
+        "variant_nll_sum": 1183.9093017578125
+      },
+      {
+        "bf16_nll_sum": 1341.9949951171875,
+        "kl_sum": 472.92751241102815,
+        "row": 2,
+        "tokens": 2047,
+        "top1_agree": 1799,
+        "variant_nll_sum": 1652.8939208984375
+      },
+      {
+        "bf16_nll_sum": 2598.87646484375,
+        "kl_sum": 258.8912452654913,
+        "row": 3,
+        "tokens": 2047,
+        "top1_agree": 1806,
+        "variant_nll_sum": 2764.490966796875
+      },
+      {
+        "bf16_nll_sum": 2475.73291015625,
+        "kl_sum": 192.3823925293982,
+        "row": 4,
+        "tokens": 2047,
+        "top1_agree": 1871,
+        "variant_nll_sum": 2564.822265625
+      },
+      {
+        "bf16_nll_sum": 1533.69775390625,
+        "kl_sum": 261.4854213576764,
+        "row": 5,
+        "tokens": 2047,
+        "top1_agree": 1842,
+        "variant_nll_sum": 1695.796875
+      },
+      {
+        "bf16_nll_sum": 1337.24169921875,
+        "kl_sum": 202.84407022199593,
+        "row": 6,
+        "tokens": 2047,
+        "top1_agree": 1864,
+        "variant_nll_sum": 1475.84326171875
+      },
+      {
+        "bf16_nll_sum": 2040.6866455078125,
+        "kl_sum": 281.42652338184416,
+        "row": 7,
+        "tokens": 2047,
+        "top1_agree": 1771,
+        "variant_nll_sum": 2169.2451171875
+      },
+      {
+        "bf16_nll_sum": 2233.382080078125,
+        "kl_sum": 321.9137804172933,
+        "row": 8,
+        "tokens": 2047,
+        "top1_agree": 1743,
+        "variant_nll_sum": 2445.76611328125
+      },
+      {
+        "bf16_nll_sum": 3208.794189453125,
+        "kl_sum": 115.81819050409831,
+        "row": 9,
+        "tokens": 2047,
+        "top1_agree": 1872,
+        "variant_nll_sum": 3288.620849609375
+      },
+      {
+        "bf16_nll_sum": 3021.20947265625,
+        "kl_sum": 226.5928502753377,
+        "row": 10,
+        "tokens": 2047,
+        "top1_agree": 1808,
+        "variant_nll_sum": 3133.972900390625
+      },
+      {
+        "bf16_nll_sum": 3114.482421875,
+        "kl_sum": 276.81554975919425,
+        "row": 11,
+        "tokens": 2047,
+        "top1_agree": 1761,
+        "variant_nll_sum": 3250.3095703125
+      },
+      {
+        "bf16_nll_sum": 2956.1796875,
+        "kl_sum": 301.3407573271543,
+        "row": 12,
+        "tokens": 2047,
+        "top1_agree": 1771,
+        "variant_nll_sum": 3077.1650390625
+      },
+      {
+        "bf16_nll_sum": 3656.244384765625,
+        "kl_sum": 165.6561642573215,
+        "row": 13,
+        "tokens": 2047,
+        "top1_agree": 1814,
+        "variant_nll_sum": 3730.869873046875
+      },
+      {
+        "bf16_nll_sum": 3557.0263671875,
+        "kl_sum": 200.8239115201868,
+        "row": 14,
+        "tokens": 2047,
+        "top1_agree": 1826,
+        "variant_nll_sum": 3658.1435546875
+      },
+      {
+        "bf16_nll_sum": 4152.02685546875,
+        "kl_sum": 188.87607754580677,
+        "row": 15,
+        "tokens": 2047,
+        "top1_agree": 1779,
+        "variant_nll_sum": 4228.0673828125
+      },
+      {
+        "bf16_nll_sum": 3314.6240234375,
+        "kl_sum": 258.51975647360086,
+        "row": 16,
+        "tokens": 2047,
+        "top1_agree": 1771,
+        "variant_nll_sum": 3413.27099609375
+      },
+      {
+        "bf16_nll_sum": 2853.47607421875,
+        "kl_sum": 342.5236626435071,
+        "row": 17,
+        "tokens": 2047,
+        "top1_agree": 1736,
+        "variant_nll_sum": 3060.130859375
+      },
+      {
+        "bf16_nll_sum": 2793.905029296875,
+        "kl_sum": 249.5449076462537,
+        "row": 18,
+        "tokens": 2047,
+        "top1_agree": 1846,
+        "variant_nll_sum": 2850.03564453125
+      },
+      {
+        "bf16_nll_sum": 1242.59521484375,
+        "kl_sum": 418.8780357800424,
+        "row": 19,
+        "tokens": 2047,
+        "top1_agree": 1796,
+        "variant_nll_sum": 1542.851318359375
+      },
+      {
+        "bf16_nll_sum": 1835.1287841796875,
+        "kl_sum": 478.1333914655261,
+        "row": 20,
+        "tokens": 2047,
+        "top1_agree": 1746,
+        "variant_nll_sum": 2136.976806640625
+      },
+      {
+        "bf16_nll_sum": 1695.1270751953125,
+        "kl_sum": 499.6095079788938,
+        "row": 21,
+        "tokens": 2047,
+        "top1_agree": 1749,
+        "variant_nll_sum": 2001.969970703125
+      },
+      {
+        "bf16_nll_sum": 1564.658203125,
+        "kl_sum": 548.9377562683076,
+        "row": 22,
+        "tokens": 2047,
+        "top1_agree": 1712,
+        "variant_nll_sum": 1885.785400390625
+      },
+      {
+        "bf16_nll_sum": 2119.3017578125,
+        "kl_sum": 534.7370463013649,
+        "row": 23,
+        "tokens": 2047,
+        "top1_agree": 1653,
+        "variant_nll_sum": 2505.52978515625
+      },
+      {
+        "bf16_nll_sum": 2334.0478515625,
+        "kl_sum": 433.97218376770616,
+        "row": 24,
+        "tokens": 2047,
+        "top1_agree": 1719,
+        "variant_nll_sum": 2695.0537109375
+      },
+      {
+        "bf16_nll_sum": 2306.089599609375,
+        "kl_sum": 415.5626351861283,
+        "row": 25,
+        "tokens": 2047,
+        "top1_agree": 1740,
+        "variant_nll_sum": 2472.20556640625
+      },
+      {
+        "bf16_nll_sum": 3769.322265625,
+        "kl_sum": 290.2808513622731,
+        "row": 26,
+        "tokens": 2047,
+        "top1_agree": 1745,
+        "variant_nll_sum": 3855.314453125
+      },
+      {
+        "bf16_nll_sum": 3820.609375,
+        "kl_sum": 183.06152823287994,
+        "row": 27,
+        "tokens": 2047,
+        "top1_agree": 1810,
+        "variant_nll_sum": 3893.4580078125
+      },
+      {
+        "bf16_nll_sum": 1742.9136962890625,
+        "kl_sum": 375.7889031302184,
+        "row": 28,
+        "tokens": 2047,
+        "top1_agree": 1755,
+        "variant_nll_sum": 2043.3192138671875
+      },
+      {
+        "bf16_nll_sum": 1803.598388671875,
+        "kl_sum": 383.2937702429481,
+        "row": 29,
+        "tokens": 2047,
+        "top1_agree": 1721,
+        "variant_nll_sum": 2045.150634765625
+      },
+      {
+        "bf16_nll_sum": 1638.033203125,
+        "kl_sum": 324.49653594661504,
+        "row": 30,
+        "tokens": 2047,
+        "top1_agree": 1802,
+        "variant_nll_sum": 1820.646728515625
+      },
+      {
+        "bf16_nll_sum": 1893.060546875,
+        "kl_sum": 157.63143570069224,
+        "row": 31,
+        "tokens": 2047,
+        "top1_agree": 1848,
+        "variant_nll_sum": 1987.4940185546875
+      }
+    ],
+    "perplexity_delta_fraction": 0.0929462147093898,
+    "positions": 65504,
+    "quality_accepted": false,
+    "quantization_import_policy": "Existing observer vLLM quantization-only namespace loader; real LinearEXL3 and compiled extension, no attention substitute.",
+    "runtime_accepted": false,
+    "schema": "glm53-pruned-full-trunk-quality-v1",
+    "state": "QUALITY_MEASURED",
+    "teacher_manifest_sha256": "a1604015f76d6a6b6f032ffb7e3359a770e8dd2564ca89e3b00eb8bcb4d93314",
+    "tokens": 65504,
+    "top1_agreement": 0.8738397655105031,
+    "trunk_layers": 45,
+    "variant_cross_entropy": 1.2518807668830338,
+    "variant_normalized_manifest_sha256": "905274f6030fba58f63664cc9d3f7c59ae7544130c45848c65571674e227cc4d",
+    "variant_perplexity": 3.4969136559458507
+  }
+}

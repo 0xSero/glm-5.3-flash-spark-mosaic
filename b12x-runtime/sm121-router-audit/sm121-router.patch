@@ -1,0 +1,44 @@
+--- gate_linear.py
++++ gate_linear.py
+@@ -59,12 +59,17 @@
+         is_hopper = current_platform.is_device_capability((9, 0))
+         is_blackwell = current_platform.is_device_capability_family(100)
+         is_blackwell_rtx = current_platform.is_device_capability((12, 0))
++        # Qualified only for GLM-5.3-Flash native router geometry on GB10.
++        self._sm121_glm_router = (
++            current_platform.is_device_capability((12, 1))
++            and input_size == 4096 and output_size == 288 and not bias
++        )
+         can_use_specialized_kernels = (
+             current_platform.is_cuda() and (is_hopper or is_blackwell) and not bias
+         )
+         self._can_use_ll_bf16 = (
+             current_platform.is_cuda()
+-            and (is_hopper or is_blackwell or is_blackwell_rtx)
++            and (is_hopper or is_blackwell or is_blackwell_rtx or self._sm121_glm_router)
+             and not bias
+         )
+ 
+@@ -127,7 +132,7 @@
+         # specialized router kernels above. Preserve FP32 logits when M>16
+         # falls through the low-latency BF16 kernel's range.
+         self._router_gemm_no_bias = not bias
+-        self._sm120_graph_pool_lifetime_guard = is_blackwell_rtx
++        self._sm120_graph_pool_lifetime_guard = is_blackwell_rtx or self._sm121_glm_router
+         self._can_use_cublas_bf16_fp32 = self._can_use_ll_bf16 or (
+             current_platform.is_rocm() and self._router_gemm_no_bias
+         )
+@@ -185,7 +190,12 @@
+         self, x: torch.Tensor
+     ) -> torch.Tensor | tuple[torch.Tensor, Parameter | None]:
+         # Tier 1: cuteDSL ll_bf16_gemm (SM90+, any dims)
+-        if self.allow_ll_bf16_gemm and x.shape[0] <= 16 and x.dtype == torch.bfloat16:
++        if (
++            self.allow_ll_bf16_gemm and x.shape[0] <= 16
++            and x.dtype == torch.bfloat16
++            # Clustered split-K M5-16 regressed on GB10. M3 remains unqualified.
++            and (not self._sm121_glm_router or x.shape[0] in (1, 2, 4))
++        ):
+             from vllm.model_executor.kernels.linear.cute_dsl.ll_bf16 import (
+                 ll_bf16_gemm,
+             )

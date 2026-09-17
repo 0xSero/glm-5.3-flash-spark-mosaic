@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/audit/audit_native_mtp_meta.py", line 5, in <module>
+    from vllm.v1.spec_decode.llm_base_proposer import LLMBaseProposer
+ImportError: cannot import name 'LLMBaseProposer' from 'vllm.v1.spec_decode.llm_base_proposer' (/usr/local/lib/python3.12/dist-packages/vllm/v1/spec_decode/llm_base_proposer.py)

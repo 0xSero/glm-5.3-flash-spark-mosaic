@@ -1,0 +1,152 @@
+{
+  "results": {
+    "gpqa_diamond_zeroshot": {
+      "name": "gpqa_diamond_zeroshot",
+      "alias": "gpqa_diamond_zeroshot",
+      "sample_len": 2,
+      "acc,none": 0.5,
+      "acc_stderr,none": 0.5,
+      "acc_norm,none": 0.5,
+      "acc_norm_stderr,none": 0.5
+    }
+  },
+  "group_subtasks": {},
+  "configs": {
+    "gpqa_diamond_zeroshot": {
+      "task": "gpqa_diamond_zeroshot",
+      "dataset_path": "/Users/sero/sessions/glm53-single-spark-release-20260911/benchmarks/lm-eval-bench/gpqa-local-ds",
+      "dataset_name": "gpqa_diamond",
+      "training_split": "train",
+      "validation_split": "train",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc):\n        choices = [\n            preprocess(doc[\"Incorrect Answer 1\"]),\n            preprocess(doc[\"Incorrect Answer 2\"]),\n            preprocess(doc[\"Incorrect Answer 3\"]),\n            preprocess(doc[\"Correct Answer\"]),\n        ]\n\n        random.shuffle(choices)\n        correct_answer_index = choices.index(preprocess(doc[\"Correct Answer\"]))\n\n        out_doc = {\n            \"choice1\": choices[0],\n            \"choice2\": choices[1],\n            \"choice3\": choices[2],\n            \"choice4\": choices[3],\n            \"choices\": [choices[0], choices[1], choices[2], choices[3]],\n            \"answer\": f\"({chr(65 + correct_answer_index)})\",\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "What is the correct answer to this question:{{Question}}\nChoices:\n(A) {{choice1}}\n(B) {{choice2}}\n(C) {{choice3}}\n(D) {{choice4}}\nAnswer:",
+      "doc_to_target": "answer",
+      "unsafe_code": false,
+      "doc_to_choice": [
+        "(A)",
+        "(B)",
+        "(C)",
+        "(D)"
+      ],
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "default",
+        "split": null,
+        "process_docs": "<function process_docs at 0x11cfb2e80>",
+        "fewshot_indices": null,
+        "samples": null,
+        "doc_to_text": "What is the correct answer to this question:{{Question}}\nChoices:\n(A) {{choice1}}\n(B) {{choice2}}\n(C) {{choice3}}\n(D) {{choice4}}\nAnswer:",
+        "doc_to_choice": [
+          "(A)",
+          "(B)",
+          "(C)",
+          "(D)"
+        ],
+        "doc_to_target": "answer",
+        "gen_prefix": null,
+        "fewshot_delimiter": "\n\n",
+        "target_delimiter": " "
+      },
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 2.2,
+        "model": "bench-e216-gpqa-mc",
+        "base_url": "http://spark-557f.internal:8000/v1/completions",
+        "tokenizer": "/Users/sero/sessions/glm53-single-spark-release-20260911/benchmarks/lm-eval-bench/glm53-tokenizer",
+        "api_key": "local",
+        "num_concurrent": 4,
+        "max_retries": 3,
+        "timeout": 600,
+        "config_source": "/Users/sero/sessions/glm53-single-spark-release-20260911/benchmarks/lm-eval-bench/tasks-gpqa-local/gpqa_diamond_zeroshot.yaml"
+      }
+    }
+  },
+  "versions": {
+    "gpqa_diamond_zeroshot": 2.2
+  },
+  "n-shot": {
+    "gpqa_diamond_zeroshot": 0
+  },
+  "higher_is_better": {
+    "gpqa_diamond_zeroshot": {
+      "acc": true,
+      "acc_norm": true
+    }
+  },
+  "n-samples": {
+    "gpqa_diamond_zeroshot": {
+      "original": 198,
+      "effective": 2
+    }
+  },
+  "config": {
+    "model": "local-completions",
+    "model_args": {
+      "model": "bench-e216-gpqa-mc",
+      "base_url": "http://spark-557f.internal:8000/v1/completions",
+      "tokenizer": "/Users/sero/sessions/glm53-single-spark-release-20260911/benchmarks/lm-eval-bench/glm53-tokenizer",
+      "api_key": "local",
+      "num_concurrent": 4,
+      "max_retries": 3,
+      "timeout": 600
+    },
+    "batch_size": 1,
+    "batch_sizes": [],
+    "device": "cuda:0",
+    "use_cache": null,
+    "limit": 2.0,
+    "bootstrap_iters": 100000,
+    "gen_kwargs": {},
+    "random_seed": 1234,
+    "numpy_seed": 1234,
+    "torch_seed": 1234,
+    "fewshot_seed": 1234
+  },
+  "git_hash": null,
+  "date": 1789431016.2083158,
+  "pretty_env_info": "N/A (torch not installed)",
+  "transformers_version": "5.17.0",
+  "lm_eval_version": "0.4.13",
+  "upper_git_hash": null,
+  "tokenizer_pad_token": [
+    "<|endoftext|>",
+    "154820"
+  ],
+  "tokenizer_eos_token": [
+    "<|endoftext|>",
+    "154820"
+  ],
+  "tokenizer_bos_token": [
+    null,
+    "None"
+  ],
+  "eot_token_id": 154820,
+  "max_length": 2047,
+  "task_hashes": {},
+  "model_source": "local-completions",
+  "model_name": "bench-e216-gpqa-mc",
+  "model_name_sanitized": "bench-e216-gpqa-mc",
+  "system_instruction": null,
+  "system_instruction_sha": null,
+  "fewshot_as_multiturn": null,
+  "chat_template": null,
+  "chat_template_sha": null,
+  "total_evaluation_time_seconds": "15.380624667042866"
+}

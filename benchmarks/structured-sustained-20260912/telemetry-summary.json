@@ -1,0 +1,152 @@
+{
+  "scope": "Two-second samples, not continuous maxima; no CPU temperature or power-setting changes. Full sampling requires enclosing samples and no gap over six seconds.",
+  "telemetry_sha256": "58895f0a5780bdce6c2b52a3ca158e253323165df37ba3693ec9cca0081dc343",
+  "verified_sha256": "bfc3c6a8265a14dd4196f01db520d330882359ccbad5cb7b391736ab266bd72e",
+  "summarizer_sha256": "9aaac532c3ef3686d8fd04e6338bebf0461fe7f89b1e758c3c153e89c49d601f",
+  "rows": [
+    {
+      "file": "1024-measured1.json",
+      "sha256": "a4b5224cf2040cf3e98b0c0197385d20a7adea3f98e43dbf9ef6012784dfe07b",
+      "full_interval_sampled": false,
+      "samples": 0,
+      "failed_gpu_samples": 0,
+      "max_bracket_gap_seconds": null,
+      "peak_temp_C": null,
+      "peak_power_W": null,
+      "minimum_sm_clock_MHz": null,
+      "minimum_mem_available_kB": null
+    },
+    {
+      "file": "1024-measured2.json",
+      "sha256": "b77aef31b2aadf8363784d191bb75a7476140eb146a3c8d2a0bb06f47614cb83",
+      "full_interval_sampled": false,
+      "samples": 0,
+      "failed_gpu_samples": 0,
+      "max_bracket_gap_seconds": null,
+      "peak_temp_C": null,
+      "peak_power_W": null,
+      "minimum_sm_clock_MHz": null,
+      "minimum_mem_available_kB": null
+    },
+    {
+      "file": "4096-measured1.json",
+      "sha256": "cbf090b2bb0296fbd76226700b54d68990b6bf255f6aa73e100776a52f8711d3",
+      "full_interval_sampled": true,
+      "samples": 27,
+      "failed_gpu_samples": 0,
+      "max_bracket_gap_seconds": 2.00117677799426,
+      "peak_temp_C": 74.0,
+      "peak_power_W": 63.88,
+      "minimum_sm_clock_MHz": 2405.0,
+      "minimum_mem_available_kB": 6347612
+    },
+    {
+      "file": "4096-measured2.json",
+      "sha256": "b53f6566ecf5bf70717c1d3f9662fb096f3a949e0d19785fb1699f4341abb811",
+      "full_interval_sampled": true,
+      "samples": 27,
+      "failed_gpu_samples": 0,
+      "max_bracket_gap_seconds": 2.0017114400397986,
+      "peak_temp_C": 74.0,
+      "peak_power_W": 64.16,
+      "minimum_sm_clock_MHz": 2411.0,
+      "minimum_mem_available_kB": 6115716
+    },
+    {
+      "file": "16384-measured1.json",
+      "sha256": "178a15842d5d8fdc6fef418a46e275b71faa8406b90471dad1fa5b9e7d7fe5d1",
+      "full_interval_sampled": true,
+      "samples": 41,
+      "failed_gpu_samples": 0,
+      "max_bracket_gap_seconds": 2.001451614079997,
+      "peak_temp_C": 73.0,
+      "peak_power_W": 62.41,
+      "minimum_sm_clock_MHz": 2398.0,
+      "minimum_mem_available_kB": 6006792
+    },
+    {
+      "file": "16384-measured2.json",
+      "sha256": "2541fab064fd1390444acb3f829850f638d397dd63c045546fb9dd2f3f8c0b81",
+      "full_interval_sampled": true,
+      "samples": 41,
+      "failed_gpu_samples": 0,
+      "max_bracket_gap_seconds": 2.001488919951953,
+      "peak_temp_C": 75.0,
+      "peak_power_W": 63.81,
+      "minimum_sm_clock_MHz": 2398.0,
+      "minimum_mem_available_kB": 6046640
+    },
+    {
+      "file": "65536-measured1.json",
+      "sha256": "13a614db7ac5837e2b6cc36fc0d7a6ddcff8c80c0896f1052839b811b6ced61e",
+      "full_interval_sampled": true,
+      "samples": 95,
+      "failed_gpu_samples": 0,
+      "max_bracket_gap_seconds": 2.00156955095008,
+      "peak_temp_C": 80.0,
+      "peak_power_W": 64.18,
+      "minimum_sm_clock_MHz": 2398.0,
+      "minimum_mem_available_kB": 5893192
+    },
+    {
+      "file": "65536-measured2.json",
+      "sha256": "483a2d706f53521e5829a8e94871ddf3d955ce791cc97011e4d51dafac32d1e8",
+      "full_interval_sampled": true,
+      "samples": 95,
+      "failed_gpu_samples": 0,
+      "max_bracket_gap_seconds": 2.0014629729557782,
+      "peak_temp_C": 81.0,
+      "peak_power_W": 64.39,
+      "minimum_sm_clock_MHz": 2398.0,
+      "minimum_mem_available_kB": 5835708
+    },
+    {
+      "file": "131072-measured1.json",
+      "sha256": "51c6d0ee949b507a9e8953bf094975e95534797a06a42cf8c1e34d0475c8502a",
+      "full_interval_sampled": true,
+      "samples": 167,
+      "failed_gpu_samples": 0,
+      "max_bracket_gap_seconds": 2.0017582318978384,
+      "peak_temp_C": 80.0,
+      "peak_power_W": 63.96,
+      "minimum_sm_clock_MHz": 2392.0,
+      "minimum_mem_available_kB": 5426968
+    },
+    {
+      "file": "131072-measured2.json",
+      "sha256": "ea1686a6fcaa2b39f9409d8e5e132c51317fb97400c5f2a14a677316280d7e45",
+      "full_interval_sampled": true,
+      "samples": 167,
+      "failed_gpu_samples": 0,
+      "max_bracket_gap_seconds": 2.0017515199724585,
+      "peak_temp_C": 81.0,
+      "peak_power_W": 62.96,
+      "minimum_sm_clock_MHz": 2392.0,
+      "minimum_mem_available_kB": 3351872
+    },
+    {
+      "file": "200000-measured1.json",
+      "sha256": "e94848d98ef3f89b922ae6a43a19205cd4f37e967f091b959e312e9a9682d77d",
+      "full_interval_sampled": true,
+      "samples": 243,
+      "failed_gpu_samples": 0,
+      "max_bracket_gap_seconds": 2.0014462389517576,
+      "peak_temp_C": 80.0,
+      "peak_power_W": 65.01,
+      "minimum_sm_clock_MHz": 2398.0,
+      "minimum_mem_available_kB": 5932700
+    },
+    {
+      "file": "200000-measured2.json",
+      "sha256": "ac94eb51a438d39d1d793fe01b6a55b2c6a7c8a78d8520940f5796c50327f5d3",
+      "full_interval_sampled": true,
+      "samples": 244,
+      "failed_gpu_samples": 0,
+      "max_bracket_gap_seconds": 2.0017513450002298,
+      "peak_temp_C": 81.0,
+      "peak_power_W": 63.54,
+      "minimum_sm_clock_MHz": 2398.0,
+      "minimum_mem_available_kB": 5655768
+    }
+  ]
+}

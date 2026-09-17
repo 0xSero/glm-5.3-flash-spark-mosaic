@@ -1,0 +1,55 @@
+{
+  "source_index_sha256": "825d6dc1ae4e10e7e4e744d8e556c781ab2e87b87ddc8775f2b01141ddad4327",
+  "k2_manifest_sha256": "501641b947fa56afc9ed098bdc034e59c2bd229d4fa1a1d7b80e3727f10c8ba3",
+  "source_identity": "Existing exact K2 checkpoint vs pinned original Q3 retained file inventory",
+  "protected_files": [
+    {
+      "file": "retained-00001-of-00120.safetensors",
+      "bytes": 3697263592,
+      "sha256": "5155051210040e80b6f9a011d7f3e9f68b466fdb1a43af044612b40c34882f5a",
+      "matches_q3_source_inventory": true,
+      "matches_k2_manifest": true
+    },
+    {
+      "file": "retained-00103-of-00120.safetensors",
+      "bytes": 395318088,
+      "sha256": "3817508dea3af64dd0a769314f1e306e50506bb4a18525b019bed51d242d5d27",
+      "matches_q3_source_inventory": true,
+      "matches_k2_manifest": true
+    },
+    {
+      "file": "retained-00104-of-00120.safetensors",
+      "bytes": 5368754272,
+      "sha256": "effd0d4c3d4921c23ebf2f34d6833831e19cf5931df13ab053095648455ed3a7",
+      "matches_q3_source_inventory": true,
+      "matches_k2_manifest": true
+    },
+    {
+      "file": "retained-00105-of-00120.safetensors",
+      "bytes": 5368754264,
+      "sha256": "11f3883d2507cd9e10664b542004eaed65dfc69ba9b07690c2cc97a43b30006a",
+      "matches_q3_source_inventory": true,
+      "matches_k2_manifest": true
+    },
+    {
+      "file": "retained-00106-of-00120.safetensors",
+      "bytes": 4062250032,
+      "sha256": "f9e28192b691aa4a01d9a7be5d220a7edcfd70d5601b7dc10797e08ba0c5a100",
+      "matches_q3_source_inventory": true,
+      "matches_k2_manifest": true
+    }
+  ],
+  "protected_keys": 891,
+  "mtp_view": {
+    "native_config_sha256": "0f97529bf936f823b84dc77ac0e09190e9439094e29dc8895547df8e17e4a24e",
+    "candidate_config_sha256": "6f01b4d22b1cfd19f0f6892356bd88fc2725f443a3fd29d8003f3981cc338ecf",
+    "source_index_sha256": "825d6dc1ae4e10e7e4e744d8e556c781ab2e87b87ddc8775f2b01141ddad4327",
+    "native_mtp_tensor_count": 889,
+    "index_tensor_count": 891,
+    "native_mtp_bytes": 14865185408,
+    "draft_quantization": null,
+    "mtp_experts": 288,
+    "serving_validated": false
+  },
+  "gpu_validation": false
+}

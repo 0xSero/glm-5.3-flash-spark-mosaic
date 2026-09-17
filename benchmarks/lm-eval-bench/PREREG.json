@@ -1,0 +1,27 @@
+{
+  "schema": "glm53-lm-eval-bench-prereg-v1",
+  "created_utc": "2026-09-14T13:10:00Z",
+  "author": "driver run 5 (user-directed benchmark campaign)",
+  "purpose": "Reality-check the panel-KL ranking: do the pruned 3.05bpw 25%-REAP points lose real task quality? Target point = R216 (measured panel leader: KL 0.77709, top-1 68.53%, PPL 6.447, samples 12/20; receipt r216/receipts/r216-g4-summary.json); reference = A0 (unpruned 2.05bpw, receipt leaderboard).",
+  "suite": [
+    {"task": "mmlu", "variant": "full 57-subject loglikelihood MC (14,042 docs)", "num_fewshot": 0, "metric": "acc, acc_stderr"},
+    {"task": "gpqa_diamond_zeroshot", "variant": "loglikelihood MC (198 docs)", "num_fewshot": 0, "metric": "acc, acc_norm"},
+    {"task": "gpqa_diamond_cot_zeroshot", "variant": "generative CoT, answer extraction (198 docs)", "num_fewshot": 0, "metric": "acc", "note": "temperature 0 greedy via harness default gen kwargs"}
+  ],
+  "later_phase": {
+    "task": "terminal-bench 2.1 (separate harness, agentic, docker-per-task on omarchy)",
+    "prereg_note": "preregistered separately in TBENCH-PREREG.json before any tbench results; runs after the lm-eval suite is confirmed running"
+  },
+  "harness": {"name": "lm-evaluation-harness", "version": "0.4.13 (omarchy ~/lm-eval-venv, new run/ls CLI)", "model_type": "local-completions", "model_args": "base_url=<point>,tokenizer=/home/sero/glm53-tokenizer,api_key=local,num_concurrent=16,max_retries=5,timeout=1800", "seed": 1234, "apply_chat_template": false, "log_samples": true},
+  "points": {
+    "a0_unpruned_2p05bpw": {"base_url": "http://spark-2384.internal:8000", "server": "glm53-a0-bench on spark-2384", "artifact": "turboderp GLM-5.3-Flash EXL3 2.05bpw unpruned (sealed base)"},
+    "r216_leader_3p05bpw": {"base_url": "http://spark-557f.internal:8000", "server": "glm53-r216-bench on spark-557f", "artifact": "glm53-3p05-pruned-r216, plan sha 62300f562bd7d239bdf28e5169ccc1114f4be6bd94f1b35fc80c9a0c84a3baf3"}
+  },
+  "serving_config_note": "Both points relaunched 2026-09-14T12:56-57Z in BENCH-TUNE for throughput: identical model artifacts + exl3_plain overlay + 262144 context + vision + kv fp8_e4m3 + dsa backends; ONLY batching knobs changed (--chunked-prefill-size 4096 --max-prefill-tokens 8192 --max-running-requests 32, SGLANG_EXL3_MAX_BATCH_TOKENS 256->8192) vs the panel-tuned config (256/256/1). Panel-KL receipts remain tied to the panel-tuned config; benchmark rows are internally comparable (same bench-tune on both points). Recorder stat-mode dropped on the bench containers (observability only). Original panel-era container logs + full docker inspects preserved: 557f /home/valentine/bench/r216-*, 2384 /home/sero/w2port/bench/rec-*; panel-tune restore = relaunch from the preserved inspect.",
+  "fairness_guards": [
+    "Same lm-eval version, same task configs, same seed, same limits (none) for both points",
+    "Both servers bench-tuned identically; both artifacts share the same base weights and overlay",
+    "No results are read until both runs complete or fail; results receipts copied to the Mac project dir benchmarks/lm-eval-bench/"
+  ],
+  "acceptance": "A point's benchmark row counts only with a completed lm-eval results JSON (all three tasks) + the run log; failed/partial runs are preserved and reported as failures, never partial numbers."
+}

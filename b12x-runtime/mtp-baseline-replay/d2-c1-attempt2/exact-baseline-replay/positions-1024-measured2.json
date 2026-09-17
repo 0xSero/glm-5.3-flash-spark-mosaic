@@ -1,0 +1,254 @@
+{
+  "after": {
+    "depth": 2,
+    "identity": {
+      "container_id": "ea503924aca7beb4eb0efd9b15de85c1018fd2fb1c2880089d3a415b6d55e0b8",
+      "image_id": "sha256:afb74c791853d438810b27bf28994128f5baa2a3bf5c9b50b9ecdad7b9afffd5",
+      "processes": [
+        [
+          "1367590",
+          "Sat",
+          "Sep",
+          "12",
+          "11:04:29",
+          "2026",
+          "python3"
+        ],
+        [
+          "1368108",
+          "Sat",
+          "Sep",
+          "12",
+          "11:04:57",
+          "2026",
+          "python3"
+        ],
+        [
+          "1368109",
+          "Sat",
+          "Sep",
+          "12",
+          "11:04:57",
+          "2026",
+          "VLLM::EngineCor"
+        ]
+      ],
+      "started_at": "2026-09-12T09:04:30.399264588Z"
+    },
+    "model": "glm-5.3-flash",
+    "observed_utc": "2026-09-12T09:22:21.783081+00:00",
+    "schema": "glm53-position-counters-v1",
+    "series": [
+      {
+        "labels": {
+          "engine": "0",
+          "model_name": "glm-5.3-flash"
+        },
+        "metric": "vllm:spec_decode_num_accepted_tokens_created",
+        "value": 1789204753.4394317
+      },
+      {
+        "labels": {
+          "engine": "0",
+          "model_name": "glm-5.3-flash",
+          "position": "0"
+        },
+        "metric": "vllm:spec_decode_num_accepted_tokens_per_pos_created",
+        "value": 1789204753.4414365
+      },
+      {
+        "labels": {
+          "engine": "0",
+          "model_name": "glm-5.3-flash",
+          "position": "1"
+        },
+        "metric": "vllm:spec_decode_num_accepted_tokens_per_pos_created",
+        "value": 1789204753.44144
+      },
+      {
+        "labels": {
+          "engine": "0",
+          "model_name": "glm-5.3-flash",
+          "position": "0"
+        },
+        "metric": "vllm:spec_decode_num_accepted_tokens_per_pos_total",
+        "value": 916
+      },
+      {
+        "labels": {
+          "engine": "0",
+          "model_name": "glm-5.3-flash",
+          "position": "1"
+        },
+        "metric": "vllm:spec_decode_num_accepted_tokens_per_pos_total",
+        "value": 908
+      },
+      {
+        "labels": {
+          "engine": "0",
+          "model_name": "glm-5.3-flash"
+        },
+        "metric": "vllm:spec_decode_num_accepted_tokens_total",
+        "value": 1824
+      },
+      {
+        "labels": {
+          "engine": "0",
+          "model_name": "glm-5.3-flash"
+        },
+        "metric": "vllm:spec_decode_num_draft_tokens_created",
+        "value": 1789204753.4392292
+      },
+      {
+        "labels": {
+          "engine": "0",
+          "model_name": "glm-5.3-flash"
+        },
+        "metric": "vllm:spec_decode_num_draft_tokens_total",
+        "value": 1836
+      },
+      {
+        "labels": {
+          "engine": "0",
+          "model_name": "glm-5.3-flash"
+        },
+        "metric": "vllm:spec_decode_num_drafts_created",
+        "value": 1789204753.4370327
+      },
+      {
+        "labels": {
+          "engine": "0",
+          "model_name": "glm-5.3-flash"
+        },
+        "metric": "vllm:spec_decode_num_drafts_total",
+        "value": 919
+      }
+    ]
+  },
+  "before": {
+    "depth": 2,
+    "identity": {
+      "container_id": "ea503924aca7beb4eb0efd9b15de85c1018fd2fb1c2880089d3a415b6d55e0b8",
+      "image_id": "sha256:afb74c791853d438810b27bf28994128f5baa2a3bf5c9b50b9ecdad7b9afffd5",
+      "processes": [
+        [
+          "1367590",
+          "Sat",
+          "Sep",
+          "12",
+          "11:04:29",
+          "2026",
+          "python3"
+        ],
+        [
+          "1368108",
+          "Sat",
+          "Sep",
+          "12",
+          "11:04:57",
+          "2026",
+          "python3"
+        ],
+        [
+          "1368109",
+          "Sat",
+          "Sep",
+          "12",
+          "11:04:57",
+          "2026",
+          "VLLM::EngineCor"
+        ]
+      ],
+      "started_at": "2026-09-12T09:04:30.399264588Z"
+    },
+    "model": "glm-5.3-flash",
+    "observed_utc": "2026-09-12T09:21:43.765888+00:00",
+    "schema": "glm53-position-counters-v1",
+    "series": [
+      {
+        "labels": {
+          "engine": "0",
+          "model_name": "glm-5.3-flash"
+        },
+        "metric": "vllm:spec_decode_num_accepted_tokens_created",
+        "value": 1789204753.4394317
+      },
+      {
+        "labels": {
+          "engine": "0",
+          "model_name": "glm-5.3-flash",
+          "position": "0"
+        },
+        "metric": "vllm:spec_decode_num_accepted_tokens_per_pos_created",
+        "value": 1789204753.4414365
+      },
+      {
+        "labels": {
+          "engine": "0",
+          "model_name": "glm-5.3-flash",
+          "position": "1"
+        },
+        "metric": "vllm:spec_decode_num_accepted_tokens_per_pos_created",
+        "value": 1789204753.44144
+      },
+      {
+        "labels": {
+          "engine": "0",
+          "model_name": "glm-5.3-flash",
+          "position": "0"
+        },
+        "metric": "vllm:spec_decode_num_accepted_tokens_per_pos_total",
+        "value": 688
+      },
+      {
+        "labels": {
+          "engine": "0",
+          "model_name": "glm-5.3-flash",
+          "position": "1"
+        },
+        "metric": "vllm:spec_decode_num_accepted_tokens_per_pos_total",
+        "value": 682
+      },
+      {
+        "labels": {
+          "engine": "0",
+          "model_name": "glm-5.3-flash"
+        },
+        "metric": "vllm:spec_decode_num_accepted_tokens_total",
+        "value": 1370
+      },
+      {
+        "labels": {
+          "engine": "0",
+          "model_name": "glm-5.3-flash"
+        },
+        "metric": "vllm:spec_decode_num_draft_tokens_created",
+        "value": 1789204753.4392292
+      },
+      {
+        "labels": {
+          "engine": "0",
+          "model_name": "glm-5.3-flash"
+        },
+        "metric": "vllm:spec_decode_num_draft_tokens_total",
+        "value": 1380
+      },
+      {
+        "labels": {
+          "engine": "0",
+          "model_name": "glm-5.3-flash"
+        },
+        "metric": "vllm:spec_decode_num_drafts_created",
+        "value": 1789204753.4370327
+      },
+      {
+        "labels": {
+          "engine": "0",
+          "model_name": "glm-5.3-flash"
+        },
+        "metric": "vllm:spec_decode_num_drafts_total",
+        "value": 691
+      }
+    ]
+  }
+}

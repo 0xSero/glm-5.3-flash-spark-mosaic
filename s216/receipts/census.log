@@ -1,0 +1,72 @@
++ IMG=ghcr.io/0xsero/glm53-flash-exl3-plain@sha256:85cb3fa86d31a781b94dcf10ee168adf096cfeaac14d2f1e6c560504e58e4eed
++ DST=/home/valentine/models/glm53-3p05-pruned-s216
++ W=/home/valentine/s216
++ echo '### pruned s216 stock census'
+### pruned s216 stock census
++ R -m exl3_plain_sglang_overlay.census /home/valentine/models/glm53-3p05-pruned-s216 --out /home/valentine/s216/census-pruned-s216-stock.json
++ docker run --rm -v /home/valentine/models:/home/valentine/models:ro -v /home/valentine/s216:/home/valentine/s216 --entrypoint python3 ghcr.io/0xsero/glm53-flash-exl3-plain@sha256:85cb3fa86d31a781b94dcf10ee168adf096cfeaac14d2f1e6c560504e58e4eed -m exl3_plain_sglang_overlay.census /home/valentine/models/glm53-3p05-pruned-s216 --out /home/valentine/s216/census-pruned-s216-stock.json
+/sgl-workspace/sglang/python/sglang/srt/layers/quantization/awq/awq.py:53: UserWarning: Only CUDA, HIP and XPU support AWQ currently.
+  warnings.warn(f"Only CUDA, HIP and XPU support AWQ currently.")
+/sgl-workspace/sglang/python/sglang/srt/layers/quantization/gguf.py:69: UserWarning: Only CUDA, MUSA and NPU support GGUF quantization currently.
+  warnings.warn(f"Only CUDA, MUSA and NPU support GGUF quantization currently.")
+census: PROBLEM layer 3: 216 experts, expected 288
+census: PROBLEM layer 4: 216 experts, expected 288
+census: PROBLEM layer 5: 216 experts, expected 288
+census: PROBLEM layer 6: 216 experts, expected 288
+census: PROBLEM layer 7: 216 experts, expected 288
+census: PROBLEM layer 8: 216 experts, expected 288
+census: PROBLEM layer 9: 216 experts, expected 288
+census: PROBLEM layer 10: 216 experts, expected 288
+census: PROBLEM layer 11: 216 experts, expected 288
+census: PROBLEM layer 12: 216 experts, expected 288
+census: PROBLEM layer 13: 216 experts, expected 288
+census: PROBLEM layer 14: 216 experts, expected 288
+census: PROBLEM layer 15: 216 experts, expected 288
+census: PROBLEM layer 16: 216 experts, expected 288
+census: PROBLEM layer 17: 216 experts, expected 288
+census: PROBLEM layer 18: 216 experts, expected 288
+census: PROBLEM layer 19: 216 experts, expected 288
+census: PROBLEM layer 20: 216 experts, expected 288
+census: PROBLEM layer 21: 216 experts, expected 288
+census: PROBLEM layer 22: 216 experts, expected 288
+census: PROBLEM layer 23: 216 experts, expected 288
+census: PROBLEM layer 24: 216 experts, expected 288
+census: PROBLEM layer 25: 216 experts, expected 288
+census: PROBLEM layer 26: 216 experts, expected 288
+census: PROBLEM layer 27: 216 experts, expected 288
+census: PROBLEM layer 28: 216 experts, expected 288
+census: PROBLEM layer 29: 216 experts, expected 288
+census: PROBLEM layer 30: 216 experts, expected 288
+census: PROBLEM layer 31: 216 experts, expected 288
+census: PROBLEM layer 32: 216 experts, expected 288
+census: PROBLEM layer 33: 216 experts, expected 288
+census: PROBLEM layer 34: 216 experts, expected 288
+census: PROBLEM layer 35: 216 experts, expected 288
+census: PROBLEM layer 36: 216 experts, expected 288
+census: PROBLEM layer 37: 216 experts, expected 288
+census: PROBLEM layer 38: 216 experts, expected 288
+census: PROBLEM layer 39: 216 experts, expected 288
+census: PROBLEM layer 40: 216 experts, expected 288
+census: PROBLEM layer 41: 216 experts, expected 288
+census: PROBLEM layer 42: 216 experts, expected 288
+census: PROBLEM layer 43: 216 experts, expected 288
+census: PROBLEM layer 44: 216 experts, expected 288
+census: 115266 tensors, 17 shards, codebook=mul1, expert layers=3..45 (43), expert bits={'3': 28080}
+census: dense modules=440 native-capable=440; moe native=True []
++ echo exit=2
+exit=2
++ echo '### pruned s216 plan-aware census'
+### pruned s216 plan-aware census
++ R /home/valentine/s216/census_plan_aware.py /home/valentine/models/glm53-3p05-pruned-s216 /home/valentine/s216/census-pruned-s216-plan-aware.json
++ docker run --rm -v /home/valentine/models:/home/valentine/models:ro -v /home/valentine/s216:/home/valentine/s216 --entrypoint python3 ghcr.io/0xsero/glm53-flash-exl3-plain@sha256:85cb3fa86d31a781b94dcf10ee168adf096cfeaac14d2f1e6c560504e58e4eed /home/valentine/s216/census_plan_aware.py /home/valentine/models/glm53-3p05-pruned-s216 /home/valentine/s216/census-pruned-s216-plan-aware.json
+/sgl-workspace/sglang/python/sglang/srt/layers/quantization/awq/awq.py:53: UserWarning: Only CUDA, HIP and XPU support AWQ currently.
+  warnings.warn(f"Only CUDA, HIP and XPU support AWQ currently.")
+/sgl-workspace/sglang/python/sglang/srt/layers/quantization/gguf.py:69: UserWarning: Only CUDA, MUSA and NPU support GGUF quantization currently.
+  warnings.warn(f"Only CUDA, MUSA and NPU support GGUF quantization currently.")
+census(plan-aware): 115266 tensors, 17 shards, codebook=mul1, expert layers=3..45 (43), expert bits={'3': 28080}
+  stock contract_ok=False expected-by-plan problems=42 residual=[] missing=[]
+  plan-aware contract_ok=True moe native=True [] dense native=440/440
++ echo exit=0
+exit=0
++ echo CENSUS_DONE
+CENSUS_DONE

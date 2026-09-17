@@ -1,0 +1,11 @@
+{
+  "production_loader": "v1.worker.gpu.spec_decode.eagle.utils.load_eagle_model",
+  "native_keys": 891,
+  "loaded_runtime_parameters": 27,
+  "strict_completeness_pass": true,
+  "draft_quantization": null,
+  "draft_experts": 288,
+  "target_quantization": "Exl3Config",
+  "all_weights_meta": true,
+  "cuda_allocated_bytes": 16777216
+}

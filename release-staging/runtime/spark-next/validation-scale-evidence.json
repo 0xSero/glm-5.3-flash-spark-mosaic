@@ -1,0 +1,10 @@
+{
+  "state": "PASS",
+  "scope": "CPU key-count scale test using actual pinned index names with synthetic zero-byte tensor payloads; not a real model hash/weight acceptance",
+  "tensor_count": 583090,
+  "weight_files": 133,
+  "peak_process_rss_bytes": 422313984,
+  "elapsed_seconds": 2.2282112919492647,
+  "below_3gib_process_rss": true,
+  "docker_memory_cgroup_peak_measured": false
+}

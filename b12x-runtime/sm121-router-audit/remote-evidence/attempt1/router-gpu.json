@@ -1,0 +1,10 @@
+{
+  "state": "FAIL",
+  "full_model_quality_claim": false,
+  "input_kind": "deterministic synthetic BF16; source-exact native router weights",
+  "rows": [],
+  "allow_bf16_reduced_precision_reduction": true,
+  "source_sha256": "b59a74a930a5e870cb442b5198ca213cff9aa5df90916bfc7a72f174c69fe378",
+  "error": "AssertionError('tensor model parallel group is not initialized')",
+  "traceback": "Traceback (most recent call last):\n  File \"/probe/gpu_router_probe.py\", line 24, in <module>\n    gate=GateLinear(4096,288,out_dtype=torch.float32,params_dtype=torch.bfloat16)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/vllm/model_executor/layers/fused_moe/router/gate_linear.py\", line 76, in __init__\n    super().__init__(\n  File \"/usr/local/lib/python3.12/dist-packages/vllm/model_executor/layers/linear.py\", line 340, in __init__\n    super().__init__(\n  File \"/usr/local/lib/python3.12/dist-packages/vllm/model_executor/layers/linear.py\", line 277, in __init__\n    tp_rank if tp_rank is not None else get_tensor_model_parallel_rank()\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/vllm/distributed/parallel_state.py\", line 2084, in get_tensor_model_parallel_rank\n    return get_tp_group().rank_in_group\n           ^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/vllm/distributed/parallel_state.py\", line 1399, in get_tp_group\n    assert _TP is not None, \"tensor model parallel group is not initialized\"\n           ^^^^^^^^^^^^^^^\nAssertionError: tensor model parallel group is not initialized\n"
+}

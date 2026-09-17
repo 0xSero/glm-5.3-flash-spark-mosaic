@@ -1,0 +1,29 @@
+{
+  "probe": "actual V2 draft-only real-weight load, no target weights or serving forward",
+  "production_loader": "v1.worker.gpu.spec_decode.eagle.utils.load_eagle_model",
+  "native_index_keys": 891,
+  "strict_tracking": [
+    {
+      "runtime_parameters": 26,
+      "loaded_parameters": 27,
+      "strict_completeness_pass": true
+    }
+  ],
+  "draft_quantization": null,
+  "draft_experts": 288,
+  "target_quantization": "Exl3Config",
+  "all_parameters_cuda": true,
+  "cuda_allocated_bytes": 17419522048,
+  "source_value_comparisons": [
+    {
+      "source": "model.language_model.embed_tokens.weight",
+      "runtime": "model.embed_tokens.weight",
+      "samples_equal": true
+    },
+    {
+      "source": "lm_head.weight",
+      "runtime": "model.layers.45.shared_head.head.weight",
+      "samples_equal": true
+    }
+  ]
+}

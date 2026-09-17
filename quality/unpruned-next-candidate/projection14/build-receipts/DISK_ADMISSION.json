@@ -1,0 +1,10 @@
+{
+  "state": "ADMITTED",
+  "free_bytes": 100304740352,
+  "new_k3_transfer_bytes": 22012843776,
+  "new_rewritten_output_upper_bytes": 17180988544,
+  "metadata_overhead_reserve": 1073741824,
+  "required_floor_bytes": 10737418240,
+  "projected_free_after": 60037166208,
+  "source_deletion": false
+}

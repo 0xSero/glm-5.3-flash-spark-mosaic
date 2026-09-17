@@ -1,0 +1,347 @@
+{
+  "adapter_sha256": "a69415db9473409dc03a3aaf444d4ba0078cde84d693a88a798438edde277c84",
+  "artifact_mode": "mixed_projection_k2_gateup_k3_down_candidate",
+  "baseline_evaluator_sha256": "0c02949a77d28fe7c45786e964a1241cbba8d33b076335ca6a08a4fcac28729a",
+  "bf16_cross_entropy": 1.1630037677654943,
+  "bf16_perplexity": 3.199529500063886,
+  "candidate_config_sha256": "a8f05d1b6fbbb14adb3cc358e22435253e6678910cf9aef49e7bd2716472292f",
+  "candidate_index_sha256": "ad938eeb66f07759668a037cba2d50fa793f9a888f54151fc8a712dd0e1235b2",
+  "candidate_manifest_sha256": "80967e71922a534a3ab2872ad90edc4aacaf958bcb0a060699e599318727556d",
+  "capture_policy": "All45 decoder layers, propagated hidden streams and previous DSA attention token indices, final native RMSNorm.",
+  "default_bits": 2,
+  "dependency_sha256": {
+    "glm53_exl3_tp4": "488b6f93183dde8c5c5a8248b46ccf22875e8619ddc0a3aa48115da34578a1a7",
+    "release_route_capture_v2": "3c5f5558d2a248fd375944067f992619a43fb3ed982b6eb6b30570b7ac1b15b8"
+  },
+  "experts_per_layer": 288,
+  "fixture_manifest_sha256": "46255621cd2da8e05546edc3498cfbee518da092af2f44ae243f79da97c0f00b",
+  "head_arithmetic": "BF16 torch.nn.functional.linear, then FP32 logits; vocabulary chunks4096",
+  "kl_bf16_to_variant": 0.4065290764104567,
+  "layer_projection_bits": {
+    "20": {
+      "down_proj": 3
+    },
+    "22": {
+      "down_proj": 3
+    },
+    "23": {
+      "down_proj": 3
+    },
+    "26": {
+      "down_proj": 3
+    },
+    "27": {
+      "down_proj": 3
+    },
+    "28": {
+      "down_proj": 3
+    },
+    "31": {
+      "down_proj": 3
+    },
+    "32": {
+      "down_proj": 3
+    },
+    "35": {
+      "down_proj": 3
+    },
+    "36": {
+      "down_proj": 3
+    },
+    "37": {
+      "down_proj": 3
+    },
+    "5": {
+      "down_proj": 3
+    },
+    "6": {
+      "down_proj": 3
+    },
+    "7": {
+      "down_proj": 3
+    }
+  },
+  "mixed_validator_sha256": "e584022a66e15e35afd88549cd05c80ae5f140cb22f1fe09cf6c4b2425381023",
+  "mtp_policy": "Preserved artifact MTP excluded from target-trunk quality, matching teacher baseline.",
+  "native_import_sha256": {
+    "exllamav3.modules.quant.exl3": "9029b566a8908e8b2aa3ecb0e1e6c73190cfc1368982b26bfbaf6be886149092",
+    "exllamav3_ext": "0eeb983b09dfe33451b8bc7625174320529b986a73f60b58bf4ebfa9f43ad9c0",
+    "reap.glm53_exl3_native": "22bc0749d74787e9df7ca0a06ec0fc257e4cf58cc5f9c2f315088d2ed5694380",
+    "vllm.model_executor.layers.quantization.exl3": "41fc9bb42f3a555dbcef05b8b6c4fb1fa63dfe80e844f66078d160d4f3235db9"
+  },
+  "original_source_inventory_sha256": null,
+  "original_source_repo": null,
+  "original_source_revision": null,
+  "per_row": [
+    {
+      "bf16_nll_sum": 1311.0198974609375,
+      "kl_sum": 668.3638711543754,
+      "row": 0,
+      "tokens": 2047,
+      "top1_agree": 1748,
+      "variant_nll_sum": 1913.7291259765625
+    },
+    {
+      "bf16_nll_sum": 916.3118896484375,
+      "kl_sum": 1285.39729542844,
+      "row": 1,
+      "tokens": 2047,
+      "top1_agree": 1600,
+      "variant_nll_sum": 1944.03955078125
+    },
+    {
+      "bf16_nll_sum": 1341.9949951171875,
+      "kl_sum": 1469.1410103142262,
+      "row": 2,
+      "tokens": 2047,
+      "top1_agree": 1516,
+      "variant_nll_sum": 2571.114013671875
+    },
+    {
+      "bf16_nll_sum": 2598.87646484375,
+      "kl_sum": 747.9097270965576,
+      "row": 3,
+      "tokens": 2047,
+      "top1_agree": 1635,
+      "variant_nll_sum": 3123.5986328125
+    },
+    {
+      "bf16_nll_sum": 2475.73291015625,
+      "kl_sum": 543.1755151851103,
+      "row": 4,
+      "tokens": 2047,
+      "top1_agree": 1728,
+      "variant_nll_sum": 2809.53515625
+    },
+    {
+      "bf16_nll_sum": 1533.69775390625,
+      "kl_sum": 680.3350957306102,
+      "row": 5,
+      "tokens": 2047,
+      "top1_agree": 1718,
+      "variant_nll_sum": 2076.5439453125
+    },
+    {
+      "bf16_nll_sum": 1337.24169921875,
+      "kl_sum": 583.2432630555704,
+      "row": 6,
+      "tokens": 2047,
+      "top1_agree": 1737,
+      "variant_nll_sum": 1852.99560546875
+    },
+    {
+      "bf16_nll_sum": 2040.6866455078125,
+      "kl_sum": 677.0650255195796,
+      "row": 7,
+      "tokens": 2047,
+      "top1_agree": 1619,
+      "variant_nll_sum": 2639.7236328125
+    },
+    {
+      "bf16_nll_sum": 2233.382080078125,
+      "kl_sum": 816.3899258039892,
+      "row": 8,
+      "tokens": 2047,
+      "top1_agree": 1561,
+      "variant_nll_sum": 2989.52880859375
+    },
+    {
+      "bf16_nll_sum": 3208.794189453125,
+      "kl_sum": 405.618511101231,
+      "row": 9,
+      "tokens": 2047,
+      "top1_agree": 1666,
+      "variant_nll_sum": 3545.46044921875
+    },
+    {
+      "bf16_nll_sum": 3021.20947265625,
+      "kl_sum": 560.4295066297054,
+      "row": 10,
+      "tokens": 2047,
+      "top1_agree": 1631,
+      "variant_nll_sum": 3494.9658203125
+    },
+    {
+      "bf16_nll_sum": 3114.482421875,
+      "kl_sum": 698.7568806512281,
+      "row": 11,
+      "tokens": 2047,
+      "top1_agree": 1603,
+      "variant_nll_sum": 3597.58251953125
+    },
+    {
+      "bf16_nll_sum": 2956.1796875,
+      "kl_sum": 752.0138995796442,
+      "row": 12,
+      "tokens": 2047,
+      "top1_agree": 1569,
+      "variant_nll_sum": 3677.538330078125
+    },
+    {
+      "bf16_nll_sum": 3656.244384765625,
+      "kl_sum": 434.4411427695304,
+      "row": 13,
+      "tokens": 2047,
+      "top1_agree": 1648,
+      "variant_nll_sum": 3885.08837890625
+    },
+    {
+      "bf16_nll_sum": 3557.0263671875,
+      "kl_sum": 500.1118517490104,
+      "row": 14,
+      "tokens": 2047,
+      "top1_agree": 1644,
+      "variant_nll_sum": 3867.3955078125
+    },
+    {
+      "bf16_nll_sum": 4152.02685546875,
+      "kl_sum": 399.3867943370715,
+      "row": 15,
+      "tokens": 2047,
+      "top1_agree": 1655,
+      "variant_nll_sum": 4336.57861328125
+    },
+    {
+      "bf16_nll_sum": 3314.6240234375,
+      "kl_sum": 583.2334858868271,
+      "row": 16,
+      "tokens": 2047,
+      "top1_agree": 1599,
+      "variant_nll_sum": 3680.491455078125
+    },
+    {
+      "bf16_nll_sum": 2853.47607421875,
+      "kl_sum": 752.5792227908969,
+      "row": 17,
+      "tokens": 2047,
+      "top1_agree": 1589,
+      "variant_nll_sum": 3457.79541015625
+    },
+    {
+      "bf16_nll_sum": 2793.905029296875,
+      "kl_sum": 607.4507430233061,
+      "row": 18,
+      "tokens": 2047,
+      "top1_agree": 1696,
+      "variant_nll_sum": 3112.87060546875
+    },
+    {
+      "bf16_nll_sum": 1242.59521484375,
+      "kl_sum": 1294.3951456211507,
+      "row": 19,
+      "tokens": 2047,
+      "top1_agree": 1558,
+      "variant_nll_sum": 2385.67529296875
+    },
+    {
+      "bf16_nll_sum": 1835.1287841796875,
+      "kl_sum": 1316.8535799644887,
+      "row": 20,
+      "tokens": 2047,
+      "top1_agree": 1478,
+      "variant_nll_sum": 2898.9912109375
+    },
+    {
+      "bf16_nll_sum": 1695.1270751953125,
+      "kl_sum": 1411.9967162162066,
+      "row": 21,
+      "tokens": 2047,
+      "top1_agree": 1497,
+      "variant_nll_sum": 2811.84130859375
+    },
+    {
+      "bf16_nll_sum": 1564.658203125,
+      "kl_sum": 1462.6942814718932,
+      "row": 22,
+      "tokens": 2047,
+      "top1_agree": 1439,
+      "variant_nll_sum": 2705.86279296875
+    },
+    {
+      "bf16_nll_sum": 2119.3017578125,
+      "kl_sum": 1315.2889447622001,
+      "row": 23,
+      "tokens": 2047,
+      "top1_agree": 1448,
+      "variant_nll_sum": 3112.7470703125
+    },
+    {
+      "bf16_nll_sum": 2334.0478515625,
+      "kl_sum": 1109.0065740719438,
+      "row": 24,
+      "tokens": 2047,
+      "top1_agree": 1521,
+      "variant_nll_sum": 3286.857666015625
+    },
+    {
+      "bf16_nll_sum": 2306.089599609375,
+      "kl_sum": 1141.7802480254322,
+      "row": 25,
+      "tokens": 2047,
+      "top1_agree": 1516,
+      "variant_nll_sum": 3196.54833984375
+    },
+    {
+      "bf16_nll_sum": 3769.322265625,
+      "kl_sum": 704.8791039660573,
+      "row": 26,
+      "tokens": 2047,
+      "top1_agree": 1586,
+      "variant_nll_sum": 4160.49072265625
+    },
+    {
+      "bf16_nll_sum": 3820.609375,
+      "kl_sum": 479.86184621043503,
+      "row": 27,
+      "tokens": 2047,
+      "top1_agree": 1684,
+      "variant_nll_sum": 4094.68994140625
+    },
+    {
+      "bf16_nll_sum": 1742.9136962890625,
+      "kl_sum": 1017.3315720986575,
+      "row": 28,
+      "tokens": 2047,
+      "top1_agree": 1554,
+      "variant_nll_sum": 2718.748779296875
+    },
+    {
+      "bf16_nll_sum": 1803.598388671875,
+      "kl_sum": 958.48940012604,
+      "row": 29,
+      "tokens": 2047,
+      "top1_agree": 1558,
+      "variant_nll_sum": 2528.853515625
+    },
+    {
+      "bf16_nll_sum": 1638.033203125,
+      "kl_sum": 768.7876565624028,
+      "row": 30,
+      "tokens": 2047,
+      "top1_agree": 1661,
+      "variant_nll_sum": 2235.89501953125
+    },
+    {
+      "bf16_nll_sum": 1893.060546875,
+      "kl_sum": 482.87278428673744,
+      "row": 31,
+      "tokens": 2047,
+      "top1_agree": 1681,
+      "variant_nll_sum": 2272.49365234375
+    }
+  ],
+  "perplexity_delta_fraction": 0.3738434343302852,
+  "positions": 65504,
+  "quality_accepted": false,
+  "quantization_import_policy": "Existing observer vLLM quantization-only namespace loader; real LinearEXL3 and compiled extension, no attention substitute.",
+  "runtime_accepted": false,
+  "schema": "glm53-mixed-full-trunk-quality-v1",
+  "state": "QUALITY_MEASURED",
+  "teacher_manifest_sha256": "a1604015f76d6a6b6f032ffb7e3359a770e8dd2564ca89e3b00eb8bcb4d93314",
+  "tokens": 65504,
+  "top1_agreement": 0.7838147288715193,
+  "trunk_layers": 45,
+  "variant_cross_entropy": 1.4806160062595175,
+  "variant_normalized_manifest_sha256": "ba1f56e7c1fe5695fae75ba8c7c332d829208378fb341428fcd0388f36dbaa5e",
+  "variant_perplexity": 4.395652596608829
+}

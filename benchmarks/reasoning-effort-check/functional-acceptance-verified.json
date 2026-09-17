@@ -1,0 +1,231 @@
+{
+  "verified_utc": "2026-09-12T00:23:14.518579+00:00",
+  "runtime_unchanged": true,
+  "long_context_pass": true,
+  "long_context_prompt_tokens": 262016,
+  "long_context_output_tokens": 60,
+  "budget": 262144,
+  "image_pass_count": 4,
+  "video_pass_count": 2,
+  "native_mtp_all_cells_verified": true,
+  "cells": [
+    {
+      "id": "long_context",
+      "native_timing": {
+        "status": "matched_isolated_cell",
+        "request_count": 1,
+        "sum_request_prefill_seconds": 658.6983648989117,
+        "sum_request_decode_seconds": 4.009255588054657,
+        "mean_request_prefill_seconds": 658.6983648989117,
+        "mean_request_decode_seconds": 4.009255588054657,
+        "prompt_tokens_per_sum_request_prefill_second": 397.7784278244121,
+        "reported_counter_deltas": {
+          "vllm:request_prompt_tokens_count": 1.0,
+          "vllm:request_decode_time_seconds_sum": 4.009255588054657,
+          "vllm:request_generation_tokens_sum": 60.0,
+          "vllm:request_decode_time_seconds_count": 1.0,
+          "vllm:request_generation_tokens_count": 1.0,
+          "vllm:request_prompt_tokens_sum": 262016.0,
+          "vllm:request_prefill_time_seconds_count": 1.0,
+          "vllm:request_prefill_time_seconds_sum": 658.6983648989117
+        },
+        "scope": "vLLM request-level timing observations. Concurrent request durations overlap; these sums are not GPU-exclusive time or aggregate throughput. No native decode rate inferred because speculative first-token accounting differs."
+      },
+      "mtp": {
+        "native_mtp_configured": true,
+        "drafted_tokens": 30.0,
+        "accepted_tokens": 30.0,
+        "accepted_fraction": 1.0,
+        "passed": true,
+        "scope": "Configuration plus isolated advancing speculative token counters; no MTP-on speed gain or quality parity inferred."
+      }
+    },
+    {
+      "id": "image-1",
+      "native_timing": {
+        "status": "matched_isolated_cell",
+        "request_count": 1,
+        "sum_request_prefill_seconds": 1.8055574099998921,
+        "sum_request_decode_seconds": 1.7158643710426986,
+        "mean_request_prefill_seconds": 1.8055574099998921,
+        "mean_request_decode_seconds": 1.7158643710426986,
+        "prompt_tokens_per_sum_request_prefill_second": 177.78443278633782,
+        "reported_counter_deltas": {
+          "vllm:request_prompt_tokens_count": 1.0,
+          "vllm:request_decode_time_seconds_sum": 1.7158643710426986,
+          "vllm:request_generation_tokens_sum": 25.0,
+          "vllm:request_decode_time_seconds_count": 1.0,
+          "vllm:request_generation_tokens_count": 1.0,
+          "vllm:request_prompt_tokens_sum": 321.0,
+          "vllm:request_prefill_time_seconds_count": 1.0,
+          "vllm:request_prefill_time_seconds_sum": 1.8055574099998921
+        },
+        "scope": "vLLM request-level timing observations. Concurrent request durations overlap; these sums are not GPU-exclusive time or aggregate throughput. No native decode rate inferred because speculative first-token accounting differs."
+      },
+      "mtp": {
+        "native_mtp_configured": true,
+        "drafted_tokens": 13.0,
+        "accepted_tokens": 12.0,
+        "accepted_fraction": 0.9230769230769231,
+        "passed": true,
+        "scope": "Configuration plus isolated advancing speculative token counters; no MTP-on speed gain or quality parity inferred."
+      }
+    },
+    {
+      "id": "image-2",
+      "native_timing": {
+        "status": "matched_isolated_cell",
+        "request_count": 1,
+        "sum_request_prefill_seconds": 0.9988807750632986,
+        "sum_request_decode_seconds": 1.5735685039544478,
+        "mean_request_prefill_seconds": 0.9988807750632986,
+        "mean_request_decode_seconds": 1.5735685039544478,
+        "prompt_tokens_per_sum_request_prefill_second": 321.359673760523,
+        "reported_counter_deltas": {
+          "vllm:request_prompt_tokens_count": 1.0,
+          "vllm:request_decode_time_seconds_sum": 1.5735685039544478,
+          "vllm:request_generation_tokens_sum": 24.0,
+          "vllm:request_decode_time_seconds_count": 1.0,
+          "vllm:request_generation_tokens_count": 1.0,
+          "vllm:request_prompt_tokens_sum": 321.0,
+          "vllm:request_prefill_time_seconds_count": 1.0,
+          "vllm:request_prefill_time_seconds_sum": 0.9988807750632986
+        },
+        "scope": "vLLM request-level timing observations. Concurrent request durations overlap; these sums are not GPU-exclusive time or aggregate throughput. No native decode rate inferred because speculative first-token accounting differs."
+      },
+      "mtp": {
+        "native_mtp_configured": true,
+        "drafted_tokens": 12.0,
+        "accepted_tokens": 11.0,
+        "accepted_fraction": 0.9166666666666666,
+        "passed": true,
+        "scope": "Configuration plus isolated advancing speculative token counters; no MTP-on speed gain or quality parity inferred."
+      }
+    },
+    {
+      "id": "image-3",
+      "native_timing": {
+        "status": "matched_isolated_cell",
+        "request_count": 1,
+        "sum_request_prefill_seconds": 0.9888336149742827,
+        "sum_request_decode_seconds": 1.5719588509527966,
+        "mean_request_prefill_seconds": 0.9888336149742827,
+        "mean_request_decode_seconds": 1.5719588509527966,
+        "prompt_tokens_per_sum_request_prefill_second": 324.6248864712679,
+        "reported_counter_deltas": {
+          "vllm:request_prompt_tokens_count": 1.0,
+          "vllm:request_decode_time_seconds_sum": 1.5719588509527966,
+          "vllm:request_generation_tokens_sum": 24.0,
+          "vllm:request_decode_time_seconds_count": 1.0,
+          "vllm:request_generation_tokens_count": 1.0,
+          "vllm:request_prompt_tokens_sum": 321.0,
+          "vllm:request_prefill_time_seconds_count": 1.0,
+          "vllm:request_prefill_time_seconds_sum": 0.9888336149742827
+        },
+        "scope": "vLLM request-level timing observations. Concurrent request durations overlap; these sums are not GPU-exclusive time or aggregate throughput. No native decode rate inferred because speculative first-token accounting differs."
+      },
+      "mtp": {
+        "native_mtp_configured": true,
+        "drafted_tokens": 12.0,
+        "accepted_tokens": 11.0,
+        "accepted_fraction": 0.9166666666666666,
+        "passed": true,
+        "scope": "Configuration plus isolated advancing speculative token counters; no MTP-on speed gain or quality parity inferred."
+      }
+    },
+    {
+      "id": "image-4",
+      "native_timing": {
+        "status": "matched_isolated_cell",
+        "request_count": 1,
+        "sum_request_prefill_seconds": 0.9879823320079595,
+        "sum_request_decode_seconds": 1.7154065989889205,
+        "mean_request_prefill_seconds": 0.9879823320079595,
+        "mean_request_decode_seconds": 1.7154065989889205,
+        "prompt_tokens_per_sum_request_prefill_second": 324.9045955585104,
+        "reported_counter_deltas": {
+          "vllm:request_prompt_tokens_count": 1.0,
+          "vllm:request_decode_time_seconds_sum": 1.7154065989889205,
+          "vllm:request_generation_tokens_sum": 24.0,
+          "vllm:request_decode_time_seconds_count": 1.0,
+          "vllm:request_generation_tokens_count": 1.0,
+          "vllm:request_prompt_tokens_sum": 321.0,
+          "vllm:request_prefill_time_seconds_count": 1.0,
+          "vllm:request_prefill_time_seconds_sum": 0.9879823320079595
+        },
+        "scope": "vLLM request-level timing observations. Concurrent request durations overlap; these sums are not GPU-exclusive time or aggregate throughput. No native decode rate inferred because speculative first-token accounting differs."
+      },
+      "mtp": {
+        "native_mtp_configured": true,
+        "drafted_tokens": 13.0,
+        "accepted_tokens": 11.0,
+        "accepted_fraction": 0.8461538461538461,
+        "passed": true,
+        "scope": "Configuration plus isolated advancing speculative token counters; no MTP-on speed gain or quality parity inferred."
+      }
+    },
+    {
+      "id": "video-1",
+      "native_timing": {
+        "status": "matched_isolated_cell",
+        "request_count": 1,
+        "sum_request_prefill_seconds": 2.2334887300385162,
+        "sum_request_decode_seconds": 2.2547926460392773,
+        "mean_request_prefill_seconds": 2.2334887300385162,
+        "mean_request_decode_seconds": 2.2547926460392773,
+        "prompt_tokens_per_sum_request_prefill_second": 392.65924569266855,
+        "reported_counter_deltas": {
+          "vllm:request_prompt_tokens_count": 1.0,
+          "vllm:request_decode_time_seconds_sum": 2.2547926460392773,
+          "vllm:request_generation_tokens_sum": 34.0,
+          "vllm:request_decode_time_seconds_count": 1.0,
+          "vllm:request_generation_tokens_count": 1.0,
+          "vllm:request_prompt_tokens_sum": 877.0,
+          "vllm:request_prefill_time_seconds_count": 1.0,
+          "vllm:request_prefill_time_seconds_sum": 2.2334887300385162
+        },
+        "scope": "vLLM request-level timing observations. Concurrent request durations overlap; these sums are not GPU-exclusive time or aggregate throughput. No native decode rate inferred because speculative first-token accounting differs."
+      },
+      "mtp": {
+        "native_mtp_configured": true,
+        "drafted_tokens": 17.0,
+        "accepted_tokens": 16.0,
+        "accepted_fraction": 0.9411764705882353,
+        "passed": true,
+        "scope": "Configuration plus isolated advancing speculative token counters; no MTP-on speed gain or quality parity inferred."
+      }
+    },
+    {
+      "id": "video-2",
+      "native_timing": {
+        "status": "matched_isolated_cell",
+        "request_count": 1,
+        "sum_request_prefill_seconds": 2.113742065965198,
+        "sum_request_decode_seconds": 2.110717043047771,
+        "mean_request_prefill_seconds": 2.113742065965198,
+        "mean_request_decode_seconds": 2.110717043047771,
+        "prompt_tokens_per_sum_request_prefill_second": 414.90398195748423,
+        "reported_counter_deltas": {
+          "vllm:request_prompt_tokens_count": 1.0,
+          "vllm:request_decode_time_seconds_sum": 2.110717043047771,
+          "vllm:request_generation_tokens_sum": 33.0,
+          "vllm:request_decode_time_seconds_count": 1.0,
+          "vllm:request_generation_tokens_count": 1.0,
+          "vllm:request_prompt_tokens_sum": 877.0,
+          "vllm:request_prefill_time_seconds_count": 1.0,
+          "vllm:request_prefill_time_seconds_sum": 2.113742065965198
+        },
+        "scope": "vLLM request-level timing observations. Concurrent request durations overlap; these sums are not GPU-exclusive time or aggregate throughput. No native decode rate inferred because speculative first-token accounting differs."
+      },
+      "mtp": {
+        "native_mtp_configured": true,
+        "drafted_tokens": 16.0,
+        "accepted_tokens": 16.0,
+        "accepted_fraction": 1.0,
+        "passed": true,
+        "scope": "Configuration plus isolated advancing speculative token counters; no MTP-on speed gain or quality parity inferred."
+      }
+    }
+  ],
+  "scope": "Synthetic near-limit text retrieval and separate image/video cases on the unpruned K2 baseline. Not combined near-limit vision, maximum media budget, quality acceptance, concurrency qualification, or a new candidate serving result."
+}

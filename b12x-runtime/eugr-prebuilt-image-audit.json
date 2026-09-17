@@ -1,0 +1,694 @@
+{
+  "manifest_digest": "sha256:693a1d778e998ccf9d9268d70f5af0f1f397e4a8c0d2ce6e54bb75e22bd1b36b",
+  "created": "2026-09-10T03:17:08.352054351-07:00",
+  "architecture": "arm64",
+  "os": "linux",
+  "labels": {
+    "maintainer": "NVIDIA CORPORATION <cudatools@nvidia.com>",
+    "org.opencontainers.image.ref.name": "ubuntu",
+    "org.opencontainers.image.version": "24.04"
+  },
+  "compressed_bytes": 11154379805,
+  "layers": [
+    {
+      "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+      "size": 28861712,
+      "digest": "sha256:b8a35db46e38ce87d4e743e1265ff436ed36e01d23246b24a1cbbeaae18ec432"
+    },
+    {
+      "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+      "size": 4532957,
+      "digest": "sha256:7be1e3dd81adb79f8fbffa3a472a80e4a024b7dedb4028788e15e05c4a7a3946"
+    },
+    {
+      "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+      "size": 99733679,
+      "digest": "sha256:653ca2e1b0e9f4dda5c4101ba798059d34362dfdd0379f1fb2b80f1e48a703df"
+    },
+    {
+      "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+      "size": 186,
+      "digest": "sha256:66c8341e87a6fcc90cd8b78f232a7707a96e4fbeaff457268bc6d4fdd8bf509a"
+    },
+    {
+      "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+      "size": 6886,
+      "digest": "sha256:526d5438c009ab7178af1646fed10ff6f47a73f5a1ae7b9f49e63e4ade7e3ae6"
+    },
+    {
+      "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+      "size": 1634605317,
+      "digest": "sha256:a2e7e61257af3470551e443b256164daebe5af2126637f81b266d13862e314a1"
+    },
+    {
+      "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+      "size": 59611,
+      "digest": "sha256:1fb3a2ad22928fee0bd0e9cd30f7d15c201feb5b28084093c6f6f1c3a17d82fb"
+    },
+    {
+      "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+      "size": 1685,
+      "digest": "sha256:ae673f68565b3ac359d9c3bd7feb9c47f240b8a319fa1bc65c5844f0278c766a"
+    },
+    {
+      "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+      "size": 1523,
+      "digest": "sha256:879ba6afff8c297599caee631d3225f534d42f0ce1cef8da885687f7dd8cc671"
+    },
+    {
+      "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+      "size": 2159268284,
+      "digest": "sha256:c9a23150e219947a682ecb2c0a8688c32b73aff9bdbdf7dbbfd69fd8f428bfd3"
+    },
+    {
+      "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+      "size": 89820,
+      "digest": "sha256:704ea4a1a75a54e1fc94227ad505941cc1132ec2a16ed2fedd366dd7c9493549"
+    },
+    {
+      "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+      "size": 788681523,
+      "digest": "sha256:086990003e57745da47144f9770a90a21565ee663f20d9ea95a5b2ef65ff2ba7"
+    },
+    {
+      "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+      "size": 120,
+      "digest": "sha256:d20a7eadf2fec305956d55b8f5ebff4f177a68c4d095936de9812ea113f7ee8a"
+    },
+    {
+      "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+      "size": 2506055,
+      "digest": "sha256:d3013026005ddcc997f3c9959e2961aece3b08c843bbd8657ab803e81ab05b91"
+    },
+    {
+      "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+      "size": 3104373623,
+      "digest": "sha256:48e22d8ed2289d78cfee946641ec74507fdbd85a5fe085ac689a11b28e2d97c1"
+    },
+    {
+      "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+      "size": 3019014830,
+      "digest": "sha256:3f9e2cc4006276f71bf7234d052d2ee9f379adebf4cbb17498625b2919c4fa6c"
+    },
+    {
+      "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+      "size": 310452206,
+      "digest": "sha256:b3900889ad017d2a1d87f2fcbf6fe45c3882ec707fc550258cb8f0d5265e69ef"
+    },
+    {
+      "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+      "size": 1063,
+      "digest": "sha256:9fdb9a4c06a77f7bda98e777fe18d8ca63bd51fd5c7742c3aa966759c3bf9243"
+    },
+    {
+      "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+      "size": 2187876,
+      "digest": "sha256:2b087c8b20ed43711ca0933f0610e01d8ce262ce7ce35c33a051102502d57453"
+    },
+    {
+      "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+      "size": 297,
+      "digest": "sha256:b09f5f4914ff78a42bf28810181d17bb4177e32881f1c93aa5bf3eb11957c0f5"
+    },
+    {
+      "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+      "size": 552,
+      "digest": "sha256:5d0a47b148801d2a334b6a5458dac51173cb44387925b2e065cecc79d847d023"
+    }
+  ],
+  "history": [
+    {
+      "created": "2025-10-01T13:01:38.274267144Z",
+      "created_by": "/bin/sh -c #(nop)  ARG RELEASE",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-01T13:01:38.316925921Z",
+      "created_by": "/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-01T13:01:38.354682942Z",
+      "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.ref.name=ubuntu",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-01T13:01:38.395796801Z",
+      "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=24.04",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-01T13:01:40.652316647Z",
+      "created_by": "/bin/sh -c #(nop) ADD file:d77dea5c49828eb0de89439d2b631bc8ea27cb9ef774412b56a060ba1673487b in / "
+    },
+    {
+      "created": "2025-10-01T13:01:40.931280906Z",
+      "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T16:55:43.936443789Z",
+      "created_by": "ENV NVARCH=sbsa",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T16:55:43.936443789Z",
+      "created_by": "ENV NVIDIA_REQUIRE_CUDA=cuda>=13.0 brand=unknown,driver>=535,driver<536 brand=grid,driver>=535,driver<536 brand=tesla,driver>=535,driver<536 brand=nvidia,driver>=535,driver<536 brand=quadro,driver>=535,driver<536 brand=quadrortx,driver>=535,driver<536 brand=nvidiartx,driver>=535,driver<536 brand=vapps,driver>=535,driver<536 brand=vpc,driver>=535,driver<536 brand=vcs,driver>=535,driver<536 brand=vws,driver>=535,driver<536 brand=cloudgaming,driver>=535,driver<536 brand=unknown,driver>=550,driver<551 brand=grid,driver>=550,driver<551 brand=tesla,driver>=550,driver<551 brand=nvidia,driver>=550,driver<551 brand=quadro,driver>=550,driver<551 brand=quadrortx,driver>=550,driver<551 brand=nvidiartx,driver>=550,driver<551 brand=vapps,driver>=550,driver<551 brand=vpc,driver>=550,driver<551 brand=vcs,driver>=550,driver<551 brand=vws,driver>=550,driver<551 brand=cloudgaming,driver>=550,driver<551 brand=unknown,driver>=565,driver<566 brand=grid,driver>=565,driver<566 brand=tesla,driver>=565,driver<566 brand=nvidia,driver>=565,driver<566 brand=quadro,driver>=565,driver<566 brand=quadrortx,driver>=565,driver<566 brand=nvidiartx,driver>=565,driver<566 brand=vapps,driver>=565,driver<566 brand=vpc,driver>=565,driver<566 brand=vcs,driver>=565,driver<566 brand=vws,driver>=565,driver<566 brand=cloudgaming,driver>=565,driver<566 brand=unknown,driver>=570,driver<571 brand=grid,driver>=570,driver<571 brand=tesla,driver>=570,driver<571 brand=nvidia,driver>=570,driver<571 brand=quadro,driver>=570,driver<571 brand=quadrortx,driver>=570,driver<571 brand=nvidiartx,driver>=570,driver<571 brand=vapps,driver>=570,driver<571 brand=vpc,driver>=570,driver<571 brand=vcs,driver>=570,driver<571 brand=vws,driver>=570,driver<571 brand=cloudgaming,driver>=570,driver<571 brand=unknown,driver>=575,driver<576 brand=grid,driver>=575,driver<576 brand=tesla,driver>=575,driver<576 brand=nvidia,driver>=575,driver<576 brand=quadro,driver>=575,driver<576 brand=quadrortx,driver>=575,driver<576 brand=nvidiartx,driver>=575,driver<576 brand=vapps,driver>=575,driver<576 brand=vpc,driver>=575,driver<576 brand=vcs,driver>=575,driver<576 brand=vws,driver>=575,driver<576 brand=cloudgaming,driver>=575,driver<576",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T16:55:43.936443789Z",
+      "created_by": "ENV NV_CUDA_CUDART_VERSION=13.0.96-1",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T16:55:43.936443789Z",
+      "created_by": "ARG TARGETARCH",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T16:55:43.936443789Z",
+      "created_by": "LABEL maintainer=NVIDIA CORPORATION <cudatools@nvidia.com>",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T16:55:43.936443789Z",
+      "created_by": "RUN |1 TARGETARCH=arm64 /bin/sh -c apt-get update && apt-get install -y --no-install-recommends     gnupg2 curl ca-certificates &&     curl -fsSL https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/${NVARCH}/3bf863cc.pub | apt-key add - &&     echo \"deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/${NVARCH} /\" > /etc/apt/sources.list.d/cuda.list &&     apt-get purge --autoremove -y curl     && rm -rf /var/lib/apt/lists/* # buildkit",
+      "comment": "buildkit.dockerfile.v0"
+    },
+    {
+      "created": "2025-10-10T16:55:43.936443789Z",
+      "created_by": "ENV CUDA_VERSION=13.0.2",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T16:59:52.821693811Z",
+      "created_by": "RUN |1 TARGETARCH=arm64 /bin/sh -c apt-get update && apt-get install -y --no-install-recommends     cuda-cudart-13-0=${NV_CUDA_CUDART_VERSION}     cuda-compat-13-0     && rm -rf /var/lib/apt/lists/* # buildkit",
+      "comment": "buildkit.dockerfile.v0"
+    },
+    {
+      "created": "2025-10-10T16:59:52.988747614Z",
+      "created_by": "RUN |1 TARGETARCH=arm64 /bin/sh -c echo \"/usr/local/cuda/lib64\" >> /etc/ld.so.conf.d/nvidia.conf # buildkit",
+      "comment": "buildkit.dockerfile.v0"
+    },
+    {
+      "created": "2025-10-10T16:59:52.988747614Z",
+      "created_by": "ENV PATH=/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T16:59:52.988747614Z",
+      "created_by": "ENV LD_LIBRARY_PATH=/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/cuda/lib64",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T16:59:53.008458567Z",
+      "created_by": "COPY NGC-DL-CONTAINER-LICENSE / # buildkit",
+      "comment": "buildkit.dockerfile.v0"
+    },
+    {
+      "created": "2025-10-10T16:59:53.008458567Z",
+      "created_by": "ENV NVIDIA_VISIBLE_DEVICES=all",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T16:59:53.008458567Z",
+      "created_by": "ENV NVIDIA_DRIVER_CAPABILITIES=compute,utility",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T17:08:53.207662314Z",
+      "created_by": "ENV NV_CUDA_LIB_VERSION=13.0.2-1",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T17:08:53.207662314Z",
+      "created_by": "ENV NV_NVTX_VERSION=13.0.85-1",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T17:08:53.207662314Z",
+      "created_by": "ENV NV_LIBNPP_VERSION=13.0.1.2-1",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T17:08:53.207662314Z",
+      "created_by": "ENV NV_LIBNPP_PACKAGE=libnpp-13-0=13.0.1.2-1",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T17:08:53.207662314Z",
+      "created_by": "ENV NV_LIBCUSPARSE_VERSION=12.6.3.3-1",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T17:08:53.207662314Z",
+      "created_by": "ENV NV_LIBCUBLAS_PACKAGE_NAME=libcublas-13-0",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T17:08:53.207662314Z",
+      "created_by": "ENV NV_LIBCUBLAS_VERSION=13.1.0.3-1",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T17:08:53.207662314Z",
+      "created_by": "ENV NV_LIBCUBLAS_PACKAGE=libcublas-13-0=13.1.0.3-1",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T17:08:53.207662314Z",
+      "created_by": "ENV NV_LIBNCCL_PACKAGE_NAME=libnccl2",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T17:08:53.207662314Z",
+      "created_by": "ENV NV_LIBNCCL_PACKAGE_VERSION=2.28.3-1",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T17:08:53.207662314Z",
+      "created_by": "ENV NCCL_VERSION=2.28.3-1",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T17:08:53.207662314Z",
+      "created_by": "ENV NV_LIBNCCL_PACKAGE=libnccl2=2.28.3-1+cuda13.0",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T17:08:53.207662314Z",
+      "created_by": "ARG TARGETARCH",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T17:08:53.207662314Z",
+      "created_by": "LABEL maintainer=NVIDIA CORPORATION <cudatools@nvidia.com>",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T17:08:53.207662314Z",
+      "created_by": "RUN |1 TARGETARCH=arm64 /bin/sh -c apt-get update && apt-get install -y --no-install-recommends     cuda-libraries-13-0=${NV_CUDA_LIB_VERSION}     ${NV_LIBNPP_PACKAGE}     cuda-nvtx-13-0=${NV_NVTX_VERSION}     libcusparse-13-0=${NV_LIBCUSPARSE_VERSION}     ${NV_LIBCUBLAS_PACKAGE}     ${NV_LIBNCCL_PACKAGE}     && rm -rf /var/lib/apt/lists/* # buildkit",
+      "comment": "buildkit.dockerfile.v0"
+    },
+    {
+      "created": "2025-10-10T17:08:54.052433993Z",
+      "created_by": "RUN |1 TARGETARCH=arm64 /bin/sh -c apt-mark hold ${NV_LIBCUBLAS_PACKAGE_NAME} ${NV_LIBNCCL_PACKAGE_NAME} # buildkit",
+      "comment": "buildkit.dockerfile.v0"
+    },
+    {
+      "created": "2025-10-10T17:08:54.06874936Z",
+      "created_by": "COPY entrypoint.d/ /opt/nvidia/entrypoint.d/ # buildkit",
+      "comment": "buildkit.dockerfile.v0"
+    },
+    {
+      "created": "2025-10-10T17:08:54.080785104Z",
+      "created_by": "COPY nvidia_entrypoint.sh /opt/nvidia/ # buildkit",
+      "comment": "buildkit.dockerfile.v0"
+    },
+    {
+      "created": "2025-10-10T17:08:54.080785104Z",
+      "created_by": "ENV NVIDIA_PRODUCT_NAME=CUDA",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T17:08:54.080785104Z",
+      "created_by": "ENTRYPOINT [\"/opt/nvidia/nvidia_entrypoint.sh\"]",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T17:20:18.157149264Z",
+      "created_by": "ENV NV_CUDA_LIB_VERSION=13.0.2-1",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T17:20:18.157149264Z",
+      "created_by": "ENV NV_CUDA_CUDART_DEV_VERSION=13.0.96-1",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T17:20:18.157149264Z",
+      "created_by": "ENV NV_NVML_DEV_VERSION=13.0.87-1",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T17:20:18.157149264Z",
+      "created_by": "ENV NV_LIBCUSPARSE_DEV_VERSION=12.6.3.3-1",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T17:20:18.157149264Z",
+      "created_by": "ENV NV_LIBNPP_DEV_VERSION=13.0.1.2-1",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T17:20:18.157149264Z",
+      "created_by": "ENV NV_LIBNPP_DEV_PACKAGE=libnpp-dev-13-0=13.0.1.2-1",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T17:20:18.157149264Z",
+      "created_by": "ENV NV_LIBCUBLAS_DEV_PACKAGE_NAME=libcublas-dev-13-0",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T17:20:18.157149264Z",
+      "created_by": "ENV NV_LIBCUBLAS_DEV_VERSION=13.1.0.3-1",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T17:20:18.157149264Z",
+      "created_by": "ENV NV_LIBCUBLAS_DEV_PACKAGE=libcublas-dev-13-0=13.1.0.3-1",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T17:20:18.157149264Z",
+      "created_by": "ENV NV_CUDA_NSIGHT_COMPUTE_VERSION=13.0.2-1",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T17:20:18.157149264Z",
+      "created_by": "ENV NV_CUDA_NSIGHT_COMPUTE_DEV_PACKAGE=cuda-nsight-compute-13-0=13.0.2-1",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T17:20:18.157149264Z",
+      "created_by": "ENV NV_LIBNCCL_DEV_PACKAGE_NAME=libnccl-dev",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T17:20:18.157149264Z",
+      "created_by": "ENV NV_LIBNCCL_DEV_PACKAGE_VERSION=2.28.3-1",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T17:20:18.157149264Z",
+      "created_by": "ENV NCCL_VERSION=2.28.3-1",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T17:20:18.157149264Z",
+      "created_by": "ENV NV_LIBNCCL_DEV_PACKAGE=libnccl-dev=2.28.3-1+cuda13.0",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T17:20:18.157149264Z",
+      "created_by": "ARG TARGETARCH",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T17:20:18.157149264Z",
+      "created_by": "LABEL maintainer=NVIDIA CORPORATION <cudatools@nvidia.com>",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2025-10-10T17:20:18.157149264Z",
+      "created_by": "RUN |1 TARGETARCH=arm64 /bin/sh -c apt-get update && apt-get install -y --no-install-recommends     cuda-cudart-dev-13-0=${NV_CUDA_CUDART_DEV_VERSION}     cuda-command-line-tools-13-0=${NV_CUDA_LIB_VERSION}     cuda-minimal-build-13-0=${NV_CUDA_LIB_VERSION}     cuda-libraries-dev-13-0=${NV_CUDA_LIB_VERSION}     cuda-nvml-dev-13-0=${NV_NVML_DEV_VERSION}     ${NV_LIBNPP_DEV_PACKAGE}     libcusparse-dev-13-0=${NV_LIBCUSPARSE_DEV_VERSION}     ${NV_LIBCUBLAS_DEV_PACKAGE}     ${NV_LIBNCCL_DEV_PACKAGE}     ${NV_CUDA_NSIGHT_COMPUTE_DEV_PACKAGE}     && rm -rf /var/lib/apt/lists/* # buildkit",
+      "comment": "buildkit.dockerfile.v0"
+    },
+    {
+      "created": "2025-10-10T17:20:19.111734301Z",
+      "created_by": "RUN |1 TARGETARCH=arm64 /bin/sh -c apt-mark hold ${NV_LIBCUBLAS_DEV_PACKAGE_NAME} ${NV_LIBNCCL_DEV_PACKAGE_NAME} # buildkit",
+      "comment": "buildkit.dockerfile.v0"
+    },
+    {
+      "created": "2025-10-10T17:20:19.111734301Z",
+      "created_by": "ENV LIBRARY_PATH=/usr/local/cuda/lib64/stubs",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2026-09-10T03:16:40.847826764-07:00",
+      "created_by": "ARG TORCH_VERSION",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2026-09-10T03:16:40.847826764-07:00",
+      "created_by": "ARG TORCHVISION_VERSION",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2026-09-10T03:16:40.847826764-07:00",
+      "created_by": "ARG TORCHAUDIO_VERSION",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2026-09-10T03:16:40.847826764-07:00",
+      "created_by": "ARG CUTLASS_DSL_VERSION",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2026-09-10T03:16:40.847826764-07:00",
+      "created_by": "ARG B12X_REPO",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2026-09-10T03:16:40.847826764-07:00",
+      "created_by": "ARG B12X_REF",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2026-09-10T03:16:40.847826764-07:00",
+      "created_by": "ARG B12X_CACHEBUST",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2026-09-10T03:16:40.847826764-07:00",
+      "created_by": "ARG BUILD_JOBS",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2026-09-10T03:16:40.847826764-07:00",
+      "created_by": "ENV MAX_JOBS=16",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2026-09-10T03:16:40.847826764-07:00",
+      "created_by": "ENV CMAKE_BUILD_PARALLEL_LEVEL=16",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2026-09-10T03:16:40.847826764-07:00",
+      "created_by": "ENV NINJAFLAGS=-j16",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2026-09-10T03:16:40.847826764-07:00",
+      "created_by": "ENV MAKEFLAGS=-j16",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2026-09-10T03:16:40.847826764-07:00",
+      "created_by": "ENV DG_JIT_USE_NVRTC=0",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2026-09-10T03:16:40.847826764-07:00",
+      "created_by": "ENV USE_CUDNN=1",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2026-09-10T03:16:40.847826764-07:00",
+      "created_by": "ENV DEBIAN_FRONTEND=noninteractive",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2026-09-10T03:16:40.847826764-07:00",
+      "created_by": "ENV PIP_BREAK_SYSTEM_PACKAGES=1",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2026-09-10T03:16:40.847826764-07:00",
+      "created_by": "ENV VLLM_BASE_DIR=/workspace/vllm",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2026-09-10T03:16:40.847826764-07:00",
+      "created_by": "ENV PIP_CACHE_DIR=/root/.cache/pip",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2026-09-10T03:16:40.847826764-07:00",
+      "created_by": "ENV UV_CACHE_DIR=/root/.cache/uv",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2026-09-10T03:16:40.847826764-07:00",
+      "created_by": "ENV UV_SYSTEM_PYTHON=1",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2026-09-10T03:16:40.847826764-07:00",
+      "created_by": "ENV UV_BREAK_SYSTEM_PACKAGES=1",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2026-09-10T03:16:40.847826764-07:00",
+      "created_by": "ENV UV_LINK_MODE=copy",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2026-09-10T03:16:40.847826764-07:00",
+      "created_by": "RUN |8 TORCH_VERSION=2.13.0 TORCHVISION_VERSION=0.28.0 TORCHAUDIO_VERSION=2.11.0 CUTLASS_DSL_VERSION=4.7.0 B12X_REPO=https://github.com/lukealonso/b12x.git B12X_REF=master B12X_CACHEBUST=1789035080 BUILD_JOBS=16 /bin/sh -c apt update &&     apt install -y --no-install-recommends     python3 python3-pip python3-dev vim curl git wget     libcudnn9-cuda-13     libibverbs1 libibverbs-dev rdma-core     libxcb1 earlyoom liburing-dev pkg-config     && cd /workspace/nccl-pkg && apt install -y --no-install-recommends --allow-downgrades --allow-change-held-packages ./*.deb     && rm -rf /var/lib/apt/lists/*     && pip install uv # buildkit",
+      "comment": "buildkit.dockerfile.v0"
+    },
+    {
+      "created": "2026-09-10T03:16:40.899790287-07:00",
+      "created_by": "WORKDIR /workspace/vllm",
+      "comment": "buildkit.dockerfile.v0"
+    },
+    {
+      "created": "2026-09-10T03:16:48.986065079-07:00",
+      "created_by": "RUN |8 TORCH_VERSION=2.13.0 TORCHVISION_VERSION=0.28.0 TORCHAUDIO_VERSION=2.11.0 CUTLASS_DSL_VERSION=4.7.0 B12X_REPO=https://github.com/lukealonso/b12x.git B12X_REF=master B12X_CACHEBUST=1789035080 BUILD_JOBS=16 /bin/sh -c mkdir -p tiktoken_encodings &&     wget -O tiktoken_encodings/o200k_base.tiktoken \"https://openaipublic.blob.core.windows.net/encodings/o200k_base.tiktoken\" &&     wget -O tiktoken_encodings/cl100k_base.tiktoken \"https://openaipublic.blob.core.windows.net/encodings/cl100k_base.tiktoken\" # buildkit",
+      "comment": "buildkit.dockerfile.v0"
+    },
+    {
+      "created": "2026-09-10T03:16:48.986065079-07:00",
+      "created_by": "ARG PRE_TRANSFORMERS=0",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2026-09-10T03:16:51.684599324-07:00",
+      "created_by": "RUN |9 TORCH_VERSION=2.13.0 TORCHVISION_VERSION=0.28.0 TORCHAUDIO_VERSION=2.11.0 CUTLASS_DSL_VERSION=4.7.0 B12X_REPO=https://github.com/lukealonso/b12x.git B12X_REF=master B12X_CACHEBUST=1789035080 BUILD_JOBS=16 PRE_TRANSFORMERS=0 /bin/sh -c TORCHVISION_SPEC=\"torchvision\" &&      TORCHAUDIO_SPEC=\"torchaudio\" &&      if [ -n \"$TORCHVISION_VERSION\" ]; then TORCHVISION_SPEC=\"torchvision==$TORCHVISION_VERSION\"; fi &&      if [ \"$TORCHAUDIO_VERSION\" = \"none\" ]; then          TORCHAUDIO_SPEC=\"\";      elif [ -n \"$TORCHAUDIO_VERSION\" ]; then          TORCHAUDIO_SPEC=\"torchaudio==$TORCHAUDIO_VERSION\";      fi &&      set -- \"torch==$TORCH_VERSION\" \"$TORCHVISION_SPEC\" &&      if [ -n \"$TORCHAUDIO_SPEC\" ]; then set -- \"$@\" \"$TORCHAUDIO_SPEC\"; fi &&      uv pip install \"$@\" triton --index-url https://download.pytorch.org/whl/cu130 &&      uv pip install nvidia-nvshmem-cu13         \"nvidia-cutlass-dsl[cu13]==$CUTLASS_DSL_VERSION\"         \"apache-tvm-ffi==0.1.12\" # buildkit",
+      "comment": "buildkit.dockerfile.v0"
+    },
+    {
+      "created": "2026-09-10T03:17:02.593528489-07:00",
+      "created_by": "RUN |9 TORCH_VERSION=2.13.0 TORCHVISION_VERSION=0.28.0 TORCHAUDIO_VERSION=2.11.0 CUTLASS_DSL_VERSION=4.7.0 B12X_REPO=https://github.com/lukealonso/b12x.git B12X_REF=master B12X_CACHEBUST=1789035080 BUILD_JOBS=16 PRE_TRANSFORMERS=0 /bin/sh -c PINNED_TORCH=$(python3 -c \"import torch; print(torch.__version__)\") &&     PINNED_TORCHVISION=$(python3 -c \"import importlib.metadata as m; print(m.version('torchvision'))\") &&     PINNED_TORCHAUDIO=$(python3 -c \"import importlib.metadata as m; print(m.version('torchaudio'))\" 2>/dev/null || true) &&     echo \"torch==${PINNED_TORCH}\" > /tmp/wheel-override.txt &&     echo \"torchvision==${PINNED_TORCHVISION}\" >> /tmp/wheel-override.txt &&     if [ -n \"$PINNED_TORCHAUDIO\" ]; then echo \"torchaudio==${PINNED_TORCHAUDIO}\" >> /tmp/wheel-override.txt; fi &&     echo \"nvidia-cutlass-dsl[cu13]==${CUTLASS_DSL_VERSION}\" >> /tmp/wheel-override.txt &&     echo \"fastapi[standard]>=0.115.0,<0.137.0\" >> /tmp/wheel-override.txt &&     if [ \"$PRE_TRANSFORMERS\" = \"1\" ]; then         echo \"transformers>=5.0.0\" >> /tmp/wheel-override.txt;     fi &&     uv pip install /workspace/flashinfer-wheels/*.whl /workspace/vllm-wheels/*.whl         --override /tmp/wheel-override.txt # buildkit",
+      "comment": "buildkit.dockerfile.v0"
+    },
+    {
+      "created": "2026-09-10T03:17:02.593528489-07:00",
+      "created_by": "ARG TORCH_CUDA_ARCH_LIST=12.1a",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2026-09-10T03:17:02.593528489-07:00",
+      "created_by": "ENV TORCH_CUDA_ARCH_LIST=12.1a",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2026-09-10T03:17:02.593528489-07:00",
+      "created_by": "ARG FLASHINFER_CUDA_ARCH_LIST=12.1a",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2026-09-10T03:17:02.593528489-07:00",
+      "created_by": "ENV FLASHINFER_CUDA_ARCH_LIST=12.1a",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2026-09-10T03:17:02.593528489-07:00",
+      "created_by": "ENV TRITON_PTXAS_PATH=/usr/local/cuda/bin/ptxas",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2026-09-10T03:17:02.593528489-07:00",
+      "created_by": "ENV TIKTOKEN_ENCODINGS_BASE=/workspace/vllm/tiktoken_encodings",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2026-09-10T03:17:02.593528489-07:00",
+      "created_by": "ENV PATH=/workspace/vllm:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "comment": "buildkit.dockerfile.v0",
+      "empty_layer": true
+    },
+    {
+      "created": "2026-09-10T03:17:04.803356932-07:00",
+      "created_by": "RUN |11 TORCH_VERSION=2.13.0 TORCHVISION_VERSION=0.28.0 TORCHAUDIO_VERSION=2.11.0 CUTLASS_DSL_VERSION=4.7.0 B12X_REPO=https://github.com/lukealonso/b12x.git B12X_REF=master B12X_CACHEBUST=1789035080 BUILD_JOBS=16 PRE_TRANSFORMERS=0 TORCH_CUDA_ARCH_LIST=12.1a FLASHINFER_CUDA_ARCH_LIST=12.1a /bin/sh -c PINNED_TORCH=$(python3 -c \"import torch; print(torch.__version__)\") &&     PINNED_TORCHVISION=$(python3 -c \"import importlib.metadata as m; print(m.version('torchvision'))\") &&     PINNED_TORCHAUDIO=$(python3 -c \"import importlib.metadata as m; print(m.version('torchaudio'))\" 2>/dev/null || true) &&     echo \"torch==${PINNED_TORCH}\" > /tmp/torch-override.txt &&     echo \"torchvision==${PINNED_TORCHVISION}\" >> /tmp/torch-override.txt &&     if [ -n \"$PINNED_TORCHAUDIO\" ]; then echo \"torchaudio==${PINNED_TORCHAUDIO}\" >> /tmp/torch-override.txt; fi &&     echo \"nvidia-cutlass-dsl[cu13]==${CUTLASS_DSL_VERSION}\" >> /tmp/torch-override.txt &&     echo \"fastapi[standard]>=0.115.0,<0.137.0\" >> /tmp/torch-override.txt &&     uv pip install ray[default] fastsafetensors instanttensor         --override /tmp/torch-override.txt # buildkit",
+      "comment": "buildkit.dockerfile.v0"
+    },
+    {
+      "created": "2026-09-10T03:17:04.859790868-07:00",
+      "created_by": "COPY docker/pin_cutlass_dsl.py /tmp/pin_cutlass_dsl.py # buildkit",
+      "comment": "buildkit.dockerfile.v0"
+    },
+    {
+      "created": "2026-09-10T03:17:08.100178075-07:00",
+      "created_by": "RUN |11 TORCH_VERSION=2.13.0 TORCHVISION_VERSION=0.28.0 TORCHAUDIO_VERSION=2.11.0 CUTLASS_DSL_VERSION=4.7.0 B12X_REPO=https://github.com/lukealonso/b12x.git B12X_REF=master B12X_CACHEBUST=1789035080 BUILD_JOBS=16 PRE_TRANSFORMERS=0 TORCH_CUDA_ARCH_LIST=12.1a FLASHINFER_CUDA_ARCH_LIST=12.1a /bin/sh -c if [ -n \"$B12X_REPO\" ]; then         echo \"Refreshing B12X source (cache key: $B12X_CACHEBUST)\" &&         git clone --depth 1 --branch \"$B12X_REF\" \"$B12X_REPO\" /tmp/b12x-source &&         B12X_COMMIT=$(git -C /tmp/b12x-source rev-parse HEAD) &&         python3 /tmp/pin_cutlass_dsl.py \"$CUTLASS_DSL_VERSION\"             --expected-count 5 /tmp/b12x-source/pyproject.toml &&         uv pip install --reinstall --no-deps /tmp/b12x-source &&         printf '%s\\n' \"$B12X_COMMIT\" > /workspace/b12x-source-commit &&         python3 -c \"import importlib.metadata as m, sys; import b12x; print('Verified B12X', m.version('b12x'), 'from source commit', sys.argv[1], 'with CUTLASS DSL', m.version('nvidia-cutlass-dsl'))\" \"$B12X_COMMIT\" &&         rm -rf /tmp/b12x-source;     else         echo \"B12X source build not requested; skipping.\";     fi # buildkit",
+      "comment": "buildkit.dockerfile.v0"
+    },
+    {
+      "created": "2026-09-10T03:17:08.305536839-07:00",
+      "created_by": "RUN |11 TORCH_VERSION=2.13.0 TORCHVISION_VERSION=0.28.0 TORCHAUDIO_VERSION=2.11.0 CUTLASS_DSL_VERSION=4.7.0 B12X_REPO=https://github.com/lukealonso/b12x.git B12X_REF=master B12X_CACHEBUST=1789035080 BUILD_JOBS=16 PRE_TRANSFORMERS=0 TORCH_CUDA_ARCH_LIST=12.1a FLASHINFER_CUDA_ARCH_LIST=12.1a /bin/sh -c rm /usr/local/lib/python3.12/dist-packages/nvidia/nccl/lib/libnccl.so.2 &&     ln -s /usr/lib/aarch64-linux-gnu/libnccl.so.2 /usr/local/lib/python3.12/dist-packages/nvidia/nccl/lib/libnccl.so.2 # buildkit",
+      "comment": "buildkit.dockerfile.v0"
+    },
+    {
+      "created": "2026-09-10T03:17:08.352054351-07:00",
+      "created_by": "COPY build-metadata.yaml /workspace/build-metadata.yaml # buildkit",
+      "comment": "buildkit.dockerfile.v0"
+    }
+  ]
+}

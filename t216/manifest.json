@@ -1,0 +1,257 @@
+{
+ "schema": "dynamic-container-manifest-v1",
+ "point_id": "T216",
+ "packer_version": "u216-packer-v1",
+ "packer_sha256": "8d9eeb2b256657d1e8582b4981f3a197907ed33f6972c6f45957db6db5ab223f",
+ "plan_sha256": "4e4d8973661b414cb0f2bc8496e756d41b25f1dd6a8e2299d5bcb97c574f492a",
+ "plan_file_sha256": "cd5ee06bf1595449957f455523833c92284c116cbc4cd370b8871643c2747365",
+ "base": {
+  "branch": "3.05bpw",
+  "repo": "turboderp/GLM-5.3-Flash-exl3",
+  "revision": "332ab457b709b7ba30dd9a448be5de03b80a7ac9",
+  "total_bytes": 125263712676,
+  "source_dir": "/home/valentine/models/turboderp-glm53-flash-exl3-3p05bpw",
+  "index_total_size": 122286101684
+ },
+ "output_dir": "/home/valentine/models/glm53-3p05-pruned-t216",
+ "shards": [
+  {
+   "shard": "model-00001-of-00015.safetensors",
+   "bytes": 6920742120,
+   "tensor_bytes": 6919898760,
+   "header_bytes": 843360,
+   "sha256": "5a3141d1984c7134b45cd6314264f6cca79aa4b86a14c6f4c98509b58372befa",
+   "tensors": 6422,
+   "removed_expert_tensors": 2112,
+   "renamed_expert_tensors": 6215,
+   "sliced_router_tensors": 4,
+   "copied_tensors": 203
+  },
+  {
+   "shard": "model-00002-of-00015.safetensors",
+   "bytes": 6549328456,
+   "tensor_bytes": 6548298144,
+   "header_bytes": 1030312,
+   "sha256": "d931ef143766688cb9f4b23e9f18b6223ea353e0da844d87e5f84909b801d1c0",
+   "tensors": 7983,
+   "removed_expert_tensors": 2580,
+   "renamed_expert_tensors": 7856,
+   "sliced_router_tensors": 6,
+   "copied_tensors": 121
+  },
+  {
+   "shard": "model-00003-of-00015.safetensors",
+   "bytes": 6551151540,
+   "tensor_bytes": 6550118820,
+   "header_bytes": 1032720,
+   "sha256": "a017cf5ac8740908407dc0504c265ba5d8868ca22e6dc8f56acd22c8ea55874b",
+   "tensors": 7989,
+   "removed_expert_tensors": 2580,
+   "renamed_expert_tensors": 7872,
+   "sliced_router_tensors": 6,
+   "copied_tensors": 111
+  },
+  {
+   "shard": "model-00004-of-00015.safetensors",
+   "bytes": 6435627880,
+   "tensor_bytes": 6434609424,
+   "header_bytes": 1018456,
+   "sha256": "002ce030837e2284183e77712007eb37524ea061e91ab4a0566905e449117ca8",
+   "tensors": 7839,
+   "removed_expert_tensors": 2724,
+   "renamed_expert_tensors": 7712,
+   "sliced_router_tensors": 6,
+   "copied_tensors": 121
+  },
+  {
+   "shard": "model-00005-of-00015.safetensors",
+   "bytes": 6596713492,
+   "tensor_bytes": 6595668444,
+   "header_bytes": 1045048,
+   "sha256": "b23af3910a16d9051cef54cbae320a0d57974e2109ac815b4d69474d08c892ae",
+   "tensors": 8043,
+   "removed_expert_tensors": 2520,
+   "renamed_expert_tensors": 7916,
+   "sliced_router_tensors": 6,
+   "copied_tensors": 121
+  },
+  {
+   "shard": "model-00006-of-00015.safetensors",
+   "bytes": 6492481576,
+   "tensor_bytes": 6491453784,
+   "header_bytes": 1027792,
+   "sha256": "0ced94672ddef3dd14ef04a465083571be0b5a472ede01e068cb52d00333e953",
+   "tensors": 7911,
+   "removed_expert_tensors": 2652,
+   "renamed_expert_tensors": 7784,
+   "sliced_router_tensors": 6,
+   "copied_tensors": 121
+  },
+  {
+   "shard": "model-00007-of-00015.safetensors",
+   "bytes": 6500607400,
+   "tensor_bytes": 6499578208,
+   "header_bytes": 1029192,
+   "sha256": "9d9667b3c1d6d8c55af1b8e3e4496d9fc8c345e573ca388096fbc25c7667094e",
+   "tensors": 7922,
+   "removed_expert_tensors": 2647,
+   "renamed_expert_tensors": 7805,
+   "sliced_router_tensors": 6,
+   "copied_tensors": 111
+  },
+  {
+   "shard": "model-00008-of-00015.safetensors",
+   "bytes": 6599884580,
+   "tensor_bytes": 6598838756,
+   "header_bytes": 1045824,
+   "sha256": "c2b212afc7d41f7d6cd5949ec129c32086d67f3b8b459e64fea9596fa095484b",
+   "tensors": 8050,
+   "removed_expert_tensors": 2513,
+   "renamed_expert_tensors": 7923,
+   "sliced_router_tensors": 6,
+   "copied_tensors": 121
+  },
+  {
+   "shard": "model-00009-of-00015.safetensors",
+   "bytes": 6473530368,
+   "tensor_bytes": 6472505664,
+   "header_bytes": 1024704,
+   "sha256": "3184be5a492b0902deb1d06a12768c05a82ce8e1657c5bf6ca71732c1439a90b",
+   "tensors": 7887,
+   "removed_expert_tensors": 2676,
+   "renamed_expert_tensors": 7760,
+   "sliced_router_tensors": 6,
+   "copied_tensors": 121
+  },
+  {
+   "shard": "model-00010-of-00015.safetensors",
+   "bytes": 6530384216,
+   "tensor_bytes": 6529350024,
+   "header_bytes": 1034192,
+   "sha256": "1fdb478433eb570dc1cf27a75d05c6c7ab3c3bc54aad3d2400f2fc0ac3d4c685",
+   "tensors": 7959,
+   "removed_expert_tensors": 2604,
+   "renamed_expert_tensors": 7832,
+   "sliced_router_tensors": 6,
+   "copied_tensors": 121
+  },
+  {
+   "shard": "model-00011-of-00015.safetensors",
+   "bytes": 6560632376,
+   "tensor_bytes": 6559592880,
+   "header_bytes": 1039496,
+   "sha256": "8e52dcdf5086eb1ce19737c7525ed4ee4893a14fa5b707c071bfdc9a10e782c5",
+   "tensors": 8001,
+   "removed_expert_tensors": 2568,
+   "renamed_expert_tensors": 7884,
+   "sliced_router_tensors": 6,
+   "copied_tensors": 111
+  },
+  {
+   "shard": "model-00012-of-00015.safetensors",
+   "bytes": 6520908476,
+   "tensor_bytes": 6519875964,
+   "header_bytes": 1032512,
+   "sha256": "3c8e77050cc3b3c06da1a8ae198ee313f09c2c4c348adeeca4e672e5ea55635f",
+   "tensors": 7947,
+   "removed_expert_tensors": 2616,
+   "renamed_expert_tensors": 7820,
+   "sliced_router_tensors": 6,
+   "copied_tensors": 121
+  },
+  {
+   "shard": "model-00013-of-00015.safetensors",
+   "bytes": 6549335360,
+   "tensor_bytes": 6548298144,
+   "header_bytes": 1037216,
+   "sha256": "efdf189bd9280930b8fc2191fb9d1ee367d5b16c6768df371034d96caed1d544",
+   "tensors": 7983,
+   "removed_expert_tensors": 2580,
+   "renamed_expert_tensors": 7856,
+   "sliced_router_tensors": 6,
+   "copied_tensors": 121
+  },
+  {
+   "shard": "model-00014-of-00015.safetensors",
+   "bytes": 6655895968,
+   "tensor_bytes": 6654919120,
+   "header_bytes": 976848,
+   "sha256": "59df13e88f155b25c1246242eaa5e7b68c8ab29703a88f4a3f573ac5dfbcf348",
+   "tensors": 7519,
+   "removed_expert_tensors": 2448,
+   "renamed_expert_tensors": 7388,
+   "sliced_router_tensors": 6,
+   "copied_tensors": 125
+  },
+  {
+   "shard": "model-00015-of-00015.safetensors",
+   "bytes": 1689024020,
+   "tensor_bytes": 1688753404,
+   "header_bytes": 270616,
+   "sha256": "e0acf13ff22c142c5ae874bfe428ff9f46171dbf32950e34df103ddf4e3fee3d",
+   "tensors": 2281,
+   "removed_expert_tensors": 468,
+   "renamed_expert_tensors": 1241,
+   "sliced_router_tensors": 2,
+   "copied_tensors": 1038
+  }
+ ],
+ "index_total_size": 93611759540,
+ "removed_experts": 3024,
+ "removed_tensor_bytes": 28674342144,
+ "bytes_per_removed_expert_incl_router_row": 9482256.0,
+ "other_files": {
+  "LICENSE": {
+   "bytes": 1070,
+   "sha256": "30b85b6b9659f2e78aa259f8faf5d920a68dee7c9ced3fa6dba1f19f2bc4fca1"
+  },
+  "README.md": {
+   "bytes": 7238,
+   "sha256": "4f46db37e6a7cbe3a494d6d7f616a96f4fffe6d1de68be361199a715c8d928fc"
+  },
+  "chat_template.jinja": {
+   "bytes": 8617,
+   "sha256": "41cff9af7b3a86c96751b107a8444f245fbda0bd5320b636a5bb1f7f4ba1a5c3"
+  },
+  "generation_config.json": {
+   "bytes": 194,
+   "sha256": "230c30609ecbbb9e6583bedde8e7bdda0c6eb8fe5fad0eaeb3d1b293d751cb4f"
+  },
+  "kpool_aux.safetensors": {
+   "bytes": 11548768,
+   "sha256": "39053cd051c75e81b7e608818111a4b4c3c57da540599089419fe11b51ca02d3"
+  },
+  "mtp.safetensors": {
+   "bytes": 2862645889,
+   "sha256": "7274f06d75842edfa258830c836fd790a19324513134e05cd1e931929c4c384d"
+  },
+  "processor_config.json": {
+   "bytes": 909,
+   "sha256": "aae38374c94b08cc9b0547c6e64f05b951bd9735cea571c6988f5ed552bed3ed"
+  },
+  "quantization_config.json": {
+   "bytes": 47905678,
+   "sha256": "308d9a4b28407e2ada887f512bc8793c608586a73d9e0108ca258220ac714280"
+  },
+  "tokenizer.json": {
+   "bytes": 20217442,
+   "sha256": "19e773648cb4e65de8660ea6365e10acca112d42a854923df93db4a6f333a82d"
+  },
+  "tokenizer_config.json": {
+   "bytes": 761,
+   "sha256": "98b1271574f41abf89427ae2dda030d94dc9478f0edc5a8bd240db213c6fd5fc"
+  }
+ },
+ "config_patch_keys": [
+  "text_config.n_routed_experts",
+  "text_config.routed_experts_per_layer",
+  "text_config.retained_expert_ids_by_layer",
+  "text_config.dynamic_container"
+ ],
+ "total_output_bytes": 96580353537,
+ "started_utc": "2026-09-13T23:28:35Z",
+ "finished_utc": "2026-09-13T23:30:05Z",
+ "elapsed_s": 89.9,
+ "g2_verified": true,
+ "g2_receipt_sha256": "da0e30a98cbee8db7e015c1323b2be9fdd78e0eb26b1d1a0eedd5f2772e8a6e9"
+}

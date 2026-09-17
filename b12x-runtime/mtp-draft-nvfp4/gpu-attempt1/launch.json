@@ -1,0 +1,19 @@
+{
+  "container_id": "c3463796e3d47bdc5725043ce77c8e067e0988a4e4a2d88f40dfba6228224d85",
+  "image_id": "sha256:368820997e1146e9d7843367478b53ce18db708e79861f7ea269860e9a1bda4b",
+  "quality_terminal_state": {
+    "Status": "exited",
+    "Running": false,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 0,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-09-12T00:18:13.410602242Z",
+    "FinishedAt": "2026-09-12T01:12:40.692739973Z"
+  },
+  "compute_processes_before": "",
+  "state": "RUNNING_NOT_ACCEPTED"
+}

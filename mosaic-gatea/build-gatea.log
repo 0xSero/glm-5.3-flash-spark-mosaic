@@ -1,0 +1,61 @@
++ W=/home/valentine/mosaic-gatea
++ A=/home/valentine/models/turboderp-glm53-flash-exl3-2p05bpw
++ B=/home/valentine/models/turboderp-glm53-flash-exl3-3p05bpw
++ DST=/home/valentine/models/mosaic-l20-gatea
+++ date -u +%FT%TZ
++ echo '### preflight 2026-09-16T12:00:25Z'
+### preflight 2026-09-16T12:00:25Z
++ test -s /home/valentine/models/turboderp-glm53-flash-exl3-2p05bpw/model.safetensors.index.json
++ test -s /home/valentine/models/turboderp-glm53-flash-exl3-3p05bpw/model.safetensors.index.json
++ test -s /home/valentine/mosaic-gatea/mosaic-gatea-plan.json
++ test -s /home/valentine/mosaic-gatea/mosaic_pack.py
++ test '!' -e /home/valentine/models/mosaic-l20-gatea
++ df -h /
++ tail -1
+/dev/nvme0n1p2  3.7T  2.1T  1.5T  60% /
+++ date -u +%FT%TZ
++ echo '### copy a0 -> /home/valentine/models/mosaic-l20-gatea 2026-09-16T12:00:25Z'
+### copy a0 -> /home/valentine/models/mosaic-l20-gatea 2026-09-16T12:00:25Z
++ cp -a /home/valentine/models/turboderp-glm53-flash-exl3-2p05bpw /home/valentine/models/mosaic-l20-gatea
++ du -sb /home/valentine/models/mosaic-l20-gatea
+85233490349	/home/valentine/models/mosaic-l20-gatea
+++ date -u +%FT%TZ
++ echo '### pack (rewrite one shard + quantization_config) 2026-09-16T12:01:32Z'
+### pack (rewrite one shard + quantization_config) 2026-09-16T12:01:32Z
++ python3 /home/valentine/mosaic-gatea/mosaic_pack.py --a0 /home/valentine/models/turboderp-glm53-flash-exl3-2p05bpw --base /home/valentine/models/turboderp-glm53-flash-exl3-3p05bpw --out /home/valentine/models/mosaic-l20-gatea --plan /home/valentine/mosaic-gatea/mosaic-gatea-plan.json --receipt /home/valentine/mosaic-gatea/mosaic-gatea-pack-receipt.json
+{
+ "verdict": "PASS",
+ "out_shard_sha256": "b261c00ac4d0c2ca3dcd589176a6edb0f03aa2764426f032b6566bcc73512a63",
+ "a0_shard_sha256": "87df348852f785bbb60003737a802cad059aea665d537d8c543991084a3de44a",
+ "delta_bytes": 270532610,
+ "expected_delta_bytes": 270532608,
+ "upgraded_tensors_byte_equal_to_base": 1032,
+ "kept_tensors_byte_equal_to_a0": 12960,
+ "kept_tensors_failed": [],
+ "wall_seconds": 37.1
+}
++ RC=0
++ echo pack_rc=0
+pack_rc=0
++ '[' 0 -eq 0 ']'
+++ date -u +%FT%TZ
++ echo '### shard shas 2026-09-16T12:02:09Z'
+### shard shas 2026-09-16T12:02:09Z
++ cd /home/valentine/models/turboderp-glm53-flash-exl3-2p05bpw
++ sha256sum model-00001-of-00012.safetensors model-00002-of-00012.safetensors model-00003-of-00012.safetensors model-00004-of-00012.safetensors model-00005-of-00012.safetensors model-00006-of-00012.safetensors model-00007-of-00012.safetensors model-00008-of-00012.safetensors model-00009-of-00012.safetensors model-00010-of-00012.safetensors model-00011-of-00012.safetensors model-00012-of-00012.safetensors
++ cd /home/valentine/models/mosaic-l20-gatea
++ sha256sum model-00001-of-00012.safetensors model-00002-of-00012.safetensors model-00003-of-00012.safetensors model-00004-of-00012.safetensors model-00005-of-00012.safetensors model-00006-of-00012.safetensors model-00007-of-00012.safetensors model-00008-of-00012.safetensors model-00009-of-00012.safetensors model-00010-of-00012.safetensors model-00011-of-00012.safetensors model-00012-of-00012.safetensors
+++ diff /home/valentine/mosaic-gatea/shas-a0-shards.txt /home/valentine/mosaic-gatea/shas-out-shards.txt
+++ grep -c '^<'
++ DIFFCOUNT=1
++ echo shards_differing_from_a0=1
+shards_differing_from_a0=1
++ cmp -s /home/valentine/models/turboderp-glm53-flash-exl3-2p05bpw/model.safetensors.index.json /home/valentine/models/mosaic-l20-gatea/model.safetensors.index.json
++ echo INDEX_BYTE_IDENTICAL
+INDEX_BYTE_IDENTICAL
++ du -sb /home/valentine/models/mosaic-l20-gatea
++ cat /home/valentine/mosaic-gatea/du-out.txt
+85504022960	/home/valentine/models/mosaic-l20-gatea
+++ date -u +%FT%TZ
++ echo '### BUILD_DONE 2026-09-16T12:03:44Z'
+### BUILD_DONE 2026-09-16T12:03:44Z

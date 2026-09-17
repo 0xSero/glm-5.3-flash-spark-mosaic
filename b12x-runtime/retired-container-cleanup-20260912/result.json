@@ -1,0 +1,89 @@
+{
+  "recorded_utc": "2026-09-12T00:23:08.066973+00:00",
+  "before_free_bytes": 25548824576,
+  "retained_image": "sha256:4f16e6cab3ca3966a325cb8351b1ea58a194e471a23197019e12e891ae17a959",
+  "containers": [
+    {
+      "id": "c6c0c2d71956fd3d5c27d18fb077c52355957b892af435ff454601a9e85ea3f5",
+      "name": "/glm53-b12x-compile-attempt1",
+      "size_rw": 3457149810,
+      "exit_code": 2
+    },
+    {
+      "id": "a1db32da841c41fef62458fce6b407d869616cf7314e412fe3e036e9a8b6f666",
+      "name": "/glm53-b12x-compile-attempt2",
+      "size_rw": 40904412,
+      "exit_code": 2
+    },
+    {
+      "id": "aaaae47844445429f5b3307822fb442d8c0b99043d3bb2233985d503c05546fb",
+      "name": "/glm53-b12x-compile-attempt3",
+      "size_rw": 230062788,
+      "exit_code": 137
+    },
+    {
+      "id": "fdabb37cbf1414d065ccd14d4bc7c6b3f514ecce2dbe5b7009847e01d3a6eca1",
+      "name": "/glm53-b12x-compile-attempt4",
+      "size_rw": 896213360,
+      "exit_code": 137
+    },
+    {
+      "id": "cf8c965ccf88e83b5e10948d9ff556e61938f5c622a748efe64f605460c14c77",
+      "name": "/glm53-b12x-compile-attempt5",
+      "size_rw": 3822145931,
+      "exit_code": 2
+    },
+    {
+      "id": "56754c181d7aca58574972dda1435875b644755dc534981665c257244feed487",
+      "name": "/glm53-b12x-compile-attempt6",
+      "size_rw": 56410824,
+      "exit_code": 2
+    },
+    {
+      "id": "7d3d3b59e78b3ddd6e556b27d8766c75926a54b3f74f23ee3e79dc9ea4b61df5",
+      "name": "/glm53-b12x-compile-attempt7",
+      "size_rw": 5935422406,
+      "exit_code": 2
+    },
+    {
+      "id": "18f3f3207753f51256cf25c103c54de4ed6f81d00a1dc8b630d08099c51d9e27",
+      "name": "/glm53-b12x-compile-attempt8",
+      "size_rw": 4361443208,
+      "exit_code": 0
+    }
+  ],
+  "removed": [
+    "c6c0c2d71956fd3d5c27d18fb077c52355957b892af435ff454601a9e85ea3f5",
+    "a1db32da841c41fef62458fce6b407d869616cf7314e412fe3e036e9a8b6f666",
+    "aaaae47844445429f5b3307822fb442d8c0b99043d3bb2233985d503c05546fb",
+    "fdabb37cbf1414d065ccd14d4bc7c6b3f514ecce2dbe5b7009847e01d3a6eca1",
+    "cf8c965ccf88e83b5e10948d9ff556e61938f5c622a748efe64f605460c14c77",
+    "56754c181d7aca58574972dda1435875b644755dc534981665c257244feed487",
+    "7d3d3b59e78b3ddd6e556b27d8766c75926a54b3f74f23ee3e79dc9ea4b61df5",
+    "18f3f3207753f51256cf25c103c54de4ed6f81d00a1dc8b630d08099c51d9e27"
+  ],
+  "after_free_bytes": 44811780096,
+  "reclaimed_free_bytes": 19262955520,
+  "state": "EIGHT_ALLOWLISTED_TERMINAL_CONTAINERS_REMOVED_IMAGES_PRESERVED",
+  "evidence_sha256": {
+    "retained-image-inspect.json": "6f215ff7fd96f3057b711dc4f28a9f367c97602c15cde408f797f7f1e0d7914e",
+    "c6c0c2d71956-inspect.json": "81490dc84c3fc16f32954d43cfc0a27891e471b8bd25bcfae8749f9e1bce4e32",
+    "56754c181d7a-inspect.json": "80b4994c9a7365fb1e9d0c7360112463f626ed9744a36fffed30002d68ea8d29",
+    "18f3f3207753-logs.txt": "7ae0b6780b7444035d4b809e9d835b04e09960097452786fd336129afaa46ec8",
+    "cf8c965ccf88-inspect.json": "c6700ee37abf910ff35d3a86001c63925922257cfe023394ab98f4e052850028",
+    "18f3f3207753-inspect.json": "e996dbd4cedacff4da4bd720bf261792744c57c3228225b61d4ce2a2c3fc0339",
+    "a1db32da841c-inspect.json": "4eccf08071d28491b572d6d1775b9b126858593faf65ef64bca94e63de7d7cd5",
+    "c6c0c2d71956-logs.txt": "ae263ccddb58bee0829b9f9b0aab5408fc6d42673bd8e1f30c175ee341edeec8",
+    "a1db32da841c-logs.txt": "7a79996f9fe6b5eba059be5b69ddb42147d07587cb5c750f8ae5542440d070f7",
+    "7d3d3b59e78b-inspect.json": "0c360d5d0c4fd5717b9da5ea6cff3e13f77ab85d70eeb7117f92d836e27a037d",
+    "fdabb37cbf14-inspect.json": "1e1a618a34fb726ad8633f72d006470e8de46152a655729107e19bb2ce6f0d1e",
+    "fdabb37cbf14-logs.txt": "b45963e6becb328cdee256149ea732b75f419329c3bb5c2b9b6ba6f5b9d40861",
+    "retained-wheels.txt": "22cabef749cb20fd8adca2a5925fbbe0718c5b1cc82d0bac29ac9aef23b12545",
+    "7d3d3b59e78b-logs.txt": "efed797176d728d6da4caad03c6ee9b38b304ab46a270c108932ac0da71adb80",
+    "cf8c965ccf88-logs.txt": "6f7daa357ea626944274bac0335b29f615d5c1c6bd652f9d04ed658df8210759",
+    "56754c181d7a-logs.txt": "0b49621a1605c2d7391d8c7869171652a84e1eab6901ae13c72f79fba73924e7",
+    "preflight.json": "ea7d865e8382be684b7c0e43b5c8b744e9237b06786de2ea781477272c567a58",
+    "aaaae4784444-logs.txt": "ba0c4e3b8ff43b193fac26d761f33fdf385b5a285b35358b2772e23714671eae",
+    "aaaae4784444-inspect.json": "7e16efbd5b35873e8faf8da2143de912fd3798dd80be2a7b64bf96db7f8d4627"
+  }
+}

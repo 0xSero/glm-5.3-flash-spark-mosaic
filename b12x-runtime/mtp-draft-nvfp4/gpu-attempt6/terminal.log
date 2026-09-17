@@ -1,0 +1,29 @@
+INFO 09-12 01:30:50 [import_utils.py:478] DeepEP v2 requires NCCL >= 2.30.4 but found 2.29.7. deepep_v2 backend will not be available.
+INFO 09-12 01:30:54 [__init__.py:109] Registered model loader `<class 'b12x.integration.vllm.loader.B12xModelLoader'>` with load format `b12x`
+INFO 09-12 01:31:00 [model.py:686] Resolved architecture: Glm5NextForConditionalGeneration
+INFO 09-12 01:31:00 [model.py:2030] Using max model len 4096
+WARNING 09-12 01:31:00 [model.py:988] Model does not support mm_device_do_normalize, forcing mm_device_do_normalize = False.
+INFO 09-12 01:31:00 [scheduler.py:339] Chunked prefill is enabled with max_num_batched_tokens=32.
+INFO 09-12 01:31:00 [vllm.py:835] Auto-enabling VLLM_USE_BREAKABLE_CUDAGRAPH=1. Set VLLM_USE_BREAKABLE_CUDAGRAPH=0 to opt out.
+INFO 09-12 01:31:00 [kernel.py:372] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'])
+INFO 09-12 01:31:00 [compilation.py:329] Enabled custom fusions: norm_quant, act_quant
+INFO 09-12 01:31:00 [parallel_state.py:1647] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/mtp-nvfp4-component-dist backend=gloo
+INFO 09-12 01:31:00 [parallel_state.py:1991] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, EP rank 0, EPLB rank N/A
+INFO 09-12 01:31:02 [nvfp4.py:261] Using 'B12X' NvFp4 MoE backend out of potential backends: ['FLASHINFER_TRTLLM', 'FLASHINFER_CUTEDSL', 'FLASHINFER_CUTLASS', 'VLLM_CUTLASS', 'MARLIN', 'HUMMING', 'EMULATION'].
+INFO 09-12 01:31:03 [nvfp4.py:613] Using MoEPrepareAndFinalizeNoDPEPModular
+CELL_PASS {"tokens": 1, "input_scale": 0.1, "clamp_hits": {"gate_above_10": 0, "up_outside_10": 0}, "quantized_reference_max_abs": 0.00019858404994010925, "quantized_reference_relative_l2": 0.0033340733498334885, "native_reference_relative_l2": 0.10025083273649216, "routed_quantized_reference_relative_l2": 0.004536126274615526, "routed_native_reference_relative_l2": 0.15532617270946503, "state": "REFERENCE_AND_GRAPH_PASS", "graph_checks": [{"input_scale": 0.05, "max_abs": 0.0, "relative_l2": 0.0}, {"input_scale": 0.1, "max_abs": 0.0, "relative_l2": 0.0}, {"input_scale": 0.5, "max_abs": 0.0, "relative_l2": 0.0}], "changed_input_graph_replay_max_abs": [0.0, 0.0, 0.0]}
+[W912 01:31:00.230283579 ProcessGroupGloo.cpp:524] Warning: Unable to resolve hostname to a (local) address. Using the loopback address as fallback. Manually set the network interface to bind to with GLOO_SOCKET_IFNAME. (function operator())
+b12x policy fallback: moe.decode is using a heuristic on nvidia gb10 (compute capability 12.1, 48 SMs) because profile 'nvidia.gb10.48sm' does not cover the query; query={'activation': 'silu', 'hidden_size': 4096, 'intermediate_size': 2048, 'num_experts': 8, 'num_tokens': 1, 'numerical_recipe': 'default', 'quant_mode': 'w4a16', 'routed_rows': 8, 'source_format': 'modelopt_nvfp4', 'top_k': 8}
+b12x policy fallback: moe.decode is using a heuristic on nvidia gb10 (compute capability 12.1, 48 SMs) because profile 'nvidia.gb10.48sm' does not cover the query; query={'activation': 'silu', 'hidden_size': 4096, 'intermediate_size': 2048, 'num_experts': 8, 'num_tokens': 2, 'numerical_recipe': 'default', 'quant_mode': 'w4a16', 'routed_rows': 16, 'source_format': 'modelopt_nvfp4', 'top_k': 8}
+b12x policy fallback: moe.decode is using a heuristic on nvidia gb10 (compute capability 12.1, 48 SMs) because profile 'nvidia.gb10.48sm' does not cover the query; query={'activation': 'silu', 'hidden_size': 4096, 'intermediate_size': 2048, 'num_experts': 8, 'num_tokens': 4, 'numerical_recipe': 'default', 'quant_mode': 'w4a16', 'routed_rows': 32, 'source_format': 'modelopt_nvfp4', 'top_k': 8}
+b12x policy fallback: moe.decode is using a heuristic on nvidia gb10 (compute capability 12.1, 48 SMs) because profile 'nvidia.gb10.48sm' does not cover the query; query={'activation': 'silu', 'hidden_size': 4096, 'intermediate_size': 2048, 'num_experts': 8, 'num_tokens': 8, 'numerical_recipe': 'default', 'quant_mode': 'w4a16', 'routed_rows': 64, 'source_format': 'modelopt_nvfp4', 'top_k': 8}
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/proof/gpu_component.py", line 238, in <module>
+[rank0]:     torch.testing.assert_close(actual.float(), quant_ref, atol=max(.003, .003*rms), rtol=.03)
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/testing/_comparison.py", line 1631, in assert_close
+[rank0]:     raise error_metas[0].to_error(msg)
+[rank0]: AssertionError: Tensor-likes are not close!
+
+[rank0]: Mismatched elements: 34 / 4096 (0.8%)
+[rank0]: Greatest absolute difference: 0.8137130737304688 at index (0, 2340) (up to 0.18979449462890624 allowed)
+[rank0]: Greatest relative difference: 91.6958999633789 at index (0, 3313) (up to 0.03 allowed)

@@ -1,0 +1,32 @@
+test_actual_installed_pure_source_selectors (test_contracts.Controls.test_actual_installed_pure_source_selectors) ... ok
+test_all_16_fixed_configs_and_shell_syntax (test_contracts.Controls.test_all_16_fixed_configs_and_shell_syntax) ... ok
+test_depth_one_does_not_require_extra_decode (test_contracts.Controls.test_depth_one_does_not_require_extra_decode) ... ok
+test_insufficient_draft_capacity (test_contracts.Controls.test_insufficient_draft_capacity) ... ok
+test_invalid_controls (test_contracts.Controls.test_invalid_controls) ... ok
+test_profile_sample_not_admission (test_contracts.Controls.test_profile_sample_not_admission) ... ok
+test_resources_are_actual_not_constant (test_contracts.Controls.test_resources_are_actual_not_constant) ... ok
+test_sparse_draft_padding_is_valid (test_contracts.Controls.test_sparse_draft_padding_is_valid) ... ok
+test_unknown_source_rejected (test_contracts.Controls.test_unknown_source_rejected) ... ok
+test_bad_labels (test_contracts.Counters.test_bad_labels) ... ok
+test_created_reset_even_when_counts_increase (test_contracts.Counters.test_created_reset_even_when_counts_increase) ... ok
+test_decreasing_counter (test_contracts.Counters.test_decreasing_counter) ... ok
+test_duplicate_series (test_contracts.Counters.test_duplicate_series) ... ok
+test_escaped_labels (test_contracts.Counters.test_escaped_labels) ... ok
+test_identity_change (test_contracts.Counters.test_identity_change) ... ok
+test_inconsistent_accepted_positions (test_contracts.Counters.test_inconsistent_accepted_positions) ... ok
+test_invalid_counter (test_contracts.Counters.test_invalid_counter) ... ok
+test_label_change (test_contracts.Counters.test_label_change) ... ok
+test_missing_engine (test_contracts.Counters.test_missing_engine) ... ok
+test_missing_position_rejected (test_contracts.Counters.test_missing_position_rejected) ... ok
+test_no_advance (test_contracts.Counters.test_no_advance) ... ok
+test_positions_and_engine_labels_preserved (test_contracts.Counters.test_positions_and_engine_labels_preserved) ... ok
+test_unrelated_model_filtered (test_contracts.Counters.test_unrelated_model_filtered) ... ok
+test_capture_receipt_only_after_success_and_idempotent (test_contracts.Plugin.test_capture_receipt_only_after_success_and_idempotent) ... ok
+test_real_entrypoint_discovery_from_frozen_plan (test_contracts.Plugin.test_real_entrypoint_discovery_from_frozen_plan) ... ok
+test_natural_stop_and_exact_output_required (test_contracts.Semantic.test_natural_stop_and_exact_output_required) ... ok
+test_prose_is_separate_exact_contract (test_contracts.Semantic.test_prose_is_separate_exact_contract) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.395s
+
+OK

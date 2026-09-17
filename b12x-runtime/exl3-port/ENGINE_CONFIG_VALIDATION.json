@@ -1,0 +1,18 @@
+{
+  "state": "ACTUAL_ENGINEARGS_CONFIG_PASS_NOT_WEIGHT_LOAD_OR_RUNTIME_ACCEPTANCE",
+  "container_id": "b4d7a188004d860008bddda8ec88ffd7466f2036e3fb0f5b424a5ecbd0159488",
+  "image_id": "sha256:7305fbba9661ac7cfce1d0914e13c027f3d12447bbed0cbfa6ed7dd13447c9a0",
+  "exit_code": 0,
+  "cuda_context_initialized": true,
+  "model_weights_loaded": false,
+  "target_quantization": "Exl3Config",
+  "target_experts": 288,
+  "draft_experts": 288,
+  "context": 262144,
+  "kv_cache_dtype": "fp8_ds_mla",
+  "evidence_sha256": {
+    "r2-config-inspect.json": "55ee6d7a0a5bfb374fea3660ad6b68cd6a29cba92fae7fcf25781654f21a6741",
+    "r2-config-gate2.log": "b458a875f05a9480c06dfae78e0fbde8d3efccbab0de1f1e7ea82cd7d6857a1b"
+  },
+  "next_independent_gate": "Native V2 draft constructor/weight loading. Jovian C4 pooled indexer requires block_size divisible by256, not old64; runtime owner is handling configuration."
+}

@@ -1,0 +1,68 @@
++ W=/home/valentine/e216
++ SRC=/home/valentine/models/turboderp-glm53-flash-exl3-3p05bpw
++ DST=/home/valentine/models/glm53-3p05-pruned-e216
++ cd /home/valentine/e216
+++ date -u +%FT%TZ
++ echo '### pack 2026-09-14T09:33:07Z'
+### pack 2026-09-14T09:33:07Z
++ python3 /home/valentine/e216/prune_u216.py --src /home/valentine/models/turboderp-glm53-flash-exl3-3p05bpw --dst /home/valentine/models/glm53-3p05-pruned-e216 --plan /home/valentine/e216/e216-plan.json --workers 5
++ tee /home/valentine/e216/pack.log
+packing 15 shards with 5 workers
+  model-00005-of-00015.safetensors: 6,454,579,208 B sha256=08d9167e130aa01d removed=2700 renamed=7736 sliced=6 [27s]
+  model-00002-of-00015.safetensors: 6,587,230,944 B sha256=d1449828175a682d removed=2532 renamed=7904 sliced=6 [27s]
+  model-00003-of-00015.safetensors: 6,494,297,740 B sha256=41c83594d4694720 removed=2652 renamed=7800 sliced=6 [28s]
+  model-00004-of-00015.safetensors: 6,558,810,940 B sha256=542eb4340ac50aa8 removed=2568 renamed=7868 sliced=6 [28s]
+  model-00001-of-00015.safetensors: 6,892,315,196 B sha256=aa412a2d44a43dfb removed=2148 renamed=6179 sliced=4 [30s]
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/home/valentine/e216/prune_u216.py", line 73, in pack_shard
+    c = mm[a:min(b, a + CHUNK)]; fout.write(c); h.update(c); written += len(c); a += len(c)
+                                 ^^^^^^^^^^^^^
+OSError: [Errno 28] No space left on device
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/valentine/e216/prune_u216.py", line 146, in <module>
+    if __name__ == "__main__": main()
+                               ^^^^^^
+  File "/home/valentine/e216/prune_u216.py", line 104, in main
+    for r in pool.imap_unordered(pack_shard, [(str(src), str(dst), s, plan) for s in shards]):
+  File "/usr/lib/python3.12/multiprocessing/pool.py", line 873, in next
+    raise value
+OSError: [Errno 28] No space left on device
++ echo 'pack exit=1'
+pack exit=1
++ echo '### augment index (mtp + kpool_aux)'
+### augment index (mtp + kpool_aux)
++ cp /home/valentine/models/glm53-3p05-pruned-e216/model.safetensors.index.json /home/valentine/models/glm53-3p05-pruned-e216/model.safetensors.index.shards-only.json
+cp: cannot stat '/home/valentine/models/glm53-3p05-pruned-e216/model.safetensors.index.json': No such file or directory
++ python3 /home/valentine/e216/augment_index.py /home/valentine/models/glm53-3p05-pruned-e216 /home/valentine/models/glm53-3p05-pruned-e216/model.safetensors.index.json mtp.safetensors kpool_aux.safetensors
++ tee /home/valentine/e216/augment.log
+Traceback (most recent call last):
+  File "/home/valentine/e216/augment_index.py", line 14, in <module>
+    idx = json.loads((d / "model.safetensors.index.json").read_text()); wm = idx["weight_map"]; added = {}
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1029, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/valentine/models/glm53-3p05-pruned-e216/model.safetensors.index.json'
++ echo 'augment exit=1'
+augment exit=1
+++ date -u +%FT%TZ
++ echo '### G2 verify 2026-09-14T09:33:45Z'
+### G2 verify 2026-09-14T09:33:45Z
++ python3 /home/valentine/e216/verify_u216.py /home/valentine/models/turboderp-glm53-flash-exl3-3p05bpw /home/valentine/models/glm53-3p05-pruned-e216 5
++ tee /home/valentine/e216/verify.log
+Traceback (most recent call last):
+  File "/home/valentine/e216/verify_u216.py", line 127, in <module>
+    if __name__ == "__main__": main()
+                    

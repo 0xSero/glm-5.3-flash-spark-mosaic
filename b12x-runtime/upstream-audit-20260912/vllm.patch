@@ -1,0 +1,43 @@
+diff --git a/serve-ds41-flash.sh b/serve-ds41-flash.sh
+index 329c9c0..fe395f7 100755
+--- a/serve-ds41-flash.sh
++++ b/serve-ds41-flash.sh
+@@ -194,7 +194,7 @@ PY
+   profiler_args=(--profiler-config "${profiler_config}")
+ fi
+ 
+-speculative_config='{"method":"dspark","num_speculative_tokens":5,"draft_tensor_parallel_size":4,"attention_backend":"B12X_MLA_SPARSE_DSV41","draft_sample_method":"greedy","rejection_sample_method":"standard","enable_adaptive_verification":true}'
++speculative_config='{"method":"dspark","num_speculative_tokens":7,"draft_tensor_parallel_size":4,"attention_backend":"B12X_MLA_SPARSE_DSV41","draft_sample_method":"greedy","rejection_sample_method":"standard","enable_adaptive_verification":true}'
+ command=(
+   "${PYTHON_BIN}" -m vllm.entrypoints.cli.main serve "${MODEL_PATH}"
+   --served-model-name "${SERVED_MODEL_NAME}"
+@@ -202,7 +202,6 @@ command=(
+   --dtype bfloat16
+   --tensor-parallel-size 4
+   --pipeline-parallel-size 1
+-  --enable-expert-parallel
+   --load-format safetensors
+   --safetensors-load-strategy lazy
+   --block-size 256
+diff --git a/tests/kernels/mamba/test_gdn_prefill_b12x.py b/tests/kernels/mamba/test_gdn_prefill_b12x.py
+index 7e8df99..9806c37 100644
+--- a/tests/kernels/mamba/test_gdn_prefill_b12x.py
++++ b/tests/kernels/mamba/test_gdn_prefill_b12x.py
+@@ -117,7 +117,7 @@ def test_group_worklist_copies_update_captured_buffers_without_aliasing():
+ @pytest.mark.skipif(not torch.cuda.is_available(), reason="CUDA is required")
+ def test_prefill_pooled_state_graph_replays_changed_lengths_and_slots():
+     from b12x import freeze_kernel_resolution, unfreeze_kernel_resolution
+-    from b12x.policy.generation.delta_prefill_cases import (
++    from b12x.testing.delta_prefill_cases import (
+         PrefillCase,
+         assert_close,
+         make_inputs,
+@@ -209,7 +209,7 @@ def test_mixed_gdn_graph_replays_prefill_decode_verification_and_empty_worklists
+     default_vllm_config,
+ ):
+     from b12x import freeze_kernel_resolution, unfreeze_kernel_resolution
+-    from b12x.policy.generation.delta_prefill_cases import assert_close
++    from b12x.testing.delta_prefill_cases import assert_close
+     from b12x.sequence.gdn_decode.reference import decode
+     from b12x.sequence.gdn_prefill.reference import prefill_gdn
+ 

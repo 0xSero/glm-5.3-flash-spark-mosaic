@@ -1,0 +1,23 @@
+++ date -u +%FT%TZ
++ echo '== E216 PRE-STOP RECEIPT 2026-09-15T01:35:06Z =='
+== E216 PRE-STOP RECEIPT 2026-09-15T01:35:06Z ==
++ echo 'teardown reason: a0-fallback default (fork (a)) — E216 eval complete, all rows receipted'
+teardown reason: a0-fallback default (fork (a)) — E216 eval complete, all rows receipted
++ echo 'artifact PRESERVED: /home/valentine/models/glm53-3p05-pruned-e216 (no deletion)'
+artifact PRESERVED: /home/valentine/models/glm53-3p05-pruned-e216 (no deletion)
++ du -sk /home/valentine/models/glm53-3p05-pruned-e216
+94329620	/home/valentine/models/glm53-3p05-pruned-e216
++ df -h /home/valentine
++ tail -1
+/dev/nvme0n1p2  3.7T  3.4T  128G  97% /
++ curl -sS -m 5 -o /dev/null -w 'health_pre_stop=%{http_code}\n' http://127.0.0.1:8000/health
+health_pre_stop=200
++ docker inspect glm53-e216
++ echo inspect_saved
+inspect_saved
++ docker logs glm53-e216
++ grep -a max_total_num_tokens
++ tail -1
+[2026-09-14 20:37:47] max_total_num_tokens=344256, chunked_prefill_size=256, max_prefill_tokens=256, max_running_requests=1, context_len=262144, available_gpu_mem=10.99 GB
+== POST-STOP 2026-09-15T01:36:04Z ==
+nv-persisted-restore Up 12 hours

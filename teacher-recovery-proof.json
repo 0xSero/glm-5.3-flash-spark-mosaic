@@ -1,0 +1,7 @@
+{
+  "verified_rows": 32,
+  "bytes": 536873728,
+  "teacher_manifest_sha256": "a1604015f76d6a6b6f032ffb7e3359a770e8dd2564ca89e3b00eb8bcb4d93314",
+  "eval_tokens_sha256": "5b77e320eaccc959e5f731639aa4d9b908027e7647192305e374c945b44c7d44",
+  "source": "recovered from existing Omarchy reference; no GPU allocation"
+}

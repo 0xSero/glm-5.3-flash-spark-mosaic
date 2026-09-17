@@ -1,0 +1,49 @@
+{
+  "schema": "glm53-b12x-runtime-gates-v1",
+  "recorded_utc": "2026-09-11T22:05:47.985830+00:00",
+  "state": "READY_WITH_SEMANTIC_FAILURES_NOT_QUALITY_ACCEPTED",
+  "node": "spark-2384",
+  "image_id": "sha256:afb74c791853d438810b27bf28994128f5baa2a3bf5c9b50b9ecdad7b9afffd5",
+  "container_id": "95fa3d37087adf09ff2b3ed9518d234577b11bdbd2d4bddc416509cec03e9f42",
+  "served_model_id": "glm-5.3-flash",
+  "requested_context_tokens": 262144,
+  "aggregate_kv_tokens": 751007,
+  "configured_max_concurrency": 1,
+  "model_gib": 97.89,
+  "kv_gib": 5.84,
+  "activation_gib": 4.78,
+  "graph_gib": 0.13,
+  "kv_dtype": "fp8_ds_mla",
+  "requested_block_size": 256,
+  "actual_hybrid_block_size": 8704,
+  "attention_backend_target_and_draft": "B12X",
+  "kda_prefill_backend": "b12x",
+  "mtp_draft_depth": 1,
+  "mtp_experts_fp8": true,
+  "native_head_conversion_disabled": true,
+  "profiler": "completed and stopped; eight iterations; no throughput claim",
+  "native_mtp_counter_snapshot": {
+    "drafted": 555,
+    "accepted": 503,
+    "includes_semantic_and_profile_requests": true
+  },
+  "outstanding": [
+    "matched arithmetic parity",
+    "full-context real request",
+    "image and video end-to-end",
+    "steady-state throughput",
+    "quality acceptance",
+    "public release"
+  ],
+  "file_sha256": {
+    "runtime-attempt2-inspect.json": "589d15629b3351ad6beba7793ad23309f0b847a2eab7de329e9fe85f745c3413",
+    "runtime-attempt2-ready.log": "dacc7f0f5e154833d0f645f2727b2ee2cb7090a8162453330e3cc7eb347c8660",
+    "draft-probe6-success.log": "1c60f1f7f2f27c56e3a58bb022111a290216fe0178259706d0f18667b7b8ea4a",
+    "draft-probe6-inspect.json": "8c8872ecb2c558e5d399c4a1fbe794c745087f05a896ea44827a27528c7b342b",
+    "b12x-mtp-expert-fp8-real-load.json": "ed8ae796eb989e767f96e7699e045209ec2c7d0e6151d2d74cf4624648a325c7",
+    "semantic-smoke/report.json": "8d9d2c55ce339bc5312d4ab3f81eedccb318239da342db6cc8e9cee0da456bf0",
+    "semantic-smoke/count-nonthinking-report.json": "476ccdb34a02c1466805ebef427dda969132469bf4302030dbf1cb57b0679302",
+    "profiles/attribution-request.json": "edc22d2e9bb81ebd1fa96765b6df02b7f38ba9cae921091ade731508111e404e",
+    "profiles/kernel-attribution.json": "fcf4a1b857d6633a58846a05cfd3681ad809d692ddca730770b239527ce2f82f"
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "verified_utc": "2026-09-12T00:51:38.035195+00:00",
+  "state": "DOCKER_BUILD_AND_CPU_METADATA_PASS_FULL_SERVING_UNTESTED",
+  "base_image": "sha256:c0d5f76237a5fe1262291eb23b8086ef0b2637e6d8d45ccdbb9c5706df321399",
+  "image_id": "sha256:368820997e1146e9d7843367478b53ce18db708e79861f7ea269860e9a1bda4b",
+  "base_layers_unchanged": true,
+  "entrypoint_cmd_env_unchanged": true,
+  "added_size_bytes": 28522,
+  "cpu_gate": {
+    "state": "CPU_IMPORTED_CANDIDATE_METADATA_PASS",
+    "wrapper_sha256": "30321f703b39b9391d3b2fb861f84c175be48dafc05f8bd8b32be5be336224f2",
+    "candidate_config_sha256": "796e9af81387c7f712d24fa255b8367e4529a9b9d9a6e09d29fcd6b2cfc1ed3d",
+    "resolved": {
+      "3": [
+        2,
+        2,
+        2
+      ],
+      "4": [
+        2,
+        2,
+        2
+      ],
+      "5": [
+        2,
+        2,
+        3
+      ],
+      "6": [
+        2,
+        2,
+        2
+      ],
+      "7": [
+        2,
+        2,
+        2
+      ],
+      "8": [
+        2,
+        2,
+        2
+      ],
+      "9": [
+        2,
+        2,
+        2
+      ],
+      "10": [
+        2,
+        2,
+        2
+      ],
+      "11": [
+        2,
+        2,
+        2
+      ],
+      "12": [
+        2,
+        2,
+        2
+      ],
+      "13": [
+        2,
+        2,
+        2
+      ],
+      "14": [
+        2,
+        2,
+        2
+      ],
+      "15": [
+        2,
+        2,
+        2
+      ],
+      "16": [
+        2,
+        2,
+        2
+      ],
+      "17": [
+        2,
+        2,
+        2
+      ],
+      "18": [
+        2,
+        2,
+        2
+      ],
+      "19": [
+        2,
+        2,
+        2
+      ],
+      "20": [
+        2,
+        2,
+        2
+      ],
+      "21": [
+        2,
+        2,
+        2
+      ],
+      "22": [
+        2,
+        2,
+        2
+      ],
+      "23": [
+        2,
+        2,
+        2
+      ],
+      "24": [
+        2,
+        2,
+        2
+      ],
+      "25": [
+        2,
+        2,
+        2
+      ],
+      "26": [
+        2,
+        2,
+        3
+      ],
+      "27": [
+        2,
+        2,
+        2
+      ],
+      "28": [
+        2,
+        2,
+        2
+      ],
+      "29": [
+        2,
+        2,
+        2
+      ],
+      "30": [
+        2,
+        2,
+        2
+      ],
+      "31": [
+        2,
+        2,
+        3
+      ],
+      "32": [
+        2,
+        2,
+        3
+      ],
+      "33": [
+        2,
+        2,
+        2
+      ],
+      "34": [
+        2,
+        2,
+        2
+      ],
+      "35": [
+        2,
+        2,
+        3
+      ],
+      "36": [
+        2,
+        2,
+        3
+      ],
+      "37": [
+        2,
+        2,
+        2
+      ],
+      "38": [
+        2,
+        2,
+        2
+      ],
+      "39": [
+        2,
+        2,
+        2
+      ],
+      "40": [
+        2,
+        2,
+        2
+      ],
+      "41": [
+        2,
+        2,
+        2
+      ],
+      "42": [
+        2,
+        2,
+        2
+      ],
+      "43": [
+        2,
+        2,
+        2
+      ],
+      "44": [
+        2,
+        2,
+        2
+      ]
+    },
+    "cuda_initialized": false,
+    "scope": "Installed imports and actual metadata only; no full model load, GPU allocation, quality or serving claim."
+  },
+  "failed_attempts": [
+    "Firstinvocationusedruntime=nvidia unavailableonthishost; didnotstartcontainer. Attempt2 exposeddriverlibraries with CUDA_VISIBLE_DEVICES empty; noCUDAinitialization.",
+    "Firstreceiptcheck assumedCmd keyexists; bothimagesomitCmd. Rechecked usingget withsameNonevalue; noimagechange."
+  ],
+  "source_sha256": {
+    "glm_exl3_projection_bits.py": "2794ddbb9d0b92bdd8926e308826d261c31111eafca0c1be5b262d6ab810deab",
+    "cpu-import.log": "44db39f236b8682c35fb4477cdd105d995df4bee8c53d9a6b8d27f7f86fc1191",
+    "Dockerfile": "93bda7a58ed5fd9051bd2f0171f7b5202bf5ce27400dab6812fca61018fb3123",
+    "images.json": "b4406c6238d3951d7954d45a633226bd9fec74a0710a35009a071fe5ceb3735f",
+    "exl3.projection.py": "30321f703b39b9391d3b2fb861f84c175be48dafc05f8bd8b32be5be336224f2",
+    "cpu-inspect.json": "64ea93fa061a1edec4543fdd8cbf0479c6ef4309a8129f27e36a6e9c4b3eb921",
+    "install.py": "9d87c9f9895bc7c5c5b8018bbee2813c13ae709d7d3b48db505d278da8d36cf8",
+    "cpu-import-attempt2.log": "778107cb43b7ea5c2f9c5749a081418e95b0921bb7478b9d6df6b8035735d659",
+    "build.log": "93db36f65488d36e2a613ba4fef37db9a55000823c75daac15d81d4a078aef11",
+    "cpu_import.py": "6e568cdf52aea6303d9c89bb6e6a447dd57b07afb6222c14125511ea889fb8f0"
+  }
+}

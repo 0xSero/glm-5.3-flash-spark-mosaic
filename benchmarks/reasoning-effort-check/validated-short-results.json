@@ -1,0 +1,86 @@
+[
+  {
+    "artifact": "low.json",
+    "accepted": false,
+    "prompt_tokens": 51,
+    "output_tokens": 78,
+    "elapsed_seconds": 5.6454301530029625,
+    "native_request_metrics": {
+      "status": "matched_isolated_cell",
+      "request_count": 1,
+      "sum_request_prefill_seconds": 0.5530947810038924,
+      "sum_request_decode_seconds": 5.077569404966198,
+      "mean_request_prefill_seconds": 0.5530947810038924,
+      "mean_request_decode_seconds": 5.077569404966198,
+      "prompt_tokens_per_sum_request_prefill_second": 92.20842747319485,
+      "reported_counter_deltas": {
+        "vllm:request_generation_tokens_count": 1.0,
+        "vllm:request_prompt_tokens_count": 1.0,
+        "vllm:request_decode_time_seconds_count": 1.0,
+        "vllm:request_prompt_tokens_sum": 51.0,
+        "vllm:request_decode_time_seconds_sum": 5.077569404966198,
+        "vllm:request_generation_tokens_sum": 78.0,
+        "vllm:request_prefill_time_seconds_sum": 0.5530947810038924,
+        "vllm:request_prefill_time_seconds_count": 1.0
+      },
+      "scope": "vLLM request-level timing observations. Concurrent request durations overlap; these sums are not GPU-exclusive time or aggregate throughput. No native decode rate inferred because speculative first-token accounting differs."
+    },
+    "limits": "Short behavior/format checks, not a sustained decode throughput benchmark. No decode rate inferred from native counters."
+  },
+  {
+    "artifact": "low-json-mode.json",
+    "accepted": true,
+    "prompt_tokens": 51,
+    "output_tokens": 74,
+    "elapsed_seconds": 6.924079747055657,
+    "native_request_metrics": {
+      "status": "matched_isolated_cell",
+      "request_count": 1,
+      "sum_request_prefill_seconds": 0.4606312169926241,
+      "sum_request_decode_seconds": 5.098805372952484,
+      "mean_request_prefill_seconds": 0.4606312169926241,
+      "mean_request_decode_seconds": 5.098805372952484,
+      "prompt_tokens_per_sum_request_prefill_second": 110.71763727384686,
+      "reported_counter_deltas": {
+        "vllm:request_generation_tokens_count": 1.0,
+        "vllm:request_prompt_tokens_count": 1.0,
+        "vllm:request_decode_time_seconds_count": 1.0,
+        "vllm:request_prompt_tokens_sum": 51.0,
+        "vllm:request_decode_time_seconds_sum": 5.098805372952484,
+        "vllm:request_generation_tokens_sum": 74.0,
+        "vllm:request_prefill_time_seconds_sum": 0.4606312169926241,
+        "vllm:request_prefill_time_seconds_count": 1.0
+      },
+      "scope": "vLLM request-level timing observations. Concurrent request durations overlap; these sums are not GPU-exclusive time or aggregate throughput. No native decode rate inferred because speculative first-token accounting differs."
+    },
+    "limits": "Short behavior/format checks, not a sustained decode throughput benchmark. No decode rate inferred from native counters."
+  },
+  {
+    "artifact": "4096.json",
+    "accepted": true,
+    "prompt_tokens": 4096,
+    "output_tokens": 32,
+    "elapsed_seconds": 12.503017713082954,
+    "native_request_metrics": {
+      "status": "matched_isolated_cell",
+      "request_count": 1,
+      "sum_request_prefill_seconds": 10.32642464095261,
+      "sum_request_decode_seconds": 2.15248672303278,
+      "mean_request_prefill_seconds": 10.32642464095261,
+      "mean_request_decode_seconds": 2.15248672303278,
+      "prompt_tokens_per_sum_request_prefill_second": 396.6522918064064,
+      "reported_counter_deltas": {
+        "vllm:request_generation_tokens_count": 1.0,
+        "vllm:request_prompt_tokens_count": 1.0,
+        "vllm:request_decode_time_seconds_count": 1.0,
+        "vllm:request_prompt_tokens_sum": 4096.0,
+        "vllm:request_decode_time_seconds_sum": 2.15248672303278,
+        "vllm:request_generation_tokens_sum": 32.0,
+        "vllm:request_prefill_time_seconds_sum": 10.32642464095261,
+        "vllm:request_prefill_time_seconds_count": 1.0
+      },
+      "scope": "vLLM request-level timing observations. Concurrent request durations overlap; these sums are not GPU-exclusive time or aggregate throughput. No native decode rate inferred because speculative first-token accounting differs."
+    },
+    "limits": "Short behavior/format checks, not a sustained decode throughput benchmark. No decode rate inferred from native counters."
+  }
+]

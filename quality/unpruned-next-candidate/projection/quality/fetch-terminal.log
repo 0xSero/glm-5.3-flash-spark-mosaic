@@ -1,0 +1,23 @@
+{
+  "state": "MATCHED_QUALITY_MEASURED_AND_INTEGRITY_SEALED",
+  "candidate_manifest_sha256": "590ec08e84a66767e03964f7482e84c952e6b98c26cddc7d45983592c4e491f5",
+  "container_id": "2e0bda63e337c4247105ac3990471781c0cd8f2bfe0e75001d5b74fc5e1e5f67",
+  "positions": 65504,
+  "kl_bf16_to_variant": 0.4198133393365495,
+  "top1_agreement": 0.7797691744015632,
+  "bf16_perplexity": 3.199529500063886,
+  "variant_perplexity": 4.442209471744376,
+  "quality_accepted": false,
+  "runtime_accepted": false,
+  "receipt_sha256": {
+    "seal.log": "706d461c47341bae5e8a4f572f99084581418db98382665b27e27b9a5db284ae",
+    "capture.log": "0a4a24b7d15259cb2cc3772283b3c361f8f1ba2e33505d88a3df66930078ad06",
+    "normalized-manifest.json": "56d1c9dadb8582a770aa89a225f9c56d88215c60e11b9ea460fafb3e858261e9",
+    "quality-integrity-seal.json": "706d461c47341bae5e8a4f572f99084581418db98382665b27e27b9a5db284ae",
+    "evaluation-identity.json": "a4b0029a12655c57aa8894872368643905dc9d7704e8847f643638cb35b327db",
+    "capture-inspect.json": "fca412c999ec1140cbd687bb44eae65f98337584fe9ac2763c3e9335bf2843ea",
+    "capture-status.json": "30e50314e82dbeda5bba1eeceb702e50b2d0599e89c8dbf3647f681f73c749dd",
+    "quality-report.json": "c606e0de431079bbb2ea04e2ffaca05529bd8e0e914acbe8096aca6436dad1e2",
+    "layer-history.json": "9b771e3a6589520f1691b447e11db6a782e21a661e2c7260c72ff2a85aa12c2f"
+  }
+}

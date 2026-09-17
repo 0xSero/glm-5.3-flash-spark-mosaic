@@ -1,0 +1,1 @@
+{"index": "/home/valentine/models/glm53-3p05-pruned-s216/model.safetensors.index.json", "total_size": 96485484504, "added": {"mtp.safetensors": {"tensors": 3508, "tensor_bytes": 2862179364}, "kpool_aux.safetensors": {"tensors": 22, "tensor_bytes": 11545600}}}

@@ -1,0 +1,22 @@
+{
+  "full_load.py": {
+    "sha256": "7f910e676f29d3830f90a54bc056edf9293b3a7544dcc6b11d856b230231f898",
+    "source_relative_path": "mtp-draft-nvfp4/full-nvfp4-attempt2/source/full_load.py"
+  },
+  "native-parameter-baseline.json": {
+    "sha256": "57c3d0fa56086043621702cfb82aeed52459499f92da72a2e9b8370048afec66",
+    "source_relative_path": "mtp-draft-nvfp4/full-nvfp4-attempt2/source/native-parameter-baseline.json"
+  },
+  "reference_packed.py": {
+    "sha256": "0e592784542a1038212cb21233a71d67e9622002b6969fce917c7d9867b87cb2",
+    "source_relative_path": "mtp-draft-nvfp4/gpu-attempt7/source/reference_packed.py"
+  },
+  "packed_routes.py": {
+    "sha256": "bbab9d23792781f1e12cfe72fc2f5ab75e649faa5e10db1e5f25cf7bd24e3de0",
+    "source_relative_path": "mtp-draft-nvfp4/gpu-attempt7/source/packed_routes.py"
+  },
+  "glm_mtp_expert_precision.py": {
+    "sha256": "2a7a2bd3a3dd63ecf802b1c2169172ae51dfb268b4bcaaf0c88794dc20ae02e7",
+    "source_relative_path": "mtp-nvfp4-runtime/glm_mtp_expert_precision.py"
+  }
+}

@@ -1,0 +1,141 @@
++ IMG=glm53-flash-sglang-exl3-plain:serve4
++ URL=http://spark-557f.internal:8000
++ POINT='S216: exl3_plain 3.05bpw pruned uniform-216 by K3-sensitivity x log(routes+1) (glm53-3p05-pruned-s216) served on spark-557f (container glm53-s216, image serve4-pruned b9cf5753), measured from spark-2384'
+++ date -u +%FT%TZ
++ echo '### candidate 2026-09-13T21:15:19Z'
+### candidate 2026-09-13T21:15:19Z
++ grep -v 'UserWarning\|warnings.warn'
++ R /w2port/g4/g4_panel.py --phase candidate --url http://spark-557f.internal:8000 --out /w2port/g4/panel-s216 --receipt /w2port/out/s216-g4-panel.json --topk-cand 2048 --point 'S216: exl3_plain 3.05bpw pruned uniform-216 by K3-sensitivity x log(routes+1) (glm53-3p05-pruned-s216) served on spark-557f (container glm53-s216, image serve4-pruned b9cf5753), measured from spark-2384'
++ docker run --rm --network host -v /home/sero/w2port:/w2port -v /home/sero/models-2p05-stage/2p05bpw:/model:ro -v /home/sero/work/glm53-single-spark-release-20260911/bf16-normalized:/teacher-hidden:ro --entrypoint python3 glm53-flash-sglang-exl3-plain:serve4 /w2port/g4/g4_panel.py --phase candidate --url http://spark-557f.internal:8000 --out /w2port/g4/panel-s216 --receipt /w2port/out/s216-g4-panel.json --topk-cand 2048 --point 'S216: exl3_plain 3.05bpw pruned uniform-216 by K3-sensitivity x log(routes+1) (glm53-3p05-pruned-s216) served on spark-557f (container glm53-s216, image serve4-pruned b9cf5753), measured from spark-2384'
+[candidate] row 0: 24.2s, k=2048, mean NLL 1.2097
+[candidate] row 1: 9.4s, k=2048, mean NLL 1.3108
+[candidate] row 2: 8.5s, k=2048, mean NLL 1.5249
+[candidate] row 3: 8.7s, k=2048, mean NLL 1.9406
+[candidate] row 4: 8.7s, k=2048, mean NLL 1.8940
+[candidate] row 5: 8.8s, k=2048, mean NLL 1.6091
+[candidate] row 6: 8.7s, k=2048, mean NLL 1.5783
+[candidate] row 7: 8.7s, k=2048, mean NLL 1.9600
+[candidate] row 8: 8.6s, k=2048, mean NLL 1.9961
+[candidate] row 9: 8.8s, k=2048, mean NLL 2.1165
+[candidate] row 10: 8.7s, k=2048, mean NLL 1.9547
+[candidate] row 11: 8.8s, k=2048, mean NLL 2.1096
+[candidate] row 12: 8.8s, k=2048, mean NLL 2.1748
+[candidate] row 13: 8.9s, k=2048, mean NLL 2.2662
+[candidate] row 14: 8.8s, k=2048, mean NLL 2.2075
+[candidate] row 15: 8.9s, k=2048, mean NLL 2.4472
+[candidate] row 16: 8.8s, k=2048, mean NLL 2.1724
+[candidate] row 17: 9.2s, k=2048, mean NLL 2.1721
+[candidate] row 18: 9.0s, k=2048, mean NLL 1.8738
+[candidate] row 19: 8.8s, k=2048, mean NLL 1.7081
+[candidate] row 20: 8.8s, k=2048, mean NLL 1.9161
+[candidate] row 21: 8.9s, k=2048, mean NLL 1.9202
+[candidate] row 22: 8.8s, k=2048, mean NLL 1.8105
+[candidate] row 23: 8.8s, k=2048, mean NLL 1.8877
+[candidate] row 24: 8.9s, k=2048, mean NLL 2.0522
+[candidate] row 25: 8.8s, k=2048, mean NLL 1.8746
+[candidate] row 26: 8.9s, k=2048, mean NLL 2.1995
+[candidate] row 27: 8.8s, k=2048, mean NLL 2.0979
+[candidate] row 28: 8.8s, k=2048, mean NLL 1.7620
+[candidate] row 29: 8.7s, k=2048, mean NLL 1.6667
+[candidate] row 30: 8.7s, k=2048, mean NLL 1.5720
+[candidate] row 31: 8.8s, k=2048, mean NLL 1.3836
++ echo 'candidate exit=0'
+candidate exit=0
+++ date -u +%FT%TZ
++ echo '### compare 2026-09-13T21:21:05Z'
+### compare 2026-09-13T21:21:05Z
++ R /w2port/g4/g4_panel.py --phase compare --url http://spark-557f.internal:8000 --out /w2port/g4/panel-s216 --receipt /w2port/out/s216-g4-panel.json --topk-cand 2048 --point 'S216: exl3_plain 3.05bpw pruned uniform-216 by K3-sensitivity x log(routes+1) (glm53-3p05-pruned-s216) served on spark-557f (container glm53-s216, image serve4-pruned b9cf5753), measured from spark-2384'
++ grep -v 'UserWarning\|warnings.warn'
++ docker run --rm --network host -v /home/sero/w2port:/w2port -v /home/sero/models-2p05-stage/2p05bpw:/model:ro -v /home/sero/work/glm53-single-spark-release-20260911/bf16-normalized:/teacher-hidden:ro --entrypoint python3 glm53-flash-sglang-exl3-plain:serve4 /w2port/g4/g4_panel.py --phase compare --url http://spark-557f.internal:8000 --out /w2port/g4/panel-s216 --receipt /w2port/out/s216-g4-panel.json --topk-cand 2048 --point 'S216: exl3_plain 3.05bpw pruned uniform-216 by K3-sensitivity x log(routes+1) (glm53-3p05-pruned-s216) served on spark-557f (container glm53-s216, image serve4-pruned b9cf5753), measured from spark-2384'
+Traceback (most recent call last):
+  File "/w2port/g4/g4_panel.py", line 257, in <module>
+    main()
+  File "/w2port/g4/g4_panel.py", line 236, in main
+    summary, per_row = compare_phase(a, ref, out)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w2port/g4/g4_panel.py", line 142, in compare_phase
+    T = torch.load(out / f"teacher-row-{r:03d}.pt")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/sglang/lib/python3.12/site-packages/torch/serialization.py", line 1561, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/sglang/lib/python3.12/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/sglang/lib/python3.12/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/w2port/g4/panel-s216/teacher-row-000.pt'
++ echo 'compare exit=1'
+compare exit=1
+++ date -u +%FT%TZ
++ echo '### samples 2026-09-13T21:21:15Z'
+### samples 2026-09-13T21:21:15Z
++ R /w2port/g4/g4_samples.py --url http://spark-557f.internal:8000 --out-dir /w2port/g4/samples-s216 --receipt /w2port/out/s216-g4-samples.json --point 'S216: exl3_plain 3.05bpw pruned uniform-216 by K3-sensitivity x log(routes+1) (glm53-3p05-pruned-s216) served on spark-557f (container glm53-s216, image serve4-pruned b9cf5753), measured from spark-2384'
++ grep -v 'UserWarning\|warnings.warn'
++ docker run --rm --network host -v /home/sero/w2port:/w2port -v /home/sero/models-2p05-stage/2p05bpw:/model:ro -v /home/sero/work/glm53-single-spark-release-20260911/bf16-normalized:/teacher-hidden:ro --entrypoint python3 glm53-flash-sglang-exl3-plain:serve4 /w2port/g4/g4_samples.py --url http://spark-557f.internal:8000 --out-dir /w2port/g4/samples-s216 --receipt /w2port/out/s216-g4-samples.json --point 'S216: exl3_plain 3.05bpw pruned uniform-216 by K3-sensitivity x log(routes+1) (glm53-3p05-pruned-s216) served on spark-557f (container glm53-s216, image serve4-pruned b9cf5753), measured from spark-2384'
+[samples] sd-toolcall-weather ...
+[samples] sd-toolcall-weather: PASS {'finish_reason_stop': False, 'finish_reason_in': True, 'tool_calls_count': True, 'function_name': True, 'arguments_json_equals': True} 
+[samples] gn-behavior-chinese ...
+[samples] gn-behavior-chinese: PASS {'finish_reason_stop': True, 'content_equals': True} 
+[samples] rs-6x7-low-text ...
+[samples] rs-6x7-low-text: PASS {'finish_reason_stop': True, 'content_json_equals': True} 
+[samples] rs-6x7-medium-text ...
+[samples] rs-6x7-medium-text: PASS {'finish_reason_stop': True, 'content_json_equals': True} 
+[samples] rs-6x7-high-text ...
+[samples] rs-6x7-high-text: PASS {'finish_reason_stop': True, 'content_json_equals': True} 
+[samples] rs-6x7-medium-json ...
+[samples] rs-6x7-medium-json: PASS {'finish_reason_stop': True, 'content_json_equals': True} 
+[samples] rs-6x7-high-json ...
+[samples] rs-6x7-high-json: PASS {'finish_reason_stop': True, 'content_json_equals': True} 
+[samples] sd-json300-1024 ...
+[samples] sd-json300-1024: FAIL {'finish_reason_stop': False, 'content_json_equals': False, 'all_integers_type_int': False, 'prompt_tokens_equals_actual': True, 'server_idle_before_and_after': True} 
+[samples] rl-audit3-4096 ...
+[samples] rl-audit3-4096: PASS {'finish_reason_stop': True, 'content_json_equals': True, 'prompt_tokens_equals_target': True, 'cached_tokens_in': True} 
+[samples] gn-tips240-4096 ...
+[samples] gn-tips240-4096: FAIL {'server_tokenization_matches_local': True, 'finish_reason_stop': False, 'content_lines_starting_with_hash': False, 'lines_numbered_1_to_240_in_order': False, 'distinct_lines': True} 
+[samples] sd-json300-4096 ...
+[samples] sd-json300-4096: FAIL {'finish_reason_stop': False, 'content_json_equals': False, 'all_integers_type_int': False, 'prompt_tokens_equals_actual': True, 'server_idle_before_and_after': True} 
+[samples] gn-tips240-16384 ...
+[samples] gn-tips240-16384: FAIL {'server_tokenization_matches_local': True, 'finish_reason_stop': False, 'content_lines_starting_with_hash': False, 'lines_numbered_1_to_240_in_order': False, 'distinct_lines': True} 
+[samples] rl-audit3-65536 ...
+[samples] rl-audit3-65536: PASS {'finish_reason_stop': True, 'content_json_equals': True, 'prompt_tokens_equals_target': True, 'cached_tokens_in': True} 
+[samples] gn-tips240-65536 ...
+[samples] gn-tips240-65536: FAIL {'server_tokenization_matches_local': True, 'finish_reason_stop': False, 'content_lines_starting_with_hash': False, 'lines_numbered_1_to_240_in_order': False, 'distinct_lines': True} 
+[samples] sd-json300-131072 ...
+[samples] sd-json300-131072: FAIL {'finish_reason_stop': False, 'content_json_equals': False, 'all_integers_type_int': False, 'prompt_tokens_equals_actual': True, 'server_idle_before_and_after': True} 
+[samples] rl-audit3-131072 ...
+[samples] rl-audit3-131072: PASS {'finish_reason_stop': True, 'content_json_equals': True, 'prompt_tokens_equals_target': True, 'cached_tokens_in': True} 
+[samples] gn-tips240-131072 ...
+[samples] gn-tips240-131072: FAIL {'server_tokenization_matches_local': True, 'finish_reason_stop': False, 'content_lines_starting_with_hash': False, 'lines_numbered_1_to_240_in_order': False, 'distinct_lines': True} 
+[samples] sd-json300-200000 ...
+[samples] sd-json300-200000: FAIL {'finish_reason_stop': False, 'content_json_equals': False, 'all_integers_type_int': False, 'prompt_tokens_equals_actual': True, 'server_idle_before_and_after': True} 
+[samples] rl-audit3-262016 ...
+[samples] rl-audit3-262016: PASS {'finish_reason_stop': True, 'content_json_equals': True, 'prompt_tokens_equals_target': True, 'cached_tokens_in': True} 
+[samples] rl-registry4-262016 ...
+[samples] rl-registry4-262016: PASS {'server_tokenization_matches_local': True, 'finish_reason_stop': True, 'content_json_equals': True, 'context_accounting': True, 'cached_tokens_in': True, 'idle_after': True} 
+{
+ "passes": 12,
+ "scored": 20,
+ "of": 20,
+ "score": 0.6,
+ "per_family": {
+  "structured_decode": "1/5",
+  "generation": "1/5",
+  "reasoning": "5/5",
+  "retrieval_long_context": "5/5"
+ },
+ "scoring_rule": {
+  "per_sample": "binary pass/fail per expected_behavior + scorer",
+  "score(point)": "passes / 20",
+  "retention": "score(point) / score(denominator); denominators per CAMPAIGN-12H section 4.4 (A1 vs A0; A2d/A2/controls vs A0, labelled)",
+  "per_family_breakdown": "report passes per family (5 each) alongside the total; families are not weighted",
+  "runtime": "each sample is one isolated C1 request on the digest-pinned image, server idle before/after, cold prefix cache, temperature 0",
+  "output_reserve_note": "output_reserve_tokens are the existing harness context-accounting reserves, unchanged; every expected answer completes with finish_reason=stop well inside them"
+ }
+}
++ echo 'samples exit=0'
+samples exit=0
+++ date -u +%FT%TZ
++ echo 'S216_G4_DONE 2026-09-13T22:36:54Z'
+S216_G4_DONE 2026-09-13T22:36:54Z

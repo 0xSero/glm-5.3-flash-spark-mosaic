@@ -1,0 +1,79 @@
+{
+  "activation_gib": 4.78,
+  "actual_hybrid_block_size": 8704,
+  "compilation_config": {
+    "cudagraph_capture_sizes": [
+      1,
+      3
+    ],
+    "cudagraph_mode": "FULL_DECODE_ONLY",
+    "custom_ops": [
+      "all"
+    ],
+    "max_cudagraph_capture_size": 3
+  },
+  "context_limit": 262144,
+  "cuda_graphs": true,
+  "depth": 2,
+  "evidence_sha256": {
+    "captures.json": "02b7062a68a023a134ca735800341cec0b39d464be34007f57e192b508f23ab2",
+    "engine.log": "52c0e357ee688215b0c628213c25883c963e9ac9e5a7a0e10ec1d133521cacf8",
+    "identity.json": "c662d4332a3e771b9a1140c0d81a8138cfa81648bf9a958259168de5c28559ff",
+    "inspect.json": "0de69b22a9490546ac2ddf1a7c0f4b7fa1ae861cb7bb4b7b55fa9d5c82ee1870",
+    "models.json": "f9ccd6dab0276a102a89c86b08fd85afd205c9bdb1fb35f044d90d51cb53e653"
+  },
+  "gpu_memory_fraction": 0.93,
+  "graph_pool_actual_gib": 0.13,
+  "identity": {
+    "container_id": "ea503924aca7beb4eb0efd9b15de85c1018fd2fb1c2880089d3a415b6d55e0b8",
+    "image_id": "sha256:afb74c791853d438810b27bf28994128f5baa2a3bf5c9b50b9ecdad7b9afffd5",
+    "processes": [
+      [
+        "1367590",
+        "Sat",
+        "Sep",
+        "12",
+        "11:04:29",
+        "2026",
+        "python3"
+      ],
+      [
+        "1368108",
+        "Sat",
+        "Sep",
+        "12",
+        "11:04:57",
+        "2026",
+        "python3"
+      ],
+      [
+        "1368109",
+        "Sat",
+        "Sep",
+        "12",
+        "11:04:57",
+        "2026",
+        "VLLM::EngineCor"
+      ]
+    ],
+    "started_at": "2026-09-12T09:04:30.399264588Z"
+  },
+  "kv_capacity_tokens": 753664,
+  "kv_dtype": "fp8_ds_mla",
+  "kv_memory_gib": 6.32,
+  "max_num_batched_tokens": 2048,
+  "max_num_seqs": 1,
+  "model": "glm-5.3-flash",
+  "model_memory_gib": 97.89,
+  "plan_sha256": "87541fb5d5b2698950ee5ee5e3762305418a1fdec79e5ba5ab3325e726f06142",
+  "prefix_caching": false,
+  "recorded_utc": "2026-09-12T09:19:44.490792+00:00",
+  "schema": "glm53-depth-runtime-admission-v1",
+  "speculative_config": {
+    "attention_backend": "B12X",
+    "method": "mtp",
+    "model": "/mtp",
+    "num_speculative_tokens": 2
+  },
+  "state": "ADMITTED_FOR_ISOLATED_BENCHMARK_NOT_QUALITY_ACCEPTED"
+}

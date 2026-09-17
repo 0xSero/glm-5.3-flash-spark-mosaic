@@ -1,0 +1,96 @@
+{
+  "schema": "glm53-k176-independent-layer3-sample-check-v1",
+  "manifest": {
+    "completed_at": "2026-09-11T19:07:14.191831+00:00",
+    "layer": 3,
+    "mode": "variant",
+    "state": "COMPLETE",
+    "workers": [
+      {
+        "completed": 32,
+        "elapsed_seconds": 45.93677051807754,
+        "gpu": 0,
+        "layer": 3,
+        "loaded_bytes": 9161562520,
+        "mode": "variant",
+        "rows": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "skipped": 0,
+        "state": "COMPLETE"
+      }
+    ]
+  },
+  "results": [
+    {
+      "row": 0,
+      "layer": 3,
+      "sha256_matches": true,
+      "shape": [
+        1,
+        2048,
+        4,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "finite": true
+    },
+    {
+      "row": 15,
+      "layer": 3,
+      "sha256_matches": true,
+      "shape": [
+        1,
+        2048,
+        4,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "finite": true
+    },
+    {
+      "row": 31,
+      "layer": 3,
+      "sha256_matches": true,
+      "shape": [
+        1,
+        2048,
+        4,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "finite": true
+    }
+  ]
+}

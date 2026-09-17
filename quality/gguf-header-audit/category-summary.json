@@ -1,0 +1,37 @@
+{
+  "target_nonexpert": {
+    "tensors": 1257,
+    "elements": 8921004862,
+    "bytes": 7690382584,
+    "effective_bpw": 6.896427210130132,
+    "types": {
+      "Q6_K": 290,
+      "F32": 625,
+      "Q8_0": 342
+    }
+  },
+  "target_routed_experts": {
+    "tensors": 126,
+    "elements": 304405807104,
+    "bytes": 109867696128,
+    "effective_bpw": 2.8874007936507935,
+    "types": {
+      "IQ3_S": 41,
+      "IQ2_S": 82,
+      "IQ4_XS": 3
+    }
+  },
+  "MTP_all": {
+    "tensors": 29,
+    "elements": 7432592416,
+    "bytes": 2799972480,
+    "effective_bpw": 3.0137236897021853,
+    "types": {
+      "Q8_0": 8,
+      "F32": 13,
+      "Q6_K": 5,
+      "Q3_K": 1,
+      "Q2_K": 2
+    }
+  }
+}

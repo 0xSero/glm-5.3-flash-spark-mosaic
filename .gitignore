@@ -1,0 +1,13 @@
+# Large binary receipts (model weight shards, logit rows, torch dumps) — kept on disk and on the hosts, not in git.
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.gguf
+*.index.json
+__pycache__/
+*.pyc
+# Embedded upstream checkouts (separate git repos, cloned for inspection).
+b12x-runtime/upstream-vllm/
+b12x-runtime/upstream-exllamav3/
+b12x-runtime/upstream-spark-docker/

@@ -1,0 +1,7 @@
+{
+  "state": "ASSEMBLY_COMPLETE_NO_GPU_QUALITY",
+  "time": 1789164943.8517237,
+  "container_id": "53bbd17108dbaff5122c18fb48047cad0cdc43d76f4f7b902e4d81ecbf896786",
+  "manifest_sha256": "73291ede5c0f2ad13dcd9fbdfe3887f133ef713d56c589c59c6392bdb887b45c",
+  "tensor_bytes": 113086732152
+}

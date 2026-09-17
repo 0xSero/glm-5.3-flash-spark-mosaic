@@ -1,0 +1,25 @@
+2026-09-16T20:29:54Z SUITE_START
+2026-09-16T20:30:24Z wait 1 panel marker=ssh-fail
+2026-09-16T20:31Z SUITE_ABORT attempt1 (venv shebang broken after archive move; fixed via ~/lmeval-mac-venv symlink; receipts: this log)
+2026-09-16T20:31:33Z SUITE_START
+2026-09-16T20:31:34Z wait 1 panel marker=0
+2026-09-16T20:36:36Z wait 2 panel marker=0
+2026-09-16T20:41:37Z wait 3 panel marker=0
+2026-09-16T20:46:38Z wait 4 panel marker=0
+2026-09-16T20:52:12Z wait 5 panel marker=ssh-fail
+2026-09-16T20:57:15Z wait 6 panel marker=0
+2026-09-16T21:02:49Z wait 7 panel marker=ssh-fail
+STOPPED_OWN_SUITE_ATTEMPT2 2026-09-16T21:05:41Z reason=wait-condition-too-strict (a0 leg uses 2384 server, not 557f)
+2026-09-16T21:05:41Z SUITE_START
+2026-09-16T21:05:42Z wait 1 panel marker=0
+2026-09-16T21:10:43Z wait 2 panel marker=0
+2026-09-16T21:15:43Z wait 3 panel marker=0
+2026-09-16T21:20:44Z wait 4 panel marker=0
+2026-09-16T21:25:52Z wait 5 panel marker=0
+2026-09-16T21:30:52Z wait 6 panel marker=0
+2026-09-16T21:35:52Z MOSAIC_PANEL_DONE after 6 waits
+2026-09-16T21:35:52Z leg1 quick MMLU start
+2026-09-17T00:09:43Z leg1 quick MMLU done
+2026-09-17T00:09:45Z leg2 gpqa MC start
+2026-09-17T00:24:02Z leg2 gpqa MC done
+2026-09-17T00:24:02Z SUITE_DONE

@@ -1,0 +1,55 @@
+{
+  "repo": "0xSero/GLM-5.3-Flash-EXL3-TR3-2.0bpw",
+  "revision": "35b4b580debe2a1510a2eb042d9d6d4cd7fb3a6b",
+  "authenticated": false,
+  "files": [
+    {
+      "file": "tokenizer.json",
+      "sha256": "19e773648cb4e65de8660ea6365e10acca112d42a854923df93db4a6f333a82d",
+      "bytes": 20217442,
+      "pass": true
+    },
+    {
+      "file": "tokenizer_config.json",
+      "sha256": "98b1271574f41abf89427ae2dda030d94dc9478f0edc5a8bd240db213c6fd5fc",
+      "bytes": 761,
+      "pass": true
+    },
+    {
+      "file": "chat_template.jinja",
+      "sha256": "d15e56b35f444101d539a0101e56594783bd10987ebdfc61b7cc809af4500754",
+      "bytes": 8757,
+      "pass": true
+    },
+    {
+      "file": "processor_config.json",
+      "sha256": "aae38374c94b08cc9b0547c6e64f05b951bd9735cea571c6988f5ed552bed3ed",
+      "bytes": 909,
+      "pass": true
+    },
+    {
+      "file": "generation_config.json",
+      "sha256": "230c30609ecbbb9e6583bedde8e7bdda0c6eb8fe5fad0eaeb3d1b293d751cb4f",
+      "bytes": 194,
+      "pass": true
+    },
+    {
+      "file": "LICENSE",
+      "sha256": "30b85b6b9659f2e78aa259f8faf5d920a68dee7c9ced3fa6dba1f19f2bc4fca1",
+      "bytes": 1070,
+      "pass": true
+    },
+    {
+      "file": "manifest.json",
+      "sha256": "8d6e5328de1a5f27270167f4fa9c05ea00ac257de8c896f33f8dc7ac4d724b7e",
+      "bytes": 286626,
+      "pass": true
+    },
+    {
+      "file": "quantization_config.json",
+      "sha256": "c0ff915ffab04074004391242807ce8a1b77a37d15eb4eaf975417ed3fa1634b",
+      "bytes": 966,
+      "pass": true
+    }
+  ]
+}

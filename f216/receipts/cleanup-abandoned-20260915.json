@@ -1,0 +1,40 @@
+{
+  "schema": "f216-cleanup-receipt-v1",
+  "date_utc": "2026-09-15T15:00:00Z",
+  "request": "clean up space of things we are abandoning",
+  "preserved_untouched": {
+    "2384": [
+      "glm53-flash-sglang-exl3-plain:serve4 c65c840f1908 (image of the RUNNING a0-bench serving container)",
+      "ghcr.io/0xsero/glm53-flash-exl3-plain:2p05-sglang-mul1-r1 (same image id as serve4; alias kept)",
+      "glm53-b12x-exl3:jovian-3aada677-r3 afb74c791853 (accepted runtime; base for potential future builds)",
+      "dsv41-spark-calibration:corpus dc12273761ee + :uring 9cbfd635791f (teacher/calibration data — protected)",
+      "local/glm53-abliterated-exl3-q3-presliced:a53ba7f + ghcr.io/miaai-lab/...:exl3 ad0cdd86d1dd (archived-study artifacts; preslice not re-derivable without rerun)",
+      "ghcr.io/tonyd2wild/vllm-glm53-flash:sm121-v11-dflash2 35c6f70ffcba (0B unique size — deletion frees nothing)"
+    ],
+    "557f": ["e216 candidate artifact (preserved by directive)", "q4-stage1-obs staged files (capture production input)"],
+    "2822": ["GLM-5.3-Flash-EXL3-Q4-d0b9301a master download (183.2GB)", "q4-stage0-obs staged files (capture production input)", "glm53-flash-sglang-exl3-plain:serve4-pruned (F216 build base)"]
+  },
+  "deleted": {
+    "2384": [
+      {"item": "container glm53-exl3-plain-serve-rec (Exited 137, 25h old)", "reason": "e216-era exited serving record; evidence already receipted as inspect JSONs on the Mac"},
+      {"item": "images: sglang serve2 58fba29a854d, mul1-validate 25404fe674b1, v1 0d292fdc9c61; b12x jovian-3aada677-r2 7305fbba9661, jovian-3aada677 4ec5267998b6; dsv4-k2-oracle-env:20260905a 79e4af990d9a", "reason": "superseded generations + retired DSV4 program env; nearly all layers shared with kept images — real freed space ~1GB"},
+      {"item": "/tmp/glm53-b12x-r3-base.tar (25.78GB)", "reason": "abandoned transfer (r3-base plan superseded by the recovered original observer image)"},
+      {"item": "/tmp/glm53-observer-20260907.tar (21.6GB)", "reason": "transfer complete to both nodes; source tar no longer needed"}
+    ],
+    "2822": [
+      {"item": "/home/sero/work/glm53-b12x-r3-base.tar partial (12.6GB) + /tmp vendoring tars (10.6MB)", "reason": "abandoned r3-base reconstruction path"},
+      {"item": "image glm53-full-observer-fla:f216-20260915 5133437b0019 (~32GB) + dangling ea2cfc7f88fa + /home/sero/work/f216-image build context", "reason": "sglang-derived observer fallback images, superseded by the recovered original image ddc1b6cf after the qualification smoke passed"}
+    ],
+    "557f": [
+      {"item": "image glm53-full-observer-fla:f216-20260915 5c18f14ab796 (~32GB) + dangling 7c58d055002f + /home/valentine/f216-image build context", "reason": "same as 2822"},
+      {"item": "/home/valentine/f216/glm53-observer-20260907.tar (21.6GB)", "reason": "load complete"}
+    ],
+    "mac": [
+      {"item": "/tmp/vllm-487ecf187 git worktree, /tmp/f216-vllm-pkg*, /tmp/exllamav3-v0.0.43-src.tar.gz, /tmp/vllm-exl3-wrapper.py", "reason": "abandoned vendoring/reconstruction workspace"}
+    ]
+  },
+  "discovery": {
+    "observer_image_recovered": "ddc1b6cf8d89f1f0c0294a9a7a3c86d63cb7ad486d236013d75fb46914e2c576 was present on 2384 as a dangling image; matches observer-image-transfer-proof.json (2822 entry); retagged glm53-full-observer-fla:20260907; CPU-validated EXACT against the original receipts: extension_sha256 0eeb983b…, wrapper_sha256 41fc9bb4…, vllm 0.1.dev20051+g487ecf187, torch 2.13.0+cu130, transformers 5.16.1, modeling sha 2092bbb4…; transferred to 2822 + 557f (docker save/load, sha verified identical)"
+  },
+  "disk_state_after": {"2384": "343GB free (91%) — dominated by non-docker data; protected/aliased images hold little unique space", "2822": "1.8TB free", "557f": "46GB free (99%) — tight; stage1 files (88.6GB) cleared-with-receipt planned before any F216 build/serving step"}
+}

@@ -1,0 +1,307 @@
+{
+  "adapter_sha256": "92575684b11dd8732a7cb15c6b6895621ea10f44192b9378ce8b781e0a180d67",
+  "artifact_mode": "mixed_whole_layer_k2_k3_candidate",
+  "baseline_evaluator_sha256": "0c02949a77d28fe7c45786e964a1241cbba8d33b076335ca6a08a4fcac28729a",
+  "bf16_cross_entropy": 1.1630037677654943,
+  "bf16_perplexity": 3.199529500063886,
+  "candidate_config_sha256": "709303b80663e2c0e3dc86498a90e7acfdafa61076e9a4e817af8965cb05f094",
+  "candidate_index_sha256": "ffa8fd58c66ad43aed073a83cff2bfc6a7bdb8ebbe14ba137213a205f59204fb",
+  "candidate_manifest_sha256": "73291ede5c0f2ad13dcd9fbdfe3887f133ef713d56c589c59c6392bdb887b45c",
+  "capture_policy": "All45 decoder layers, propagated hidden streams and previous DSA attention token indices, final native RMSNorm.",
+  "default_bits": 2,
+  "dependency_sha256": {
+    "glm53_exl3_tp4": "488b6f93183dde8c5c5a8248b46ccf22875e8619ddc0a3aa48115da34578a1a7",
+    "release_route_capture_v2": "3c5f5558d2a248fd375944067f992619a43fb3ed982b6eb6b30570b7ac1b15b8"
+  },
+  "experts_per_layer": 288,
+  "fixture_manifest_sha256": "46255621cd2da8e05546edc3498cfbee518da092af2f44ae243f79da97c0f00b",
+  "head_arithmetic": "BF16 torch.nn.functional.linear, then FP32 logits; vocabulary chunks4096",
+  "kl_bf16_to_variant": 0.41779219123643085,
+  "layer_bits": {
+    "32": 3,
+    "5": 3
+  },
+  "mixed_validator_sha256": "b9192f5c403323bc100285f3b1787852b459a192b2b529c173d479f359f9fb86",
+  "mtp_policy": "Preserved artifact MTP excluded from target-trunk quality, matching teacher baseline.",
+  "native_import_sha256": {
+    "exllamav3.modules.quant.exl3": "9029b566a8908e8b2aa3ecb0e1e6c73190cfc1368982b26bfbaf6be886149092",
+    "exllamav3_ext": "0eeb983b09dfe33451b8bc7625174320529b986a73f60b58bf4ebfa9f43ad9c0",
+    "reap.glm53_exl3_native": "22bc0749d74787e9df7ca0a06ec0fc257e4cf58cc5f9c2f315088d2ed5694380",
+    "vllm.model_executor.layers.quantization.exl3": "41fc9bb42f3a555dbcef05b8b6c4fb1fa63dfe80e844f66078d160d4f3235db9"
+  },
+  "original_source_inventory_sha256": null,
+  "original_source_repo": null,
+  "original_source_revision": null,
+  "per_row": [
+    {
+      "bf16_nll_sum": 1311.0198974609375,
+      "kl_sum": 728.9226562296972,
+      "row": 0,
+      "tokens": 2047,
+      "top1_agree": 1721,
+      "variant_nll_sum": 1965.34765625
+    },
+    {
+      "bf16_nll_sum": 916.3118896484375,
+      "kl_sum": 1334.199106875807,
+      "row": 1,
+      "tokens": 2047,
+      "top1_agree": 1567,
+      "variant_nll_sum": 2046.971923828125
+    },
+    {
+      "bf16_nll_sum": 1341.9949951171875,
+      "kl_sum": 1552.573874462396,
+      "row": 2,
+      "tokens": 2047,
+      "top1_agree": 1513,
+      "variant_nll_sum": 2639.703369140625
+    },
+    {
+      "bf16_nll_sum": 2598.87646484375,
+      "kl_sum": 763.6378793679178,
+      "row": 3,
+      "tokens": 2047,
+      "top1_agree": 1609,
+      "variant_nll_sum": 3173.314453125
+    },
+    {
+      "bf16_nll_sum": 2475.73291015625,
+      "kl_sum": 596.0750514566898,
+      "row": 4,
+      "tokens": 2047,
+      "top1_agree": 1697,
+      "variant_nll_sum": 2852.28125
+    },
+    {
+      "bf16_nll_sum": 1533.69775390625,
+      "kl_sum": 720.7719279266894,
+      "row": 5,
+      "tokens": 2047,
+      "top1_agree": 1722,
+      "variant_nll_sum": 2166.896240234375
+    },
+    {
+      "bf16_nll_sum": 1337.24169921875,
+      "kl_sum": 604.677857356146,
+      "row": 6,
+      "tokens": 2047,
+      "top1_agree": 1751,
+      "variant_nll_sum": 1875.265625
+    },
+    {
+      "bf16_nll_sum": 2040.6866455078125,
+      "kl_sum": 665.504381342791,
+      "row": 7,
+      "tokens": 2047,
+      "top1_agree": 1602,
+      "variant_nll_sum": 2543.66064453125
+    },
+    {
+      "bf16_nll_sum": 2233.382080078125,
+      "kl_sum": 862.1909142248333,
+      "row": 8,
+      "tokens": 2047,
+      "top1_agree": 1514,
+      "variant_nll_sum": 3061.23486328125
+    },
+    {
+      "bf16_nll_sum": 3208.794189453125,
+      "kl_sum": 323.7989811860025,
+      "row": 9,
+      "tokens": 2047,
+      "top1_agree": 1709,
+      "variant_nll_sum": 3479.625
+    },
+    {
+      "bf16_nll_sum": 3021.20947265625,
+      "kl_sum": 556.5699800141156,
+      "row": 10,
+      "tokens": 2047,
+      "top1_agree": 1656,
+      "variant_nll_sum": 3450.57080078125
+    },
+    {
+      "bf16_nll_sum": 3114.482421875,
+      "kl_sum": 758.9446466825902,
+      "row": 11,
+      "tokens": 2047,
+      "top1_agree": 1581,
+      "variant_nll_sum": 3649.10693359375
+    },
+    {
+      "bf16_nll_sum": 2956.1796875,
+      "kl_sum": 745.7112429477274,
+      "row": 12,
+      "tokens": 2047,
+      "top1_agree": 1563,
+      "variant_nll_sum": 3649.830322265625
+    },
+    {
+      "bf16_nll_sum": 3656.244384765625,
+      "kl_sum": 435.8132706768811,
+      "row": 13,
+      "tokens": 2047,
+      "top1_agree": 1654,
+      "variant_nll_sum": 3898.7685546875
+    },
+    {
+      "bf16_nll_sum": 3557.0263671875,
+      "kl_sum": 477.0450309999287,
+      "row": 14,
+      "tokens": 2047,
+      "top1_agree": 1661,
+      "variant_nll_sum": 3861.4384765625
+    },
+    {
+      "bf16_nll_sum": 4152.02685546875,
+      "kl_sum": 413.00891896523535,
+      "row": 15,
+      "tokens": 2047,
+      "top1_agree": 1644,
+      "variant_nll_sum": 4325.92578125
+    },
+    {
+      "bf16_nll_sum": 3314.6240234375,
+      "kl_sum": 617.2817037831992,
+      "row": 16,
+      "tokens": 2047,
+      "top1_agree": 1593,
+      "variant_nll_sum": 3680.1259765625
+    },
+    {
+      "bf16_nll_sum": 2853.47607421875,
+      "kl_sum": 796.1902973130345,
+      "row": 17,
+      "tokens": 2047,
+      "top1_agree": 1566,
+      "variant_nll_sum": 3509.561767578125
+    },
+    {
+      "bf16_nll_sum": 2793.905029296875,
+      "kl_sum": 626.4124252460897,
+      "row": 18,
+      "tokens": 2047,
+      "top1_agree": 1703,
+      "variant_nll_sum": 3137.98828125
+    },
+    {
+      "bf16_nll_sum": 1242.59521484375,
+      "kl_sum": 1317.83109779004,
+      "row": 19,
+      "tokens": 2047,
+      "top1_agree": 1531,
+      "variant_nll_sum": 2411.8681640625
+    },
+    {
+      "bf16_nll_sum": 1835.1287841796875,
+      "kl_sum": 1378.6989640444517,
+      "row": 20,
+      "tokens": 2047,
+      "top1_agree": 1474,
+      "variant_nll_sum": 2987.706787109375
+    },
+    {
+      "bf16_nll_sum": 1695.1270751953125,
+      "kl_sum": 1418.1815467067063,
+      "row": 21,
+      "tokens": 2047,
+      "top1_agree": 1512,
+      "variant_nll_sum": 2854.396484375
+    },
+    {
+      "bf16_nll_sum": 1564.658203125,
+      "kl_sum": 1481.1120146922767,
+      "row": 22,
+      "tokens": 2047,
+      "top1_agree": 1443,
+      "variant_nll_sum": 2773.099853515625
+    },
+    {
+      "bf16_nll_sum": 2119.3017578125,
+      "kl_sum": 1341.8887926191092,
+      "row": 23,
+      "tokens": 2047,
+      "top1_agree": 1476,
+      "variant_nll_sum": 3137.94677734375
+    },
+    {
+      "bf16_nll_sum": 2334.0478515625,
+      "kl_sum": 1252.0442401096225,
+      "row": 24,
+      "tokens": 2047,
+      "top1_agree": 1493,
+      "variant_nll_sum": 3432.5810546875
+    },
+    {
+      "bf16_nll_sum": 2306.089599609375,
+      "kl_sum": 1047.427459558472,
+      "row": 25,
+      "tokens": 2047,
+      "top1_agree": 1539,
+      "variant_nll_sum": 3074.88134765625
+    },
+    {
+      "bf16_nll_sum": 3769.322265625,
+      "kl_sum": 719.3226139247417,
+      "row": 26,
+      "tokens": 2047,
+      "top1_agree": 1569,
+      "variant_nll_sum": 4211.62060546875
+    },
+    {
+      "bf16_nll_sum": 3820.609375,
+      "kl_sum": 481.5130823664367,
+      "row": 27,
+      "tokens": 2047,
+      "top1_agree": 1657,
+      "variant_nll_sum": 4095.06103515625
+    },
+    {
+      "bf16_nll_sum": 1742.9136962890625,
+      "kl_sum": 1044.9441159758717,
+      "row": 28,
+      "tokens": 2047,
+      "top1_agree": 1560,
+      "variant_nll_sum": 2772.09521484375
+    },
+    {
+      "bf16_nll_sum": 1803.598388671875,
+      "kl_sum": 974.117290193215,
+      "row": 29,
+      "tokens": 2047,
+      "top1_agree": 1573,
+      "variant_nll_sum": 2573.04736328125
+    },
+    {
+      "bf16_nll_sum": 1638.033203125,
+      "kl_sum": 834.1255347542465,
+      "row": 30,
+      "tokens": 2047,
+      "top1_agree": 1627,
+      "variant_nll_sum": 2305.767578125
+    },
+    {
+      "bf16_nll_sum": 1893.060546875,
+      "kl_sum": 496.52279495820403,
+      "row": 31,
+      "tokens": 2047,
+      "top1_agree": 1678,
+      "variant_nll_sum": 2268.227294921875
+    }
+  ],
+  "perplexity_delta_fraction": 0.3924170718139526,
+  "positions": 65504,
+  "quality_accepted": false,
+  "quantization_import_policy": "Existing observer vLLM quantization-only namespace loader; real LinearEXL3 and compiled extension, no attention substitute.",
+  "runtime_accepted": false,
+  "schema": "glm53-mixed-full-trunk-quality-v1",
+  "state": "QUALITY_MEASURED",
+  "teacher_manifest_sha256": "a1604015f76d6a6b6f032ffb7e3359a770e8dd2564ca89e3b00eb8bcb4d93314",
+  "tokens": 65504,
+  "top1_agreement": 0.7809904738641915,
+  "trunk_layers": 45,
+  "variant_cross_entropy": 1.4940449053564477,
+  "variant_normalized_manifest_sha256": "00366321d05e54d622c431002c669ba0422bf49d5416fd74fa8c52f6fc779adf",
+  "variant_perplexity": 4.455079497661316
+}

@@ -1,0 +1,132 @@
+{
+  "runtime": "Legacy EXL3 + FlashInfer, no B12x",
+  "artifact": "K2 REAP keep256",
+  "target_context_limit": 262144,
+  "aggregate_kv_tokens": 693225,
+  "active_slots": 1,
+  "mtp": {
+    "method": "mtp",
+    "num_speculative_tokens": 1,
+    "draft_experts": 288,
+    "draft_expert_dtype": "BF16"
+  },
+  "release_accepted": false,
+  "cells": [
+    {
+      "cell": {
+        "actual_prompt_tokens": [
+          1023
+        ],
+        "concurrency": 1,
+        "idle_after": true,
+        "input_tokens": 1024,
+        "native_timing": {
+          "mean_request_decode_seconds": 162.77973598998506,
+          "mean_request_prefill_seconds": 8.693250533076935,
+          "prompt_tokens_per_sum_request_prefill_second": 117.6775011956217,
+          "reported_counter_deltas": {
+            "vllm:request_decode_time_seconds_count": 1.0,
+            "vllm:request_decode_time_seconds_sum": 162.77973598998506,
+            "vllm:request_generation_tokens_count": 1.0,
+            "vllm:request_generation_tokens_sum": 2048.0,
+            "vllm:request_prefill_time_seconds_count": 1.0,
+            "vllm:request_prefill_time_seconds_sum": 8.693250533076935,
+            "vllm:request_prompt_tokens_count": 1.0,
+            "vllm:request_prompt_tokens_sum": 1023.0
+          },
+          "request_count": 1,
+          "scope": "vLLM request-level timing observations. Concurrent request durations overlap; these sums are not GPU-exclusive time or aggregate throughput. No native decode rate inferred because speculative first-token accounting differs.",
+          "status": "matched_isolated_cell",
+          "sum_request_decode_seconds": 162.77973598998506,
+          "sum_request_prefill_seconds": 8.693250533076935
+        },
+        "repeat": 0,
+        "speculative_counter_deltas": {
+          "vllm:spec_decode_num_accepted_tokens_per_pos_total": 803.0,
+          "vllm:spec_decode_num_accepted_tokens_total": 803.0,
+          "vllm:spec_decode_num_draft_tokens_total": 1244.0,
+          "vllm:spec_decode_num_drafts_total": 1244.0
+        },
+        "status": "COMPLETED",
+        "summary": {
+          "cell_seconds": 171.49355857400224,
+          "matched_decode": {
+            "counting_interval": "(start,end]; client arrival time; speculative bundles stay intact",
+            "end_monotonic": 643203.502798452,
+            "mean_per_request_decode_tok_s": 12.576392845419786,
+            "start_monotonic": 643040.737526632,
+            "status": "MATCHED_SUSTAINED",
+            "total_aggregate_decode_tok_s": 12.576392845419786,
+            "window_seconds": 162.76527182001155
+          },
+          "mean_client_decode_tok_s_estimate": 12.576392845419786,
+          "mean_prompt_tokens_per_ttft": 117.2318838229155,
+          "requests": 1,
+          "successes": 1,
+          "total_output_tokens_per_end_to_end_wall_second": 11.942139500920408,
+          "ttft_p50_seconds": 8.726294985972345,
+          "ttft_p90_seconds": 8.726294985972345
+        }
+      },
+      "original_receipt_sha256": "8aa441d65ac97d599e0c07b6ac1a9c087da3b869d2e3fa5651538ea64602fb34"
+    },
+    {
+      "cell": {
+        "actual_prompt_tokens": [
+          1024
+        ],
+        "concurrency": 1,
+        "idle_after": true,
+        "input_tokens": 1024,
+        "native_timing": {
+          "mean_request_decode_seconds": 153.87822225608397,
+          "mean_request_prefill_seconds": 2.3413236779160798,
+          "prompt_tokens_per_sum_request_prefill_second": 437.3594346047114,
+          "reported_counter_deltas": {
+            "vllm:request_decode_time_seconds_count": 1.0,
+            "vllm:request_decode_time_seconds_sum": 153.87822225608397,
+            "vllm:request_generation_tokens_count": 1.0,
+            "vllm:request_generation_tokens_sum": 2048.0,
+            "vllm:request_prefill_time_seconds_count": 1.0,
+            "vllm:request_prefill_time_seconds_sum": 2.3413236779160798,
+            "vllm:request_prompt_tokens_count": 1.0,
+            "vllm:request_prompt_tokens_sum": 1024.0
+          },
+          "request_count": 1,
+          "scope": "vLLM request-level timing observations. Concurrent request durations overlap; these sums are not GPU-exclusive time or aggregate throughput. No native decode rate inferred because speculative first-token accounting differs.",
+          "status": "matched_isolated_cell",
+          "sum_request_decode_seconds": 153.87822225608397,
+          "sum_request_prefill_seconds": 2.3413236779160798
+        },
+        "repeat": 1,
+        "speculative_counter_deltas": {
+          "vllm:spec_decode_num_accepted_tokens_per_pos_total": 874.0,
+          "vllm:spec_decode_num_accepted_tokens_total": 874.0,
+          "vllm:spec_decode_num_draft_tokens_total": 1173.0,
+          "vllm:spec_decode_num_drafts_total": 1173.0
+        },
+        "status": "COMPLETED",
+        "summary": {
+          "cell_seconds": 156.2640309400158,
+          "matched_decode": {
+            "counting_interval": "(start,end]; client arrival time; speculative bundles stay intact",
+            "end_monotonic": 643359.842749906,
+            "mean_per_request_decode_tok_s": 13.304023435015058,
+            "start_monotonic": 643205.979521237,
+            "status": "MATCHED_SUSTAINED",
+            "total_aggregate_decode_tok_s": 13.304023435015058,
+            "window_seconds": 153.86322866904084
+          },
+          "mean_client_decode_tok_s_estimate": 13.304023435015058,
+          "mean_prompt_tokens_per_ttft": 426.87033273686467,
+          "requests": 1,
+          "successes": 1,
+          "total_output_tokens_per_end_to_end_wall_second": 13.106023105126184,
+          "ttft_p50_seconds": 2.3988549249479547,
+          "ttft_p90_seconds": 2.3988549249479547
+        }
+      },
+      "original_receipt_sha256": "1d059523530ddba6a5f638e8dca49389165382ff7b54181d87cdfaf9ff92b0ca"
+    }
+  ]
+}

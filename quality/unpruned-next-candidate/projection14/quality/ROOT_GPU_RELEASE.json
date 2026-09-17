@@ -1,0 +1,11 @@
+{
+  "state": "ROOT_EXPLICITLY_RELEASED_PROJECTION14_QUALITY",
+  "utc": "2026-09-12T01:47:48.610528+00:00",
+  "completed_root_gpu_containers": [
+    "ec1881e5611cfac712bdf54f1ca206be9e5aa9c576b0a6ef989269dde6dbde96",
+    "b6ac61ba5915b5cc025e5c19d07f36ba06595f7be4bde2b57825723b500257a2"
+  ],
+  "component_receipt_sha256": "5e353c9904ecad5a2044f783910bbc8b305165a9438fc302c6e612f6d6e496b9",
+  "full_draft_memory_receipt_sha256": "9b3ef0653bd4265a11154f62989f2f7372486ac82ff3ed7d5dab9617688360f7",
+  "instruction": "Run the separately prepared projection14 matched quality capture/evaluation/seal. No other GPU workload until it finishes; fresh idleGPU/memory guards remain required."
+}

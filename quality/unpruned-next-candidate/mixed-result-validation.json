@@ -1,0 +1,36 @@
+{
+  "state": "INDEPENDENT_TERMINAL_AND_MATCHED_BASELINE_VALIDATION_PASS",
+  "mixed_report_sha256": "8737058c549d23dde6e7038a13d184cb25423ad75aebc91a56a82c87bc0bb946",
+  "mixed_seal_sha256": "7c8a77c96b4d850d3c12e795c6cb72a5321a6141adb91b0d5a6273caf8164838",
+  "baseline_report_sha256": "afff5d9531fbdda0f9c3f3978510e5a401a6d8d4c7854670b3cf7f476bb19f4f",
+  "baseline_seal_sha256": "79b3bac6c8b23e19ecf0ef0a8a7dfd3e983b6906f9f69e95852ca6e0bdc648d3",
+  "matched_identity_fields": [
+    "fixture_manifest_sha256",
+    "teacher_manifest_sha256",
+    "baseline_evaluator_sha256",
+    "dependency_sha256",
+    "native_import_sha256",
+    "head_arithmetic",
+    "positions",
+    "tokens",
+    "experts_per_layer",
+    "trunk_layers",
+    "bf16_perplexity"
+  ],
+  "positions": 65504,
+  "raw_completed_layer_receipts": 45,
+  "baseline": {
+    "kl_bf16_to_variant": 0.43898590758408074,
+    "top1_agreement": 0.7738458720078163,
+    "variant_perplexity": 4.5468662364868475
+  },
+  "mixed5_32": {
+    "kl_bf16_to_variant": 0.41779219123643085,
+    "top1_agreement": 0.7809904738641915,
+    "variant_perplexity": 4.455079497661316
+  },
+  "agreement_gain_percentage_points": 0.7144601856375221,
+  "relative_KL_reduction_percent": 4.827880800157706,
+  "relative_perplexity_reduction_percent": 2.018681308215715,
+  "scope": "Offline full-trunk matched quantization quality; no actual serving acceptance. This report is not an allocation input."
+}

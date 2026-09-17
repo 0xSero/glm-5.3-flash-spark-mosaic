@@ -1,0 +1,15 @@
+{
+  "schema": "glm53-k2-live-metadata-audit-v1",
+  "host": "spark-557f",
+  "source_path": "/home/valentine/flash-experimental-staging-20260906/model",
+  "state": "FOUR_SOURCE_METADATA_FILES_BYTE_IDENTICAL_TO_PINNED_HF",
+  "payload_files_hashed": false,
+  "metadata_sha256": {
+    "EXL3_MANIFEST.json": "501641b947fa56afc9ed098bdc034e59c2bd229d4fa1a1d7b80e3727f10c8ba3",
+    "config.json": "6f01b4d22b1cfd19f0f6892356bd88fc2725f443a3fd29d8003f3981cc338ecf",
+    "quantization_config.json": "c0ff915ffab04074004391242807ce8a1b77a37d15eb4eaf975417ed3fa1634b",
+    "model.safetensors.index.json": "825d6dc1ae4e10e7e4e744d8e556c781ab2e87b87ddc8775f2b01141ddad4327"
+  },
+  "runtime_overrides_observed": false,
+  "scope": "Fresh read-only SSH metadata SHA comparison; full133weightfilevalidation remains a prerequisite to quality capture."
+}

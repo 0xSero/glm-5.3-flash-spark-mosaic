@@ -1,0 +1,6 @@
+{
+  "base_image": "sha256:49e834851ff47ff01f3601122936f692cde75f253670aef0f895e44e40174ae0",
+  "relative_path": "model_executor/warmup/b12x_warmup.py",
+  "before_sha256": "fd478179ab2e3e8e98a7cac6877113e87e5e0906e7d826e74024b430fdb49174",
+  "after_sha256": "6464968ac264202994beb584bb549bf6d8ff7ae274e5d28543ff09f34713eea7"
+}

@@ -1,0 +1,23 @@
+{
+  "state": "EXACT_ROW_OVERLAP_CHECK_PASS",
+  "files": [
+    {
+      "path": "/home/sero/glm53-tr3/release-calibration-session-v1/token_rows.safetensors",
+      "sha256": "479581ca7bebb14bc4b41d375cd74e66cab40a58a0662efd297c41566543bbad",
+      "shape": [
+        600,
+        2048
+      ]
+    },
+    {
+      "path": "/home/sero/glm53-exl3/quality-eval-v1/token_rows.safetensors",
+      "sha256": "5b77e320eaccc959e5f731639aa4d9b908027e7647192305e374c945b44c7d44",
+      "shape": [
+        32,
+        2048
+      ]
+    }
+  ],
+  "exact_row_overlap": 0,
+  "limitation": "Exact row hashes only; does not establish semantic or substring deduplication"
+}

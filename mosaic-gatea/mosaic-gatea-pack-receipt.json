@@ -1,0 +1,23 @@
+{
+ "a0_shard_bytes": 7676890170,
+ "a0_shard_sha256": "87df348852f785bbb60003737a802cad059aea665d537d8c543991084a3de44a",
+ "config_patched_entries": 258,
+ "copied_tensors": 12960,
+ "delta_bytes": 270532610,
+ "expected_delta_bytes": 270532608,
+ "kept_tensors_byte_equal_to_a0": 12960,
+ "kept_tensors_failed": [],
+ "layer": 20,
+ "out_shard_bytes": 7947422780,
+ "out_shard_sha256": "b261c00ac4d0c2ca3dcd589176a6edb0f03aa2764426f032b6566bcc73512a63",
+ "plan_sha256": "ae8d8bee7dff862f54b0fedc7addb5f5551bff4e8718b9fce7011e3c566e023b",
+ "schema": "mosaic-gatea-pack-receipt-v1",
+ "shard": "model-00005-of-00012.safetensors",
+ "swapped_bytes": 814769160,
+ "swapped_tensors": 1032,
+ "upgraded_experts": 86,
+ "upgraded_tensors_byte_equal_to_base": 1032,
+ "upgraded_tensors_failed": [],
+ "verdict": "PASS",
+ "wall_seconds": 37.1
+}

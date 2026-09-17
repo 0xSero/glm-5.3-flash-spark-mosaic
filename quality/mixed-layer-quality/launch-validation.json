@@ -1,0 +1,23 @@
+{
+  "state": "PREFLIGHT_AND_REAL_RECONSTRUCTION_PASS_CAPTURE_RUNNING",
+  "cid": "91355999a29cb044e0454c0474d16ad95026c6003d0da9a30f3363c8fbe0ef75",
+  "reconstruction_slices": 48,
+  "raw_dtype": "torch.float16",
+  "target_dtype": "torch.bfloat16",
+  "files": {
+    "preflight-inspect.json": "8e514cbe51d5402112a1af63c1f68faa467fc179391f98c31bccf028745a27ee",
+    "failed-first-probe-status.json": "decc3e30e77480cd2234b5370653489d44e26af4cf22d5730cc498bb5d6d2e49",
+    "preflight.log": "772eb1cc7a2e54c1d23ade40f55464c8117c51dab66d56b9f3c790ce64c32f31",
+    "reconstruct-inspect.json": "f9cea94c0ba59971e81420c53c2a8db26918492d94099172f7421ebca035cc68",
+    "reconstruction-proof-r2.json": "11f5cd2add6c8573ccf25316bde35452f1d1c0fe26c4bc12cf4d3bae30b67735",
+    "monitor-process.json": "24c60018b301e7b17e9ee875b9c8b2720f1d933e0a6c634b34aea35cfc0dcbf5",
+    "seal-process-r2.json": "96bb455a8b9ad438866e832aacebaed7ead7131eeb3d94d47c7d1340c8c5345f",
+    "reconstruct-launch.json": "6675e826726bad6a482ebc719e12291536c3066449b2cb08e05eda4704e74f5e",
+    "reconstruct-r2-launch.json": "2a72b02d447d312c76a1d25ee5eb0be78983ab003ddf8bea54dfd1d30f51bda9",
+    "reconstruct-r2.log": "e31f48d02b363143539be9355caf37f538890073067c4003f7b3231791e04ff5",
+    "capture-launch.json": "22d96c312cbdf806edafd50706793757b7e1afc80b0faef7be32a019a5d9d6de",
+    "reconstruct-r2-inspect.json": "f92d15503f3add461954a34d3a8a537fe89f4d927a87c3ec5bcc60dd99452cb6",
+    "preflight-launch.json": "cb6135aacac9866f2e62555a43a4c1997353aff07a165e50a0f666a6c7cd4cd1",
+    "reconstruct.log": "2fd4291bc45a82ad9e059dc86f4fbb632c49a3e5fbde2f99bc2f3e451313355e"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "state": "EXACT_ARTIFACT_BYTES_ONLY_RUNTIME_RESERVES_NOT_YET_MEASURED",
+  "minimum_context_tokens": 262144,
+  "native_protected_tensor_bytes": 33835039608,
+  "nominal_draft_saving_bytes": 3170891520,
+  "rows": [
+    {
+      "k3_down_layers": 6,
+      "extra_target_bytes": 1811939328,
+      "total_native_source_tensor_bytes": 113086732152,
+      "net_delta_after_nominal_draft_nvfp4_saving": -1358952192,
+      "runtime_admission": null
+    },
+    {
+      "k3_down_layers": 12,
+      "extra_target_bytes": 3623878656,
+      "total_native_source_tensor_bytes": 114898671480,
+      "net_delta_after_nominal_draft_nvfp4_saving": 452987136,
+      "runtime_admission": null
+    },
+    {
+      "k3_down_layers": 14,
+      "extra_target_bytes": 4227858432,
+      "total_native_source_tensor_bytes": 115502651256,
+      "net_delta_after_nominal_draft_nvfp4_saving": 1056966912,
+      "runtime_admission": null
+    },
+    {
+      "k3_down_layers": 16,
+      "extra_target_bytes": 4831838208,
+      "total_native_source_tensor_bytes": 116106631032,
+      "net_delta_after_nominal_draft_nvfp4_saving": 1660946688,
+      "runtime_admission": null
+    },
+    {
+      "k3_down_layers": 18,
+      "extra_target_bytes": 5435817984,
+      "total_native_source_tensor_bytes": 116710610808,
+      "net_delta_after_nominal_draft_nvfp4_saving": 2264926464,
+      "runtime_admission": null
+    },
+    {
+      "k3_down_layers": 20,
+      "extra_target_bytes": 6039797760,
+      "total_native_source_tensor_bytes": 117314590584,
+      "net_delta_after_nominal_draft_nvfp4_saving": 2868906240,
+      "runtime_admission": null
+    },
+    {
+      "k3_down_layers": 22,
+      "extra_target_bytes": 6643777536,
+      "total_native_source_tensor_bytes": 117918570360,
+      "net_delta_after_nominal_draft_nvfp4_saving": 3472886016,
+      "runtime_admission": null
+    },
+    {
+      "k3_down_layers": 24,
+      "extra_target_bytes": 7247757312,
+      "total_native_source_tensor_bytes": 118522550136,
+      "net_delta_after_nominal_draft_nvfp4_saving": 4076865792,
+      "runtime_admission": null
+    },
+    {
+      "k3_down_layers": 42,
+      "extra_target_bytes": 12683575296,
+      "total_native_source_tensor_bytes": 123958368120,
+      "net_delta_after_nominal_draft_nvfp4_saving": 9512683776,
+      "runtime_admission": null
+    }
+  ],
+  "admission_rule": "Use actual post-graph full-draft memory and successfully exercised262144-token KV, measured prefill/vision peak, OSreserve. Onlyremainingmeasuredbudgetmayfundtargetdelta; baseline excessKV is not credited. Do not infer admission fromthisartifacttable."
+}

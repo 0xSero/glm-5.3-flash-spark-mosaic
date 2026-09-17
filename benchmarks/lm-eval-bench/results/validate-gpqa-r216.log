@@ -1,0 +1,27 @@
+2026-09-14:11:55:36 WARNING  [config.evaluate_config:337] --limit SHOULD ONLY BE USED FOR TESTING. REAL METRICS SHOULD NOT BE COMPUTED USING LIMIT.
+2026-09-14:11:55:55 WARNING  [tasks._index:70] Task 'gpqa_diamond_cot_zeroshot' from /Users/sero/sessions/glm53-single-spark-release-20260911/benchmarks/lm-eval-bench/tasks-gpqa-local/gpqa_diamond_cot_zeroshot.yaml overrides existing task from /Users/sero/lmeval-mac-venv/lib/python3.13/site-packages/lm_eval/tasks/gpqa/cot_zeroshot/gpqa_diamond_cot_zeroshot.yaml
+2026-09-14:11:55:55 WARNING  [tasks._index:70] Task 'gpqa' from None overrides existing task from None
+2026-09-14:11:55:55 WARNING  [tasks._index:70] Task 'gpqa_diamond_zeroshot' from /Users/sero/sessions/glm53-single-spark-release-20260911/benchmarks/lm-eval-bench/tasks-gpqa-local/gpqa_diamond_zeroshot.yaml overrides existing task from /Users/sero/lmeval-mac-venv/lib/python3.13/site-packages/lm_eval/tasks/gpqa/zeroshot/gpqa_diamond_zeroshot.yaml
+2026-09-14:11:55:55 INFO     [_cli.run:391] Including path: /Users/sero/sessions/glm53-single-spark-release-20260911/benchmarks/lm-eval-bench/tasks-gpqa-local
+2026-09-14:11:55:55 INFO     [_cli.run:392] Selected Tasks: ['gpqa_diamond_zeroshot']
+2026-09-14:11:55:55 INFO     [evaluator:214] Setting random seed to 1234 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+2026-09-14:11:55:55 INFO     [evaluator:239] Initializing local-completions model, with arguments: {'model': 'bench-r216', 'base_url': 'http://spark-557f.internal:8000/v1/completions', 'tokenizer': '/Users/sero/sessions/glm53-single-spark-release-20260911/benchmarks/lm-eval-bench/glm53-tokenizer', 'api_key': 'local', 'num_concurrent': 4, 'max_retries': 3, 'timeout': 600}
+2026-09-14:11:55:55 INFO     [models.openai_completions:42] Remote tokenizer not supported. Using huggingface tokenizer backend.
+2026-09-14:11:55:55 INFO     [models.api_models:176] Using max length 2048 - 1
+2026-09-14:11:55:55 INFO     [models.api_models:197] Using tokenizer huggingface
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+2026-09-14:11:56:02 INFO     [evaluator_utils:472] Selected tasks:
+2026-09-14:11:56:02 INFO     [evaluator_utils:506] Task: gpqa_diamond_zeroshot (/Users/sero/sessions/glm53-single-spark-release-20260911/benchmarks/lm-eval-bench/tasks-gpqa-local/gpqa_diamond_zeroshot.yaml)
+2026-09-14:11:56:02 INFO     [api.task:312] Building contexts for gpqa_diamond_zeroshot on rank 0...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 999.00it/s]
+2026-09-14:11:56:02 INFO     [evaluator:589] Running loglikelihood requests
+Tokenizing inputs:   0%|          | 0/8 [00:00<?, ?it/s]Tokenizing inputs: 100%|██████████| 8/8 [00:00<00:00, 1433.71it/s]
+Requesting API:   0%|          | 0/8 [00:00<?, ?it/s]Requesting API:  12%|█▎        | 1/8 [00:17<02:03, 17.64s/it]Requesting API:  25%|██▌       | 2/8 [00:18<00:45,  7.50s/it]Requesting API:  38%|███▊      | 3/8 [00:18<00:21,  4.33s/it]Requesting API:  50%|█████     | 4/8 [00:19<00:11,  2.83s/it]Requesting API:  62%|██████▎   | 5/8 [00:37<00:24,  8.31s/it]Requesting API:  75%|███████▌  | 6/8 [00:37<00:11,  5.66s/it]Requesting API:  88%|████████▊ | 7/8 [00:38<00:03,  3.99s/it]Requesting API: 100%|██████████| 8/8 [00:38<00:00,  2.89s/it]Requesting API: 100%|██████████| 8/8 [00:38<00:00,  4.84s/it]
+fatal: not a git repository (or any of the parent directories): .git
+2026-09-14:11:56:41 INFO     [loggers.evaluation_tracker:247] Saving results aggregated
+local-completions ({'model': 'bench-r216', 'base_url': 'http://spark-557f.internal:8000/v1/completions', 'tokenizer': '/Users/sero/sessions/glm53-single-spark-release-20260911/benchmarks/lm-eval-bench/glm53-tokenizer', 'api_key': 'local', 'num_concurrent': 4, 'max_retries': 3, 'timeout': 600}), gen_kwargs: ({}), limit: 2.0, num_fewshot: None, batch_size: 1
+|        Tasks        |Version|Filter|n-shot| Metric |   |Value|   |Stderr|
+|---------------------|------:|------|-----:|--------|---|----:|---|-----:|
+|gpqa_diamond_zeroshot|    2.2|none  |     0|acc     |↑  |  0.5|±  |   0.5|
+|                     |       |none  |     0|acc_norm|↑  |  0.5|±  |   0.5|
+

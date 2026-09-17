@@ -1,0 +1,55 @@
+{
+  "state": "FINISHED",
+  "purpose": "bounded eight engine iteration attribution; not throughput benchmark",
+  "start": [
+    200,
+    ""
+  ],
+  "response_status": 200,
+  "response": {
+    "id": "chatcmpl-9643ae383350f7cb",
+    "object": "chat.completion",
+    "created": 1789164275,
+    "model": "glm-5.3-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "The first",
+          "refusal": null,
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": "The user is asking for the first ten positive integers. This is a simple factual/mathematical question.\n\nPositive integers are: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10.\n\nNote: 0 is not a positive integer (it's neither positive nor negative), so the first positive integer is 1.\n\nThe answer should be simple and direct. A list format works well here. I could present it as a comma-separated list or a numbered list. Given the brevity of the question, a short answer is appropriate."
+        },
+        "logprobs": null,
+        "finish_reason": "length",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.1.dev1+g3aada6772.d20260911-90ae695f",
+    "usage": {
+      "prompt_tokens": 19,
+      "total_tokens": 147,
+      "completion_tokens": 128,
+      "prompt_tokens_details": null,
+      "completion_tokens_details": {
+        "reasoning_tokens": 125
+      }
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "stop": [
+    200,
+    ""
+  ]
+}

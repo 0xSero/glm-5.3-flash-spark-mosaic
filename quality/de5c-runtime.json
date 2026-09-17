@@ -1,0 +1,35 @@
+{
+  "schema": "glm53-quality-private-runtime-inspection-v1",
+  "inspection": "CPU-only filesystem/package metadata inspection; no GPU capture launched",
+  "host": "spark-de5c",
+  "user": "valentine",
+  "image_tag": "glm53-full-observer-fla:20260907",
+  "image_id": "sha256:54acf16064726697ab079dfbd297c1c1c260cb28867f8287f5ae2ec3bbb0a382",
+  "entrypoint": ["python3"],
+  "packages": {
+    "torch": "2.13.0+cu130",
+    "transformers": "5.16.1",
+    "exllamav3": "0.0.43",
+    "safetensors": "0.8.0"
+  },
+  "image_source_sha256": {
+    "transformers/models/glm5_next/modeling_glm5_next.py": "2092bbb4efa2a8087b74f4a4da37635c503fe1df9ae73f1e6e8342af8b4b8e8b",
+    "transformers/models/glm5_next/configuration_glm5_next.py": "b62936c9f5d74b09ea511f3211abde65f97a9be1cb3c8f10fdad7c879850fa72",
+    "exllamav3/modules/quant/exl3.py": "9029b566a8908e8b2aa3ecb0e1e6c73190cfc1368982b26bfbaf6be886149092"
+  },
+  "host_release_root": "/home/valentine/glm53-single-spark-release-20260911",
+  "host_original_source_staging": "/home/valentine/glm53-single-spark-release-20260911/source-q3",
+  "source_staging_complete": "not established by this read-only inventory; evaluator verifies full source",
+  "mounts": [
+    {"source": "/home/valentine/glm53-full-observations-20260907/src", "target": "/workspace/src", "read_only": true},
+    {"source": "/home/valentine/glm53-single-spark-release-20260911", "target": "/release", "read_only": false},
+    {"source": "/home/valentine/glm53-single-spark-release-20260911/source-q3", "target": "/candidate", "read_only": true}
+  ],
+  "environment": {
+    "PYTHONPATH": "/release/quality/deps:/workspace/src",
+    "GLM53_EXL3_GPU_IDS": "0",
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1"
+  },
+  "publication": "Private fleet access details; sanitize or omit this file from public release."
+}

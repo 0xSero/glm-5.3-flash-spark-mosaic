@@ -1,0 +1,44 @@
+{
+  "schema": "glm53-independent-layer3-sample-check-v1",
+  "results": [
+    {
+      "row": 0,
+      "layer": 3,
+      "sha256_matches": true,
+      "shape": [
+        1,
+        2048,
+        4,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "finite": true
+    },
+    {
+      "row": 15,
+      "layer": 3,
+      "sha256_matches": true,
+      "shape": [
+        1,
+        2048,
+        4,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "finite": true
+    },
+    {
+      "row": 31,
+      "layer": 3,
+      "sha256_matches": true,
+      "shape": [
+        1,
+        2048,
+        4,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "finite": true
+    }
+  ]
+}

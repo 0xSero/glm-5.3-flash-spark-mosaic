@@ -1,0 +1,35 @@
+{
+  "method": "Routed logical parameter count = routed layers \u00d7 retained experts \u00d73 gate/up/down matrices \u00d7 hidden_size \u00d7 moe_intermediate_size; protected native tensors counted from exact recorded shapes. Payload includes quantization metadata. Parameter counts describe retained model, not original pre-prune model.",
+  "candidates": [
+    {
+      "candidate": "k2-k256",
+      "manifest_sha256": "7c7a2e47c7cde8996ac54c6f2ca5c3f7532b682d5d7296408c97a14e8950f73c",
+      "routed_expert_bits": 2.0,
+      "retained_experts_per_layer": 256,
+      "routed_logical_parameters": 270582939648,
+      "native_including_sliced_routers_parameters": 16911717918,
+      "retained_logical_parameters": 287494657566,
+      "tensor_payload_bytes": 102659360376,
+      "shard_bytes": 102727970296,
+      "tensor_payload_effective_bpw": 2.8566613722881455,
+      "native_context_config": 1048576,
+      "release_context_target": 262144,
+      "runtime_memory_measured": false
+    },
+    {
+      "candidate": "q3-k176",
+      "manifest_sha256": "0230ee28b89f0eab7b24bebca8ddd10ff3e96783f408efe17ca1a9bbe0f39a13",
+      "routed_expert_bits": 3.0,
+      "retained_experts_per_layer": 176,
+      "routed_logical_parameters": 186025771008,
+      "native_including_sliced_routers_parameters": 16897951998,
+      "retained_logical_parameters": 202923723006,
+      "tensor_payload_bytes": 104374000632,
+      "shard_bytes": 104421094728,
+      "tensor_payload_effective_bpw": 4.114807242282417,
+      "native_context_config": 1048576,
+      "release_context_target": 262144,
+      "runtime_memory_measured": false
+    }
+  ]
+}

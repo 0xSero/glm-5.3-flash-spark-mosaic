@@ -1,0 +1,116 @@
+{
+ "config_patched_entries": 10368,
+ "delta_bytes_total": 10871646674,
+ "expected_delta_bytes": 10871635968,
+ "experts_per_layer": {
+  "3": 288,
+  "32": 288,
+  "33": 288,
+  "36": 288,
+  "37": 288,
+  "38": 288,
+  "39": 288,
+  "40": 288,
+  "41": 288,
+  "42": 288,
+  "43": 288,
+  "44": 288
+ },
+ "failures": [],
+ "kept_tensors": 26117,
+ "n_failures": 0,
+ "plan_sha256": "7938939c3a5b1cbaaa120ff1fdb51e7d8171f1f46c18630e59727812e969204e",
+ "schema": "mosaic-pack-receipt-v2",
+ "shards": [
+  {
+   "a0_sha256": "5b849375a8887be5347b3819e962e5b79403652e9a965d67492ae53207da8d98",
+   "delta_bytes": 905969668,
+   "kept_tensors": 7153,
+   "layers": [
+    3
+   ],
+   "out_bytes": 8338599140,
+   "out_sha256": "0c747ea520a74a3fce0b482ea4c2ad266761f1e1da5bee79624a005c03bae136",
+   "shard": "model-00001-of-00012.safetensors",
+   "swapped_bytes": 2728529280,
+   "swapped_tensors": 3456
+  },
+  {
+   "a0_sha256": "3e604a19c4bd9e494a535975ab9074c82aa4f5198bb9a34294dc73375855c26e",
+   "delta_bytes": 1811939330,
+   "kept_tensors": 7080,
+   "layers": [
+    32,
+    33
+   ],
+   "out_bytes": 9488829500,
+   "out_sha256": "57a097001adc64da8041ab68c2a011780f16e43395a2bbf686dc1f265833a98d",
+   "shard": "model-00008-of-00012.safetensors",
+   "swapped_bytes": 5457058560,
+   "swapped_tensors": 6912
+  },
+  {
+   "a0_sha256": "cd9a5966f72274b9435bf1ac28090e0b963794bf4a331773b9c9029d7167bc3c",
+   "delta_bytes": 1811939330,
+   "kept_tensors": 7080,
+   "layers": [
+    36,
+    37
+   ],
+   "out_bytes": 9488829500,
+   "out_sha256": "5edb8b52e9f2f20185d4b49aebf91ea6917a5723364878c892cede1c7d443331",
+   "shard": "model-00009-of-00012.safetensors",
+   "swapped_bytes": 5457058560,
+   "swapped_tensors": 6912
+  },
+  {
+   "a0_sha256": "fd1e4d47952afd106e1a03f8ffde823b64e4ffc2f56404458890ea056c096eab",
+   "delta_bytes": 3623883194,
+   "kept_tensors": 168,
+   "layers": [
+    38,
+    39,
+    40,
+    41
+   ],
+   "out_bytes": 11300773364,
+   "out_sha256": "bd32555c618e9266cccd8f6bd4079bd4a868629c7bf1a14c731de09f9702f727",
+   "shard": "model-00010-of-00012.safetensors",
+   "swapped_bytes": 10914117120,
+   "swapped_tensors": 13824
+  },
+  {
+   "a0_sha256": "9d8c22b5d3e4409f3cf66af9c83abef1b4088e1facd3679a926ee8cab5ecadf0",
+   "delta_bytes": 2717915152,
+   "kept_tensors": 4636,
+   "layers": [
+    42,
+    43,
+    44
+   ],
+   "out_bytes": 11298120632,
+   "out_sha256": "73452e068d0db728c925eafd1142448a07d955a49fa82b7c0412876295af9bea",
+   "shard": "model-00011-of-00012.safetensors",
+   "swapped_bytes": 8185587840,
+   "swapped_tensors": 10368
+  }
+ ],
+ "swapped_tensors": 41472,
+ "upgraded_layers": [
+  3,
+  32,
+  33,
+  36,
+  37,
+  38,
+  39,
+  40,
+  41,
+  42,
+  43,
+  44
+ ],
+ "variant": "M288-12L-GateA2",
+ "verdict": "FAIL",
+ "wall_seconds": 189.3
+}

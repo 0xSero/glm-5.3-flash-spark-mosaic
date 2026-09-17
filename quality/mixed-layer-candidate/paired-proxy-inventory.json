@@ -1,0 +1,1730 @@
+{
+  "state": "INDEPENDENT_PROXY_INVENTORY_NOT_LAYER_SENSITIVITY_VALIDATED",
+  "ranking_policy": "sum independent calibration K2-minus-K3 per-projection normalized proxy; candidate for pilot, not heldout selection or proven end-to-end sensitivity",
+  "layers": [
+    {
+      "layer": 5,
+      "k2_proxy_sum": 132.25651771297166,
+      "k3_proxy_sum": 32.7129843885848,
+      "delta_sum": 99.54353332438686,
+      "relative_reduction": 0.7526550301318244,
+      "all_experts": 288,
+      "minimum_selected_routes": 8192,
+      "k2_file_bytes": 1845623312,
+      "k3_file_bytes": 2751595104,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 32,
+      "k2_proxy_sum": 131.76456388990698,
+      "k3_proxy_sum": 32.77104840957626,
+      "delta_sum": 98.99351548033073,
+      "relative_reduction": 0.7512908824488093,
+      "all_experts": 288,
+      "minimum_selected_routes": 5479,
+      "k2_file_bytes": 1845637136,
+      "k3_file_bytes": 2751608928,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 6,
+      "k2_proxy_sum": 130.1613265675737,
+      "k3_proxy_sum": 32.208023900494446,
+      "delta_sum": 97.95330266707924,
+      "relative_reduction": 0.7525530451337745,
+      "all_experts": 288,
+      "minimum_selected_routes": 8192,
+      "k2_file_bytes": 1845623312,
+      "k3_file_bytes": 2751595104,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 37,
+      "k2_proxy_sum": 129.50524179915485,
+      "k3_proxy_sum": 32.20049923625446,
+      "delta_sum": 97.30474256290039,
+      "relative_reduction": 0.7513575605982568,
+      "all_experts": 288,
+      "minimum_selected_routes": 6487,
+      "k2_file_bytes": 1845637136,
+      "k3_file_bytes": 2751608928,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 36,
+      "k2_proxy_sum": 129.23380424004392,
+      "k3_proxy_sum": 32.13409314696744,
+      "delta_sum": 97.09971109307648,
+      "relative_reduction": 0.7513491664512149,
+      "all_experts": 288,
+      "minimum_selected_routes": 7326,
+      "k2_file_bytes": 1845637136,
+      "k3_file_bytes": 2751608928,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 31,
+      "k2_proxy_sum": 128.3071495656006,
+      "k3_proxy_sum": 31.88349155214762,
+      "delta_sum": 96.423658013453,
+      "relative_reduction": 0.7515065087168327,
+      "all_experts": 288,
+      "minimum_selected_routes": 6337,
+      "k2_file_bytes": 1845637136,
+      "k3_file_bytes": 2751608928,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 7,
+      "k2_proxy_sum": 127.12155412285392,
+      "k3_proxy_sum": 31.448778632540154,
+      "delta_sum": 95.67277549031377,
+      "relative_reduction": 0.7526086048149856,
+      "all_experts": 288,
+      "minimum_selected_routes": 8192,
+      "k2_file_bytes": 1845623312,
+      "k3_file_bytes": 2751595104,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 35,
+      "k2_proxy_sum": 126.92657380264696,
+      "k3_proxy_sum": 31.54610128722736,
+      "delta_sum": 95.3804725154196,
+      "relative_reduction": 0.7514618070737722,
+      "all_experts": 288,
+      "minimum_selected_routes": 7030,
+      "k2_file_bytes": 1845637136,
+      "k3_file_bytes": 2751608928,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 39,
+      "k2_proxy_sum": 125.60126012752707,
+      "k3_proxy_sum": 31.22713796541121,
+      "delta_sum": 94.37412216211587,
+      "relative_reduction": 0.7513787844667699,
+      "all_experts": 288,
+      "minimum_selected_routes": 8192,
+      "k2_file_bytes": 1845637136,
+      "k3_file_bytes": 2751608928,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 38,
+      "k2_proxy_sum": 124.85267586873861,
+      "k3_proxy_sum": 31.029872885866588,
+      "delta_sum": 93.82280298287202,
+      "relative_reduction": 0.7514680989417541,
+      "all_experts": 288,
+      "minimum_selected_routes": 6301,
+      "k2_file_bytes": 1845637136,
+      "k3_file_bytes": 2751608928,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 28,
+      "k2_proxy_sum": 124.00975057426238,
+      "k3_proxy_sum": 30.79077316479818,
+      "delta_sum": 93.2189774094642,
+      "relative_reduction": 0.7517068373880864,
+      "all_experts": 288,
+      "minimum_selected_routes": 5262,
+      "k2_file_bytes": 1845637136,
+      "k3_file_bytes": 2751608928,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 4,
+      "k2_proxy_sum": 123.29893544533678,
+      "k3_proxy_sum": 30.395533195958127,
+      "delta_sum": 92.90340224937866,
+      "relative_reduction": 0.7534809762454628,
+      "all_experts": 288,
+      "minimum_selected_routes": 8192,
+      "k2_file_bytes": 1845623312,
+      "k3_file_bytes": 2751595104,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 30,
+      "k2_proxy_sum": 123.3568710054398,
+      "k3_proxy_sum": 30.62728702645834,
+      "delta_sum": 92.72958397898145,
+      "relative_reduction": 0.7517180293499197,
+      "all_experts": 288,
+      "minimum_selected_routes": 8116,
+      "k2_file_bytes": 1845637136,
+      "k3_file_bytes": 2751608928,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 27,
+      "k2_proxy_sum": 122.63931719920225,
+      "k3_proxy_sum": 30.438863642430775,
+      "delta_sum": 92.20045355677148,
+      "relative_reduction": 0.7518017521820581,
+      "all_experts": 288,
+      "minimum_selected_routes": 6724,
+      "k2_file_bytes": 1845637136,
+      "k3_file_bytes": 2751608928,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 26,
+      "k2_proxy_sum": 122.56318881265611,
+      "k3_proxy_sum": 30.42340272771272,
+      "delta_sum": 92.13978608494338,
+      "relative_reduction": 0.7517737338393146,
+      "all_experts": 288,
+      "minimum_selected_routes": 4993,
+      "k2_file_bytes": 1845637136,
+      "k3_file_bytes": 2751608928,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 29,
+      "k2_proxy_sum": 122.39187529579807,
+      "k3_proxy_sum": 30.3905762662672,
+      "delta_sum": 92.00129902953087,
+      "relative_reduction": 0.7516944961189711,
+      "all_experts": 288,
+      "minimum_selected_routes": 8070,
+      "k2_file_bytes": 1845637136,
+      "k3_file_bytes": 2751608928,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 34,
+      "k2_proxy_sum": 122.18313185392351,
+      "k3_proxy_sum": 30.344505821626615,
+      "delta_sum": 91.8386260322969,
+      "relative_reduction": 0.7516473398479825,
+      "all_experts": 288,
+      "minimum_selected_routes": 8192,
+      "k2_file_bytes": 1845637136,
+      "k3_file_bytes": 2751608928,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 33,
+      "k2_proxy_sum": 120.95697949987259,
+      "k3_proxy_sum": 30.027423778374086,
+      "delta_sum": 90.9295557214985,
+      "relative_reduction": 0.7517512102027505,
+      "all_experts": 288,
+      "minimum_selected_routes": 6489,
+      "k2_file_bytes": 1845637136,
+      "k3_file_bytes": 2751608928,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 40,
+      "k2_proxy_sum": 118.57148764195776,
+      "k3_proxy_sum": 29.464234201533515,
+      "delta_sum": 89.10725344042424,
+      "relative_reduction": 0.751506582337023,
+      "all_experts": 288,
+      "minimum_selected_routes": 5096,
+      "k2_file_bytes": 1845637136,
+      "k3_file_bytes": 2751608928,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 9,
+      "k2_proxy_sum": 117.59575447139643,
+      "k3_proxy_sum": 29.097577952898806,
+      "delta_sum": 88.49817651849763,
+      "relative_reduction": 0.7525626832048907,
+      "all_experts": 288,
+      "minimum_selected_routes": 8192,
+      "k2_file_bytes": 1845623312,
+      "k3_file_bytes": 2751595104,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 10,
+      "k2_proxy_sum": 117.57133100899007,
+      "k3_proxy_sum": 29.08288340335298,
+      "delta_sum": 88.48844760563709,
+      "relative_reduction": 0.7526362663944907,
+      "all_experts": 288,
+      "minimum_selected_routes": 8192,
+      "k2_file_bytes": 1845637136,
+      "k3_file_bytes": 2751608928,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 11,
+      "k2_proxy_sum": 117.24630859172608,
+      "k3_proxy_sum": 29.02963374365958,
+      "delta_sum": 88.2166748480665,
+      "relative_reduction": 0.7524047102860502,
+      "all_experts": 288,
+      "minimum_selected_routes": 8192,
+      "k2_file_bytes": 1845637136,
+      "k3_file_bytes": 2751608928,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 8,
+      "k2_proxy_sum": 117.10893721521649,
+      "k3_proxy_sum": 28.941047234341923,
+      "delta_sum": 88.16788998087456,
+      "relative_reduction": 0.7528707208643212,
+      "all_experts": 288,
+      "minimum_selected_routes": 8192,
+      "k2_file_bytes": 1845623312,
+      "k3_file_bytes": 2751595104,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 23,
+      "k2_proxy_sum": 116.82685768542746,
+      "k3_proxy_sum": 29.02992707150125,
+      "delta_sum": 87.79693061392621,
+      "relative_reduction": 0.751513242360174,
+      "all_experts": 288,
+      "minimum_selected_routes": 1985,
+      "k2_file_bytes": 1845637136,
+      "k3_file_bytes": 2751608928,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 15,
+      "k2_proxy_sum": 115.74427213920079,
+      "k3_proxy_sum": 28.705414844489855,
+      "delta_sum": 87.03885729471094,
+      "relative_reduction": 0.7519927827619232,
+      "all_experts": 288,
+      "minimum_selected_routes": 6353,
+      "k2_file_bytes": 1845637136,
+      "k3_file_bytes": 2751608928,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 16,
+      "k2_proxy_sum": 115.03213145397014,
+      "k3_proxy_sum": 28.52444977513242,
+      "delta_sum": 86.50768167883771,
+      "relative_reduction": 0.7520305899352442,
+      "all_experts": 288,
+      "minimum_selected_routes": 8098,
+      "k2_file_bytes": 1845637136,
+      "k3_file_bytes": 2751608928,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 19,
+      "k2_proxy_sum": 113.2364646481325,
+      "k3_proxy_sum": 28.097623902634112,
+      "delta_sum": 85.13884074549838,
+      "relative_reduction": 0.7518677045424916,
+      "all_experts": 288,
+      "minimum_selected_routes": 3888,
+      "k2_file_bytes": 1845637136,
+      "k3_file_bytes": 2751608928,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 22,
+      "k2_proxy_sum": 113.21063575126976,
+      "k3_proxy_sum": 28.096564383669293,
+      "delta_sum": 85.11407136760047,
+      "relative_reduction": 0.7518204522285428,
+      "all_experts": 288,
+      "minimum_selected_routes": 1680,
+      "k2_file_bytes": 1845637136,
+      "k3_file_bytes": 2751608928,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 24,
+      "k2_proxy_sum": 112.85006727704456,
+      "k3_proxy_sum": 27.999187304928533,
+      "delta_sum": 84.85087997211602,
+      "relative_reduction": 0.7518903800368049,
+      "all_experts": 288,
+      "minimum_selected_routes": 4349,
+      "k2_file_bytes": 1845637136,
+      "k3_file_bytes": 2751608928,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 20,
+      "k2_proxy_sum": 112.67203787455327,
+      "k3_proxy_sum": 27.954171984382157,
+      "delta_sum": 84.71786589017111,
+      "relative_reduction": 0.7518978753583409,
+      "all_experts": 288,
+      "minimum_selected_routes": 3606,
+      "k2_file_bytes": 1845637136,
+      "k3_file_bytes": 2751608928,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 25,
+      "k2_proxy_sum": 112.27027058212738,
+      "k3_proxy_sum": 27.82604355808134,
+      "delta_sum": 84.44422702404604,
+      "relative_reduction": 0.752151273762842,
+      "all_experts": 288,
+      "minimum_selected_routes": 6704,
+      "k2_file_bytes": 1845637136,
+      "k3_file_bytes": 2751608928,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 17,
+      "k2_proxy_sum": 111.70544389476987,
+      "k3_proxy_sum": 27.697181859898475,
+      "delta_sum": 84.0082620348714,
+      "relative_reduction": 0.7520516378235772,
+      "all_experts": 288,
+      "minimum_selected_routes": 4684,
+      "k2_file_bytes": 1845637136,
+      "k3_file_bytes": 2751608928,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 12,
+      "k2_proxy_sum": 111.0419958912753,
+      "k3_proxy_sum": 27.44815573160497,
+      "delta_sum": 83.59384015967034,
+      "relative_reduction": 0.7528128388607107,
+      "all_experts": 288,
+      "minimum_selected_routes": 5816,
+      "k2_file_bytes": 1845637136,
+      "k3_file_bytes": 2751608928,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 21,
+      "k2_proxy_sum": 110.6478168648888,
+      "k3_proxy_sum": 27.44194794965715,
+      "delta_sum": 83.20586891523165,
+      "relative_reduction": 0.7519883471070532,
+      "all_experts": 288,
+      "minimum_selected_routes": 3183,
+      "k2_file_bytes": 1845637136,
+      "k3_file_bytes": 2751608928,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 41,
+      "k2_proxy_sum": 106.65670386572407,
+      "k3_proxy_sum": 26.469816643003536,
+      "delta_sum": 80.18688722272053,
+      "relative_reduction": 0.7518222888612063,
+      "all_experts": 288,
+      "minimum_selected_routes": 5812,
+      "k2_file_bytes": 1845637136,
+      "k3_file_bytes": 2751608928,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 14,
+      "k2_proxy_sum": 105.23102762868065,
+      "k3_proxy_sum": 26.031242312420844,
+      "delta_sum": 79.1997853162598,
+      "relative_reduction": 0.752627690719937,
+      "all_experts": 288,
+      "minimum_selected_routes": 6965,
+      "k2_file_bytes": 1845637136,
+      "k3_file_bytes": 2751608928,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 13,
+      "k2_proxy_sum": 104.48323119740384,
+      "k3_proxy_sum": 25.833937920890232,
+      "delta_sum": 78.6492932765136,
+      "relative_reduction": 0.7527456068803877,
+      "all_experts": 288,
+      "minimum_selected_routes": 6712,
+      "k2_file_bytes": 1845637136,
+      "k3_file_bytes": 2751608928,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 18,
+      "k2_proxy_sum": 103.20964123979526,
+      "k3_proxy_sum": 25.567943619788693,
+      "delta_sum": 77.64169762000657,
+      "relative_reduction": 0.7522717518183729,
+      "all_experts": 288,
+      "minimum_selected_routes": 3220,
+      "k2_file_bytes": 1845637136,
+      "k3_file_bytes": 2751608928,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 42,
+      "k2_proxy_sum": 88.55018228192941,
+      "k3_proxy_sum": 21.931725080776804,
+      "delta_sum": 66.61845720115261,
+      "relative_reduction": 0.7523243372786095,
+      "all_experts": 288,
+      "minimum_selected_routes": 3044,
+      "k2_file_bytes": 1845637136,
+      "k3_file_bytes": 2751608928,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 43,
+      "k2_proxy_sum": 83.4508225425745,
+      "k3_proxy_sum": 20.69169404972008,
+      "delta_sum": 62.759128492854416,
+      "relative_reduction": 0.7520492498541438,
+      "all_experts": 288,
+      "minimum_selected_routes": 3618,
+      "k2_file_bytes": 1845637136,
+      "k3_file_bytes": 2751608928,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 44,
+      "k2_proxy_sum": 67.22649161925219,
+      "k3_proxy_sum": 16.62515351385257,
+      "delta_sum": 50.60133810539962,
+      "relative_reduction": 0.7526993732171575,
+      "all_experts": 288,
+      "minimum_selected_routes": 3703,
+      "k2_file_bytes": 1845637136,
+      "k3_file_bytes": 2751608928,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    },
+    {
+      "layer": 3,
+      "k2_proxy_sum": 66.41141329333708,
+      "k3_proxy_sum": 16.113259014422606,
+      "delta_sum": 50.29815427891447,
+      "relative_reduction": 0.7573721410919105,
+      "all_experts": 288,
+      "minimum_selected_routes": 8192,
+      "k2_file_bytes": 1845623312,
+      "k3_file_bytes": 2751595104,
+      "file_increment": 905971792,
+      "tensor_increment": 905969664
+    }
+  ],
+  "sidecars": [
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-03-part-0.json",
+      "sha256": "cb291a86c3d00fa648e851ad44e75b5ffd02f337e5e72ab179465e8afaedb13a",
+      "source_parts": {
+        "k2": {
+          "bytes": 922811656,
+          "sha256": "93f419e40a62c47347655e9034322cc47d2d4f398b3f00558f8347f314fe6d2c"
+        },
+        "k3": {
+          "bytes": 1375797552,
+          "sha256": "ddc3307532e956d1f61c2c3253420dfb454b95c1310a8c34f4a263e524c060a8"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-03-part-1.json",
+      "sha256": "e5dfd2f26d31074088bf3e2faec0b6282d9c230f281549614bb6e7d9241909ff",
+      "source_parts": {
+        "k2": {
+          "bytes": 922811656,
+          "sha256": "adbc6f49b7da79c30532a5765bce9516d5467ee3c8a1478fe00f211a0655d1a4"
+        },
+        "k3": {
+          "bytes": 1375797552,
+          "sha256": "2a547e9680aa85d932af9aa0aa894a5243a73bde9431702401dca2c5bb6bc468"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-04-part-0.json",
+      "sha256": "3399ed0f45f7585d86f5b36a6f5c81dd2c4caffdbe86a826cf7c5faf1410c860",
+      "source_parts": {
+        "k2": {
+          "bytes": 922811656,
+          "sha256": "81ce4af16ff77c59014742e020add3610f133930a761eddd65c5f85e46b2d727"
+        },
+        "k3": {
+          "bytes": 1375797552,
+          "sha256": "f3187ef50250d5876d2a56954708abc8af0c2ed24d44893c464384bbc1dd34a4"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-04-part-1.json",
+      "sha256": "81be170bacea8ba7f0f463308952c158e9b3cc910009346bdc7ef4b7c89cd0c0",
+      "source_parts": {
+        "k2": {
+          "bytes": 922811656,
+          "sha256": "237503fa119b5d05858c0db94fcc19293a34d13173d4d6d19ba017c9a2ad200f"
+        },
+        "k3": {
+          "bytes": 1375797552,
+          "sha256": "9cda9036c00c5af9a77bbc2e917e0fc991259924beb15e1da647c444bd83ead0"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-05-part-0.json",
+      "sha256": "5581df2de56fa532ffc58794a0e46d2756b2967f0cdee5520e35ec8b0eacf3ec",
+      "source_parts": {
+        "k2": {
+          "bytes": 922811656,
+          "sha256": "92136a1e86fd7694b035010a31fd2488bd3971fae0cfba6ec49911af2b0a0610"
+        },
+        "k3": {
+          "bytes": 1375797552,
+          "sha256": "63c39d8e82ae9605231af316a0a4ab111febb913959dfb73813a3a6746c7348b"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-05-part-1.json",
+      "sha256": "5631741b07e1d6e0b7d204146e6206818c8da94b0ddef4c71cf10e6e0ec0d4cc",
+      "source_parts": {
+        "k2": {
+          "bytes": 922811656,
+          "sha256": "4aa6e951ef177384f86c907beebb0d6add938851fcaea03765e974edac369d44"
+        },
+        "k3": {
+          "bytes": 1375797552,
+          "sha256": "0a7d0df90201734793f8fd50bf6a198ea5a15114b538abf3b8b8872c2f80b3af"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-06-part-0.json",
+      "sha256": "aff3b7e24b69b684bfd16a9158f960ee6b9e3418b59e8140806aad6a77682c2f",
+      "source_parts": {
+        "k2": {
+          "bytes": 922811656,
+          "sha256": "1559290d49c595b6ac5478f3dd233f7075b1ddacc6d1b1ec29546676956c3ed6"
+        },
+        "k3": {
+          "bytes": 1375797552,
+          "sha256": "3502da43719ec02a613fe2182c7eca225cfc3ba9274ff9b003e4326d2d951005"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-06-part-1.json",
+      "sha256": "78efa3b5145f9ba62ebc8553d2650ca869371dd5535c409424030a6fb77ef860",
+      "source_parts": {
+        "k2": {
+          "bytes": 922811656,
+          "sha256": "53e5a63c2a6a4af5253f7417de81bfb3897616895ac9c22e6a1b6159cd273627"
+        },
+        "k3": {
+          "bytes": 1375797552,
+          "sha256": "63f7f21d04bb8945dab5cbddedd62ce527e9a85bb655e435482242359f9fc232"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-07-part-0.json",
+      "sha256": "a0300ef72d0da884bc832fa975d8f289971c8a9d17259d86fad1d381150ebcc5",
+      "source_parts": {
+        "k2": {
+          "bytes": 922811656,
+          "sha256": "e64eb9ec42838a3c1d9ca634d2c938d3d2e0e0072b339ce324d593204fd78c74"
+        },
+        "k3": {
+          "bytes": 1375797552,
+          "sha256": "d4e3d987a1b209595d089a260df1f92f2cc50e970beac04abaef9efb0ddd2249"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-07-part-1.json",
+      "sha256": "54499634834f262987ad89b33f8b10c3ada0a03daaafa22e5596dbc6b4a0f393",
+      "source_parts": {
+        "k2": {
+          "bytes": 922811656,
+          "sha256": "05ffc9d78396f17e17ed218ccbd4bbdd4762722d9ac1df25265b80d3cd97bd31"
+        },
+        "k3": {
+          "bytes": 1375797552,
+          "sha256": "51c37036720952acdb93686bcc2b360df0af9fa66be9cf431c97493121421d66"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-08-part-0.json",
+      "sha256": "600a46e54c8d5d098c7eaed725821e9388318afbe5b60a363304808a1de82181",
+      "source_parts": {
+        "k2": {
+          "bytes": 922811656,
+          "sha256": "359f4f39cfd793eeb4fab5e713d485b3a189400c55526ac029a036a9dc2f9397"
+        },
+        "k3": {
+          "bytes": 1375797552,
+          "sha256": "9c0f4e8d1e48946df2554b018967acfc8c367df3bc36887c14c80af5cc985883"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-08-part-1.json",
+      "sha256": "01a1c7e7eee235f882130367e27e1826eeb09b334f13c4280894522cac9dbb39",
+      "source_parts": {
+        "k2": {
+          "bytes": 922811656,
+          "sha256": "e809500d90bac7dc0f661959252c61ae3386f7445ba73f26180ded245e6dd0cc"
+        },
+        "k3": {
+          "bytes": 1375797552,
+          "sha256": "b9b001dcc88cd91c5c5ac3c6b96ccfd37a7ae7521bcfd93b29bbea50f068d684"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-09-part-0.json",
+      "sha256": "28963f3a972de9a192d2f341b539dbd23a0a88cfee5e0e2e4b6dbeba604b27ee",
+      "source_parts": {
+        "k2": {
+          "bytes": 922811656,
+          "sha256": "09328716afa004c64a6c09f2bff9d880e24fae35519322dd2a769c872f34fa09"
+        },
+        "k3": {
+          "bytes": 1375797552,
+          "sha256": "66a03cd5315049ca9d88cdd67a6116ab9373dec45d7466136af78f367523d1aa"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-09-part-1.json",
+      "sha256": "090fecf66c1792cb14984ca568cdd5374559fcbae74a7f107469c19aa5182381",
+      "source_parts": {
+        "k2": {
+          "bytes": 922811656,
+          "sha256": "c107ac836825a4d285c6826a530c8936b28b2fe60cbb4fbae258642cbace24c1"
+        },
+        "k3": {
+          "bytes": 1375797552,
+          "sha256": "da7285c75035432ef5d5584efab3a875a1f9460eb207e1588cfbc24ecb4fd802"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-10-part-0.json",
+      "sha256": "c5dde6a476d692857ae05641e8e89f2ae5bfdddaf2b0980ffac8de84a86825d2",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "d2b637c9fc55d0bbe73d8d2a14585d063a7603f042e1f79c1ffb2e06f8fd349b"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "de5dc452a24120191bf9a6b6590771c0fa35bacec17fe15d932b1ccee3f68b3d"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-10-part-1.json",
+      "sha256": "f0ef5f5cec6a058332880aa9398ffdc3d95a125c5d56a4373e375183ed9b4819",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "7508907363d21180dc290811652378d172a0827921d7a30b453f5cb58baf9303"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "ae276eca43ec175ca30296440a3fece5c275458ddb76d8ed6e101ba4a9406641"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-11-part-0.json",
+      "sha256": "d161cd5fae7c76c8ca04a2a134cc8d469d64d768473a98fc586e38f2db181a30",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "3970314b91d4e8c7c0dc82ec6a53c47c4c0a0872d7702068254a5630316ba29b"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "133cc0eb45b461af66c65c6b439e06b4c2ff26ad66202803e269138a04043de4"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-11-part-1.json",
+      "sha256": "2b74c4bb21d5d474f616e7c336c1f7af1bbb687180049a3ba21820e6e5f1bb40",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "e3452d2434ad5fad9b57e05a9fb2481a479b0fcc2083e81186b7ad2edae35c77"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "891c525803be038bd43a8c37639dd313795a945db5a37ded12677af29e211e2f"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-12-part-0.json",
+      "sha256": "cb929d3a58a41e203ce4037974eb1e0fa89dfe3a4ef07552264711a25fe85ccc",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "fcfb10aa98a414603a0b73b45973772ce3a4bbc99753cd14740bf0ad3f2a2c3f"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "f70f63de0ceccb876ae9c53507e192d030eb846366297bec9a2150d17ba1a8b4"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-12-part-1.json",
+      "sha256": "5a1cd8ba8b0d7c054703d663119459622a2c4f6a5941f64ab0b9089ae7a7dff7",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "4a42e5f68f4c817613551904b7500fa71083d619cba5336d0d1c323734d53cf8"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "1299c43ca15b4ab051e43b9b9773b094780c0bec6190444821efea09ed188747"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-13-part-0.json",
+      "sha256": "b80cf3b4c266d5e246f9ce0cf55cad26202c45355f928bda9b0048ff2ba314f7",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "672d71ff76bf322c03d61ee77fc27f9c651fdefd9136defdee4617f5e691626a"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "2b69bef8cb77788def9fdeb891a1ec913eecf722ab1579282e8ca95b525b7630"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-13-part-1.json",
+      "sha256": "362f4fa18f8c45742372bf1c619671d21f831719c8cf62daa60a254b05adc485",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "6a8622b54591d1b349268e8e85a31d747092fbd45b649db65f57cd9230d89e13"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "65249cb4175bcf20afad98686626ef2f86d406ffef5461a2af29bc4cf31aad1a"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-14-part-0.json",
+      "sha256": "224afba9764b2278c5b078ef2654c47c56539ef6b42b8281f897c65cbd26d5a0",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "967149d596ef42e7bc6551ee09a4a71ab9a66c158f654b52f5fa6f8bcf9136c7"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "830d935d6689036a8629a268425a607a82dee615c47936d9496c314b34d57053"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-14-part-1.json",
+      "sha256": "7d6902e25f7e5e45167a3a1febae4bbe3f9f7ecad0cfd18840cb2f4409242606",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "5528a14962049981d0f64125f72d1b05e084694417dcc0fdfb8c5fdc71271396"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "60cd232f8df059634760b84e22a1d4df4544ea9ecbede0aadcc89474b57cfbd2"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-15-part-0.json",
+      "sha256": "a59e540c0723139317acb20c2a77dd9aff6b4ffa3ab25f9ed9b40be540565628",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "ba8406e1938d337b46e7fa997e8f224cb45cfaf20185e3c5b1e8255b7add8ad8"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "734532246db271b1a232ac6c0d23dfb53a95fe5c0e9e5bf5a045464dd0045738"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-15-part-1.json",
+      "sha256": "22547a4261b14efe2c2d8a4693bf362b5b87f42dee0db602952ffbd562a2b734",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "f48ebc44a7743bfb5fcc54a711b676ed74f767d4b150f03d6b9afc0810a4663f"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "b36527ee8884797a0802d0919d12eee4008231270aaa03c619caacc14cbfe7cd"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-16-part-0.json",
+      "sha256": "0c86685873ad8909537dab57760de7beacdd287b3a8adf2eb3f43b9147c44046",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "2c1e578f889069ea8026db43ee4d66809cf6b925ccf8e2dd2b9e85df18973d40"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "c48c5992fa617301e84ac456688d8069c2338be16e247cf66780ab7f2143f21b"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-16-part-1.json",
+      "sha256": "13369150d0390bebb94bd762bc38aa0ef124476b9640a6fd5e8cbac071b4fa29",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "0cb592566e865ee412f589bba6181ea3b5a3d5a2a61b4dc03f8318be97c385af"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "61b7a0e0a92daec8e8458cc423e8ef3d7a2940efd3c5993bb14f633ab8bb623b"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-17-part-0.json",
+      "sha256": "5d9c1a8c406ca722788fdfc989b06f43faf817e265ffa5eda5dc28d868b6f34e",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "4d7253c853bdbb4d161646084922d26c4bd18bc57ac139ee42973e828f1e8add"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "a97eb36a46ba59fea650f3840eaa557a237eca633a4076f8a2b29d505d6a9147"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-17-part-1.json",
+      "sha256": "a8383523bf9fc2a8e83a0b76a7f50a88d1088d16dc2af70706e021b0a8cb95f9",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "1668c2b28be83054442a4532cc33079ca886e90caea0b7fc6d17b440fdceab34"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "9446475c171dbf6fc18391576bf99551af04e316c29ff2c410c69fe724f6a7b3"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-18-part-0.json",
+      "sha256": "37eb76768beb4675af2ddc6f77cb9337e6cbff0470f3021e458857ed624f967b",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "4f106399273973cc48eac9d7da3cf979e55affa12a9b956fa6ab802953efb5ba"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "05b9eb55a1e0bda953f56bb2f8372f77064eb1d51a5a47afc91abd57b635be94"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-18-part-1.json",
+      "sha256": "20e57091ac0ea00a34e7d497e8045419920147d5ce4a907acee578b08998bfb6",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "07d8891105d27fff538c9bd5fba6d7f8c13b0f0ec8eefb9a0e01193451c2a650"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "c0b94cfb86ede06a001c5a2a3240b8dd46f08421c962a760b7755f149a43b5ea"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-19-part-0.json",
+      "sha256": "b3fb67573e190be89d80dfcb145d778593a768b09a0fa0c958bbf67e710d2fad",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "42ed51d2855ff9ccd055cd9d945cdc3d9f39d2fb81ec6ac89e3d115491b6b891"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "e0b8eb50ae49c97adc2b91053f742f528f2cea854ddaa6c28afaf9b26f8aa2e4"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-19-part-1.json",
+      "sha256": "c33e9fa9069ca85009625236cb886d958a1b4ab067087506ab8e7b54ab4bb31d",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "a54e12b00bc815dd58c421dab51850c25e724fe0a4e4e1b716a1c49c95858f7e"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "cc60934876b7c44e2db8788d1372f087efa146b5e8dfb584f975345a42772096"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-20-part-0.json",
+      "sha256": "7ada5f8bf0963b031c9970be8aeb548bf58c8cf06020d1cde11c7154dd1d9e90",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "f18a95eff4d8ae973c11ba315ad34799ec827acbed5a4fa4a27b69c5cb227400"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "fec194c8649fe136022216aa3e17657e3b565687f77b433454d466cdfabf2f60"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-20-part-1.json",
+      "sha256": "a62894dbb86571f29d139a80cc8592d36875dabde7a0c1995a96dd74ec3ab174",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "31776052f0d90314e51365aeef36ea1000a5619dc0923aad3bd0dd7db3368b31"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "c61a794ae797ea90f87a68ad5d421a87d1595d9c4ff27b4f7d41e42a317f9a8c"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-21-part-0.json",
+      "sha256": "96e999425ca9e9aa53a139a9c10ba4309b835a4ea91de1f7be8303b3afb92b7f",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "a1616fdc0efe93fde6005ce8f0ee2cc4ad6bd770cd8aadb1632b536575af7caa"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "8c69d2a274f873d23723525c55395e8e0c718015c0e6584ed8891b5c175d636f"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-21-part-1.json",
+      "sha256": "c2e339df4d16b4cc0714588912ec708d49580d56048fc22078b54ba518bde018",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "1a395a4a03d15a88500c8d72004eb3f6b1a7cb12dc62b617c6198d90e39d5aa4"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "21c4842004293b1ce3447f3f52f3f62468f90655194943e4c39ee87cd600873d"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-22-part-0.json",
+      "sha256": "e2372b63cc81ec0f089a5ad2d40661711a257428c8fbb9a3db4c2370e017530d",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "1467ac3879e924752ff83c7f3e7e412abecd2126cb6bdfe527c2ceb652721ed1"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "6897dc35d2b3b125b979b546e401794c1bfb0f0b33e3dfa61f680ea2f3ec9b0f"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-22-part-1.json",
+      "sha256": "ed0d340b1a1ae9e4f5a3aaa9678e648af43c938f7f6fa1cf0b52b61881bc3126",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "66dac39f9d87d50fad77f2db4c2368827a7d41f4ee525deb61ed845a9e7789dc"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "02706f92b8f2f6d6b093278a265fc4740f5950f97b81eaa250fda883bcc85ce1"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-23-part-0.json",
+      "sha256": "052b02f5d7f0940d2fd8759092da874eee69b5ddbe411b07ed92511c0a8d6970",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "af674d63135196e0b5b3e124048b49a9115c8dbd58937f585b5cb20fa0d60d66"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "14349a0748621035bde32d6628145bab0b7fbfcd218f7a41fb6665347929f1cd"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-23-part-1.json",
+      "sha256": "b0ce73d6a2ee60aa553d8b3accb2c97438bedf2eb96584c62847801a47470fc7",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "4709bc39153738005daa3de76fa642319129eebba3319d04f049d61779c648cd"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "15fed29e109b04bd1625d67186aedb71a1759d8f5b5dd2d4778f2de063e8f3f4"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-24-part-0.json",
+      "sha256": "90e01962158726a8273a0c52be3af6f24e09b0583039374fb739e35f1d6719b1",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "c08fdc07ae010eebf0d359838c17b41bb7669de1d20c0ea1a7c2153ca7187b3c"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "5227af499e17dfe7d648ddc512261a336dfce9f496cf2c2d7a8a5da0aef00af7"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-24-part-1.json",
+      "sha256": "fd540275bc060dde2072683af3484e65a3a85bd554d290613096fbf956956f34",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "1c1aa1acf6c2b53b44b9c1af133a24e6728248c7e925009f40d6ba72ce770b5e"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "13f54c13024b52469cc32a06e210171ef9d339859ed10dd544f50af89f1e5000"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-25-part-0.json",
+      "sha256": "e2843989eb2cfd367ceee689c84b7c223452990ac632c066ec8b8fb8799dda36",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "8170836da3edea5bd7680cfe5886d40f0643915824f71ea95816886792a904c7"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "8416a2cad6ea720146bf7c130c204bc0ac7205492430ed977cf9a3b507ddeff3"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-25-part-1.json",
+      "sha256": "8cf754e020ed16f660c5a9e7727fb57b59c370a17deec7a9e090e5c1c2768ecd",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "aff0e5f3d1d0eee87cd791f74e97a7c358537bbc1d41e0e7326dd4b4aa24fb7b"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "d38de684c172c3d164b1307107bc5dc833eae958c2a05e5854f7c472c9033b28"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-26-part-0.json",
+      "sha256": "3821b1ec4a7424d86108ffcf17d04f59d269b957533d05ce4f6cf9c64470752e",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "2ffc7f962d7290fe47448177e87d221cde2dbd7fca94ef41cf334656da23a235"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "482e9e49bd0c7f12dee3210e691ce3b3c4e3809fc5507efc2b10c60a7999cbc9"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-26-part-1.json",
+      "sha256": "2f3b285ace50a623d7da185e16f4b4394c29d456f7aeb40fb8a799df4378e8d3",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "b518fc4ebfb9370aadf9f73c30ada6e9633bc70ba41b729ba104143400adc455"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "67e249398e4b606448ae29321d0953c74bfad3751f2f935b698f5429f6cb471b"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-27-part-0.json",
+      "sha256": "17503ca85c81cc2157cdd9adb7eb19d4286e017fa729e84fc78fef01628bdfe0",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "11419142ee1e159eac232e47c11e995c7fa91a4c2082caf462e493f0d80a1bd1"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "f4020ea4d38145cf0f4463c1d0f42972c0c4ea0636cf0a9337fe5ddd6511d606"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-27-part-1.json",
+      "sha256": "ebc97fedeec3ffa6a0499c7765032fbddc1ad6d83a076060cedcd83753730b9c",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "adfa9cf6523c8c1664ff31e12f5adfc07ece912dc495b1c6cf20a706bcaa0fce"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "a633f5a686956d9af92119aed960ca3cd3ae3af520898238e827c4eef2647450"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-28-part-0.json",
+      "sha256": "ac807c890a409758beb1090560ed9b823b8020e6021e822195e7bee10fe70274",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "54d6350760a98ebb4974f363795dda3ecb9a078ae6dfdcf37cba60af29539f1b"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "c47e5b1b31b9ba44df70ba7f88bb196c1c06dfc51eb3f2a5609721a90b3ebecb"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-28-part-1.json",
+      "sha256": "eaa502d6abb199f40ddfa3609bb73a222310861bf72ac37e0b76286c0540a7d7",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "a55ff935f7e7d705f71be0afe8c4751e55277a730ca04776d66959f3f06ec54a"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "d7d75ced3e32d684d12feb495f1642c57b8125b0e43f329eb816d1df091149b5"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-29-part-0.json",
+      "sha256": "9d86886c73a6d1233f3d816254dee83d429e42b882ff9ce7a9f232b6718559a0",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "40152aa6bfee958b05dab039a60a3d3a8a892ce9950154f011702dea0a363fa6"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "fca14225a851fb3480bdd7dabcd49622a8de56fa121a195f95c3552e12d50ffd"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-29-part-1.json",
+      "sha256": "3d75ce0746166aa80dfce353a732807cd4940b5bbd006d3094c35e051230b767",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "8202b4a2413395d42c984bc0ed9c07f43b4689ad36c634917a059ba58fddb774"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "ddfbeb39e867df6ca6cf201bc310d7c733dc6aca9f444e56d2b4bd701baba346"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-30-part-0.json",
+      "sha256": "9ca7a26576259ebe8c3efb3c079d3dfe5cd857f2d2a688117b49a49d1228dbc1",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "cf982ffbdcb8662d7bea96132ab9f4a0f2abb37ca4350f473bc9e122f08ada0a"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "b6c9aae35c2260fd4f293a0764e8b836fd9ee4017219c64808a3063f32b469a1"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-30-part-1.json",
+      "sha256": "6f9b2d5ee776912331d6c5680b1fd1276b03545b64037a4b5a7b40ead6efc4c8",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "3746d9dc6916abe714d6eb55e54752ff080f15a3720e7e4ffb31fa727c1ac397"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "743e6d7d0e8ee67e437e7bcf6196fea0027523285e9fc2461c96ca170b6ac85b"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-31-part-0.json",
+      "sha256": "57c5988ff5c029e75b311b2eeecb51b9a737542c1250a1d61a6235288cd7ccd3",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "f188fe4d1e1cb62d42950ae93c946c52ad4dcc18d1110c4735a9f01b28786358"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "e6a7db096b0c5b204a62c317e3a49904d487d2cf16adb93c11d5e6be0b214762"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-31-part-1.json",
+      "sha256": "a5f444850c4213fbec8ecbc60e37e0d52edae5fcb942f0f2691faf893f78c27b",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "47799cbe8589bb04837b748bb25193712ed6c7bf3dca7f20b2e99c0981fd266d"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "9681bf6e0bf82fa126217ae9600ccc0bf11afbfd62a4df0fc72aebf7fbae76dc"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-32-part-0.json",
+      "sha256": "475cdb342251a22985203e7f20bccfc51a079bddaf4526713dfd0fd47298663c",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "848fa923625d6ade40152ac0f1f24526754ff8e859fb16f955c20e22742bdcfa"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "ffe69b8e90c3eac13c88c5e659bbae8854f3b130d26c71fdcc4b878779ff2468"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-32-part-1.json",
+      "sha256": "5b8670e8fec3997044524ae00b7523b862c7b94c9cc6d5d2a7df5c22efa8ed3a",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "174b918d337af22fce5b36809fed6d4114d220fbe0f6ab2af2d8295ea205b20c"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "6284bfc7af8edac3c301efd67b60cd2767dadb3e4c1b19cb0e147dcf2eae0e0d"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-33-part-0.json",
+      "sha256": "de9c318aa54874c6691011e35af809fb98558d8d25cd412682d1f41d2f441c27",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "719b04073ed5f3a88945edaac85c412249350d9afd7bcce96cce077e522510d6"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "abc34ac084fd09cb00592f2d35cf2af465606bfd7dcf538ff40a65e94886acc9"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-33-part-1.json",
+      "sha256": "8bf6d244089c14e2ba04ee9352e0d06f1831d71b54142716e3f4b4d8f8121b18",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "f2f6a55b588561df576765a04793a1fd83dc5279b34b010724cc3fb2e541c466"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "74855bf1b0900493e5152f831f755b1ebf40fb930e63db3074e0dca177383020"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-34-part-0.json",
+      "sha256": "c1ebfadcec7704f8793240ad19ccf95ad205c30ea3ee136f1504991e2f4b3466",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "bc16ba1421b6b91dbd762cf4fee295de4cbdb5191ae0d4d067b3dbbb33a51e8d"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "3b3546a2e2434392e54152b3a071a9b7601310eae183cd8a0c27086f697007ff"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-34-part-1.json",
+      "sha256": "b3584845924d27e1d24700749dcdca1bb33cc7851813e8c524fdb4fd263907c2",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "86f215a94fee044c3e55283fc9e7c4750f777151479db36e964e30a93c0c3aa3"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "941eb1399c6c457c5eea70b405c00d7412b76d6235ff6416129a8d0d34e44088"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-35-part-0.json",
+      "sha256": "c1d9e48543acb586d0c01f624329d114956d93564ab38eecd9ec896df4694aac",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "096f5f261f2b929dca299b4836038021ec3cb27babc0da197370b6873b058cf0"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "473e9d8e35ff7e236d27679dee6c20786f30541fec554c08683cb352934534bc"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-35-part-1.json",
+      "sha256": "03bfc4255d4dcc13286e153637c857be65abd6df03c21a7840e17536443f42c9",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "8d60f60697d2e9a9fde026f73520cd05b89e0a0d98467e10914d01338ac4039f"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "c2ab6a5b3e161cf2a376868c5c6e96591f50fe4c44237e7b3faecbdbb57bcf7c"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-36-part-0.json",
+      "sha256": "97d8c0ac802023ba6ed109ecd1188b9a1ef791ce5604b974b2221faecbdbb76b",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "36e13f61b76a6d0a0b2413b2abdc070bed5d21db17f4c98773f017d312107490"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "36069481b6afcfbc20ac820951fa496db9006fab6f11f8337aad3944241ebb0e"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-36-part-1.json",
+      "sha256": "fcff1a5b0b53b1ecd185029f0b2c93a37605616704d8a2400ff1738413c2b8e5",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "46fb6098e85c4cff3fd07dea548763df87deaa3dbd1598e4cc7d63150f56c670"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "8894e920fd8a0a4ff0077a1dc950723d0235c74b1eb4f04a1146a520797ed435"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-37-part-0.json",
+      "sha256": "4cfca4ad762110222d2c00e50573330709d48a2d8857530588c32b72ffe3ad3e",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "4a82bde01a8509535e6437d141338a1b3cf199c6c2d0409cccad2e807455c701"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "5c535aee02c080722ec150cec1d41dd0b8432eacdb71eda4207015a971524716"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-37-part-1.json",
+      "sha256": "21a0d56325670443e304d645f1df6915371f418203f9945fc029121e6bc11adb",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "affe4ac285babebf486eebb9e437a0323966aab96b3ad032b0b4130c526b6241"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "44a462f1e9dff36fd106528fed0c91c40c99968fb9fc7ead749d91d7021f63e7"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-38-part-0.json",
+      "sha256": "bd78b7b93141ed24d8883723c9868e590867a37a39f02f70bd9e76e03b19abed",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "1a4d3a587e89e4b7acfc7f3d16b7cb6c633f6c77d7c4d9912ce5e24eb5438769"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "87142a6b4de0ff51da0d88dbe1c45264243b623726dd8e7a87ce8649c5024fe6"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-38-part-1.json",
+      "sha256": "1a13cff855041afa1954198c515c8dac395c79ee4a1685854fb4c6db8b97a709",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "a0b7b42e6bcf5868fa7f3395d0fff795c578e00c68caa490e7dc1afbc71142e4"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "d7a818ef3550fcdc3bbe3e3ee25be569d2f4b71dc10b9d1aa9152ae8871091b0"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-39-part-0.json",
+      "sha256": "c6c6752112fc69a1c95a0dfe04eb5c4fead7aedc7b4861e5751be69421010edd",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "6f6c5fd4aa5ccf50693d50894043ab0a916acb8c03c9d331ba2f6feedc9305ad"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "72d9b29e41370b001487cc9642f8c9136288661e4fe77338834f0e64d633e360"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-39-part-1.json",
+      "sha256": "83ba83ba90bee3ce853c0cacfc9a21df480a76a4675867af453653c69ed5fdab",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "446d085528215647f2567ca7b87d01df0d0a097fa34018df45ee403dab2a9955"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "71909483c8422871bfcb0e78c93dacca9a2b4588db93381fbeb64bc12bf00b57"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-40-part-0.json",
+      "sha256": "80087a68241852ea2b30e074338cd76fbdd87d6dd73641f8aa3c4af5eedcd8ec",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "26d9a675fef1360984e2acbf986f17f3e85827403198633e2c7823aa2c57a14b"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "02a23acf76ada194c71836086ef770bbdc03348fce852b4cc48debcbf596d8a9"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-40-part-1.json",
+      "sha256": "d195952894e0b87f82fd1e246d35a3cdab797c72d37ed7b726c852ed4673f9f8",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "17b833a8d39cd03911c9b77dc350aa3a9836e6ec5bfc6dbd63105f60ba36b601"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "3b30a20ab3e9583927ff710bb2c06a09720f14d57b9da3d4ae007ccd4c1aa9d1"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-41-part-0.json",
+      "sha256": "47359b6693fe47cf88b005a9c95b09a30de5ff8609d39deb7c5e51ba753bf36b",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "0a6ed63214e8b2f0146543602d8114a670ae788c49b703ea5271f5f4c62999bd"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "db4dca68335e0d7188c8305fab6a5d2fd7d283ead8a1bb2d041a4169995b191c"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-41-part-1.json",
+      "sha256": "9bf71330106a6a68296589bbd7dffacf0c31c0e53dddcdc126ad98a27119004e",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "cd969a8088b2d4cb2fcbc97e9051a9c716d22cf358cbd13f41a9c8c492ff6463"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "fbf61e7207c78450a15725d72fcb03a90858ba94341d11a3327594d84e844a1b"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-42-part-0.json",
+      "sha256": "901fd724f0f4ec24b5f5805850d9fd49a53e5794d39ea9cbd89ae1c23e704df2",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "4381fa70097e30723a87376a4866d03c9eeb8b58e75c58fc449c722d178467b5"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "144815711aa73ff9eed7b53f450cabfb9576f82db8140caa4a35e42fac467457"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-42-part-1.json",
+      "sha256": "96ea4a193a05dfb342bd200d38b22f2bd924e66ada6a41c7c65354ad6ea9ee36",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "053e7ecfde6ef0adcdb99aae2e9e525b81cf14e6576a2cedfa419b24d871b45e"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "04a2a75b2163d1d5e95cfa7f9d3dec1fc5ac35775c08e299b6c86c5fc5485696"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-43-part-0.json",
+      "sha256": "f894e915335d05c94a68718172759e5357286699641beea0cb8d80575ac56a7a",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "b2ae27d5fab33a532cf4f20a840f387ff014f124b2c55a0f3926e7bc95c9d924"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "eb888406deb8564e96564bd034d4d48739cca89bdf85dc3edde40b8ce153dcbb"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-43-part-1.json",
+      "sha256": "17723ef2136df1d34d3414147d6c7207a4b815a24a045c9467347ed55a268858",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "13547e221a6e4dbcdb225f67f0de8590ba6008a7eeb2135c320784d507ffdcb2"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "57308f3173d1325391137006de0d8ce99e91cd5416dc92e3d2c5d4c8a867250d"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-44-part-0.json",
+      "sha256": "036379ca51f7c0a345c211c8e2dcd51c52e76816b3a2550abfd0991335fb8f1e",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "631996ebf2a131caed79392e87ccd87519e2b5d0ae8c78d0e286cb574f4d3d7c"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "e577961b7a3c578e9f7c5c1ce89327162141c9362ea3e92f68a1da5400f5d8a5"
+        }
+      }
+    },
+    {
+      "path": "/Users/sero/ai/.tmp-glm53-release/exact3-aggregate-audit/layers/layer-44-part-1.json",
+      "sha256": "7cfb87c9d83133d9852412bf3e41544f267c56e11e818713a7a3a05c4c680f55",
+      "source_parts": {
+        "k2": {
+          "bytes": 922818568,
+          "sha256": "f902d28692f83696c5c9d4ed963993abdfcb3c55e5fc46a8555accb7a85ad2b9"
+        },
+        "k3": {
+          "bytes": 1375804464,
+          "sha256": "237ee2ee2bc34adac8cedbe5f5eb46dbc6db0a6dd33c507a11c190139505e4fe"
+        }
+      }
+    }
+  ]
+}

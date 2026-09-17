@@ -1,0 +1,14 @@
+{
+  "state": "PINNED_PUBLIC_PAYLOAD_VERIFIED",
+  "repo": "0xSero/GLM-5.3-Flash-EXL3-TR3-2.0bpw",
+  "revision": "35b4b580debe2a1510a2eb042d9d6d4cd7fb3a6b",
+  "authenticated": false,
+  "private": false,
+  "gated": false,
+  "disabled": false,
+  "manifest_sha256": "501641b947fa56afc9ed098bdc034e59c2bd229d4fa1a1d7b80e3727f10c8ba3",
+  "expected_weight_files": 133,
+  "weight_bytes": 111352026456,
+  "mismatches": [],
+  "extra_safetensors": []
+}

@@ -1,0 +1,1134 @@
+{
+  "reason": "User ordered GLM release first; preserve DeepSeek for sequential resumption",
+  "container": "3381eb6b41e13ec968a0e3ad72ae761de937f33b4216619a9ad701c0dc88a845",
+  "image": "sha256:ad0cdd86d1ddd15ee758f519d16da15ac237f7f0648a5c52fbc20f9554944263",
+  "last_committed_driver_state": {
+    "complete": false,
+    "experts": [
+      {
+        "expert": 0,
+        "exit_code": 0,
+        "seconds": 11.370781595003791
+      },
+      {
+        "expert": 1,
+        "exit_code": 0,
+        "seconds": 10.704107922967523
+      },
+      {
+        "expert": 2,
+        "exit_code": 0,
+        "seconds": 10.508285469026305
+      },
+      {
+        "expert": 3,
+        "exit_code": 0,
+        "seconds": 10.01561474695336
+      },
+      {
+        "expert": 4,
+        "exit_code": 0,
+        "seconds": 10.524302513920702
+      },
+      {
+        "expert": 5,
+        "exit_code": 0,
+        "seconds": 10.669088550028391
+      },
+      {
+        "expert": 6,
+        "exit_code": 0,
+        "seconds": 9.554036388988607
+      },
+      {
+        "expert": 7,
+        "exit_code": 0,
+        "seconds": 9.572916505043395
+      },
+      {
+        "expert": 8,
+        "exit_code": 0,
+        "seconds": 10.437433340004645
+      },
+      {
+        "expert": 9,
+        "exit_code": 0,
+        "seconds": 10.660133699071594
+      },
+      {
+        "expert": 10,
+        "exit_code": 0,
+        "seconds": 10.832528932020068
+      },
+      {
+        "expert": 11,
+        "exit_code": 0,
+        "seconds": 9.793227373040281
+      },
+      {
+        "expert": 12,
+        "exit_code": 0,
+        "seconds": 11.031846786034293
+      },
+      {
+        "expert": 13,
+        "exit_code": 0,
+        "seconds": 9.603689120034687
+      },
+      {
+        "expert": 14,
+        "exit_code": 0,
+        "seconds": 10.600940215983428
+      },
+      {
+        "expert": 15,
+        "exit_code": 0,
+        "seconds": 9.816088957944885
+      },
+      {
+        "expert": 16,
+        "exit_code": 0,
+        "seconds": 10.242493918980472
+      },
+      {
+        "expert": 17,
+        "exit_code": 0,
+        "seconds": 10.89785861200653
+      },
+      {
+        "expert": 18,
+        "exit_code": 0,
+        "seconds": 11.010528826969676
+      },
+      {
+        "expert": 19,
+        "exit_code": 0,
+        "seconds": 10.156175022013485
+      },
+      {
+        "expert": 20,
+        "exit_code": 0,
+        "seconds": 10.448486574925482
+      },
+      {
+        "expert": 21,
+        "exit_code": 0,
+        "seconds": 9.865191927994601
+      },
+      {
+        "expert": 22,
+        "exit_code": 0,
+        "seconds": 10.832060133107007
+      },
+      {
+        "expert": 23,
+        "exit_code": 0,
+        "seconds": 10.710784134920686
+      },
+      {
+        "expert": 24,
+        "exit_code": 0,
+        "seconds": 9.83353983098641
+      },
+      {
+        "expert": 25,
+        "exit_code": 0,
+        "seconds": 9.601334684994072
+      },
+      {
+        "expert": 26,
+        "exit_code": 0,
+        "seconds": 10.396285374998115
+      },
+      {
+        "expert": 27,
+        "exit_code": 0,
+        "seconds": 10.553608546033502
+      },
+      {
+        "expert": 28,
+        "exit_code": 0,
+        "seconds": 10.584574527922086
+      },
+      {
+        "expert": 29,
+        "exit_code": 0,
+        "seconds": 10.19014259998221
+      },
+      {
+        "expert": 30,
+        "exit_code": 0,
+        "seconds": 9.773968523018993
+      },
+      {
+        "expert": 31,
+        "exit_code": 0,
+        "seconds": 10.46609853208065
+      },
+      {
+        "expert": 32,
+        "exit_code": 0,
+        "seconds": 10.486155618098564
+      },
+      {
+        "expert": 33,
+        "exit_code": 0,
+        "seconds": 9.763581410981715
+      },
+      {
+        "expert": 34,
+        "exit_code": 0,
+        "seconds": 9.929360768059269
+      },
+      {
+        "expert": 35,
+        "exit_code": 0,
+        "seconds": 10.174623756087385
+      },
+      {
+        "expert": 36,
+        "exit_code": 0,
+        "seconds": 10.49485422403086
+      },
+      {
+        "expert": 37,
+        "exit_code": 0,
+        "seconds": 10.125921942992136
+      },
+      {
+        "expert": 38,
+        "exit_code": 0,
+        "seconds": 10.518367809941992
+      },
+      {
+        "expert": 39,
+        "exit_code": 0,
+        "seconds": 11.017387947998941
+      },
+      {
+        "expert": 40,
+        "exit_code": 0,
+        "seconds": 10.220034666941501
+      },
+      {
+        "expert": 42,
+        "exit_code": 0,
+        "seconds": 10.253400265006348
+      },
+      {
+        "expert": 43,
+        "exit_code": 0,
+        "seconds": 10.693402644013986
+      },
+      {
+        "expert": 44,
+        "exit_code": 0,
+        "seconds": 9.892004034016281
+      },
+      {
+        "expert": 45,
+        "exit_code": 0,
+        "seconds": 11.033105668029748
+      },
+      {
+        "expert": 46,
+        "exit_code": 0,
+        "seconds": 11.15804167301394
+      },
+      {
+        "expert": 48,
+        "exit_code": 0,
+        "seconds": 9.660376501036808
+      },
+      {
+        "expert": 49,
+        "exit_code": 0,
+        "seconds": 10.524391434970312
+      },
+      {
+        "expert": 50,
+        "exit_code": 0,
+        "seconds": 9.74838661099784
+      },
+      {
+        "expert": 51,
+        "exit_code": 0,
+        "seconds": 11.209318865905516
+      },
+      {
+        "expert": 52,
+        "exit_code": 0,
+        "seconds": 11.383097798912786
+      },
+      {
+        "expert": 53,
+        "exit_code": 0,
+        "seconds": 11.154200728051364
+      },
+      {
+        "expert": 54,
+        "exit_code": 0,
+        "seconds": 10.267205383977853
+      },
+      {
+        "expert": 55,
+        "exit_code": 0,
+        "seconds": 9.673007815959863
+      },
+      {
+        "expert": 56,
+        "exit_code": 0,
+        "seconds": 10.284617715980858
+      },
+      {
+        "expert": 57,
+        "exit_code": 0,
+        "seconds": 9.776911305030808
+      },
+      {
+        "expert": 58,
+        "exit_code": 0,
+        "seconds": 10.49585611699149
+      },
+      {
+        "expert": 59,
+        "exit_code": 0,
+        "seconds": 10.972192685934715
+      },
+      {
+        "expert": 60,
+        "exit_code": 0,
+        "seconds": 9.666015257011168
+      },
+      {
+        "expert": 61,
+        "exit_code": 0,
+        "seconds": 9.99543408001773
+      },
+      {
+        "expert": 62,
+        "exit_code": 0,
+        "seconds": 9.428773541934788
+      },
+      {
+        "expert": 63,
+        "exit_code": 0,
+        "seconds": 10.6272461990593
+      },
+      {
+        "expert": 64,
+        "exit_code": 0,
+        "seconds": 10.67883954802528
+      },
+      {
+        "expert": 65,
+        "exit_code": 0,
+        "seconds": 10.977362412028015
+      },
+      {
+        "expert": 66,
+        "exit_code": 0,
+        "seconds": 10.459894323023036
+      },
+      {
+        "expert": 67,
+        "exit_code": 0,
+        "seconds": 10.509648971958086
+      },
+      {
+        "expert": 69,
+        "exit_code": 0,
+        "seconds": 9.735196769004688
+      },
+      {
+        "expert": 70,
+        "exit_code": 0,
+        "seconds": 9.991541742929257
+      },
+      {
+        "expert": 72,
+        "exit_code": 0,
+        "seconds": 10.697262419038452
+      },
+      {
+        "expert": 73,
+        "exit_code": 0,
+        "seconds": 10.40825438091997
+      },
+      {
+        "expert": 74,
+        "exit_code": 0,
+        "seconds": 10.373069126042537
+      },
+      {
+        "expert": 75,
+        "exit_code": 0,
+        "seconds": 10.776007309905253
+      },
+      {
+        "expert": 76,
+        "exit_code": 0,
+        "seconds": 9.965883083990775
+      },
+      {
+        "expert": 77,
+        "exit_code": 0,
+        "seconds": 11.236450284020975
+      },
+      {
+        "expert": 78,
+        "exit_code": 0,
+        "seconds": 9.856621094048023
+      },
+      {
+        "expert": 79,
+        "exit_code": 0,
+        "seconds": 10.713593957014382
+      },
+      {
+        "expert": 80,
+        "exit_code": 0,
+        "seconds": 10.048154423944652
+      },
+      {
+        "expert": 81,
+        "exit_code": 0,
+        "seconds": 10.238924441044219
+      },
+      {
+        "expert": 82,
+        "exit_code": 0,
+        "seconds": 10.330305559909903
+      },
+      {
+        "expert": 83,
+        "exit_code": 0,
+        "seconds": 10.05621950502973
+      },
+      {
+        "expert": 84,
+        "exit_code": 0,
+        "seconds": 9.542307983036153
+      },
+      {
+        "expert": 85,
+        "exit_code": 0,
+        "seconds": 10.376268262043595
+      },
+      {
+        "expert": 86,
+        "exit_code": 0,
+        "seconds": 11.617146270000376
+      },
+      {
+        "expert": 87,
+        "exit_code": 0,
+        "seconds": 9.84123568108771
+      },
+      {
+        "expert": 88,
+        "exit_code": 0,
+        "seconds": 10.68571232596878
+      },
+      {
+        "expert": 89,
+        "exit_code": 0,
+        "seconds": 10.301550192991272
+      },
+      {
+        "expert": 90,
+        "exit_code": 0,
+        "seconds": 11.369636973016895
+      },
+      {
+        "expert": 91,
+        "exit_code": 0,
+        "seconds": 10.804504708969034
+      },
+      {
+        "expert": 92,
+        "exit_code": 0,
+        "seconds": 9.95928686496336
+      },
+      {
+        "expert": 93,
+        "exit_code": 0,
+        "seconds": 11.609065533964895
+      },
+      {
+        "expert": 94,
+        "exit_code": 0,
+        "seconds": 10.240400905022398
+      },
+      {
+        "expert": 95,
+        "exit_code": 0,
+        "seconds": 10.366603430942632
+      },
+      {
+        "expert": 96,
+        "exit_code": 0,
+        "seconds": 10.556976898922585
+      },
+      {
+        "expert": 97,
+        "exit_code": 0,
+        "seconds": 10.11071954399813
+      },
+      {
+        "expert": 98,
+        "exit_code": 0,
+        "seconds": 10.002668955014087
+      },
+      {
+        "expert": 99,
+        "exit_code": 0,
+        "seconds": 10.983516559004784
+      },
+      {
+        "expert": 100,
+        "exit_code": 0,
+        "seconds": 10.769143693032674
+      },
+      {
+        "expert": 101,
+        "exit_code": 0,
+        "seconds": 10.274217230034992
+      },
+      {
+        "expert": 102,
+        "exit_code": 0,
+        "seconds": 10.590957016102038
+      },
+      {
+        "expert": 103,
+        "exit_code": 0,
+        "seconds": 10.053348770015873
+      },
+      {
+        "expert": 104,
+        "exit_code": 0,
+        "seconds": 11.03260352392681
+      },
+      {
+        "expert": 105,
+        "exit_code": 0,
+        "seconds": 9.825866388971917
+      },
+      {
+        "expert": 106,
+        "exit_code": 0,
+        "seconds": 10.772316953982227
+      },
+      {
+        "expert": 107,
+        "exit_code": 0,
+        "seconds": 10.419935191981494
+      },
+      {
+        "expert": 108,
+        "exit_code": 0,
+        "seconds": 10.678130980930291
+      },
+      {
+        "expert": 109,
+        "exit_code": 0,
+        "seconds": 10.15910436597187
+      },
+      {
+        "expert": 110,
+        "exit_code": 0,
+        "seconds": 9.969862804049626
+      },
+      {
+        "expert": 111,
+        "exit_code": 0,
+        "seconds": 10.411708749947138
+      },
+      {
+        "expert": 112,
+        "exit_code": 0,
+        "seconds": 10.20196507498622
+      },
+      {
+        "expert": 113,
+        "exit_code": 0,
+        "seconds": 10.555652643088251
+      },
+      {
+        "expert": 114,
+        "exit_code": 0,
+        "seconds": 10.46008183399681
+      },
+      {
+        "expert": 115,
+        "exit_code": 0,
+        "seconds": 9.771288377000019
+      },
+      {
+        "expert": 116,
+        "exit_code": 0,
+        "seconds": 10.377336833975278
+      },
+      {
+        "expert": 117,
+        "exit_code": 0,
+        "seconds": 10.831251287949272
+      },
+      {
+        "expert": 118,
+        "exit_code": 0,
+        "seconds": 10.877820004010573
+      },
+      {
+        "expert": 119,
+        "exit_code": 0,
+        "seconds": 10.67310824804008
+      },
+      {
+        "expert": 120,
+        "exit_code": 0,
+        "seconds": 12.17019130999688
+      },
+      {
+        "expert": 121,
+        "exit_code": 0,
+        "seconds": 10.601083020912483
+      },
+      {
+        "expert": 122,
+        "exit_code": 0,
+        "seconds": 9.823161576059647
+      },
+      {
+        "expert": 123,
+        "exit_code": 0,
+        "seconds": 11.49466497101821
+      },
+      {
+        "expert": 124,
+        "exit_code": 0,
+        "seconds": 11.190055913059041
+      },
+      {
+        "expert": 125,
+        "exit_code": 0,
+        "seconds": 10.220473831985146
+      },
+      {
+        "expert": 126,
+        "exit_code": 0,
+        "seconds": 10.770823933067732
+      },
+      {
+        "expert": 128,
+        "exit_code": 0,
+        "seconds": 11.329800619045272
+      },
+      {
+        "expert": 129,
+        "exit_code": 0,
+        "seconds": 10.280642450903542
+      },
+      {
+        "expert": 130,
+        "exit_code": 0,
+        "seconds": 10.67724683904089
+      },
+      {
+        "expert": 131,
+        "exit_code": 0,
+        "seconds": 10.578250053920783
+      },
+      {
+        "expert": 132,
+        "exit_code": 0,
+        "seconds": 10.060574239003472
+      },
+      {
+        "expert": 134,
+        "exit_code": 0,
+        "seconds": 10.897173343924806
+      },
+      {
+        "expert": 135,
+        "exit_code": 0,
+        "seconds": 10.898191348998807
+      },
+      {
+        "expert": 136,
+        "exit_code": 0,
+        "seconds": 10.164508574991487
+      },
+      {
+        "expert": 137,
+        "exit_code": 0,
+        "seconds": 9.966602633940056
+      },
+      {
+        "expert": 138,
+        "exit_code": 0,
+        "seconds": 11.054364660056308
+      },
+      {
+        "expert": 139,
+        "exit_code": 0,
+        "seconds": 11.10580421204213
+      },
+      {
+        "expert": 140,
+        "exit_code": 0,
+        "seconds": 10.304826771956868
+      },
+      {
+        "expert": 141,
+        "exit_code": 0,
+        "seconds": 11.312058305018581
+      },
+      {
+        "expert": 142,
+        "exit_code": 0,
+        "seconds": 11.542895991005935
+      },
+      {
+        "expert": 143,
+        "exit_code": 0,
+        "seconds": 11.126839083968662
+      },
+      {
+        "expert": 144,
+        "exit_code": 0,
+        "seconds": 11.009101553936489
+      },
+      {
+        "expert": 145,
+        "exit_code": 0,
+        "seconds": 11.036940367077477
+      },
+      {
+        "expert": 146,
+        "exit_code": 0,
+        "seconds": 10.719627995975316
+      },
+      {
+        "expert": 147,
+        "exit_code": 0,
+        "seconds": 10.182212351937778
+      },
+      {
+        "expert": 148,
+        "exit_code": 0,
+        "seconds": 9.853573699016124
+      },
+      {
+        "expert": 149,
+        "exit_code": 0,
+        "seconds": 10.694205193896778
+      },
+      {
+        "expert": 150,
+        "exit_code": 0,
+        "seconds": 10.335753557970747
+      },
+      {
+        "expert": 151,
+        "exit_code": 0,
+        "seconds": 10.946908109006472
+      },
+      {
+        "expert": 153,
+        "exit_code": 0,
+        "seconds": 9.897894260007888
+      },
+      {
+        "expert": 154,
+        "exit_code": 0,
+        "seconds": 9.703108508954756
+      },
+      {
+        "expert": 155,
+        "exit_code": 0,
+        "seconds": 10.363627006998286
+      },
+      {
+        "expert": 156,
+        "exit_code": 0,
+        "seconds": 10.42023175500799
+      },
+      {
+        "expert": 157,
+        "exit_code": 0,
+        "seconds": 10.072732520988211
+      },
+      {
+        "expert": 158,
+        "exit_code": 0,
+        "seconds": 10.95632219396066
+      },
+      {
+        "expert": 159,
+        "exit_code": 0,
+        "seconds": 10.437920742086135
+      },
+      {
+        "expert": 160,
+        "exit_code": 0,
+        "seconds": 9.803329020971432
+      },
+      {
+        "expert": 161,
+        "exit_code": 0,
+        "seconds": 10.180431946995668
+      },
+      {
+        "expert": 162,
+        "exit_code": 0,
+        "seconds": 9.887175616924651
+      },
+      {
+        "expert": 163,
+        "exit_code": 0,
+        "seconds": 9.708056151983328
+      },
+      {
+        "expert": 164,
+        "exit_code": 0,
+        "seconds": 10.84552938095294
+      },
+      {
+        "expert": 165,
+        "exit_code": 0,
+        "seconds": 11.19117445894517
+      },
+      {
+        "expert": 166,
+        "exit_code": 0,
+        "seconds": 10.634870384936221
+      },
+      {
+        "expert": 167,
+        "exit_code": 0,
+        "seconds": 11.20856920897495
+      },
+      {
+        "expert": 168,
+        "exit_code": 0,
+        "seconds": 11.00411730504129
+      },
+      {
+        "expert": 169,
+        "exit_code": 0,
+        "seconds": 10.575938245980069
+      },
+      {
+        "expert": 170,
+        "exit_code": 0,
+        "seconds": 10.825404466944747
+      },
+      {
+        "expert": 171,
+        "exit_code": 0,
+        "seconds": 10.80132945405785
+      },
+      {
+        "expert": 172,
+        "exit_code": 0,
+        "seconds": 10.283919046982192
+      },
+      {
+        "expert": 173,
+        "exit_code": 0,
+        "seconds": 11.432944747968577
+      },
+      {
+        "expert": 174,
+        "exit_code": 0,
+        "seconds": 10.135652094031684
+      },
+      {
+        "expert": 175,
+        "exit_code": 0,
+        "seconds": 10.412020144052804
+      },
+      {
+        "expert": 176,
+        "exit_code": 0,
+        "seconds": 9.956493219942786
+      },
+      {
+        "expert": 177,
+        "exit_code": 0,
+        "seconds": 10.013644905062392
+      },
+      {
+        "expert": 178,
+        "exit_code": 0,
+        "seconds": 9.678093170979992
+      },
+      {
+        "expert": 179,
+        "exit_code": 0,
+        "seconds": 10.381223754957318
+      },
+      {
+        "expert": 180,
+        "exit_code": 0,
+        "seconds": 10.425997853046283
+      },
+      {
+        "expert": 181,
+        "exit_code": 0,
+        "seconds": 10.282960696029477
+      },
+      {
+        "expert": 182,
+        "exit_code": 0,
+        "seconds": 10.31272298807744
+      },
+      {
+        "expert": 183,
+        "exit_code": 0,
+        "seconds": 10.303356459015049
+      },
+      {
+        "expert": 184,
+        "exit_code": 0,
+        "seconds": 10.642704817000777
+      },
+      {
+        "expert": 185,
+        "exit_code": 0,
+        "seconds": 9.948367413016967
+      },
+      {
+        "expert": 186,
+        "exit_code": 0,
+        "seconds": 10.12608299299609
+      },
+      {
+        "expert": 187,
+        "exit_code": 0,
+        "seconds": 9.65926996001508
+      },
+      {
+        "expert": 188,
+        "exit_code": 0,
+        "seconds": 10.35123802209273
+      },
+      {
+        "expert": 189,
+        "exit_code": 0,
+        "seconds": 10.816047319909558
+      },
+      {
+        "expert": 190,
+        "exit_code": 0,
+        "seconds": 10.553065823041834
+      },
+      {
+        "expert": 191,
+        "exit_code": 0,
+        "seconds": 10.727933119982481
+      },
+      {
+        "expert": 192,
+        "exit_code": 0,
+        "seconds": 10.328222434967756
+      },
+      {
+        "expert": 193,
+        "exit_code": 0,
+        "seconds": 11.203645058092661
+      },
+      {
+        "expert": 194,
+        "exit_code": 0,
+        "seconds": 10.540796291898005
+      },
+      {
+        "expert": 195,
+        "exit_code": 0,
+        "seconds": 10.822276507038623
+      },
+      {
+        "expert": 196,
+        "exit_code": 0,
+        "seconds": 9.683423613896593
+      },
+      {
+        "expert": 197,
+        "exit_code": 0,
+        "seconds": 10.104059402015992
+      },
+      {
+        "expert": 198,
+        "exit_code": 0,
+        "seconds": 10.155525491922162
+      },
+      {
+        "expert": 199,
+        "exit_code": 0,
+        "seconds": 10.20377613301389
+      },
+      {
+        "expert": 200,
+        "exit_code": 0,
+        "seconds": 10.70081513398327
+      },
+      {
+        "expert": 201,
+        "exit_code": 0,
+        "seconds": 11.422694341978058
+      },
+      {
+        "expert": 202,
+        "exit_code": 0,
+        "seconds": 10.42823673109524
+      },
+      {
+        "expert": 203,
+        "exit_code": 0,
+        "seconds": 10.676543893059716
+      },
+      {
+        "expert": 204,
+        "exit_code": 0,
+        "seconds": 10.504275786923245
+      },
+      {
+        "expert": 205,
+        "exit_code": 0,
+        "seconds": 10.569516085088253
+      },
+      {
+        "expert": 206,
+        "exit_code": 0,
+        "seconds": 9.889685930102132
+      },
+      {
+        "expert": 207,
+        "exit_code": 0,
+        "seconds": 11.377864474081434
+      },
+      {
+        "expert": 208,
+        "exit_code": 0,
+        "seconds": 9.875346548040397
+      },
+      {
+        "expert": 210,
+        "exit_code": 0,
+        "seconds": 10.78025615599472
+      },
+      {
+        "expert": 211,
+        "exit_code": 0,
+        "seconds": 10.536532294005156
+      },
+      {
+        "expert": 212,
+        "exit_code": 0,
+        "seconds": 10.824017085018568
+      },
+      {
+        "expert": 213,
+        "exit_code": 0,
+        "seconds": 10.362775026005693
+      },
+      {
+        "expert": 214,
+        "exit_code": 0,
+        "seconds": 10.297926138038747
+      },
+      {
+        "expert": 215,
+        "exit_code": 0,
+        "seconds": 10.773605198017322
+      },
+      {
+        "expert": 216,
+        "exit_code": 0,
+        "seconds": 10.520425863098353
+      },
+      {
+        "expert": 217,
+        "exit_code": 0,
+        "seconds": 10.253337384900078
+      },
+      {
+        "expert": 218,
+        "exit_code": 0,
+        "seconds": 9.80731468310114
+      },
+      {
+        "expert": 219,
+        "exit_code": 0,
+        "seconds": 10.600268692011014
+      },
+      {
+        "expert": 220,
+        "exit_code": 0,
+        "seconds": 10.656398546998389
+      }
+    ],
+    "excluded": [
+      {
+        "expert": 41,
+        "train": 978,
+        "heldout": 249,
+        "reason": "insufficient route coverage"
+      },
+      {
+        "expert": 47,
+        "train": 958,
+        "heldout": 157,
+        "reason": "insufficient route coverage"
+      },
+      {
+        "expert": 68,
+        "train": 779,
+        "heldout": 202,
+        "reason": "insufficient route coverage"
+      },
+      {
+        "expert": 71,
+        "train": 785,
+        "heldout": 329,
+        "reason": "insufficient route coverage"
+      },
+      {
+        "expert": 127,
+        "train": 376,
+        "heldout": 124,
+        "reason": "insufficient route coverage"
+      },
+      {
+        "expert": 133,
+        "train": 964,
+        "heldout": 141,
+        "reason": "insufficient route coverage"
+      },
+      {
+        "expert": 152,
+        "train": 511,
+        "heldout": 94,
+        "reason": "insufficient route coverage"
+      },
+      {
+        "expert": 209,
+        "train": 454,
+        "heldout": 90,
+        "reason": "insufficient route coverage"
+      }
+    ],
+    "token_sha256": "d2b8584e5976765c65a57a35fac21515cfb25f20f7488975e1450c0d01a1a651",
+    "execution_mode": "persistent",
+    "driver_sha256": "298b7b416fcf8466731931945083a3b1950a88cae2b39b0049a605f95a8213b4",
+    "encoder_sha256": "fb36fc4d6cf589278a8d06f822316676d42103679e187796f9819d633f460b70"
+  },
+  "time": 1789150984.2125385,
+  "restart_policy": {
+    "Name": "no",
+    "MaximumRetryCount": 0
+  }
+}

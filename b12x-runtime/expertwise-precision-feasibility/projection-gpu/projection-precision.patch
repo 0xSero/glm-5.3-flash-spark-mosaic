@@ -1,0 +1,97 @@
+--- a/exl3.py
++++ b/exl3.py
+@@ -431,6 +431,7 @@
+     n_active_host = -1 if _exl3_moe_accepts_num_active(fn) else None
+ 
+     k = int(getattr(layer, "_exl3_k", 4))
++    projection_bits = getattr(layer, "_exl3_projection_bits", (k, k, k))
+     args = (
+         xh,
+         out,
+@@ -442,9 +443,9 @@
+         temps[2],
+         temps[3],
+         MOE_ACT_SILU,
+-        k,
+-        k,
+-        k,
++        projection_bits[0],
++        projection_bits[1],
++        projection_bits[2],
+         ptrs["gate_trellis"],
+         ptrs["gate_suh"],
+         ptrs["gate_svh"],
+@@ -629,7 +630,28 @@
+         from vllm.model_executor.layers.fused_moe.routed_experts import RoutedExperts
+ 
+         if isinstance(layer, RoutedExperts):
+-            return Exl3MoEMethod(layer.moe_config, self)
++            import copy
++            from .glm_exl3_projection_bits import resolve_layer_projection_bits
++
++            selected = copy.copy(self)
++            overrides = self.raw_config.get("layer_projection_bits", {})
++            if not isinstance(overrides, dict):
++                raise ValueError("layer_projection_bits must be an object")
++            if overrides:
++                if self.raw_config.get("layer_bits"):
++                    raise ValueError("Do not combine layer_bits and layer_projection_bits")
++                match = re.fullmatch(
++                    r"(?:language_model\.)?model\.layers\.([0-9]+)\.mlp\.experts(?:\.routed_experts)?",
++                    prefix,
++                )
++                if match is None:
++                    raise ValueError("Projection precision requires a target MoE prefix")
++                selected.projection_bits = resolve_layer_projection_bits(
++                    self.bits, overrides, int(match[1])
++                )
++            else:
++                selected.projection_bits = (self.bits,) * 3
++            return Exl3MoEMethod(layer.moe_config, selected)
+         if isinstance(layer, LinearBase):
+             return UnquantizedLinearMethod()
+         return None
+@@ -642,6 +664,7 @@
+         super().__init__(moe)
+         self.quant_config = quant_config
+         self.bits = quant_config.bits
++        self.projection_bits = getattr(quant_config, "projection_bits", (self.bits,) * 3)
+         self._logged = False
+ 
+     def get_fused_moe_quant_config(
+@@ -688,7 +711,8 @@
+                 "EXL3 trellis tiles are 16-wide; "
+                 f"hidden={hidden_size} intermediate_local={intermediate_local}"
+             )
+-        k_words = self.bits * 16
++        k_words = self.projection_bits[0] * 16
++        down_k_words = self.projection_bits[2] * 16
+         in_tiles = hidden_size // 16
+         out_tiles = intermediate_local // 16
+ 
+@@ -718,7 +742,7 @@
+                 ),
+                 "w2_trellis": Parameter(
+                     torch.empty(
+-                        num_experts, out_tiles, in_tiles, k_words, dtype=torch.int16
++                        num_experts, out_tiles, in_tiles, down_k_words, dtype=torch.int16
+                     ),
+                     requires_grad=False,
+                 ),
+@@ -774,6 +798,7 @@
+         layer._exl3_intermediate_local = intermediate_local
+         layer._exl3_k_words = k_words
+         layer._exl3_bits = self.bits
++        layer._exl3_projection_bits = self.projection_bits
+         layer._exl3_rank_stacked_tp = rank_stacked_tp
+         layer._exl3_physical_experts = num_experts
+ 
+@@ -956,6 +981,8 @@
+                     w13.trellis[e, 1], w13.suh[e, 1], w13.svh[e, 1], w13.mcg[e, 1]
+                 )
+                 down = make_linear_exl3(w2.trellis[e], w2.suh[e], w2.svh[e], w2.mcg[e])
++                if (gate.K, up.K, down.K) != self.projection_bits:
++                    raise ValueError("Loaded projection precision differs from metadata")
+                 inners.append({"gate": gate, "up": up, "down": down})
+         n_exp = len(inners)
+         layer._exl3_inners = inners

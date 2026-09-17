@@ -1,0 +1,28 @@
+{
+  "container_id": "1ff235092ad1a7e81aff77a7c12f7d0dea7d79584d42b895036370dd23cd496b",
+  "command": [
+    "docker",
+    "run",
+    "-d",
+    "--name",
+    "glm53-b12x-r3-quality-client",
+    "--network",
+    "host",
+    "--cpus",
+    "2",
+    "--memory",
+    "3g",
+    "--memory-swap",
+    "3g",
+    "-v",
+    "/home/sero/work/glm53-single-spark-release-20260911/acceptance-b12x-r3:/acceptance:ro",
+    "-v",
+    "/home/sero/work/glm53-single-spark-release-20260911/benchmarks:/results",
+    "--entrypoint",
+    "sh",
+    "sha256:afb74c791853d438810b27bf28994128f5baa2a3bf5c9b50b9ecdad7b9afffd5",
+    "-c",
+    "set -eu\npython3 /acceptance/runtime_parity.py api --base-url http://127.0.0.1:18080/v1 --model glm-5.3-flash --probes /acceptance/original-k2-runtime-parity-probes.json --runtime-receipt /acceptance/runtime-receipt.json --output /results/b12x-r3-parity.json\npython3 /acceptance/serving_quality.py --reference /acceptance/reference.json --runtime-receipt /acceptance/runtime-receipt.json --base-url http://127.0.0.1:18080/v1 --metrics-url http://127.0.0.1:18080/metrics --model glm-5.3-flash --output /results/b12x-r3-serving-quality\n"
+  ],
+  "time": 1789165166.057163
+}

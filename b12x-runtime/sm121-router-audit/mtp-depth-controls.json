@@ -1,0 +1,466 @@
+{
+  "state": "CPU_PLAN_ONLY",
+  "configurations": [
+    {
+      "depth": 1,
+      "slots": 1,
+      "max_model_len": 262144,
+      "max_num_batched_tokens": 2048,
+      "speculative_config": {
+        "method": "mtp",
+        "model": "/mtp",
+        "num_speculative_tokens": 1,
+        "attention_backend": "B12X"
+      },
+      "compilation_config": {
+        "cudagraph_mode": "FULL_DECODE_ONLY",
+        "custom_ops": [
+          "all"
+        ],
+        "cudagraph_capture_sizes": [
+          2
+        ],
+        "max_cudagraph_capture_size": 2
+      },
+      "native_weights_multiplier": 1,
+      "draft_token_buffer_bytes": 8,
+      "fp32_target_vocab_scratch_if_materialized_bytes": 1239040,
+      "gpu_admission": "UNTESTED_EXCEPT_EXISTING_DEPTH1_C1_RECEIPT"
+    },
+    {
+      "depth": 1,
+      "slots": 2,
+      "max_model_len": 262144,
+      "max_num_batched_tokens": 2048,
+      "speculative_config": {
+        "method": "mtp",
+        "model": "/mtp",
+        "num_speculative_tokens": 1,
+        "attention_backend": "B12X"
+      },
+      "compilation_config": {
+        "cudagraph_mode": "FULL_DECODE_ONLY",
+        "custom_ops": [
+          "all"
+        ],
+        "cudagraph_capture_sizes": [
+          2,
+          4
+        ],
+        "max_cudagraph_capture_size": 4
+      },
+      "native_weights_multiplier": 1,
+      "draft_token_buffer_bytes": 16,
+      "fp32_target_vocab_scratch_if_materialized_bytes": 2478080,
+      "gpu_admission": "UNTESTED_EXCEPT_EXISTING_DEPTH1_C1_RECEIPT"
+    },
+    {
+      "depth": 1,
+      "slots": 4,
+      "max_model_len": 262144,
+      "max_num_batched_tokens": 2048,
+      "speculative_config": {
+        "method": "mtp",
+        "model": "/mtp",
+        "num_speculative_tokens": 1,
+        "attention_backend": "B12X"
+      },
+      "compilation_config": {
+        "cudagraph_mode": "FULL_DECODE_ONLY",
+        "custom_ops": [
+          "all"
+        ],
+        "cudagraph_capture_sizes": [
+          2,
+          4,
+          6,
+          8
+        ],
+        "max_cudagraph_capture_size": 8
+      },
+      "native_weights_multiplier": 1,
+      "draft_token_buffer_bytes": 32,
+      "fp32_target_vocab_scratch_if_materialized_bytes": 4956160,
+      "gpu_admission": "UNTESTED_EXCEPT_EXISTING_DEPTH1_C1_RECEIPT"
+    },
+    {
+      "depth": 1,
+      "slots": 8,
+      "max_model_len": 262144,
+      "max_num_batched_tokens": 2048,
+      "speculative_config": {
+        "method": "mtp",
+        "model": "/mtp",
+        "num_speculative_tokens": 1,
+        "attention_backend": "B12X"
+      },
+      "compilation_config": {
+        "cudagraph_mode": "FULL_DECODE_ONLY",
+        "custom_ops": [
+          "all"
+        ],
+        "cudagraph_capture_sizes": [
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          14,
+          16
+        ],
+        "max_cudagraph_capture_size": 16
+      },
+      "native_weights_multiplier": 1,
+      "draft_token_buffer_bytes": 64,
+      "fp32_target_vocab_scratch_if_materialized_bytes": 9912320,
+      "gpu_admission": "UNTESTED_EXCEPT_EXISTING_DEPTH1_C1_RECEIPT"
+    },
+    {
+      "depth": 2,
+      "slots": 1,
+      "max_model_len": 262144,
+      "max_num_batched_tokens": 2048,
+      "speculative_config": {
+        "method": "mtp",
+        "model": "/mtp",
+        "num_speculative_tokens": 2,
+        "attention_backend": "B12X"
+      },
+      "compilation_config": {
+        "cudagraph_mode": "FULL_DECODE_ONLY",
+        "custom_ops": [
+          "all"
+        ],
+        "cudagraph_capture_sizes": [
+          3
+        ],
+        "max_cudagraph_capture_size": 3
+      },
+      "native_weights_multiplier": 1,
+      "draft_token_buffer_bytes": 16,
+      "fp32_target_vocab_scratch_if_materialized_bytes": 1858560,
+      "gpu_admission": "UNTESTED_EXCEPT_EXISTING_DEPTH1_C1_RECEIPT"
+    },
+    {
+      "depth": 2,
+      "slots": 2,
+      "max_model_len": 262144,
+      "max_num_batched_tokens": 2048,
+      "speculative_config": {
+        "method": "mtp",
+        "model": "/mtp",
+        "num_speculative_tokens": 2,
+        "attention_backend": "B12X"
+      },
+      "compilation_config": {
+        "cudagraph_mode": "FULL_DECODE_ONLY",
+        "custom_ops": [
+          "all"
+        ],
+        "cudagraph_capture_sizes": [
+          3,
+          6
+        ],
+        "max_cudagraph_capture_size": 6
+      },
+      "native_weights_multiplier": 1,
+      "draft_token_buffer_bytes": 32,
+      "fp32_target_vocab_scratch_if_materialized_bytes": 3717120,
+      "gpu_admission": "UNTESTED_EXCEPT_EXISTING_DEPTH1_C1_RECEIPT"
+    },
+    {
+      "depth": 2,
+      "slots": 4,
+      "max_model_len": 262144,
+      "max_num_batched_tokens": 2048,
+      "speculative_config": {
+        "method": "mtp",
+        "model": "/mtp",
+        "num_speculative_tokens": 2,
+        "attention_backend": "B12X"
+      },
+      "compilation_config": {
+        "cudagraph_mode": "FULL_DECODE_ONLY",
+        "custom_ops": [
+          "all"
+        ],
+        "cudagraph_capture_sizes": [
+          3,
+          6,
+          9,
+          12
+        ],
+        "max_cudagraph_capture_size": 12
+      },
+      "native_weights_multiplier": 1,
+      "draft_token_buffer_bytes": 64,
+      "fp32_target_vocab_scratch_if_materialized_bytes": 7434240,
+      "gpu_admission": "UNTESTED_EXCEPT_EXISTING_DEPTH1_C1_RECEIPT"
+    },
+    {
+      "depth": 2,
+      "slots": 8,
+      "max_model_len": 262144,
+      "max_num_batched_tokens": 2048,
+      "speculative_config": {
+        "method": "mtp",
+        "model": "/mtp",
+        "num_speculative_tokens": 2,
+        "attention_backend": "B12X"
+      },
+      "compilation_config": {
+        "cudagraph_mode": "FULL_DECODE_ONLY",
+        "custom_ops": [
+          "all"
+        ],
+        "cudagraph_capture_sizes": [
+          3,
+          6,
+          9,
+          12,
+          15,
+          18,
+          21,
+          24
+        ],
+        "max_cudagraph_capture_size": 24
+      },
+      "native_weights_multiplier": 1,
+      "draft_token_buffer_bytes": 128,
+      "fp32_target_vocab_scratch_if_materialized_bytes": 14868480,
+      "gpu_admission": "UNTESTED_EXCEPT_EXISTING_DEPTH1_C1_RECEIPT"
+    },
+    {
+      "depth": 3,
+      "slots": 1,
+      "max_model_len": 262144,
+      "max_num_batched_tokens": 2048,
+      "speculative_config": {
+        "method": "mtp",
+        "model": "/mtp",
+        "num_speculative_tokens": 3,
+        "attention_backend": "B12X"
+      },
+      "compilation_config": {
+        "cudagraph_mode": "FULL_DECODE_ONLY",
+        "custom_ops": [
+          "all"
+        ],
+        "cudagraph_capture_sizes": [
+          4
+        ],
+        "max_cudagraph_capture_size": 4
+      },
+      "native_weights_multiplier": 1,
+      "draft_token_buffer_bytes": 24,
+      "fp32_target_vocab_scratch_if_materialized_bytes": 2478080,
+      "gpu_admission": "UNTESTED_EXCEPT_EXISTING_DEPTH1_C1_RECEIPT"
+    },
+    {
+      "depth": 3,
+      "slots": 2,
+      "max_model_len": 262144,
+      "max_num_batched_tokens": 2048,
+      "speculative_config": {
+        "method": "mtp",
+        "model": "/mtp",
+        "num_speculative_tokens": 3,
+        "attention_backend": "B12X"
+      },
+      "compilation_config": {
+        "cudagraph_mode": "FULL_DECODE_ONLY",
+        "custom_ops": [
+          "all"
+        ],
+        "cudagraph_capture_sizes": [
+          4,
+          8
+        ],
+        "max_cudagraph_capture_size": 8
+      },
+      "native_weights_multiplier": 1,
+      "draft_token_buffer_bytes": 48,
+      "fp32_target_vocab_scratch_if_materialized_bytes": 4956160,
+      "gpu_admission": "UNTESTED_EXCEPT_EXISTING_DEPTH1_C1_RECEIPT"
+    },
+    {
+      "depth": 3,
+      "slots": 4,
+      "max_model_len": 262144,
+      "max_num_batched_tokens": 2048,
+      "speculative_config": {
+        "method": "mtp",
+        "model": "/mtp",
+        "num_speculative_tokens": 3,
+        "attention_backend": "B12X"
+      },
+      "compilation_config": {
+        "cudagraph_mode": "FULL_DECODE_ONLY",
+        "custom_ops": [
+          "all"
+        ],
+        "cudagraph_capture_sizes": [
+          4,
+          8,
+          12,
+          16
+        ],
+        "max_cudagraph_capture_size": 16
+      },
+      "native_weights_multiplier": 1,
+      "draft_token_buffer_bytes": 96,
+      "fp32_target_vocab_scratch_if_materialized_bytes": 9912320,
+      "gpu_admission": "UNTESTED_EXCEPT_EXISTING_DEPTH1_C1_RECEIPT"
+    },
+    {
+      "depth": 3,
+      "slots": 8,
+      "max_model_len": 262144,
+      "max_num_batched_tokens": 2048,
+      "speculative_config": {
+        "method": "mtp",
+        "model": "/mtp",
+        "num_speculative_tokens": 3,
+        "attention_backend": "B12X"
+      },
+      "compilation_config": {
+        "cudagraph_mode": "FULL_DECODE_ONLY",
+        "custom_ops": [
+          "all"
+        ],
+        "cudagraph_capture_sizes": [
+          4,
+          8,
+          12,
+          16,
+          20,
+          24,
+          28,
+          32
+        ],
+        "max_cudagraph_capture_size": 32
+      },
+      "native_weights_multiplier": 1,
+      "draft_token_buffer_bytes": 192,
+      "fp32_target_vocab_scratch_if_materialized_bytes": 19824640,
+      "gpu_admission": "UNTESTED_EXCEPT_EXISTING_DEPTH1_C1_RECEIPT"
+    },
+    {
+      "depth": 5,
+      "slots": 1,
+      "max_model_len": 262144,
+      "max_num_batched_tokens": 2048,
+      "speculative_config": {
+        "method": "mtp",
+        "model": "/mtp",
+        "num_speculative_tokens": 5,
+        "attention_backend": "B12X"
+      },
+      "compilation_config": {
+        "cudagraph_mode": "FULL_DECODE_ONLY",
+        "custom_ops": [
+          "all"
+        ],
+        "cudagraph_capture_sizes": [
+          6
+        ],
+        "max_cudagraph_capture_size": 6
+      },
+      "native_weights_multiplier": 1,
+      "draft_token_buffer_bytes": 40,
+      "fp32_target_vocab_scratch_if_materialized_bytes": 3717120,
+      "gpu_admission": "UNTESTED_EXCEPT_EXISTING_DEPTH1_C1_RECEIPT"
+    },
+    {
+      "depth": 5,
+      "slots": 2,
+      "max_model_len": 262144,
+      "max_num_batched_tokens": 2048,
+      "speculative_config": {
+        "method": "mtp",
+        "model": "/mtp",
+        "num_speculative_tokens": 5,
+        "attention_backend": "B12X"
+      },
+      "compilation_config": {
+        "cudagraph_mode": "FULL_DECODE_ONLY",
+        "custom_ops": [
+          "all"
+        ],
+        "cudagraph_capture_sizes": [
+          6,
+          12
+        ],
+        "max_cudagraph_capture_size": 12
+      },
+      "native_weights_multiplier": 1,
+      "draft_token_buffer_bytes": 80,
+      "fp32_target_vocab_scratch_if_materialized_bytes": 7434240,
+      "gpu_admission": "UNTESTED_EXCEPT_EXISTING_DEPTH1_C1_RECEIPT"
+    },
+    {
+      "depth": 5,
+      "slots": 4,
+      "max_model_len": 262144,
+      "max_num_batched_tokens": 2048,
+      "speculative_config": {
+        "method": "mtp",
+        "model": "/mtp",
+        "num_speculative_tokens": 5,
+        "attention_backend": "B12X"
+      },
+      "compilation_config": {
+        "cudagraph_mode": "FULL_DECODE_ONLY",
+        "custom_ops": [
+          "all"
+        ],
+        "cudagraph_capture_sizes": [
+          6,
+          12,
+          18,
+          24
+        ],
+        "max_cudagraph_capture_size": 24
+      },
+      "native_weights_multiplier": 1,
+      "draft_token_buffer_bytes": 160,
+      "fp32_target_vocab_scratch_if_materialized_bytes": 14868480,
+      "gpu_admission": "UNTESTED_EXCEPT_EXISTING_DEPTH1_C1_RECEIPT"
+    },
+    {
+      "depth": 5,
+      "slots": 8,
+      "max_model_len": 262144,
+      "max_num_batched_tokens": 2048,
+      "speculative_config": {
+        "method": "mtp",
+        "model": "/mtp",
+        "num_speculative_tokens": 5,
+        "attention_backend": "B12X"
+      },
+      "compilation_config": {
+        "cudagraph_mode": "FULL_DECODE_ONLY",
+        "custom_ops": [
+          "all"
+        ],
+        "cudagraph_capture_sizes": [
+          6,
+          12,
+          18,
+          24,
+          30,
+          36,
+          42,
+          48
+        ],
+        "max_cudagraph_capture_size": 48
+      },
+      "native_weights_multiplier": 1,
+      "draft_token_buffer_bytes": 320,
+      "fp32_target_vocab_scratch_if_materialized_bytes": 29736960,
+      "gpu_admission": "UNTESTED_EXCEPT_EXISTING_DEPTH1_C1_RECEIPT"
+    }
+  ],
+  "source_snapshot_sha256": "6e0ec5ac9e5e44641a8300c211dbc8e2aea624038fc7843d6d8dd7463c5139cb"
+}

@@ -1,0 +1,12 @@
+{
+  "state": "COMPONENT_PROOF_COMPLETED_SERVING_PENDING",
+  "cid": "563adcb7078c9f712b5ba73dc36d5dc77dbe92fc769ab172a43d5730f5d1d6ff",
+  "sha256": {
+    "full-load.json": "e09d32f674a130fb3536adad168c0c2a3b3ee1dae4cb24690ae2db1fb50e9f84",
+    "terminal.log": "5f1d1b3f479a0adc5d31bc3c5b81b497efd05b0433c0db618f4721758e257271",
+    "terminal-inspect.json": "bb42839d423a8157c321cc357145f5eeb7d8121525321defccaee921d259edda",
+    "prepared-tensors.json": "fe844d89d1d100f52329edf7bbc815a3ab7e95837e0e1a9df3580c13aaf4ba59",
+    "launch.json": "4faddcc82e26d206f353b3a8bc4566587538e20667cd28e779aa78b760ff421b",
+    "full-sparse.json": "0757a0f77a20a8228531383e5feb9b3980f120c09389628251d467a0f9fe00ce"
+  }
+}

@@ -1,0 +1,7 @@
+# Verify local base ID4ec5267998b60eaefc8d72bd837c8897a71724b4a7968d4db3ff307efa98736e before build.
+ARG BASE_IMAGE=glm53-b12x-exl3:jovian-3aada677
+FROM ${BASE_IMAGE}
+ENV VLLM_MXFP8_LM_HEAD=0 VLLM_MTP_NVFP4_LM_HEAD=0
+COPY exl3-port/apply_config_override.py /patches/exl3-port/apply_config_override.py
+COPY smoke_build.py /opt/smoke_build.py
+RUN python3 /patches/exl3-port/apply_config_override.py --model-file /usr/local/lib/python3.12/dist-packages/vllm/config/model.py

@@ -1,0 +1,7 @@
+{
+  "repo": "local-inference-lab/vllm",
+  "revision": "fa033bd4e1b16d9d729ad94be2d87da5a13210ce",
+  "url": "https://raw.githubusercontent.com/local-inference-lab/vllm/fa033bd4e1b16d9d729ad94be2d87da5a13210ce/vllm/model_executor/layers/quantization/__init__.py",
+  "sha256": "ab37348d51e60d64d841d6db1cd17f372374cf766c28b37b4335568ea689d87f",
+  "finding": "EXL3 Literal + lazy import + method map prior art; same three registration points in port"
+}

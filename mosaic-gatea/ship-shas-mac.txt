@@ -1,0 +1,5 @@
+48bfb726422e4fe2c775b02240909ab884e8dd0a9acc58d0236c0859ad9e7ec7  mosaic-gatea/mosaic_pack.py
+1f0df266a7c8bf956cb98f224630e787a2dab9599918f6f992bfb744c6351ac6  mosaic-gatea/run-build-gatea.sh
+ca0548940ac172b40bcdc290e3aea5137ee95d0b83e7e7fce5b0aa26d1da5738  mosaic-gatea/run-census-gatea.sh
+21f26e8c35ee316bb7375ad90be893dd96f816db593172bd1eca878bbb406c55  mosaic-gatea/run-serve-gatea.sh
+47135333e4450560d16b21b528d3f3561a4e5221f308383a9d8181968ea707fd  mosaic-gatea/mosaic-gatea-plan.json

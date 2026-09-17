@@ -1,0 +1,157 @@
+[
+  {
+    "attempt": "K2-full-r1",
+    "outcome": "FAILED_NATIVE_LOADER",
+    "detail": "Native draft inherited target EXL3; w2_weight missing.",
+    "log": "failures/k2-attempt1-quant-leak.log",
+    "endpoint_ready": false,
+    "fresh_completion_passed": false,
+    "b12x_enabled": false
+  },
+  {
+    "attempt": "K2-full-r2",
+    "outcome": "FAILED_NATIVE_LOADER",
+    "detail": "V1 fix did not cover actual V2 eagle helper; same w2_weight error.",
+    "log": "failures/k2-attempt2-v2-quant-leak.log",
+    "endpoint_ready": false,
+    "fresh_completion_passed": false,
+    "b12x_enabled": false
+  },
+  {
+    "attempt": "K2-full-r3-m94",
+    "outcome": "FAILED_STARTUP_RESERVATION",
+    "detail": "114.03GiB free <114.39GiB required before loading.",
+    "log": "failures/k2-attempt3-startup-free-memory.log",
+    "endpoint_ready": false,
+    "fresh_completion_passed": false,
+    "b12x_enabled": false
+  },
+  {
+    "attempt": "K2-full-r3-m93",
+    "outcome": "FAILED_KV_ADMISSION",
+    "model_loaded": true,
+    "native_mtp_loaded": true,
+    "native_mtp_experts": 288,
+    "native_mtp_quantization": null,
+    "model_memory_gib": 103.86,
+    "estimated_graph_memory_gib": 2.01,
+    "available_kv_memory_gib": -1.13,
+    "configured_context": 262144,
+    "native_config_max_position_embeddings": 1048576,
+    "max_num_seqs": 1,
+    "gpu_memory_fraction": 0.93,
+    "encoder_profile_tokens": 32242,
+    "encoder_profile_modality": "video",
+    "effective_attention_block_size": 6912,
+    "detail": "Native weights, vision profile and graph memory profile completed, but no memory remained for KV blocks. No readiness or completion.",
+    "log": "failures/k2-attempt4-negative-kv-memory.log",
+    "endpoint_ready": false,
+    "fresh_completion_passed": false,
+    "b12x_enabled": false
+  },
+  {
+    "attempt": "K2-keep256-r3-m93",
+    "outcome": "CAPACITY_AND_TEXT_MTP_PASS_NOT_RELEASE_ACCEPTED",
+    "model": "glm-5.3-flash",
+    "model_root": "/home/valentine/glm53-single-spark-release-20260911/k2-massmax-k256",
+    "context_limit": 262144,
+    "native_config_max_position_embeddings": 1048576,
+    "max_num_seqs": 1,
+    "kv_capacity_tokens": 693225,
+    "prefix_caching": false,
+    "cuda_graphs": true,
+    "gpu_memory_fraction": 0.93,
+    "speculative_config": {
+      "method": "mtp",
+      "num_speculative_tokens": 1
+    },
+    "candidate_manifest_sha256": "7c7a2e47c7cde8996ac54c6f2ca5c3f7532b682d5d7296408c97a14e8950f73c",
+    "logprobs_mode": "raw_logprobs",
+    "evidence_sha256": {
+      "inspect": "616c863d2413d63a5affcfc6e28d4867f8803372ea91e749951cc6262d0e2b4c",
+      "engine_log": "1dce70c503b90c84d3636ee08383fe46959d23b88e162505bb8fd64db407b831",
+      "smoke": "d1480ff1e57098a5e3f8055702e877ac55ec53a7f63ce1a6a0e8b3168c061c9c"
+    },
+    "container_id": "6472b5846861d4660f978bbe98f859a5779e7da7dd6c27eb031172272e729ecb",
+    "image_id": "sha256:cd6ce6e10276f856d9ec617c702362ffc45114cad6f26ddcb6a39ef5a2ac7e37",
+    "model_memory_gib": 95.82,
+    "graph_pool_actual_gib": 0.06,
+    "graph_pool_estimated_gib": 0.97,
+    "kv_memory_gib": 6.38,
+    "b12x_enabled": false,
+    "backend_identity": "legacy vLLM487ecf187, EXL3 MCG trellis, FlashInfer MLA Sparse SM120; native BF16 MTP FlashInfer CUTLASS",
+    "thinking_enabled": true,
+    "thinking_disabled_supported_by_template": false,
+    "fresh_text_passed": true,
+    "mtp_counter_deltas": {
+      "vllm:spec_decode_num_draft_tokens_total": 65.0,
+      "vllm:spec_decode_num_accepted_tokens_total": 63.0
+    },
+    "vision_configured": true,
+    "vision_image_verified": false,
+    "vision_video_verified": false,
+    "long_context_verified": false,
+    "quality_acceptance": false
+  },
+  {
+    "experiment": "full original K2 target + FP8 routed-expert MTP R4",
+    "result": "actual serving text and native MTP counters passed",
+    "receipt": {
+      "model": "glm-5.3-flash",
+      "model_root": "/home/valentine/flash-experimental-staging-20260906/model",
+      "context_limit": 262144,
+      "native_config_max_position_embeddings": 1048576,
+      "max_num_seqs": 1,
+      "kv_capacity_tokens": 460208,
+      "prefix_caching": false,
+      "cuda_graphs": true,
+      "gpu_memory_fraction": 0.93,
+      "speculative_config": {
+        "method": "mtp",
+        "num_speculative_tokens": 1
+      },
+      "candidate_manifest_sha256": "501641b947fa56afc9ed098bdc034e59c2bd229d4fa1a1d7b80e3727f10c8ba3",
+      "logprobs_mode": "raw_logprobs",
+      "evidence_sha256": {
+        "inspect": "fb2efbf246ae8d37c2f2db0f46f3727fce1728e6d6aa5b7e1cd8cd76bd2082d4",
+        "engine_log": "f1f355789b92e496fceba63c5e05096129aaef379ca66679be46d6a292e2299b",
+        "smoke": "bc19a8f564830fed40c3e035316a5d58aaa690fba39f3450117460af2cae23e3",
+        "logprobs_contract": "feebcce77599813244eb3671173b2f1c3956ba591e6990a7c6f67e6cd773983f",
+        "draft_precision_real_load": "10601c65631f3acba1f344a8780976958207bc12e300cc490af2c692f995d26d"
+      },
+      "container_id": "8851d99b39a11acd3b9bd844f2aca9d30ee563b70cf761c1e63c7a4ef2d91138",
+      "image_id": "sha256:4f06a26d872ddd6f268a1f99e85940ea630a3cbecc33c7cc8b0038faf8c0851b",
+      "model_memory_gib": 97.11,
+      "graph_pool_actual_gib": 0.14,
+      "graph_pool_estimated_gib": 0.79,
+      "kv_memory_gib": 4.22,
+      "b12x_enabled": false,
+      "backend_identity": "legacy vLLM487ecf187, EXL3 MCG trellis, FlashInfer MLA Sparse SM120; MTP routed experts online FP8 TRITON, all nonexpert MTP parameters native",
+      "thinking_enabled": true,
+      "thinking_disabled_supported_by_template": false,
+      "fresh_text_passed": true,
+      "mtp_counter_deltas": {
+        "vllm:spec_decode_num_draft_tokens_total": 65.0,
+        "vllm:spec_decode_num_accepted_tokens_total": 63.0
+      },
+      "vision_configured": true,
+      "vision_image_verified": false,
+      "vision_video_verified": false,
+      "long_context_verified": false,
+      "quality_acceptance": false,
+      "target_routed_experts_per_layer": 288,
+      "draft_routed_experts": 288,
+      "draft_expert_precision": "float8_e4m3fn",
+      "draft_nonexpert_precision": "native BF16/F32, strict 24-parameter dtype audit in separate real-load probe",
+      "draft_external_multimodal_embeddings": false,
+      "raw_logprobs_api_contract_passed": true,
+      "evidence_files": {
+        "inspect": "k2full-fp8draft-r4-inspect-ready.json",
+        "engine_log": "k2full-fp8draft-r4-engine-ready.log",
+        "smoke": "native-mtp-k2full-fp8draft-r4-smoke.json",
+        "logprobs_contract": "k2full-fp8draft-r4-logprobs-contract.json",
+        "draft_precision_real_load": "native-mtp-expert-fp8-real-load.json"
+      }
+    }
+  }
+]

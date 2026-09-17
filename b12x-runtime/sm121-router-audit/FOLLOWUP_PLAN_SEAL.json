@@ -1,0 +1,12 @@
+{
+  "state": "READ_ONLY_SOURCE_PROFILE_ANALYSIS_AND_PROSPECTIVE_MTP_DEPTH_PLAN",
+  "live_runtime_modified": false,
+  "new_gpu_jobs_after_router_release": false,
+  "files": {
+    "MODEL_IMPACT.md": "49cbdcc23e5c34dce4531540689e58d0088941d847ea9c0bc6f998d9762d210c",
+    "dense-gemm-attribution.json": "ee2d23aea3055654b9b44672187722cfef6ea2d9f234cad8f294cdad299afc21",
+    "MTP_DEPTH_PLAN.md": "84bd9708bda37e88355c0a150e0a4f9018f52beea9e965979adea67435387083",
+    "mtp-depth-controls.json": "80390ec9b909f609c1b24ac554219bd2d829da5b5e8a0daf43a7bf9760c01fbf",
+    "mtp-depth-installed-sources.json": "6e0ec5ac9e5e44641a8300c211dbc8e2aea624038fc7843d6d8dd7463c5139cb"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "data": [
+    {
+      "created": 1789204784,
+      "id": "glm-5.3-flash",
+      "max_model_len": 262144,
+      "object": "model",
+      "owned_by": "vllm",
+      "parent": null,
+      "permission": [
+        {
+          "allow_create_engine": false,
+          "allow_fine_tuning": false,
+          "allow_logprobs": true,
+          "allow_sampling": true,
+          "allow_search_indices": false,
+          "allow_view": true,
+          "created": 1789204784,
+          "group": null,
+          "id": "modelperm-b8d4af5c729b9beb",
+          "is_blocking": false,
+          "object": "model_permission",
+          "organization": "*"
+        }
+      ],
+      "root": "/model"
+    }
+  ],
+  "object": "list"
+}

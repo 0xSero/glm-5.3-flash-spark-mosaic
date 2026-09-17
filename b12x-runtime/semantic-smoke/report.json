@@ -1,0 +1,40 @@
+{
+  "state": "SEMANTIC_FAILURE",
+  "requests": [
+    {
+      "name": "arithmetic",
+      "passed": true,
+      "content": "42",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 28,
+        "total_tokens": 75,
+        "completion_tokens": 47,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 44
+        }
+      },
+      "elapsed_seconds": 4.371762756025419,
+      "reasoning_present": true
+    },
+    {
+      "name": "count",
+      "passed": false,
+      "content": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 35,
+        "total_tokens": 291,
+        "completion_tokens": 256,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 216
+        }
+      },
+      "elapsed_seconds": 17.800870636012405,
+      "reasoning_present": true
+    }
+  ],
+  "not_a_throughput_benchmark": true
+}

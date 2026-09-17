@@ -1,0 +1,13 @@
+{
+  "state": "FULL_PAYLOAD_HASH_PASS",
+  "manifest_sha256": "98e72202d67acc158e908701d04b6d228de74b01d8c1c66d3aa0df6a998b1cbc",
+  "keep": 192,
+  "snapshot_sha256": {
+    "evaluate_pruned_quality.py": "066760759ed8596ab330a261a30c994c9f4f0a8976af970ed2cb8a29522325db",
+    "deps/evaluate_low_bpw_quality.py": "0c02949a77d28fe7c45786e964a1241cbba8d33b076335ca6a08a4fcac28729a",
+    "deps/glm53_exl3_tp4.py": "488b6f93183dde8c5c5a8248b46ccf22875e8619ddc0a3aa48115da34578a1a7",
+    "deps/release_route_capture_v2.py": "3c5f5558d2a248fd375944067f992619a43fb3ed982b6eb6b30570b7ac1b15b8"
+  },
+  "index_sha256": "69e22c6201eddd76fcf0f3d836cc8228f6b8b765fd429063da5dbfa5658a9571",
+  "config_sha256": "d8b3c2cb36abb7c6f73c9c78115d27c9c12fe7f3b0d1ceeb96b5470c663a75c6"
+}

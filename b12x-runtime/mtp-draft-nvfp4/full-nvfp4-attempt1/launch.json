@@ -1,0 +1,7 @@
+{
+  "container_id": "eb261d59a9f372c1e25f716fb91fbb9a02649c4806a15a5698f0f90b40667af2",
+  "image_id": "sha256:368820997e1146e9d7843367478b53ce18db708e79861f7ea269860e9a1bda4b",
+  "mode": "nvfp4",
+  "MemAvailable_before": 125783908352,
+  "state": "RUNNING_NOT_ACCEPTED"
+}

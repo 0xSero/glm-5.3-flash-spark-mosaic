@@ -1,0 +1,28 @@
+INFO 09-11 19:03:48 [model.py:679] Resolved architecture: Glm5NextForConditionalGeneration
+INFO 09-11 19:03:48 [model.py:1973] Using max model len 262144
+WARNING 09-11 19:03:48 [model.py:970] Model does not support mm_device_do_normalize, forcing mm_device_do_normalize = False.
+INFO 09-11 19:03:56 [model.py:679] Resolved architecture: Glm5NextMTPModel
+INFO 09-11 19:03:56 [model.py:1973] Using max model len 1048576
+INFO 09-11 19:03:56 [speculative.py:1256] Overriding draft model max model len from 1048576 to 262144
+INFO 09-11 19:03:56 [scheduler.py:242] Chunked prefill is enabled with max_num_batched_tokens=2048.
+INFO 09-11 19:03:56 [vllm.py:1319] Auto-enabling VLLM_USE_BREAKABLE_CUDAGRAPH=1. Set VLLM_USE_BREAKABLE_CUDAGRAPH=0 to opt out.
+INFO 09-11 19:03:56 [kernel.py:306] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'])
+WARNING 09-11 19:03:56 [vllm.py:1849] max_num_scheduled_tokens is set to 2048 based on the speculative decoding settings. This may lead to suboptimal performance. Consider increasing max_num_batched_tokens to accommodate the additional draft token slots, or decrease num_speculative_tokens.
+INFO 09-11 19:03:56 [compilation.py:329] Enabled custom fusions: norm_quant, act_quant
+BASE_QUANT Exl3Config
+INFO 09-11 19:03:56 [kernel.py:306] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'])
+INFO 09-11 19:03:56 [kernel.py:306] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'])
+DRAFT_QUANT None DRAFT_EXPERTS 288
+INFO 09-11 19:03:56 [parallel_state.py:1638] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/mtp-meta-dist backend=gloo
+[W911 19:03:56.110403270 ProcessGroupGloo.cpp:524] Warning: Unable to resolve hostname to a (local) address. Using the loopback address as fallback. Manually set the network interface to bind to with GLOO_SOCKET_IFNAME. (function operator())
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/audit/audit_native_mtp_meta.py", line 15, in <module>
+[rank0]:     ensure_model_parallel_initialized(1,1)
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/distributed/parallel_state.py", line 2014, in ensure_model_parallel_initialized
+[rank0]:     initialize_model_parallel(
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/distributed/parallel_state.py", line 1786, in initialize_model_parallel
+[rank0]:     config = get_current_vllm_config()
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/config/vllm.py", line 2643, in get_current_vllm_config
+[rank0]:     raise AssertionError(
+[rank0]: AssertionError: Current vLLM config is not set. This typically means get_current_vllm_config() was called outside of a set_current_vllm_config() context, or a CustomOp was instantiated at module import time or model forward time when config is not set. For tests that directly test custom ops/modules, use the 'default_vllm_config' pytest fixture from tests/conftest.py.

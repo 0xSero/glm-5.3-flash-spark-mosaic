@@ -1,0 +1,24 @@
+{
+  "state": "INSTALLED_CPU_LIFECYCLE_PASS_FULL_SERVING_PENDING",
+  "recorded_utc": "2026-09-12T09:32:01.667943+00:00",
+  "base_image": "sha256:49e834851ff47ff01f3601122936f692cde75f253670aef0f895e44e40174ae0",
+  "image": "sha256:6c6581ea1454f013fa57f7c012532bf9a2c72a5a22ab55e20f51ca46df80bf8e",
+  "warmup_sha256": "6464968ac264202994beb584bb549bf6d8ff7ae274e5d28543ff09f34713eea7",
+  "new_image_bytes": 4877,
+  "base_layers_env_entrypoint_cmd_preserved": true,
+  "tests": 5,
+  "cuda_in_cpu_tests": false,
+  "sha256": {
+    "test_lifecycle.py": "feeac162a9666d8ffebf1041c0dce8cec909d01fa7ecaeea18d8bc0da968d7c6",
+    "seal_build.py": "9a5f096475c78565e6e5a4a09c8ef3aca0e01bed6c56ca9f7935384ccffd1bfa",
+    "Dockerfile": "b0a9baffc63a6fb6b7458dd61ec14eeb9b55f7a6bcdf4b3cb4b9a5b73544dd68",
+    "b12x_warmup.py": "6464968ac264202994beb584bb549bf6d8ff7ae274e5d28543ff09f34713eea7",
+    "cpu-inspect.json": "34ae797cea02f08d17cb2b893a89632f750e424a15e27a54a3c13c37a3bb578d",
+    "build-attempt2.log": "1da9d45c8af167abf09f25e888b7b0809aa59add2b5db37245698d5624887abf",
+    "install.py": "b78bfe25fc1d09e427c6c504a5597389fa6afee4cc9241026297942f3a4ea1fc",
+    "image-inspects.json": "90a65067ad6c587d6b47c3a5fcc6ee448b5b9d388951df2212df0341ced7ab9c",
+    "cpu.log": "6180c79674055a376fbf0595e05f817b104c3cf273ec29716476164391dd38ae",
+    "PINS.json": "2d36d2dfe28229cbb54aff716d23879780dc3963eda6d5e0c2164757a1d81e8b",
+    "build.log": "d19548653d66be58d3248a0fd67d93ad0f40549b5a7b2c94aa76d39cb5fda874"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "utc": "2026-09-17T12:33:47Z",
+  "elapsed_s": 6.62,
+  "model": "glm-5.3-flash",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 26,
+    "total_tokens": 98,
+    "completion_tokens": 72,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "reasoning_head": "",
+  "content": "A mixture-of-experts router selects which specialized subnetworks (\"experts\") will process each input token, typically by computing weights or probabilities over the available experts and sending the "
+}

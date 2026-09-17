@@ -1,0 +1,19 @@
+W0912 02:00:47.755000 1 torch/utils/cpp_extension.py:178] No CUDA runtime is found, using CUDA_HOME='/usr/local/cuda'
+INFO 09-12 02:00:49 [import_utils.py:478] DeepEP v2 requires NCCL >= 2.30.4 but found 2.29.7. deepep_v2 backend will not be available.
+test_actual_v2_dispatch_rebinds_before_model_load (__main__.Tests.test_actual_v2_dispatch_rebinds_before_model_load) ... WARNING 09-12 02:00:52 [utils.py:109] Config.model_config has no default or default factory.
+WARNING 09-12 02:00:52 [interface.py:1272] Current platform cuda does not have '_is_coroutine_marker' attribute.
+WARNING 09-12 02:00:52 [interface.py:1272] Current platform cuda does not have '_is_coroutine' attribute.
+{"state": "CPU_PASS", "tests": 8, "cuda_initialized": false, "actual_imports": true, "GPU_constructor_and_plan_factory_mocked": true, "installed_policy": true, "full_engine_config_or_serving_proven": false}
+ok
+test_capture_requires_completed_matching_warmup (__main__.Tests.test_capture_requires_completed_matching_warmup) ... ok
+test_defaults_and_existing_fp8_policy (__main__.Tests.test_defaults_and_existing_fp8_policy) ... ok
+test_failed_replanning_never_caches_direct_plan (__main__.Tests.test_failed_replanning_never_caches_direct_plan) ... ok
+test_flags_and_separate_native_config (__main__.Tests.test_flags_and_separate_native_config) ... ok
+test_geometry_and_exact_backend_selection (__main__.Tests.test_geometry_and_exact_backend_selection) ... ok
+test_packed_cache_and_context_isolation (__main__.Tests.test_packed_cache_and_context_isolation) ... ok
+test_protected_and_target_scope (__main__.Tests.test_protected_and_target_scope) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.129s
+
+OK

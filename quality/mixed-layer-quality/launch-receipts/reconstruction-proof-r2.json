@@ -1,0 +1,488 @@
+{
+  "state": "REAL_EXL3_RECONSTRUCTION_PASS",
+  "candidate_manifest_sha256": "73291ede5c0f2ad13dcd9fbdfe3887f133ef713d56c589c59c6392bdb887b45c",
+  "projections": [
+    {
+      "prefix": "model.language_model.layers.3.mlp.experts.0.gate_proj.rank0",
+      "inferred_K": 2,
+      "shape": [
+        512,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.3.mlp.experts.0.up_proj.rank0",
+      "inferred_K": 2,
+      "shape": [
+        512,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.3.mlp.experts.0.down_proj.rank0",
+      "inferred_K": 2,
+      "shape": [
+        4096,
+        512
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.3.mlp.experts.0.gate_proj.rank1",
+      "inferred_K": 2,
+      "shape": [
+        512,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.3.mlp.experts.0.up_proj.rank1",
+      "inferred_K": 2,
+      "shape": [
+        512,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.3.mlp.experts.0.down_proj.rank1",
+      "inferred_K": 2,
+      "shape": [
+        4096,
+        512
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.3.mlp.experts.0.gate_proj.rank2",
+      "inferred_K": 2,
+      "shape": [
+        512,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.3.mlp.experts.0.up_proj.rank2",
+      "inferred_K": 2,
+      "shape": [
+        512,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.3.mlp.experts.0.down_proj.rank2",
+      "inferred_K": 2,
+      "shape": [
+        4096,
+        512
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.3.mlp.experts.0.gate_proj.rank3",
+      "inferred_K": 2,
+      "shape": [
+        512,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.3.mlp.experts.0.up_proj.rank3",
+      "inferred_K": 2,
+      "shape": [
+        512,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.3.mlp.experts.0.down_proj.rank3",
+      "inferred_K": 2,
+      "shape": [
+        4096,
+        512
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.5.mlp.experts.0.gate_proj.rank0",
+      "inferred_K": 3,
+      "shape": [
+        512,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.5.mlp.experts.0.up_proj.rank0",
+      "inferred_K": 3,
+      "shape": [
+        512,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.5.mlp.experts.0.down_proj.rank0",
+      "inferred_K": 3,
+      "shape": [
+        4096,
+        512
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.5.mlp.experts.0.gate_proj.rank1",
+      "inferred_K": 3,
+      "shape": [
+        512,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.5.mlp.experts.0.up_proj.rank1",
+      "inferred_K": 3,
+      "shape": [
+        512,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.5.mlp.experts.0.down_proj.rank1",
+      "inferred_K": 3,
+      "shape": [
+        4096,
+        512
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.5.mlp.experts.0.gate_proj.rank2",
+      "inferred_K": 3,
+      "shape": [
+        512,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.5.mlp.experts.0.up_proj.rank2",
+      "inferred_K": 3,
+      "shape": [
+        512,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.5.mlp.experts.0.down_proj.rank2",
+      "inferred_K": 3,
+      "shape": [
+        4096,
+        512
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.5.mlp.experts.0.gate_proj.rank3",
+      "inferred_K": 3,
+      "shape": [
+        512,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.5.mlp.experts.0.up_proj.rank3",
+      "inferred_K": 3,
+      "shape": [
+        512,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.5.mlp.experts.0.down_proj.rank3",
+      "inferred_K": 3,
+      "shape": [
+        4096,
+        512
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.32.mlp.experts.0.gate_proj.rank0",
+      "inferred_K": 3,
+      "shape": [
+        512,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.32.mlp.experts.0.up_proj.rank0",
+      "inferred_K": 3,
+      "shape": [
+        512,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.32.mlp.experts.0.down_proj.rank0",
+      "inferred_K": 3,
+      "shape": [
+        4096,
+        512
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.32.mlp.experts.0.gate_proj.rank1",
+      "inferred_K": 3,
+      "shape": [
+        512,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.32.mlp.experts.0.up_proj.rank1",
+      "inferred_K": 3,
+      "shape": [
+        512,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.32.mlp.experts.0.down_proj.rank1",
+      "inferred_K": 3,
+      "shape": [
+        4096,
+        512
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.32.mlp.experts.0.gate_proj.rank2",
+      "inferred_K": 3,
+      "shape": [
+        512,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.32.mlp.experts.0.up_proj.rank2",
+      "inferred_K": 3,
+      "shape": [
+        512,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.32.mlp.experts.0.down_proj.rank2",
+      "inferred_K": 3,
+      "shape": [
+        4096,
+        512
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.32.mlp.experts.0.gate_proj.rank3",
+      "inferred_K": 3,
+      "shape": [
+        512,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.32.mlp.experts.0.up_proj.rank3",
+      "inferred_K": 3,
+      "shape": [
+        512,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.32.mlp.experts.0.down_proj.rank3",
+      "inferred_K": 3,
+      "shape": [
+        4096,
+        512
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.44.mlp.experts.0.gate_proj.rank0",
+      "inferred_K": 2,
+      "shape": [
+        512,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.44.mlp.experts.0.up_proj.rank0",
+      "inferred_K": 2,
+      "shape": [
+        512,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.44.mlp.experts.0.down_proj.rank0",
+      "inferred_K": 2,
+      "shape": [
+        4096,
+        512
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.44.mlp.experts.0.gate_proj.rank1",
+      "inferred_K": 2,
+      "shape": [
+        512,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.44.mlp.experts.0.up_proj.rank1",
+      "inferred_K": 2,
+      "shape": [
+        512,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.44.mlp.experts.0.down_proj.rank1",
+      "inferred_K": 2,
+      "shape": [
+        4096,
+        512
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.44.mlp.experts.0.gate_proj.rank2",
+      "inferred_K": 2,
+      "shape": [
+        512,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.44.mlp.experts.0.up_proj.rank2",
+      "inferred_K": 2,
+      "shape": [
+        512,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.44.mlp.experts.0.down_proj.rank2",
+      "inferred_K": 2,
+      "shape": [
+        4096,
+        512
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.44.mlp.experts.0.gate_proj.rank3",
+      "inferred_K": 2,
+      "shape": [
+        512,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.44.mlp.experts.0.up_proj.rank3",
+      "inferred_K": 2,
+      "shape": [
+        512,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    },
+    {
+      "prefix": "model.language_model.layers.44.mlp.experts.0.down_proj.rank3",
+      "inferred_K": 2,
+      "shape": [
+        4096,
+        512
+      ],
+      "dtype": "torch.bfloat16",
+      "raw_dtype": "torch.float16"
+    }
+  ],
+  "peak_allocated_bytes": 55396864,
+  "quality_measured": false
+}

@@ -1,0 +1,8 @@
+{
+  "state": "CPU_PROTOTYPE_PASS_GPU_PENDING",
+  "upstream_revision": "3aada67721bfdb8b98355207ca3780bb32e6f434",
+  "original_model_sha256": "5c86beadb1d14b648fb6244160997afba9b8d9da031fc0f232b32d5760ecbbbf",
+  "patched_model_sha256": "bfe52afb456b10cf403145040aa399cdcf33cc02290ffeddcecf6bd3af6d780c",
+  "helper_sha256": "b97ae29c4ad9dd7041095e77ef479cb9cce90100d64d0d939625fb043307f960",
+  "cpu_tests": 9
+}

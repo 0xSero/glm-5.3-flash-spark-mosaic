@@ -1,0 +1,11 @@
+{
+  "bootstrap": "ghcr.io/0xsero/glm53-flash-exl3-k2-dflash@sha256:5ea6d04d65d1a2f30f632815776fb765359529ab117818ba2b5e5c5480e34963",
+  "version": "0.0.43",
+  "torch": "2.13.0+cu130",
+  "cuda": "13.0",
+  "extension_filename": "exllamav3_ext.cpython-312-aarch64-linux-gnu.so",
+  "extension_sha256": "0eeb983b09dfe33451b8bc7625174320529b986a73f60b58bf4ebfa9f43ad9c0",
+  "package_tree_sha256": "2d81097d19aae953de9094944c3f4528758bc551940bc3c5644027eb4992306e",
+  "native_cpu_allreduce_supported_on_arm": false,
+  "provenance": "Exact public bootstrap package and independent Torch/CUDA extension; not freshly compiled or claimed to be an unmodified upstream commit."
+}

@@ -1,0 +1,20 @@
+build_date: 2026-09-10T10:15:58Z
+build_script_commit: 0be60c9bc05dbac684c09e6250256be70d7d185e
+vllm_version: 0.1.dev20610+g4b276a363.d20260910
+vllm_commit: 4b276a363c94bbf7eb99b1e32c5ee2a88d839809
+flashinfer_commit: 556679b27fa4957c31f9b466d6ac5ed3b3476061
+gpu_arch: 12.1a
+base_image: ${CUDA_IMAGE}
+build_args:
+  vllm_repo: "https://github.com/local-inference-lab/vllm"
+  vllm_ref: dev/jovian-judgement
+  torch_version: "2.13.0"
+  torchvision_version: "0.28.0"
+  torchaudio_version: "2.11.0"
+  cutlass_dsl_version: "4.7.0"
+  b12x_repo: "https://github.com/lukealonso/b12x.git"
+  b12x_ref: "master"
+  transformers_5: true
+  exp_mxfp4: false
+  vllm_prs: ""
+  build_jobs: 16

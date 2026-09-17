@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/home/valentine/e216/verify_u216.py", line 127, in <module>
+    if __name__ == "__main__": main()
+                               ^^^^^^
+  File "/home/valentine/e216/verify_u216.py", line 75, in main
+    plan = json.loads((dst / "plan.json").read_text()); man = json.loads((dst / "manifest.json").read_text())
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1029, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/valentine/models/glm53-3p05-pruned-e216/plan.json'

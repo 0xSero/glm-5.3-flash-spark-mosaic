@@ -1,0 +1,81 @@
+2026-09-14T13:21:27Z RUNNER_START a0 http://spark-2384.internal:8000
+2026-09-14T13:22:27Z poll 1 health=000
+2026-09-14T13:23:28Z poll 2 health=000
+2026-09-14T13:24:28Z poll 3 health=000
+2026-09-14T13:25:28Z poll 4 health=000
+2026-09-14T13:26:28Z poll 5 health=000
+2026-09-14T13:27:28Z poll 6 health=000
+2026-09-14T13:28:28Z poll 7 health=000
+2026-09-14T13:29:28Z poll 8 health=000
+2026-09-14T13:30:29Z poll 9 health=000
+2026-09-14T13:31:29Z poll 10 health=000
+2026-09-14T13:32:29Z poll 11 health=000
+2026-09-14T13:33:30Z poll 12 health=000
+2026-09-14T13:34:30Z poll 13 health=000
+2026-09-14T13:35:30Z poll 14 health=000
+2026-09-14T13:36:30Z poll 15 health=000
+2026-09-14T13:37:32Z poll 16 health=000
+2026-09-14T13:38:32Z poll 17 health=503
+2026-09-14T13:39:32Z poll 18 health=503
+2026-09-14T13:40:34Z poll 19 health=200 smoke=200
+2026-09-14T13:40:34Z READY_OK
+2026-09-14T13:41:05Z VALIDATE rc=1 tail: m_eval/models/api_models.py", line 152, in __init__     raise ModuleNotFoundError(     ...<2 lines>...     ) ModuleNotFoundError: Attempted to use an API model, but the required packages ['tenacity'] are not installed. Please install these via `pip install lm-eval[api]` or `pip install -e ."[api]"` 
+2026-09-14T13:41:05Z VALIDATE_UNCLEAR not launching
+2026-09-14T13:43:25Z RUNNER_START a0 http://spark-2384.internal:8000
+2026-09-14T13:44:27Z poll 1 health=200 smoke=200
+2026-09-14T13:44:27Z READY_OK
+2026-09-14T13:44:42Z VALIDATE rc=1 tail: =base_url,         ^^^^^^^^^^^^^^^^^^     ...<4 lines>...         **kwargs,         ^^^^^^^^^     )     ^   File "/Users/sero/lmeval-mac-venv/lib/python3.13/site-packages/lm_eval/models/api_models.py", line 245, in __init__     import transformers ModuleNotFoundError: No module named 'transformers' 
+2026-09-14T13:44:42Z VALIDATE_UNCLEAR not launching
+2026-09-14T13:47:41Z RUNNER_START a0 http://spark-2384.internal:8000
+2026-09-14T13:48:43Z poll 1 health=200 smoke=200
+2026-09-14T13:48:43Z READY_OK
+2026-09-14T13:48:59Z VALIDATE rc=1 tail: ages/datasets/load.py", line 1197, in dataset_module_factory     raise DatasetNotFoundError(message) from e datasets.exceptions.DatasetNotFoundError: Dataset 'Idavidrein/gpqa' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/Idavidrein/gpqa to ask for access. 
+2026-09-14T13:48:59Z BLOCKED gpqa-access
+2026-09-14T13:57:26Z RUNNER_START a0 http://spark-2384.internal:8000
+2026-09-14T13:58:28Z poll 1 health=200 smoke=200
+2026-09-14T13:58:28Z READY_OK
+2026-09-14T13:59:07Z VALIDATE rc=1 tail: le "/Users/sero/lmeval-mac-venv/lib/python3.13/site-packages/datasets/builder.py", line 1880, in _prepare_split_single     raise DatasetGenerationError("An error occurred while generating the dataset") from e datasets.exceptions.DatasetGenerationError: An error occurred while generating the dataset 
+2026-09-14T13:59:07Z VALIDATE_UNCLEAR not launching
+2026-09-14T14:06:19Z RUNNER_START a0 http://spark-2384.internal:8000
+2026-09-14T14:07:21Z poll 1 health=200 smoke=200
+2026-09-14T14:07:21Z READY_OK
+2026-09-14T14:12:50Z VALIDATE rc=1 tail: n getline   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/linecache.py", line 41, in getlines   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/linecache.py", line 88, in updatecache ImportError: sys.meta_path is None, Python is likely shutting down 
+2026-09-14T14:12:50Z BLOCKED dataset-access
+2026-09-14T14:17:03Z RUNNER_START a0 http://spark-2384.internal:8000
+2026-09-14T14:18:07Z poll 1 health=200 smoke=200
+2026-09-14T14:18:07Z READY_OK
+2026-09-14T14:23:58Z VALIDATE rc=1 tail: n getline   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/linecache.py", line 41, in getlines   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/linecache.py", line 88, in updatecache ImportError: sys.meta_path is None, Python is likely shutting down 
+2026-09-14T14:23:59Z BLOCKED dataset-access
+2026-09-14T14:26:57Z RUNNER_START a0 http://spark-2384.internal:8000
+2026-09-14T14:28:00Z poll 1 health=200 smoke=200
+2026-09-14T14:28:01Z READY_OK
+2026-09-14T14:33:35Z VALIDATE rc=1 tail: c-venv/lib/python3.13/site-packages/aiohttp/connector.py", line 1324, in _wrap_create_connection     raise client_error(req.connection_key, exc) from exc aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host spark-2384.internal:8000 ssl:default [Connect call failed ('spark-2384.internal', 8000)] 
+2026-09-14T14:33:35Z BLOCKED dataset-access
+2026-09-14T14:39:22Z RUNNER_START a0 http://spark-2384.internal:8000
+2026-09-14T14:40:22Z poll 1 health=000
+2026-09-14T14:41:22Z poll 2 health=000
+2026-09-14T14:42:22Z poll 3 health=000
+2026-09-14T14:43:23Z poll 4 health=000
+2026-09-14T14:44:23Z poll 5 health=000
+2026-09-14T14:45:23Z poll 6 health=000
+2026-09-14T14:46:24Z poll 7 health=503
+2026-09-14T14:47:24Z poll 8 health=503
+2026-09-14T14:48:26Z poll 9 health=200 smoke=200
+2026-09-14T14:48:26Z READY_OK
+2026-09-14T14:53:01Z VALIDATE rc=0 tail:  - humanities     |      2|none  |     0|acc   |↑  |0.8077|±  |0.0666| | - other          |      2|none  |     0|acc   |↑  |0.8462|±  |0.0769| | - social sciences|      2|none  |     0|acc   |↑  |0.8750|±  |0.0722| | - stem           |      2|none  |     0|acc   |↑  |0.9211|±  |0.0456|  
+2026-09-14T14:53:01Z BLOCKED dataset-access
+2026-09-14T14:56:06Z RUNNER_START a0 http://spark-2384.internal:8000
+2026-09-14T14:57:08Z poll 1 health=200 smoke=200
+2026-09-14T14:57:08Z READY_OK
+2026-09-14T15:01:22Z VALIDATE rc=0 tail:  - humanities     |      2|none  |     0|acc   |↑  |0.8077|±  |0.0666| | - other          |      2|none  |     0|acc   |↑  |0.8462|±  |0.0769| | - social sciences|      2|none  |     0|acc   |↑  |0.8750|±  |0.0722| | - stem           |      2|none  |     0|acc   |↑  |0.9211|±  |0.0456|  
+2026-09-14T15:01:22Z VALIDATE_UNCLEAR not launching
+2026-09-14T15:03:41Z RUNNER_START a0 http://spark-2384.internal:8000
+2026-09-14T15:04:43Z poll 1 health=200 smoke=200
+2026-09-14T15:04:43Z READY_OK
+2026-09-14T15:08:38Z VALIDATE rc=0 tail:  - humanities     |      2|none  |     0|acc   |↑  |0.8077|±  |0.0666| | - other          |      2|none  |     0|acc   |↑  |0.8462|±  |0.0769| | - social sciences|      2|none  |     0|acc   |↑  |0.8750|±  |0.0722| | - stem           |      2|none  |     0|acc   |↑  |0.8947|±  |0.0372|  
+2026-09-14T15:08:38Z VALIDATE_OK launching full suite
+2026-09-15T09:55:25Z RUNNER_START a0 http://spark-2384.internal:8000
+2026-09-15T09:56:27Z poll 1 health=200 smoke=200
+2026-09-15T09:56:27Z READY_OK
+2026-09-15T10:00:06Z VALIDATE rc=0 tail:  - humanities     |      2|none  |     0|acc   |↑  |0.8077|±  |0.0666| | - other          |      2|none  |     0|acc   |↑  |0.8462|±  |0.0769| | - social sciences|      2|none  |     0|acc   |↑  |0.8750|±  |0.0722| | - stem           |      2|none  |     0|acc   |↑  |0.9211|±  |0.0456|  
+2026-09-15T10:00:06Z VALIDATE_OK launching full suite

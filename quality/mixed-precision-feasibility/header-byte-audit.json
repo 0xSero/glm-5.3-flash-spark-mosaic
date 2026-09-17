@@ -1,0 +1,782 @@
+{
+  "2": {
+    "candidate_manifest_sha256": "7c7a2e47c7cde8996ac54c6f2ca5c3f7532b682d5d7296408c97a14e8950f73c",
+    "expert0_layer3_all48_fields": {
+      "model.language_model.layers.3.mlp.experts.0.gate_proj.rank0.trellis": {
+        "dtype": "I16",
+        "shape": [
+          256,
+          32,
+          32
+        ],
+        "bytes": 524288,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.gate_proj.rank0.suh": {
+        "dtype": "F16",
+        "shape": [
+          4096
+        ],
+        "bytes": 8192,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.gate_proj.rank0.svh": {
+        "dtype": "F16",
+        "shape": [
+          512
+        ],
+        "bytes": 1024,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.gate_proj.rank0.mcg": {
+        "dtype": "I32",
+        "shape": [],
+        "bytes": 4,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.gate_proj.rank1.trellis": {
+        "dtype": "I16",
+        "shape": [
+          256,
+          32,
+          32
+        ],
+        "bytes": 524288,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.gate_proj.rank1.suh": {
+        "dtype": "F16",
+        "shape": [
+          4096
+        ],
+        "bytes": 8192,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.gate_proj.rank1.svh": {
+        "dtype": "F16",
+        "shape": [
+          512
+        ],
+        "bytes": 1024,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.gate_proj.rank1.mcg": {
+        "dtype": "I32",
+        "shape": [],
+        "bytes": 4,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.gate_proj.rank2.trellis": {
+        "dtype": "I16",
+        "shape": [
+          256,
+          32,
+          32
+        ],
+        "bytes": 524288,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.gate_proj.rank2.suh": {
+        "dtype": "F16",
+        "shape": [
+          4096
+        ],
+        "bytes": 8192,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.gate_proj.rank2.svh": {
+        "dtype": "F16",
+        "shape": [
+          512
+        ],
+        "bytes": 1024,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.gate_proj.rank2.mcg": {
+        "dtype": "I32",
+        "shape": [],
+        "bytes": 4,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.gate_proj.rank3.trellis": {
+        "dtype": "I16",
+        "shape": [
+          256,
+          32,
+          32
+        ],
+        "bytes": 524288,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.gate_proj.rank3.suh": {
+        "dtype": "F16",
+        "shape": [
+          4096
+        ],
+        "bytes": 8192,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.gate_proj.rank3.svh": {
+        "dtype": "F16",
+        "shape": [
+          512
+        ],
+        "bytes": 1024,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.gate_proj.rank3.mcg": {
+        "dtype": "I32",
+        "shape": [],
+        "bytes": 4,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.up_proj.rank0.trellis": {
+        "dtype": "I16",
+        "shape": [
+          256,
+          32,
+          32
+        ],
+        "bytes": 524288,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.up_proj.rank0.suh": {
+        "dtype": "F16",
+        "shape": [
+          4096
+        ],
+        "bytes": 8192,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.up_proj.rank0.svh": {
+        "dtype": "F16",
+        "shape": [
+          512
+        ],
+        "bytes": 1024,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.up_proj.rank0.mcg": {
+        "dtype": "I32",
+        "shape": [],
+        "bytes": 4,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.up_proj.rank1.trellis": {
+        "dtype": "I16",
+        "shape": [
+          256,
+          32,
+          32
+        ],
+        "bytes": 524288,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.up_proj.rank1.suh": {
+        "dtype": "F16",
+        "shape": [
+          4096
+        ],
+        "bytes": 8192,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.up_proj.rank1.svh": {
+        "dtype": "F16",
+        "shape": [
+          512
+        ],
+        "bytes": 1024,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.up_proj.rank1.mcg": {
+        "dtype": "I32",
+        "shape": [],
+        "bytes": 4,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.up_proj.rank2.trellis": {
+        "dtype": "I16",
+        "shape": [
+          256,
+          32,
+          32
+        ],
+        "bytes": 524288,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.up_proj.rank2.suh": {
+        "dtype": "F16",
+        "shape": [
+          4096
+        ],
+        "bytes": 8192,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.up_proj.rank2.svh": {
+        "dtype": "F16",
+        "shape": [
+          512
+        ],
+        "bytes": 1024,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.up_proj.rank2.mcg": {
+        "dtype": "I32",
+        "shape": [],
+        "bytes": 4,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.up_proj.rank3.trellis": {
+        "dtype": "I16",
+        "shape": [
+          256,
+          32,
+          32
+        ],
+        "bytes": 524288,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.up_proj.rank3.suh": {
+        "dtype": "F16",
+        "shape": [
+          4096
+        ],
+        "bytes": 8192,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.up_proj.rank3.svh": {
+        "dtype": "F16",
+        "shape": [
+          512
+        ],
+        "bytes": 1024,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.up_proj.rank3.mcg": {
+        "dtype": "I32",
+        "shape": [],
+        "bytes": 4,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.down_proj.rank0.trellis": {
+        "dtype": "I16",
+        "shape": [
+          32,
+          256,
+          32
+        ],
+        "bytes": 524288,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.down_proj.rank0.suh": {
+        "dtype": "F16",
+        "shape": [
+          512
+        ],
+        "bytes": 1024,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.down_proj.rank0.svh": {
+        "dtype": "F16",
+        "shape": [
+          4096
+        ],
+        "bytes": 8192,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.down_proj.rank0.mcg": {
+        "dtype": "I32",
+        "shape": [],
+        "bytes": 4,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.down_proj.rank1.trellis": {
+        "dtype": "I16",
+        "shape": [
+          32,
+          256,
+          32
+        ],
+        "bytes": 524288,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.down_proj.rank1.suh": {
+        "dtype": "F16",
+        "shape": [
+          512
+        ],
+        "bytes": 1024,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.down_proj.rank1.svh": {
+        "dtype": "F16",
+        "shape": [
+          4096
+        ],
+        "bytes": 8192,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.down_proj.rank1.mcg": {
+        "dtype": "I32",
+        "shape": [],
+        "bytes": 4,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.down_proj.rank2.trellis": {
+        "dtype": "I16",
+        "shape": [
+          32,
+          256,
+          32
+        ],
+        "bytes": 524288,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.down_proj.rank2.suh": {
+        "dtype": "F16",
+        "shape": [
+          512
+        ],
+        "bytes": 1024,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.down_proj.rank2.svh": {
+        "dtype": "F16",
+        "shape": [
+          4096
+        ],
+        "bytes": 8192,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.down_proj.rank2.mcg": {
+        "dtype": "I32",
+        "shape": [],
+        "bytes": 4,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.down_proj.rank3.trellis": {
+        "dtype": "I16",
+        "shape": [
+          32,
+          256,
+          32
+        ],
+        "bytes": 524288,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.down_proj.rank3.suh": {
+        "dtype": "F16",
+        "shape": [
+          512
+        ],
+        "bytes": 1024,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.down_proj.rank3.svh": {
+        "dtype": "F16",
+        "shape": [
+          4096
+        ],
+        "bytes": 8192,
+        "file": "layer-03-part-tail-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.down_proj.rank3.mcg": {
+        "dtype": "I32",
+        "shape": [],
+        "bytes": 4,
+        "file": "layer-03-part-tail-0.safetensors"
+      }
+    },
+    "tensor_bytes": 6402096
+  },
+  "3": {
+    "candidate_manifest_sha256": "98e72202d67acc158e908701d04b6d228de74b01d8c1c66d3aa0df6a998b1cbc",
+    "expert0_layer3_all48_fields": {
+      "model.language_model.layers.3.mlp.experts.0.gate_proj.rank0.trellis": {
+        "dtype": "I16",
+        "shape": [
+          256,
+          32,
+          48
+        ],
+        "bytes": 786432,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.gate_proj.rank0.suh": {
+        "dtype": "F16",
+        "shape": [
+          4096
+        ],
+        "bytes": 8192,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.gate_proj.rank0.svh": {
+        "dtype": "F16",
+        "shape": [
+          512
+        ],
+        "bytes": 1024,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.gate_proj.rank0.mcg": {
+        "dtype": "I32",
+        "shape": [],
+        "bytes": 4,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.gate_proj.rank1.trellis": {
+        "dtype": "I16",
+        "shape": [
+          256,
+          32,
+          48
+        ],
+        "bytes": 786432,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.gate_proj.rank1.suh": {
+        "dtype": "F16",
+        "shape": [
+          4096
+        ],
+        "bytes": 8192,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.gate_proj.rank1.svh": {
+        "dtype": "F16",
+        "shape": [
+          512
+        ],
+        "bytes": 1024,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.gate_proj.rank1.mcg": {
+        "dtype": "I32",
+        "shape": [],
+        "bytes": 4,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.gate_proj.rank2.trellis": {
+        "dtype": "I16",
+        "shape": [
+          256,
+          32,
+          48
+        ],
+        "bytes": 786432,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.gate_proj.rank2.suh": {
+        "dtype": "F16",
+        "shape": [
+          4096
+        ],
+        "bytes": 8192,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.gate_proj.rank2.svh": {
+        "dtype": "F16",
+        "shape": [
+          512
+        ],
+        "bytes": 1024,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.gate_proj.rank2.mcg": {
+        "dtype": "I32",
+        "shape": [],
+        "bytes": 4,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.gate_proj.rank3.trellis": {
+        "dtype": "I16",
+        "shape": [
+          256,
+          32,
+          48
+        ],
+        "bytes": 786432,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.gate_proj.rank3.suh": {
+        "dtype": "F16",
+        "shape": [
+          4096
+        ],
+        "bytes": 8192,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.gate_proj.rank3.svh": {
+        "dtype": "F16",
+        "shape": [
+          512
+        ],
+        "bytes": 1024,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.gate_proj.rank3.mcg": {
+        "dtype": "I32",
+        "shape": [],
+        "bytes": 4,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.up_proj.rank0.trellis": {
+        "dtype": "I16",
+        "shape": [
+          256,
+          32,
+          48
+        ],
+        "bytes": 786432,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.up_proj.rank0.suh": {
+        "dtype": "F16",
+        "shape": [
+          4096
+        ],
+        "bytes": 8192,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.up_proj.rank0.svh": {
+        "dtype": "F16",
+        "shape": [
+          512
+        ],
+        "bytes": 1024,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.up_proj.rank0.mcg": {
+        "dtype": "I32",
+        "shape": [],
+        "bytes": 4,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.up_proj.rank1.trellis": {
+        "dtype": "I16",
+        "shape": [
+          256,
+          32,
+          48
+        ],
+        "bytes": 786432,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.up_proj.rank1.suh": {
+        "dtype": "F16",
+        "shape": [
+          4096
+        ],
+        "bytes": 8192,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.up_proj.rank1.svh": {
+        "dtype": "F16",
+        "shape": [
+          512
+        ],
+        "bytes": 1024,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.up_proj.rank1.mcg": {
+        "dtype": "I32",
+        "shape": [],
+        "bytes": 4,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.up_proj.rank2.trellis": {
+        "dtype": "I16",
+        "shape": [
+          256,
+          32,
+          48
+        ],
+        "bytes": 786432,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.up_proj.rank2.suh": {
+        "dtype": "F16",
+        "shape": [
+          4096
+        ],
+        "bytes": 8192,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.up_proj.rank2.svh": {
+        "dtype": "F16",
+        "shape": [
+          512
+        ],
+        "bytes": 1024,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.up_proj.rank2.mcg": {
+        "dtype": "I32",
+        "shape": [],
+        "bytes": 4,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.up_proj.rank3.trellis": {
+        "dtype": "I16",
+        "shape": [
+          256,
+          32,
+          48
+        ],
+        "bytes": 786432,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.up_proj.rank3.suh": {
+        "dtype": "F16",
+        "shape": [
+          4096
+        ],
+        "bytes": 8192,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.up_proj.rank3.svh": {
+        "dtype": "F16",
+        "shape": [
+          512
+        ],
+        "bytes": 1024,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.up_proj.rank3.mcg": {
+        "dtype": "I32",
+        "shape": [],
+        "bytes": 4,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.down_proj.rank0.trellis": {
+        "dtype": "I16",
+        "shape": [
+          32,
+          256,
+          48
+        ],
+        "bytes": 786432,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.down_proj.rank0.suh": {
+        "dtype": "F16",
+        "shape": [
+          512
+        ],
+        "bytes": 1024,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.down_proj.rank0.svh": {
+        "dtype": "F16",
+        "shape": [
+          4096
+        ],
+        "bytes": 8192,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.down_proj.rank0.mcg": {
+        "dtype": "I32",
+        "shape": [],
+        "bytes": 4,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.down_proj.rank1.trellis": {
+        "dtype": "I16",
+        "shape": [
+          32,
+          256,
+          48
+        ],
+        "bytes": 786432,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.down_proj.rank1.suh": {
+        "dtype": "F16",
+        "shape": [
+          512
+        ],
+        "bytes": 1024,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.down_proj.rank1.svh": {
+        "dtype": "F16",
+        "shape": [
+          4096
+        ],
+        "bytes": 8192,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.down_proj.rank1.mcg": {
+        "dtype": "I32",
+        "shape": [],
+        "bytes": 4,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.down_proj.rank2.trellis": {
+        "dtype": "I16",
+        "shape": [
+          32,
+          256,
+          48
+        ],
+        "bytes": 786432,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.down_proj.rank2.suh": {
+        "dtype": "F16",
+        "shape": [
+          512
+        ],
+        "bytes": 1024,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.down_proj.rank2.svh": {
+        "dtype": "F16",
+        "shape": [
+          4096
+        ],
+        "bytes": 8192,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.down_proj.rank2.mcg": {
+        "dtype": "I32",
+        "shape": [],
+        "bytes": 4,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.down_proj.rank3.trellis": {
+        "dtype": "I16",
+        "shape": [
+          32,
+          256,
+          48
+        ],
+        "bytes": 786432,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.down_proj.rank3.suh": {
+        "dtype": "F16",
+        "shape": [
+          512
+        ],
+        "bytes": 1024,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.down_proj.rank3.svh": {
+        "dtype": "F16",
+        "shape": [
+          4096
+        ],
+        "bytes": 8192,
+        "file": "layers/layer-03-part-0.safetensors"
+      },
+      "model.language_model.layers.3.mlp.experts.0.down_proj.rank3.mcg": {
+        "dtype": "I32",
+        "shape": [],
+        "bytes": 4,
+        "file": "layers/layer-03-part-0.safetensors"
+      }
+    },
+    "tensor_bytes": 9547824
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "schema": "glm53-normalized-runtime-receipt-v1",
+  "state": "BASELINE_FUNCTIONAL_GATES_PASSED_QUALITY_RELEASE_HOLD",
+  "model": "glm-5.3-flash",
+  "context_limit": 262144,
+  "native_config_max_position_embeddings": 1048576,
+  "max_num_seqs": 1,
+  "max_num_batched_tokens": 2048,
+  "kv_capacity_tokens": 751007,
+  "prefix_caching": false,
+  "cuda_graphs": true,
+  "gpu_memory_fraction": 0.93,
+  "speculative_config": {
+    "method": "mtp",
+    "model": "/mtp",
+    "num_speculative_tokens": 1,
+    "attention_backend": "B12X"
+  },
+  "compilation_config": {
+    "cudagraph_mode": "FULL_DECODE_ONLY",
+    "custom_ops": [
+      "all"
+    ],
+    "cudagraph_capture_sizes": [
+      2
+    ],
+    "max_cudagraph_capture_size": 2
+  },
+  "candidate_manifest_sha256": "501641b947fa56afc9ed098bdc034e59c2bd229d4fa1a1d7b80e3727f10c8ba3",
+  "logprobs_mode": "raw_logprobs",
+  "container_id": "95fa3d37087adf09ff2b3ed9518d234577b11bdbd2d4bddc416509cec03e9f42",
+  "image_id": "sha256:afb74c791853d438810b27bf28994128f5baa2a3bf5c9b50b9ecdad7b9afffd5",
+  "kv_dtype": "fp8_ds_mla",
+  "requested_block_size": 256,
+  "actual_hybrid_block_size": 8704,
+  "model_memory_gib": 97.89,
+  "kv_memory_gib": 5.84,
+  "graph_pool_actual_gib": 0.13,
+  "backend_identity": "Jovian3aada677 +B12x3b862805; EXL3 full K2 target; native MTP routed experts onlineFP8; target/draft B12X attention; explicitB12x KDA prefill",
+  "b12x_enabled": true,
+  "native_head_environment": {
+    "VLLM_MXFP8_LM_HEAD": "0",
+    "VLLM_MTP_NVFP4_LM_HEAD": "0"
+  },
+  "profiler_configured": true,
+  "profiler_active": false,
+  "profiler_stopped_evidence": "Latest live engine log has stopped event after last start; no later start",
+  "raw_logprobs_api_contract_passed": true,
+  "fresh_text_semantic_acceptance": true,
+  "vision_configured": true,
+  "vision_image_verified": true,
+  "vision_video_verified": true,
+  "long_context_verified": true,
+  "quality_acceptance": false,
+  "promotion": "HOLD_HIGHER_AGREEMENT_REQUIRED",
+  "evidence_sha256": {
+    "inspect": "589d15629b3351ad6beba7793ad23309f0b847a2eab7de329e9fe85f745c3413",
+    "engine_log": "98463b0b72bf996f009e393f093583f3d3bf0d03bd56d4b2f0ffa5f9eaad8c37",
+    "ready_log": "dacc7f0f5e154833d0f645f2727b2ee2cb7090a8162453330e3cc7eb347c8660",
+    "runtime_gates": "5ac32c6bad1e42e4602d2c6fc2ef84b76eb70083018b7df239b1bb54f418bafa",
+    "raw_contract": "ae5bcdf8e2140b3d57f30772853229f6ced512073eee999c6101d3c00d99a192",
+    "raw_response": "5a94372a199176e9e3db7ae457fdc428e3b907947a1c429d8a2882d204724e37",
+    "raw_request": "dceac688c2e1eac6223358607cfe0ac7243daae11691c531251eb0a456f2dae2",
+    "modelconfig_source": "049a3b4a6fb25b7ab18bc3b221ccdff35d9606c5132684aa2939d0da0d0e9637",
+    "native_draft_strict_load": "ed8ae796eb989e767f96e7699e045209ec2c7d0e6151d2d74cf4624648a325c7"
+  },
+  "evidence_files": {
+    "inspect": "raw-logprobs-contract-r3.inspect.json",
+    "engine_log": "raw-logprobs-contract-r3.engine.log",
+    "ready_log": "runtime-attempt2-ready.log",
+    "runtime_gates": "runtime-gates-r3.json",
+    "raw_contract": "raw-logprobs-contract-r3.gate.json",
+    "raw_response": "raw-logprobs-contract-r3.response.json",
+    "raw_request": "raw-logprobs-contract-r3.request.json",
+    "modelconfig_source": "raw-logprobs-contract-r3.config-source.txt",
+    "native_draft_strict_load": "b12x-mtp-expert-fp8-real-load.json"
+  },
+  "functional_acceptance_scope": "Synthetic near-limit text retrieval and separate image/video cases on the unpruned K2 baseline. Not combined near-limit vision, maximum media budget, quality acceptance, concurrency qualification, or a new candidate serving result.",
+  "functional_acceptance_evidence": {
+    "path": "/Users/sero/sessions/glm53-single-spark-release-20260911/benchmarks/reasoning-effort-check/functional-acceptance-verified.json",
+    "sha256": "e823072a6bd7052c64381503cb934a76950c86c3bbbdc30582c0b145d059b5a0",
+    "prior_receipt_sha256": "36d383fc40ee57edfa5694805a1c241340d813da6c02ef208a75f9723895fb9b"
+  }
+}

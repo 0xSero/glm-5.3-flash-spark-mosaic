@@ -1,0 +1,11 @@
+{
+  "state": "CPU_OPT_IN_PRECISION_SCOPE_PASS_GPU_LOAD_PENDING",
+  "default_bf16_unchanged": true,
+  "native_288_draft_only": true,
+  "existing_quantization_rejected": true,
+  "target_architecture_rejected": true,
+  "native_dense_and_embedding_methods": true,
+  "exact_expert_prefix_only": true,
+  "gpu_backend_constructor_mocked_for_scope_only": true,
+  "cuda_initialized": false
+}

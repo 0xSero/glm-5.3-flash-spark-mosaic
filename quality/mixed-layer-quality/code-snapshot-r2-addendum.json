@@ -1,0 +1,10 @@
+{
+  "files": {
+    "probe_reconstruction_r2.py": "abe75526ba81420e463d35577b7b21c6d2c1a8bdc939d01c772685c8ccc4df9f",
+    "resume_after_probe.py": "912f5d5e541fc731f86bdcd6f5107363884ba18fbfb8817c8664ba83a7192f05",
+    "seal_when_complete.py": "1f0977057e0aeacf5dadbf0aeabc4c54597293033a5c76ddfeb55c18f5771d4a"
+  },
+  "frozen_evaluator_changed": false,
+  "first_probe_failure": "Probe expected raw BF16 but actual get_weight_tensor returns FP16. The baseline explicitly casts returned weights into native BF16 expert storage. R2 matches this cast, checks actual shape/K/finiteness, and records both dtypes.",
+  "first_failure_receipts_retained": true
+}

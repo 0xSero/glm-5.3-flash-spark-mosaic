@@ -1,0 +1,41 @@
+{
+  "chunk": 2048,
+  "compilation_config": {
+    "cudagraph_capture_sizes": [
+      6,
+      12,
+      18,
+      24,
+      30,
+      36,
+      42,
+      48
+    ],
+    "cudagraph_mode": "FULL_DECODE_ONLY",
+    "custom_ops": [
+      "all"
+    ],
+    "max_cudagraph_capture_size": 48
+  },
+  "context_limit": 262144,
+  "depth": 5,
+  "launcher_sha256": "52a08f81617ebbd1d256e6b2b58385308be92d5a74b12ef0209416b6084c3f0c",
+  "memory_fraction": 0.93,
+  "model": "glm-5.3-flash",
+  "plugin_sha256": "f250276318a5d3bded4cfd90d5831977377ec5fdeb4a920b76b7d0197898eeee",
+  "slots": 8,
+  "source_sha256": {
+    "acceptance/native_metrics.py": "ca4ec3b4a9b836547fb93e7d4e44e0179e08af1e0744bd63e78606a02ebbacde",
+    "acceptance/run.py": "a5a2f9f2ea24de5398c088aaeab6c3df00a802c28bdd50f180e053f43619eeb3",
+    "acceptance/timing.py": "91d413a2678392cc129d4012942697100867ccb1ff3bf6aaddc6e9e553161207",
+    "b12x-runtime/sm121-router-audit/mtp-depth-installed-sources.json": "6e0ec5ac9e5e44641a8300c211dbc8e2aea624038fc7843d6d8dd7463c5139cb",
+    "b12x-runtime/start-b12x-candidate.sh": "623f8f16f3083c2625267268cc4dab6647bfa007b0a8f1ec5419074363519869"
+  },
+  "speculative_config": {
+    "attention_backend": "B12X",
+    "method": "mtp",
+    "model": "/mtp",
+    "num_speculative_tokens": 5
+  },
+  "state": "PLANNED_NOT_LAUNCHED"
+}

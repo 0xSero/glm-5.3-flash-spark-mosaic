@@ -1,0 +1,5 @@
+{
+  "state": "FAILED_PRESERVED",
+  "time": 1789165424.144974,
+  "error": "RuntimeError('reconstruct failed; logs retained')"
+}

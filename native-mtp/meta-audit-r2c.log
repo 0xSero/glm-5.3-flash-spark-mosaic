@@ -1,0 +1,52 @@
+INFO 09-11 19:04:39 [model.py:679] Resolved architecture: Glm5NextForConditionalGeneration
+INFO 09-11 19:04:39 [model.py:1973] Using max model len 262144
+WARNING 09-11 19:04:39 [model.py:970] Model does not support mm_device_do_normalize, forcing mm_device_do_normalize = False.
+INFO 09-11 19:04:46 [model.py:679] Resolved architecture: Glm5NextMTPModel
+INFO 09-11 19:04:46 [model.py:1973] Using max model len 1048576
+INFO 09-11 19:04:46 [speculative.py:1256] Overriding draft model max model len from 1048576 to 262144
+INFO 09-11 19:04:46 [scheduler.py:242] Chunked prefill is enabled with max_num_batched_tokens=2048.
+INFO 09-11 19:04:46 [vllm.py:1319] Auto-enabling VLLM_USE_BREAKABLE_CUDAGRAPH=1. Set VLLM_USE_BREAKABLE_CUDAGRAPH=0 to opt out.
+INFO 09-11 19:04:46 [kernel.py:306] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'])
+WARNING 09-11 19:04:46 [vllm.py:1849] max_num_scheduled_tokens is set to 2048 based on the speculative decoding settings. This may lead to suboptimal performance. Consider increasing max_num_batched_tokens to accommodate the additional draft token slots, or decrease num_speculative_tokens.
+INFO 09-11 19:04:46 [compilation.py:329] Enabled custom fusions: norm_quant, act_quant
+BASE_QUANT Exl3Config
+INFO 09-11 19:04:46 [kernel.py:306] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'])
+INFO 09-11 19:04:46 [kernel.py:306] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'])
+DRAFT_QUANT None DRAFT_EXPERTS 288
+INFO 09-11 19:04:46 [parallel_state.py:1638] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/mtp-meta-dist backend=gloo
+[W911 19:04:46.487922460 ProcessGroupGloo.cpp:524] Warning: Unable to resolve hostname to a (local) address. Using the loopback address as fallback. Manually set the network interface to bind to with GLOO_SOCKET_IFNAME. (function operator())
+INFO 09-11 19:04:46 [parallel_state.py:1982] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, EP rank 0, EPLB rank N/A
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/audit/audit_native_mtp_meta.py", line 18, in <module>
+[rank0]:     model=Glm5NextMTP(vllm_config=d)
+[rank0]:           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/models/glm5next/nvidia/mtp.py", line 225, in __init__
+[rank0]:     self.model = Glm5NextMultiTokenPredictor(
+[rank0]:                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/models/glm5next/nvidia/mtp.py", line 133, in __init__
+[rank0]:     str(idx): Glm5NextMultiTokenPredictorLayer(
+[rank0]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/models/glm5next/nvidia/mtp.py", line 76, in __init__
+[rank0]:     self.mtp_block = Glm5NextDecoderLayer(
+[rank0]:                      ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/models/glm5next/nvidia/model.py", line 319, in __init__
+[rank0]:     self.self_attn = Glm5NextMLAAttention(
+[rank0]:                      ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/models/glm5next/nvidia/attention.py", line 597, in __init__
+[rank0]:     self.mla_attn = MultiHeadLatentAttentionWrapper(
+[rank0]:                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/layers/mla.py", line 115, in __init__
+[rank0]:     self.mla_attn = MLAAttention(
+[rank0]:                     ^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/layers/attention/mla_attention.py", line 459, in __init__
+[rank0]:     self.attn_backend = get_attn_backend(
+[rank0]:                         ^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/attention/selector.py", line 185, in get_attn_backend
+[rank0]:     return _cached_get_attn_backend(
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/attention/selector.py", line 200, in _cached_get_attn_backend
+[rank0]:     attention_cls = current_platform.get_attn_backend_cls(
+[rank0]:                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/platforms/cuda.py", line 500, in get_attn_backend_cls
+[rank0]:     raise ValueError(
+[rank0]: ValueError: No valid attention backend found for cuda with AttentionSelectorConfig(head_size=512, dtype=torch.float32, kv_cache_dtype=auto, block_size=None, use_mla=True, has_sink=False, use_sparse=True, use_mm_prefix=False, use_per_head_quant_scales=False, attn_type=AttentionType.DECODER, has_sliding_window=False, use_non_causal=False, use_batch_invariant=False, use_kv_connector=False, use_adaptive_verification=False, use_pcp=False). Reasons: {TRITON_MLA: [dtype not supported, sparse not supported], FLASHINFER_MLA_SPARSE_SM120: [dtype not supported, dtype not supported]}.

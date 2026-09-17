@@ -1,0 +1,6 @@
+2026-09-16T21:35:52Z RUNNER_START mosaic12l-quick http://spark-557f.internal:8000 (quick MMLU limit-20 like-for-like vs e216-quick+f216-quick)
+2026-09-16T21:35:54Z poll 1 health=200 smoke=200
+2026-09-16T21:35:54Z READY_OK
+2026-09-16T21:44:55Z VALIDATE rc=0 tail:  - humanities     |      2|none  |     0|acc   |↑  |0.8077|±  |0.0666| | - other          |      2|none  |     0|acc   |↑  |0.8462|±  |0.0769| | - social sciences|      2|none  |     0|acc   |↑  |0.8750|±  |0.0722| | - stem           |      2|none  |     0|acc   |↑  |0.8947|±  |0.0372|  
+2026-09-16T21:44:55Z VALIDATE_OK launching quick MMLU (limit 20, 1,140 docs)
+2026-09-17T00:09:42Z RUNNER_DONE exit-recorded

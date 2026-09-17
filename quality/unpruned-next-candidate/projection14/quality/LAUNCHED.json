@@ -1,0 +1,9 @@
+{
+  "state": "CAPTURE_RUNNING_FIRST_COMPLETE_LAYER_VERIFIED",
+  "cid": "5a05e4c446649000a1e38b86572e2bf19820e6cf12f129b22e023903ddb9151e",
+  "first_layer": 0,
+  "rows": 32,
+  "local_fetch_pid": 9469,
+  "quality_accepted": false,
+  "runtime_accepted": false
+}

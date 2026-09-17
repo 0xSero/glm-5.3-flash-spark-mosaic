@@ -1,0 +1,19 @@
+{
+  "scope": "Two repeats per depth; exact input payloads, same target/runtime, successful normal-stop structured counting. Not broad quality or general task speed. D1/D2 native FP8 MTP; target K2.",
+  "rows": [
+    {
+      "input_tokens": 1023,
+      "concurrency": 1,
+      "D1_mean_TOTAL_decode_tok_s": 14.977631568853194,
+      "D2_mean_TOTAL_decode_tok_s": 19.114207319404187,
+      "gain_pct": 27.618356958073598
+    },
+    {
+      "input_tokens": 16383,
+      "concurrency": 1,
+      "D1_mean_TOTAL_decode_tok_s": 14.859289708095496,
+      "D2_mean_TOTAL_decode_tok_s": 19.029369511306765,
+      "gain_pct": 28.063789623398794
+    }
+  ]
+}

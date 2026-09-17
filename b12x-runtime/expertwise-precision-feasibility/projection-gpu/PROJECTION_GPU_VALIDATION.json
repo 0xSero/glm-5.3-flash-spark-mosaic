@@ -1,0 +1,64 @@
+{
+  "state": "PROJECTION_K223_GPU_MICROPROOF_PASS_NOT_FULL_MODEL_QUALITY",
+  "recorded_utc": "2026-09-12T00:15:25.403518+00:00",
+  "image_id": "sha256:c0d5f76237a5fe1262291eb23b8086ef0b2637e6d8d45ccdbb9c5706df321399",
+  "container_id": "90e10cedf61d8ebb979c5d95b195ff81514ff1ad7ce7739d66ab55527c79689d",
+  "cpu_tests_passed": 11,
+  "projection_bits": [
+    2,
+    2,
+    3
+  ],
+  "actual_dynamic_kernel_observed": true,
+  "expert_count_in_microproof": 8,
+  "full_model_experts_policy": 288,
+  "model_source_index_sha256": "ffa8fd58c66ad43aed073a83cff2bfc6a7bdb8ebbe14ba137213a205f59204fb",
+  "peak_cuda_allocated_bytes": 293047808,
+  "elapsed_probe_seconds": 11.58006089203991,
+  "results": [
+    {
+      "layer": 5,
+      "experts": 8,
+      "retained_original_ids": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "loaded_expert_tensors": 384,
+      "router_rows_exact": true,
+      "fused_pointer_tables": true,
+      "route_ids": [
+        1,
+        2,
+        7,
+        6,
+        5,
+        3,
+        4,
+        0
+      ],
+      "fused_vs_loop_max_abs": 0.0001220703125,
+      "fused_vs_reconstructed_fp32_max_abs": 7.140077650547028e-05,
+      "graph_replays": 3,
+      "graph_vs_eager_max_abs": 0.0,
+      "full_runner_vs_reference_max_abs": 0.00011761859059333801,
+      "finite": true
+    }
+  ],
+  "additional_graph_replays": 3,
+  "sha256": {
+    "image-transfer-proof.json": "1b133e6fad92acda19cbd01d83e7b61cff769ed8c43e7e764d2a9269d859668f",
+    "exl3.projection.py": "30321f703b39b9391d3b2fb861f84c175be48dafc05f8bd8b32be5be336224f2",
+    "glm_exl3_projection_bits.py": "2794ddbb9d0b92bdd8926e308826d261c31111eafca0c1be5b262d6ab810deab",
+    "gpu_smoke.py": "274799a2c05767adf5dd194a2d5a9f3a76695f6d08838b9fa986fae2cfb50086",
+    "evidence/attempt1-inspect.json": "5962b40a7f7a69d6bf09a852d77e88d021842928a093d9f6c46e9dd2e182ec49",
+    "evidence/attempt1.log": "9a686d1b7a2c0ed9cfa4ecaa76b1ad743050d60f536d2cc703fab4c90801a2a5",
+    "evidence/glm53-projection-k223-smoke-attempt1/gpu-smoke.json": "c1c8e721afec5e07e00b0fed972132c9666380a44f46bee41e63af535347bdab",
+    "evidence/glm53-projection-k223-smoke-attempt1/kernel-trace.json": "bc0bfe9aa311b3a55dbdf370d249c378514761ee8c4181a80229dec52e23e1af"
+  }
+}

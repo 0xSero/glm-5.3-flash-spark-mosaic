@@ -1,0 +1,82 @@
+2026-09-14T13:21:27Z RUNNER_START r216 http://spark-557f.internal:8000
+2026-09-14T13:22:27Z poll 1 health=000
+2026-09-14T13:23:28Z poll 2 health=000
+2026-09-14T13:24:28Z poll 3 health=000
+2026-09-14T13:25:28Z poll 4 health=000
+2026-09-14T13:26:28Z poll 5 health=000
+2026-09-14T13:27:28Z poll 6 health=000
+2026-09-14T13:28:28Z poll 7 health=000
+2026-09-14T13:29:29Z poll 8 health=000
+2026-09-14T13:30:29Z poll 9 health=000
+2026-09-14T13:31:29Z poll 10 health=000
+2026-09-14T13:32:29Z poll 11 health=000
+2026-09-14T13:33:29Z poll 12 health=000
+2026-09-14T13:34:29Z poll 13 health=000
+2026-09-14T13:35:30Z poll 14 health=000
+2026-09-14T13:36:30Z poll 15 health=000
+2026-09-14T13:37:30Z poll 16 health=000
+2026-09-14T13:38:30Z poll 17 health=000
+2026-09-14T13:39:31Z poll 18 health=000
+2026-09-14T13:40:31Z poll 19 health=000
+2026-09-14T13:41:31Z poll 20 health=000
+2026-09-14T13:42:31Z poll 21 health=000
+2026-09-14T13:43:31Z poll 22 health=000
+2026-09-14T13:44:32Z poll 23 health=000
+2026-09-14T13:45:32Z poll 24 health=000
+2026-09-14T13:46:32Z poll 25 health=000
+2026-09-14T13:47:32Z poll 26 health=000
+2026-09-14T13:48:33Z poll 27 health=000
+2026-09-14T13:49:33Z poll 28 health=000
+2026-09-14T13:50:33Z poll 29 health=000
+2026-09-14T13:51:33Z poll 30 health=000
+2026-09-14T13:52:33Z poll 31 health=000
+2026-09-14T13:53:33Z poll 32 health=000
+2026-09-14T13:54:33Z poll 33 health=000
+2026-09-14T13:55:34Z poll 34 health=000
+2026-09-14T13:57:26Z RUNNER_START r216 http://spark-557f.internal:8000
+2026-09-14T13:58:26Z poll 1 health=000
+2026-09-14T13:59:27Z poll 2 health=000
+2026-09-14T14:00:27Z poll 3 health=000
+2026-09-14T14:01:27Z poll 4 health=000
+2026-09-14T14:02:27Z poll 5 health=000
+2026-09-14T14:03:27Z poll 6 health=000
+2026-09-14T14:04:27Z poll 7 health=000
+2026-09-14T14:05:27Z poll 8 health=503
+2026-09-14T14:06:28Z poll 9 health=503
+2026-09-14T14:07:30Z poll 10 health=200 smoke=200
+2026-09-14T14:07:30Z READY_OK
+2026-09-14T14:12:50Z VALIDATE rc=1 tail: n getline   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/linecache.py", line 41, in getlines   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/linecache.py", line 88, in updatecache ImportError: sys.meta_path is None, Python is likely shutting down 
+2026-09-14T14:12:50Z BLOCKED dataset-access
+2026-09-14T14:17:03Z RUNNER_START r216 http://spark-557f.internal:8000
+2026-09-14T14:18:06Z poll 1 health=200 smoke=200
+2026-09-14T14:18:06Z READY_OK
+2026-09-14T14:23:54Z VALIDATE rc=1 tail: n getline   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/linecache.py", line 41, in getlines   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/linecache.py", line 88, in updatecache ImportError: sys.meta_path is None, Python is likely shutting down 
+2026-09-14T14:23:54Z BLOCKED dataset-access
+2026-09-14T14:26:56Z RUNNER_START r216 http://spark-557f.internal:8000
+2026-09-14T14:28:00Z poll 1 health=200 smoke=200
+2026-09-14T14:28:01Z READY_OK
+2026-09-14T14:34:28Z VALIDATE rc=1 tail: nv/lib/python3.13/site-packages/aiohttp/connector.py", line 1324, in _wrap_create_connection     raise client_error(req.connection_key, exc) from exc aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host spark-557f.internal:8000 ssl:default [Connect call failed ('spark-557f.internal', 8000)] 
+2026-09-14T14:34:28Z BLOCKED dataset-access
+2026-09-14T14:39:22Z RUNNER_START r216 http://spark-557f.internal:8000
+2026-09-14T14:40:22Z poll 1 health=000
+2026-09-14T14:41:22Z poll 2 health=000
+2026-09-14T14:42:22Z poll 3 health=000
+2026-09-14T14:43:22Z poll 4 health=000
+2026-09-14T14:44:23Z poll 5 health=000
+2026-09-14T14:45:23Z poll 6 health=000
+2026-09-14T14:46:23Z poll 7 health=503
+2026-09-14T14:47:24Z poll 8 health=503
+2026-09-14T14:48:25Z poll 9 health=200 smoke=200
+2026-09-14T14:48:25Z READY_OK
+2026-09-14T14:54:19Z VALIDATE rc=0 tail:  - humanities     |      2|none  |     0|acc   |↑  |0.8846|±  |0.0666| | - other          |      2|none  |     0|acc   |↑  |0.8462|±  |0.0769| | - social sciences|      2|none  |     0|acc   |↑  |0.8333|±  |0.0589| | - stem           |      2|none  |     0|acc   |↑  |0.6842|±  |0.0526|  
+2026-09-14T14:54:19Z BLOCKED dataset-access
+2026-09-14T14:56:06Z RUNNER_START r216 http://spark-557f.internal:8000
+2026-09-14T14:57:08Z poll 1 health=200 smoke=200
+2026-09-14T14:57:08Z READY_OK
+2026-09-14T15:02:43Z VALIDATE rc=0 tail:  - humanities     |      2|none  |     0|acc   |↑  |0.8846|±  |0.0666| | - other          |      2|none  |     0|acc   |↑  |0.8462|±  |0.0769| | - social sciences|      2|none  |     0|acc   |↑  |0.8333|±  |0.0589| | - stem           |      2|none  |     0|acc   |↑  |0.6842|±  |0.0526|  
+2026-09-14T15:02:43Z VALIDATE_UNCLEAR not launching
+2026-09-14T15:03:41Z RUNNER_START r216 http://spark-557f.internal:8000
+2026-09-14T15:04:43Z poll 1 health=200 smoke=200
+2026-09-14T15:04:43Z READY_OK
+2026-09-14T15:09:56Z VALIDATE rc=0 tail:  - humanities     |      2|none  |     0|acc   |↑  |0.8846|±  |0.0666| | - other          |      2|none  |     0|acc   |↑  |0.8462|±  |0.0769| | - social sciences|      2|none  |     0|acc   |↑  |0.8333|±  |0.0589| | - stem           |      2|none  |     0|acc   |↑  |0.6842|±  |0.0526|  
+2026-09-14T15:09:56Z VALIDATE_OK launching full suite

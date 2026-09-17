@@ -1,0 +1,2 @@
+[vllm.general_plugins]
+glm_depth_receipts = capture_plugin:install

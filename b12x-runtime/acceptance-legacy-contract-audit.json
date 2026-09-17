@@ -1,0 +1,22 @@
+{
+  "state": "SOURCE_CONTRACT_COMPATIBLE_NO_GENERATION_PERFORMED",
+  "container": "glm53-reap-native-mtp-candidate",
+  "node": "spark-557f",
+  "source_sha256": {
+    "/usr/local/lib/python3.12/dist-packages/vllm/entrypoints/openai/chat_completion/serving.py": "16ec26bfd4b376ccd2e9f3672a23266cdd9beb91ca82f7423267beaee8ef8a6d",
+    "/usr/local/lib/python3.12/dist-packages/vllm/entrypoints/openai/chat_completion/protocol.py": "f16851e236517ddffbdccf40b7c5a6275320033130a8c080f1bf3904b5229453",
+    "/usr/local/lib/python3.12/dist-packages/vllm/entrypoints/serve/tokenize/protocol.py": "5cc5cb021b827ae34e5e3ce8fdd72ee0e07b6e6b95de74d3f075f3b3edb8ac21",
+    "/usr/local/lib/python3.12/dist-packages/vllm/entrypoints/serve/tokenize/serving.py": "3faa09f7824a068165769ee882158ac2caa9202b7f1905dc96b5d608aa9a762b",
+    "/usr/local/lib/python3.12/dist-packages/vllm/v1/metrics/loggers.py": "d5a91626cf79118f98ae6438c842cb30fc44ca14463c7e2af5871e3da8e51bcf",
+    "/usr/local/lib/python3.12/dist-packages/vllm/v1/metrics/stats.py": "7682d3086bf5395f163f423677485432ee2c035aada2f370c0f82b291e53ca47"
+  },
+  "findings": [
+    "Chat include_reasoning defaults true; requested raw token IDs survive parser-only control and reasoning tokens at choice.token_ids.",
+    "Completion usage counts raw output token IDs and harness preserves speculative bundles instead of counting SSE chunks.",
+    "Four native histogram names and model_name labels match; all four observe once for every finished request.",
+    "Prefill interval is first scheduled to first token and decode is first token to last token, including preemptions. Concurrent sums are overlapping request time, not GPU-exclusive or aggregate throughput.",
+    "TokenizeChatRequest defaults add_generation_prompt=true/add_special_tokens=false, merges chat_template_kwargs, and reports exact input_ids count.",
+    "No runtime request, generation, benchmark snapshot change or acceptance-file mutation performed. Actual preflight diagnostics remain parent-owned."
+  ],
+  "parent_diagnosis": "Transformers 5.16 apply_chat_template(tokenize=True) returns BatchEncoding by default; len() counts fields. Parent fixed chat_tokens with explicit return_dict=False and is validating all prompt lengths against actual /tokenize. This does not change the compatible server contracts audited here."
+}

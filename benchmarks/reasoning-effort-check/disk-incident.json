@@ -1,0 +1,18 @@
+{
+  "time": "2026-09-12T00:09:44.682561+00:00",
+  "host": "spark-2384",
+  "state": "restored69494521856bytesfree;serverneverstopped",
+  "causes": [
+    "R3dockerimagesave temporaryexport~25.8GB",
+    "binarytarstdoutretainedbyDockerjsonfilelog128872364085bytes"
+  ],
+  "prevention": [
+    "No more imagesave on2384",
+    "BinarycontainerstreamsmustverifyLogConfig.Type=none beforedata",
+    "Checkexporttemporarydiskamplification",
+    "LongcontextresultENOSPCfallbackto/dev/shm"
+  ],
+  "source_data_deleted": false,
+  "first_request_receipt": "262016.json.tmp zero bytes;clientPID1104621 terminal;servergauges0",
+  "retry_pid": 1112002
+}

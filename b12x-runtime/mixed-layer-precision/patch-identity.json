@@ -1,0 +1,11 @@
+{
+  "state": "STAGED_ONLY_GPU_UNQUALIFIED",
+  "source_sha256": "2d62a8bd6f0d2e1df7556ce086f8c294d6c20faa4e4af123300aa595e264584d",
+  "patched_sha256": "f1fbfea9b13c8775de8a24cdceb68f90897dd285e3e01561ab21fd1a94d03412",
+  "helper_sha256": "7de030f1e95ffaff31d35094505187203546ff7c60c3afe9222e87e36ba1c6d6",
+  "layer_bits": {
+    "5": 3,
+    "32": 3
+  },
+  "default_bits": 2
+}

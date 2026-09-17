@@ -1,0 +1,20 @@
+INFO 09-11 21:20:01 [import_utils.py:478] DeepEP v2 requires NCCL >= 2.30.4 but found 2.29.7. deepep_v2 backend will not be available.
+INFO 09-11 21:20:05 [__init__.py:109] Registered model loader `<class 'b12x.integration.vllm.loader.B12xModelLoader'>` with load format `b12x`
+INFO 09-11 21:20:11 [model.py:686] Resolved architecture: Glm5NextForConditionalGeneration
+INFO 09-11 21:20:11 [model.py:2029] Using max model len 262144
+WARNING 09-11 21:20:11 [model.py:988] Model does not support mm_device_do_normalize, forcing mm_device_do_normalize = False.
+Traceback (most recent call last):
+  File "/probe.py", line 10, in <module>
+    c=EngineArgs(model='/model',tokenizer='/model',skip_tokenizer_init=True,dtype='bfloat16',quantization='exl3',max_model_len=262144,max_num_seqs=1,max_num_batched_tokens=2048,kv_cache_dtype='fp8_ds_mla',attention_backend='B12X',additional_config={'kda_prefill_backend':'b12x'},block_size=64,enable_prefix_caching=False,speculative_config={'method':'mtp','model':'/mtp','num_speculative_tokens':1}).create_engine_config()
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/vllm/engine/arg_utils.py", line 2130, in create_engine_config
+    model_config = self.create_model_config()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/vllm/engine/arg_utils.py", line 1886, in create_model_config
+    return ModelConfig(
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/pydantic/_internal/_dataclasses.py", line 121, in __init__
+    s.__pydantic_validator__.validate_python(ArgsKwargs(args, kwargs), self_instance=s)
+pydantic_core._pydantic_core.ValidationError: 1 validation error for ModelConfig
+  Value error, Quantization method exl3 is an override but is has not been added to the `overrides` list above. This is necessary to ensure that the overrides are checked in order of preference. [type=value_error, input_value=ArgsKwargs((), {'model': ...nderer_num_workers': 1}), input_type=ArgsKwargs]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error

@@ -1,0 +1,26 @@
+--- a/vllm/models/glm5next/nvidia/model.py
++++ b/vllm/models/glm5next/nvidia/model.py
+@@ -340,6 +340,9 @@
+         cache_config = vllm_config.cache_config
+         quant_config = vllm_config.quant_config
+         parallel_config = vllm_config.parallel_config
++        from .layerwise_counts import layer_config
++
++        config = layer_config(config, parallel_config, layer_idx, is_mtp_layer)
+ 
+         self.hidden_size = config.hidden_size
+         self.layer_idx = layer_idx
+@@ -1147,9 +1150,12 @@
+             kv_a_pad_size = self.config.qk_rope_head_dim
+ 
+         pending_attn_weights: dict = {}
+-
++        from .layerwise_counts import plan, validate_loaded_tensor
++
++        layer_expert_counts = plan(self.config)
+         for args in weights:
+             name, loaded_weight = args[:2]
++            validate_loaded_tensor(self.config, name, loaded_weight.shape, layer_expert_counts)
+             kwargs: dict = args[2] if len(args) > 2 else {}
+             if "rotary_emb.inv_freq" in name:
+                 continue

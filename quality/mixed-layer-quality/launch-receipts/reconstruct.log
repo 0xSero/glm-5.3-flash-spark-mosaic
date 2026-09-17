@@ -1,0 +1,6 @@
+INFO 09-11 22:23:38 [import_utils.py:464] DeepEP v2 requires NCCL >= 2.30.4 but found 2.29.7. deepep_v2 backend will not be available.
+Traceback (most recent call last):
+  File "/quality/probe_reconstruction.py", line 29, in <module>
+    assert tuple(w.shape)==((4096,512) if down else (512,4096)) and w.dtype==torch.bfloat16 and torch.isfinite(w).all()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

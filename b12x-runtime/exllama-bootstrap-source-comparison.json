@@ -1,0 +1,14 @@
+{
+  "comparison_revision": "c5d9c657966ffeeaa9353f0cc899f18629da4a13",
+  "matching_packaged_files": 317,
+  "different_packaged_files": [
+    "exllamav3_ext/avx2_target.cpp",
+    "exllamav3_ext/avx2_target.h",
+    "exllamav3_ext/avx512_target.cpp",
+    "exllamav3_ext/avx512_target.h",
+    "exllamav3_ext/parallel/all_reduce_cpu_avx2.cpp",
+    "exllamav3_ext/parallel/all_reduce_cpu_avx512.cpp"
+  ],
+  "not_in_reference_checkout": [],
+  "binary_source_build_attestation": false
+}

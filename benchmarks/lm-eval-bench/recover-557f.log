@@ -1,0 +1,28 @@
+2026-09-14T13:21:27Z RECOVERY_WATCH_START (user-authorized reboot for 557f data-plane outage)
+2026-09-14T13:24:28Z SELF_HEALED direct ssh alive; no reboot sent
+2026-09-14T13:25:29Z 557F_BACK after wait 1 — relaunching r216 bench attempt 3
+### preserve attempt2 evidence 2026-09-14T13:25:31Z
++ DST=/home/valentine/models/glm53-3p05-pruned-r216
+++ date -u +%FT%TZ
++ echo '### preserve attempt2 evidence 2026-09-14T13:25:31Z'
++ docker logs glm53-r216-bench
+glm53-r216-bench
++ docker stop glm53-r216-bench
++ docker rm glm53-r216-bench
+glm53-r216-bench
++ sleep 5
+### attempt 3: mamba-cache fix, IDENTICAL serving knobs to a0 attempt 3:
+###   mf 0.86, chunked 512, prefill 512, req 8 (attempt2 mf 0.90/pre2048/req16 = a0 mamba-oom config)
++ echo '### attempt 3: mamba-cache fix, IDENTICAL serving knobs to a0 attempt 3:'
++ echo '###   mf 0.86, chunked 512, prefill 512, req 8 (attempt2 mf 0.90/pre2048/req16 = a0 mamba-oom config)'
++ docker run -d --name glm53-r216-bench -v /home/valentine/models/glm53-3p05-pruned-r216:/model:ro -v /tmp/r216-receipts:/receipts:ro -p 8000:8000 --gpus all --shm-size=16g -e SGLANG_EXL3_MAX_BATCH_TOKENS=2048 --entrypoint python3 glm53-flash-sglang-exl3-plain:serve4-pruned -m sglang.launch_server --model-path /model --host 0.0.0.0 --port 8000 --quantization exl3 --tp-size 1 --ep-size 1 --context-length 262144 --kv-cache-dtype fp8_e4m3 --attention-backend dsa --dsa-prefill-backend flashinfer_sparse_mla --dsa-decode-backend flashinfer_sparse_mla --linear-attn-backend triton --disable-shared-experts-fusion --chunked-prefill-size 512 --max-prefill-tokens 512 --max-running-requests 8 --mem-fraction-static 0.86 --enable-multimodal --chat-template /model/chat_template.jinja --reasoning-parser glm45 --tool-call-parser glm47 --disable-cuda-graph
+beb07c9b1a6a0b12ef81570d15724d5ce33719b0670072339eb0446d21752e2b
+docker: Error response from daemon: failed to create task for container: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: error during container init: failed to fulfil mount request: open /run/nvidia-persistenced/socket: no such file or directory
+
+Run 'docker run --help' for more information
++ docker ps --format '{{.Names}} {{.Status}}'
+BENCH3_LAUNCHED 2026-09-14T13:25:36Z
+++ date -u +%FT%TZ
++ echo 'BENCH3_LAUNCHED 2026-09-14T13:25:36Z'
+2026-09-14T13:25:36Z attempt-3 relaunch executed; lm-eval runner on the Mac picks the point up when READY
+2026-09-14T13:25:36Z RECOVERY_WATCH_EXIT

@@ -1,0 +1,8 @@
+F216 serve teardown receipt — 2026-09-16T09:43Z, spark-557f (interactive turn, user: "keep going")
+
+- container glm53-f216: id a6654b208f99…, running since 2026-09-16T02:11:59Z, engine KV max_total_num_tokens=278528 (receipted); docker stop exit=0, docker rm exit=0 → NO_GLM53_CONTAINERS verified 09:43:23Z
+- drop_caches loop (own helper): pid 672379 killed 09:43:21Z, pgrep-verified LOOP_STOPPED
+- preserved: /home/valentine/f216/serve-f216.out (4,239,383 B full engine log), /home/valentine/f216/serve-launcher.log, /home/valentine/f216/exl3-plain-census-2p05.json, /tmp/f216-receipts/ (host tmp)
+- artifact UNTOUCHED: /home/valentine/models/glm53-3p05-pruned-f216 (31 files); disk 39GB free after
+- reason: F216 stage-4 eval complete (verdict recorded); teardown of own serving infra; artifact relaunchable via f216/run-serve-f216.sh in minutes
+- raw command transcript: this file (docker inspect/stop/rm + kill + verification lines as executed)

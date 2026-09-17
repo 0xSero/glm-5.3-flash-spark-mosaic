@@ -1,0 +1,350 @@
+FULL_PANEL_BOTH_START 2026-09-16T20:26:28Z
+### mosaic12l-full candidate 2026-09-16T20:26:28Z
+/sgl-workspace/sglang/python/sglang/srt/layers/quantization/awq/awq.py:53: UserWarning: Only CUDA, HIP and XPU support AWQ currently.
+  warnings.warn(f"Only CUDA, HIP and XPU support AWQ currently.")
+/sgl-workspace/sglang/python/sglang/srt/layers/quantization/gguf.py:69: UserWarning: Only CUDA, MUSA and NPU support GGUF quantization currently.
+  warnings.warn(f"Only CUDA, MUSA and NPU support GGUF quantization currently.")
+[candidate] row 0: 24.8s, k=2048, mean NLL 0.8349
+[candidate] row 1: 9.5s, k=2048, mean NLL 0.8201
+[candidate] row 2: 8.6s, k=2048, mean NLL 1.0344
+[candidate] row 3: 8.8s, k=2048, mean NLL 1.4946
+[candidate] row 4: 8.8s, k=2048, mean NLL 1.3356
+[candidate] row 5: 8.8s, k=2048, mean NLL 0.9255
+[candidate] row 6: 8.5s, k=2048, mean NLL 0.8264
+[candidate] row 7: 8.6s, k=2048, mean NLL 1.1889
+[candidate] row 8: 8.6s, k=2048, mean NLL 1.3672
+[candidate] row 9: 8.8s, k=2048, mean NLL 1.6505
+[candidate] row 10: 8.7s, k=2048, mean NLL 1.6047
+[candidate] row 11: 8.6s, k=2048, mean NLL 1.6963
+[candidate] row 12: 8.6s, k=2048, mean NLL 1.6692
+[candidate] row 13: 8.7s, k=2048, mean NLL 1.8747
+[candidate] row 14: 8.7s, k=2048, mean NLL 1.8136
+[candidate] row 15: 8.8s, k=2048, mean NLL 2.0928
+[candidate] row 16: 8.6s, k=2048, mean NLL 1.7554
+[candidate] row 17: 8.9s, k=2048, mean NLL 1.6563
+[candidate] row 18: 8.8s, k=2048, mean NLL 1.4573
+[candidate] row 19: 8.6s, k=2048, mean NLL 0.9939
+[candidate] row 20: 8.5s, k=2048, mean NLL 1.2748
+[candidate] row 21: 8.6s, k=2048, mean NLL 1.2280
+[candidate] row 22: 8.5s, k=2048, mean NLL 1.2398
+[candidate] row 23: 8.7s, k=2048, mean NLL 1.3585
+[candidate] row 24: 8.7s, k=2048, mean NLL 1.5753
+[candidate] row 25: 8.5s, k=2048, mean NLL 1.4574
+[candidate] row 26: 8.7s, k=2048, mean NLL 1.9947
+[candidate] row 27: 8.8s, k=2048, mean NLL 1.9649
+[candidate] row 28: 8.6s, k=2048, mean NLL 1.2354
+[candidate] row 29: 8.7s, k=2048, mean NLL 1.1185
+[candidate] row 30: 8.6s, k=2048, mean NLL 1.0236
+[candidate] row 31: 8.8s, k=2048, mean NLL 1.0821
+mosaic12l-full candidate exit=0
+32
+mosaic12l-full symlink exit=0
+### mosaic12l-full compare 2026-09-16T20:32:02Z
+/sgl-workspace/sglang/python/sglang/srt/layers/quantization/awq/awq.py:53: UserWarning: Only CUDA, HIP and XPU support AWQ currently.
+  warnings.warn(f"Only CUDA, HIP and XPU support AWQ currently.")
+/sgl-workspace/sglang/python/sglang/srt/layers/quantization/gguf.py:69: UserWarning: Only CUDA, MUSA and NPU support GGUF quantization currently.
+  warnings.warn(f"Only CUDA, MUSA and NPU support GGUF quantization currently.")
+{
+ "status": "complete",
+ "summary": {
+  "positions": 65504,
+  "rows": 32,
+  "expected_positions": 65504,
+  "top1_agreement": 0.8084239130434783,
+  "top1_agree_count": 52955,
+  "kl_lower_bound_mean": 0.32521654777148873,
+  "kl_lower_bound_p50": 0.08110499382019043,
+  "kl_lower_bound_p95": 1.5397437810897827,
+  "kl_lower_bound_p99": 3.4243249893188477,
+  "kl_lower_bound_max": 14.228118472989113,
+  "kl_topk_renorm_mean": 0.3261927456449461,
+  "kl_topk_renorm_p50": 0.08086124062538147,
+  "kl_topk_renorm_p95": 1.552648901939392,
+  "kl_topk_renorm_p99": 3.423949718475342,
+  "kl_topk_renorm_max": 14.241392213269517,
+  "candidate_ppl": 4.03562826648577,
+  "candidate_nll_mean": 1.3951619938108784,
+  "teacher_ppl_recomputed": 3.19953344168712,
+  "teacher_ppl_reference": 3.199529500063886,
+  "coverage": {
+   "teacher_mass_in_known_set_mean": 0.9930494511810066,
+   "teacher_mass_in_known_set_p01": 0.8990570306777954,
+   "teacher_mass_in_known_set_min": 0.014126214220229676,
+   "fraction_teacher_top1_in_candidate_topk": 0.99989313629702,
+   "fraction_all_teacher_topk_known": 0.5642556179775281,
+   "topk_teacher": 256,
+   "topk_candidate_requested": 2048
+  }
+ },
+ "teacher_reproduction": {
+  "top1_exact_all_rows": true,
+  "max_nll_sum_abs_delta": 0.005112852444881355,
+  "ok": true
+ }
+}
+mosaic12l-full compare exit=0
+### mosaic12l-full samples 2026-09-16T20:32:18Z
+/sgl-workspace/sglang/python/sglang/srt/layers/quantization/awq/awq.py:53: UserWarning: Only CUDA, HIP and XPU support AWQ currently.
+  warnings.warn(f"Only CUDA, HIP and XPU support AWQ currently.")
+/sgl-workspace/sglang/python/sglang/srt/layers/quantization/gguf.py:69: UserWarning: Only CUDA, MUSA and NPU support GGUF quantization currently.
+  warnings.warn(f"Only CUDA, MUSA and NPU support GGUF quantization currently.")
+[samples] sd-toolcall-weather ...
+[samples] sd-toolcall-weather: PASS {'finish_reason_stop': False, 'finish_reason_in': True, 'tool_calls_count': True, 'function_name': True, 'arguments_json_equals': True} 
+[samples] gn-behavior-chinese ...
+[samples] gn-behavior-chinese: PASS {'finish_reason_stop': True, 'content_equals': True} 
+[samples] rs-6x7-low-text ...
+[samples] rs-6x7-low-text: PASS {'finish_reason_stop': True, 'content_json_equals': True} 
+[samples] rs-6x7-medium-text ...
+[samples] rs-6x7-medium-text: FAIL {'finish_reason_stop': True, 'content_json_equals': False} 
+[samples] rs-6x7-high-text ...
+[samples] rs-6x7-high-text: FAIL {'finish_reason_stop': True, 'content_json_equals': False} 
+[samples] rs-6x7-medium-json ...
+[samples] rs-6x7-medium-json: PASS {'finish_reason_stop': True, 'content_json_equals': True} 
+[samples] rs-6x7-high-json ...
+[samples] rs-6x7-high-json: PASS {'finish_reason_stop': True, 'content_json_equals': True} 
+[samples] sd-json300-1024 ...
+[samples] sd-json300-1024: PASS {'finish_reason_stop': True, 'content_json_equals': True, 'all_integers_type_int': True, 'prompt_tokens_equals_actual': True, 'server_idle_before_and_after': True} 
+[samples] rl-audit3-4096 ...
+[samples] rl-audit3-4096: PASS {'finish_reason_stop': True, 'content_json_equals': True, 'prompt_tokens_equals_target': True, 'cached_tokens_in': True} 
+[samples] gn-tips240-4096 ...
+[samples] gn-tips240-4096: FAIL {'server_tokenization_matches_local': True, 'finish_reason_stop': False, 'content_lines_starting_with_hash': False, 'lines_numbered_1_to_240_in_order': False, 'distinct_lines': True} 
+[samples] sd-json300-4096 ...
+[samples] sd-json300-4096: PASS {'finish_reason_stop': True, 'content_json_equals': True, 'all_integers_type_int': True, 'prompt_tokens_equals_actual': True, 'server_idle_before_and_after': True} 
+[samples] gn-tips240-16384 ...
+[samples] gn-tips240-16384: FAIL {'server_tokenization_matches_local': True, 'finish_reason_stop': False, 'content_lines_starting_with_hash': False, 'lines_numbered_1_to_240_in_order': False, 'distinct_lines': True} 
+[samples] rl-audit3-65536 ...
+[samples] rl-audit3-65536: PASS {'finish_reason_stop': True, 'content_json_equals': True, 'prompt_tokens_equals_target': True, 'cached_tokens_in': True} 
+[samples] gn-tips240-65536 ...
+[samples] gn-tips240-65536: FAIL {'server_tokenization_matches_local': True, 'finish_reason_stop': False, 'content_lines_starting_with_hash': False, 'lines_numbered_1_to_240_in_order': False, 'distinct_lines': False} 
+[samples] sd-json300-131072 ...
+[samples] sd-json300-131072: PASS {'finish_reason_stop': True, 'content_json_equals': True, 'all_integers_type_int': True, 'prompt_tokens_equals_actual': True, 'server_idle_before_and_after': True} 
+[samples] rl-audit3-131072 ...
+[samples] rl-audit3-131072: PASS {'finish_reason_stop': True, 'content_json_equals': True, 'prompt_tokens_equals_target': True, 'cached_tokens_in': True} 
+[samples] gn-tips240-131072 ...
+[samples] gn-tips240-131072: FAIL {'server_tokenization_matches_local': True, 'finish_reason_stop': False, 'content_lines_starting_with_hash': False, 'lines_numbered_1_to_240_in_order': False, 'distinct_lines': True} 
+[samples] sd-json300-200000 ...
+[samples] sd-json300-200000: PASS {'finish_reason_stop': True, 'content_json_equals': True, 'all_integers_type_int': True, 'prompt_tokens_equals_actual': True, 'server_idle_before_and_after': True} 
+[samples] rl-audit3-262016 ...
+[samples] rl-audit3-262016: PASS {'finish_reason_stop': True, 'content_json_equals': True, 'prompt_tokens_equals_target': True, 'cached_tokens_in': True} 
+[samples] rl-registry4-262016 ...
+[samples] rl-registry4-262016: PASS {'server_tokenization_matches_local': True, 'finish_reason_stop': True, 'content_json_equals': True, 'context_accounting': True, 'cached_tokens_in': True, 'idle_after': True} 
+{
+ "passes": 14,
+ "scored": 20,
+ "of": 20,
+ "score": 0.7,
+ "per_family": {
+  "structured_decode": "5/5",
+  "generation": "1/5",
+  "reasoning": "3/5",
+  "retrieval_long_context": "5/5"
+ },
+ "scoring_rule": {
+  "per_sample": "binary pass/fail per expected_behavior + scorer",
+  "score(point)": "passes / 20",
+  "retention": "score(point) / score(denominator); denominators per CAMPAIGN-12H section 4.4 (A1 vs A0; A2d/A2/controls vs A0, labelled)",
+  "per_family_breakdown": "report passes per family (5 each) alongside the total; families are not weighted",
+  "runtime": "each sample is one isolated C1 request on the digest-pinned image, server idle before/after, cold prefix cache, temperature 0",
+  "output_reserve_note": "output_reserve_tokens are the existing harness context-accounting reserves, unchanged; every expected answer completes with finish_reason=stop well inside them"
+ }
+}
+mosaic12l-full samples exit=0
+### mosaic12l-full summary 2026-09-16T21:34:49Z
+/sgl-workspace/sglang/python/sglang/srt/layers/quantization/awq/awq.py:53: UserWarning: Only CUDA, HIP and XPU support AWQ currently.
+  warnings.warn(f"Only CUDA, HIP and XPU support AWQ currently.")
+/sgl-workspace/sglang/python/sglang/srt/layers/quantization/gguf.py:69: UserWarning: Only CUDA, MUSA and NPU support GGUF quantization currently.
+  warnings.warn(f"Only CUDA, MUSA and NPU support GGUF quantization currently.")
+{
+ "panel_row": {
+  "top1_agreement": 0.8084239130434783,
+  "mean_kl_lower_bound": 0.32521654777148873,
+  "candidate_ppl": 4.03562826648577
+ },
+ "samples": {
+  "score": 0.7,
+  "passes": 14,
+  "per_family": {
+   "structured_decode": "5/5",
+   "generation": "1/5",
+   "reasoning": "3/5",
+   "retrieval_long_context": "5/5"
+  }
+ }
+}
+mosaic12l-full summary exit=0
+### mosaic12l-full POINT_DONE 2026-09-16T21:34:58Z
+### a0-full candidate 2026-09-16T21:34:58Z
+/sgl-workspace/sglang/python/sglang/srt/layers/quantization/awq/awq.py:53: UserWarning: Only CUDA, HIP and XPU support AWQ currently.
+  warnings.warn(f"Only CUDA, HIP and XPU support AWQ currently.")
+/sgl-workspace/sglang/python/sglang/srt/layers/quantization/gguf.py:69: UserWarning: Only CUDA, MUSA and NPU support GGUF quantization currently.
+  warnings.warn(f"Only CUDA, MUSA and NPU support GGUF quantization currently.")
+[candidate] row 0: 8.6s, k=2048, mean NLL 0.8992
+[candidate] row 1: 8.7s, k=2048, mean NLL 0.9317
+[candidate] row 2: 8.6s, k=2048, mean NLL 1.0556
+[candidate] row 3: 9.1s, k=2048, mean NLL 1.5294
+[candidate] row 4: 8.9s, k=2048, mean NLL 1.3591
+[candidate] row 5: 8.9s, k=2048, mean NLL 0.9825
+[candidate] row 6: 8.6s, k=2048, mean NLL 0.9080
+[candidate] row 7: 8.7s, k=2048, mean NLL 1.2658
+[candidate] row 8: 8.7s, k=2048, mean NLL 1.4208
+[candidate] row 9: 8.9s, k=2048, mean NLL 1.6951
+[candidate] row 10: 8.8s, k=2048, mean NLL 1.6390
+[candidate] row 11: 8.6s, k=2048, mean NLL 1.7529
+[candidate] row 12: 8.7s, k=2048, mean NLL 1.6769
+[candidate] row 13: 8.8s, k=2048, mean NLL 1.9170
+[candidate] row 14: 8.9s, k=2048, mean NLL 1.8785
+[candidate] row 15: 8.8s, k=2048, mean NLL 2.1264
+[candidate] row 16: 8.8s, k=2048, mean NLL 1.8020
+[candidate] row 17: 8.9s, k=2048, mean NLL 1.7000
+[candidate] row 18: 9.2s, k=2048, mean NLL 1.5151
+[candidate] row 19: 8.8s, k=2048, mean NLL 1.0846
+[candidate] row 20: 9.0s, k=2048, mean NLL 1.3689
+[candidate] row 21: 8.8s, k=2048, mean NLL 1.3307
+[candidate] row 22: 9.4s, k=2048, mean NLL 1.3195
+[candidate] row 23: 9.0s, k=2048, mean NLL 1.4675
+[candidate] row 24: 9.0s, k=2048, mean NLL 1.6718
+[candidate] row 25: 8.7s, k=2048, mean NLL 1.5440
+[candidate] row 26: 8.9s, k=2048, mean NLL 2.0380
+[candidate] row 27: 8.8s, k=2048, mean NLL 2.0115
+[candidate] row 28: 8.7s, k=2048, mean NLL 1.3115
+[candidate] row 29: 8.7s, k=2048, mean NLL 1.1766
+[candidate] row 30: 8.6s, k=2048, mean NLL 1.0798
+[candidate] row 31: 8.7s, k=2048, mean NLL 1.1188
+a0-full candidate exit=0
+32
+a0-full symlink exit=0
+### a0-full compare 2026-09-16T21:40:15Z
+/sgl-workspace/sglang/python/sglang/srt/layers/quantization/awq/awq.py:53: UserWarning: Only CUDA, HIP and XPU support AWQ currently.
+  warnings.warn(f"Only CUDA, HIP and XPU support AWQ currently.")
+/sgl-workspace/sglang/python/sglang/srt/layers/quantization/gguf.py:69: UserWarning: Only CUDA, MUSA and NPU support GGUF quantization currently.
+  warnings.warn(f"Only CUDA, MUSA and NPU support GGUF quantization currently.")
+{
+ "status": "complete",
+ "summary": {
+  "positions": 65504,
+  "rows": 32,
+  "expected_positions": 65504,
+  "top1_agreement": 0.7890205178309722,
+  "top1_agree_count": 51684,
+  "kl_lower_bound_mean": 0.3837756141796914,
+  "kl_lower_bound_p50": 0.1044262945652008,
+  "kl_lower_bound_p95": 1.7973448038101196,
+  "kl_lower_bound_p99": 3.848609447479248,
+  "kl_lower_bound_max": 13.73049652179341,
+  "kl_topk_renorm_mean": 0.3841938038562507,
+  "kl_topk_renorm_p50": 0.10395929217338562,
+  "kl_topk_renorm_p95": 1.8009222745895386,
+  "kl_topk_renorm_p99": 3.844650983810425,
+  "kl_topk_renorm_max": 13.740861570589468,
+  "candidate_ppl": 4.286921219375921,
+  "candidate_nll_mean": 1.4555688108143592,
+  "teacher_ppl_recomputed": 3.19953344168712,
+  "teacher_ppl_reference": 3.199529500063886,
+  "coverage": {
+   "teacher_mass_in_known_set_mean": 0.9930268647579606,
+   "teacher_mass_in_known_set_p01": 0.8981054425239563,
+   "teacher_mass_in_known_set_min": 0.01077812642282561,
+   "fraction_teacher_top1_in_candidate_topk": 0.9998778700537372,
+   "fraction_all_teacher_topk_known": 0.47081094284318514,
+   "topk_teacher": 256,
+   "topk_candidate_requested": 2048
+  }
+ },
+ "teacher_reproduction": {
+  "top1_exact_all_rows": true,
+  "max_nll_sum_abs_delta": 0.005112852444881355,
+  "ok": true
+ }
+}
+a0-full compare exit=0
+### a0-full samples 2026-09-16T21:40:31Z
+/sgl-workspace/sglang/python/sglang/srt/layers/quantization/awq/awq.py:53: UserWarning: Only CUDA, HIP and XPU support AWQ currently.
+  warnings.warn(f"Only CUDA, HIP and XPU support AWQ currently.")
+/sgl-workspace/sglang/python/sglang/srt/layers/quantization/gguf.py:69: UserWarning: Only CUDA, MUSA and NPU support GGUF quantization currently.
+  warnings.warn(f"Only CUDA, MUSA and NPU support GGUF quantization currently.")
+[samples] sd-toolcall-weather ...
+[samples] sd-toolcall-weather: PASS {'finish_reason_stop': False, 'finish_reason_in': True, 'tool_calls_count': True, 'function_name': True, 'arguments_json_equals': True} 
+[samples] gn-behavior-chinese ...
+[samples] gn-behavior-chinese: PASS {'finish_reason_stop': True, 'content_equals': True} 
+[samples] rs-6x7-low-text ...
+[samples] rs-6x7-low-text: PASS {'finish_reason_stop': True, 'content_json_equals': True} 
+[samples] rs-6x7-medium-text ...
+[samples] rs-6x7-medium-text: PASS {'finish_reason_stop': True, 'content_json_equals': True} 
+[samples] rs-6x7-high-text ...
+[samples] rs-6x7-high-text: FAIL {'finish_reason_stop': True, 'content_json_equals': False} 
+[samples] rs-6x7-medium-json ...
+[samples] rs-6x7-medium-json: FAIL {} ConnectionResetError(104, 'Connection reset by peer')
+[samples] rs-6x7-high-json ...
+[samples] rs-6x7-high-json: FAIL {} ConnectionResetError(104, 'Connection reset by peer')
+[samples] sd-json300-1024 ...
+[samples] sd-json300-1024: FAIL {} ConnectionResetError(104, 'Connection reset by peer')
+[samples] rl-audit3-4096 ...
+[samples] rl-audit3-4096: FAIL {} ConnectionResetError(104, 'Connection reset by peer')
+[samples] gn-tips240-4096 ...
+[samples] gn-tips240-4096: FAIL {} ConnectionResetError(104, 'Connection reset by peer')
+[samples] sd-json300-4096 ...
+[samples] sd-json300-4096: FAIL {} ConnectionResetError(104, 'Connection reset by peer')
+[samples] gn-tips240-16384 ...
+[samples] gn-tips240-16384: FAIL {} ConnectionResetError(104, 'Connection reset by peer')
+[samples] rl-audit3-65536 ...
+[samples] rl-audit3-65536: FAIL {} ConnectionResetError(104, 'Connection reset by peer')
+[samples] gn-tips240-65536 ...
+[samples] gn-tips240-65536: FAIL {} ConnectionResetError(104, 'Connection reset by peer')
+[samples] sd-json300-131072 ...
+[samples] sd-json300-131072: FAIL {} URLError(ConnectionResetError(104, 'Connection reset by peer'))
+[samples] rl-audit3-131072 ...
+[samples] rl-audit3-131072: FAIL {} ConnectionResetError(104, 'Connection reset by peer')
+[samples] gn-tips240-131072 ...
+[samples] gn-tips240-131072: FAIL {} ConnectionResetError(104, 'Connection reset by peer')
+[samples] sd-json300-200000 ...
+[samples] sd-json300-200000: FAIL {} URLError(ConnectionResetError(104, 'Connection reset by peer'))
+[samples] rl-audit3-262016 ...
+[samples] rl-audit3-262016: FAIL {} ConnectionResetError(104, 'Connection reset by peer')
+[samples] rl-registry4-262016 ...
+[samples] rl-registry4-262016: FAIL {} ConnectionResetError(104, 'Connection reset by peer')
+{
+ "passes": 4,
+ "scored": 20,
+ "of": 20,
+ "score": 0.2,
+ "per_family": {
+  "structured_decode": "1/5",
+  "generation": "1/5",
+  "reasoning": "2/5",
+  "retrieval_long_context": "0/5"
+ },
+ "scoring_rule": {
+  "per_sample": "binary pass/fail per expected_behavior + scorer",
+  "score(point)": "passes / 20",
+  "retention": "score(point) / score(denominator); denominators per CAMPAIGN-12H section 4.4 (A1 vs A0; A2d/A2/controls vs A0, labelled)",
+  "per_family_breakdown": "report passes per family (5 each) alongside the total; families are not weighted",
+  "runtime": "each sample is one isolated C1 request on the digest-pinned image, server idle before/after, cold prefix cache, temperature 0",
+  "output_reserve_note": "output_reserve_tokens are the existing harness context-accounting reserves, unchanged; every expected answer completes with finish_reason=stop well inside them"
+ }
+}
+a0-full samples exit=0
+### a0-full summary 2026-09-16T21:42:46Z
+/sgl-workspace/sglang/python/sglang/srt/layers/quantization/awq/awq.py:53: UserWarning: Only CUDA, HIP and XPU support AWQ currently.
+  warnings.warn(f"Only CUDA, HIP and XPU support AWQ currently.")
+/sgl-workspace/sglang/python/sglang/srt/layers/quantization/gguf.py:69: UserWarning: Only CUDA, MUSA and NPU support GGUF quantization currently.
+  warnings.warn(f"Only CUDA, MUSA and NPU support GGUF quantization currently.")
+{
+ "panel_row": {
+  "top1_agreement": 0.7890205178309722,
+  "mean_kl_lower_bound": 0.3837756141796914,
+  "candidate_ppl": 4.286921219375921
+ },
+ "samples": {
+  "score": 0.2,
+  "passes": 4,
+  "per_family": {
+   "structured_decode": "1/5",
+   "generation": "1/5",
+   "reasoning": "2/5",
+   "retrieval_long_context": "0/5"
+  }
+ }
+}
+a0-full summary exit=0
+### a0-full POINT_DONE 2026-09-16T21:42:52Z
+FULL_PANEL_BOTH_DONE 2026-09-16T21:42:52Z

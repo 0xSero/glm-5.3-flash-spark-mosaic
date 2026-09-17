@@ -1,0 +1,41 @@
+INFO 09-12 01:22:44 [import_utils.py:478] DeepEP v2 requires NCCL >= 2.30.4 but found 2.29.7. deepep_v2 backend will not be available.
+INFO 09-12 01:22:48 [__init__.py:109] Registered model loader `<class 'b12x.integration.vllm.loader.B12xModelLoader'>` with load format `b12x`
+INFO 09-12 01:22:54 [model.py:686] Resolved architecture: Glm5NextForConditionalGeneration
+INFO 09-12 01:22:54 [model.py:2030] Using max model len 4096
+WARNING 09-12 01:22:54 [model.py:988] Model does not support mm_device_do_normalize, forcing mm_device_do_normalize = False.
+INFO 09-12 01:22:54 [scheduler.py:339] Chunked prefill is enabled with max_num_batched_tokens=32.
+INFO 09-12 01:22:54 [vllm.py:835] Auto-enabling VLLM_USE_BREAKABLE_CUDAGRAPH=1. Set VLLM_USE_BREAKABLE_CUDAGRAPH=0 to opt out.
+INFO 09-12 01:22:54 [kernel.py:372] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'])
+INFO 09-12 01:22:54 [compilation.py:329] Enabled custom fusions: norm_quant, act_quant
+INFO 09-12 01:22:54 [parallel_state.py:1647] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/mtp-nvfp4-component-dist backend=gloo
+INFO 09-12 01:22:54 [parallel_state.py:1991] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, EP rank 0, EPLB rank N/A
+INFO 09-12 01:22:55 [nvfp4.py:261] Using 'B12X' NvFp4 MoE backend out of potential backends: ['FLASHINFER_TRTLLM', 'FLASHINFER_CUTEDSL', 'FLASHINFER_CUTLASS', 'VLLM_CUTLASS', 'MARLIN', 'HUMMING', 'EMULATION'].
+INFO 09-12 01:22:57 [nvfp4.py:613] Using MoEPrepareAndFinalizeNoDPEPModular
+[W912 01:22:54.762402416 ProcessGroupGloo.cpp:524] Warning: Unable to resolve hostname to a (local) address. Using the loopback address as fallback. Manually set the network interface to bind to with GLOO_SOCKET_IFNAME. (function operator())
+b12x policy fallback: moe.decode is using a heuristic on nvidia gb10 (compute capability 12.1, 48 SMs) because profile 'nvidia.gb10.48sm' does not cover the query; query={'activation': 'silu', 'hidden_size': 4096, 'intermediate_size': 2048, 'num_experts': 8, 'num_tokens': 1, 'numerical_recipe': 'default', 'quant_mode': 'w4a16', 'routed_rows': 8, 'source_format': 'modelopt_nvfp4', 'top_k': 8}
+/usr/local/lib/python3.12/dist-packages/torch/cuda/graphs.py:169: UserWarning: The CUDA Graph is empty. This usually means that the graph was attempted to be captured on wrong device or stream. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:210.)
+  super().capture_end()
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/proof/gpu_component.py", line 262, in <module>
+[rank0]:     module_output = fn()
+[rank0]:                     ^^^^
+[rank0]:   File "/proof/gpu_component.py", line 257, in <lambda>
+[rank0]:     ('routed_fixed_routes', lambda: method.apply(routed, x, weights_now, ids_now, None, None))]:
+[rank0]:                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/layers/quantization/online/moe_base.py", line 172, in apply
+[rank0]:     return self.moe_kernel.apply(
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/layers/fused_moe/modular_kernel.py", line 1732, in apply
+[rank0]:     return self.impl.apply(
+[rank0]:            ^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/layers/fused_moe/modular_kernel.py", line 1501, in apply
+[rank0]:     fused_out = self._fused_experts(
+[rank0]:                 ^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/layers/fused_moe/modular_kernel.py", line 1349, in _fused_experts
+[rank0]:     self.fused_experts.apply(
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/layers/fused_moe/b12x.py", line 782, in apply
+[rank0]:     topk_ids = _normalize_topk_ids(topk_ids)
+[rank0]:                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/layers/fused_moe/b12x.py", line 135, in _normalize_topk_ids
+[rank0]:     raise RuntimeError(
+[rank0]: RuntimeError: b12x MoE topk_ids normalization would allocate during CUDA capture

@@ -1,0 +1,13 @@
+{
+  "state": "CPU_EXTERNAL_EMBEDDING_CONTRACT_PASS",
+  "installed_model_imported": false,
+  "test_image": "sha256:ddc1b6cf8d89f1f0c0294a9a7a3c86d63cb7ad486d236013d75fb46914e2c576",
+  "cuda_initialized": false,
+  "text_unchanged": true,
+  "oov_placeholders_masked": true,
+  "image_and_video_feature_positions_exact": true,
+  "invalid_inputs_rejected": true,
+  "test_sha256": "54e768d65992646ce9d7e3b00f2b9ddb6ad2cc654fddbebe798317db9abc10a0",
+  "extracted_method_sha256": "cbb90bd574e4ad9bc73d781d0139bb5fc212c0e0663312dda294d4929cdb848d",
+  "limitation": "Pre-build source-method test with real Torch and existing vLLM merge helper. Final overlay reruns against imported Jovian class."
+}

@@ -1,0 +1,25 @@
+{
+  "cid": "fdaebe7d0c0e3e81929eb28f6ed502aac6348868bc7692ebdb968243c434d957",
+  "command": [
+    "docker",
+    "run",
+    "-d",
+    "--name",
+    "glm53-projection14-cpu-build",
+    "--network",
+    "none",
+    "--cpus",
+    "2",
+    "--memory",
+    "8g",
+    "--memory-swap",
+    "8g",
+    "--user",
+    "1000:1000",
+    "-v",
+    "/home/valentine:/home/valentine",
+    "sha256:54acf16064726697ab079dfbd297c1c1c260cb28867f8287f5ae2ec3bbb0a382",
+    "/home/valentine/glm53-single-spark-release-20260911/quality/unpruned-next-candidate/projection14/assemble_projection.py"
+  ],
+  "builder_sha256": "7fdf3e2310ee687934523bb2fe5e8d1efcb56980940a6eb713760b781ea1d4be"
+}

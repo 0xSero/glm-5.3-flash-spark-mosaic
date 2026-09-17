@@ -1,0 +1,22 @@
+=== target 1024: actual_prompt_tokens=1023
+     warmup   38s wall | MATCHED_SUSTAINED  35.35s | TOTAL  19.24 tok/s | native  19.26 tok/s | prefill  333.6 tok/s | ttft    3.13s | out 681 | acc 0.993 | ok True
+  measured1   38s wall | MATCHED_SUSTAINED  35.54s | TOTAL  19.19 tok/s | native  19.21 tok/s | prefill  412.1 tok/s | ttft    2.61s | out 683 | acc 0.991 | ok True
+=== target 4096: actual_prompt_tokens=4095
+     warmup   49s wall | MATCHED_SUSTAINED  38.74s | TOTAL  18.56 tok/s | native  18.57 tok/s | prefill  379.0 tok/s | ttft   10.87s | out 720 | acc 0.952 | ok True
+  measured1   45s wall | MATCHED_SUSTAINED  35.49s | TOTAL  19.22 tok/s | native  19.23 tok/s | prefill  433.6 tok/s | ttft    9.59s | out 683 | acc 0.998 | ok True
+=== target 16384: actual_prompt_tokens=16383
+     warmup   76s wall | MATCHED_SUSTAINED  36.45s | TOTAL  18.93 tok/s | native  18.94 tok/s | prefill  411.9 tok/s | ttft   39.86s | out 691 | acc 0.976 | ok True
+  measured1   73s wall | MATCHED_SUSTAINED  36.41s | TOTAL  18.95 tok/s | native  18.96 tok/s | prefill  444.8 tok/s | ttft   36.99s | out 691 | acc 0.987 | ok True
+=== target 65536: actual_prompt_tokens=65535
+     warmup  185s wall | MATCHED_SUSTAINED  38.37s | TOTAL  18.56 tok/s | native  18.55 tok/s | prefill  446.8 tok/s | ttft  146.90s | out 713 | acc 0.955 | ok True
+  measured1  180s wall | MATCHED_SUSTAINED  36.40s | TOTAL  18.82 tok/s | native  18.81 tok/s | prefill  455.0 tok/s | ttft  144.26s | out 686 | acc 0.978 | ok True
+=== target 131072: actual_prompt_tokens=131071
+     warmup  329s wall | MATCHED_SUSTAINED  37.45s | TOTAL  18.67 tok/s | native  18.65 tok/s | prefill  449.7 tok/s | ttft  291.78s | out 700 | acc 0.971 | ok True
+  measured1  324s wall | MATCHED_SUSTAINED  35.62s | TOTAL  19.00 tok/s | native  18.98 tok/s | prefill  454.7 tok/s | ttft  288.58s | out 678 | acc 1.000 | ok True
+=== target 200000: actual_prompt_tokens=199999
+     warmup  480s wall | MATCHED_SUSTAINED  36.11s | TOTAL  18.86 tok/s | native  18.83 tok/s | prefill  450.7 tok/s | ttft  444.17s | out 682 | acc 0.989 | ok True
+  measured1  478s wall | MATCHED_SUSTAINED  37.06s | TOTAL  18.70 tok/s | native  18.66 tok/s | prefill  453.2 tok/s | ttft  441.83s | out 694 | acc 0.977 | ok True
+=== target 260096: actual_prompt_tokens=260095
+     warmup  612s wall | MATCHED_SUSTAINED  36.00s | TOTAL  18.95 tok/s | native  18.88 tok/s | prefill  452.0 tok/s | ttft  575.97s | out 683 | acc 0.991 | ok True
+  measured1  611s wall | MATCHED_SUSTAINED  36.05s | TOTAL  18.89 tok/s | native  18.81 tok/s | prefill  452.4 tok/s | ttft  575.65s | out 682 | acc 0.991 | ok True
+receipt: /home/valentine/mosaic-gatea/out/mtp-ctx-sweep-full-20260917T160505Z.json

@@ -1,0 +1,13 @@
+test_absent_draft_fails_before_compile (__main__.Lifecycle.test_absent_draft_fails_before_compile) ... ok
+test_draft_failure_propagates_before_completion (__main__.Lifecycle.test_draft_failure_propagates_before_completion) ... ok
+test_missing_provider_fails_before_compile (__main__.Lifecycle.test_missing_provider_fails_before_compile) ... ok
+test_native_draft_precompiled_before_completion (__main__.Lifecycle.test_native_draft_precompiled_before_completion) ... INFO 09-12 09:18:40 [b12x_warmup.py:109] Warmed up 1 b12x target kernel signature(s).
+INFO 09-12 09:18:40 [b12x_warmup.py:109] Warmed up 1 b12x MoE kernel signature(s).
+ok
+test_off_preserves_target_only_and_does_not_touch_draft (__main__.Lifecycle.test_off_preserves_target_only_and_does_not_touch_draft) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.003s
+
+OK
+{"actual_installed_orchestration": true, "cuda_initialized": false, "tests": 5, "success": true, "gpu_execution": false}

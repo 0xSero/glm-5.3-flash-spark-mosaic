@@ -1,0 +1,52 @@
+{
+  "state": "EXPERTWISE_SOURCE_CPU_ONLY_PROJECTION_GPU_MICROPROOF_PASS",
+  "cpu_tests_passed": 11,
+  "gpu_tests_run": true,
+  "runtime_modified": false,
+  "native_experts_retained": 288,
+  "extra_bytes_per_k2_to_k3_expert": 3145728,
+  "files": {
+    "wrapper": {
+      "path": "/Users/sero/sessions/glm53-single-spark-release-20260911/b12x-runtime/exl3-port/exl3.py",
+      "sha256": "2d62a8bd6f0d2e1df7556ce086f8c294d6c20faa4e4af123300aa595e264584d"
+    },
+    "native_dispatch": {
+      "path": "/Users/sero/sessions/glm53-single-spark-release-20260911/b12x-runtime/upstream-exllamav3/exllamav3/exllamav3_ext/quant/exl3_moe.cu",
+      "sha256": "404c1365ba04bff9d55ca1fb03db36e79771ea810b5d992b3182bda20cfb4ffa"
+    },
+    "native_kernel": {
+      "path": "/Users/sero/sessions/glm53-single-spark-release-20260911/b12x-runtime/upstream-exllamav3/exllamav3/exllamav3_ext/quant/exl3_moe_kernel.cuh",
+      "sha256": "06dcb3453d5cdda45b7ab930f862922020ca5af7cf504619600aaffb8ce64e16"
+    },
+    "oracle": {
+      "path": "/Users/sero/sessions/glm53-single-spark-release-20260911/b12x-runtime/expertwise-precision-feasibility/bucket_contract.py",
+      "sha256": "25993cae976e625441fd3afe932e2196054218384e427b2db48bf9e046262055"
+    },
+    "tests": {
+      "path": "/Users/sero/sessions/glm53-single-spark-release-20260911/b12x-runtime/expertwise-precision-feasibility/test_bucket_contract.py",
+      "sha256": "5f997a38c9cef605c24e95935a0c9bf0258fa05b1c43617b3cfb75b16d38f866"
+    },
+    "report": {
+      "path": "/Users/sero/sessions/glm53-single-spark-release-20260911/b12x-runtime/expertwise-precision-feasibility/REPORT.md",
+      "sha256": "b248170d805429e1a265cbd6ce62ad1d8e14d9466bfe41afa0b8ef6da8efd8fe"
+    },
+    "projection_oracle": {
+      "path": "/Users/sero/sessions/glm53-single-spark-release-20260911/b12x-runtime/expertwise-precision-feasibility/projection_contract.py",
+      "sha256": "2794ddbb9d0b92bdd8926e308826d261c31111eafca0c1be5b262d6ab810deab"
+    },
+    "projection_tests": {
+      "path": "/Users/sero/sessions/glm53-single-spark-release-20260911/b12x-runtime/expertwise-precision-feasibility/test_projection_contract.py",
+      "sha256": "4c00522c801671f0f4c1f1f6806a5f1e005131a3938dff6fb7ba765a7ede7289"
+    },
+    "projection_overlay": {
+      "path": "/Users/sero/sessions/glm53-single-spark-release-20260911/b12x-runtime/expertwise-precision-feasibility/projection-gpu/exl3.projection.py",
+      "sha256": "30321f703b39b9391d3b2fb861f84c175be48dafc05f8bd8b32be5be336224f2"
+    },
+    "projection_dispatch_tests": {
+      "path": "/Users/sero/sessions/glm53-single-spark-release-20260911/b12x-runtime/expertwise-precision-feasibility/test_projection_overlay.py",
+      "sha256": "8ff8b69138d3578509649f0c1d179c401a1f97e91c3439d3119afd6cd3dfb8fd"
+    }
+  },
+  "expertwise_two_bank_gpu_test_run": false,
+  "projection_gpu_receipt": "projection-gpu/PROJECTION_GPU_VALIDATION.json"
+}

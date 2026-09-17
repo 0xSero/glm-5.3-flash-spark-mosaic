@@ -1,0 +1,15 @@
+{
+ "plan_sha256": "37fa10fdee35c0747f954f1f2a818028e621d62acfe40851a71aa59085ede9bc",
+ "frozen_utc": "2026-09-14T09:31:41Z",
+ "summary": {
+  "min_keep": 216,
+  "max_keep": 216,
+  "route_mass_retained_diag": 0.729598864462031,
+  "mean_overlap_with_r216": 149.5952380952381,
+  "mean_overlap_with_s216": 149.33333333333334,
+  "mean_overlap_with_u216": 180.5952380952381,
+  "mean_overlap_with_t216": 149.02380952380952,
+  "min_expert_frequency_sealed": 49419
+ },
+ "score_threshold_first_layer": 1.8101690763603153
+}

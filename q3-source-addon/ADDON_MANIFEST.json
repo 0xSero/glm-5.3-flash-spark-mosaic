@@ -1,0 +1,93 @@
+{
+  "schema": "glm53-pinned-q3-runtime-addon-v1",
+  "state": "HUB_HASH_VERIFIED",
+  "repo": "0xSero/GLM-5.3-Flash-EXL3-3.0bpw",
+  "revision": "2a30ad09c15f779a44fa62c216f5dbe5fb0c9223",
+  "hub_inventory_sha256": "9d840d91641beec114c69b27e5eba118483a1d0092400b4f1559e178b1834823",
+  "files": [
+    {
+      "path": "provenance/LICENSE",
+      "source_file": "LICENSE",
+      "bytes": 1070,
+      "sha256": "30b85b6b9659f2e78aa259f8faf5d920a68dee7c9ced3fa6dba1f19f2bc4fca1",
+      "hub_blob_id": "986b06fb2916b3518b82c7dcc0870723b91f2f92",
+      "hub_lfs_sha256": null
+    },
+    {
+      "path": "provenance/PROVENANCE.md",
+      "source_file": "PROVENANCE.md",
+      "bytes": 700,
+      "sha256": "af5ba4ebd16f36e3604fcbac99c5bce0408dea2fd63a6765d378d6ba172b7ce9",
+      "hub_blob_id": "bb2ec2ca42c35ab0cc2bbbd929ccf863a123d7a7",
+      "hub_lfs_sha256": null
+    },
+    {
+      "path": "provenance/THIRD_PARTY_NOTICES.md",
+      "source_file": "THIRD_PARTY_NOTICES.md",
+      "bytes": 764,
+      "sha256": "fa7039d2d8f7273712fbcb703be1df218c834fa3db1d744b56748b26238d0ca7",
+      "hub_blob_id": "795797ec037af6f46b8657e6bcbab4084ff6c411",
+      "hub_lfs_sha256": null
+    },
+    {
+      "path": "payload/chat_template.jinja",
+      "source_file": "chat_template.jinja",
+      "bytes": 10644,
+      "sha256": "34d5ee66b12fa6446cdae131c352b8f68cd85369e0e6fda115583805fada3891",
+      "hub_blob_id": "fb94d40d72a2eefa0c7140cb66d941656be16969",
+      "hub_lfs_sha256": null
+    },
+    {
+      "path": "reference/source-config.json",
+      "source_file": "config.json",
+      "bytes": 6735,
+      "sha256": "0f97529bf936f823b84dc77ac0e09190e9439094e29dc8895547df8e17e4a24e",
+      "hub_blob_id": "6828d83bca4af54685bcee7af918fb99e19108fd",
+      "hub_lfs_sha256": null
+    },
+    {
+      "path": "payload/generation_config.json",
+      "source_file": "generation_config.json",
+      "bytes": 194,
+      "sha256": "230c30609ecbbb9e6583bedde8e7bdda0c6eb8fe5fad0eaeb3d1b293d751cb4f",
+      "hub_blob_id": "637ee6afa5c6ebfba4eb24bd5b9df68550143597",
+      "hub_lfs_sha256": null
+    },
+    {
+      "path": "payload/processor_config.json",
+      "source_file": "processor_config.json",
+      "bytes": 909,
+      "sha256": "aae38374c94b08cc9b0547c6e64f05b951bd9735cea571c6988f5ed552bed3ed",
+      "hub_blob_id": "3ec2a058b2cdec556eca0f621e8c5164eec213c2",
+      "hub_lfs_sha256": null
+    },
+    {
+      "path": "payload/tokenizer.json",
+      "source_file": "tokenizer.json",
+      "bytes": 20217442,
+      "sha256": "19e773648cb4e65de8660ea6365e10acca112d42a854923df93db4a6f333a82d",
+      "hub_blob_id": "aba40197a4cdb5607f4ab7a05fb0a4ee8054fd6d",
+      "hub_lfs_sha256": "19e773648cb4e65de8660ea6365e10acca112d42a854923df93db4a6f333a82d"
+    },
+    {
+      "path": "payload/tokenizer_config.json",
+      "source_file": "tokenizer_config.json",
+      "bytes": 761,
+      "sha256": "98b1271574f41abf89427ae2dda030d94dc9478f0edc5a8bd240db213c6fd5fc",
+      "hub_blob_id": "e375fa0a4e16660ce0e2026e39374d35dad4c079",
+      "hub_lfs_sha256": null
+    }
+  ],
+  "runtime_payload_files": [
+    "chat_template.jinja",
+    "generation_config.json",
+    "processor_config.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "trusted_remote_code_required": false,
+  "tokenizer_class": "TokenizersBackend",
+  "processor_class": "Glm5NextProcessor",
+  "core_metadata_policy": "No sealed model config/index/manifest changes. payload/ is the auxiliary serving addon; reference/ and provenance/ are separate evidence.",
+  "other_hub_files": "Complete Hub listing retained; weights, old layer sidecars, calibration/evaluation evidence and standalone old runtime helper are not tokenizer/processor dependencies."
+}

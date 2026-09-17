@@ -1,0 +1,126 @@
+--- a/models/glm5next/nvidia/mtp.py
++++ b/models/glm5next/nvidia/mtp.py
+@@ -333,6 +333,28 @@
+             # prefix to match.
+             if name.startswith("model.language_model."):
+                 name = name.replace("model.language_model.", "model.", 1)
++            # Native BF16 companion views retain the target embedding/head.
++            # Load these real tensors before the default loader's strict
++            # completeness check; the proposer subsequently shares target
++            # parameters and releases these temporary draft copies.
++            shared_names = []
++            if name == "model.embed_tokens.weight":
++                shared_names = ["model.embed_tokens.weight"]
++            elif name == "lm_head.weight":
++                shared_names = [
++                    f"model.layers.{idx}.shared_head.head.weight"
++                    for idx in range(
++                        self.model.mtp_start_layer_idx,
++                        self.model.mtp_start_layer_idx + self.model.num_mtp_layers,
++                    )
++                ]
++            if shared_names:
++                for destination in shared_names:
++                    param = params_dict[destination]
++                    loader = getattr(param, "weight_loader", default_weight_loader)
++                    loader(param, loaded_weight)
++                    loaded_params.add(destination)
++                continue
+             spec_layer = get_spec_layer_idx_from_weight_name(self.config, name)
+             if spec_layer is None:
+                 continue
+--- a/v1/spec_decode/llm_base_proposer.py
++++ b/v1/spec_decode/llm_base_proposer.py
+@@ -1318,6 +1318,23 @@
+                 ),
+             )
+ 
++        # GLM MTP constructors read both model_config and quant_config from
++        # VllmConfig. Keep them bound to the draft rather than the EXL3 target.
++        # This is the same contract used by the native Step3.5 MTP proposer.
++        if "Glm5NextMTPModel" in (
++            self.draft_model_config.hf_config.architectures or []
++        ):
++            from vllm.model_executor.models.utils import get_draft_quant_config
++
++            base = replace(
++                base,
++                model_config=self.draft_model_config,
++                quant_config=get_draft_quant_config(base),
++            )
++            from vllm.model_executor.layers.quantization.glm_mtp_expert_fp8 import (
++                maybe_enable_mtp_expert_fp8,
++            )
++            base = maybe_enable_mtp_expert_fp8(base)
+         return base
+ 
+     def _get_model(self) -> nn.Module:
+@@ -1376,6 +1393,7 @@
+                 "Cohere2VisionForConditionalGeneration",
+                 "Exaone4_5_ForConditionalGeneration",
+                 "GlmOcrForConditionalGeneration",
++                "Glm5NextForConditionalGeneration",
+                 "HunYuanVLForConditionalGeneration",
+                 "InternS2PreviewForConditionalGeneration",
+                 "MiMoV2OmniForCausalLM",
+--- a/v1/worker/gpu/spec_decode/eagle/utils.py
++++ b/v1/worker/gpu/spec_decode/eagle/utils.py
+@@ -39,6 +39,20 @@
+     speculative_config = vllm_config.speculative_config
+     assert speculative_config is not None
+     draft_model_config = speculative_config.draft_model_config
++    # GLM MTP constructors read model/quantization from VllmConfig itself.
++    # An explicit native draft must not inherit target EXL3 or REAP geometry.
++    if "Glm5NextMTPModel" in (draft_model_config.hf_config.architectures or []):
++        from vllm.model_executor.models.utils import get_draft_quant_config
++
++        vllm_config = replace(
++            vllm_config,
++            model_config=draft_model_config,
++            quant_config=get_draft_quant_config(vllm_config),
++        )
++        from vllm.model_executor.layers.quantization.glm_mtp_expert_fp8 import (
++            maybe_enable_mtp_expert_fp8,
++        )
++        vllm_config = maybe_enable_mtp_expert_fp8(vllm_config)
+     if speculative_config.kv_cache_dtype is not None:
+         vllm_config = replace(
+             vllm_config,
+--- /dev/null
++++ b/model_executor/layers/quantization/glm_mtp_expert_fp8.py
+@@ -0,0 +1,35 @@
++"""Probe-only online FP8 for native MTP routed experts; other weights stay native."""
++from vllm.model_executor.layers.quantization.fp8 import Fp8Config
++from vllm.model_executor.layers.fused_moe import RoutedExperts
++from vllm.model_executor.layers.linear import LinearBase, UnquantizedLinearMethod
++from vllm.model_executor.layers.quantization.online.fp8 import Fp8PerTensorOnlineMoEMethod
++
++class MTPExpertOnlyFp8Config(Fp8Config):
++    def __init__(self):
++        super().__init__(is_checkpoint_fp8_serialized=False, activation_scheme='dynamic')
++        self.selected_prefixes = []
++
++    def get_quant_method(self, layer, prefix):
++        if isinstance(layer, RoutedExperts):
++            allowed = 'model.layers.45.mlp.experts'
++            if prefix != allowed:
++                raise ValueError(f'Unexpected routed expert module: {prefix}')
++            self.selected_prefixes.append(prefix)
++            return Fp8PerTensorOnlineMoEMethod(layer=layer)
++        if isinstance(layer, LinearBase):
++            return UnquantizedLinearMethod()
++        return None
++
++
++def maybe_enable_mtp_expert_fp8(config):
++    """Opt in only on an explicitly native, 288-expert GLM MTP draft config."""
++    import os
++    from vllm.config import replace
++    if os.environ.get('GLM53_MTP_EXPERT_FP8', '0') != '1':
++        return config
++    if config.quant_config is not None:
++        raise ValueError('MTP expert FP8 requires a native source draft')
++    hf = config.model_config.hf_config
++    if 'Glm5NextMTPModel' not in (hf.architectures or []) or hf.n_routed_experts != 288:
++        raise ValueError('MTP expert FP8 only supports the original 288-expert GLM draft')
++    return replace(config, quant_config=MTPExpertOnlyFp8Config())

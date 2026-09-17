@@ -1,0 +1,31 @@
+{
+  "state": "TWO_MOE_GPU_SMOKE_PASS_NOT_FULL_MODEL_QUALITY",
+  "recorded_utc": "2026-09-11T22:54:55.000348+00:00",
+  "image_id": "sha256:afb74c791853d438810b27bf28994128f5baa2a3bf5c9b50b9ecdad7b9afffd5",
+  "container_id": "8afef903f13f4acc79376b61bb60ad48b17b101f62de9c27700335547c840162",
+  "cpu_tests": 9,
+  "global_native_experts": 288,
+  "per_layer_counts": {
+    "5": 8,
+    "32": 16
+  },
+  "peak_cuda_allocated_bytes": 471135744,
+  "elapsed_probe_seconds": 11.800078573985957,
+  "alternating_graph_replays": 6,
+  "rollback_container_id": "b891b40c9acc802db806a1266b91dd204084272ebf51385d0fdd1fad7ec3a971",
+  "rollback_config_key_equality_checked": true,
+  "rollback_command": "docker start glm53-legacy-k2-fp8mtp-rollback-20260911",
+  "gpu_idle_after": true,
+  "sha256": {
+    "README.md": "c23ebfa59e69696fe454daa97ff0ad0e1768476fc3b8f2e68b60926ca24dbbd4",
+    "source-contract.json": "b355eec99ae9062fd50832c413c90056e28b7ed49466d81bc513d224c5e7b443",
+    "layerwise_counts.py": "b97ae29c4ad9dd7041095e77ef479cb9cce90100d64d0d939625fb043307f960",
+    "apply_patch.py": "a234494c7371256e1ed297a2a3f613b676a4f108610340f0b481414fdcc03e42",
+    "gpu_smoke.py": "396cf1a8d1c21ba5e6c306757ff7e97c9eaad14ddc5182aa3804edc70e77b288",
+    "gpu-evidence/receipts/attempt2-inspect.json": "aebb4d93c433611461be2198add0912c2f3f48dc6676957f1b386227dc1f4401",
+    "gpu-evidence/receipts/b12x-image-inspect.json": "4a48c384f49a13691785e2483e2417bdf1e449ac793ea63901e8e958b5997b98",
+    "gpu-evidence/glm53-nonuniform-moe-smoke-attempt2/gpu-smoke.json": "50faa3ea10ba351d256cfcd5c47eef8319238f083c2ce17bf9686dc798ca7827",
+    "gpu-evidence/attempt2.log": "d75251f8331e5f17c5b8bb46552f55583bd49a94d30ada24eca3fbc3389c4f1a",
+    "gpu-evidence/receipts/rollback-inspect.json": "5ef7ee61ced27ed33e0b1f1e795be3bc0c94bc60da08e093fe84eef260233e7f"
+  }
+}

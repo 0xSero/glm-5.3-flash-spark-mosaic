@@ -1,0 +1,18 @@
+{
+  "schema": "glm53-jovian-exl3-port-v1",
+  "upstream_revision": "3aada67721bfdb8b98355207ca3780bb32e6f434",
+  "original_wrapper_sha256": "41fc9bb42f3a555dbcef05b8b6c4fb1fa63dfe80e844f66078d160d4f3235db9",
+  "ported_wrapper_sha256": "2d62a8bd6f0d2e1df7556ce086f8c294d6c20faa4e4af123300aa595e264584d",
+  "exllamav3_revision": "c5d9c657966ffeeaa9353f0cc899f18629da4a13",
+  "source_sha256": {
+    "vllm/model_executor/layers/quantization/__init__.py": "a56aa77d7c0d0750178ef1d4ba131683e2b95037e00b6695dc173f43af4d4720",
+    "vllm/model_executor/layers/fused_moe/fused_moe_method_base.py": "18dcfc469d3252749801bbf943857f58da85de1f2db8fdff5a9f4986a925dc68",
+    "vllm/model_executor/layers/fused_moe/routed_experts.py": "592d40bf44dd5e81caef80d21bb3416c8d093c639352466fa36ad9de2d96e018",
+    "vllm/model_executor/layers/fused_moe/layer.py": "2034e7531596dc599184dd32832a9e3009d758fbe5463aa39efbc5f0b43fb904",
+    "vllm/model_executor/weight_transfer.py": "29530c0b60f5872347716c460f3e9350826b6a30533c47a44510270c952958a1",
+    "vllm/models/glm5next/nvidia/model.py": "5c86beadb1d14b648fb6244160997afba9b8d9da031fc0f232b32d5760ecbbbf",
+    "vllm/config/model.py": "1d1429b0536a9ea30d369d1e8f8384732abb18bfad9fd2cde40eeec0eca1ca20"
+  },
+  "runtime_verified": false,
+  "ported_model_config_sha256": "da9557e1e46bcf51334757cab5e176cd2d5e2095ef3a601853fafb470f5f4265"
+}

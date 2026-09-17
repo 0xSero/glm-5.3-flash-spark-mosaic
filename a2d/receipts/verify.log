@@ -1,0 +1,35 @@
+  model-00001-of-00015.safetensors: 7802 tensors ok, 0 problems [81s]
+  model-00002-of-00015.safetensors: 8727 tensors ok, 0 problems [81s]
+  model-00003-of-00015.safetensors: 8637 tensors ok, 0 problems [81s]
+  model-00004-of-00015.safetensors: 8547 tensors ok, 0 problems [81s]
+  model-00005-of-00015.safetensors: 8607 tensors ok, 0 problems [81s]
+  model-00006-of-00015.safetensors: 7599 tensors ok, 0 problems [81s]
+  model-00007-of-00015.safetensors: 8529 tensors ok, 0 problems [81s]
+  model-00008-of-00015.safetensors: 7659 tensors ok, 0 problems [81s]
+  model-00009-of-00015.safetensors: 7491 tensors ok, 0 problems [81s]
+  model-00010-of-00015.safetensors: 7623 tensors ok, 0 problems [81s]
+  model-00011-of-00015.safetensors: 7346 tensors ok, 0 problems [81s]
+  model-00012-of-00015.safetensors: 7198 tensors ok, 0 problems [81s]
+  model-00013-of-00015.safetensors: 7288 tensors ok, 0 problems [81s]
+  model-00014-of-00015.safetensors: 6642 tensors ok, 0 problems [81s]
+  model-00015-of-00015.safetensors: 2137 tensors ok, 0 problems [81s]
+{
+ "schema": "dynamic-container-g2-v1",
+ "point_id": "A2d",
+ "plan_sha256": "6654d8d3b5f51eb672a92c13da54f0207ab68923b19013e7c939049d6e7c5519",
+ "pass": true,
+ "expert_bytes_from_headers": 9474060,
+ "router_row_bytes_from_headers": 8196,
+ "expected_index_total_size": 96561342552,
+ "extra_index_files": [
+  "kpool_aux.safetensors",
+  "mtp.safetensors"
+ ],
+ "extra_index_tensor_bytes": 2873724964,
+ "index_total_size": 96561342552,
+ "tensors_verified": 111832,
+ "bytes_verified": 93687617588,
+ "problems": [],
+ "elapsed_s": 86.9,
+ "finished_utc": "2026-09-13T16:01:27Z"
+}

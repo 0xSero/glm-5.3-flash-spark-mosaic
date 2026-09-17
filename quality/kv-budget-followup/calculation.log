@@ -1,0 +1,37 @@
+[
+  {
+    "down_k3_layers": 14,
+    "extra_target_GiB": 3.9375,
+    "net_extra_after_measured_draft_saving_GiB": 0.9843831062316895,
+    "hypothetical_remaining_KV_allowance_GiB": 5.335616893768311,
+    "linear_capacity_estimate_NOT_ADMITTED": 636275
+  },
+  {
+    "down_k3_layers": 18,
+    "extra_target_GiB": 5.0625,
+    "net_extra_after_measured_draft_saving_GiB": 2.1093831062316895,
+    "hypothetical_remaining_KV_allowance_GiB": 4.210616893768311,
+    "linear_capacity_estimate_NOT_ADMITTED": 502118
+  },
+  {
+    "down_k3_layers": 20,
+    "extra_target_GiB": 5.625,
+    "net_extra_after_measured_draft_saving_GiB": 2.6718831062316895,
+    "hypothetical_remaining_KV_allowance_GiB": 3.648116893768311,
+    "linear_capacity_estimate_NOT_ADMITTED": 435040
+  },
+  {
+    "down_k3_layers": 22,
+    "extra_target_GiB": 6.1875,
+    "net_extra_after_measured_draft_saving_GiB": 3.2343831062316895,
+    "hypothetical_remaining_KV_allowance_GiB": 3.085616893768311,
+    "linear_capacity_estimate_NOT_ADMITTED": 367961
+  },
+  {
+    "down_k3_layers": 24,
+    "extra_target_GiB": 6.75,
+    "net_extra_after_measured_draft_saving_GiB": 3.7968831062316895,
+    "hypothetical_remaining_KV_allowance_GiB": 2.523116893768311,
+    "linear_capacity_estimate_NOT_ADMITTED": 300883
+  }
+]

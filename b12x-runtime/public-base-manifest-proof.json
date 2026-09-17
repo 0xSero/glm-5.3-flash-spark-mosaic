@@ -1,0 +1,12 @@
+{
+  "anonymous_pull_manifest": true,
+  "digest": "sha256:5ea6d04d65d1a2f30f632815776fb765359529ab117818ba2b5e5c5480e34963",
+  "config": {
+    "mediaType": "application/vnd.docker.container.image.v1+json",
+    "size": 58199,
+    "digest": "sha256:4cc287d0555c9425ab2e483441ebbb2bb6efe984415230e06c5fd97d004d5bf7"
+  },
+  "layers": 59,
+  "architecture": "arm64",
+  "os": "linux"
+}

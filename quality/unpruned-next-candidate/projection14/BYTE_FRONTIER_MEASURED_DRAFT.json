@@ -1,0 +1,74 @@
+{
+  "state": "EXACT_ARTIFACT_FRONTIER_WITH_MEASURED_DRAFT_LOAD_SAVING_SERVING_RESERVES_PENDING",
+  "minimum_context_tokens": 262144,
+  "native_protected_tensor_bytes": 33835039608,
+  "rows": [
+    {
+      "k3_down_layers": 6,
+      "extra_target_bytes": 1811939328,
+      "total_native_source_tensor_bytes": 113086732152,
+      "runtime_admission": null,
+      "net_delta_after_measured_draft_load_saving": -1358945792
+    },
+    {
+      "k3_down_layers": 12,
+      "extra_target_bytes": 3623878656,
+      "total_native_source_tensor_bytes": 114898671480,
+      "runtime_admission": null,
+      "net_delta_after_measured_draft_load_saving": 452993536
+    },
+    {
+      "k3_down_layers": 14,
+      "extra_target_bytes": 4227858432,
+      "total_native_source_tensor_bytes": 115502651256,
+      "runtime_admission": null,
+      "net_delta_after_measured_draft_load_saving": 1056973312
+    },
+    {
+      "k3_down_layers": 16,
+      "extra_target_bytes": 4831838208,
+      "total_native_source_tensor_bytes": 116106631032,
+      "runtime_admission": null,
+      "net_delta_after_measured_draft_load_saving": 1660953088
+    },
+    {
+      "k3_down_layers": 18,
+      "extra_target_bytes": 5435817984,
+      "total_native_source_tensor_bytes": 116710610808,
+      "runtime_admission": null,
+      "net_delta_after_measured_draft_load_saving": 2264932864
+    },
+    {
+      "k3_down_layers": 20,
+      "extra_target_bytes": 6039797760,
+      "total_native_source_tensor_bytes": 117314590584,
+      "runtime_admission": null,
+      "net_delta_after_measured_draft_load_saving": 2868912640
+    },
+    {
+      "k3_down_layers": 22,
+      "extra_target_bytes": 6643777536,
+      "total_native_source_tensor_bytes": 117918570360,
+      "runtime_admission": null,
+      "net_delta_after_measured_draft_load_saving": 3472892416
+    },
+    {
+      "k3_down_layers": 24,
+      "extra_target_bytes": 7247757312,
+      "total_native_source_tensor_bytes": 118522550136,
+      "runtime_admission": null,
+      "net_delta_after_measured_draft_load_saving": 4076872192
+    },
+    {
+      "k3_down_layers": 42,
+      "extra_target_bytes": 12683575296,
+      "total_native_source_tensor_bytes": 123958368120,
+      "runtime_admission": null,
+      "net_delta_after_measured_draft_load_saving": 9512690176
+    }
+  ],
+  "admission_rule": "Use actual post-graph full-draft memory and successfully exercised262144-token KV, measured prefill/vision peak, OSreserve. Onlyremainingmeasuredbudgetmayfundtargetdelta; baseline excessKV is not credited. Do not infer admission fromthisartifacttable.",
+  "measured_full_draft_resident_saving_bytes": 3170885120,
+  "full_draft_receipt_sha256": "9b3ef0653bd4265a11154f62989f2f7372486ac82ff3ed7d5dab9617688360f7",
+  "scope": "Matched draft-only loads, no target or KV; postgraph262144target/vision/activation/OSreserve still requires actual full serving."
+}

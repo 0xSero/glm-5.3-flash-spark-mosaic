@@ -1,0 +1,16 @@
+{
+  "state": "FULL_PAYLOAD_HASH_PASS",
+  "candidate_manifest_sha256": "7c7a2e47c7cde8996ac54c6f2ca5c3f7532b682d5d7296408c97a14e8950f73c",
+  "weight_files": 133,
+  "file_bytes": 102727970296,
+  "tensor_bytes": 102659360376,
+  "snapshot_sha256": {
+    "evaluate_pruned_quality.py": "066760759ed8596ab330a261a30c994c9f4f0a8976af970ed2cb8a29522325db",
+    "deps/evaluate_low_bpw_quality.py": "0c02949a77d28fe7c45786e964a1241cbba8d33b076335ca6a08a4fcac28729a",
+    "deps/glm53_exl3_tp4.py": "488b6f93183dde8c5c5a8248b46ccf22875e8619ddc0a3aa48115da34578a1a7",
+    "deps/release_route_capture_v2.py": "3c5f5558d2a248fd375944067f992619a43fb3ed982b6eb6b30570b7ac1b15b8"
+  },
+  "candidate_index_sha256": "beaf9155ced353dacc1ee5754bec879aca1b243187c153977c32f55f167ee3a5",
+  "candidate_config_sha256": "6ec0adf79d2c0a554d1ed788f4d60f0e940f73a15651c568e3569dea76a09296",
+  "gpu_used": false
+}

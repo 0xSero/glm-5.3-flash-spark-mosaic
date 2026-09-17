@@ -1,0 +1,24 @@
+{"prompt_idx": 1, "completion_tokens": 2048, "finish": "length", "reasoning_chars": 8028, "content_chars": 0}
+{"prompt_idx": 2, "completion_tokens": 2048, "finish": "length", "reasoning_chars": 8750, "content_chars": 0}
+{"batch": "gen2-000", "dump": "expert_distribution_recorder_1789349748.2245355.pt", "seconds": 402.7, "kind": "generate", "completion_tokens": 4096, "prompt_tokens": 79, "outputs": [{"prompt_idx": 1, "completion_tokens": 2048, "finish": "length", "reasoning_chars": 8028, "content_chars": 0}, {"prompt_idx": 2, "completion_tokens": 2048, "finish": "length", "reasoning_chars": 8750, "content_chars": 0}]}
+{"prompt_idx": 3, "completion_tokens": 2048, "finish": "length", "reasoning_chars": 6625, "content_chars": 0}
+{"prompt_idx": 4, "completion_tokens": 787, "finish": "stop", "reasoning_chars": 1738, "content_chars": 834}
+{"batch": "gen2-001", "dump": "expert_distribution_recorder_1789350026.9774568.pt", "seconds": 278.2, "kind": "generate", "completion_tokens": 2835, "prompt_tokens": 85, "outputs": [{"prompt_idx": 3, "completion_tokens": 2048, "finish": "length", "reasoning_chars": 6625, "content_chars": 0}, {"prompt_idx": 4, "completion_tokens": 787, "finish": "stop", "reasoning_chars": 1738, "content_chars": 834}]}
+{"prompt_idx": 5, "completion_tokens": 2048, "finish": "length", "reasoning_chars": 8997, "content_chars": 0}
+{"prompt_idx": 6, "completion_tokens": 1294, "finish": "stop", "reasoning_chars": 2018, "content_chars": 1070}
+{"batch": "gen2-002", "dump": "expert_distribution_recorder_1789350354.2373424.pt", "seconds": 327.3, "kind": "generate", "completion_tokens": 3342, "prompt_tokens": 69, "outputs": [{"prompt_idx": 5, "completion_tokens": 2048, "finish": "length", "reasoning_chars": 8997, "content_chars": 0}, {"prompt_idx": 6, "completion_tokens": 1294, "finish": "stop", "reasoning_chars": 2018, "content_chars": 1070}]}
+{"prompt_idx": 7, "completion_tokens": 2048, "finish": "length", "reasoning_chars": 7295, "content_chars": 1681}
+{"prompt_idx": 8, "completion_tokens": 2048, "finish": "length", "reasoning_chars": 7456, "content_chars": 0}
+{"batch": "gen2-003", "dump": "expert_distribution_recorder_1789350754.5049214.pt", "seconds": 400.9, "kind": "generate", "completion_tokens": 4096, "prompt_tokens": 76, "outputs": [{"prompt_idx": 7, "completion_tokens": 2048, "finish": "length", "reasoning_chars": 7295, "content_chars": 1681}, {"prompt_idx": 8, "completion_tokens": 2048, "finish": "length", "reasoning_chars": 7456, "content_chars": 0}]}
+{"prompt_idx": 9, "completion_tokens": 1023, "finish": "stop", "reasoning_chars": 2517, "content_chars": 1815}
+{"prompt_idx": 10, "completion_tokens": 2048, "finish": "length", "reasoning_chars": 7640, "content_chars": 0}
+{"batch": "gen2-004", "dump": "expert_distribution_recorder_1789351056.126369.pt", "seconds": 301.1, "kind": "generate", "completion_tokens": 3071, "prompt_tokens": 118, "outputs": [{"prompt_idx": 9, "completion_tokens": 1023, "finish": "stop", "reasoning_chars": 2517, "content_chars": 1815}, {"prompt_idx": 10, "completion_tokens": 2048, "finish": "length", "reasoning_chars": 7640, "content_chars": 0}]}
+{"prompt_idx": 11, "completion_tokens": 2037, "finish": "stop", "reasoning_chars": 7549, "content_chars": 2109}
+{"prompt_idx": 12, "completion_tokens": 2048, "finish": "length", "reasoning_chars": 9725, "content_chars": 0}
+{"batch": "gen2-005", "dump": "expert_distribution_recorder_1789351455.1644733.pt", "seconds": 399.5, "kind": "generate", "completion_tokens": 4085, "prompt_tokens": 78, "outputs": [{"prompt_idx": 11, "completion_tokens": 2037, "finish": "stop", "reasoning_chars": 7549, "content_chars": 2109}, {"prompt_idx": 12, "completion_tokens": 2048, "finish": "length", "reasoning_chars": 9725, "content_chars": 0}]}
+{"prompt_idx": 13, "completion_tokens": 939, "finish": "stop", "reasoning_chars": 2104, "content_chars": 1614}
+{"prompt_idx": 14, "completion_tokens": 2048, "finish": "length", "reasoning_chars": 8996, "content_chars": 0}
+{"batch": "gen2-006", "dump": "expert_distribution_recorder_1789351748.5189395.pt", "seconds": 292.8, "kind": "generate", "completion_tokens": 2987, "prompt_tokens": 81, "outputs": [{"prompt_idx": 13, "completion_tokens": 939, "finish": "stop", "reasoning_chars": 2104, "content_chars": 1614}, {"prompt_idx": 14, "completion_tokens": 2048, "finish": "length", "reasoning_chars": 8996, "content_chars": 0}]}
+{"prompt_idx": 15, "completion_tokens": 2048, "finish": "length", "reasoning_chars": 6690, "content_chars": 0}
+{"batch": "gen2-007", "dump": "expert_distribution_recorder_1789351949.8996615.pt", "seconds": 200.9, "kind": "generate", "completion_tokens": 2048, "prompt_tokens": 29, "outputs": [{"prompt_idx": 15, "completion_tokens": 2048, "finish": "length", "reasoning_chars": 6690, "content_chars": 0}]}
+CAPTURE_DONE {"total_prompt_tokens": 615, "total_completion_tokens": 26560}

@@ -1,0 +1,17 @@
+{
+  "state": "CPU_STUDY_READY_NO_NEW_GPU_JOB",
+  "tests_passed": 4,
+  "plan_validation_sha256": "f0720bfa3ee2b77a849b163385a8ca183a5dfba39afdeab3fa11797ef21e2c67",
+  "protocol_sha256": "e22841ff642861963962f31f33e6e491bba54c0407cd5fb8ad8ebf3922801878",
+  "runtime_contract_keys": [
+    "n_routed_experts",
+    "routed_experts_per_layer",
+    "retained_expert_ids_by_layer"
+  ],
+  "candidate_files": {
+    "uniform272.json": "41304ac7c8bf0d8531ab6f9b209cd2b8794de96b2fa2ea07b662207058e31c5b",
+    "layer-summary.csv": "e323996bc92c4cf2889b82cfdbd28345bae46c87d90f56196587bb8f8c093f3d",
+    "nonuniform272budget.json": "417e147fe7d630eee5cfaa92cca7f8cd4b5e5529b9fa1f805abeb08fdc807fbc",
+    "allocation-ledger.json": "43c0e67d27645f459a4767ae27cbe83973f4cfc779152f31772da9be1cd74f08"
+  }
+}

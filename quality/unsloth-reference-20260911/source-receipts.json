@@ -1,0 +1,11 @@
+{
+  "checked_date": "2026-09-11",
+  "hf_revision": "621d456e93e926e4b52f85cff5f634358c1828f9",
+  "hf_info_sha256": "b510702b7d90cdecc26194e5e8a9af575b5eff23c320cb9ec78a142e61ed187b",
+  "primary_sources": [
+    "https://unsloth.ai/docs/models/glm-5.3-flash",
+    "https://unsloth.ai/docs/basics/dynamic-3.0-ggufs",
+    "https://github.com/ggml-org/llama.cpp/pull/27754"
+  ],
+  "retrieval_note": "Official pages read using web tool; direct Markdown archive attempt returned403. HF metadata archived successfully. No benchmark reproduction claimed."
+}

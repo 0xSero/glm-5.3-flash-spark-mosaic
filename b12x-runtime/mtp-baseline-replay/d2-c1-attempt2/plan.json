@@ -1,0 +1,48 @@
+{
+  "chunk": 2048,
+  "compilation_config": {
+    "cudagraph_capture_sizes": [
+      1,
+      3
+    ],
+    "cudagraph_mode": "FULL_DECODE_ONLY",
+    "custom_ops": [
+      "all"
+    ],
+    "max_cudagraph_capture_size": 3
+  },
+  "container_name": "glm53-depth-d2-c1-attempt2",
+  "context_limit": 262144,
+  "depth": 2,
+  "image_id": "sha256:afb74c791853d438810b27bf28994128f5baa2a3bf5c9b50b9ecdad7b9afffd5",
+  "launcher_sha256": "c89d7c374355b9cd8611193968309259f4ee4a146a4a2ece3e654541ed344127",
+  "memory_fraction": 0.93,
+  "metadata_sha256": {
+    "/home/sero/work/glm53-single-spark-release-20260911/b12x-runtime/native-mtp-view/config.json": "1d61c7f6d1dc4ea10e3d63d363f95ed53246a05414e018830135d84580cdbe88",
+    "/home/sero/work/glm53-single-spark-release-20260911/b12x-runtime/native-mtp-view/model.safetensors.index.json": "3b83745278ec1f43d45f4c53e141a18bce30e3ece70d969a76088b2d2c2f534d",
+    "/home/sero/work/glm53-single-spark-release-20260911/b12x-runtime/native-mtp-view/native-mtp-view.json": "0f3e2beac9eb90693421a1220e9b71a90944e6c3935cc9f3d94e23cbe4ac6075",
+    "/home/sero/work/glm53-single-spark-release-20260911/source-k2/EXL3_MANIFEST.json": "501641b947fa56afc9ed098bdc034e59c2bd229d4fa1a1d7b80e3727f10c8ba3",
+    "/home/sero/work/glm53-single-spark-release-20260911/source-k2/config.json": "6f01b4d22b1cfd19f0f6892356bd88fc2725f443a3fd29d8003f3981cc338ecf",
+    "/home/sero/work/glm53-single-spark-release-20260911/source-k2/model.safetensors.index.json": "825d6dc1ae4e10e7e4e744d8e556c781ab2e87b87ddc8775f2b01141ddad4327",
+    "/home/sero/work/glm53-single-spark-release-20260911/source-k2/quantization_config.json": "c0ff915ffab04074004391242807ce8a1b77a37d15eb4eaf975417ed3fa1634b"
+  },
+  "model": "glm-5.3-flash",
+  "model_root": "/home/sero/work/glm53-single-spark-release-20260911/source-k2",
+  "mtp_root": "/home/sero/work/glm53-single-spark-release-20260911/b12x-runtime/native-mtp-view",
+  "plugin_sha256": "35a9211294e85d12c55f4a46be7e55f099c6a9c4a806b1ba0399287115f14e21",
+  "slots": 1,
+  "source_sha256": {
+    "acceptance/native_metrics.py": "ca4ec3b4a9b836547fb93e7d4e44e0179e08af1e0744bd63e78606a02ebbacde",
+    "acceptance/run.py": "a5a2f9f2ea24de5398c088aaeab6c3df00a802c28bdd50f180e053f43619eeb3",
+    "acceptance/timing.py": "91d413a2678392cc129d4012942697100867ccb1ff3bf6aaddc6e9e553161207",
+    "b12x-runtime/sm121-router-audit/mtp-depth-installed-sources.json": "6e0ec5ac9e5e44641a8300c211dbc8e2aea624038fc7843d6d8dd7463c5139cb",
+    "b12x-runtime/start-b12x-candidate.sh": "623f8f16f3083c2625267268cc4dab6647bfa007b0a8f1ec5419074363519869"
+  },
+  "speculative_config": {
+    "attention_backend": "B12X",
+    "method": "mtp",
+    "model": "/mtp",
+    "num_speculative_tokens": 2
+  },
+  "state": "STARTED_NOT_ADMITTED"
+}

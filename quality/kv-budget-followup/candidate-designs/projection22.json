@@ -1,0 +1,105 @@
+{
+  "additional_layers_over_projection14": [
+    17,
+    19,
+    21,
+    29,
+    30,
+    34,
+    38,
+    39
+  ],
+  "calibration_proxy_reduction": 1051.304921175622,
+  "calibration_sha256": {
+    "k2-projection-errors.json": "12128ab640693b909bdb65dafadf8020b80e916fc559e6684b34fcd1125cc855",
+    "k3-projection-errors.json": "89a26929c61fdd43f804041a3f629ae9f183e4486e94523c5c8e8ed35c3b87c9"
+  },
+  "caveat": "Component proxy is not model fidelity. Tensor bytes are not resident runtime memory. Preserve native protected target weights.",
+  "default_bits": 2,
+  "expected_tensor_bytes": 117918570360,
+  "experts_per_layer": 288,
+  "extra_target_bytes_over_k2": 6643777536,
+  "generator_sha256": "070a71e306e661c040a4d14acb4e91b25a40c66fb515d415343483b0f3ccab26",
+  "layer_projection_bits": {
+    "17": {
+      "down_proj": 3
+    },
+    "19": {
+      "down_proj": 3
+    },
+    "20": {
+      "down_proj": 3
+    },
+    "21": {
+      "down_proj": 3
+    },
+    "22": {
+      "down_proj": 3
+    },
+    "23": {
+      "down_proj": 3
+    },
+    "26": {
+      "down_proj": 3
+    },
+    "27": {
+      "down_proj": 3
+    },
+    "28": {
+      "down_proj": 3
+    },
+    "29": {
+      "down_proj": 3
+    },
+    "30": {
+      "down_proj": 3
+    },
+    "31": {
+      "down_proj": 3
+    },
+    "32": {
+      "down_proj": 3
+    },
+    "34": {
+      "down_proj": 3
+    },
+    "35": {
+      "down_proj": 3
+    },
+    "36": {
+      "down_proj": 3
+    },
+    "37": {
+      "down_proj": 3
+    },
+    "38": {
+      "down_proj": 3
+    },
+    "39": {
+      "down_proj": 3
+    },
+    "5": {
+      "down_proj": 3
+    },
+    "6": {
+      "down_proj": 3
+    },
+    "7": {
+      "down_proj": 3
+    }
+  },
+  "native_protected_tensor_bytes": 33835039608,
+  "parent_selection_sha256": "57926af4ddf6aa5f5cf0180ec6cf57b867f4ec62457d806ecab1310cddf65c78",
+  "prerequisites": [
+    "Verify full-server NVFP4 draft admission and actual memory.",
+    "Verify source weights and protected closure during assembly.",
+    "Run unchanged frozen quality panel before serving promotion.",
+    "Measure262144context,image/video,MTP,graphs and sustained throughput."
+  ],
+  "quality_prediction": null,
+  "rank_stacked_tp": 4,
+  "removed_experts": 0,
+  "selection_policy": "descending summed paired K2-minus-K3 down_proj trace(EHE^T)/trace(WHW^T), all288experts\u00d74ranks; tieslowerlayer",
+  "selection_uses_heldout_quality": false,
+  "state": "CALIBRATION_FROZEN_NOT_BUILT_NOT_ADMITTED"
+}

@@ -1,0 +1,37 @@
+{
+  "state": "EXPERIMENTAL_BASELINE_CPU_CHECKED_NOT_GPU_ACCEPTED",
+  "promotion": "HOLD_HIGHER_AGREEMENT_REQUIRED",
+  "cpu_tests_passed": 16,
+  "shell_syntax": "PASS",
+  "public_metadata_pin": "PASS",
+  "readiness_fixes": [
+    "finite positive native MTP counters polled up to15seconds",
+    "reserve/check actual bind endpoint before engine spawn",
+    "GPU inventory before and after2CPU3GiBnoextraswap setup",
+    "native MTP view hashes and symlink targets bound to restart receipt"
+  ],
+  "gpu_calls_in_tests": false,
+  "scale_test_process_peak_bytes": 422313984,
+  "scale_test_scope": "actual583090index key names with syntheticzero-byte tensor payloads; not real source payload acceptance or Docker cgroup peak",
+  "files_sha256": {
+    "README.md": "691d61e9b8feaccca3f2d5f5d1e2d9609430cf028c7a6d7e4386390f03510b53",
+    "launch_controls.py": "805a4933221d77b707be0e753367f161ca040121a519a065aa38841fe5c84509",
+    "metadata-pin-verification.json": "a27bab11011c63a34c4d3aac3c8b5b0361d63a751894f7344cc4c40df5c4ef94",
+    "model-lock.json": "f22f558970bd47bff572111233a35dd9102e95803d0bc23b1870e3a537be3e17",
+    "prepare_native_mtp_view.py": "d64325d962db3c9a056f0d5de84ceb251474c5e5a2689a943742aaa1659ac507",
+    "run.sh": "3728be1c09ef7164ff3ee27b639ce288c63dcc4728cc309c8e1467419b9ca890",
+    "setup.py": "3fee9278c514c66577d0cb1e0a6b775662539d5d39d6a9e9496fe907b1a8a27b",
+    "test_setup.py": "1e3e54260c5933d10b821baa61a02a7a5d7204e2e9bfb4aaab22bdb8764fcf45",
+    "validation-scale-evidence.json": "abc5c709f82ff7fd11494b40f2ed6092721ee95321a10ecb50d5b07847d7610a"
+  },
+  "new_jovian_constraints": {
+    "cache_block_size": 256,
+    "draft_attention_backend": "B12X",
+    "protected_head_environment": {
+      "VLLM_MXFP8_LM_HEAD": "0",
+      "VLLM_MTP_NVFP4_LM_HEAD": "0"
+    },
+    "entrypoint": "python -m vllm.entrypoints.openai.api_server --model /model",
+    "evidence_scope": "inspected successful actual V2 strict891-key draft load and operator launcher; no full target acceptance implied"
+  }
+}

@@ -1,0 +1,5 @@
+import importlib.metadata as m,json,subprocess
+from pathlib import Path
+r=subprocess.run(['python3','-m','pip','check'],capture_output=True,text=True)
+report={'state':'DEPENDENCY_EXCEPTIONS_DOCUMENTED_NOT_FULL_PIP_CHECK_PASS','pip_check_exit':r.returncode,'pip_check_stdout':r.stdout,'pip_check_stderr':r.stderr,'torch_version':m.version('torch'),'torch_nccl_requirements':[x for x in m.requires('torch') or [] if 'nccl' in x],'installed_nccl':m.version('nvidia-nccl-cu13'),'vllm_nccl_requirements':[x for x in m.requires('vllm') or [] if 'nccl' in x],'limitations':['Standalone ExLlama application dependency closure is incomplete; serving uses only verified ExLlama GPU Linear/MoE kernels via isolated namespace loader.','NCCL2.29.7 matches Torch exactrequirement but DeepEPv2 requires>=2.30.4 and is unavailable; recipe usesTP1 without expertparallel.','cusparselt ARM platform metadata warning retained; relevant loaded runtime kernels require separateGPU tests.']}
+print(json.dumps(report,indent=2))

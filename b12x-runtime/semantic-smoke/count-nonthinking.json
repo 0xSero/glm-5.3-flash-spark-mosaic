@@ -1,0 +1,59 @@
+{
+  "request": {
+    "model": "glm-5.3-flash",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write the integers 1 through 20 separated by commas with no spaces."
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 128,
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  },
+  "response": {
+    "id": "chatcmpl-a2f2f074fb4987a3",
+    "object": "chat.completion",
+    "created": 1789164232,
+    "model": "glm-5.3-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "The user wants me to write the integers 1 through 20 separated by commas with no spaces. This is a simple formatting task.\n\n1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20\n\nThat's it. No spaces after commas.</think>1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+          "refusal": null,
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": 154827,
+        "token_ids": null,
+        "routed_experts": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.1.dev1+g3aada6772.d20260911-90ae695f",
+    "usage": {
+      "prompt_tokens": 27,
+      "total_tokens": 144,
+      "completion_tokens": 117,
+      "prompt_tokens_details": null,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "elapsed_seconds": 8.116410371032543
+}

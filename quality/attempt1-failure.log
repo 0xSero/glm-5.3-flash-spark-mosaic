@@ -1,0 +1,41 @@
+Traceback (most recent call last):
+  File "/release/quality/evaluate_pruned_quality.py", line 317, in <module>
+    main()
+  File "/release/quality/evaluate_pruned_quality.py", line 256, in main
+    base = configured()
+           ^^^^^^^^^^^^
+  File "/release/quality/evaluate_pruned_quality.py", line 157, in configured
+    base = importlib.import_module('evaluate_low_bpw_quality')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/release/quality/deps/evaluate_low_bpw_quality.py", line 35, in <module>
+    from glm53_exl3_tp4 import _load_linear, _packed_prefix
+  File "/release/quality/deps/glm53_exl3_tp4.py", line 20, in <module>
+    from exllamav3.modules.quant import LinearEXL3
+  File "/usr/local/lib/python3.12/dist-packages/exllamav3/__init__.py", line 1, in <module>
+    from .model.config import Config
+  File "/usr/local/lib/python3.12/dist-packages/exllamav3/model/__init__.py", line 2, in <module>
+    from .model import Model
+  File "/usr/local/lib/python3.12/dist-packages/exllamav3/model/model.py", line 9, in <module>
+    from .model_ls import Model_LSMixin
+  File "/usr/local/lib/python3.12/dist-packages/exllamav3/model/model_ls.py", line 5, in <module>
+    from ..modules.attn import prepare_for_attn
+  File "/usr/local/lib/python3.12/dist-packages/exllamav3/modules/__init__.py", line 8, in <module>
+    from .attn import Attention
+  File "/usr/local/lib/python3.12/dist-packages/exllamav3/modules/attn.py", line 14, in <module>
+    from .attention_fn import attn_dispatch
+  File "/usr/local/lib/python3.12/dist-packages/exllamav3/modules/attention_fn/__init__.py", line 1, in <module>
+    from .dispatch import attn_dispatch
+  File "/usr/local/lib/python3.12/dist-packages/exllamav3/modules/attention_fn/dispatch.py", line 4, in <module>
+    from .flash_attn_2 import fn_flash_attn_with_kvcache, fn_flash_attn_func, fn_flash_attn_varlen_func
+  File "/usr/local/lib/python3.12/dist-packages/exllamav3/modules/attention_fn/flash_attn_2.py", line 2, in <module>
+    from flash_attn import flash_attn_func, flash_attn_with_kvcache, flash_attn_varlen_func
+ModuleNotFoundError: No module named 'flash_attn'

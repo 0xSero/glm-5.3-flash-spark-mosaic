@@ -1,0 +1,7 @@
+{
+  "b12x-runtime/start-b12x-candidate.sh": "623f8f16f3083c2625267268cc4dab6647bfa007b0a8f1ec5419074363519869",
+  "b12x-runtime/sm121-router-audit/mtp-depth-installed-sources.json": "6e0ec5ac9e5e44641a8300c211dbc8e2aea624038fc7843d6d8dd7463c5139cb",
+  "acceptance/run.py": "a5a2f9f2ea24de5398c088aaeab6c3df00a802c28bdd50f180e053f43619eeb3",
+  "acceptance/timing.py": "91d413a2678392cc129d4012942697100867ccb1ff3bf6aaddc6e9e553161207",
+  "acceptance/native_metrics.py": "ca4ec3b4a9b836547fb93e7d4e44e0179e08af1e0744bd63e78606a02ebbacde"
+}

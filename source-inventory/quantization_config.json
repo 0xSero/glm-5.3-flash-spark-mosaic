@@ -1,0 +1,17 @@
+{
+  "bits_per_weight": 3.0,
+  "format": "glm53-selective-exl3-tp4-v1",
+  "fractional_allocation": null,
+  "mcg": true,
+  "official_release_revision": "f12e0fe1f6b2ea274c11a569582edfd99d993c5e",
+  "quant_method": "exl3_selective_tp4",
+  "quantized_scope": "model.language_model.layers.3..44.mlp.experts.0..287.{gate_proj,up_proj,down_proj}.weight",
+  "requires_custom_loader": true,
+  "retained_dtype": "source_precision",
+  "retained_scope": "attention, indexers, mHC, routers, shared experts, dense layers 0-2, embeddings, lm_head, norms, vision, MTP",
+  "runtime_status": "pending_full_server",
+  "source_revision": "a6c167b62691b2bac901344b65cb651a70f53e43",
+  "target_expert_bpw": 3.0,
+  "tensor_parallel_size": 4,
+  "trellis_k": 3
+}

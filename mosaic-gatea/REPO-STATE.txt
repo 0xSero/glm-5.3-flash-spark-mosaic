@@ -1,0 +1,8 @@
+repo:        local git repository at /Users/sero/sessions/glm53-single-spark-release-20260911
+commit:      4a580831584301f9ba9e02ae3ec450757b862b24
+committed:   2026-09-17T13:20:31-04:00
+files:       1875
+tracked:     60.9 MB
+remotes:     none (nothing published; publishing gated on explicit go-ahead)
+receipts:    mosaic-gatea/receipts-557f, mosaic-gatea/receipts-2384/out (JSON + logs)
+generated:   2026-09-17T17:20:49Z

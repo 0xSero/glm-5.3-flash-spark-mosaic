@@ -1,0 +1,28 @@
+{
+  "state": "CPU_PACKED_CACHE_CONTRACT_PASS_CAPACITY_UNMEASURED",
+  "requested_cache_dtype": "fp8_ds_mla",
+  "backend": "B12X",
+  "record_bytes": 528,
+  "index_tail_bytes_per_token": 33,
+  "alignment_bytes": 8448,
+  "supported_layouts": [
+    "KVCacheLayout.BLHNC"
+  ],
+  "example_page_geometry_only": [
+    {
+      "block_size": 64,
+      "page_bytes_per_layer": 35904
+    },
+    {
+      "block_size": 256,
+      "page_bytes_per_layer": 143616
+    },
+    {
+      "block_size": 1024,
+      "page_bytes_per_layer": 574464
+    }
+  ],
+  "actual_runtime_block_size": null,
+  "actual_runtime_token_capacity": null,
+  "cuda_initialized": false
+}

@@ -1,0 +1,35 @@
+  model-00001-of-00015.safetensors: 6398 tensors ok, 0 problems [132s]
+  model-00002-of-00015.safetensors: 8031 tensors ok, 0 problems [132s]
+  model-00003-of-00015.safetensors: 7965 tensors ok, 0 problems [132s]
+  model-00004-of-00015.safetensors: 7875 tensors ok, 0 problems [132s]
+  model-00005-of-00015.safetensors: 8007 tensors ok, 0 problems [132s]
+  model-00006-of-00015.safetensors: 7899 tensors ok, 0 problems [132s]
+  model-00007-of-00015.safetensors: 7958 tensors ok, 0 problems [132s]
+  model-00008-of-00015.safetensors: 7978 tensors ok, 0 problems [132s]
+  model-00009-of-00015.safetensors: 7959 tensors ok, 0 problems [132s]
+  model-00010-of-00015.safetensors: 7911 tensors ok, 0 problems [132s]
+  model-00011-of-00015.safetensors: 8025 tensors ok, 0 problems [132s]
+  model-00012-of-00015.safetensors: 7971 tensors ok, 0 problems [132s]
+  model-00013-of-00015.safetensors: 7971 tensors ok, 0 problems [132s]
+  model-00014-of-00015.safetensors: 7471 tensors ok, 0 problems [132s]
+  model-00015-of-00015.safetensors: 2317 tensors ok, 0 problems [132s]
+{
+ "schema": "dynamic-container-g2-v1",
+ "point_id": "R216",
+ "plan_sha256": "62300f562bd7d239bdf28e5169ccc1114f4be6bd94f1b35fc80c9a0c84a3baf3",
+ "pass": true,
+ "expert_bytes_from_headers": 9474060,
+ "router_row_bytes_from_headers": 8196,
+ "expected_index_total_size": 96485484504,
+ "extra_index_files": [
+  "kpool_aux.safetensors",
+  "mtp.safetensors"
+ ],
+ "extra_index_tensor_bytes": 2873724964,
+ "index_total_size": 96485484504,
+ "tensors_verified": 111736,
+ "bytes_verified": 93611759540,
+ "problems": [],
+ "elapsed_s": 136.6,
+ "finished_utc": "2026-09-14T02:17:33Z"
+}

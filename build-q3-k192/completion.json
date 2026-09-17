@@ -1,0 +1,17 @@
+{
+  "state": "STRUCTURAL_COMPLETE_QUALITY_NOT_RUN",
+  "exit_code": "0",
+  "container_id": "153b372baec930ab2c26d80489aeec6bfe4335d9f53659d9662b4d07e0091e1e",
+  "finished_unix": 1789156108.5716274,
+  "manifest_sha256": "98e72202d67acc158e908701d04b6d228de74b01d8c1c66d3aa0df6a998b1cbc",
+  "tensor_bytes": 110795646072,
+  "file_bytes": 110847041992,
+  "files": 130,
+  "tensor_counts": {
+    "native_unchanged": 2398,
+    "routed": 387072,
+    "router_sliced": 84
+  },
+  "runtime_claim": false,
+  "quality_claim": false
+}

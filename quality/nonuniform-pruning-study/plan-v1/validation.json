@@ -1,0 +1,41 @@
+{
+  "state": "CPU_PLAN_VALIDATED_NOT_BUILT",
+  "expert_counts_equal": true,
+  "tensor_bytes_equal_including_router": true,
+  "projected_tensor_bytes": 106967076600,
+  "retained_experts": 11424,
+  "removed_experts": 672,
+  "minimum_nonuniform_count": 240,
+  "maximum_nonuniform_count": 288,
+  "normalized_proxy_removed_uniform": 0.4429964636361986,
+  "normalized_proxy_removed_nonuniform": 0.40625421070626566,
+  "raw_massmax_score_sum_range": [
+    1.9969754163414712,
+    3.616898616349553
+  ],
+  "minimum_natural_expert_routes": 49419,
+  "records": 21248,
+  "tokens": 32602850,
+  "missing_domains": [
+    "science"
+  ],
+  "observations_state": "SEALED_PARTIAL_ORIGINAL_RECORDS",
+  "observation_domains": [
+    "agentic",
+    "coding",
+    "cuda",
+    "cybersecurity",
+    "deep_reasoning",
+    "function_calling",
+    "long_context",
+    "math",
+    "terminal"
+  ],
+  "builder_sha256": "fc678ad401f45a8d189321b55d4df76baf0586756bc1b9d63354fb53922e5e57",
+  "output_sha256": {
+    "uniform272.json": "41304ac7c8bf0d8531ab6f9b209cd2b8794de96b2fa2ea07b662207058e31c5b",
+    "layer-summary.csv": "e323996bc92c4cf2889b82cfdbd28345bae46c87d90f56196587bb8f8c093f3d",
+    "nonuniform272budget.json": "417e147fe7d630eee5cfaa92cca7f8cd4b5e5529b9fa1f805abeb08fdc807fbc",
+    "allocation-ledger.json": "43c0e67d27645f459a4767ae27cbe83973f4cfc779152f31772da9be1cd74f08"
+  }
+}

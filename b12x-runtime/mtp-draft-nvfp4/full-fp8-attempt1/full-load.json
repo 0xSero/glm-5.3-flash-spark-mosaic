@@ -1,0 +1,196 @@
+{
+  "state": "FULL_DRAFT_LOAD_PASS_SERVING_PENDING",
+  "draft_expert_mode": "fp8",
+  "draft_experts": 288,
+  "strict_tracking": [
+    {
+      "runtime_parameters": 29,
+      "loaded_parameters": 30,
+      "strict_completeness_pass": true
+    }
+  ],
+  "native_index_keys": 891,
+  "native_parameter_audit": {
+    "model.layers.45.enorm.weight": {
+      "shape": [
+        4096
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "model.layers.45.hnorm.weight": {
+      "shape": [
+        4096
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "model.layers.45.eh_proj.weight": {
+      "shape": [
+        4096,
+        8192
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "model.layers.45.shared_head.norm.weight": {
+      "shape": [
+        4096
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "model.layers.45.shared_head.head.weight": {
+      "shape": [
+        154880,
+        4096
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "model.layers.45.mtp_block.self_attn.fused_qkv_a_proj.weight": {
+      "shape": [
+        2048,
+        4096
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "model.layers.45.mtp_block.self_attn.q_a_layernorm.weight": {
+      "shape": [
+        1536
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "model.layers.45.mtp_block.self_attn.q_b_proj.weight": {
+      "shape": [
+        16384,
+        1536
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "model.layers.45.mtp_block.self_attn.kv_a_layernorm.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "model.layers.45.mtp_block.self_attn.kv_b_proj.weight": {
+      "shape": [
+        32768,
+        512
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "model.layers.45.mtp_block.self_attn.o_proj.weight": {
+      "shape": [
+        4096,
+        16384
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "model.layers.45.mtp_block.self_attn.indexer.index_kpool_compress_ape": {
+      "shape": [
+        4,
+        128
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "model.layers.45.mtp_block.self_attn.indexer.index_kpool_compress_gate": {
+      "shape": [
+        128,
+        4096
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "model.layers.45.mtp_block.self_attn.indexer.wq_b.weight": {
+      "shape": [
+        4096,
+        1536
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "model.layers.45.mtp_block.self_attn.indexer.wk_weights_proj.weight": {
+      "runtime_names": [
+        "model.layers.45.mtp_block.self_attn.indexer.wk.weight",
+        "model.layers.45.mtp_block.self_attn.indexer.weights_proj.weight"
+      ],
+      "native_dtype": true
+    },
+    "model.layers.45.mtp_block.self_attn.indexer.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32"
+    },
+    "model.layers.45.mtp_block.self_attn.indexer.k_norm.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32"
+    },
+    "model.layers.45.mtp_block.mlp.gate.weight": {
+      "shape": [
+        288,
+        4096
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "model.layers.45.mtp_block.mlp.gate.e_score_correction_bias": {
+      "shape": [
+        288
+      ],
+      "dtype": "torch.float32"
+    },
+    "model.layers.45.mtp_block.mlp.shared_experts.gate_up_proj.weight": {
+      "shape": [
+        4096,
+        4096
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "model.layers.45.mtp_block.mlp.shared_experts.down_proj.weight": {
+      "shape": [
+        4096,
+        2048
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "model.layers.45.mtp_block.input_layernorm.weight": {
+      "shape": [
+        4096
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "model.layers.45.mtp_block.post_attention_layernorm.weight": {
+      "shape": [
+        4096
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "model.embed_tokens.weight": {
+      "shape": [
+        154880,
+        4096
+      ],
+      "dtype": "torch.bfloat16"
+    }
+  },
+  "head_embedding_comparisons": [
+    {
+      "source": "model.language_model.embed_tokens.weight",
+      "runtime": "model.embed_tokens.weight",
+      "all_values_exact": true
+    },
+    {
+      "source": "lm_head.weight",
+      "runtime": "model.layers.45.shared_head.head.weight",
+      "all_values_exact": true
+    }
+  ],
+  "native_parameter_baseline_sha256": "57c3d0fa56086043621702cfb82aeed52459499f92da72a2e9b8370048afec66",
+  "native_index_sha256": "3b83745278ec1f43d45f4c53e141a18bce30e3ece70d969a76088b2d2c2f534d",
+  "prepared_tensor_metadata": {},
+  "cuda_allocated_bytes": 10255971840,
+  "peak_cuda_allocated_bytes": 24734712320,
+  "runtime_parameter_bytes": 10188539264,
+  "native_parameter_bytes": 2940779648,
+  "target_weights_loaded": false,
+  "kv_allocated": false,
+  "forward_executed": false,
+  "full_serving_acceptance": false
+}

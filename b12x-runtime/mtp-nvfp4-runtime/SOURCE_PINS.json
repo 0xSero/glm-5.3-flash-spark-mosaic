@@ -1,0 +1,26 @@
+{
+  "schema": "glm53-native-mtp-nvfp4-runtime-v1",
+  "vllm_commit": "3aada67721bfdb8b98355207ca3780bb32e6f434",
+  "b12x_commit": "3b862805d2b7fd52e6fe507fd28038bd48797cf5",
+  "reference_local_base_image": "sha256:368820997e1146e9d7843367478b53ce18db708e79861f7ea269860e9a1bda4b",
+  "vllm_sources": {
+    "v1/worker/gpu/spec_decode/eagle/utils.py": "852ab27b4bbcbe25e8f911ab4d6c60750c2eefb29990cff60e1b8fe0b6e63e0d",
+    "v1/spec_decode/llm_base_proposer.py": "2064f8f2820e7f8d18045ca275b4c0da631f1bd0a286af6d02446272be546439",
+    "model_executor/layers/quantization/glm_mtp_expert_fp8.py": "b1e7fb4a7b89d35cb6d2c74b04ac10eb8e347f8966a3ec88cf8c207f39c84f64",
+    "model_executor/layers/fused_moe/b12x.py": "e549c30218b17e642215a8ea73c4d623b492ea795b79758c5f3ddb823d284872",
+    "model_executor/layers/quantization/online/nvfp4.py": "29b6f81de89fd4e82e1efc54551d23e57d9ac5f0907faff6cab292081f589434",
+    "model_executor/layers/fused_moe/oracle/nvfp4.py": "a5391a6ebb3fd60de68f821f526df9a1b2fd8b09fef2961d3586b858ed461c42"
+  },
+  "dispatch_after": {
+    "v1/worker/gpu/spec_decode/eagle/utils.py": "a2a51307af07a8d11b4ba8610a390403b9e59afb1261ac63b7c4193aaa7ed5c0",
+    "v1/spec_decode/llm_base_proposer.py": "88989c63a5c1b34ea0bb2b7af7ff08b93a0223370fff68c5f52e5d034e3c5720"
+  },
+  "b12x_sources": {
+    "b12x/moe/_shared/kernels/w4a16/kernel.py": "c2c18fc5964a832256179a6d0dba127213592de69c1fd907d3855fe97c3bd821",
+    "b12x/moe/fused_moe/_impl.py": "4c1f497eaa561090c713e8aa6e4e8fc684658fe2f474d66d43f3e6a73af1eed3",
+    "b12x/moe/fused_moe/_vllm_compat.py": "232c6623e7a4f0915d605031c44871c81c3911e5a56ae8ddcc49c080034136f8",
+    "b12x/moe/fused_moe/_policy.py": "537270b834a731eebac4af95dc06b2aac1992d60c2f684eeb2675e7093291d50",
+    "b12x/policy/context.py": "71ff7618c6a6acdc126561b7093ad7617d65aa5350527c677340109926ffc300"
+  },
+  "policy_sha256": "2a7a2bd3a3dd63ecf802b1c2169172ae51dfb268b4bcaaf0c88794dc20ae02e7"
+}

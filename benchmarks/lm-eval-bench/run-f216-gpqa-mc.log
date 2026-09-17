@@ -1,0 +1,6 @@
+2026-09-16T04:40:43Z RUNNER_START f216-gpqa-mc http://spark-557f.internal:8000 (MC-only evidence-matrix leg)
+2026-09-16T04:40:45Z poll 1 health=200 smoke=200
+2026-09-16T04:40:45Z READY_OK
+2026-09-16T04:40:58Z VALIDATE rc=0 tail: sks        |Version|Filter|n-shot| Metric |   |Value|   |Stderr| |---------------------|------:|------|-----:|--------|---|----:|---|-----:| |gpqa_diamond_zeroshot|    2.2|none  |     0|acc     |↑  |  0.5|±  |   0.5| |                     |       |none  |     0|acc_norm|↑  |  0.5|±  |   0.5|  
+2026-09-16T04:40:58Z VALIDATE_OK launching GPQA MC (198 docs, no limit)
+2026-09-16T05:27:12Z RUNNER_DONE exit-recorded

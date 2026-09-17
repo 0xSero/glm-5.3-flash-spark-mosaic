@@ -1,0 +1,22 @@
+{
+  "state": "SIXTEEN_K3_FILES_TRANSFERRED_HASH_CHECK_PENDING",
+  "elapsed_seconds": 225.26576280593872,
+  "files": [
+    "layer-06-part-0.safetensors",
+    "layer-06-part-1.safetensors",
+    "layer-07-part-0.safetensors",
+    "layer-07-part-1.safetensors",
+    "layer-20-part-0.safetensors",
+    "layer-20-part-1.safetensors",
+    "layer-22-part-0.safetensors",
+    "layer-22-part-1.safetensors",
+    "layer-23-part-0.safetensors",
+    "layer-23-part-1.safetensors",
+    "layer-27-part-0.safetensors",
+    "layer-27-part-1.safetensors",
+    "layer-28-part-0.safetensors",
+    "layer-28-part-1.safetensors",
+    "layer-37-part-0.safetensors",
+    "layer-37-part-1.safetensors"
+  ]
+}

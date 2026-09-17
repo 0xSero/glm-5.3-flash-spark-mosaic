@@ -1,0 +1,369 @@
+{
+  "state": "PROSPECTIVE_CPU_BUDGET_NOT_RUNTIME_ADMISSION",
+  "source_pins": {
+    "selection_sha256": "38efe0f4da5d382499d4a3fb220ac66c8597b59190e11cd7679038f21afc6567",
+    "native_mtp_inventory_sha256": "15724fb365bccaa86733d7fff0571a8176ba596d781938cea13187069d286c51",
+    "paired_proxy_inventory_sha256": "78e602f9ee18d25a4a5334d0ba09564f2a90d6601e81fb4e65be9972e5b16dd3",
+    "input_sha256": {
+      "k2-projection-errors.json": "12128ab640693b909bdb65dafadf8020b80e916fc559e6684b34fcd1125cc855",
+      "k3-projection-errors.json": "89a26929c61fdd43f804041a3f629ae9f183e4486e94523c5c8e8ed35c3b87c9"
+    }
+  },
+  "mtp": {
+    "native_total_bytes": 14865185408,
+    "native_routed_bytes": 14495514624,
+    "native_nonexpert_bytes": 369670784,
+    "measured_fp8_parameter_bytes": 7247759616,
+    "nominal_nvfp4_parameter_bytes": 4076868096,
+    "nominal_saved_bytes": 3170891520,
+    "excluded": "backend padding/reordering, workspace, graph buffers, allocator fragmentation, quantization transient peaks"
+  },
+  "candidates": [
+    {
+      "down_layers": 6,
+      "selected_layers": [
+        5,
+        26,
+        31,
+        32,
+        35,
+        36
+      ],
+      "layer_projection_bits": {
+        "5": {
+          "down_proj": 3
+        },
+        "32": {
+          "down_proj": 3
+        },
+        "36": {
+          "down_proj": 3
+        },
+        "31": {
+          "down_proj": 3
+        },
+        "26": {
+          "down_proj": 3
+        },
+        "35": {
+          "down_proj": 3
+        }
+      },
+      "extra_target_tensor_bytes": 1811939328,
+      "total_native_mtp_source_artifact_tensor_bytes": 113086732152,
+      "net_payload_increase_vs_original_k2_fp8_draft": -1358952192,
+      "calibration_proxy_reduction": 292.0973099162471,
+      "predicted_agreement": null,
+      "runtime_admitted": false
+    },
+    {
+      "down_layers": 12,
+      "selected_layers": [
+        5,
+        6,
+        7,
+        23,
+        26,
+        27,
+        28,
+        31,
+        32,
+        35,
+        36,
+        37
+      ],
+      "layer_projection_bits": {
+        "5": {
+          "down_proj": 3
+        },
+        "32": {
+          "down_proj": 3
+        },
+        "36": {
+          "down_proj": 3
+        },
+        "31": {
+          "down_proj": 3
+        },
+        "26": {
+          "down_proj": 3
+        },
+        "35": {
+          "down_proj": 3
+        },
+        "27": {
+          "down_proj": 3
+        },
+        "6": {
+          "down_proj": 3
+        },
+        "23": {
+          "down_proj": 3
+        },
+        "7": {
+          "down_proj": 3
+        },
+        "28": {
+          "down_proj": 3
+        },
+        "37": {
+          "down_proj": 3
+        }
+      },
+      "extra_target_tensor_bytes": 3623878656,
+      "total_native_mtp_source_artifact_tensor_bytes": 114898671480,
+      "net_payload_increase_vs_original_k2_fp8_draft": 452987136,
+      "calibration_proxy_reduction": 579.354730530191,
+      "predicted_agreement": null,
+      "runtime_admitted": false
+    },
+    {
+      "down_layers": 14,
+      "selected_layers": [
+        5,
+        6,
+        7,
+        20,
+        22,
+        23,
+        26,
+        27,
+        28,
+        31,
+        32,
+        35,
+        36,
+        37
+      ],
+      "layer_projection_bits": {
+        "5": {
+          "down_proj": 3
+        },
+        "32": {
+          "down_proj": 3
+        },
+        "36": {
+          "down_proj": 3
+        },
+        "31": {
+          "down_proj": 3
+        },
+        "26": {
+          "down_proj": 3
+        },
+        "35": {
+          "down_proj": 3
+        },
+        "27": {
+          "down_proj": 3
+        },
+        "6": {
+          "down_proj": 3
+        },
+        "23": {
+          "down_proj": 3
+        },
+        "7": {
+          "down_proj": 3
+        },
+        "28": {
+          "down_proj": 3
+        },
+        "37": {
+          "down_proj": 3
+        },
+        "20": {
+          "down_proj": 3
+        },
+        "22": {
+          "down_proj": 3
+        }
+      },
+      "extra_target_tensor_bytes": 4227858432,
+      "total_native_mtp_source_artifact_tensor_bytes": 115502651256,
+      "net_payload_increase_vs_original_k2_fp8_draft": 1056966912,
+      "calibration_proxy_reduction": 674.3282493144828,
+      "predicted_agreement": null,
+      "runtime_admitted": false
+    },
+    {
+      "down_layers": 18,
+      "selected_layers": [
+        5,
+        6,
+        7,
+        19,
+        20,
+        22,
+        23,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        35,
+        36,
+        37,
+        39
+      ],
+      "layer_projection_bits": {
+        "5": {
+          "down_proj": 3
+        },
+        "32": {
+          "down_proj": 3
+        },
+        "36": {
+          "down_proj": 3
+        },
+        "31": {
+          "down_proj": 3
+        },
+        "26": {
+          "down_proj": 3
+        },
+        "35": {
+          "down_proj": 3
+        },
+        "27": {
+          "down_proj": 3
+        },
+        "6": {
+          "down_proj": 3
+        },
+        "23": {
+          "down_proj": 3
+        },
+        "7": {
+          "down_proj": 3
+        },
+        "28": {
+          "down_proj": 3
+        },
+        "37": {
+          "down_proj": 3
+        },
+        "20": {
+          "down_proj": 3
+        },
+        "22": {
+          "down_proj": 3
+        },
+        "29": {
+          "down_proj": 3
+        },
+        "30": {
+          "down_proj": 3
+        },
+        "19": {
+          "down_proj": 3
+        },
+        "39": {
+          "down_proj": 3
+        }
+      },
+      "extra_target_tensor_bytes": 5435817984,
+      "total_native_mtp_source_artifact_tensor_bytes": 116710610808,
+      "net_payload_increase_vs_original_k2_fp8_draft": 2264926464,
+      "calibration_proxy_reduction": 863.305088398357,
+      "predicted_agreement": null,
+      "runtime_admitted": false
+    },
+    {
+      "down_layers": 20,
+      "selected_layers": [
+        5,
+        6,
+        7,
+        19,
+        20,
+        22,
+        23,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "layer_projection_bits": {
+        "5": {
+          "down_proj": 3
+        },
+        "32": {
+          "down_proj": 3
+        },
+        "36": {
+          "down_proj": 3
+        },
+        "31": {
+          "down_proj": 3
+        },
+        "26": {
+          "down_proj": 3
+        },
+        "35": {
+          "down_proj": 3
+        },
+        "27": {
+          "down_proj": 3
+        },
+        "6": {
+          "down_proj": 3
+        },
+        "23": {
+          "down_proj": 3
+        },
+        "7": {
+          "down_proj": 3
+        },
+        "28": {
+          "down_proj": 3
+        },
+        "37": {
+          "down_proj": 3
+        },
+        "20": {
+          "down_proj": 3
+        },
+        "22": {
+          "down_proj": 3
+        },
+        "29": {
+          "down_proj": 3
+        },
+        "30": {
+          "down_proj": 3
+        },
+        "19": {
+          "down_proj": 3
+        },
+        "39": {
+          "down_proj": 3
+        },
+        "38": {
+          "down_proj": 3
+        },
+        "34": {
+          "down_proj": 3
+        }
+      },
+      "extra_target_tensor_bytes": 6039797760,
+      "total_native_mtp_source_artifact_tensor_bytes": 117314590584,
+      "net_payload_increase_vs_original_k2_fp8_draft": 2868906240,
+      "calibration_proxy_reduction": 957.4846311306293,
+      "predicted_agreement": null,
+      "runtime_admitted": false
+    }
+  ],
+  "recommendation": "Projection14 is the next prospective design if measured full-draft NVFP4 resident savings are at least2.75GiB and sufficient OS/KV reserve remains; otherwise projection12. No new artifact build or GPU measurement authorized by this script. Layer order is solely independent calibration; heldout quality is not read."
+}

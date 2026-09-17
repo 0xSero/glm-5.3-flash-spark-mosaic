@@ -1,0 +1,5 @@
+FROM ghcr.io/0xsero/glm53-flash-exl3-k2-dflash@sha256:5ea6d04d65d1a2f30f632815776fb765359529ab117818ba2b5e5c5480e34963
+COPY proposed/models/glm5next/nvidia/mtp.py /usr/local/lib/python3.12/dist-packages/vllm/models/glm5next/nvidia/mtp.py
+COPY proposed/v1/spec_decode/llm_base_proposer.py /usr/local/lib/python3.12/dist-packages/vllm/v1/spec_decode/llm_base_proposer.py
+COPY proposed/v1/worker/gpu/spec_decode/eagle/utils.py /usr/local/lib/python3.12/dist-packages/vllm/v1/worker/gpu/spec_decode/eagle/utils.py
+RUN python3 -m py_compile /usr/local/lib/python3.12/dist-packages/vllm/models/glm5next/nvidia/mtp.py /usr/local/lib/python3.12/dist-packages/vllm/v1/spec_decode/llm_base_proposer.py /usr/local/lib/python3.12/dist-packages/vllm/v1/worker/gpu/spec_decode/eagle/utils.py

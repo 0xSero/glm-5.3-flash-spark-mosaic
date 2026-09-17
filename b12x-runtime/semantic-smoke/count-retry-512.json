@@ -1,0 +1,42 @@
+{
+  "id": "chatcmpl-93e63cebb38f1d8f",
+  "object": "chat.completion",
+  "created": 1789163945,
+  "model": "glm-5.3-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "reasoning": "The user wants me to count from 1 through 20, inclusive, in increasing order, and output only the numbers separated by commas.\n\nSo the output should be: 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20\n\nThey said \"Output only the numbers, separated by commas.\" So I should just output the numbers with commas, nothing else. Should I use spaces after commas? The instruction says \"separated by commas\" - I'll use commas. I could do \"1, 2, 3...\" with spaces or \"1,2,3...\" without. Either is fine, but to be safe and minimal, I'll just use commas. Actually, a common format is \"1, 2, 3, ...\" with spaces after commas for readability. But \"only the numbers, separated by commas\" suggests minimal output. I'll go with commas and no spaces to be strictly minimal, or with spaces? Hmm.\n\nI think either works. Let me just do: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20\n\nActually, to be safest with \"only the numbers, separated by commas\" \u2014 spaces aren't numbers, but they're typically acceptable formatting. I'll include spaces after commas for readability. Or no spaces. Let me pick no spaces to be strictly literal: 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20\n\nHmm, but readability... The instruction is clear enough that either interpretation is fine. I'll go with spaces after commas since that's the most common convention and still \"separated by commas.\" Actually, let me reconsider \u2014 \"Output only the numbers, separated by commas\" \u2014 the emphasis is on not adding extra text like \"Here are the numbers:\" etc. Spaces are fine.\n\nI'll output: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17,"
+      },
+      "logprobs": null,
+      "finish_reason": "length",
+      "stop_reason": null,
+      "token_ids": null,
+      "routed_experts": null
+    }
+  ],
+  "service_tier": null,
+  "system_fingerprint": "vllm-0.1.dev1+g3aada6772.d20260911-90ae695f",
+  "usage": {
+    "prompt_tokens": 35,
+    "total_tokens": 547,
+    "completion_tokens": 512,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": {
+      "reasoning_tokens": 512
+    }
+  },
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "prompt_text": null,
+  "kv_transfer_params": null,
+  "ec_transfer_params": null,
+  "metrics": null
+}

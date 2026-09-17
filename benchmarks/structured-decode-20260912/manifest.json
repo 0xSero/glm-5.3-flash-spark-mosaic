@@ -1,0 +1,9 @@
+{
+  "files": {
+    "native_metrics.py": "ca4ec3b4a9b836547fb93e7d4e44e0179e08af1e0744bd63e78606a02ebbacde",
+    "probe.py": "86d8dd500507fcd9bafd7ed2d124b2a352e13e48c82950f04ef8ca5996043905",
+    "run.py": "a5a2f9f2ea24de5398c088aaeab6c3df00a802c28bdd50f180e053f43619eeb3",
+    "timing.py": "91d413a2678392cc129d4012942697100867ccb1ff3bf6aaddc6e9e553161207"
+  },
+  "limits": "C1 structured generation only; counting task is not a general quality benchmark. Warmup rows stay separate."
+}

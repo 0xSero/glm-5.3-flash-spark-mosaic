@@ -1,0 +1,28 @@
+{
+  "schema": "glm53-original-q3-control-startup-evidence-v1",
+  "state": "CAPTURE_RUNNING",
+  "quality_measurement_complete": false,
+  "container": "glm53-quality-original-q3-control-attempt2",
+  "container_id": "4f6816f2653e217ef0cd0a552cba7a9be5b2c4c7e7f5e3b864934af5e7aec3ef",
+  "image_id": "sha256:54acf16064726697ab079dfbd297c1c1c260cb28867f8287f5ae2ec3bbb0a382",
+  "started_at": "2026-09-11T18:51:01.371814298Z",
+  "last_reported_commit": "2026-09-11T18:59:08.469522+00:00",
+  "completed_layer_ids": [0, 1, 2, 3, 4],
+  "rows_per_completed_layer": 32,
+  "worker_seconds": {
+    "0": 39.4006723780185,
+    "1": 38.898752097040415,
+    "2": 36.55285097507294,
+    "3": 76.02782145200763,
+    "4": 81.29424176295288
+  },
+  "integrity_preflight": "Passed full original source inventory,130 weight hashes,5 metadata hashes,fixture and teacher before capture binding.",
+  "finite_validation": "Evaluator checked all32 output rows at each committed layer; independent layer3 sample rows0,15,31 matched hashes and BF16[1,2048,4,4096] finite tensors.",
+  "first_failure": "Unmodified baseline's direct ExLlama import eagerly required unused flash_attn package.",
+  "fix": "Reuse established observer's quantization-only namespace loader, loading real LinearEXL3 and compiled extension without importing unused ExLlama attention.",
+  "baseline_arithmetic": "Unchanged full45-layer target trunk,32x2048 fixture,65504 next-token positions, native288 experts, BF16 F.linear thenFP32 logits.",
+  "remaining_eta_minutes": [60, 75],
+  "eta_basis": "Two measured routed layers,84-89seconds between commits;40 remaining layers plus normalization/head comparison. Projection, not completion guarantee.",
+  "monitor_pid": 4044327,
+  "monitor_history": "attempt2-progress-history.json"
+}

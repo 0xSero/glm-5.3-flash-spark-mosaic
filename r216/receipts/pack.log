@@ -1,0 +1,58 @@
+packing 15 shards with 5 workers
+  model-00004-of-00015.safetensors: 6,464,054,764 B sha256=8475202a0563cfe9 removed=2688 renamed=7748 sliced=6 [22s]
+  model-00005-of-00015.safetensors: 6,568,286,600 B sha256=98c9a7e619555fa1 removed=2556 renamed=7880 sliced=6 [22s]
+  model-00003-of-00015.safetensors: 6,532,200,276 B sha256=23edb2bc6d8e34ef removed=2604 renamed=7848 sliced=6 [23s]
+  model-00002-of-00015.safetensors: 6,587,230,920 B sha256=4d6e9abde0961759 removed=2532 renamed=7904 sliced=6 [23s]
+  model-00001-of-00015.safetensors: 6,901,790,856 B sha256=9fd54cf363f88822 removed=2136 renamed=6191 sliced=4 [24s]
+  model-00007-of-00015.safetensors: 6,529,034,236 B sha256=a0916be4182a232b removed=2611 renamed=7841 sliced=6 [38s]
+  model-00006-of-00015.safetensors: 6,483,005,980 B sha256=5882634f2e19e7d5 removed=2664 renamed=7772 sliced=6 [39s]
+  model-00009-of-00015.safetensors: 6,530,384,016 B sha256=cdf9c1cb2fa5c154 removed=2604 renamed=7832 sliced=6 [39s]
+  model-00008-of-00015.safetensors: 6,543,030,940 B sha256=4645666178f3e4b8 removed=2585 renamed=7851 sliced=6 [39s]
+  model-00010-of-00015.safetensors: 6,492,481,752 B sha256=e8368da1ff821c66 removed=2652 renamed=7784 sliced=6 [41s]
+  model-00015-of-00015.safetensors: 1,717,450,816 B sha256=378e6082754e9807 removed=432 renamed=1277 sliced=2 [46s]
+  model-00011-of-00015.safetensors: 6,579,583,600 B sha256=267e1b2a79922408 removed=2544 renamed=7908 sliced=6 [55s]
+  model-00013-of-00015.safetensors: 6,539,859,756 B sha256=f49b8f08a100ee8d removed=2592 renamed=7844 sliced=6 [56s]
+  model-00014-of-00015.safetensors: 6,617,993,472 B sha256=0d2a0adbf19d5a12 removed=2496 renamed=7340 sliced=6 [56s]
+  model-00012-of-00015.safetensors: 6,539,859,716 B sha256=86e73df9a4b50bb9 removed=2592 renamed=7844 sliced=6 [57s]
+  copied LICENSE 1,070 B
+  copied README.md 7,238 B
+  copied chat_template.jinja 8,617 B
+  copied generation_config.json 194 B
+  copied kpool_aux.safetensors 11,548,768 B
+  copied mtp.safetensors 2,862,645,889 B
+  copied processor_config.json 909 B
+  copied quantization_config.json 47,905,678 B
+  copied tokenizer.json 20,217,442 B
+  copied tokenizer_config.json 761 B
+{
+ "schema": "dynamic-container-manifest-v1",
+ "point_id": "R216",
+ "packer_version": "u216-packer-v1",
+ "packer_sha256": "8d9eeb2b256657d1e8582b4981f3a197907ed33f6972c6f45957db6db5ab223f",
+ "plan_sha256": "62300f562bd7d239bdf28e5169ccc1114f4be6bd94f1b35fc80c9a0c84a3baf3",
+ "plan_file_sha256": "e24982a75d1b215d6e56b4db2a91a98c4354d7e67dd4f663a729824d72099be5",
+ "base": {
+  "branch": "3.05bpw",
+  "repo": "turboderp/GLM-5.3-Flash-exl3",
+  "revision": "332ab457b709b7ba30dd9a448be5de03b80a7ac9",
+  "total_bytes": 125263712676,
+  "source_dir": "/home/valentine/models/turboderp-glm53-flash-exl3-3p05bpw",
+  "index_total_size": 122286101684
+ },
+ "output_dir": "/home/valentine/models/glm53-3p05-pruned-r216",
+ "index_total_size": 93611759540,
+ "removed_experts": 3024,
+ "removed_tensor_bytes": 28674342144,
+ "bytes_per_removed_expert_incl_router_row": 9482256.0,
+ "config_patch_keys": [
+  "text_config.n_routed_experts",
+  "text_config.routed_experts_per_layer",
+  "text_config.retained_expert_ids_by_layer",
+  "text_config.dynamic_container"
+ ],
+ "total_output_bytes": 96580353416,
+ "started_utc": "2026-09-14T02:14:11Z",
+ "finished_utc": "2026-09-14T02:15:16Z",
+ "elapsed_s": 64.2,
+ "g2_verified": false
+}

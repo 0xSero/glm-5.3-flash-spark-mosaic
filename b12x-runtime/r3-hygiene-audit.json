@@ -1,0 +1,41 @@
+{
+  "state": "SCOPED_FILESYSTEM_AND_ENV_AUDIT_NOT_FULL_PUBLICATION_CLEARANCE",
+  "paths": {
+    "/opt/src": {
+      "exists": false
+    },
+    "/opt/cargo": {
+      "exists": false
+    },
+    "/opt/rustup": {
+      "exists": false
+    },
+    "/root/.cache/uv": {
+      "exists": false
+    },
+    "/root/.ssh": {
+      "exists": true
+    },
+    "/root/.aws": {
+      "exists": false
+    },
+    "/root/.config/gh": {
+      "exists": false
+    },
+    "/root/.cache/huggingface/token": {
+      "exists": false
+    },
+    "/vllm-workspace/build": {
+      "exists": false
+    },
+    "/tmp/exllamav3": {
+      "exists": false
+    }
+  },
+  "credential_like_environment_names": [],
+  "private_observer_pin_present": false,
+  "protected_head_flags": {
+    "VLLM_MXFP8_LM_HEAD": "0",
+    "VLLM_MTP_NVFP4_LM_HEAD": "0"
+  }
+}

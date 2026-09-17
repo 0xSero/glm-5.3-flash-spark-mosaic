@@ -1,0 +1,26 @@
+{
+  "cache": "cold_requested",
+  "content_class": "structured",
+  "context_limit": 262144,
+  "kv_capacity_tokens": 460208,
+  "max_num_seqs": 1,
+  "model": "glm-5.3-flash",
+  "native_mtp_claim": false,
+  "output_reserve": 2048,
+  "phase": "screen_and_sustained",
+  "run_id": "6e0e27e55e9348be81da3a485aed4577",
+  "runtime_receipt_sha256": "69a374ee7c3ceedfcc38a02036b2978b94748d5b9ec16773aa4b041a4b8c6f63",
+  "sampling": {
+    "temperature": 0
+  },
+  "schema": "glm53-reap-inference-matrix-v1",
+  "source_sha256": {
+    "native_metrics.py": "ca4ec3b4a9b836547fb93e7d4e44e0179e08af1e0744bd63e78606a02ebbacde",
+    "run.py": "a5a2f9f2ea24de5398c088aaeab6c3df00a802c28bdd50f180e053f43619eeb3",
+    "timing.py": "91d413a2678392cc129d4012942697100867ccb1ff3bf6aaddc6e9e553161207"
+  },
+  "template": {
+    "enable_thinking": true
+  },
+  "tokenizer_revision": null
+}

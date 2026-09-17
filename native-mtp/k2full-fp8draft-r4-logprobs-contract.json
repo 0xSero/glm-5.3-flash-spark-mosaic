@@ -1,0 +1,88 @@
+{
+  "request": {
+    "model": "glm-5.3-flash",
+    "prompt": [
+      785,
+      1196,
+      374
+    ],
+    "max_tokens": 1,
+    "temperature": 0.5,
+    "top_k": 1,
+    "logprobs": 20,
+    "return_token_ids": true,
+    "return_tokens_as_token_ids": true,
+    "add_special_tokens": false
+  },
+  "response": {
+    "id": "cmpl-b075697f8065cfb6",
+    "object": "text_completion",
+    "created": 1789159336,
+    "model": "glm-5.3-flash",
+    "choices": [
+      {
+        "index": 0,
+        "text": " asking",
+        "logprobs": {
+          "text_offset": [
+            0
+          ],
+          "token_logprobs": [
+            -1.0540156364440918
+          ],
+          "tokens": [
+            "token_id:10156"
+          ],
+          "top_logprobs": [
+            {
+              "token_id:10156": -1.0540156364440918,
+              "token_id:4460": -1.6165156364440918,
+              "token_id:1667": -2.491515636444092,
+              "token_id:19368": -2.929015636444092,
+              "token_id:3330": -2.929015636444092,
+              "token_id:10882": -3.616515636444092,
+              "token_id:5420": -4.304015636444092,
+              "token_id:304": -4.366515636444092,
+              "token_id:34521": -4.554015636444092,
+              "token_id:3238": -4.616515636444092,
+              "token_id:389": -4.804015636444092,
+              "token_id:3432": -5.054015636444092,
+              "token_id:8479": -5.054015636444092,
+              "token_id:24016": -5.241515636444092,
+              "token_id:4303": -5.366515636444092,
+              "token_id:90511": -5.366515636444092,
+              "token_id:518": -5.491515636444092,
+              "token_id:537": -5.491515636444092,
+              "token_id:8013": -5.554015636444092,
+              "token_id:5290": -5.554015636444092
+            }
+          ]
+        },
+        "finish_reason": "length",
+        "stop_reason": null,
+        "token_ids": [
+          10156
+        ],
+        "prompt_logprobs": null,
+        "prompt_token_ids": [
+          785,
+          1196,
+          374
+        ],
+        "routed_experts": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.1.dev20051+g487ecf187-07b2ae49",
+    "usage": {
+      "prompt_tokens": 3,
+      "total_tokens": 4,
+      "completion_tokens": 1,
+      "prompt_tokens_details": null
+    },
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "pass": true
+}

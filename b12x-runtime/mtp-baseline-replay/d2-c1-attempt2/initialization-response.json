@@ -1,0 +1,62 @@
+{
+  "payload": {
+    "chat_template_kwargs": {
+      "enable_thinking": true,
+      "reasoning_effort": "low"
+    },
+    "max_tokens": 128,
+    "messages": [
+      {
+        "content": "Return exactly the JSON object {\"answer\":42}.",
+        "role": "user"
+      }
+    ],
+    "model": "glm-5.3-flash",
+    "response_format": {
+      "type": "json_object"
+    },
+    "temperature": 0
+  },
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\"answer\":42}",
+          "function_call": null,
+          "reasoning": null,
+          "refusal": null,
+          "role": "assistant"
+        },
+        "routed_experts": null,
+        "stop_reason": 154827,
+        "token_ids": null
+      }
+    ],
+    "created": 1789204784,
+    "ec_transfer_params": null,
+    "id": "chatcmpl-a1b596377fc04b27",
+    "kv_transfer_params": null,
+    "metrics": null,
+    "model": "glm-5.3-flash",
+    "object": "chat.completion",
+    "prompt_logprobs": null,
+    "prompt_text": null,
+    "prompt_token_ids": null,
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.1.dev1+g3aada6772.d20260911-ac2283c5",
+    "usage": {
+      "completion_tokens": 7,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 22,
+      "prompt_tokens_details": null,
+      "total_tokens": 29
+    }
+  }
+}

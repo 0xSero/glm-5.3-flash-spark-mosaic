@@ -1,0 +1,57 @@
+{
+  "state": "INSTALLED_SOURCE_AND_CPU_IMPORT_VERIFIED_GPU_NOT_TESTED",
+  "recorded_utc": "2026-09-12T00:24:25.213232+00:00",
+  "image_id": "sha256:c0d5f76237a5fe1262291eb23b8086ef0b2637e6d8d45ccdbb9c5706df321399",
+  "probe": {
+    "cuda_initialized_before": false,
+    "gpu_exposed": false,
+    "packages": {
+      "torch": "2.13.0+cu130",
+      "nvidia-cutlass-dsl": "4.6.2",
+      "quack-kernels": "0.6.4",
+      "cuda-python": "13.3.1",
+      "cuda-bindings": "13.3.1"
+    },
+    "source": {
+      "model_executor/layers/fused_moe/router/gate_linear.py": {
+        "sha256": "8ad2f44f02fbb709783c17dcceb628b16ae5adb381155f573b0cd0663243f596",
+        "bytes": 12103
+      },
+      "model_executor/kernels/linear/cute_dsl/ll_bf16.py": {
+        "sha256": "03ebf01500895acdcf41f2a39aa85d155b835bc5a53bc4463acd377d263cda95",
+        "bytes": 11146
+      },
+      "model_executor/kernels/linear/cute_dsl/_ll_bf16_dotprod.py": {
+        "sha256": "2d01e295542126c0a46d123ae6cbd33ab0739bb5ba4b5e2660a51215877234e6",
+        "bytes": 11961
+      },
+      "model_executor/kernels/linear/cute_dsl/_ll_bf16_splitk.py": {
+        "sha256": "2d36592931d6d227872b6d8f92935540172a3bf3ec42d411ba687fd0e980ae37",
+        "bytes": 24792
+      }
+    },
+    "ll_bf16_available": true,
+    "actual_imported_gate_class": {
+      "module": "vllm.model_executor.layers.fused_moe.router.gate_linear",
+      "qualname": "GateLinear",
+      "sourcefile": "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/layers/fused_moe/router/gate_linear.py"
+    },
+    "cuda_initialized_after": false
+  },
+  "live_runtime_modified": false,
+  "gpu_test_run": false,
+  "sha256": {
+    "gate_linear.installed.py": "8ad2f44f02fbb709783c17dcceb628b16ae5adb381155f573b0cd0663243f596",
+    "_ll_bf16_dotprod.installed.py": "2d01e295542126c0a46d123ae6cbd33ab0739bb5ba4b5e2660a51215877234e6",
+    "REPORT.md": "f034b364d380db755af311915c16e61c29fd3d8d219989ab1ef4d62b7106ded9",
+    "import-probe.log": "6a425db749e48c75eab811f007b37101e08a9d5676b659216e07fd262472c7cd",
+    "_ll_bf16_splitk.installed.py": "2d36592931d6d227872b6d8f92935540172a3bf3ec42d411ba687fd0e980ae37",
+    "ll_bf16.installed.py": "03ebf01500895acdcf41f2a39aa85d155b835bc5a53bc4463acd377d263cda95",
+    "cleanup_retired_compile_containers.py": "d563d810322e00c41da1a9e6c10bfbd727f6ffe54052486dc101fe77d7be2a0c",
+    "import_probe.py": "52350e6f642b70e82e3d73d441a30316939dfd85f7768a0fccb10ad468a85aec",
+    "installed-sources.json": "c02fa0ed9fe441215bf7745a59fce79bac46c5bf29bd7197c17e17838464a9b8",
+    "model.installed.py": "5c86beadb1d14b648fb6244160997afba9b8d9da031fc0f232b32d5760ecbbbf"
+  },
+  "followup_gpu_receipt": "GPU_VALIDATION.json",
+  "followup_note": "Initial CPU/import snapshot preserved; later24-cell GPU microtest passed. Candidate dispatch patch not deployed."
+}

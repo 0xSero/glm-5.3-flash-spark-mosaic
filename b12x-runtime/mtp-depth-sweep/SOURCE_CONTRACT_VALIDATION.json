@@ -1,0 +1,243 @@
+{
+  "state": "PINNED_INSTALLED_PURE_SELECTOR_CPU_PASS",
+  "configuration_count": 16,
+  "configurations": [
+    {
+      "depth": 1,
+      "slots": 1,
+      "target_token_sizes": [
+        2
+      ],
+      "draft_prefill_request_capacities": [
+        1
+      ]
+    },
+    {
+      "depth": 1,
+      "slots": 2,
+      "target_token_sizes": [
+        2,
+        4
+      ],
+      "draft_prefill_request_capacities": [
+        1,
+        2
+      ]
+    },
+    {
+      "depth": 1,
+      "slots": 4,
+      "target_token_sizes": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "draft_prefill_request_capacities": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "depth": 1,
+      "slots": 8,
+      "target_token_sizes": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16
+      ],
+      "draft_prefill_request_capacities": [
+        1,
+        2,
+        4,
+        8
+      ]
+    },
+    {
+      "depth": 2,
+      "slots": 1,
+      "target_token_sizes": [
+        3
+      ],
+      "draft_prefill_request_capacities": [
+        1
+      ]
+    },
+    {
+      "depth": 2,
+      "slots": 2,
+      "target_token_sizes": [
+        3,
+        6
+      ],
+      "draft_prefill_request_capacities": [
+        1,
+        2
+      ]
+    },
+    {
+      "depth": 2,
+      "slots": 4,
+      "target_token_sizes": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "draft_prefill_request_capacities": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "depth": 2,
+      "slots": 8,
+      "target_token_sizes": [
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21,
+        24
+      ],
+      "draft_prefill_request_capacities": [
+        1,
+        2,
+        4,
+        8
+      ]
+    },
+    {
+      "depth": 3,
+      "slots": 1,
+      "target_token_sizes": [
+        4
+      ],
+      "draft_prefill_request_capacities": [
+        1
+      ]
+    },
+    {
+      "depth": 3,
+      "slots": 2,
+      "target_token_sizes": [
+        4,
+        8
+      ],
+      "draft_prefill_request_capacities": [
+        1,
+        2
+      ]
+    },
+    {
+      "depth": 3,
+      "slots": 4,
+      "target_token_sizes": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "draft_prefill_request_capacities": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "depth": 3,
+      "slots": 8,
+      "target_token_sizes": [
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32
+      ],
+      "draft_prefill_request_capacities": [
+        1,
+        2,
+        4,
+        8
+      ]
+    },
+    {
+      "depth": 5,
+      "slots": 1,
+      "target_token_sizes": [
+        6
+      ],
+      "draft_prefill_request_capacities": [
+        1
+      ]
+    },
+    {
+      "depth": 5,
+      "slots": 2,
+      "target_token_sizes": [
+        6,
+        12
+      ],
+      "draft_prefill_request_capacities": [
+        1,
+        2
+      ]
+    },
+    {
+      "depth": 5,
+      "slots": 4,
+      "target_token_sizes": [
+        6,
+        12,
+        18,
+        24
+      ],
+      "draft_prefill_request_capacities": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "depth": 5,
+      "slots": 8,
+      "target_token_sizes": [
+        6,
+        12,
+        18,
+        24,
+        30,
+        36,
+        42,
+        48
+      ],
+      "draft_prefill_request_capacities": [
+        1,
+        2,
+        4,
+        8
+      ]
+    }
+  ],
+  "source_sha256": {
+    "v1/worker/gpu/spec_decode/speculator.py": "e5e4800ad18c5d8acd8257b3c47cc26e2a019e63a73131b12f63d60197f7c01c",
+    "v1/worker/gpu/spec_decode/autoregressive/speculator.py": "9b238a92b270fb2e3c7358a51c4338a9a20d91eec80bf582309c5c3cbe9bb0a4",
+    "v1/worker/gpu/spec_decode/mtp/speculator.py": "96f26b2a5e7ed9139634f6dd1e8ea58b211d6414a0d729db5e9b0e5b0342ac90",
+    "v1/worker/gpu/cudagraph_utils.py": "5ba3088cc979bfacbb2d823a2f6561ad7cdea2e66d1ff349d1c20341af9d466b",
+    "models/glm5next/nvidia/mtp.py": "84289781cc7169949a57d73ccdb2c9f5cbaf02f61da819f03297cd86dd2d2232",
+    "v1/attention/backends/mla/b12x_mla_sparse.py": "dd0e7b16136203114d8840764f6843c45dc9b3b8de78127565c5e87473ed0300"
+  },
+  "gpu_test": false
+}

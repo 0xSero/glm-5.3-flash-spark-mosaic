@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "correct_math": false,
+  "correct_list": false,
+  "normal_stops": true,
+  "mtp_counter_deltas": {
+    "vllm:spec_decode_num_draft_tokens_total": 68.0,
+    "vllm:spec_decode_num_accepted_tokens_total": 66.0
+  },
+  "pass": false
+}
+[
+  {
+    "content": "The user asks: What is 6 multiplied by 7? Answer only the number.\n\n6 \u00d7 7 = 42.\n\nThey want only the number. So I should respond with just \"42\".42",
+    "elapsed_s": 4.539555534021929,
+    "ttft_s": 1.7580365859903395
+  },
+  {
+    "content": "The user wants me to write integers from 1 through 20, separated by commas, with no other text. This is a simple, straightforward request.1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20",
+    "elapsed_s": 6.558599240961485,
+    "ttft_s": 0.44981917401310056
+  }
+]
+Traceback (most recent call last):
+  File "/home/valentine/glm53-single-spark-release-20260911/native-mtp/smoke_native_mtp.py", line 41, in <module>
+    assert report['pass']
+           ~~~~~~^^^^^^^^
+AssertionError

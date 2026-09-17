@@ -1,0 +1,15 @@
+{
+  "state": "TWO_COMPLETED_LEGACY_C1_CELLS_NOT_RELEASE_ACCEPTANCE",
+  "backend": "legacy EXL3 + FlashInfer; no B12x",
+  "cells": 2,
+  "source_renderer_sha256": "a5a2f9f2ea24de5398c088aaeab6c3df00a802c28bdd50f180e053f43619eeb3",
+  "files": {
+    "TABLE-actual-counts.md": "650bafcaaaf053aacf3ed0996fb366e40396b565d5b12e7b197473a871b88bd6",
+    "TABLE.md": "502c3e1364897e5e0af66986c2ee12762fa7ab679b2a65dddf16b484575e8732",
+    "cell-000.json": "8aa441d65ac97d599e0c07b6ac1a9c087da3b869d2e3fa5651538ea64602fb34",
+    "cell-001.json": "1d059523530ddba6a5f638e8dca49389165382ff7b54181d87cdfaf9ff92b0ca",
+    "matrix.json": "2b7d011cf40db5e6329bba179eb631ee28a23882ff7a3a890be3fa279ed48666",
+    "mtp-proof.json": "49d01228d65668d79f3aaa3083e783dddbefaa90b6650d4ae9977d329ab7d9c8",
+    "run.json": "8efc5f978fd23b00e3377e9543892543e7f90ad587af38d36982a2d0c6927c7f"
+  }
+}

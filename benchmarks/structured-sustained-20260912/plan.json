@@ -1,0 +1,32 @@
+{
+  "targets": [
+    1024,
+    4096,
+    16384,
+    65536,
+    131072,
+    200000,
+    260096
+  ],
+  "reserve": 2048,
+  "context": 262144,
+  "max_num_seqs": 1,
+  "concurrencies": [
+    1
+  ],
+  "not_admitted": [
+    2,
+    4,
+    8
+  ],
+  "repeats": [
+    "warmup",
+    "measured1",
+    "measured2"
+  ],
+  "content_class": "structured",
+  "output": "integers1through300",
+  "minimum_window_seconds": 30,
+  "reason": "Prior200integer output lasted28s; preserve as screen only.300extends window without forcing unfinished answers.",
+  "runtime_receipt_sha256": "ac2657d37af38a05595759b1ffcbd0fe3288386ac22d5a9639195b2618480071"
+}

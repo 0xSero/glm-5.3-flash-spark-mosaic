@@ -1,0 +1,40 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.proposed
+#1 transferring dockerfile: 599B 0.0s done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for ghcr.io/0xsero/glm53-flash-exl3-k2-dflash@sha256:5ea6d04d65d1a2f30f632815776fb765359529ab117818ba2b5e5c5480e34963
+#2 ...
+
+#3 [auth] 0xsero/glm53-flash-exl3-k2-dflash:pull token for ghcr.io
+#3 DONE 0.0s
+
+#2 [internal] load metadata for ghcr.io/0xsero/glm53-flash-exl3-k2-dflash@sha256:5ea6d04d65d1a2f30f632815776fb765359529ab117818ba2b5e5c5480e34963
+#2 DONE 1.0s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [1/4] FROM ghcr.io/0xsero/glm53-flash-exl3-k2-dflash@sha256:5ea6d04d65d1a2f30f632815776fb765359529ab117818ba2b5e5c5480e34963
+#5 DONE 0.0s
+
+#6 [internal] load build context
+#6 transferring context: 87.18kB done
+#6 DONE 0.0s
+
+#7 [2/4] COPY proposed/models/glm5next/nvidia/mtp.py /usr/local/lib/python3.12/dist-packages/vllm/models/glm5next/nvidia/mtp.py
+#7 CACHED
+
+#8 [3/4] COPY proposed/v1/spec_decode/llm_base_proposer.py /usr/local/lib/python3.12/dist-packages/vllm/v1/spec_decode/llm_base_proposer.py
+#8 DONE 0.2s
+
+#9 [4/4] RUN python3 -m py_compile /usr/local/lib/python3.12/dist-packages/vllm/models/glm5next/nvidia/mtp.py /usr/local/lib/python3.12/dist-packages/vllm/v1/spec_decode/llm_base_proposer.py
+#9 DONE 0.4s
+
+#10 exporting to image
+#10 exporting layers 0.1s done
+#10 writing image sha256:b49089b5db74da49ce4ce4605f3537171ac6a72cae314d5f5bed77aabaf44850 done
+#10 naming to docker.io/local/glm53-reap-native-mtp:20260911-r2 done
+#10 DONE 0.1s

@@ -1,0 +1,38 @@
+{
+  "repo": "0xSero/GLM-5.3-Flash-EXL3-TR3-2.0bpw",
+  "revision": "35b4b580debe2a1510a2eb042d9d6d4cd7fb3a6b",
+  "files": {
+    "tokenizer.json": {
+      "bytes": 20217442,
+      "sha256": "19e773648cb4e65de8660ea6365e10acca112d42a854923df93db4a6f333a82d"
+    },
+    "tokenizer_config.json": {
+      "bytes": 761,
+      "sha256": "98b1271574f41abf89427ae2dda030d94dc9478f0edc5a8bd240db213c6fd5fc"
+    },
+    "processor_config.json": {
+      "bytes": 909,
+      "sha256": "aae38374c94b08cc9b0547c6e64f05b951bd9735cea571c6988f5ed552bed3ed"
+    },
+    "generation_config.json": {
+      "bytes": 194,
+      "sha256": "230c30609ecbbb9e6583bedde8e7bdda0c6eb8fe5fad0eaeb3d1b293d751cb4f"
+    },
+    "chat_template.jinja": {
+      "bytes": 8757,
+      "sha256": "d15e56b35f444101d539a0101e56594783bd10987ebdfc61b7cc809af4500754"
+    },
+    "LICENSE": {
+      "bytes": 1070,
+      "sha256": "30b85b6b9659f2e78aa259f8faf5d920a68dee7c9ced3fa6dba1f19f2bc4fca1"
+    },
+    "THIRD_PARTY_NOTICES.md": {
+      "bytes": 418,
+      "sha256": "85f221b399ef9b6a83faada386b8c7ec5ad24b54a190da5c44d55d68ff833d2b"
+    },
+    "PROVENANCE.md": {
+      "bytes": 694,
+      "sha256": "99b33c2b952ec5e298d26ac6b5da8a470a74cce1c4573d7e4166bdf72c67ad75"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "admission_sha256": "0ef298d95f438a49fc5b0adb9c97ff8f58998832610f32fd77b44ae9e85b9350",
+  "baseline_sha256": {
+    "1024": "a4b5224cf2040cf3e98b0c0197385d20a7adea3f98e43dbf9ef6012784dfe07b",
+    "16384": "178a15842d5d8fdc6fef418a46e275b71faa8406b90471dad1fa5b9e7d7fe5d1"
+  },
+  "scope": "C1 exact baseline payloads; warmups excluded, no general quality claim",
+  "wrapper_sha256": "250be4be15b99a4937bb45409434f23088fd083447483d3bd1f14ed9dc57f23c"
+}

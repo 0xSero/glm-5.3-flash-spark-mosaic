@@ -1,0 +1,11 @@
+{
+  "native_config_sha256": "6f01b4d22b1cfd19f0f6892356bd88fc2725f443a3fd29d8003f3981cc338ecf",
+  "candidate_config_sha256": "6f01b4d22b1cfd19f0f6892356bd88fc2725f443a3fd29d8003f3981cc338ecf",
+  "source_index_sha256": "825d6dc1ae4e10e7e4e744d8e556c781ab2e87b87ddc8775f2b01141ddad4327",
+  "native_mtp_tensor_count": 889,
+  "index_tensor_count": 891,
+  "native_mtp_bytes": 14865185408,
+  "draft_quantization": null,
+  "mtp_experts": 288,
+  "serving_validated": false
+}

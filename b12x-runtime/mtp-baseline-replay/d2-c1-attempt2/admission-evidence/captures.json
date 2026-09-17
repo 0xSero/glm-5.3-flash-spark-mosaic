@@ -1,0 +1,102 @@
+[
+  {
+    "capture_completed": true,
+    "completed_at_ns": 1789204744961206593,
+    "descriptors": [
+      {
+        "cg_mode": "FULL",
+        "max_query_len": null,
+        "num_active_loras": 0,
+        "num_reqs": 1,
+        "num_tokens": 1,
+        "uniform_token_count": 1
+      }
+    ],
+    "manager_class": "SpeculatorCudaGraphManager",
+    "manager_id": 247472272926016,
+    "pid": 316,
+    "profile_sample": false,
+    "progress_description": "Capturing decode CUDA graphs",
+    "schema": "glm53-completed-graph-capture-v1"
+  },
+  {
+    "capture_completed": true,
+    "completed_at_ns": 1789204744918366640,
+    "descriptors": [
+      {
+        "cg_mode": "FULL",
+        "max_query_len": null,
+        "num_active_loras": 0,
+        "num_reqs": 1,
+        "num_tokens": 3,
+        "uniform_token_count": 3
+      }
+    ],
+    "manager_class": "ModelCudaGraphManager",
+    "manager_id": 247472272930096,
+    "pid": 316,
+    "profile_sample": false,
+    "progress_description": "Capturing CUDA graphs",
+    "schema": "glm53-completed-graph-capture-v1"
+  },
+  {
+    "capture_completed": true,
+    "completed_at_ns": 1789204733497833484,
+    "descriptors": [
+      {
+        "cg_mode": "FULL",
+        "max_query_len": null,
+        "num_active_loras": 0,
+        "num_reqs": 1,
+        "num_tokens": 3,
+        "uniform_token_count": 3
+      }
+    ],
+    "manager_class": "SpeculatorCudaGraphManager",
+    "manager_id": 247475617379824,
+    "pid": 316,
+    "profile_sample": false,
+    "progress_description": "Capturing prefill CUDA graphs",
+    "schema": "glm53-completed-graph-capture-v1"
+  },
+  {
+    "capture_completed": true,
+    "completed_at_ns": 1789204744941119576,
+    "descriptors": [
+      {
+        "cg_mode": "FULL",
+        "max_query_len": null,
+        "num_active_loras": 0,
+        "num_reqs": 1,
+        "num_tokens": 3,
+        "uniform_token_count": 3
+      }
+    ],
+    "manager_class": "SpeculatorCudaGraphManager",
+    "manager_id": 247472272931152,
+    "pid": 316,
+    "profile_sample": false,
+    "progress_description": "Capturing prefill CUDA graphs",
+    "schema": "glm53-completed-graph-capture-v1"
+  },
+  {
+    "capture_completed": true,
+    "completed_at_ns": 1789204733549778061,
+    "descriptors": [
+      {
+        "cg_mode": "FULL",
+        "max_query_len": null,
+        "num_active_loras": 0,
+        "num_reqs": 1,
+        "num_tokens": 1,
+        "uniform_token_count": 1
+      }
+    ],
+    "manager_class": "SpeculatorCudaGraphManager",
+    "manager_id": 247475617542896,
+    "pid": 316,
+    "profile_sample": false,
+    "progress_description": "Capturing decode CUDA graphs",
+    "schema": "glm53-completed-graph-capture-v1"
+  }
+]

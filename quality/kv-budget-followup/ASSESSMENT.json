@@ -1,0 +1,56 @@
+{
+  "state": "PROSPECTIVE_ACCOUNTING_ONLY",
+  "actual_baseline_context_limit": 262144,
+  "actual_baseline_slots": 1,
+  "reported_KV_capacity": 753664,
+  "reported_available_KV_GiB": 6.32,
+  "scope": "C1 currently admits one262144request despite larger aggregate KV capacity. More target precision might use some allowance, without reducing required context. Full-server NVFP4 admission first.",
+  "source_sha256": {
+    "b12x-runtime/mtp-baseline-replay/d2-c1-attempt2/admission.json": "0ef298d95f438a49fc5b0adb9c97ff8f58998832610f32fd77b44ae9e85b9350",
+    "b12x-runtime/mtp-draft-nvfp4/FULL_MEMORY_COMPARISON.json": "9b3ef0653bd4265a11154f62989f2f7372486ac82ff3ed7d5dab9617688360f7",
+    "quality/unpruned-next-candidate/projection14/selection.json": "57926af4ddf6aa5f5cf0180ec6cf57b867f4ec62457d806ecab1310cddf65c78"
+  },
+  "rows": [
+    {
+      "down_k3_layers": 14,
+      "extra_target_GiB": 3.9375,
+      "net_extra_after_measured_draft_saving_GiB": 0.9843831062316895,
+      "hypothetical_remaining_KV_allowance_GiB": 5.335616893768311,
+      "linear_capacity_estimate_NOT_ADMITTED": 636275
+    },
+    {
+      "down_k3_layers": 18,
+      "extra_target_GiB": 5.0625,
+      "net_extra_after_measured_draft_saving_GiB": 2.1093831062316895,
+      "hypothetical_remaining_KV_allowance_GiB": 4.210616893768311,
+      "linear_capacity_estimate_NOT_ADMITTED": 502118
+    },
+    {
+      "down_k3_layers": 20,
+      "extra_target_GiB": 5.625,
+      "net_extra_after_measured_draft_saving_GiB": 2.6718831062316895,
+      "hypothetical_remaining_KV_allowance_GiB": 3.648116893768311,
+      "linear_capacity_estimate_NOT_ADMITTED": 435040
+    },
+    {
+      "down_k3_layers": 22,
+      "extra_target_GiB": 6.1875,
+      "net_extra_after_measured_draft_saving_GiB": 3.2343831062316895,
+      "hypothetical_remaining_KV_allowance_GiB": 3.085616893768311,
+      "linear_capacity_estimate_NOT_ADMITTED": 367961
+    },
+    {
+      "down_k3_layers": 24,
+      "extra_target_GiB": 6.75,
+      "net_extra_after_measured_draft_saving_GiB": 3.7968831062316895,
+      "hypothetical_remaining_KV_allowance_GiB": 2.523116893768311,
+      "linear_capacity_estimate_NOT_ADMITTED": 300883
+    }
+  ],
+  "not_proven": [
+    "Linear KV scaling ignores hybrid block rounding and fixed/per-sequence state.",
+    "Draft-only measured saving may not equal full-server retained saving.",
+    "Larger target transients, native MTP graphs, media and OS reserve must be measured.",
+    "No predicted fidelity score, no selected release, no lower context or quantized protected target tensors."
+  ]
+}

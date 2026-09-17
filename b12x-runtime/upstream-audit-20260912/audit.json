@@ -1,0 +1,27 @@
+{
+  "checked_utc": "2026-09-12T00:40:36.280756+00:00",
+  "records": [
+    {
+      "repository": "https://github.com/local-inference-lab/b12x.git",
+      "running_revision": "3b862805d2b7fd52e6fe507fd28038bd48797cf5",
+      "upstream_revision": "864b630235206d1d88338767c59e897f315822ef",
+      "commits": [
+        "864b630235206d1d88338767c59e897f315822ef Parallelize V4.1 lagged mHC decode and add integration benchmarks",
+        "08c1f45599724d9576f2c748b84777edf666f041 Add V4.1 Flash TP4 MoE benchmark and native W4A8 micro kernels"
+      ],
+      "diff_sha256": "ba288858e94f3e59f1939ea05b788c7144e41109639e034607148e6101560061",
+      "deployed": false
+    },
+    {
+      "repository": "https://github.com/local-inference-lab/vllm.git",
+      "running_revision": "3aada67721bfdb8b98355207ca3780bb32e6f434",
+      "upstream_revision": "d783e291ea96547705e157add7c9d3df409f1d04",
+      "commits": [
+        "d783e291ea96547705e157add7c9d3df409f1d04 Update ds41 serve script"
+      ],
+      "diff_sha256": "8cc87e8d9682560e829d9e4c22dacd5a6a335c5547d83db7538ce7b591206ca9",
+      "deployed": false
+    }
+  ],
+  "scope": "Fetched immutable new source pins; existing checkouts and running images unchanged. No speedup inferred."
+}

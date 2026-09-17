@@ -1,0 +1,20 @@
+{
+  "state": "PASS_RAW_LOGPROBS_API_CONTRACT_NOT_QUALITY_ACCEPTANCE",
+  "request_count": 1,
+  "fixture_row": 0,
+  "fixture_sha256": "61e05b1583785a919de7fc11c6f2a237a74b999a1230310c5a8eae2200910093",
+  "prompt_tokens": 2047,
+  "completion_tokens": 1,
+  "token_ids": [
+    7006
+  ],
+  "finite_top_logprobs": 20,
+  "top_k": 1,
+  "temperature": 0.5,
+  "logprobs_mode": "raw_logprobs",
+  "mode_evidence": "Installed ModelConfig default raw_logprobs, no argv override,20 finite alternatives despite top_k1",
+  "profiler_stopped": true,
+  "profiler_evidence": "Latest live engine log has stopped event after last start; no later start",
+  "container_id": "95fa3d37087adf09ff2b3ed9518d234577b11bdbd2d4bddc416509cec03e9f42",
+  "image_id": "sha256:afb74c791853d438810b27bf28994128f5baa2a3bf5c9b50b9ecdad7b9afffd5"
+}

@@ -1,0 +1,10 @@
+{
+  "state": "CAPTURE_RUNNING_LAYER0_RECEIPT_VERIFIED",
+  "candidate_manifest_sha256": "590ec08e84a66767e03964f7482e84c952e6b98c26cddc7d45983592c4e491f5",
+  "cid": "2e0bda63e337c4247105ac3990471781c0cd8f2bfe0e75001d5b74fc5e1e5f67",
+  "first_completed_layer": 0,
+  "local_terminal_fetch_pid": 10255,
+  "terminal_result": "quality/unpruned-next-candidate/projection/quality/FINAL_RESULT.json",
+  "quality_accepted": false,
+  "runtime_accepted": false
+}
