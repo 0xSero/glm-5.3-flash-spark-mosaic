@@ -12,7 +12,13 @@
 #              vision on, MAX_BATCH_TOKENS=256 pairing (the pairing that avoids
 #              the "EXL3 batch exceeds preplanned N tokens" scheduler crash)
 #
+# Defaults are the a0 (2.05bpw) values. The M288-12L mosaic is ~11 GB larger, so
+# it needs GLM53_MEM_FRACTION=0.95 (KV 595,200) and GLM53_MAX_RUNNING=1 — the
+# values its confirming run was measured with; at 0.90 the 262,144-token KV gate
+# does not fit.
+#
 # Usage:  ./run-spark.sh /path/to/GLM-5.3-Flash-exl3-2.05bpw
+#         GLM53_MEM_FRACTION=0.95 GLM53_MAX_RUNNING=1 ./run-spark.sh /path/to/mosaic-12l
 set -euo pipefail
 MODEL="${1:?usage: run-spark.sh /path/to/GLM-5.3-Flash-exl3-2.05bpw}"
 IMG="${GLM53_IMG:-ghcr.io/0xsero/glm53-flash-exl3-plain:2p05-sglang-mul1-r1}"
@@ -20,6 +26,8 @@ NAME="${GLM53_CONTAINER:-glm53-a0}"
 WORK="$(cd "$(dirname "$0")" && pwd)"
 RECEIPTS="${GLM53_RECEIPTS:-$WORK/receipts}"
 PORT="${GLM53_PORT:-8000}"
+MEM="${GLM53_MEM_FRACTION:-0.90}"
+MAXRUN="${GLM53_MAX_RUNNING:-16}"
 mkdir -p "$RECEIPTS"
 
 CENSUS="$RECEIPTS/exl3-plain-census.json"
@@ -50,8 +58,8 @@ docker run -d --name "$NAME" \
   --kv-cache-dtype fp8_e4m3 --attention-backend dsa \
   --dsa-prefill-backend flashinfer_sparse_mla --dsa-decode-backend flashinfer_sparse_mla \
   --linear-attn-backend triton --disable-shared-experts-fusion \
-  --chunked-prefill-size 256 --max-prefill-tokens 256 --max-running-requests 16 \
-  --mem-fraction-static 0.90 --enable-multimodal \
+  --chunked-prefill-size 256 --max-prefill-tokens 256 --max-running-requests "$MAXRUN" \
+  --mem-fraction-static "$MEM" --enable-multimodal \
   --chat-template /opt/glm53/chat-template-mm.jinja --reasoning-parser glm45 \
   --tool-call-parser glm47 --disable-cuda-graph
 

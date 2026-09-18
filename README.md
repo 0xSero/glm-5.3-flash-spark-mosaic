@@ -37,6 +37,30 @@ command).
 
 Serving config preserved per program rules: **262,144 context and vision on**.
 
+### The mosaic — best quality, published weights
+
+The M288-12L mosaic is the strongest artifact in this programme, and its weights are published, so
+there is nothing to build:
+
+```bash
+git clone https://github.com/0xSero/glm-5.3-flash-spark-mosaic
+cd glm-5.3-flash-spark-mosaic/docker
+
+# 1) weights (~96 GB, pinned revision, verified against the model repo's own sha256 manifest)
+./download-mosaic.sh ~/models/mosaic-12l
+
+# 2) census + serve
+GLM53_MEM_FRACTION=0.95 GLM53_MAX_RUNNING=1 ./run-spark.sh ~/models/mosaic-12l
+```
+
+Weights: [`0xSero/GLM-5.3-Flash-EXL3-M288-Mosaic-12L`](https://huggingface.co/0xSero/GLM-5.3-Flash-EXL3-M288-Mosaic-12L) @
+`2642851741fc833764e77d03039117be559dc83e`. Those two variables are the mosaic's **measured** values,
+not defaults: it is ~11 GB larger than a0, and at `mem-fraction-static 0.90` the 262,144-token KV gate
+does not fit. Expect **9–10 tok/s decode** — this artifact has no MTP, for the reason in
+[`mosaic-gatea/MTP-CODEBOOK-BLOCKER.md`](mosaic-gatea/MTP-CODEBOOK-BLOCKER.md). Model card:
+[`mosaic-12l/MODEL-CARD.md`](mosaic-12l/MODEL-CARD.md); measurements and receipt paths:
+[`mosaic-12l/MEASURED.md`](mosaic-12l/MEASURED.md).
+
 ## The two artifact lineages (measured boundary)
 
 | lineage | codebook | runtime | MTP | measured decode (262k ctx class) |
@@ -65,14 +89,28 @@ cache, `mosaic-gatea/receipts-557f/`): decode 18.70–19.23 tok/s from 1,023 to
 260,095 input tokens (2.7% spread), prefill ~452 tok/s, TTFT 2.6 s @1k →
 575.7 s @260k, MTP acceptance 0.977–1.000, 14/14 cells sustained.
 
-## Mosaic artifacts
+## Mosaic artifacts and weights
 
 The M288 mosaics are byte-copy combinations of the sealed 2.05bpw and 3.05bpw
 quants (no new quantization error): `mosaic-gatea/mosaic_pack.py`,
 plans `mosaic-gatea/mosaic-12l-plan.json` (+ pack receipts with per-tensor
-SHAs). The mosaic weights themselves are large binaries and are **not** in
-this repository; rebuild them from the two public HF quants with the pack
-scripts, or apply the plan directly.
+SHAs).
+
+**The 12L mosaic weights are published** — 96.1 GB, 12 shards, pinned revision,
+each file verifiable against the manifest the model repo ships:
+
+| | |
+|---|---|
+| weights | https://huggingface.co/0xSero/GLM-5.3-Flash-EXL3-M288-Mosaic-12L |
+| revision | `2642851741fc833764e77d03039117be559dc83e` |
+| download | `docker/download-mosaic.sh` (pinned + verified, fails closed) |
+| provenance | [`mosaic-12l/PROVENANCE.json`](mosaic-12l/PROVENANCE.json) — base pin, layer plan, per-shard hashes |
+| measured | [`mosaic-12l/MEASURED.md`](mosaic-12l/MEASURED.md) |
+
+Upgraded layers are 3, 32, 33 and 36–44 — all 288 experts of each, at 3.05bpw; everything else,
+including MTP layer 45, is carried over from the 2.05bpw base byte-for-byte. The 10L and 20L siblings
+exist on the build hosts but are not published; rebuild either from the two public quants with the pack
+scripts and the corresponding plan file.
 
 Known negative result kept on purpose: per-expert (not per-layer) bit
 allocation fails at load — the overlay fuses all experts of a layer into one
@@ -89,5 +127,8 @@ stacked tensor (`mosaic-gatea/GATE-A-RESULTS.md`).
 
 ## License
 
-Code and docs: MIT. Model weights: see the upstream HF repos
-(`zai-org/GLM-5.3-Flash`, MIT; `turboderp/GLM-5.3-Flash-exl3`).
+Code and docs: MIT. Model weights: MIT, © 2026 Z.AI Co., Ltd, inherited through
+[`turboderp/GLM-5.3-Flash-exl3`](https://huggingface.co/turboderp/GLM-5.3-Flash-exl3); the mosaic's own
+`LICENSE` travels with the weights in
+[`0xSero/GLM-5.3-Flash-EXL3-M288-Mosaic-12L`](https://huggingface.co/0xSero/GLM-5.3-Flash-EXL3-M288-Mosaic-12L).
+Upstream: `zai-org/GLM-5.3-Flash`.

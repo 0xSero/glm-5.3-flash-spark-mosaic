@@ -1,0 +1,115 @@
+{
+  "artifact": "GLM-5.3-Flash EXL3 M288 Mosaic 12L",
+  "base": {
+    "repo": "turboderp/GLM-5.3-Flash-exl3",
+    "revision": "51058cd551c7e570d87bd32a4adee720edce2349",
+    "bits": 2.05,
+    "a0_download_total_bytes": 85233484348
+  },
+  "upgrade_source": {
+    "bits": 3.05,
+    "dir": "/home/valentine/models/turboderp-glm53-flash-exl3-3p05bpw"
+  },
+  "layer_plan": {
+    "upgraded_layers": [
+      3,
+      32,
+      33,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44
+    ],
+    "all_experts_per_layer": true,
+    "plan_sha256": "7938939c3a5b1cbaaa120ff1fdb51e7d8171f1f46c18630e59727812e969204e",
+    "frozen_utc": "2026-09-16T12:22:00Z",
+    "expected_byte_delta": 10871635968,
+    "notes": "All 288 experts present in every layer; only the selected layers' expert tensors come from the 3.05bpw dir. Dressing (incl. MTP layer 45, router rows, dense/attn) byte-exact from the 2.05bpw dir. Predicted artifact ~= 85,233,484,348 + 10,871,635,968 = 96,105,120,316 B (within the F216-proven serving envelope 96,593,390,114 B)."
+  },
+  "pack_check": {
+    "schema": "mosaic-pack-receipt-v2",
+    "kept_tensors": 26117,
+    "swapped_tensors_total": 41472,
+    "delta_bytes_total_measured": 10871646674,
+    "expected_delta_bytes": 10871635968,
+    "header_drift_bytes": 10706,
+    "failures": [],
+    "n_failures": 0,
+    "config_patched_entries": 10368,
+    "packer_note": "whole-file exact-delta assertion reports FAIL due to header drift; per-tensor byte-equality checks all pass"
+  },
+  "shards": [
+    {
+      "shard": "model-00001-of-00012.safetensors",
+      "out_bytes": 8338599140,
+      "out_sha256": "0c747ea520a74a3fce0b482ea4c2ad266761f1e1da5bee79624a005c03bae136",
+      "a0_sha256": "5b849375a8887be5347b3819e962e5b79403652e9a965d67492ae53207da8d98",
+      "delta_bytes": 905969668,
+      "kept_tensors": 7153,
+      "swapped_tensors": 3456,
+      "layers": [
+        3
+      ]
+    },
+    {
+      "shard": "model-00008-of-00012.safetensors",
+      "out_bytes": 9488829500,
+      "out_sha256": "57a097001adc64da8041ab68c2a011780f16e43395a2bbf686dc1f265833a98d",
+      "a0_sha256": "3e604a19c4bd9e494a535975ab9074c82aa4f5198bb9a34294dc73375855c26e",
+      "delta_bytes": 1811939330,
+      "kept_tensors": 7080,
+      "swapped_tensors": 6912,
+      "layers": [
+        32,
+        33
+      ]
+    },
+    {
+      "shard": "model-00009-of-00012.safetensors",
+      "out_bytes": 9488829500,
+      "out_sha256": "5edb8b52e9f2f20185d4b49aebf91ea6917a5723364878c892cede1c7d443331",
+      "a0_sha256": "cd9a5966f72274b9435bf1ac28090e0b963794bf4a331773b9c9029d7167bc3c",
+      "delta_bytes": 1811939330,
+      "kept_tensors": 7080,
+      "swapped_tensors": 6912,
+      "layers": [
+        36,
+        37
+      ]
+    },
+    {
+      "shard": "model-00010-of-00012.safetensors",
+      "out_bytes": 11300773364,
+      "out_sha256": "bd32555c618e9266cccd8f6bd4079bd4a868629c7bf1a14c731de09f9702f727",
+      "a0_sha256": "fd1e4d47952afd106e1a03f8ffde823b64e4ffc2f56404458890ea056c096eab",
+      "delta_bytes": 3623883194,
+      "kept_tensors": 168,
+      "swapped_tensors": 13824,
+      "layers": [
+        38,
+        39,
+        40,
+        41
+      ]
+    },
+    {
+      "shard": "model-00011-of-00012.safetensors",
+      "out_bytes": 11298120632,
+      "out_sha256": "73452e068d0db728c925eafd1142448a07d955a49fa82b7c0412876295af9bea",
+      "a0_sha256": "9d8c22b5d3e4409f3cf66af9c83abef1b4088e1facd3679a926ee8cab5ecadf0",
+      "delta_bytes": 2717915152,
+      "kept_tensors": 4636,
+      "swapped_tensors": 10368,
+      "layers": [
+        42,
+        43,
+        44
+      ]
+    }
+  ]
+}
