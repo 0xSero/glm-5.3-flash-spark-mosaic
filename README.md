@@ -53,7 +53,7 @@ cd glm-5.3-flash-spark-mosaic/docker
 GLM53_MEM_FRACTION=0.95 GLM53_MAX_RUNNING=1 ./run-spark.sh ~/models/mosaic-12l
 ```
 
-Weights: [`0xSero/GLM-5.3-Flash-EXL3-M288-Mosaic-12L`](https://huggingface.co/0xSero/GLM-5.3-Flash-EXL3-M288-Mosaic-12L) @
+Weights: [`0xSero/GLM-5.3-Flash-EXL3-Spark`](https://huggingface.co/0xSero/GLM-5.3-Flash-EXL3-Spark) @
 `2642851741fc833764e77d03039117be559dc83e`. Those two variables are the mosaic's **measured** values,
 not defaults: it is ~11 GB larger than a0, and at `mem-fraction-static 0.90` the 262,144-token KV gate
 does not fit. Expect **9–10 tok/s decode** — this artifact has no MTP, for the reason in
@@ -101,7 +101,7 @@ each file verifiable against the manifest the model repo ships:
 
 | | |
 |---|---|
-| weights | https://huggingface.co/0xSero/GLM-5.3-Flash-EXL3-M288-Mosaic-12L |
+| weights | https://huggingface.co/0xSero/GLM-5.3-Flash-EXL3-Spark |
 | revision | `2642851741fc833764e77d03039117be559dc83e` |
 | download | `docker/download-mosaic.sh` (pinned + verified, fails closed) |
 | provenance | [`mosaic-12l/PROVENANCE.json`](mosaic-12l/PROVENANCE.json) — base pin, layer plan, per-shard hashes |
@@ -130,5 +130,5 @@ stacked tensor (`mosaic-gatea/GATE-A-RESULTS.md`).
 Code and docs: MIT. Model weights: MIT, © 2026 Z.AI Co., Ltd, inherited through
 [`turboderp/GLM-5.3-Flash-exl3`](https://huggingface.co/turboderp/GLM-5.3-Flash-exl3); the mosaic's own
 `LICENSE` travels with the weights in
-[`0xSero/GLM-5.3-Flash-EXL3-M288-Mosaic-12L`](https://huggingface.co/0xSero/GLM-5.3-Flash-EXL3-M288-Mosaic-12L).
+[`0xSero/GLM-5.3-Flash-EXL3-Spark`](https://huggingface.co/0xSero/GLM-5.3-Flash-EXL3-Spark).
 Upstream: `zai-org/GLM-5.3-Flash`.

@@ -6,7 +6,7 @@ JSON lives in `mosaic-gatea/` (copies) and on the build hosts (`557f:/home/valen
 
 Artifact: **M288-12L-GateA2**, 96,105,137,024 B, plan_sha256
 `7938939c3a5b1cbaaa120ff1fdb51e7d8171f1f46c18630e59727812e969204e`, published at
-`0xSero/GLM-5.3-Flash-EXL3-M288-Mosaic-12L` @ `2642851741fc833764e77d03039117be559dc83e`.
+`0xSero/GLM-5.3-Flash-EXL3-Spark` @ `2642851741fc833764e77d03039117be559dc83e`.
 
 ## Quality — full G4 panel, 65,504 positions, 32 rows
 
