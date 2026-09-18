@@ -61,8 +61,49 @@ runtimes reject the `mul1` codebook at config validation:
 ValueError: this overlay only implements codebook=mcg; got 'mul1'
 ```
 
+That gate is the first blocker, not the only one. The MTP experiment of 2026-09-18 relaxed it and found
+the next one (`mosaic-gatea/M1-FINDINGS.md`): with `mul1` accepted, the engine loads weights and dies at
+the first MoE layer with
+
+```
+File ".../vllm/models/glm5next/nvidia/model.py", line 904, in load_weights
+    param = params_dict[name]
+KeyError: 'layers.0.mlp.down_proj.mul1'
+```
+
+because this artifact descends from the turboderp/SGLang line and its keys are
+`model.language_model.layers.N.mlp.experts.E.*`, while the vLLM MTP loader addresses experts as
+`layers.N.mlp.down_proj.*`. Layer 0 is a stock layer, so this is a naming-lineage mismatch, not a
+consequence of the 12 upgraded layers. MTP here needs a checkpoint-key remap and then the `mul1` decode
+path — code work with a known entry point, not a research problem, and more than the gate.
+
 For reference, the `mcg`-codebook staging line the 1×-Spark EXL3/MTP work targets runs at 18.7–19.2
 tok/s but scores below a0 on quality. Trade fidelity for speed, not both.
+
+## Serving validation — 2026-09-18
+
+Measured on the published artifact, served from a directory that was itself fetched through
+`./download-mosaic.sh` and hash-checked, so these are stranger-facing numbers.
+
+| Check | Result |
+|---|---|
+| Download via the published path | 27/27 files, 1 h 23 m |
+| `sha256sum -c sha256-manifest.txt` | 26/26 OK, exit 0 |
+| Served bytes vs published | `served_bytes_match_published: true` |
+| Context served | `max_model_len 262144`; longest request exercised 236,510 prompt tokens |
+| Output cap | 128,000-token budget accepted; no artifact-level `max_new_tokens` in `generation_config` |
+| Reasoning | 8,192 reasoning tokens / 30,912 chars in one response, server did not truncate |
+| Determinism | identical output on repeat at `temperature 0` |
+| Vision | 4096×4096 accepted → 7,921 image tokens, 99 % of the declared 8,000/image ceiling |
+| **Prefill** | **503.5 tok/s marginal** (r² 0.9999 over seven rungs, 990 → 236,510 tokens) |
+| **Decode** | **10.79 tok/s mean**, 10.61–10.94 across a 238× range of prompt length |
+
+The prefill figure comes from a streaming sweep with a unique nonce opening each prompt. An earlier
+ladder used `FILLER × N` prompts, which made each rung a prefix of the next; radix caching then served
+the shared prefix and the rungs measured only their deltas (its 260 k rung came out *faster* than its
+131 k rung). Both sweeps are kept — the superseded one as the record of the method error, with the
+server's own `#cached-token` accounting as the explanation. Full receipts and method notes:
+`GLM-5.3-Flash-EXL3-2x-DGX-Sparks` → `docs/VALIDATION.md`.
 
 ## Reproduce
 
